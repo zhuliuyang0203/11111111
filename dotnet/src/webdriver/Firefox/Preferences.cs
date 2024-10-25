@@ -18,8 +18,12 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Text.Json.Nodes;
+
+#nullable enable
 
 namespace OpenQA.Selenium.Firefox
 {
@@ -28,28 +32,28 @@ namespace OpenQA.Selenium.Firefox
     /// </summary>
     internal class Preferences
     {
-        private Dictionary<string, string> preferences = new Dictionary<string, string>();
-        private Dictionary<string, string> immutablePreferences = new Dictionary<string, string>();
+        private readonly Dictionary<string, string> preferences = new Dictionary<string, string>();
+        private readonly HashSet<string> immutablePreferences = new HashSet<string>();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Preferences"/> class.
         /// </summary>
         /// <param name="defaultImmutablePreferences">A set of preferences that cannot be modified once set.</param>
         /// <param name="defaultPreferences">A set of default preferences.</param>
-        public Preferences(Dictionary<string, object> defaultImmutablePreferences, Dictionary<string, object> defaultPreferences)
+        public Preferences(JsonObject? defaultImmutablePreferences, JsonObject? defaultPreferences)
         {
             if (defaultImmutablePreferences != null)
             {
-                foreach (KeyValuePair<string, object> pref in defaultImmutablePreferences)
+                foreach (KeyValuePair<string, JsonNode?> pref in defaultImmutablePreferences)
                 {
                     this.SetPreferenceValue(pref.Key, pref.Value);
-                    this.immutablePreferences.Add(pref.Key, pref.Value.ToString());
+                    this.immutablePreferences.Add(pref.Key);
                 }
             }
 
             if (defaultPreferences != null)
             {
-                foreach (KeyValuePair<string, object> pref in defaultPreferences)
+                foreach (KeyValuePair<string, JsonNode?> pref in defaultPreferences)
                 {
                     this.SetPreferenceValue(pref.Key, pref.Value);
                 }
@@ -152,39 +156,47 @@ namespace OpenQA.Selenium.Firefox
 
         private bool IsSettablePreference(string preferenceName)
         {
-            return !this.immutablePreferences.ContainsKey(preferenceName);
+            return !this.immutablePreferences.Contains(preferenceName);
         }
 
-        private void SetPreferenceValue(string key, object value)
+        private void SetPreferenceValue(string key, JsonNode? value)
         {
             if (!this.IsSettablePreference(key))
             {
-                string message = string.Format(CultureInfo.InvariantCulture, "Preference {0} may not be overridden: frozen value={1}, requested value={2}", key, this.immutablePreferences[key], value.ToString());
+                string message = string.Format(CultureInfo.InvariantCulture, "Preference {0} may not be overridden: frozen value={1}, requested value={2}", key, this.preferences[key], value?.ToString());
                 throw new ArgumentException(message);
             }
 
-            string stringValue = value as string;
-            if (stringValue != null)
+            if (value is JsonValue jValue)
             {
-                if (IsWrappedAsString(stringValue))
+                if (jValue.TryGetValue(out string? stringValue))
                 {
-                    throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Preference values must be plain strings: {0}: {1}", key, value));
+                    if (IsWrappedAsString(stringValue))
+                    {
+                        throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Preference values must be plain strings: {0}: {1}", key, value));
+                    }
+
+                    this.preferences[key] = string.Format(CultureInfo.InvariantCulture, "\"{0}\"", value);
+                    return;
                 }
 
-                this.preferences[key] = string.Format(CultureInfo.InvariantCulture, "\"{0}\"", value);
-                return;
-            }
+                if (jValue.TryGetValue(out bool boolValue))
+                {
+                    this.preferences[key] = boolValue ? "true" : "false";
+                    return;
+                }
 
-            if (value is bool)
-            {
-                this.preferences[key] = Convert.ToBoolean(value, CultureInfo.InvariantCulture).ToString().ToLowerInvariant();
-                return;
-            }
+                if (jValue.TryGetValue(out int intValue))
+                {
+                    this.preferences[key] = intValue.ToString(CultureInfo.InvariantCulture);
+                    return;
+                }
 
-            if (value is int || value is long)
-            {
-                this.preferences[key] = Convert.ToInt32(value, CultureInfo.InvariantCulture).ToString(CultureInfo.InvariantCulture);
-                return;
+                if (jValue.TryGetValue(out long longValue))
+                {
+                    this.preferences[key] = ((int)longValue).ToString(CultureInfo.InvariantCulture);
+                    Debug.Fail("Above cast should fail");
+                }
             }
 
             throw new WebDriverException("Value must be string, int or boolean");
