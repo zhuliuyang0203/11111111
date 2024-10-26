@@ -1,5 +1,4 @@
 - name: WebDriver
   href: webdriver/toc.yml
-  expanded: true
 - name: Support
   href: support/toc.yml
