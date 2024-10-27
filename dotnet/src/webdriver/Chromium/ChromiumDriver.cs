@@ -127,7 +127,7 @@ namespace OpenQA.Selenium.Chromium
         /// <param name="options">The <see cref="ChromiumOptions"/> to be used with the ChromiumDriver.</param>
         /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
         protected ChromiumDriver(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)
-            : base(GenerateDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
+            : base(StartDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
         {
             this.optionsCapabilityName = options.CapabilityName;
         }
@@ -140,14 +140,7 @@ namespace OpenQA.Selenium.Chromium
             get { return new ReadOnlyDictionary<string, CommandInfo>(chromiumCustomCommands); }
         }
 
-        /// <summary>
-        /// Uses DriverFinder to set Service attributes if necessary when creating the command executor
-        /// </summary>
-        /// <param name="service"></param>
-        /// <param name="commandTimeout"></param>
-        /// <param name="options"></param>
-        /// <returns></returns>
-        private static ICommandExecutor GenerateDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
+        private static ICommandExecutor StartDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
         {
             if (service.DriverServicePath == null)
             {
@@ -161,7 +154,10 @@ namespace OpenQA.Selenium.Chromium
                     options.BrowserVersion = null;
                 }
             }
-            return new DriverServiceCommandExecutor(service, commandTimeout);
+
+            service.Start();
+
+            return new HttpCommandExecutor(service.ServiceUrl, commandTimeout);
         }
 
         /// <summary>

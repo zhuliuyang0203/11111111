@@ -141,7 +141,7 @@ namespace OpenQA.Selenium.IE
         /// <param name="options">The <see cref="InternetExplorerOptions"/> used to initialize the driver.</param>
         /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
         public InternetExplorerDriver(InternetExplorerDriverService service, InternetExplorerOptions options, TimeSpan commandTimeout)
-            : base(GenerateDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
+            : base(StartDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
         {
         }
 
@@ -152,7 +152,7 @@ namespace OpenQA.Selenium.IE
         /// <param name="commandTimeout"></param>
         /// <param name="options"></param>
         /// <returns></returns>
-        private static ICommandExecutor GenerateDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
+        private static ICommandExecutor StartDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
         {
             if (service.DriverServicePath == null)
             {
@@ -161,7 +161,10 @@ namespace OpenQA.Selenium.IE
                 service.DriverServicePath = Path.GetDirectoryName(fullServicePath);
                 service.DriverServiceExecutableName = Path.GetFileName(fullServicePath);
             }
-            return new DriverServiceCommandExecutor(service, commandTimeout);
+
+            service.Start();
+
+            return new HttpCommandExecutor(service.ServiceUrl, commandTimeout);
         }
 
         /// <summary>

@@ -187,7 +187,7 @@ namespace OpenQA.Selenium.Firefox
         /// <param name="options">The <see cref="FirefoxOptions"/> to be used with the Firefox driver.</param>
         /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
         public FirefoxDriver(FirefoxDriverService service, FirefoxOptions options, TimeSpan commandTimeout)
-            : base(GenerateDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
+            : base(StartDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
         {
             // Add the custom commands unique to Firefox
             this.AddCustomFirefoxCommands();
@@ -200,7 +200,7 @@ namespace OpenQA.Selenium.Firefox
         /// <param name="commandTimeout"></param>
         /// <param name="options"></param>
         /// <returns></returns>
-        private static ICommandExecutor GenerateDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
+        private static ICommandExecutor StartDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
         {
             if (service.DriverServicePath == null)
             {
@@ -214,7 +214,10 @@ namespace OpenQA.Selenium.Firefox
                     options.BrowserVersion = null;
                 }
             }
-            return new DriverServiceCommandExecutor(service, commandTimeout);
+
+            service.Start();
+
+            return new HttpCommandExecutor(service.ServiceUrl, commandTimeout);
         }
 
         /// <summary>
