@@ -94,7 +94,7 @@ namespace OpenQA.Selenium
             {
                 foreach (object rawEntry in responseValue)
                 {
-                    Dictionary<string, object> entryDictionary = (Dictionary<string, object>)rawEntry;
+                    Dictionary<string, object>? entryDictionary = rawEntry as Dictionary<string, object>;
                     if (entryDictionary != null)
                     {
                         entries.Add(LogEntry.FromDictionary(entryDictionary));
