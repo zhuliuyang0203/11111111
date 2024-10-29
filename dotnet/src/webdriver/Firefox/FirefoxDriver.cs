@@ -428,7 +428,7 @@ namespace OpenQA.Selenium.Firefox
                     throw new WebDriverException("Cannot find " + FirefoxDevToolsCapabilityName + " capability for driver");
                 }
 
-                string debuggerAddress = this.Capabilities.GetCapability(FirefoxDevToolsCapabilityName).ToString();
+                string? debuggerAddress = this.Capabilities.GetCapability(FirefoxDevToolsCapabilityName).ToString();
                 try
                 {
                     DevToolsSession session = new DevToolsSession(debuggerAddress, options);
