@@ -294,11 +294,8 @@ namespace OpenQA.Selenium.Firefox
         /// <param name="addOnDirectoryToInstall">Full path of the directory of the add-on to install.</param>
         /// <param name="temporary">Whether the add-on is temporary; required for unsigned add-ons.</param>
         /// <returns>The add-on ID.</returns>
-        /// <exception cref="ArgumentException">
-        /// <para>If <paramref name="addOnDirectoryToInstall"/> is null or empty.</para>
-        /// or
-        /// <para>If the directory at <paramref name="addOnDirectoryToInstall"/> does not exist.</para>
-        /// </exception>
+        /// <exception cref="ArgumentNullException">If <paramref name="addOnDirectoryToInstall"/> is null or empty.</exception>
+        /// <exception cref="ArgumentException">If the directory at <paramref name="addOnDirectoryToInstall"/> does not exist.</exception>
         public string InstallAddOnFromDirectory(string addOnDirectoryToInstall, bool temporary = false)
         {
             if (string.IsNullOrEmpty(addOnDirectoryToInstall))
