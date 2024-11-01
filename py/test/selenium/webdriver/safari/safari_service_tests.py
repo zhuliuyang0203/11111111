@@ -16,13 +16,16 @@
 # under the License.
 
 import os
+
 import pytest
 
 from selenium.webdriver.safari.service import Service
 
+
 @pytest.fixture
 def service():
     return Service()
+
 
 @pytest.mark.usefixtures("service")
 class TestSafariDriverService:
@@ -44,10 +47,12 @@ class TestSafariDriverService:
 
         assert "safaridriver" in service.executable_path
 
+
 def test_enable_logging():
     enable_logging = True
     service = Service(enable_logging=enable_logging)
-    assert '--diagnose' in service.service_args
+    assert "--diagnose" in service.service_args
+
 
 def test_service_url():
     service = Service(port=1313)
