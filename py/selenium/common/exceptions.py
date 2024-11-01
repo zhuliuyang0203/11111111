@@ -286,6 +286,6 @@ class NoSuchDriverException(WebDriverException):
 
         super().__init__(with_support, screen, stacktrace)
 
+
 class DetachedShadowRootException(WebDriverException):
     """Raised when referenced shadow root is no longer attached to the DOM"""
-    
