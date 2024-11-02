@@ -170,6 +170,7 @@ class BeforeRequestSent(BidiEvent):
         params = BeforeRequestSentParameters.from_json(json)
         return cls(params)
 
+
 @dataclass
 class CookieHeader(BidiObject):
     name: str
