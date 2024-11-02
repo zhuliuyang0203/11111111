@@ -76,7 +76,6 @@ async def test_collect_log_mutations(driver, pages):
             WebDriverWait(driver, 10).until(
                 lambda d: d.find_element(By.ID, "revealed").value_of_css_property("display") != "none"
             )
-
     assert event["attribute_name"] == "style"
     assert event["current_value"] == ""
     assert event["old_value"] == "display:none;"
