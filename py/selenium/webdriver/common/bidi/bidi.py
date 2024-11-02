@@ -25,8 +25,7 @@ class BidiObject:
     def to_json(self):
         json = {}
         for field in fields(self):
-            key = field.name[1:] if field.name.startswith("_") else field.name
-            value = getattr(self, key)
+            value = getattr(self, field.name)
             if value is None:
                 continue
             if is_dataclass(value):
@@ -35,6 +34,7 @@ class BidiObject:
                 value = [v.to_json() if hasattr(v, "to_json") else v for v in value]
             elif isinstance(value, dict):
                 value = {k: v.to_json() if hasattr(v, "to_json") else v for k, v in value.items()}
+            key = field.name[1:] if field.name.startswith("_") else field.name
             json[key] = value
         return json
 
