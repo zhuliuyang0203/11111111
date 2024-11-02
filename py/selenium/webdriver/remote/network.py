@@ -35,8 +35,11 @@ class Network:
         self.driver = driver
         self.intercept = None
         self.scope = None
+        self.conn = None
 
     async def add_request_handler(self, request_filter=lambda _: True, handler=default_request_handler, conn=None):
+        if not self.conn:
+            self.conn = conn
         with trio.CancelScope() as scope:
             self.scope = scope
             self.network = network.Network(conn)
@@ -45,8 +48,16 @@ class Network:
             result = await self.network.add_intercept(event=BeforeRequestSent, params=params)
             intercept = result["intercept"]
             self.intercept = intercept
-            await self.network.add_listener(event=BeforeRequestSent, callback=callback)
+            await self.add_listener(event=BeforeRequestSent, callback=callback)
             return intercept
+
+    async def add_listener(self, event, callback):
+        listener = self.conn.listen(event)
+
+        async for event in listener:
+            request_data = BeforeRequestSentParameters.from_json(event.to_json()["params"])
+            if request_data.isBlocked:
+                await callback(request_data)
 
     async def get(self, url, conn):
         params = NavigateParameters(context=self.driver.current_window_handle, url=url, wait="complete")

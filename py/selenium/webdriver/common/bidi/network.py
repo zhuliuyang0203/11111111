@@ -214,13 +214,6 @@ class Network:
         result = await self.conn.execute(AddIntercept(params).cmd())
         return result
 
-    async def add_listener(self, event, callback):
-        listener = self.conn.listen(event)
-
-        async for event in listener:
-            request_data = BeforeRequestSentParameters.from_json(event.to_json()["params"])
-            await callback(request_data)
-
     async def continue_request(self, params: ContinueRequestParameters):
         result = await self.conn.execute(ContinueRequest(params).cmd())
         return result
