@@ -33,21 +33,26 @@ class Network:
     def __init__(self, driver):
         self.network = None
         self.driver = driver
-        self.intercept = None
-        self.scope = None
+        self.scopes = {}
         self.conn = None
 
-    async def add_request_handler(self, request_filter=lambda _: True, handler=default_request_handler, conn=None):
+    async def add_request_handler(
+        self,
+        request_filter=lambda _: True,
+        handler=default_request_handler,
+        conn=None,
+        task_status=trio.TASK_STATUS_IGNORED
+    ):
         if not self.conn:
             self.conn = conn
         with trio.CancelScope() as scope:
-            self.scope = scope
             self.network = network.Network(conn)
             params = AddInterceptParameters(["beforeRequestSent"])
             callback = self._callback(request_filter, handler)
             result = await self.network.add_intercept(event=BeforeRequestSent, params=params)
             intercept = result["intercept"]
-            self.intercept = intercept
+            self.scopes[intercept] = scope
+            task_status.started(intercept)
             await self.add_listener(event=BeforeRequestSent, callback=callback)
             return intercept
 
@@ -63,12 +68,13 @@ class Network:
         params = NavigateParameters(context=self.driver.current_window_handle, url=url, wait="complete")
         await conn.execute(Navigate(params).cmd())
 
-    async def remove_request_handler(self):
+    async def remove_request_handler(self, intercept):
         await self.network.remove_intercept(
             event=BeforeRequestSent,
             params=network.RemoveInterceptParameters(self.intercept),
         )
-        self.scope.cancel()
+        self.scopes[intercept].cancel()
+        self.scopes.pop(intercept)
 
     def _callback(self, request_filter, handler):
         async def callback(request):
