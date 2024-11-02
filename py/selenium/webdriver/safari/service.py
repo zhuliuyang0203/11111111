@@ -15,10 +15,10 @@
 # specific language governing permissions and limitations
 # under the License.
 
-import typing
+
 
 from selenium.webdriver.common import service
-
+from typing import Optional, List, Mapping
 
 class Service(service.Service):
     """A Service class that is responsible for the starting and stopping of
@@ -35,8 +35,8 @@ class Service(service.Service):
         self,
         executable_path: str = None,
         port: int = 0,
-        service_args: typing.Optional[typing.List[str]] = None,
-        env: typing.Optional[typing.Mapping[str, str]] = None,
+        service_args: Optional[List[str]] = None,
+        env: Optional[Mapping[str, str]] = None,
         reuse_service=False,
         enable_logging: bool = False,
         driver_path_env_key: str = None,
@@ -57,7 +57,7 @@ class Service(service.Service):
             **kwargs,
         )
 
-    def command_line_args(self) -> typing.List[str]:
+    def command_line_args(self) -> List[str]:
         return ["-p", f"{self.port}"] + self.service_args
 
     @property
