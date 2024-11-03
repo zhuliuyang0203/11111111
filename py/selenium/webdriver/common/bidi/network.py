@@ -165,10 +165,7 @@ class BeforeRequestSent(BidiEvent):
     params: BeforeRequestSentParameters
     method: typing.Literal["network.beforeRequestSent"] = "network.beforeRequestSent"
 
-    @classmethod
-    def from_json(cls, json):
-        params = BeforeRequestSentParameters.from_json(json)
-        return cls(params)
+    param_class = BeforeRequestSentParameters
 
 
 @dataclass

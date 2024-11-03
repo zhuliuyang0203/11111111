@@ -48,6 +48,11 @@ class BidiEvent(BidiObject):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+    @classmethod
+    def from_json(cls, json):
+        params = cls.param_class.from_json(json)
+        return cls(params)
+
 
 @dataclass
 class BidiCommand(BidiObject):
