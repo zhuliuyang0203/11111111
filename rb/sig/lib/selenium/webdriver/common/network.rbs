@@ -7,11 +7,11 @@ module Selenium
 
       def initialize: (Remote::Bridge bridge) -> void
 
-      def add_auth_handler: (String username, String password) -> String
+      def add_authentication_handler: (String username, String password) -> String
 
-      def clear_auth_handlers: -> Hash[nil, nil]
+      def clear_authentication_handlers: -> Hash[nil, nil]
 
-      def remove_auth_handler: (String id) -> nil
+      def remove_authentication_handler: (String id) -> nil
     end
   end
 end

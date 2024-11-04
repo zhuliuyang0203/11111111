@@ -27,7 +27,7 @@ module Selenium
         @auth_callbacks = {}
       end
 
-      def add_auth_handler(username, password)
+      def add_authentication_handler(username, password)
         intercept = @network.add_intercept(phases: [BiDi::Network::PHASES[:auth_required]])
         auth_id = @network.on(:auth_required) do |event|
           request_id = event['requestId']
@@ -38,14 +38,14 @@ module Selenium
         auth_id
       end
 
-      def remove_auth_handler(id)
+      def remove_authentication_handler(id)
         intercept = @auth_callbacks[id]
         @network.remove_intercept(intercept['intercept'])
         @auth_callbacks.delete(id)
       end
 
-      def clear_auth_handlers
-        @auth_callbacks.each_key { |id| remove_auth_handler(id) }
+      def clear_authentication_handlers
+        @auth_callbacks.each_key { |id| remove_authentication_handler(id) }
       end
     end # Network
   end # WebDriver

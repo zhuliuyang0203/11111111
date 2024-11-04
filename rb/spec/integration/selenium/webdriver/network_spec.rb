@@ -31,7 +31,7 @@ module Selenium
       it 'adds an auth handler' do
         reset_driver!(web_socket_url: true) do |driver|
           network = described_class.new(driver)
-          network.add_auth_handler(username, password)
+          network.add_authentication_handler(username, password)
           expect(network.auth_callbacks.count).to be 1
         end
       end
@@ -39,8 +39,8 @@ module Selenium
       it 'removes an auth handler' do
         reset_driver!(web_socket_url: true) do |driver|
           network = described_class.new(driver)
-          id = network.add_auth_handler(username, password)
-          network.remove_auth_handler(id)
+          id = network.add_authentication_handler(username, password)
+          network.remove_authentication_handler(id)
           expect(network.auth_callbacks.count).to be 0
         end
       end
@@ -48,9 +48,9 @@ module Selenium
       it 'clears all auth handlers' do
         reset_driver!(web_socket_url: true) do |driver|
           network = described_class.new(driver)
-          network.add_auth_handler(username, password)
-          network.add_auth_handler(username, password)
-          network.clear_auth_handlers
+          network.add_authentication_handler(username, password)
+          network.add_authentication_handler(username, password)
+          network.clear_authentication_handlers
           expect(network.auth_callbacks.count).to be 0
         end
       end
