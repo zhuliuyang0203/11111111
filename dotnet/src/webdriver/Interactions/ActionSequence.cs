@@ -73,7 +73,7 @@ namespace OpenQA.Selenium.Interactions
         /// </summary>
         public InputDevice inputDevice
         {
-            get { return this.inputDevice; }
+            get { return this.device; }
         }
 
         /// <summary>
