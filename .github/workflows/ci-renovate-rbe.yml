@@ -33,7 +33,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.SELENIUM_CI_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.head_ref }}
       - name: Format
         uses: ./.github/workflows/bazel.yml
         with:
