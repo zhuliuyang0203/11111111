@@ -397,6 +397,35 @@ namespace OpenQA.Selenium.Interactions
             Assert.IsTrue(DateTime.Now - start > TimeSpan.FromMilliseconds(1200));
         }
 
+
+        [Test]
+        public void ShouldHandleClashingDeviceNamesGracefully()
+        {
+            var actionsWithKeyboard = new Actions(driver)
+                .SetActiveKeyboard("test")
+                .KeyDown(Keys.Shift).KeyUp(Keys.Shift);
+
+            Assert.That(() =>
+            {
+                actionsWithKeyboard.SetActiveWheel("test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a wheel. Actual input type: Key"));
+
+            Assert.That(() =>
+            {
+                actionsWithKeyboard.SetActivePointer(PointerKind.Pen, "test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a pointer. Actual input type: Key"));
+
+            var actionsWithWheel = new Actions(driver)
+               .SetActiveWheel("test")
+               .ScrollByAmount(0, 0);
+
+            Assert.That(() =>
+            {
+                actionsWithWheel.SetActiveKeyboard("test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a keyboard. Actual input type: Wheel"));
+        }
+
+
         private bool FuzzyPositionMatching(int expectedX, int expectedY, string locationTuple)
         {
             string[] splitString = locationTuple.Split(',');
