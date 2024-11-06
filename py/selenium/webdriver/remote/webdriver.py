@@ -57,6 +57,7 @@ from .bidi_connection import BidiConnection
 from .client_config import ClientConfig
 from .command import Command
 from .errorhandler import ErrorHandler
+from .fedcm import FedCM
 from .file_detector import FileDetector
 from .file_detector import LocalFileDetector
 from .locator_converter import LocatorConverter
@@ -236,6 +237,7 @@ class WebDriver(BaseWebDriver):
         self._authenticator_id = None
         self.start_client()
         self.start_session(capabilities)
+        self._fedcm = FedCM(self)
 
         self._websocket_connection = None
         self._script = None
@@ -1223,51 +1225,72 @@ class WebDriver(BaseWebDriver):
 
         self.execute(Command.DELETE_DOWNLOADABLE_FILES)
 
-    # Federated Credential Management (FedCM)
-    def get_fedcm_title(self) -> str:
-        """Gets the title of the dialog."""
-        return self.execute(Command.GET_FEDCM_TITLE)["value"].get("title")
-
-    def get_fedcm_subtitle(self) -> Optional[str]:
-        """Gets the subtitle of the dialog."""
-        return self.execute(Command.GET_FEDCM_TITLE)["value"].get("subtitle")
-
-    def get_fedcm_dialog_type(self):
-        """Gets the type of the dialog currently being shown."""
-        return self.execute(Command.GET_FEDCM_DIALOG_TYPE).get("value")
-
-    def get_fedcm_account_list(self):
-        """Gets the list of accounts shown in the dialog."""
-        return self.execute(Command.GET_FEDCM_ACCOUNT_LIST).get("value")
-
-    def select_fedcm_account(self, index: int) -> None:
-        """Selects an account from the dialog by index."""
-        self.execute(Command.SELECT_FEDCM_ACCOUNT, {"accountIndex": index})
-
-    def click_fedcm_dialog_button(self) -> None:
-        """Clicks the continue button in the dialog."""
-        self.execute(Command.CLICK_FEDCM_DIALOG_BUTTON, {"dialogButton": "ConfirmIdpLoginContinue"})
-
-    def cancel_fedcm_dialog(self) -> None:
-        """Cancels/dismisses the FedCM dialog."""
-        self.execute(Command.CANCEL_FEDCM_DIALOG)
-
-    def set_fedcm_delay(self, enabled: bool) -> None:
-        """Disables the promise rejection delay for FedCM.
-
-        FedCM by default delays promise resolution in failure cases for privacy reasons.
-        This method allows turning it off to let tests run faster where this is not relevant.
-
-        Args:
-            enabled: True to enable the delay, False to disable it
+    @property
+    def fedcm(self) -> FedCM:
         """
-        self.execute(Command.SET_FEDCM_DELAY, {"enabled": enabled})
+        :Returns:
+            - FedCM: an object providing access to all Federated Credential Management (FedCM) dialog commands.
 
-    def reset_fedcm_cooldown(self) -> None:
-        """Resets the FedCM dialog cooldown.
+        :Usage:
+            ::
 
-        If a user agent triggers a cooldown when the account chooser is
-        dismissed, this method resets that cooldown so that the dialog
-        can be triggered again immediately.
+                title = driver.fedcm.title
+                subtitle = driver.fedcm.subtitle
+                dialog_type = driver.fedcm.dialog_type
+                accounts = driver.fedcm.account_list
+                driver.fedcm.select_account(0)
+                driver.fedcm.click_dialog_button()
+                driver.fedcm.cancel_dialog()
+                driver.fedcm.set_delay(False)
+                driver.fedcm.reset_cooldown()
         """
-        self.execute(Command.RESET_FEDCM_COOLDOWN)
+        return self._fedcm
+
+    # # Federated Credential Management (FedCM)
+    # def get_fedcm_title(self) -> str:
+    #     """Gets the title of the dialog."""
+    #     return self.execute(Command.GET_FEDCM_TITLE)["value"].get("title")
+    #
+    # def get_fedcm_subtitle(self) -> Optional[str]:
+    #     """Gets the subtitle of the dialog."""
+    #     return self.execute(Command.GET_FEDCM_TITLE)["value"].get("subtitle")
+    #
+    # def get_fedcm_dialog_type(self):
+    #     """Gets the type of the dialog currently being shown."""
+    #     return self.execute(Command.GET_FEDCM_DIALOG_TYPE).get("value")
+    #
+    # def get_fedcm_account_list(self):
+    #     """Gets the list of accounts shown in the dialog."""
+    #     return self.execute(Command.GET_FEDCM_ACCOUNT_LIST).get("value")
+    #
+    # def select_fedcm_account(self, index: int) -> None:
+    #     """Selects an account from the dialog by index."""
+    #     self.execute(Command.SELECT_FEDCM_ACCOUNT, {"accountIndex": index})
+    #
+    # def click_fedcm_dialog_button(self) -> None:
+    #     """Clicks the continue button in the dialog."""
+    #     self.execute(Command.CLICK_FEDCM_DIALOG_BUTTON, {"dialogButton": "ConfirmIdpLoginContinue"})
+    #
+    # def cancel_fedcm_dialog(self) -> None:
+    #     """Cancels/dismisses the FedCM dialog."""
+    #     self.execute(Command.CANCEL_FEDCM_DIALOG)
+    #
+    # def set_fedcm_delay(self, enabled: bool) -> None:
+    #     """Disables the promise rejection delay for FedCM.
+    #
+    #     FedCM by default delays promise resolution in failure cases for privacy reasons.
+    #     This method allows turning it off to let tests run faster where this is not relevant.
+    #
+    #     Args:
+    #         enabled: True to enable the delay, False to disable it
+    #     """
+    #     self.execute(Command.SET_FEDCM_DELAY, {"enabled": enabled})
+    #
+    # def reset_fedcm_cooldown(self) -> None:
+    #     """Resets the FedCM dialog cooldown.
+    #
+    #     If a user agent triggers a cooldown when the account chooser is
+    #     dismissed, this method resets that cooldown so that the dialog
+    #     can be triggered again immediately.
+    #     """
+    #     self.execute(Command.RESET_FEDCM_COOLDOWN)
