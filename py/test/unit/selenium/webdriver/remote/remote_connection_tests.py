@@ -27,6 +27,7 @@ from urllib3.util import Timeout
 from selenium import __version__
 from selenium.webdriver import Proxy
 from selenium.webdriver.common.proxy import ProxyType
+from selenium.webdriver.remote.client_config import AuthType
 from selenium.webdriver.remote.remote_connection import ClientConfig
 from selenium.webdriver.remote.remote_connection import RemoteConnection
 
@@ -93,7 +94,7 @@ def test_get_proxy_url_http(mock_proxy_settings):
 
 def test_get_auth_header_if_client_config_pass_basic_auth():
     custom_config = ClientConfig(
-        remote_server_addr="http://remote", keep_alive=True, username="user", password="pass", auth_type="Basic"
+        remote_server_addr="http://remote", keep_alive=True, username="user", password="pass", auth_type=AuthType.BASIC
     )
     remote_connection = RemoteConnection(custom_config.remote_server_addr, client_config=custom_config)
     headers = remote_connection._client_config.get_auth_header()
@@ -102,7 +103,7 @@ def test_get_auth_header_if_client_config_pass_basic_auth():
 
 def test_get_auth_header_if_client_config_pass_bearer_token():
     custom_config = ClientConfig(
-        remote_server_addr="http://remote", keep_alive=True, auth_type="Bearer", token="dXNlcjpwYXNz"
+        remote_server_addr="http://remote", keep_alive=True, auth_type=AuthType.BEARER, token="dXNlcjpwYXNz"
     )
     remote_connection = RemoteConnection(custom_config.remote_server_addr, client_config=custom_config)
     headers = remote_connection._client_config.get_auth_header()
@@ -111,7 +112,7 @@ def test_get_auth_header_if_client_config_pass_bearer_token():
 
 def test_get_auth_header_if_client_config_pass_x_api_key():
     custom_config = ClientConfig(
-        remote_server_addr="http://remote", keep_alive=True, auth_type="X-API-Key", token="abcdefgh123456789"
+        remote_server_addr="http://remote", keep_alive=True, auth_type=AuthType.X_API_KEY, token="abcdefgh123456789"
     )
     remote_connection = RemoteConnection(custom_config.remote_server_addr, client_config=custom_config)
     headers = remote_connection._client_config.get_auth_header()
