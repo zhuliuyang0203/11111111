@@ -17,12 +17,11 @@
 // under the License.
 // </copyright>
 
-using System;
 using NUnit.Framework;
+using OpenQA.Selenium.Environment;
+using System;
 using System.Drawing;
 using System.Text.RegularExpressions;
-using OpenQA.Selenium.Environment;
-using OpenQA.Selenium.Internal;
 
 namespace OpenQA.Selenium.Interactions
 {

@@ -17,12 +17,12 @@
 // under the License.
 // </copyright>
 
+using OpenQA.Selenium.Remote;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using Newtonsoft.Json;
-using OpenQA.Selenium.Remote;
+using System.Text.Json;
 
 namespace OpenQA.Selenium
 {
@@ -277,7 +277,7 @@ namespace OpenQA.Selenium
         /// <returns>String representation of the remote session settings to be sent.</returns>
         public override string ToString()
         {
-            return JsonConvert.SerializeObject(this.ToDictionary(), Formatting.Indented);
+            return JsonSerializer.Serialize(this.ToDictionary(), new JsonSerializerOptions { WriteIndented = true });
         }
 
         internal DriverOptions GetFirstMatchDriverOptions(int firstMatchIndex)

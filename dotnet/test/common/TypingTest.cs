@@ -17,10 +17,10 @@
 // under the License.
 // </copyright>
 
-using System;
-using System.Runtime.InteropServices;
 using NUnit.Framework;
 using OpenQA.Selenium.Environment;
+using System;
+using System.Runtime.InteropServices;
 
 namespace OpenQA.Selenium
 {
@@ -742,15 +742,18 @@ namespace OpenQA.Selenium
             Assert.That(element.Text.Trim(), Is.AnyOf(withKeyPress, withoutKeyPress));
         }
 
-        private string PrimaryModifier() {
+        private string PrimaryModifier()
+        {
             return (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) ? Keys.Command : Keys.Control;
         }
 
-        private string HomeKey() {
+        private string HomeKey()
+        {
             return (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) ? Keys.Up : Keys.Home;
         }
 
-        private string EndKey() {
+        private string EndKey()
+        {
             return (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) ? Keys.Down : Keys.End;
         }
     }

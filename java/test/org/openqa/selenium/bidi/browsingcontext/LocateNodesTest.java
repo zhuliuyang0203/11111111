@@ -17,21 +17,14 @@
 package org.openqa.selenium.bidi.browsingcontext;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.openqa.selenium.testing.Safely.safelyCall;
-import static org.openqa.selenium.testing.drivers.Browser.CHROME;
-import static org.openqa.selenium.testing.drivers.Browser.EDGE;
-import static org.openqa.selenium.testing.drivers.Browser.FIREFOX;
-import static org.openqa.selenium.testing.drivers.Browser.IE;
-import static org.openqa.selenium.testing.drivers.Browser.SAFARI;
+import static org.openqa.selenium.testing.drivers.Browser.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.bidi.Script;
+import org.openqa.selenium.bidi.module.Script;
 import org.openqa.selenium.bidi.script.EvaluateResult;
 import org.openqa.selenium.bidi.script.EvaluateResultSuccess;
 import org.openqa.selenium.bidi.script.LocalValue;
@@ -39,44 +32,28 @@ import org.openqa.selenium.bidi.script.NodeProperties;
 import org.openqa.selenium.bidi.script.RemoteReference;
 import org.openqa.selenium.bidi.script.RemoteValue;
 import org.openqa.selenium.bidi.script.ResultOwnership;
-import org.openqa.selenium.environment.webserver.AppServer;
-import org.openqa.selenium.environment.webserver.NettyAppServer;
 import org.openqa.selenium.testing.JupiterTestBase;
+import org.openqa.selenium.testing.NeedsFreshDriver;
 import org.openqa.selenium.testing.NotYetImplemented;
 
 public class LocateNodesTest extends JupiterTestBase {
-  private AppServer server;
-
-  @BeforeEach
-  public void setUp() {
-    server = new NettyAppServer();
-    server.start();
-  }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodes() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
 
     driver.get(pages.xhtmlTestPage);
 
-    LocateNodeParameters parameters = new LocateNodeParameters.Builder(Locator.css("div")).build();
+    LocateNodeParameters parameters = new LocateNodeParameters(Locator.css("div"));
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isEqualTo(13);
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesWithJustLocator() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
@@ -88,11 +65,7 @@ public class LocateNodesTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNode() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
@@ -104,11 +77,7 @@ public class LocateNodesTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesWithCSSLocator() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
@@ -116,9 +85,7 @@ public class LocateNodesTest extends JupiterTestBase {
     driver.get(pages.xhtmlTestPage);
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("div.extraDiv, div.content"))
-            .setMaxNodeCount(1)
-            .build();
+        new LocateNodeParameters(Locator.css("div.extraDiv, div.content")).setMaxNodeCount(1);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isGreaterThanOrEqualTo(1);
@@ -133,11 +100,7 @@ public class LocateNodesTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesWithXPathLocator() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
@@ -145,9 +108,7 @@ public class LocateNodesTest extends JupiterTestBase {
     driver.get(pages.xhtmlTestPage);
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.xpath("/html/body/div[2]"))
-            .setMaxNodeCount(1)
-            .build();
+        new LocateNodeParameters(Locator.xpath("/html/body/div[2]")).setMaxNodeCount(1);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isGreaterThanOrEqualTo(1);
@@ -162,10 +123,7 @@ public class LocateNodesTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   @NotYetImplemented(FIREFOX)
   void canLocateNodesWithInnerText() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
@@ -174,9 +132,7 @@ public class LocateNodesTest extends JupiterTestBase {
     driver.get(pages.xhtmlTestPage);
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.innerText("Spaced out"))
-            .setMaxNodeCount(1)
-            .build();
+        new LocateNodeParameters(Locator.innerText("Spaced out")).setMaxNodeCount(1);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isGreaterThanOrEqualTo(1);
@@ -187,11 +143,7 @@ public class LocateNodesTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesWithMaxNodeCount() {
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
     assertThat(browsingContext.getId()).isNotEmpty();
@@ -199,62 +151,14 @@ public class LocateNodesTest extends JupiterTestBase {
     driver.get(pages.xhtmlTestPage);
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("div")).setMaxNodeCount(4).build();
+        new LocateNodeParameters(Locator.css("div")).setMaxNodeCount(4);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isEqualTo(4);
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
-  void canLocateNodesWithNoneOwnershipParameter() {
-    BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
-    assertThat(browsingContext.getId()).isNotEmpty();
-
-    driver.get(pages.xhtmlTestPage);
-
-    LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("div"))
-            .setOwnership(ResultOwnership.NONE)
-            .build();
-
-    List<RemoteValue> elements = browsingContext.locateNodes(parameters);
-    assertThat(elements.size()).isEqualTo(13);
-    assertThat(elements.get(0).getHandle().isPresent()).isFalse();
-  }
-
-  @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
-  void canLocateNodesWithRootOwnershipParameter() {
-    BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
-    assertThat(browsingContext.getId()).isNotEmpty();
-
-    driver.get(pages.xhtmlTestPage);
-
-    LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("div"))
-            .setOwnership(ResultOwnership.ROOT)
-            .build();
-
-    List<RemoteValue> elements = browsingContext.locateNodes(parameters);
-    assertThat(elements.size()).isEqualTo(13);
-    assertThat(elements.get(0).getHandle().isPresent()).isTrue();
-  }
-
-  @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesGivenStartNodes() {
     String handle = driver.getWindowHandle();
     BrowsingContext browsingContext = new BrowsingContext(driver, handle);
@@ -284,21 +188,16 @@ public class LocateNodesTest extends JupiterTestBase {
                 new RemoteReference(RemoteReference.Type.SHARED_ID, value.getSharedId().get())));
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("input"))
+        new LocateNodeParameters(Locator.css("input"))
             .setStartNodes(startNodes)
-            .setMaxNodeCount(50)
-            .build();
+            .setMaxNodeCount(50);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isEqualTo(35);
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(FIREFOX)
+  @NeedsFreshDriver
   void canLocateNodesInAGivenSandbox() {
     String sandbox = "sandbox";
     BrowsingContext browsingContext = new BrowsingContext(driver, driver.getWindowHandle());
@@ -307,10 +206,7 @@ public class LocateNodesTest extends JupiterTestBase {
     browsingContext.navigate(pages.xhtmlTestPage, ReadinessState.COMPLETE);
 
     LocateNodeParameters parameters =
-        new LocateNodeParameters.Builder(Locator.css("div"))
-            .setSandbox(sandbox)
-            .setMaxNodeCount(1)
-            .build();
+        new LocateNodeParameters(Locator.css("div")).setSandbox(sandbox).setMaxNodeCount(1);
 
     List<RemoteValue> elements = browsingContext.locateNodes(parameters);
     assertThat(elements.size()).isEqualTo(1);
@@ -342,13 +238,5 @@ public class LocateNodesTest extends JupiterTestBase {
 
     String sharedId = (String) ((RemoteValue) sharedIdMap.get("sharedId")).getValue().get();
     assertThat(sharedId).isEqualTo(nodeId);
-  }
-
-  @AfterEach
-  public void quitDriver() {
-    if (driver != null) {
-      driver.quit();
-    }
-    safelyCall(server::stop);
   }
 }

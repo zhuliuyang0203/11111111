@@ -18,9 +18,9 @@
 // </copyright>
 
 using NUnit.Framework;
-using System.Collections.ObjectModel;
 using OpenQA.Selenium.Environment;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace OpenQA.Selenium
 {

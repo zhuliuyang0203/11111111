@@ -17,7 +17,6 @@
 // under the License.
 // </copyright>
 
-using System;
 using Newtonsoft.Json;
 
 namespace OpenQA.Selenium.Environment

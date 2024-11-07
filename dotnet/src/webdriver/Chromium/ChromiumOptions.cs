@@ -20,9 +20,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Globalization;
 using System.IO;
-using OpenQA.Selenium.Remote;
 
 namespace OpenQA.Selenium.Chromium
 {

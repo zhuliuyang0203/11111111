@@ -17,10 +17,10 @@
 // under the License.
 // </copyright>
 
+using OpenQA.Selenium.DevTools;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using OpenQA.Selenium.DevTools;
 
 namespace OpenQA.Selenium
 {
@@ -46,7 +46,7 @@ namespace OpenQA.Selenium
             this.session = new Lazy<DevToolsSession>(() =>
             {
                 IDevTools devToolsDriver = driver as IDevTools;
-                if (session == null)
+                if (devToolsDriver == null)
                 {
                     throw new WebDriverException("Driver must implement IDevTools to use these features");
                 }

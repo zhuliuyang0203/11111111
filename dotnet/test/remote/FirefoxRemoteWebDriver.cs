@@ -17,8 +17,8 @@
 // under the License.
 // </copyright>
 
-using System;
 using OpenQA.Selenium.Firefox;
+using System;
 
 namespace OpenQA.Selenium.Remote
 {

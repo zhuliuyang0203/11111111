@@ -18,12 +18,12 @@
 // </copyright>
 
 using NUnit.Framework;
-using System;
-using System.Linq;
 using OpenQA.Selenium.Environment;
-using System.Collections.ObjectModel;
 using OpenQA.Selenium.Interactions;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace OpenQA.Selenium.IE
 {

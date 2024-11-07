@@ -23,6 +23,7 @@ import static org.assertj.core.api.InstanceOfAssertFactories.MAP;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.openqa.selenium.testing.drivers.Browser.CHROME;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -35,8 +36,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.testing.JupiterTestBase;
-import org.openqa.selenium.testing.drivers.Browser;
+import org.openqa.selenium.testing.NeedsSecureServer;
+import org.openqa.selenium.testing.NotYetImplemented;
 
+@NeedsSecureServer
 class FederatedCredentialManagementTest extends JupiterTestBase {
 
   private JavascriptExecutor jsAwareDriver;
@@ -44,7 +47,7 @@ class FederatedCredentialManagementTest extends JupiterTestBase {
 
   @BeforeEach
   public void setup() {
-    ChromeOptions options = (ChromeOptions) Browser.CHROME.getCapabilities();
+    ChromeOptions options = (ChromeOptions) CHROME.getCapabilities();
     // options.setAcceptInsecureCerts(true);
     options.addArguments(
         String.format("host-resolver-rules=MAP localhost:443 localhost:%d", getSecurePort()));
@@ -80,6 +83,9 @@ class FederatedCredentialManagementTest extends JupiterTestBase {
   }
 
   @Test
+  @NotYetImplemented(
+      value = CHROME,
+      reason = "https://github.com/SeleniumHQ/selenium/pull/12096#issuecomment-2017760822")
   void testDismissDialog() {
     fedcmDriver.setDelayEnabled(false);
     assertNull(fedcmDriver.getFederatedCredentialManagementDialog());
@@ -112,6 +118,9 @@ class FederatedCredentialManagementTest extends JupiterTestBase {
   }
 
   @Test
+  @NotYetImplemented(
+      value = CHROME,
+      reason = "https://github.com/SeleniumHQ/selenium/pull/12096#issuecomment-2017760822")
   void testSelectAccount() {
     fedcmDriver.setDelayEnabled(false);
     assertNull(fedcmDriver.getFederatedCredentialManagementDialog());

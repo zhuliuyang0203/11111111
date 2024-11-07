@@ -31,7 +31,6 @@ import static org.openqa.selenium.remote.http.HttpMethod.POST;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -103,7 +102,9 @@ class NodeTest {
   private Tracer tracer;
   private EventBus bus;
   private LocalNode local;
+  private LocalNode local2;
   private Node node;
+  private Node node2;
   private ImmutableCapabilities stereotype;
   private ImmutableCapabilities caps;
   private URI uri;
@@ -151,6 +152,7 @@ class NodeTest {
       builder = builder.enableManagedDownloads(true).sessionTimeout(Duration.ofSeconds(1));
     }
     local = builder.build();
+    local2 = builder.build();
 
     node =
         new RemoteNode(
@@ -159,6 +161,17 @@ class NodeTest {
             new NodeId(UUID.randomUUID()),
             uri,
             registrationSecret,
+            local.getSessionTimeout(),
+            ImmutableSet.of(caps));
+
+    node2 =
+        new RemoteNode(
+            tracer,
+            new PassthroughHttpClient.Factory(local2),
+            new NodeId(UUID.randomUUID()),
+            uri,
+            registrationSecret,
+            local2.getSessionTimeout(),
             ImmutableSet.of(caps));
   }
 
@@ -173,6 +186,7 @@ class NodeTest {
             new NodeId(UUID.randomUUID()),
             uri,
             registrationSecret,
+            local.getSessionTimeout(),
             ImmutableSet.of());
 
     Either<WebDriverException, CreateSessionResponse> response =
@@ -224,6 +238,7 @@ class NodeTest {
             new NodeId(UUID.randomUUID()),
             uri,
             registrationSecret,
+            local.getSessionTimeout(),
             ImmutableSet.of(caps));
 
     ImmutableCapabilities wrongCaps = new ImmutableCapabilities("browserName", "burger");
@@ -347,6 +362,7 @@ class NodeTest {
             new NodeId(UUID.randomUUID()),
             uri,
             registrationSecret,
+            local.getSessionTimeout(),
             ImmutableSet.of(caps));
 
     Either<WebDriverException, CreateSessionResponse> response =
@@ -368,13 +384,30 @@ class NodeTest {
     assertThatEither(response).isRight();
     Session session = response.right().getSession();
 
+    Either<WebDriverException, CreateSessionResponse> response2 =
+        node2.newSession(createSessionRequest(caps));
+    assertThatEither(response2).isRight();
+    Session session2 = response2.right().getSession();
+
+    // Assert that should respond to commands for sessions Node 1 owns
     HttpRequest req = new HttpRequest(POST, String.format("/session/%s/url", session.getId()));
     assertThat(local.matches(req)).isTrue();
     assertThat(node.matches(req)).isTrue();
 
-    req = new HttpRequest(POST, String.format("/session/%s/url", UUID.randomUUID()));
-    assertThat(local.matches(req)).isFalse();
-    assertThat(node.matches(req)).isFalse();
+    // Assert that should respond to commands for sessions Node 2 owns
+    HttpRequest req2 = new HttpRequest(POST, String.format("/session/%s/url", session2.getId()));
+    assertThat(local2.matches(req2)).isTrue();
+    assertThat(node2.matches(req2)).isTrue();
+
+    // Assert that should not respond to commands for sessions Node 1 does not own
+    HttpResponse res1 = node.execute(req2);
+    assertThat(res1.getStatus()).isEqualTo(404);
+    assertThat(Contents.string(res1)).contains("invalid session id");
+
+    // Assert that should not respond to commands for sessions Node 2 does not own
+    HttpResponse res2 = node2.execute(req);
+    assertThat(res2.getStatus()).isEqualTo(404);
+    assertThat(Contents.string(res2)).contains("invalid session id");
   }
 
   @Test
@@ -525,7 +558,7 @@ class NodeTest {
     String hello = "Hello, world!";
     String zip = Zip.zip(createTmpFile(hello));
     String payload = new Json().toJson(Collections.singletonMap("file", zip));
-    req.setContent(() -> new ByteArrayInputStream(payload.getBytes()));
+    req.setContent(Contents.bytes(payload.getBytes()));
     node.execute(req);
 
     File baseDir = getTemporaryFilesystemBaseDir(local.getUploadsFilesystem(session.getId()));
@@ -553,7 +586,7 @@ class NodeTest {
     String zip = simulateFileDownload(session.getId(), hello);
 
     String payload = new Json().toJson(Collections.singletonMap("name", zip));
-    req.setContent(() -> new ByteArrayInputStream(payload.getBytes()));
+    req.setContent(Contents.bytes(payload.getBytes()));
     HttpResponse rsp = node.execute(req);
     Map<String, Object> raw = new Json().toType(string(rsp), Json.MAP_TYPE);
     try {
@@ -592,7 +625,7 @@ class NodeTest {
     simulateFileDownload(session.getId(), "Goodbye, world!");
 
     String payload = new Json().toJson(Collections.singletonMap("name", zip));
-    req.setContent(() -> new ByteArrayInputStream(payload.getBytes()));
+    req.setContent(Contents.bytes(payload.getBytes()));
     HttpResponse rsp = node.execute(req);
     Map<String, Object> raw = new Json().toType(string(rsp), Json.MAP_TYPE);
     try {
@@ -758,7 +791,7 @@ class NodeTest {
       HttpRequest req =
           new HttpRequest(POST, String.format("/session/%s/se/files", session.getId()));
       String payload = new Json().toJson(Collections.singletonMap("my-file", "README.md"));
-      req.setContent(() -> new ByteArrayInputStream(payload.getBytes()));
+      req.setContent(Contents.bytes(payload.getBytes()));
 
       String msg = "Please specify file to download in payload as {\"name\": \"fileToDownload\"}";
       assertThatThrownBy(() -> node.execute(req)).hasMessageContaining(msg);
@@ -780,7 +813,7 @@ class NodeTest {
       HttpRequest req =
           new HttpRequest(POST, String.format("/session/%s/se/files", session.getId()));
       String payload = new Json().toJson(Collections.singletonMap("name", "README.md"));
-      req.setContent(() -> new ByteArrayInputStream(payload.getBytes()));
+      req.setContent(Contents.bytes(payload.getBytes()));
 
       String msg = "Cannot find file [README.md] in directory";
       assertThatThrownBy(() -> node.execute(req)).hasMessageContaining(msg);

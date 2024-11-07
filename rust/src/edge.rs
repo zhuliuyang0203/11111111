@@ -138,19 +138,19 @@ impl SeleniumManager for EdgeManager {
                 ),
                 (
                     BrowserPath::new(MACOS, STABLE),
-                    r#"/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"#,
+                    "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
                 ),
                 (
                     BrowserPath::new(MACOS, BETA),
-                    r#"/Applications/Microsoft Edge Beta.app/Contents/MacOS/Microsoft Edge Beta"#,
+                    "/Applications/Microsoft Edge Beta.app/Contents/MacOS/Microsoft Edge Beta",
                 ),
                 (
                     BrowserPath::new(MACOS, DEV),
-                    r#"/Applications/Microsoft Edge Dev.app/Contents/MacOS/Microsoft Edge Dev"#,
+                    "/Applications/Microsoft Edge Dev.app/Contents/MacOS/Microsoft Edge Dev",
                 ),
                 (
                     BrowserPath::new(MACOS, NIGHTLY),
-                    r#"/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary"#,
+                    "/Applications/Microsoft Edge Canary.app/Contents/MacOS/Microsoft Edge Canary",
                 ),
                 (BrowserPath::new(LINUX, STABLE), "/usr/bin/microsoft-edge"),
                 (
@@ -447,7 +447,15 @@ impl SeleniumManager for EdgeManager {
             return self.unavailable_discovery();
         }
 
-        let release = releases.first().unwrap();
+        let releases_with_artifacts: Vec<&Release> = releases
+            .into_iter()
+            .filter(|r| !r.artifacts.is_empty())
+            .collect();
+        if releases_with_artifacts.is_empty() {
+            return self.unavailable_discovery();
+        }
+
+        let release = releases_with_artifacts.first().unwrap();
         let artifacts: Vec<&Artifact> = release
             .artifacts
             .iter()
@@ -496,7 +504,7 @@ impl SeleniumManager for EdgeManager {
                     .to_string()
             } else {
                 format!(
-                    r#"Microsoft\Edge\Application\{}\msedge.exe"#,
+                    r"Microsoft\Edge\Application\{}\msedge.exe",
                     self.get_browser_version()
                 )
             };

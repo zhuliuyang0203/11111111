@@ -17,12 +17,8 @@
 // under the License.
 // </copyright>
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using OpenQA.Selenium.DevTools.V85.Log;
+using System.Threading.Tasks;
 
 namespace OpenQA.Selenium.DevTools.V85
 {

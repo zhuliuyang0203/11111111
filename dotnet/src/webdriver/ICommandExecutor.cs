@@ -18,6 +18,7 @@
 // </copyright>
 
 using System;
+using System.Threading.Tasks;
 
 namespace OpenQA.Selenium
 {
@@ -40,5 +41,13 @@ namespace OpenQA.Selenium
         /// <param name="commandToExecute">The command you wish to execute</param>
         /// <returns>A response from the browser</returns>
         Response Execute(Command commandToExecute);
+
+
+        /// <summary>
+        /// Executes a command as an asynchronous task.
+        /// </summary>
+        /// <param name="commandToExecute">The command you wish to execute</param>
+        /// <returns>A task object representing the asynchronous operation</returns>
+        Task<Response> ExecuteAsync(Command commandToExecute);
     }
 }

@@ -18,6 +18,7 @@
 // </copyright>
 
 using System;
+using System.Threading.Tasks;
 
 namespace OpenQA.Selenium
 {
@@ -33,10 +34,22 @@ namespace OpenQA.Selenium
         void Back();
 
         /// <summary>
+        /// Move back a single entry in the browser's history as an asynchronous task.
+        /// </summary>
+        /// <returns>A task object representing the asynchronous operation.</returns>
+        Task BackAsync();
+
+        /// <summary>
         /// Move a single "item" forward in the browser's history.
         /// </summary>
         /// <remarks>Does nothing if we are on the latest page viewed.</remarks>
         void Forward();
+
+        /// <summary>
+        /// Move a single "item" forward in the browser's history as an asynchronous task.
+        /// </summary>
+        /// <returns>A task object representing the asynchronous operation.</returns>
+        Task ForwardAsync();
 
         /// <summary>
         ///  Load a new web page in the current browser window.
@@ -54,6 +67,13 @@ namespace OpenQA.Selenium
         void GoToUrl(string url);
 
         /// <summary>
+        /// Navigate to a url as an asynchronous task.
+        /// </summary>
+        /// <param name="url">String of where you want the browser to go.</param>
+        /// <returns>A task object representing the asynchronous operation.</returns>
+        Task GoToUrlAsync(string url);
+
+        /// <summary>
         ///  Load a new web page in the current browser window.
         /// </summary>
         /// <param name="url">The URL to load.</param>
@@ -69,8 +89,21 @@ namespace OpenQA.Selenium
         void GoToUrl(Uri url);
 
         /// <summary>
+        /// Navigate to a url as an asynchronous task.
+        /// </summary>
+        /// <param name="url">Uri object of where you want the browser to go.</param>
+        /// <returns>A task object representing the asynchronous operation.</returns>
+        Task GoToUrlAsync(Uri url);
+
+        /// <summary>
         /// Refreshes the current page.
         /// </summary>
         void Refresh();
+
+        /// <summary>
+        /// Reload the current page as an asynchronous task.
+        /// </summary>
+        /// <returns>A task object representing the asynchronous operation.</returns>
+        Task RefreshAsync();
     }
 }

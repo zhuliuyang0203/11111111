@@ -17,10 +17,6 @@
 // under the License.
 // </copyright>
 
-using System;
-using System.Collections.Generic;
-using OpenQA.Selenium.Remote;
-
 namespace OpenQA.Selenium.Safari
 {
     /// <summary>

@@ -17,11 +17,11 @@
 // under the License.
 // </copyright>
 
-using System;
 using NUnit.Framework;
-using System.Drawing;
 using OpenQA.Selenium.Environment;
+using System;
 using System.Collections.ObjectModel;
+using System.Drawing;
 
 namespace OpenQA.Selenium
 {

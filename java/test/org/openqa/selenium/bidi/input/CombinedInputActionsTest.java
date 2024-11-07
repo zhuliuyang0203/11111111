@@ -26,11 +26,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 import static org.openqa.selenium.testing.TestUtilities.getEffectivePlatform;
 import static org.openqa.selenium.testing.TestUtilities.getIEVersion;
 import static org.openqa.selenium.testing.TestUtilities.isInternetExplorer;
-import static org.openqa.selenium.testing.drivers.Browser.CHROME;
-import static org.openqa.selenium.testing.drivers.Browser.EDGE;
-import static org.openqa.selenium.testing.drivers.Browser.FIREFOX;
-import static org.openqa.selenium.testing.drivers.Browser.IE;
-import static org.openqa.selenium.testing.drivers.Browser.SAFARI;
+import static org.openqa.selenium.testing.drivers.Browser.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,8 +41,8 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WaitingConditions;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.bidi.Input;
-import org.openqa.selenium.bidi.Script;
+import org.openqa.selenium.bidi.module.Input;
+import org.openqa.selenium.bidi.module.Script;
 import org.openqa.selenium.bidi.script.EvaluateResult;
 import org.openqa.selenium.bidi.script.EvaluateResultSuccess;
 import org.openqa.selenium.bidi.script.LocalValue;
@@ -70,9 +66,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testPlainClickingOnMultiSelectionList() {
     driver.get(pages.formSelectionPage);
 
@@ -94,9 +87,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testShiftClickingOnMultiSelectionList() {
     driver.get(pages.formSelectionPage);
 
@@ -118,9 +108,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   @NotYetImplemented(FIREFOX)
   public void testMultipleInputs() {
     driver.get(pages.formSelectionPage);
@@ -150,9 +137,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testControlClickingOnMultiSelectionList() {
     assumeFalse(
         getEffectivePlatform(driver).is(Platform.MAC), "FIXME: macs don't have CONTROL key");
@@ -180,9 +164,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testControlClickingOnCustomMultiSelectionList() {
     driver.get(pages.selectableItemsPage);
     Keys key = getEffectivePlatform(driver).is(Platform.MAC) ? Keys.COMMAND : Keys.CONTROL;
@@ -213,9 +194,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   @NotYetImplemented(FIREFOX)
   public void testControlClickingWithMultiplePointers() {
     driver.get(pages.selectableItemsPage);
@@ -257,9 +235,8 @@ class CombinedInputActionsTest extends JupiterTestBase {
 
   @SwitchToTopAfterTest
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
   @NotYetImplemented(EDGE)
+  @NotYetImplemented(CHROME)
   void canMoveMouseToAnElementInAnIframeAndClick() {
     driver.get(appServer.whereIs("click_tests/click_in_iframe.html"));
 
@@ -299,17 +276,11 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   void testCanClickOnLinks() {
     navigateToClicksPageAndClickLink();
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testCanClickOnLinksWithAnOffset() {
     driver.get(pages.clicksPage);
 
@@ -323,9 +294,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testClickAfterMoveToAnElementWithAnOffsetShouldUseLastMousePosition() {
     driver.get(pages.clickEventPage);
 
@@ -367,9 +335,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
    * driver keeps the wrong state, mouse movement will end up at the wrong coordinates.
    */
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testMouseMovementWorksWhenNavigatingToAnotherPage() {
     navigateToClicksPageAndClickLink();
 
@@ -381,10 +346,8 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   @NotYetImplemented(CHROME)
+  @NotYetImplemented(EDGE)
   @NotYetImplemented(FIREFOX)
   public void testChordControlCutAndPaste() {
     assumeFalse(
@@ -422,9 +385,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testCombiningShiftAndClickResultsInANewWindow() {
     driver.get(pages.linkedImage);
     WebElement link = driver.findElement(By.id("link"));
@@ -448,9 +408,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void testHoldingDownShiftKeyWhileClicking() {
     driver.get(pages.clickEventPage);
 
@@ -465,9 +422,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   public void canClickOnASuckerFishStyleMenu() throws InterruptedException {
     driver.get(pages.javascriptPage);
 
@@ -493,9 +447,6 @@ class CombinedInputActionsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
   void testCanClickOnSuckerFishMenuItem() {
     driver.get(pages.javascriptPage);
 

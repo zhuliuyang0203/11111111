@@ -17,12 +17,7 @@
 package org.openqa.selenium.bidi.script;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.openqa.selenium.testing.Safely.safelyCall;
-import static org.openqa.selenium.testing.drivers.Browser.CHROME;
-import static org.openqa.selenium.testing.drivers.Browser.EDGE;
-import static org.openqa.selenium.testing.drivers.Browser.FIREFOX;
-import static org.openqa.selenium.testing.drivers.Browser.IE;
-import static org.openqa.selenium.testing.drivers.Browser.SAFARI;
+import static org.openqa.selenium.testing.drivers.Browser.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,31 +25,18 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.bidi.Script;
 import org.openqa.selenium.bidi.browsingcontext.BrowsingContext;
-import org.openqa.selenium.environment.webserver.AppServer;
-import org.openqa.selenium.environment.webserver.NettyAppServer;
+import org.openqa.selenium.bidi.module.Script;
 import org.openqa.selenium.testing.JupiterTestBase;
+import org.openqa.selenium.testing.NeedsFreshDriver;
 import org.openqa.selenium.testing.NotYetImplemented;
 import org.openqa.selenium.testing.Pages;
 
 public class ScriptEventsTest extends JupiterTestBase {
-  private AppServer server;
-
-  @BeforeEach
-  public void setUp() {
-    server = new NettyAppServer();
-    server.start();
-  }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(CHROME)
+  @NeedsFreshDriver
   void canListenToChannelMessage()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (Script script = new Script(driver)) {
@@ -82,10 +64,7 @@ public class ScriptEventsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(EDGE)
-  @NotYetImplemented(CHROME)
+  @NeedsFreshDriver
   void canListenToRealmCreatedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (Script script = new Script(driver)) {
@@ -94,7 +73,7 @@ public class ScriptEventsTest extends JupiterTestBase {
 
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
 
-      context.navigate(new Pages(server).blankPage);
+      context.navigate(new Pages(appServer).blankPage);
       RealmInfo realmInfo = future.get(5, TimeUnit.SECONDS);
       assertThat(realmInfo.getRealmId()).isNotNull();
       assertThat(realmInfo.getRealmType()).isEqualTo(RealmType.WINDOW);
@@ -102,8 +81,7 @@ public class ScriptEventsTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
+  @NeedsFreshDriver
   @NotYetImplemented(EDGE)
   @NotYetImplemented(CHROME)
   @NotYetImplemented(FIREFOX)
@@ -120,13 +98,5 @@ public class ScriptEventsTest extends JupiterTestBase {
       assertThat(realmInfo.getRealmId()).isNotNull();
       assertThat(realmInfo.getRealmType()).isEqualTo(RealmType.WINDOW);
     }
-  }
-
-  @AfterEach
-  public void quitDriver() {
-    if (driver != null) {
-      driver.quit();
-    }
-    safelyCall(server::stop);
   }
 }

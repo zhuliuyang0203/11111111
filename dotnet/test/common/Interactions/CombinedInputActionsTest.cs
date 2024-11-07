@@ -19,7 +19,6 @@
 
 using NUnit.Framework;
 using OpenQA.Selenium.Environment;
-using OpenQA.Selenium.Internal;
 using System;
 using System.Collections.ObjectModel;
 using System.Drawing;
@@ -336,7 +335,7 @@ namespace OpenQA.Selenium.Interactions
             Assert.AreEqual(originalTitle, driver.Title, "Should not have navigated away.");
 
             string originalHandle = driver.CurrentWindowHandle;
-            foreach(string newHandle in driver.WindowHandles)
+            foreach (string newHandle in driver.WindowHandles)
             {
                 if (newHandle != originalHandle)
                 {
@@ -415,6 +414,37 @@ namespace OpenQA.Selenium.Interactions
             DateTime start = DateTime.Now;
             new Actions(driver).Pause(TimeSpan.FromMilliseconds(1200)).Build().Perform();
             Assert.IsTrue(DateTime.Now - start > TimeSpan.FromMilliseconds(1200));
+        }
+
+        [Test]
+        public void ShouldHandleClashingDeviceNamesGracefully()
+        {
+            var actionsWithPointer = new Actions(driver)
+                .SetActivePointer(PointerKind.Mouse, "test")
+                .Click();
+
+            Assert.That(() =>
+            {
+                actionsWithPointer.SetActiveWheel("test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a wheel. Actual input type: Pointer"));
+
+            var actionsWithKeyboard = new Actions(driver)
+                .SetActiveKeyboard("test")
+                .KeyDown(Keys.Shift).KeyUp(Keys.Shift);
+
+            Assert.That(() =>
+            {
+                actionsWithKeyboard.SetActivePointer(PointerKind.Pen, "test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a pointer. Actual input type: Key"));
+
+            var actionsWithWheel = new Actions(driver)
+               .SetActiveWheel("test")
+               .ScrollByAmount(0, 0);
+
+            Assert.That(() =>
+            {
+                actionsWithWheel.SetActiveKeyboard("test");
+            }, Throws.InvalidOperationException.With.Message.EqualTo("Device under the name \"test\" is not a keyboard. Actual input type: Wheel"));
         }
 
         private bool FuzzyPositionMatching(int expectedX, int expectedY, string locationTuple)

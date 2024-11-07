@@ -19,12 +19,11 @@
 
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using System;
 using NUnit.Framework.Internal;
+using OpenQA.Selenium.Environment;
+using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using OpenQA.Selenium.Environment;
-
 using OSPlatform = System.Runtime.InteropServices.OSPlatform;
 
 

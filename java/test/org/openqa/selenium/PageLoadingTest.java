@@ -25,6 +25,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElemen
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 import static org.openqa.selenium.testing.drivers.Browser.CHROME;
+import static org.openqa.selenium.testing.drivers.Browser.EDGE;
 import static org.openqa.selenium.testing.drivers.Browser.FIREFOX;
 import static org.openqa.selenium.testing.drivers.Browser.IE;
 import static org.openqa.selenium.testing.drivers.Browser.SAFARI;
@@ -35,10 +36,12 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.testing.Ignore;
 import org.openqa.selenium.testing.JupiterTestBase;
 import org.openqa.selenium.testing.NeedsFreshDriver;
+import org.openqa.selenium.testing.NeedsSecureServer;
 import org.openqa.selenium.testing.NoDriverAfterTest;
 import org.openqa.selenium.testing.NotYetImplemented;
 import org.openqa.selenium.testing.SwitchToTopAfterTest;
 
+@NeedsSecureServer
 class PageLoadingTest extends JupiterTestBase {
 
   @Test
@@ -72,6 +75,7 @@ class PageLoadingTest extends JupiterTestBase {
 
   @Test
   @NotYetImplemented(CHROME)
+  @NotYetImplemented(EDGE)
   @NotYetImplemented(FIREFOX)
   public void testShouldReturnWhenGettingAUrlThatDoesNotResolve() {
     assertThatCode(() -> driver.get("http://www.thisurldoesnotexist.comx/"))
@@ -93,6 +97,7 @@ class PageLoadingTest extends JupiterTestBase {
 
   @Test
   @NotYetImplemented(CHROME)
+  @NotYetImplemented(EDGE)
   @NotYetImplemented(FIREFOX)
   public void testShouldReturnWhenGettingAUrlThatDoesNotConnect() {
     // Here's hoping that there's nothing here. There shouldn't be

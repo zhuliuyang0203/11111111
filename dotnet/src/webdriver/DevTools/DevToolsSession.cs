@@ -17,14 +17,15 @@
 // under the License.
 // </copyright>
 
+using OpenQA.Selenium.Internal.Logging;
 using System;
 using System.Collections.Concurrent;
 using System.Globalization;
 using System.Net.Http;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace OpenQA.Selenium.DevTools
 {
@@ -56,6 +57,8 @@ namespace OpenQA.Selenium.DevTools
 
         private DevToolsDomains domains;
         private readonly DevToolsOptions options;
+
+        private readonly static ILogger logger = Internal.Logging.Log.GetLogger<DevToolsSession>();
 
         /// <summary>
         /// Initializes a new instance of the DevToolsSession class, using the specified WebSocket endpoint.
@@ -153,7 +156,7 @@ namespace OpenQA.Selenium.DevTools
                 throw new ArgumentNullException(nameof(command));
             }
 
-            var result = await SendCommand(command.CommandName, JToken.FromObject(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
+            var result = await SendCommand(command.CommandName, JsonSerializer.SerializeToNode(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
 
             if (result == null)
             {
@@ -165,7 +168,7 @@ namespace OpenQA.Selenium.DevTools
                 throw new InvalidOperationException($"Type {command.GetType()} does not correspond to a known command response type.");
             }
 
-            return result.ToObject(commandResponseType) as ICommandResponse<TCommand>;
+            return result.Deserialize(commandResponseType) as ICommandResponse<TCommand>;
         }
 
         /// <summary>
@@ -186,7 +189,7 @@ namespace OpenQA.Selenium.DevTools
                 throw new ArgumentNullException(nameof(command));
             }
 
-            var result = await SendCommand(command.CommandName, sessionId, JToken.FromObject(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
+            var result = await SendCommand(command.CommandName, sessionId, JsonSerializer.SerializeToNode(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
 
             if (result == null)
             {
@@ -198,7 +201,7 @@ namespace OpenQA.Selenium.DevTools
                 throw new InvalidOperationException($"Type {typeof(TCommand)} does not correspond to a known command response type.");
             }
 
-            return result.ToObject(commandResponseType) as ICommandResponse<TCommand>;
+            return result.Deserialize(commandResponseType) as ICommandResponse<TCommand>;
         }
 
         /// <summary>
@@ -220,62 +223,67 @@ namespace OpenQA.Selenium.DevTools
                 throw new ArgumentNullException(nameof(command));
             }
 
-            var result = await SendCommand(command.CommandName, JToken.FromObject(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
+            var result = await SendCommand(command.CommandName, JsonSerializer.SerializeToNode(command), cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived).ConfigureAwait(false);
 
             if (result == null)
             {
                 return default(TCommandResponse);
             }
 
-            return result.ToObject<TCommandResponse>();
+            return result.Deserialize<TCommandResponse>();
         }
 
         /// <summary>
-        /// Returns a JToken based on a command created with the specified command name and params.
+        /// Returns a JsonNode based on a command created with the specified command name and params.
         /// </summary>
         /// <param name="commandName">The name of the command to send.</param>
-        /// <param name="commandParameters">The parameters of the command as a JToken object</param>
+        /// <param name="commandParameters">The parameters of the command as a JsonNode object</param>
         /// <param name="cancellationToken">A CancellationToken object to allow for cancellation of the command.</param>
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
         //[DebuggerStepThrough]
-        public Task<JToken> SendCommand(string commandName, JToken commandParameters, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+        public async Task<JsonNode> SendCommand(string commandName, JsonNode commandParameters, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
         {
-            return SendCommand(commandName, ActiveSessionId, commandParameters, cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived);
-        }
-
-        /// <summary>
-        /// Returns a JToken based on a command created with the specified command name and params.
-        /// </summary>
-        /// <param name="commandName">The name of the command to send.</param>
-        /// <param name="sessionId">The sessionId of the command.</param>
-        /// <param name="commandParameters">The parameters of the command as a JToken object</param>
-        /// <param name="cancellationToken">A CancellationToken object to allow for cancellation of the command.</param>
-        /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
-        /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
-        /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
-        //[DebuggerStepThrough]
-        public async Task<JToken> SendCommand(string commandName, string sessionId, JToken commandParameters, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
-        {
-            if (millisecondsTimeout.HasValue == false)
-            {
-                millisecondsTimeout = Convert.ToInt32(CommandTimeout.TotalMilliseconds);
-            }
-
             if (this.attachedTargetId == null)
             {
                 LogTrace("Session not currently attached to a target; reattaching");
                 await this.InitializeSession().ConfigureAwait(false);
             }
 
+            return await SendCommand(commandName, this.ActiveSessionId, commandParameters, cancellationToken, millisecondsTimeout, throwExceptionIfResponseNotReceived);
+        }
+
+        /// <summary>
+        /// Returns a JsonNode based on a command created with the specified command name and params.
+        /// </summary>
+        /// <param name="commandName">The name of the command to send.</param>
+        /// <param name="sessionId">The sessionId of the command.</param>
+        /// <param name="commandParameters">The parameters of the command as a JsonNode object</param>
+        /// <param name="cancellationToken">A CancellationToken object to allow for cancellation of the command.</param>
+        /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
+        /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
+        /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        //[DebuggerStepThrough]
+        public async Task<JsonNode> SendCommand(string commandName, string sessionId, JsonNode commandParameters, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+        {
+            if (millisecondsTimeout.HasValue == false)
+            {
+                millisecondsTimeout = Convert.ToInt32(CommandTimeout.TotalMilliseconds);
+            }
+
             var message = new DevToolsCommandData(Interlocked.Increment(ref this.currentCommandId), sessionId, commandName, commandParameters);
 
             if (this.connection != null && this.connection.IsActive)
             {
+                if (logger.IsEnabled(LogEventLevel.Trace))
+                {
+                    logger.Trace($"CDP SND >> {message.CommandId} {message.CommandName}: {commandParameters.ToJsonString()}");
+                }
+
                 LogTrace("Sending {0} {1}: {2}", message.CommandId, message.CommandName, commandParameters.ToString());
 
-                string contents = JsonConvert.SerializeObject(message);
+                string contents = JsonSerializer.Serialize(message);
                 this.pendingCommands.TryAdd(message.CommandId, message);
                 await this.connection.SendData(contents).ConfigureAwait(false);
 
@@ -290,8 +298,8 @@ namespace OpenQA.Selenium.DevTools
                 {
                     if (modified.IsError)
                     {
-                        var errorMessage = modified.Result.Value<string>("message");
-                        var errorData = modified.Result.Value<string>("data");
+                        var errorMessage = modified.Result["message"].GetValue<string>();
+                        var errorData = modified.Result["data"]?.GetValue<string>();
 
                         var exceptionMessage = $"{commandName}: {errorMessage}";
                         if (!string.IsNullOrWhiteSpace(errorData))
@@ -302,7 +310,7 @@ namespace OpenQA.Selenium.DevTools
                         LogTrace("Recieved Error Response {0}: {1} {2}", modified.CommandId, message, errorData);
                         throw new CommandResponseException(exceptionMessage)
                         {
-                            Code = modified.Result.Value<long>("code")
+                            Code = modified.Result["code"]?.GetValue<long>() ?? -1
                         };
                     }
 
@@ -402,7 +410,7 @@ namespace OpenQA.Selenium.DevTools
                     rawVersionInfo = await client.GetStringAsync("/json/version").ConfigureAwait(false);
                 }
 
-                var versionInfo = JsonConvert.DeserializeObject<DevToolsVersionInfo>(rawVersionInfo);
+                var versionInfo = JsonSerializer.Deserialize<DevToolsVersionInfo>(rawVersionInfo);
                 this.websocketAddress = versionInfo.WebSocketDebuggerUrl;
 
                 if (requestedProtocolVersion == AutoDetectDevToolsProtocolVersion)
@@ -541,16 +549,21 @@ namespace OpenQA.Selenium.DevTools
 
         private void ProcessMessage(string message)
         {
-            var messageObject = JObject.Parse(message);
-
-            if (messageObject.TryGetValue("id", out var idProperty))
+            if (logger.IsEnabled(LogEventLevel.Trace))
             {
-                var commandId = idProperty.Value<long>();
+                logger.Trace($"CDP RCV << {message}");
+            }
+
+            var messageObject = JsonObject.Parse(message).AsObject();
+
+            if (messageObject.TryGetPropertyValue("id", out var idProperty))
+            {
+                long commandId = (long)idProperty;
 
                 DevToolsCommandData commandInfo;
                 if (this.pendingCommands.TryGetValue(commandId, out commandInfo))
                 {
-                    if (messageObject.TryGetValue("error", out var errorProperty))
+                    if (messageObject.TryGetPropertyValue("error", out var errorProperty))
                     {
                         commandInfo.IsError = true;
                         commandInfo.Result = errorProperty;
@@ -571,9 +584,9 @@ namespace OpenQA.Selenium.DevTools
                 return;
             }
 
-            if (messageObject.TryGetValue("method", out var methodProperty))
+            if (messageObject.TryGetPropertyValue("method", out var methodProperty))
             {
-                var method = methodProperty.Value<string>();
+                var method = (string)methodProperty;
                 var methodParts = method.Split(new char[] { '.' }, 2);
                 var eventData = messageObject["params"];
 
@@ -584,7 +597,22 @@ namespace OpenQA.Selenium.DevTools
                 // DevTools commands that may be sent in the body of the attached
                 // event handler. If thread pool starvation seems to become a problem,
                 // we can switch to a channel-based queue.
-                Task.Run(() => OnDevToolsEventReceived(new DevToolsEventReceivedEventArgs(methodParts[0], methodParts[1], eventData)));
+                Task.Run(() =>
+                {
+                    try
+                    {
+                        OnDevToolsEventReceived(new DevToolsEventReceivedEventArgs(methodParts[0], methodParts[1], eventData));
+                    }
+                    catch (Exception ex)
+                    {
+                        if (logger.IsEnabled(LogEventLevel.Warn))
+                        {
+                            logger.Warn($"CDP VNT ^^ Unhandled error occured in event handler of '{method}' method. {ex}");
+                        }
+
+                        throw;
+                    }
+                });
 
                 return;
             }

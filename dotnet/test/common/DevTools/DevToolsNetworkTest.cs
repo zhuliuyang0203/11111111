@@ -17,15 +17,15 @@
 // under the License.
 // </copyright>
 
+using NUnit.Framework;
+using OpenQA.Selenium.Environment;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using NUnit.Framework;
-using OpenQA.Selenium.Environment;
 
 namespace OpenQA.Selenium.DevTools
 {
-    using CurrentCdpVersion = V121;
+    using CurrentCdpVersion = V130;
 
     [TestFixture]
     public class DevToolsNetworkTest : DevToolsTestFixture
@@ -222,7 +222,6 @@ namespace OpenQA.Selenium.DevTools
         }
 
         [Test]
-        [IgnorePlatform("Windows", "Not working properly")]
         [IgnoreBrowser(Selenium.Browser.IE, "IE does not support Chrome DevTools Protocol")]
         [IgnoreBrowser(Selenium.Browser.Firefox, "Firefox does not support Chrome DevTools Protocol")]
         [IgnoreBrowser(Selenium.Browser.Safari, "Safari does not support Chrome DevTools Protocol")]
@@ -251,7 +250,8 @@ namespace OpenQA.Selenium.DevTools
             var searchResponse = await domains.Network.SearchInResponseBody(new CurrentCdpVersion.Network.SearchInResponseBodyCommandSettings()
             {
                 RequestId = requestIds[0],
-                Query = "/",
+                Query = ".*",
+                IsRegex = true
             });
 
             Assert.That(searchResponse.Result.Length > 0);
@@ -405,9 +405,10 @@ namespace OpenQA.Selenium.DevTools
                 if (string.Compare(e.Request.Method, "post", StringComparison.OrdinalIgnoreCase) == 0)
                 {
                     requestIds[0] = e.RequestId;
+                    requestSync.Set();
                 }
-                requestSync.Set();
             };
+
             domains.Network.RequestWillBeSent += requestWillBeSentHandler;
 
             driver.Url = EnvironmentManager.Instance.UrlBuilder.WhereIs("postForm.html");

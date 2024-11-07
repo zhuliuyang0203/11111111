@@ -17,12 +17,9 @@
 // under the License.
 // </copyright>
 
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Globalization;
-using System.IO;
 using OpenQA.Selenium.Chromium;
+using System;
+using System.Globalization;
 
 namespace OpenQA.Selenium.Chrome
 {

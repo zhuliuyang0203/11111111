@@ -18,7 +18,6 @@
 // </copyright>
 
 using NUnit.Framework;
-using OpenQA.Selenium.Internal;
 
 namespace OpenQA.Selenium
 {

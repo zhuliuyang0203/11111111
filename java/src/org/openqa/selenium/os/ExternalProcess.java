@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UncheckedIOException;
+import java.nio.charset.Charset;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -254,7 +255,18 @@ public class ExternalProcess {
    * @return stdout and stderr as String in Charset.defaultCharset() encoding
    */
   public String getOutput() {
-    return outputStream.toString();
+    return getOutput(Charset.defaultCharset());
+  }
+
+  /**
+   * The last N bytes of the combined stdout and stderr as String, the value of N is set while
+   * building the OsProcess.
+   *
+   * @param encoding the encoding to decode the stream
+   * @return stdout and stderr as String in the given encoding
+   */
+  public String getOutput(Charset encoding) {
+    return outputStream.toString(encoding);
   }
 
   public boolean isAlive() {
@@ -265,7 +277,21 @@ public class ExternalProcess {
     boolean exited = process.waitFor(duration.toMillis(), TimeUnit.MILLISECONDS);
 
     if (exited) {
-      worker.join();
+      try {
+        // the worker might not stop even when process.destroyForcibly is called
+        worker.join(8000);
+      } catch (InterruptedException ex) {
+        Thread.interrupted();
+      } finally {
+        // if already stopped interrupt is ignored, otherwise raises I/O exceptions in the worker
+        worker.interrupt();
+        try {
+          // now we might be able to join
+          worker.join(2000);
+        } catch (InterruptedException ex) {
+          Thread.interrupted();
+        }
+      }
     }
 
     return exited;
@@ -291,8 +317,11 @@ public class ExternalProcess {
    */
   public void shutdown(Duration timeout) {
     try {
-      if (process.supportsNormalTermination()) {
-        process.destroy();
+      // use the handle to prevent closing the stdin, stdout, stderr streams
+      ProcessHandle handle = process.toHandle();
+
+      if (handle.supportsNormalTermination()) {
+        handle.destroy();
 
         try {
           if (process.waitFor(timeout.toMillis(), MILLISECONDS)) {
@@ -304,7 +333,7 @@ public class ExternalProcess {
         }
       }
 
-      process.destroyForcibly();
+      handle.destroyForcibly();
       try {
         process.waitFor(timeout.toMillis(), MILLISECONDS);
       } catch (InterruptedException ex) {

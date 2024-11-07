@@ -17,9 +17,9 @@
 // under the License.
 // </copyright>
 
-using System;
 using Moq;
 using NUnit.Framework;
+using System;
 
 namespace OpenQA.Selenium.Support.UI
 {
@@ -134,7 +134,7 @@ namespace OpenQA.Selenium.Support.UI
             }
             catch (WebDriverTimeoutException e)
             {
-                Assert.IsInstanceOf(typeof (NoSuchElementException), e.InnerException);
+                Assert.IsInstanceOf(typeof(NoSuchElementException), e.InnerException);
             }
         }
 

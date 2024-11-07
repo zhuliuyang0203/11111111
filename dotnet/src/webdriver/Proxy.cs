@@ -21,7 +21,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace OpenQA.Selenium
 {
@@ -68,7 +68,6 @@ namespace OpenQA.Selenium
     /// <summary>
     /// Describes proxy settings to be used with a driver instance.
     /// </summary>
-    [JsonObject(MemberSerialization.OptIn)]
     public class Proxy
     {
         private ProxyKind proxyKind = ProxyKind.Unspecified;
@@ -205,7 +204,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets the type of proxy as a string for JSON serialization.
         /// </summary>
-        [JsonProperty("proxyType")]
+        [JsonPropertyName("proxyType")]
         public string SerializableProxyKind
         {
             get
@@ -246,7 +245,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the proxy for the FTP protocol.
         /// </summary>
-        [JsonProperty("ftpProxy", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("ftpProxy")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string FtpProxy
         {
             get
@@ -265,7 +265,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the proxy for the HTTP protocol.
         /// </summary>
-        [JsonProperty("httpProxy", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("httpProxy")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string HttpProxy
         {
             get
@@ -284,7 +285,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets the list of address for which to bypass the proxy as an array.
         /// </summary>
-        [JsonProperty("noProxy", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("noProxy")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public ReadOnlyCollection<string> BypassProxyAddresses
         {
             get
@@ -301,7 +303,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the URL used for proxy automatic configuration.
         /// </summary>
-        [JsonProperty("proxyAutoconfigUrl", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("proxyAutoconfigUrl")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string ProxyAutoConfigUrl
         {
             get
@@ -320,7 +323,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the proxy for the SSL protocol.
         /// </summary>
-        [JsonProperty("sslProxy", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("sslProxy")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string SslProxy
         {
             get
@@ -339,7 +343,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the proxy for the SOCKS protocol.
         /// </summary>
-        [JsonProperty("socksProxy", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("socksProxy")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string SocksProxy
         {
             get
@@ -358,7 +363,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of username for the SOCKS proxy.
         /// </summary>
-        [JsonProperty("socksUsername", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("socksUsername")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string SocksUserName
         {
             get
@@ -378,7 +384,8 @@ namespace OpenQA.Selenium
         /// Gets or sets the value of the protocol version for the SOCKS proxy.
         /// Value can be <see langword="null"/> if not set.
         /// </summary>
-        [JsonProperty("socksVersion", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("socksVersion")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public int? SocksVersion
         {
             get
@@ -409,7 +416,8 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of password for the SOCKS proxy.
         /// </summary>
-        [JsonProperty("socksPassword", DefaultValueHandling = DefaultValueHandling.Ignore, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("socksPassword")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string SocksPassword
         {
             get

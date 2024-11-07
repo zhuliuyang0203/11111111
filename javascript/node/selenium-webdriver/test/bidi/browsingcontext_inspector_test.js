@@ -17,33 +17,31 @@
 
 'use strict'
 
-const assert = require('assert')
-const firefox = require('../../firefox')
-const {Browser, By, WebElement} = require('../../')
-const {Pages, suite} = require('../../lib/test')
-const BrowsingContext = require('../../bidi/browsingContext')
-const BrowsingContextInspector = require('../../bidi/browsingContextInspector')
-const until = require('../../lib/until')
+const assert = require('node:assert')
+const { Browser, By } = require('selenium-webdriver')
+const { Pages, suite, ignore } = require('../../lib/test')
+const BrowsingContext = require('selenium-webdriver/bidi/browsingContext')
+const BrowsingContextInspector = require('selenium-webdriver/bidi/browsingContextInspector')
+const until = require('selenium-webdriver/lib/until')
 
 suite(
   function (env) {
     let driver
+    let browsingcontextInspector
 
     beforeEach(async function () {
-      driver = await env
-        .builder()
-        .setFirefoxOptions(new firefox.Options().enableBidi())
-        .build()
+      driver = await env.builder().build()
     })
 
     afterEach(async function () {
+      await browsingcontextInspector.close()
       await driver.quit()
     })
 
     describe('Browsing Context Inspector', function () {
       it('can listen to window browsing context created event', async function () {
         let contextInfo = null
-        const browsingcontextInspector = await BrowsingContextInspector(driver)
+        browsingcontextInspector = await BrowsingContextInspector(driver)
         await browsingcontextInspector.onBrowsingContextCreated((entry) => {
           contextInfo = entry
         })
@@ -58,7 +56,7 @@ suite(
 
       it('can listen to browsing context destroyed event', async function () {
         let contextInfo = null
-        const browsingcontextInspector = await BrowsingContextInspector(driver)
+        browsingcontextInspector = await BrowsingContextInspector(driver)
         await browsingcontextInspector.onBrowsingContextDestroyed((entry) => {
           contextInfo = entry
         })
@@ -76,7 +74,7 @@ suite(
 
       it('can listen to tab browsing context created event', async function () {
         let contextInfo = null
-        const browsingcontextInspector = await BrowsingContextInspector(driver)
+        browsingcontextInspector = await BrowsingContextInspector(driver)
         await browsingcontextInspector.onBrowsingContextCreated((entry) => {
           contextInfo = entry
         })
@@ -91,7 +89,7 @@ suite(
       })
 
       it('can listen to dom content loaded event', async function () {
-        const browsingcontextInspector = await BrowsingContextInspector(driver)
+        browsingcontextInspector = await BrowsingContextInspector(driver)
         let navigationInfo = null
         await browsingcontextInspector.onDomContentLoaded((entry) => {
           navigationInfo = entry
@@ -108,7 +106,7 @@ suite(
 
       it('can listen to browsing context loaded event', async function () {
         let navigationInfo = null
-        const browsingcontextInspector = await BrowsingContextInspector(driver)
+        browsingcontextInspector = await BrowsingContextInspector(driver)
 
         await browsingcontextInspector.onBrowsingContextLoaded((entry) => {
           navigationInfo = entry
@@ -122,23 +120,26 @@ suite(
         assert(navigationInfo.url.includes('/bidi/logEntryAdded.html'))
       })
 
-      xit('can listen to navigation started event', async function () {
-        let navigationInfo = null
-        const browsingConextInspector = await BrowsingContextInspector(driver)
+      ignore(env.browsers(Browser.CHROME, Browser.EDGE)).it(
+        'can listen to navigation started event',
+        async function () {
+          let navigationInfo = null
+          const browsingConextInspector = await BrowsingContextInspector(driver)
 
-        await browsingConextInspector.onNavigationStarted((entry) => {
-          navigationInfo = entry
-        })
+          await browsingConextInspector.onNavigationStarted((entry) => {
+            navigationInfo = entry
+          })
 
-        const browsingContext = await BrowsingContext(driver, {
-          browsingContextId: await driver.getWindowHandle(),
-        })
+          const browsingContext = await BrowsingContext(driver, {
+            browsingContextId: await driver.getWindowHandle(),
+          })
 
-        await browsingContext.navigate(Pages.logEntryAdded, 'complete')
+          await browsingContext.navigate(Pages.logEntryAdded, 'complete')
 
-        assert.equal(navigationInfo.browsingContextId, browsingContext.id)
-        assert(navigationInfo.url.includes('/bidi/logEntryAdded.html'))
-      })
+          assert.equal(navigationInfo.browsingContextId, browsingContext.id)
+          assert(navigationInfo.url.includes('/bidi/logEntryAdded.html'))
+        },
+      )
 
       it('can listen to fragment navigated event', async function () {
         let navigationInfo = null
@@ -153,62 +154,74 @@ suite(
           navigationInfo = entry
         })
 
-        await browsingContext.navigate(
-          Pages.linkedImage + '#linkToAnchorOnThisPage',
-          'complete'
-        )
+        await browsingContext.navigate(Pages.linkedImage + '#linkToAnchorOnThisPage', 'complete')
 
         assert.equal(navigationInfo.browsingContextId, browsingContext.id)
         assert(navigationInfo.url.includes('linkToAnchorOnThisPage'))
       })
 
-      xit('can listen to user prompt opened event', async function () {
-        let userpromptOpened = null
-        const browsingConextInspector = await BrowsingContextInspector(driver)
+      ignore(env.browsers(Browser.EDGE, Browser.CHROME)).it(
+        'can listen to user prompt opened event',
+        async function () {
+          let userpromptOpened = null
+          browsingcontextInspector = await BrowsingContextInspector(driver)
 
-        const browsingContext = await BrowsingContext(driver, {
-          browsingContextId: await driver.getWindowHandle(),
-        })
+          const browsingContext = await BrowsingContext(driver, {
+            browsingContextId: await driver.getWindowHandle(),
+          })
 
-        await driver.get(Pages.alertsPage)
+          await browsingcontextInspector.onUserPromptOpened((entry) => {
+            userpromptOpened = entry
+          })
 
-        await driver.findElement(By.id('alert')).click()
+          await driver.get(Pages.alertsPage)
 
-        await driver.wait(until.alertIsPresent())
+          await driver.findElement(By.id('alert')).click()
 
-        await browsingConextInspector.onUserPromptOpened((entry) => {
-          userpromptOpened = entry
-        })
+          await driver.wait(until.alertIsPresent())
 
-        assert.equal(userpromptOpened.browsingContextId, browsingContext.id)
-        assert.equal(userpromptOpened.type, 'alert')
-      })
+          await browsingContext.handleUserPrompt(true)
 
-      xit('can listen to user prompt closed event', async function () {
-        let userpromptClosed = null
-        const browsingConextInspector = await BrowsingContextInspector(driver)
+          // Chrome/Edge do not return the window's browsing context id as per the spec.
+          // This assertion fails.
+          // It is probably a bug in the Chrome/Edge driver.
+          assert.equal(userpromptOpened.browsingContextId, browsingContext.id)
+          assert.equal(userpromptOpened.type, 'alert')
+        },
+      )
 
-        const browsingContext = await BrowsingContext(driver, {
-          browsingContextId: await driver.getWindowHandle(),
-        })
+      ignore(env.browsers(Browser.EDGE, Browser.CHROME)).it(
+        'can listen to user prompt closed event',
+        async function () {
+          const windowHandle = await driver.getWindowHandle()
+          let userpromptClosed = null
+          browsingcontextInspector = await BrowsingContextInspector(driver, windowHandle)
 
-        await driver.get(Pages.alertsPage)
+          const browsingContext = await BrowsingContext(driver, {
+            browsingContextId: windowHandle,
+          })
 
-        await driver.findElement(By.id('prompt')).click()
+          await driver.get(Pages.alertsPage)
 
-        await driver.wait(until.alertIsPresent())
+          await driver.findElement(By.id('prompt')).click()
 
-        await browsingConextInspector.onUserPromptClosed((entry) => {
-          userpromptClosed = entry
-        })
+          await driver.wait(until.alertIsPresent())
 
-        await browsingContext.handleUserPrompt(true, 'selenium')
+          await browsingcontextInspector.onUserPromptClosed((entry) => {
+            userpromptClosed = entry
+          })
 
-        assert.equal(userpromptClosed.browsingContextId, browsingContext.id)
-        assert.equal(userpromptClosed.accepted, true)
-        assert.equal(userpromptClosed.userText, 'selenium')
-      })
+          await browsingContext.handleUserPrompt(true, 'selenium')
+
+          // Chrome/Edge do not return the window's browsing context id as per the spec.
+          // This assertion fails.
+          // It is probably a bug in the Chrome/Edge driver.
+          assert.equal(userpromptClosed.browsingContextId, browsingContext.id)
+          assert.equal(userpromptClosed.accepted, true)
+          assert.equal(userpromptClosed.userText, 'selenium')
+        },
+      )
     })
   },
-  {browsers: [Browser.FIREFOX]}
+  { browsers: [Browser.FIREFOX, Browser.CHROME, Browser.EDGE] },
 )

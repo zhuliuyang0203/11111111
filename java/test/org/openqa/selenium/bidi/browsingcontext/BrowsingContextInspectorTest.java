@@ -18,42 +18,22 @@
 package org.openqa.selenium.bidi.browsingcontext;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.openqa.selenium.testing.Safely.safelyCall;
-import static org.openqa.selenium.testing.drivers.Browser.CHROME;
-import static org.openqa.selenium.testing.drivers.Browser.EDGE;
-import static org.openqa.selenium.testing.drivers.Browser.IE;
-import static org.openqa.selenium.testing.drivers.Browser.SAFARI;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.bidi.BrowsingContextInspector;
-import org.openqa.selenium.environment.webserver.AppServer;
-import org.openqa.selenium.environment.webserver.NettyAppServer;
+import org.openqa.selenium.bidi.module.BrowsingContextInspector;
 import org.openqa.selenium.testing.JupiterTestBase;
-import org.openqa.selenium.testing.NotYetImplemented;
+import org.openqa.selenium.testing.NeedsFreshDriver;
 
 class BrowsingContextInspectorTest extends JupiterTestBase {
 
-  private AppServer server;
-
-  @BeforeEach
-  public void setUp() {
-    server = new NettyAppServer();
-    server.start();
-  }
-
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToWindowBrowsingContextCreatedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -74,10 +54,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToBrowsingContextDestroyedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -99,10 +76,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToTabBrowsingContextCreatedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -122,10 +96,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToDomContentLoadedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -133,7 +104,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       inspector.onDomContentLoaded(future::complete);
 
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
-      context.navigate(server.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
+      context.navigate(appServer.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
 
       NavigationInfo navigationInfo = future.get(5, TimeUnit.SECONDS);
       assertThat(navigationInfo.getBrowsingContextId()).isEqualTo(context.getId());
@@ -142,10 +113,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToBrowsingContextLoadedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -153,7 +121,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       inspector.onBrowsingContextLoaded(future::complete);
 
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
-      context.navigate(server.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
+      context.navigate(appServer.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
 
       NavigationInfo navigationInfo = future.get(5, TimeUnit.SECONDS);
       assertThat(navigationInfo.getBrowsingContextId()).isEqualTo(context.getId());
@@ -162,10 +130,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToNavigationStartedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -173,7 +138,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       inspector.onNavigationStarted(future::complete);
 
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
-      context.navigate(server.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
+      context.navigate(appServer.whereIs("/bidi/logEntryAdded.html"), ReadinessState.COMPLETE);
 
       NavigationInfo navigationInfo = future.get(5, TimeUnit.SECONDS);
       assertThat(navigationInfo.getBrowsingContextId()).isEqualTo(context.getId());
@@ -182,22 +147,19 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToFragmentNavigatedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
       CompletableFuture<NavigationInfo> future = new CompletableFuture<>();
 
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
-      context.navigate(server.whereIs("/linked_image.html"), ReadinessState.COMPLETE);
+      context.navigate(appServer.whereIs("/linked_image.html"), ReadinessState.COMPLETE);
 
       inspector.onFragmentNavigated(future::complete);
 
       context.navigate(
-          server.whereIs("/linked_image.html#linkToAnchorOnThisPage"), ReadinessState.COMPLETE);
+          appServer.whereIs("/linked_image.html#linkToAnchorOnThisPage"), ReadinessState.COMPLETE);
 
       NavigationInfo navigationInfo = future.get(5, TimeUnit.SECONDS);
       assertThat(navigationInfo.getBrowsingContextId()).isEqualTo(context.getId());
@@ -206,10 +168,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
   void canListenToUserPromptOpenedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -218,7 +177,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
       inspector.onUserPromptOpened(future::complete);
 
-      driver.get(server.whereIs("/alerts.html"));
+      driver.get(appServer.whereIs("/alerts.html"));
 
       driver.findElement(By.id("alert")).click();
 
@@ -229,10 +188,9 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
   }
 
   @Test
-  @NotYetImplemented(SAFARI)
-  @NotYetImplemented(IE)
-  @NotYetImplemented(CHROME)
-  @NotYetImplemented(EDGE)
+  @NeedsFreshDriver
+  // TODO: This test is flaky for comparing the browsing context id for Chrome and Edge. Fix flaky
+  // test.
   void canListenToUserPromptClosedEvent()
       throws ExecutionException, InterruptedException, TimeoutException {
     try (BrowsingContextInspector inspector = new BrowsingContextInspector(driver)) {
@@ -241,7 +199,7 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       BrowsingContext context = new BrowsingContext(driver, driver.getWindowHandle());
       inspector.onUserPromptClosed(future::complete);
 
-      driver.get(server.whereIs("/alerts.html"));
+      driver.get(appServer.whereIs("/alerts.html"));
 
       driver.findElement(By.id("prompt")).click();
 
@@ -253,13 +211,5 @@ class BrowsingContextInspectorTest extends JupiterTestBase {
       assertThat(userPromptClosed.getUserText().get()).isEqualTo("selenium");
       assertThat(userPromptClosed.getAccepted()).isTrue();
     }
-  }
-
-  @AfterEach
-  public void quitDriver() {
-    if (driver != null) {
-      driver.quit();
-    }
-    safelyCall(server::stop);
   }
 }

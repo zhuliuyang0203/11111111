@@ -17,10 +17,9 @@
 // under the License.
 // </copyright>
 
-using System;
 using System.Collections.Generic;
 using System.Globalization;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace OpenQA.Selenium
 {
@@ -78,7 +77,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the filename in the stack
         /// </summary>
-        [JsonProperty("fileName")]
+        [JsonPropertyName("fileName")]
         public string FileName
         {
             get { return this.fileName; }
@@ -88,7 +87,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value of the Class name in the stack trace
         /// </summary>
-        [JsonProperty("className")]
+        [JsonPropertyName("className")]
         public string ClassName
         {
             get { return this.className; }
@@ -98,7 +97,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the line number
         /// </summary>
-        [JsonProperty("lineNumber")]
+        [JsonPropertyName("lineNumber")]
         public int LineNumber
         {
             get { return this.lineNumber; }
@@ -108,7 +107,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the Method name in the stack trace
         /// </summary>
-        [JsonProperty("methodName")]
+        [JsonPropertyName("methodName")]
         public string MethodName
         {
             get { return this.methodName; }
