@@ -116,18 +116,10 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="settingName">The name of the setting to set.</param>
         /// <param name="settingValue">The value of the setting.</param>
-        /// <remarks>
-        /// The value to be set must be serializable to JSON for transmission
-        /// across the wire to the remote end. To be JSON-serializable, the value
-        /// must be a string, a numeric value, a boolean value, an object that
-        /// implmeents <see cref="IEnumerable"/> that contains JSON-serializable
-        /// objects, or a <see cref="Dictionary{TKey, TValue}"/> where the keys
-        /// are strings and the values are JSON-serializable.
-        /// </remarks>
         /// <exception cref="ArgumentException">
-        /// Thrown if the setting name is null, the empty string, or one of the
-        /// reserved names of metadata settings; or if the setting value is not
-        /// JSON serializable.
+        /// <para>If the setting name is null or empty.</para>
+        /// <para>-or-</para>
+        /// <para>If one of the reserved names of metadata settings.</para>
         /// </exception>
         public void AddMetadataSetting(string settingName, object settingValue)
         {
@@ -139,11 +131,6 @@ namespace OpenQA.Selenium
             if (this.reservedSettingNames.Contains(settingName))
             {
                 throw new ArgumentException(string.Format("'{0}' is a reserved name for a metadata setting, and cannot be used as a name.", settingName), nameof(settingName));
-            }
-
-            if (!IsJsonSerializable(settingValue))
-            {
-                throw new ArgumentException("Metadata setting value must be JSON serializable.", nameof(settingValue));
             }
 
             this.remoteMetadataSettings[settingName] = settingValue;
@@ -299,57 +286,6 @@ namespace OpenQA.Selenium
             }
 
             return optionsMatches;
-        }
-
-        private static bool IsJsonSerializable(object arg)
-        {
-            if (arg is null)
-            {
-                return true;
-            }
-
-            if (arg is string or float or double or int or long or bool)
-            {
-                return true;
-            }
-
-            if (arg is JsonNode or JsonElement)
-            {
-                return true;
-            }
-
-            if (arg is IDictionary argAsDictionary)
-            {
-                foreach (DictionaryEntry item in argAsDictionary)
-                {
-                    if (item.Key is not string)
-                    {
-                        return false;
-                    }
-
-                    if (!IsJsonSerializable(item.Value))
-                    {
-                        return false;
-                    }
-                }
-
-                return true;
-            }
-
-            if (arg is IEnumerable argAsEnumerable)
-            {
-                foreach (object item in argAsEnumerable)
-                {
-                    if (!IsJsonSerializable(item))
-                    {
-                        return false;
-                    }
-                }
-
-                return true;
-            }
-
-            return false;
         }
     }
 }
