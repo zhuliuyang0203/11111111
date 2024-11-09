@@ -22,7 +22,7 @@ using OpenQA.Selenium.Remote;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text.Json;
+using System.Text;
 
 namespace OpenQA.Selenium
 {
@@ -396,7 +396,36 @@ namespace OpenQA.Selenium
         /// <returns>A string representation of this <see cref="DriverOptions"/>.</returns>
         public override string ToString()
         {
-            return JsonSerializer.Serialize(this.ToDictionary(), new JsonSerializerOptions { WriteIndented = true });
+            StringBuilder builder = new StringBuilder();
+            bool needComma = false;
+
+            string browserName = this.BrowserName;
+            if (!string.IsNullOrEmpty(browserName))
+            {
+                builder.Append("Browser: ").Append(browserName);
+
+                string browserVersion = this.BrowserVersion;
+                if (!string.IsNullOrEmpty(browserVersion))
+                {
+                    builder.Append(' ');
+                    builder.Append(browserVersion);
+                }
+
+                needComma = true;
+            }
+
+            string platformName = this.PlatformName;
+            if (!string.IsNullOrEmpty(platformName))
+            {
+                if (needComma)
+                {
+                    builder.Append(", ");
+                }
+
+                builder.Append("Platform: ").Append(platformName);
+            }
+
+            return builder.ToString();
         }
 
         /// <summary>
