@@ -60,9 +60,9 @@ module Selenium
           )
         end
 
-        def on(event, &block)
+        def on(event, &)
           event = EVENTS[event] if event.is_a?(Symbol)
-          @bidi.add_callback(event, &block)
+          @bidi.add_callback(event, &)
         end
       end # Network
     end # BiDi

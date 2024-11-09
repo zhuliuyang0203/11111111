@@ -25,7 +25,6 @@ module Selenium
     class BiDi
       describe Network, exclusive: {bidi: true, reason: 'only executed when bidi is enabled'},
                         only: {browser: %i[chrome edge firefox]} do
-
         it 'adds an intercept' do
           reset_driver!(web_socket_url: true) do |driver|
             network = described_class.new(driver.bidi)
