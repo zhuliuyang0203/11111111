@@ -169,22 +169,26 @@ namespace OpenQA.Selenium
             driver.Url = EnvironmentManager.Instance.UrlBuilder.CreateInlinePage(new InlinePage()
                .WithTitle("Repeated Elements")
                .WithStyles(
-                " .c {\n"
-                                + "    \tposition: absolute;\n"
-                                + "    \tborder: 1px solid black;\n"
-                                + "    \theight: 50px;\n"
-                                + "    \twidth: 50px;\n"
-                                + "    }"
+                """
+                 .c {
+                    	position: absolute;
+                    	border: 1px solid black;
+                    	height: 50px;
+                    	width: 50px;
+                    }
+                """
                 )
                .WithBody(
-                  "<span style=\"position: relative;\">\n"
-                                + "    <div id= \"a\" class=\"c\" style=\"left:25;top:0;\">El-A</div>\n"
-                                + "    <div id= \"b\" class=\"c\" style=\"left:78;top:30;\">El-B</div>\n"
-                                + "    <div id= \"c\" class=\"c\" style=\"left:131;top:60;\">El-C</div>\n"
-                                + "    <div id= \"d\" class=\"c\" style=\"left:0;top:53;\">El-D</div>\n"
-                                + "    <div id= \"e\" class=\"c\" style=\"left:53;top:83;\">El-E</div>\n"
-                                + "    <div id= \"f\" class=\"c\" style=\"left:106;top:113;\">El-F</div>\n"
-                                + "  </span>"
+                  """
+                  <span style="position: relative;">
+                      <div id= "a" class="c" style="left:25;top:0;">El-A</div>
+                      <div id= "b" class="c" style="left:78;top:30;">El-B</div>
+                      <div id= "c" class="c" style="left:131;top:60;">El-C</div>
+                      <div id= "d" class="c" style="left:0;top:53;">El-D</div>
+                      <div id= "e" class="c" style="left:53;top:83;">El-E</div>
+                      <div id= "f" class="c" style="left:106;top:113;">El-F</div>
+                    </span>
+                  """
                 ));
 
             IWebElement @base = driver.FindElement(By.Id("e"));
