@@ -21,7 +21,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Text.Json.Nodes;
+using System.Text.Json;
 
 #nullable enable
 
@@ -40,25 +40,19 @@ namespace OpenQA.Selenium.Firefox
         /// </summary>
         /// <param name="defaultImmutablePreferences">A set of preferences that cannot be modified once set.</param>
         /// <param name="defaultPreferences">A set of default preferences.</param>
-        public Preferences(JsonObject? defaultImmutablePreferences, JsonObject? defaultPreferences)
+        public Preferences(JsonElement defaultImmutablePreferences, JsonElement defaultPreferences)
         {
-            if (defaultImmutablePreferences != null)
+            foreach (JsonProperty pref in defaultImmutablePreferences.EnumerateObject())
             {
-                foreach (KeyValuePair<string, JsonNode?> pref in defaultImmutablePreferences)
-                {
-                    this.ThrowIfPreferenceIsImmutable(pref.Key, pref.Value);
-                    this.preferences[pref.Key] = pref.Value!.ToJsonString();
-                    this.immutablePreferences.Add(pref.Key);
-                }
+                this.ThrowIfPreferenceIsImmutable(pref.Name, pref.Value);
+                this.preferences[pref.Name] = pref.Value.GetRawText();
+                this.immutablePreferences.Add(pref.Name);
             }
 
-            if (defaultPreferences != null)
+            foreach (JsonProperty pref in defaultPreferences.EnumerateObject())
             {
-                foreach (KeyValuePair<string, JsonNode?> pref in defaultPreferences)
-                {
-                    this.ThrowIfPreferenceIsImmutable(pref.Key, pref.Value);
-                    this.preferences[pref.Key] = pref.Value!.ToJsonString();
-                }
+                this.ThrowIfPreferenceIsImmutable(pref.Name, pref.Value);
+                this.preferences[pref.Name] = pref.Value.GetRawText();
             }
         }
 
