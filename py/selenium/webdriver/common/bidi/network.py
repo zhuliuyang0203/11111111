@@ -98,3 +98,21 @@ class Network:
     def handle_event(self, event, data):
         if event in self.callbacks:
             self.callbacks[event](data)
+
+    def add_request_handler(self, url_pattern, callback):
+        """Adds a request handler to perform a callback function on 
+        url_pattern match."""
+        self.add_intercept(phases=[self.PHASES['before_request']])
+        def callback_on_url_match(data):
+            if url_pattern in data['request']['url']:
+                callback(data)
+        self.on('before_request', callback_on_url_match)
+
+    def add_response_handler(self, url_pattern, callback):
+        """Adds a response handler to perform a callback function on 
+        url_pattern match."""
+        self.add_intercept(phases=[self.PHASES['response_started']])
+        def callback_on_url_match(data):
+            if url_pattern in data['response']['url']:
+                callback(data)
+        self.on('response_started', callback_on_url_match)
