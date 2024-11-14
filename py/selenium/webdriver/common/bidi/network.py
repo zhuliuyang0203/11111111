@@ -39,6 +39,7 @@ class Network:
         self.callbacks = {}
 
     def continue_response(self, request_id, status_code, headers=None, body=None):
+        """Continue after receiving a response."""
         params = {
             'requestId': request_id,
             'status': status_code
@@ -50,6 +51,7 @@ class Network:
         self.conn.execute('network.continueResponse', params)
 
     def continue_request(self, request_id, url=None, method=None, headers=None, postData=None):
+        """Continue after sending a request."""
         params = {
             'requestId': request_id
         }
@@ -64,6 +66,7 @@ class Network:
         self.conn.execute('network.continueRequest', params)
 
     def add_intercept(self, phases=None, contexts=None, url_patterns=None):
+        """Add an intercept to the network."""
         if phases is None:
             phases = []
         params = {
@@ -74,9 +77,11 @@ class Network:
         self.conn.execute('network.addIntercept', params)
 
     def remove_intercept(self, intercept):
+        """Remove an intercept from the network."""
         self.conn.execute('network.removeIntercept', {'intercept': intercept})
 
     def continue_with_auth(self, request_id, username, password):
+        """Continue with authentication."""
         self.conn.execute(
             'network.continueWithAuth',
             {
@@ -91,11 +96,13 @@ class Network:
         )
 
     def on(self, event, callback):
+        """Set a callback function to subscribe to a network event."""
         event = self.EVENTS.get(event, event)
         self.callbacks[event] = callback
         session_subscribe(self.conn, event, self.handle_event)
 
     def handle_event(self, event, data):
+        """Perform callback function on event."""
         if event in self.callbacks:
             self.callbacks[event](data)
 
