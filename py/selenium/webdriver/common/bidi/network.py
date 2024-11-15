@@ -106,7 +106,7 @@ class Network:
 
     def remove_request_handler(self):
         """Removes a request handler."""
-        self.network.remove_intercept('before_request')
+        self.__remove_intercept('before_request')
 
     def add_response_handler(self, callback, url_pattern=''):
         """Adds a response handler to perform a callback function on 
@@ -126,7 +126,7 @@ class Network:
 
     def remove_response_handler(self):
         """Removes a response handler."""
-        self.remove_intercept('response_started')
+        self.__remove_intercept('response_started')
 
 class Request:
     def __init__(self, request_id, url, method, headers, body, network: Network):
