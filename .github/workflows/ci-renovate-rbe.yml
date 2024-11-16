@@ -16,15 +16,14 @@ jobs:
       - name: Repin Dependencies
         run: |
           REPIN=1 bazel run @maven//:pin
-      - name: Run format script
-        run: ./scripts/format.sh
+          CARGO_BAZEL_REPIN=true bazel sync --only=crates
       - name: Commit files
         run: |
           export CHANGES=$(git status -s)
           if [ -n "$CHANGES" ]; then
             git config --local user.email "selenium-ci@users.noreply.github.com"
             git config --local user.name "Selenium CI Bot"
-            git add ./java/maven_install.json
+            git add .
             git commit -m 'Repin maven dependencies'
             git push
           fi
@@ -32,7 +31,7 @@ jobs:
   check-format:
     needs: format
     name: Check format
-    if: github.repository_owner == 'DineshKumarRA'
+    if: github.repository_owner == 'seleniumhq'
     uses: ./.github/workflows/bazel.yml
     with:
       name: Check format script run
