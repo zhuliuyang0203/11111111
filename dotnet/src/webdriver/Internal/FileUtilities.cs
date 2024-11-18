@@ -186,12 +186,14 @@ namespace OpenQA.Selenium.Internal
 
             string currentDirectory = location;
 
+#if !NET8_0_OR_GREATER
             // If we're shadow copying, get the directory from the codebase instead
             if (AppDomain.CurrentDomain.ShadowCopyFiles)
             {
                 Uri uri = new Uri(executingAssembly.CodeBase);
                 currentDirectory = Path.GetDirectoryName(uri.LocalPath);
             }
+#endif
 
             return currentDirectory;
         }
