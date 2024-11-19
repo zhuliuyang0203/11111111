@@ -154,7 +154,7 @@ namespace OpenQA.Selenium
             {
                 Assert.That(
                     () => alert.SendKeys("cheese"),
-                    Throws.InstanceOf<ElementNotInteractableException>());
+                    Throws.TypeOf<ElementNotInteractableException>());
             }
             finally
             {
@@ -202,7 +202,7 @@ namespace OpenQA.Selenium
 
             Assert.That(
                 () => alert.Text,
-                Throws.InstanceOf<NoAlertPresentException>());
+                Throws.TypeOf<NoAlertPresentException>());
         }
 
         [Test]
@@ -254,7 +254,7 @@ namespace OpenQA.Selenium
 
             Assert.That(
                 AlertToBePresent,
-                Throws.InstanceOf<NoAlertPresentException>());
+                Throws.TypeOf<NoAlertPresentException>());
         }
 
         [Test]
@@ -277,7 +277,7 @@ namespace OpenQA.Selenium
 
                 Assert.That(
                     () => AlertToBePresent().Accept(),
-                    Throws.InstanceOf<NoSuchWindowException>());
+                    Throws.TypeOf<NoSuchWindowException>());
 
             }
             finally
@@ -420,7 +420,7 @@ namespace OpenQA.Selenium
                     IWebElement el = driver.FindElement(By.Id("open-new-window"));
                     WaitFor<IAlert>(AlertToBePresent, TimeSpan.FromSeconds(5), "No alert found");
                 },
-                Throws.InstanceOf<WebDriverException>());
+                Throws.TypeOf<WebDriverException>());
 
             }
             finally
@@ -444,7 +444,7 @@ namespace OpenQA.Selenium
 
             Assert.That(
                 () => driver.Title,
-                Throws.InstanceOf<UnhandledAlertException>().With.Property(nameof(UnhandledAlertException.AlertText)).EqualTo("cheese"));
+                Throws.TypeOf<UnhandledAlertException>().With.Property(nameof(UnhandledAlertException.AlertText)).EqualTo("cheese"));
         }
 
         [Test]
