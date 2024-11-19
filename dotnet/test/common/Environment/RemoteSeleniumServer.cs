@@ -88,8 +88,8 @@ namespace OpenQA.Selenium.Environment
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var shutDownTask = httpClient.GetAsync("http://localhost:6000/selenium-server/driver?cmd=shutDownSeleniumServer");
-                    await ((Task)shutDownTask).ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
+                    await ((Task)httpClient.GetAsync("http://localhost:6000/selenium-server/driver?cmd=shutDownSeleniumServer"))
+                        .ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
                 }
 
                 webserverProcess.WaitForExit(10000);
