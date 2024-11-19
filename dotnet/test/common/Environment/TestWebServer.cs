@@ -181,8 +181,8 @@ namespace OpenQA.Selenium.Environment
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var quitTask = httpClient.GetAsync(EnvironmentManager.Instance.UrlBuilder.LocalWhereIs("quitquitquit"));
-                    await ((Task)quitTask).ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
+                    await ((Task)httpClient.GetAsync(EnvironmentManager.Instance.UrlBuilder.LocalWhereIs("quitquitquit")))
+                        .ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
                 }
 
                 try
