@@ -1,3 +1,24 @@
+v4.27.0
+======
+--> [dotnet] Deprecate WebElement.GetAttribute() (#14676)
+--> [dotnet] Add more well-known dictionary types for capability json serialization
+--> [dotnet] Gracefully handle clashing device names in Actions (#14713)
+--> [dotnet] Add ChromiumNetworkConditions to command serialization (#14716)
+--> [dotnet] Add Dictionary<string, string> as well-known types for json serialization
+--> Copyright dotnet (#13522)
+* [build] allow copyright script to work with dotnet files
+* [dotnet] update all copyright information in cs files
+--> [dotnet] Add reflection-based JSON serialization fallback to `Command`s (#14732)
+--> [dotnet] Make Selenium Manager's AOT safety explicit (#14733)
+--> [dotnet] Allow `RemoteSessionSettings` to use any value for metadata (#14726)
+--> [dotnet] Remove JSON serialization from `.ToString()` methods (#14736)
+--> [dotnet] Fix `RelativeBy.Near` and empty list return (#14737)
+--> [dotnet] Make FirefoxProfile AOT-safe (#14742)
+--> [dotnet] Enable NRT on exceptional types (#14672)
+--> [dotnet] Solidify nullability of `PinnedScript` (#14708)
+--> [dotnet] Add CDP deprecation warning for Firefox (#14759)
+--> Update supported versions for Chrome DevTools
+
 v4.26.1
 ======
 * [bidi] Reveal browsing context module in bidi instance (#14684)
