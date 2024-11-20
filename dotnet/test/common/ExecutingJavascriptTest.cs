@@ -649,7 +649,8 @@ namespace OpenQA.Selenium
                 var browserbot = {
 
                     triggerEvent: function(element, eventType, canBubble, controlKeyDown, altKeyDown, shiftKeyDown, metaKeyDown) {
-                        canBubble = (typeof(canBubble) == undefined) ? true: canBubble;
+                        canBubble = (typeof(canBubble) == undefined) ? true : canBubble;
+
                         if (element.fireEvent && element.ownerDocument && element.ownerDocument.createEventObject) {
                             // IE
                             var evt = this.createEventObject(element, controlKeyDown, altKeyDown, shiftKeyDown, metaKeyDown);
@@ -659,16 +660,16 @@ namespace OpenQA.Selenium
 
                             try {
                                 evt.shiftKey = shiftKeyDown;
-                       evt.metaKey = metaKeyDown;
+                                evt.metaKey = metaKeyDown;
                                 evt.altKey = altKeyDown;
-                             evt.ctrlKey = controlKeyDown;
+                                evt.ctrlKey = controlKeyDown;
                             } catch(e) {
-                      // Nothing sane to do
-                                }
+                                // Nothing sane to do
+                            }
 
                             evt.initEvent(eventType, canBubble, true);
                             return element.dispatchEvent(evt);
-                  }
+                        }
                     },
 
                     getVisibleText: function() {
@@ -676,10 +677,11 @@ namespace OpenQA.Selenium
                         var range = document.createRange();
                         range.selectNodeContents(document.documentElement);
                         selection.addRange(range);
-                var string = selection.toString();
+
+                        var string = selection.toString();
                         selection.removeAllRanges();
 
-                    return string;
+                        return string;
                     },
 
                     getOuterHTML: function(element) {
@@ -691,9 +693,9 @@ namespace OpenQA.Selenium
                             throw "can't get outerHTML in this browser";
                         }
                     }
+                };
 
-
-                };return browserbot.getOuterHTML.apply(browserbot, arguments);
+                return browserbot.getOuterHTML.apply(browserbot, arguments);
                 """;
 
             driver.Url = javascriptPage;
