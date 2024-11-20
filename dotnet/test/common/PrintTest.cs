@@ -72,7 +72,6 @@ namespace OpenQA.Selenium
             };
 
             options.AddPageRangeToPrint("1-3");
-            options.AddPageToPrint(1);
 
             var pdf = printer.Print(options);
 
