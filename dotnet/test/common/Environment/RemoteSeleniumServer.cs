@@ -79,6 +79,11 @@ namespace OpenQA.Selenium.Environment
                     {
                     }
                 }
+
+                if (!isRunning)
+                {
+                    throw new TimeoutException("Could not start the remote selenium server in 30 seconds");
+                }
             }
         }
 
