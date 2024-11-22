@@ -1,5 +1,6 @@
 Selenium 4.27.0
 * Add CDP for Chrome 131 and remove 128
+* Add Firefox CDP deprecation warnings (#14787)
 * Cleaned up Py doc sphinx warnings/errors and added README (#14191)
 * Added Deprecation of WebElement.get_attribute() per #13334 (#14675)
 * Fix TypeError when init Safari webdriver (#14699)

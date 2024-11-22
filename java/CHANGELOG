@@ -1,6 +1,7 @@
 v4.27.0
 ======
 * Add CDP for Chrome 131 and remove 128
+* Add Firefox CDP deprecation warnings
 * Throw Error When Using Unsupported Linux ARM (#14616)
 * Enhance error message for NoSuchElementException and return unmodifiable set for pinned scripts (#14707)
 * Fix SpotBugs bugs in the Selenium manager (#14608)
@@ -12,7 +13,7 @@ v4.27.0
 * Remove toml parser warning (#14711)
 * Simplify reading http headers
 * Mark WebElement.getAttribute deprecated (#14666)
-* Add Firefox CDP deprecation warnings
+* Search windows by name without recursion (#14782)
 * [bidi] Add network request handler APIs (#14424)
 * [bidi] Fix the mode "closed" for a node
 * [grid] TomlConfig: migrate TOML library to tomlj/tomlj (#14470)
