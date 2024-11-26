@@ -269,7 +269,7 @@ namespace OpenQA.Selenium.Environment
             }
         }
 
-        public DriverService GetCurrentDriverService()
+        public DriverService GetOrCreateCurrentDriverService()
         {
             if (driverService is null)
             {
@@ -297,19 +297,14 @@ namespace OpenQA.Selenium.Environment
             }
         }
 
-        public DriverService CreateDriverServiceInstance()
-        {
-            return driverFactory.CreateDriverService(driverType);
-        }
-
         public IWebDriver CreateDriverInstance()
         {
-            return driverFactory.CreateDriver(GetCurrentDriverService(), driverType);
+            return driverFactory.CreateDriver(GetOrCreateCurrentDriverService(), driverType);
         }
 
         public IWebDriver CreateDriverInstance(DriverOptions options)
         {
-            return driverFactory.CreateDriverWithOptions(GetCurrentDriverService(), driverType, options);
+            return driverFactory.CreateDriverWithOptions(GetOrCreateCurrentDriverService(), driverType, options);
         }
 
         public IWebDriver CreateFreshDriver()
