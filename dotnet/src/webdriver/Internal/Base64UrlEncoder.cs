@@ -23,8 +23,12 @@ using System;
 
 namespace OpenQA.Selenium.Internal
 {
-    // When we target .NET 9+, we can use the built-in Base64Url type
-    // https://github.com/SeleniumHQ/selenium/issues/14813
+    /*
+     * Based on: https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/6.19.0/src/Microsoft.IdentityModel.Tokens/Base64UrlEncoder.cs
+     * 
+     * Now it is a part of .NET 9+ as System.Buffers.Text.Base64Url
+     * https://github.com/SeleniumHQ/selenium/issues/14813  
+     */
 
     /// <summary>
     /// Encodes and Decodes strings as Base64Url encoding.
