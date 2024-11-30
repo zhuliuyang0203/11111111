@@ -64,7 +64,7 @@ namespace OpenQA.Selenium.VirtualAuth
         /// </summary>
         /// <param name="credentialId">A byte array representing the ID of the credential to remove.</param>
         /// <exception cref="ArgumentNullException">If <paramref name="credentialId"/> is <see langword="null"/>.</exception>
-        /// <exception cref="InvalidOperationException">If a Virtual Authenticator has not been added yet.</exception> 
+        /// <exception cref="InvalidOperationException">If a Virtual Authenticator has not been added yet.</exception>
         void RemoveCredential(byte[] credentialId);
 
         /// <summary>
