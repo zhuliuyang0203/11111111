@@ -32,7 +32,7 @@ class _AccountDescriptor:
         return obj._account_data.get(self.name)
 
     def __set__(self, obj, value) -> None:
-        raise AttributeError(f"Cannot set readonly attribute") 
+        raise AttributeError(f"Cannot set readonly attribute")
 
 
 class Account:
@@ -41,6 +41,17 @@ class Account:
     See: https://w3c-fedid.github.io/FedCM/#dictdef-identityprovideraccount
          https://w3c-fedid.github.io/FedCM/#webdriver-accountlist
     """
+
+    account_id = _AccountDescriptor("accountId")
+    email = _AccountDescriptor("email")
+    name = _AccountDescriptor("name")
+    given_name = _AccountDescriptor("givenName")
+    picture_url = _AccountDescriptor("pictureUrl")
+    idp_config_url = _AccountDescriptor("idpConfigUrl")
+    terms_of_service_url = _AccountDescriptor("termsOfServiceUrl")
+    privacy_policy_url = _AccountDescriptor("privacyPolicyUrl")
+    login_state = _AccountDescriptor("loginState")
+
     account_id = _AccountDescriptor("accountId")
     email = _AccountDescriptor("email")
     name = _AccountDescriptor("name")
