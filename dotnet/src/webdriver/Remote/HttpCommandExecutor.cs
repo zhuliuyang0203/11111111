@@ -21,7 +21,6 @@ using OpenQA.Selenium.Internal;
 using OpenQA.Selenium.Internal.Logging;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
 using System.Net;
@@ -223,7 +222,6 @@ namespace OpenQA.Selenium.Remote
             }
         }
 
-        [MemberNotNull(nameof(client))]
         private void CreateHttpClient()
         {
             HttpClientHandler httpClientHandler = new HttpClientHandler();
