@@ -25,9 +25,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.bidi.BiDi;
 import org.openqa.selenium.bidi.Command;
 import org.openqa.selenium.bidi.HasBiDi;
-import org.openqa.selenium.bidi.browser.ClientWindow;
 import org.openqa.selenium.bidi.browser.ClientWindowInfo;
-import org.openqa.selenium.bidi.browser.ClientWindowState;
 import org.openqa.selenium.json.JsonInput;
 
 public class Browser {
@@ -91,12 +89,5 @@ public class Browser {
 
   public List<ClientWindowInfo> getClientWindows() {
     return bidi.send(new Command<>("browser.getClientWindows", Map.of(), clientWindowsInfoMapper));
-  }
-
-  public ClientWindowInfo setClientWindowState(ClientWindow clientWindow, ClientWindowState state) {
-    Map<String, Object> params = state.toMap();
-    params.put("clientWindow", clientWindow.getId());
-
-    return bidi.send(new Command<>("browser.setClientWindowState", params, clientWindowInfoMapper));
   }
 }

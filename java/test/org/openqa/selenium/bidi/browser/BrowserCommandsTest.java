@@ -88,23 +88,4 @@ class BrowserCommandsTest extends JupiterTestBase {
     assertThat(windowInfo.getClientWindow()).isNotNull();
     assertThat(windowInfo.getState()).isNotNull();
   }
-
-  @Test
-  @NeedsFreshDriver
-  void canSetClientWindowState() {
-    List<ClientWindowInfo> clientWindows = browser.getClientWindows();
-    ClientWindow clientWindow = new ClientWindow(clientWindows.get(0).getClientWindow());
-
-    ClientWindowState state = ClientWindowState.maximized();
-    ClientWindowInfo updatedWindowInfo = browser.setClientWindowState(clientWindow, state);
-
-    assertThat(updatedWindowInfo.getState()).isEqualTo("maximized");
-
-    state = ClientWindowState.normal().setWidth(800).setHeight(600);
-    updatedWindowInfo = browser.setClientWindowState(clientWindow, state);
-
-    assertThat(updatedWindowInfo.getState()).isEqualTo("normal");
-    assertThat(updatedWindowInfo.getWidth()).isEqualTo(800);
-    assertThat(updatedWindowInfo.getHeight()).isEqualTo(600);
-  }
 }
