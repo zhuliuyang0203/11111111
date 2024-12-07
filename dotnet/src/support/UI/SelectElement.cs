@@ -54,7 +54,7 @@ namespace OpenQA.Selenium.Support.UI
             this.element = element;
 
             // let check if it's a multiple
-            string attribute = element.GetAttribute("multiple");
+            string attribute = element.GetDomAttribute("multiple");
             this.IsMultiple = attribute != null && attribute.ToLowerInvariant() != "false";
         }
 
