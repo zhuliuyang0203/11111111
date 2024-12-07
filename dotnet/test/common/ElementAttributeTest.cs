@@ -303,7 +303,7 @@ namespace OpenQA.Selenium
 
             IWebElement mouseclickDiv = driver.FindElement(By.Id("mouseclick"));
 
-            string onClickValue = mouseclickDiv.GetAttribute("onclick");
+            string onClickValue = mouseclickDiv.GetDomAttribute("onclick");
             string expectedOnClickValue = "displayMessage('mouse click');";
             List<string> acceptableOnClickValues = new List<string>();
             acceptableOnClickValues.Add("javascript:" + expectedOnClickValue);
@@ -312,7 +312,7 @@ namespace OpenQA.Selenium
             Assert.That(acceptableOnClickValues, Contains.Item(onClickValue));
 
             IWebElement mousedownDiv = driver.FindElement(By.Id("mousedown"));
-            Assert.That(mousedownDiv.GetAttribute("onclick"), Is.Null);
+            Assert.That(mousedownDiv.GetDomAttribute("onclick"), Is.Null);
         }
 
         [Test]
