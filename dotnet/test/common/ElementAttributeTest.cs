@@ -42,7 +42,7 @@ namespace OpenQA.Selenium
         {
             driver.Url = simpleTestPage;
             IWebElement img = driver.FindElement(By.Id("invalidImgTag"));
-            string attribute = img.GetDomProperty("src");
+            string attribute = img.GetDomAttribute("src");
             Assert.That(attribute, Is.Null);
         }
 
