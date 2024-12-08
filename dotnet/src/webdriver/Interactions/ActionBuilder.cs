@@ -41,7 +41,7 @@ namespace OpenQA.Selenium.Interactions
         /// <returns>A self reference.</returns>
         public ActionBuilder AddAction(Interaction actionToAdd)
         {
-            this.ProcessTick(actionToAdd);
+            this.AddActions(actionToAdd);
             return this;
         }
 
@@ -89,20 +89,6 @@ namespace OpenQA.Selenium.Interactions
             }
 
             return builder.ToString();
-        }
-
-        private void ProcessTick(Interaction interaction)
-        {
-            ActionSequence sequence = this.GetOrAddSequence(interaction.SourceDevice);
-            sequence.AddAction(interaction);
-
-            foreach (KeyValuePair<InputDevice, ActionSequence> pair in this.sequences)
-            {
-                if (pair.Key != interaction.SourceDevice)
-                {
-                    pair.Value.AddAction(new PauseInteraction(pair.Key, TimeSpan.Zero));
-                }
-            }
         }
 
         private void ProcessTick(params Interaction[] interactionsToAdd)
