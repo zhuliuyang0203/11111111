@@ -47,23 +47,22 @@ namespace OpenQA.Selenium
         /// <param name="name">The name of the cookie to retrieve.</param>
         /// <returns>The <see cref="Cookie"/> containing the name. Returns <see langword="null"/>
         /// if no cookie with the specified name is found.</returns>
-        Cookie? GetCookieNamed(string? name);
+        /// <exception cref="ArgumentNullException">If <paramref name="name"/> is <see langword="null"/>.</exception>
+        Cookie? GetCookieNamed(string name);
 
         /// <summary>
         /// Deletes the specified cookie from the page.
         /// </summary>
         /// <param name="cookie">The <see cref="Cookie"/> to be deleted.</param>
-        void DeleteCookie(Cookie? cookie);
-
-#nullable disable
+        /// <exception cref="ArgumentNullException">If <paramref name="cookie"/> is <see langword="null"/>.</exception>
+        void DeleteCookie(Cookie cookie);
 
         /// <summary>
         /// Deletes the cookie with the specified name from the page.
         /// </summary>
         /// <param name="name">The name of the cookie to be deleted.</param>
+        /// <exception cref="ArgumentNullException">If <paramref name="name"/> is <see langword="null"/>.</exception>
         void DeleteCookieNamed(string name);
-
-#nullable enable
 
         /// <summary>
         /// Deletes all cookies from the page.

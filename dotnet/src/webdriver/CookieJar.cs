@@ -25,23 +25,8 @@ using System.Collections.ObjectModel;
 
 namespace OpenQA.Selenium
 {
-    /// <summary>
-    /// Defines an interface allowing the user to manipulate cookies on the current page.
-    /// </summary>
-    internal sealed class CookieJar : ICookieJar
+    internal sealed class CookieJar(WebDriver driver) : ICookieJar
     {
-        private readonly WebDriver driver;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CookieJar"/> class.
-        /// </summary>
-        /// <param name="driver">The driver that is currently in use</param>
-        /// <exception cref="ArgumentNullException">If <paramref name="driver"/> is <see langword="null"/>.</exception>
-        public CookieJar(WebDriver driver)
-        {
-            this.driver = driver ?? throw new ArgumentNullException(nameof(driver));
-        }
-
         /// <summary>
         /// Gets all cookies defined for the current page.
         /// </summary>
@@ -49,12 +34,12 @@ namespace OpenQA.Selenium
         {
             get
             {
-                object returned = this.driver.InternalExecute(DriverCommand.GetAllCookies, new Dictionary<string, object>()).Value;
+                Response response = driver.InternalExecute(DriverCommand.GetAllCookies, new Dictionary<string, object>());
 
                 try
                 {
                     List<Cookie> toReturn = new List<Cookie>();
-                    if (returned is object?[] cookies)
+                    if (response.Value is object?[] cookies)
                     {
                         foreach (object? rawCookie in cookies)
                         {
@@ -89,34 +74,39 @@ namespace OpenQA.Selenium
 
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("cookie", cookie);
-            this.driver.InternalExecute(DriverCommand.AddCookie, parameters);
+            driver.InternalExecute(DriverCommand.AddCookie, parameters);
         }
-
-#nullable disable
 
         /// <summary>
         /// Delete the cookie by passing in the name of the cookie
         /// </summary>
         /// <param name="name">The name of the cookie that is in the browser</param>
+        /// <exception cref="ArgumentNullException">If <paramref name="name"/> is <see langword="null"/>.</exception>
         public void DeleteCookieNamed(string name)
         {
+            if (name is null)
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("name", name);
-            this.driver.InternalExecute(DriverCommand.DeleteCookie, parameters);
+            driver.InternalExecute(DriverCommand.DeleteCookie, parameters);
         }
-
-#nullable enable
 
         /// <summary>
         /// Delete a cookie in the browser by passing in a copy of a cookie
         /// </summary>
         /// <param name="cookie">An object that represents a copy of the cookie that needs to be deleted</param>
-        public void DeleteCookie(Cookie? cookie)
+        /// <exception cref="ArgumentNullException">If <paramref name="cookie"/> is <see langword="null"/>.</exception>
+        public void DeleteCookie(Cookie cookie)
         {
-            if (cookie != null)
+            if (cookie is null)
             {
-                this.DeleteCookieNamed(cookie.Name);
+                throw new ArgumentNullException(nameof(cookie));
             }
+
+            this.DeleteCookieNamed(cookie.Name);
         }
 
         /// <summary>
@@ -124,31 +114,32 @@ namespace OpenQA.Selenium
         /// </summary>
         public void DeleteAllCookies()
         {
-            this.driver.InternalExecute(DriverCommand.DeleteAllCookies, null);
+            driver.InternalExecute(DriverCommand.DeleteAllCookies, null);
         }
 
         /// <summary>
         /// Method for returning a getting a cookie by name
         /// </summary>
         /// <param name="name">name of the cookie that needs to be returned</param>
-        /// <returns>A Cookie from the name</returns>
-        public Cookie? GetCookieNamed(string? name)
+        /// <returns>A Cookie from the name; or <see langword="null"/> if not found.</returns>
+        public Cookie? GetCookieNamed(string name)
         {
-            Cookie? cookieToReturn = null;
-            if (name is not null)
+            if (name is null)
             {
-                ReadOnlyCollection<Cookie> allCookies = this.AllCookies;
-                foreach (Cookie currentCookie in allCookies)
-                {
-                    if (name.Equals(currentCookie.Name))
-                    {
-                        cookieToReturn = currentCookie;
-                        break;
-                    }
-                }
+                throw new ArgumentNullException(nameof(name));
             }
 
-            return cookieToReturn;
+
+            foreach (Cookie currentCookie in this.AllCookies)
+            {
+                if (name.Equals(currentCookie.Name))
+                {
+                    return currentCookie;
+                }
+
+            }
+
+            return null;
         }
     }
 }
