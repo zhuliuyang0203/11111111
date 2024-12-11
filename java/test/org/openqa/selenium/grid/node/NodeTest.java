@@ -917,7 +917,7 @@ class NodeTest {
     try {
       File f = new File(directory.getAbsolutePath(), UUID.randomUUID().toString());
       f.deleteOnExit();
-      Files.write(directory.toPath(), content.getBytes(StandardCharsets.UTF_8));
+      Files.writeString(directory.toPath(), content);
       return f;
     } catch (IOException e) {
       throw new RuntimeException(e);
@@ -928,7 +928,7 @@ class NodeTest {
     try {
       File f = File.createTempFile("webdriver", "tmp");
       f.deleteOnExit();
-      Files.write(f.toPath(), content.getBytes(StandardCharsets.UTF_8));
+      Files.writeString(f.toPath(), content);
       return f;
     } catch (IOException e) {
       throw new UncheckedIOException(e);

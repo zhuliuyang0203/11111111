@@ -48,7 +48,7 @@ class ResourceHandlerTest {
 
   @Test
   void shouldLoadContent() throws IOException {
-    Files.write(base.resolve("content.txt"), "I like cheese".getBytes(UTF_8));
+    Files.writeString(base.resolve("content.txt"), "I like cheese");
 
     HttpHandler handler = new ResourceHandler(new PathResource(base));
     HttpResponse res = handler.execute(new HttpRequest(GET, "/content.txt"));
@@ -90,7 +90,7 @@ class ResourceHandlerTest {
     Path contents = base.resolve("cheese").resolve("cake.txt");
 
     Files.createDirectories(contents.getParent());
-    Files.write(contents, "delicious".getBytes(UTF_8));
+    Files.writeString(contents, "delicious");
 
     HttpHandler handler =
         Route.prefix("/peas").to(Route.combine(new ResourceHandler(new PathResource(base))));
@@ -109,7 +109,7 @@ class ResourceHandlerTest {
   @Test
   void shouldRedirectToIndexPageIfOneExists() throws IOException {
     Path index = base.resolve("index.html");
-    Files.write(index, "Cheese".getBytes(UTF_8));
+    Files.writeString(index, "Cheese");
 
     ResourceHandler handler = new ResourceHandler(new PathResource(base));
     HttpResponse res = handler.execute(new HttpRequest(GET, "/"));

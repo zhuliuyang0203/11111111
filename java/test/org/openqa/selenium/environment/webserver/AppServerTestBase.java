@@ -135,7 +135,7 @@ public abstract class AppServerTestBase {
     String FILE_CONTENTS = "Uploaded file";
     File testFile = File.createTempFile("webdriver", "tmp");
     testFile.deleteOnExit();
-    Files.write(testFile.toPath(), FILE_CONTENTS.getBytes(UTF_8));
+    Files.writeString(testFile.toPath(), FILE_CONTENTS);
 
     driver.get(server.whereIs("upload.html"));
     driver.findElement(By.id("upload")).sendKeys(testFile.getAbsolutePath());

@@ -179,7 +179,7 @@ class UploadTest extends JupiterTestBase {
     try {
       File f = File.createTempFile("webdriver", "tmp");
       f.deleteOnExit();
-      Files.write(f.toPath(), content.getBytes(StandardCharsets.UTF_8));
+      Files.writeString(f.toPath(), content);
       return f;
     } catch (IOException e) {
       throw new UncheckedIOException(e);
