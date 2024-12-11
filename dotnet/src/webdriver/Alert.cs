@@ -43,12 +43,12 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets the text of the alert.
         /// </summary>
-        public string Text
+        public string? Text
         {
             get
             {
                 Response commandResponse = this.driver.InternalExecute(DriverCommand.GetAlertText, null);
-                return (string)commandResponse.Value!;
+                return (string)commandResponse.Value;
             }
         }
 
