@@ -15,6 +15,7 @@ pub struct Lock {
 }
 
 impl Lock {
+    // Acquire file lock to prevent race conditions accessing the cache folder by concurrent SM processes
     pub fn acquire(
         log: &Logger,
         target: &Path,
@@ -30,15 +31,15 @@ impl Lock {
         let path = lock_folder.join(LOCK_FILE);
         let file = File::create(&path)?;
 
-        log.trace(format!("Using lock file at {}", path.display()));
+        log.debug(format!("Acquiring lock: {}", path.display()));
         file.lock_exclusive().unwrap_or_default();
 
         Ok(Self { file, path })
     }
 
     pub fn release(&mut self) {
-        self.file.unlock().unwrap_or_default();
         fs::remove_file(&self.path).unwrap_or_default();
+        self.file.unlock().unwrap_or_default();
     }
 
     pub fn exists(&mut self) -> bool {

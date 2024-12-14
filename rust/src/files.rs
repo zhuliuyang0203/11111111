@@ -17,7 +17,6 @@
 
 use crate::config::OS;
 use crate::config::OS::WINDOWS;
-use crate::lock::Lock;
 use crate::{
     format_one_arg, format_three_args, run_shell_command_by_os, Command, Logger, CP_VOLUME_COMMAND,
     HDIUTIL_ATTACH_COMMAND, HDIUTIL_DETACH_COMMAND, MACOS, MSIEXEC_INSTALL_COMMAND,
@@ -122,22 +121,6 @@ pub fn uncompress(
         extension
     ));
 
-    // Acquire file lock to prevent race conditions accessing the cache folder by concurrent SM processes
-    let mut lock = Lock::acquire(log, target, single_file.clone())?;
-    if !lock.exists() {
-        let num_files_in_target = WalkDir::new(target).into_iter().count();
-        if (single_file.is_some() && num_files_in_target == 1)
-            || (single_file.is_none() && num_files_in_target > 1)
-        {
-            log.trace(format!(
-                "{} file(s) in {}",
-                num_files_in_target,
-                target.display()
-            ));
-            return Ok(());
-        }
-    }
-
     if extension.eq_ignore_ascii_case(ZIP) {
         unzip(compressed_file, target, log, single_file)?
     } else if extension.eq_ignore_ascii_case(GZ) {
@@ -177,7 +160,6 @@ pub fn uncompress(
         )));
     }
 
-    lock.release();
     Ok(())
 }
 
