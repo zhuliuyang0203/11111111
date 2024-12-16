@@ -1106,6 +1106,19 @@ class WebDriver {
     return this.execute(new command.Command(command.Name.SCREENSHOT))
   }
 
+  setDelayEnabled(enabled) {
+    return this.execute(new command.Command(command.Name.SET_DELAY_ENABLED).setParameter('enabled', enabled))
+  }
+
+  resetCooldown() {
+    return this.execute(new command.Command(command.Name.RESET_COOLDOWN))
+  }
+
+  getFederalCredentialManagementDialog() {
+  return new FederalCredentialManagementDialog()
+  }
+
+
   /** @override */
   manage() {
     return new Options(this)
