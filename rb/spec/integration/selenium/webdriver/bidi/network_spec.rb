@@ -57,20 +57,16 @@ module Selenium
           end
         end
 
-
         it 'continues with request' do
           reset_driver!(web_socket_url: true) do |driver|
             network = described_class.new(driver.bidi)
             network.add_intercept(phases: [described_class::PHASES[:before_request]])
             network.on(:before_request) do |event|
-              request_id = event['requestId']
-              pp 'cheese'
+              request_id = event['request']['request']
               network.continue_with_request(request_id: request_id)
             end
 
-            sleep 2
             driver.navigate.to url_for('formPage.html')
-            sleep 2
             expect(driver.find_element(name: 'login')).to be_displayed
           end
         end
@@ -80,7 +76,7 @@ module Selenium
             network = described_class.new(driver.bidi)
             network.add_intercept(phases: [described_class::PHASES[:response_started]])
             network.on(:response_started) do |event|
-              request_id = event['requestId']
+              request_id = event['request']['request']
               network.continue_with_response(request_id: request_id)
             end
 

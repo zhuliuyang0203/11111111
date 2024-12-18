@@ -12,6 +12,10 @@ module Selenium
 
         def add_intercept: (?phases: Array[String], ?contexts: BrowsingContext?, ?url_patterns: untyped?) -> Hash[String, String]
 
+        def cancel_auth: -> untyped
+
+        def continue_with_auth_no_credentials: -> untyped
+
         def continue_with_request: (**untyped args) -> untyped
 
         def continue_with_response: (**untyped args) -> untyped

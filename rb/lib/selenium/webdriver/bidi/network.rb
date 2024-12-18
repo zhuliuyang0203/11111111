@@ -76,6 +76,31 @@ module Selenium
           )
         end
 
+        def continue_with_request(**args)
+          response = @bidi.send_cmd(
+            'network.continueRequest',
+            request: args[:request_id],
+            'body' => args[:body],
+            'cookies' => args[:cookies],
+            'headers' => args[:headers],
+            'method' => args[:method],
+            'url' => args[:url]
+          )
+          response.inspect
+        end
+
+        def continue_with_response(**args)
+          @bidi.send_cmd(
+            'network.continueResponse',
+            request: args[:request_id],
+            'body' => args[:body],
+            'cookies' => args[:cookies],
+            'credentials' => args[:credentials],
+            'headers' => args[:headers],
+            'status' => args[:status]
+          )
+        end
+
         def on(event, &block)
           event = EVENTS[event] if event.is_a?(Symbol)
           @bidi.add_callback(event, &block)
