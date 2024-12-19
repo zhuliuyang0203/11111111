@@ -30,9 +30,9 @@ public interface HasDownloads {
    * <p>Example usage:
    *
    * <pre>{@code
-   * Capabilities capabilities = new Capabilities();
-   * capabilities.setCapability("se:downloadsEnabled", true);
-   * driver.requireDownloadsEnabled(capabilities);
+   * ChromeOptions options = new ChromeOptions();
+   * options.setCapability("se:downloadsEnabled", true);
+   * driver.requireDownloadsEnabled(options);
    * }</pre>
    *
    * @param capabilities the capabilities object
