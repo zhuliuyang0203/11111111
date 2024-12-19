@@ -610,7 +610,7 @@ namespace OpenQA.Selenium
         /// <returns>A <see cref="Response"/> containing information about the success or failure of the command and any data returned by the command.</returns>
         protected virtual async Task<Response> ExecuteAsync(string driverCommandToExecute, Dictionary<string, object> parameters)
         {
-            Command commandToExecute = new Command(this.SessionId, driverCommandToExecute, parameters);
+            Command commandToExecute = new Command(SessionId, driverCommandToExecute, parameters);
 
             Response commandResponse;
 
