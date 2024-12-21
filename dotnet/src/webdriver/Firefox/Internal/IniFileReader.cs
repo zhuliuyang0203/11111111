@@ -104,7 +104,7 @@ namespace OpenQA.Selenium.Firefox.Internal
         /// <para>If <paramref name="sectionName"/> is <see langword="null"/> or <see cref="string.Empty"/>.</para>
         /// </exception>
         /// <exception cref="ArgumentException">
-        /// <para>If no section named <paramref name="sectionName"/> exists</para>
+        /// <para>If no section named <paramref name="sectionName"/> exists.</para>
         /// <para>-or-</para>
         ///<para>If the section does not contain a value named <paramref name="valueName"/>.</para>
         /// </exception>
