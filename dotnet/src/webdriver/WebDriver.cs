@@ -854,6 +854,9 @@ namespace OpenQA.Selenium
                         case WebDriverResult.UnknownError:
                             throw new UnknownErrorException(errorMessage);
 
+                        case WebDriverResult.UnknownMethod:
+                            throw new UnknownMethodException(errorMessage);
+
                         case WebDriverResult.UnsupportedOperation:
                             throw new UnsupportedOperationException(errorMessage);
 
