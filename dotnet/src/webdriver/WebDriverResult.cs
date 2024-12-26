@@ -34,37 +34,37 @@ namespace OpenQA.Selenium
         /// <summary>
         /// The index specified for the action was out of the acceptable range.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         IndexOutOfBounds = 1,
 
         /// <summary>
         /// No collection was specified.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoCollection = 2,
 
         /// <summary>
         /// No string was specified.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoString = 3,
 
         /// <summary>
         /// No string length was specified.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoStringLength = 4,
 
         /// <summary>
         /// No string wrapper was specified.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoStringWrapper = 5,
 
         /// <summary>
         /// Occurs if the given <see href="https://www.w3.org/TR/webdriver2/#dfn-session-id">session id</see> is not in the list of <see href="https://www.w3.org/TR/webdriver2/#dfn-active-sessions">active sessions</see>, meaning the session either does not exist or that it's not active.
         /// </summary>
-        NoSuchDriver = 6,
+        NoSuchDriver = IndexOutOfBounds,
 
         /// <summary>
         /// An element could not be located on the page using the given search parameters.
@@ -89,7 +89,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// The specified element is not displayed.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         ElementNotDisplayed = 11,
 
         /// <summary>
@@ -105,25 +105,25 @@ namespace OpenQA.Selenium
         /// <summary>
         /// An unhandled error occurred.
         /// </summary>
-        [Obsolete("This value is no longer set for unknown errors: use UnknownError instead")]
+        [Obsolete("This value is no longer set for unknown errors: use UnknownError instead. Will be removed in 4.30")]
         UnhandledError = UnknownError,
 
         /// <summary>
         /// An error occurred, but it was expected.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         ExpectedError = 14,
 
         /// <summary>
         /// The specified element is not selected.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         ElementNotSelectable = 15,
 
         /// <summary>
         /// No document matching the criteria exists.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoSuchDocument = 16,
 
         /// <summary>
@@ -134,19 +134,19 @@ namespace OpenQA.Selenium
         /// <summary>
         /// No result is available from the JavaScript execution.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoScriptResult = 18,
 
         /// <summary>
         /// The result from the JavaScript execution is not recognized.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         XPathLookupError = 19,
 
         /// <summary>
         /// No collection matching the criteria exists.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NoSuchCollection = 20,
 
         /// <summary>
@@ -157,7 +157,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// A null pointer was received.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         NullPointer = 22,
 
         /// <summary>
@@ -193,7 +193,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// The coordinates of the element are invalid.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         InvalidElementCoordinates = 29,
 
         /// <summary>
@@ -214,7 +214,7 @@ namespace OpenQA.Selenium
         /// <summary>
         /// The XPath selector was invalid.
         /// </summary>
-        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors. Will be removed in 4.30")]
         InvalidXPathSelector = 51,
 
         /// <summary>
