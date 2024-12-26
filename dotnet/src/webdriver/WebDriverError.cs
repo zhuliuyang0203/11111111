@@ -17,6 +17,7 @@
 // under the License.
 // </copyright>
 
+using System;
 using System.Collections.Generic;
 
 namespace OpenQA.Selenium
@@ -170,23 +171,26 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Represents the element not selectable error.
         /// </summary>
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
         public const string ElementNotSelectable = "element not selectable";
 
         /// <summary>
         /// Represents the element not visible error.
         /// </summary>
         /// TODO: Remove this string; it is no longer valid in the specification.
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
         public const string ElementNotVisible = "element not visible";
 
         /// <summary>
         /// Represents the invalid coordinates error.
         /// </summary>
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
         public const string InvalidCoordinates = "invalid coordinates";
 
         /// <summary>
         /// Represents the invalid element coordinates error.
         /// </summary>
-        /// TODO: Remove this string; it is no longer valid in the specification.
+        [Obsolete("This error status is no longer returned by the WebDriver Specification https://www.w3.org/TR/webdriver2/#errors")]
         public const string InvalidElementCoordinates = "invalid element coordinates";
 
         private static readonly Dictionary<string, WebDriverResult> resultMap;
@@ -222,14 +226,6 @@ namespace OpenQA.Selenium
             resultMap[UnknownError] = WebDriverResult.UnknownError;
             resultMap[UnknownMethod] = WebDriverResult.UnknownMethod;
             resultMap[UnsupportedOperation] = WebDriverResult.UnsupportedOperation;
-
-            // TODO: Remove these strings; it is no longer valid in the specification.
-#pragma warning disable CS0618 // Type or member is obsolete
-            resultMap[ElementNotSelectable] = WebDriverResult.ElementNotSelectable;
-            resultMap[ElementNotVisible] = WebDriverResult.ElementNotDisplayed;
-            resultMap[InvalidCoordinates] = WebDriverResult.InvalidElementCoordinates;
-            resultMap[InvalidElementCoordinates] = WebDriverResult.InvalidElementCoordinates;
-#pragma warning restore CS0618 // Type or member is obsolete
         }
 
         /// <summary>
