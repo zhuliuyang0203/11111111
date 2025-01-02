@@ -320,8 +320,8 @@ const W3C_COMMAND_MAP = new Map([
   [cmd.Name.GET_DOWNLOADABLE_FILES, get('/session/:sessionId/se/files')],
   [cmd.Name.DOWNLOAD_FILE, post(`/session/:sessionId/se/files`)],
   [cmd.Name.DELETE_DOWNLOADABLE_FILES, del(`/session/:sessionId/se/files`)],
+
   // Federated Credential Management Command
-  [cmd.Name.SET_DELAY_ENABLED, post(`/session/:sessionId/fedcm/setdelayenabled`)],
   [cmd.Name.CANCEL_DIALOG, post(`/session/:sessionId/fedcm/canceldialog`)],
   [cmd.Name.SELECT_ACCOUNT, post(`/session/:sessionId/fedcm/selectaccount`)],
   [cmd.Name.GET_FEDCM_TITLE, get(`/session/:sessionId/fedcm/gettitle`)],
