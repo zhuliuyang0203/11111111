@@ -45,6 +45,7 @@ const { PinnedScript } = require('./pinnedScript')
 const JSZip = require('jszip')
 const Script = require('./script')
 const Network = require('./network')
+const Dialog = require('./fedcm/dialog')
 
 // Capability names that are defined in the W3C spec.
 const W3C_CAPABILITY_NAMES = new Set([
@@ -1115,7 +1116,7 @@ class WebDriver {
   }
 
   getFederalCredentialManagementDialog() {
-  return new FederalCredentialManagementDialog()
+  return new Dialog.Dialog(this)
   }
 
 

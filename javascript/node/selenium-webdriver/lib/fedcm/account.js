@@ -34,6 +34,7 @@ class Account {
     this._accountId = accountId
     this._email = email
     this._name = name
+    this._givenName = givenName
     this._pictureUrl = pictureUrl
     this._idpConfigUrl = idpConfigUrl
     this._loginState = loginState
@@ -51,6 +52,10 @@ class Account {
 
   get name() {
     return this._name
+  }
+
+  get givenName() {
+    return this._givenName
   }
 
   get pictureUrl() {
