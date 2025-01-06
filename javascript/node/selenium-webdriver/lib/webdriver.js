@@ -1116,7 +1116,7 @@ class WebDriver {
   }
 
   getFederalCredentialManagementDialog() {
-    return new Dialog.Dialog(this)
+    return new Dialog(this)
   }
 
   /** @override */

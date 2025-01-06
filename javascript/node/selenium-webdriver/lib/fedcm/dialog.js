@@ -17,11 +17,6 @@
 
 const command = require('../command')
 
-const LoginState = {
-  DIALOG_TYPE_ACCOUNT_LIST: 'DIALOG_TYPE_ACCOUNT_LIST',
-  DIALOG_TYPE_AUTO_REAUTH: 'AutoReauthn',
-}
-
 class Dialog {
   constructor(driver) {
     this._driver = driver
@@ -60,6 +55,4 @@ class Dialog {
   }
 }
 
-module.exports = {
-  Dialog,
-}
+module.exports = Dialog
