@@ -19,7 +19,12 @@ internal sealed class StringConverter : JsonConverter<string>
         }
         catch (InvalidOperationException)
         {
-            // CDP sometimes sends invalid surrogate pairs on file upload
+            // Fallback to read the value as bytes instead of string.
+            // System.Text.Json library throws exception when CDP remote end sends non-encoded string as binary data.
+            // Using JavaScriptEncoder.UnsafeRelaxedJsonEscaping doesn't help because the string actually is byte[].
+            // https://chromedevtools.github.io/devtools-protocol/tot/Network/#type-Request - here "postData" property
+            // is a string, which we cannot deserialize properly. This property is marked as deprecated, and new "postDataEntries"
+            // is suggested for using, where most likely it is base64 encoded.
 
             var bytes = reader.ValueSpan;
             var sb = new StringBuilder(bytes.Length);
