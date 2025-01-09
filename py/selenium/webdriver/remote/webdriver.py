@@ -307,10 +307,9 @@ class WebDriver(BaseWebDriver):
     def name(self) -> str:
         """Returns the name of the underlying browser for this instance.
 
-        :Usage:
-            ::
-
-                name = driver.name
+        Example:
+        --------
+        >>> name = driver.name
         """
         if "browserName" in self.caps:
             return self.caps["browserName"]
@@ -334,8 +333,10 @@ class WebDriver(BaseWebDriver):
     def start_session(self, capabilities: dict) -> None:
         """Creates a new session with the desired capabilities.
 
-        :Args:
-         - capabilities - a capabilities dict to start the session with.
+        Parameters:
+        ----------
+        capabilities : dict
+            - A capabilities dict to start the session with.
         """
 
         caps = _create_caps(capabilities)
@@ -380,29 +381,39 @@ class WebDriver(BaseWebDriver):
         domains/commands, refer to link
         https://chromedevtools.github.io/devtools-protocol/
 
-        :Args:
-         - cmd: A str, command name
-         - cmd_args: A dict, command args. empty dict {} if there is no command args
-        :Usage:
-            ::
+        Parameters:
+        ----------
+        cmd : str,
+            - Command name
+        cmd_args : dict
+            - Command args 
+            - Empty dict {} if there is no command args
 
-                driver.execute_cdp_cmd('Network.getResponseBody', {'requestId': requestId})
-        :Returns:
+        Returns:
+        --------
             A dict, empty dict {} if there is no result to return.
-            For example to getResponseBody:
-            {'base64Encoded': False, 'body': 'response body string'}
+                - To getResponseBody: {'base64Encoded': False, 'body': 'response body string'}
+        
+        Example:
+        --------
+        >>> driver.execute_cdp_cmd('Network.getResponseBody', {'requestId': requestId})
+        
         """
         return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
 
     def execute(self, driver_command: str, params: dict = None) -> dict:
         """Sends a command to be executed by a command.CommandExecutor.
 
-        :Args:
-         - driver_command: The name of the command to execute as a string.
-         - params: A dictionary of named parameters to send with the command.
+        Parameters:
+        ----------
+        driver_command : str
+            - The name of the command to execute as a string.
+        params : dict
+            - A dictionary of named parameters to send with the command.
 
-        :Returns:
-          The command's JSON response loaded into a dictionary object.
+        Returns:
+        --------
+          dict - The command's JSON response loaded into a dictionary object.
         """
         params = self._wrap_value(params)
 
