@@ -20,6 +20,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 #nullable enable
@@ -46,10 +47,7 @@ namespace OpenQA.Selenium.Internal.Logging
 
             _parentLogContext = parentLogContext;
 
-            if (loggers is not null)
-            {
-                _loggers = new ConcurrentDictionary<Type, ILogger>(loggers.Select(l => new KeyValuePair<Type, ILogger>(l.Key, new Logger(l.Value.Issuer, level))));
-            }
+            _loggers = CloneLoggers(loggers, level);
 
             if (handlers is not null)
             {
@@ -157,6 +155,25 @@ namespace OpenQA.Selenium.Internal.Logging
             }
 
             Log.CurrentContext = _parentLogContext;
+        }
+
+        [return: NotNullIfNotNull(nameof(loggers))]
+        private static ConcurrentDictionary<Type, ILogger>? CloneLoggers(ConcurrentDictionary<Type, ILogger>? loggers, LogEventLevel minimumLevel)
+        {
+            if (loggers is null)
+            {
+                return null;
+            }
+
+            var cloned = new Dictionary<Type, ILogger>(loggers.Count);
+
+            foreach (KeyValuePair<Type, ILogger> logger in loggers)
+            {
+                var clonedLogger = new Logger(logger.Value.Issuer, minimumLevel);
+                cloned.Add(logger.Key, clonedLogger);
+            }
+
+            return new ConcurrentDictionary<Type, ILogger>(cloned);
         }
     }
 }
