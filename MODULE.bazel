@@ -263,7 +263,7 @@ ruby.bundle_fetch(
         "//:rb/selenium-webdriver.gemspec",
     ],
     gem_checksums = {
-        "activesupport-8.0.0": "2c596c4b923f155b25657169c52e78a35d89bb53ab51074ef1b05d43797bac5e",
+        "activesupport-7.2.2.1": "842bcbf8a92977f80fb4750661a237cf5dd4fdd442066b3c35e88afb488647f5",
         "addressable-2.8.7": "462986537cf3735ab5f3c0f557f14155d778f4b43ea4f485a9deb9c8f7c58232",
         "ast-2.4.2": "1e280232e6a33754cde542bc5ef85520b74db2aac73ec14acef453784447cc12",
         "base64-0.2.0": "0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507",
@@ -336,11 +336,10 @@ ruby.bundle_fetch(
         "terminal-table-3.0.2": "f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91",
         "tzinfo-2.0.6": "8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b",
         "unicode-display_width-2.6.0": "12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a",
-        "uri-1.0.2": "b303504ceb7e5905771fa7fa14b649652fa949df18b5880d69cfb12494791e27",
         "webmock-3.24.0": "be01357f6fc773606337ca79f3ba332b7d52cbe5c27587671abc0572dbec7122",
         "webrick-1.9.0": "9ee50c57006489960b2a07544f68de6f23dfbee30e7b424167b5c14b72ace964",
         "websocket-1.2.11": "b7e7a74e2410b5e85c25858b26b3322f29161e300935f70a0e0d3c35e0462737",
-        "yard-0.9.37": "a6e910399e78e613f80ba9add9ba7c394b1a935f083cccbef82903a3d2a26992",
+        "yard-0.9.37": "a6e910399e78e613f80ba9add9ba7c394b1a935f083cccbef82903a3d2a26992"
     },
     gemfile = "//:rb/Gemfile",
     gemfile_lock = "//:rb/Gemfile.lock",
