@@ -1,0 +1,13 @@
+module Selenium
+  module WebDriver
+    class BiDi
+      class InterceptedAuth < InterceptedItem
+        def authenticate: (untyped username, untyped password) -> untyped
+
+        def skip: () -> untyped
+
+        def cancel: () -> untyped
+      end
+    end
+  end
+end
