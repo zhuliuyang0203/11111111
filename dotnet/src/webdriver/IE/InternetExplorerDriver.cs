@@ -165,18 +165,12 @@ namespace OpenQA.Selenium.IE
         /// <returns></returns>
         private static ICommandExecutor StartDriverServiceCommandExecutor(DriverService service, DriverOptions options, TimeSpan commandTimeout)
         {
-            if (service.DriverServicePath == null || string.IsNullOrEmpty(options.BinaryLocation))
+            if (service.DriverServicePath == null)
             {
                 DriverFinder finder = new DriverFinder(options);
                 string fullServicePath = finder.GetDriverPath();
                 service.DriverServicePath = Path.GetDirectoryName(fullServicePath);
                 service.DriverServiceExecutableName = Path.GetFileName(fullServicePath);
-
-                if (finder.HasBrowserPath())
-                {
-                    options.BinaryLocation = finder.GetBrowserPath();
-                    options.BrowserVersion = null;
-                }
             }
 
             service.Start();
