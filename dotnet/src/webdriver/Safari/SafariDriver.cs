@@ -68,6 +68,9 @@ namespace OpenQA.Selenium.Safari
         private const string GetPermissionsCommand = "getPermissions";
         private const string SetPermissionsCommand = "setPermissions";
 
+        private readonly SafariDriverService driverService;
+        private readonly bool disposeDriverService;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="SafariDriver"/> class.
         /// </summary>
@@ -123,7 +126,7 @@ namespace OpenQA.Selenium.Safari
         /// <param name="options">The <see cref="SafariOptions"/> to be used with the Safari driver.</param>
         /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
         public SafariDriver(string safariDriverDirectory, SafariOptions options, TimeSpan commandTimeout)
-            : this(SafariDriverService.CreateDefaultService(safariDriverDirectory), options, commandTimeout)
+            : this(SafariDriverService.CreateDefaultService(safariDriverDirectory), disposeService: true, options, commandTimeout)
         {
         }
 
@@ -145,8 +148,16 @@ namespace OpenQA.Selenium.Safari
         /// <param name="options">The <see cref="SafariOptions"/> to be used with the Safari driver.</param>
         /// <param name="commandTimeout">The maximum amount of time to wait for each command.</param>
         public SafariDriver(SafariDriverService service, SafariOptions options, TimeSpan commandTimeout)
+            : this(service, disposeService: false, options, commandTimeout)
+        {
+        }
+
+        private SafariDriver(SafariDriverService service, bool disposeService, SafariOptions options, TimeSpan commandTimeout)
             : base(StartDriverServiceCommandExecutor(service, options, commandTimeout), ConvertOptionsToCapabilities(options))
         {
+            this.driverService = service;
+            this.disposeDriverService = disposeService;
+
             this.AddCustomSafariCommand(AttachDebuggerCommand, HttpCommandInfo.PostCommand, "/session/{sessionId}/apple/attach_debugger");
             this.AddCustomSafariCommand(GetPermissionsCommand, HttpCommandInfo.GetCommand, "/session/{sessionId}/apple/permissions");
             this.AddCustomSafariCommand(SetPermissionsCommand, HttpCommandInfo.PostCommand, "/session/{sessionId}/apple/permissions");
@@ -229,6 +240,30 @@ namespace OpenQA.Selenium.Safari
         {
             get { return base.FileDetector; }
             set { }
+        }
+
+        /// <summary>
+        /// Stops the driver from running
+        /// </summary>
+        /// <param name="disposing">if its in the process of disposing</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (this.SessionId is not null)
+                {
+                    this.Execute(DriverCommand.Quit, null);
+
+                    this.SessionId = null;
+                }
+
+                if (this.disposeDriverService)
+                {
+                    this.driverService.Dispose();
+                }
+            }
+
+            base.Dispose(disposing);
         }
 
         private static ICapabilities ConvertOptionsToCapabilities(SafariOptions options)

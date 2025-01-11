@@ -6,6 +6,7 @@ using System.Diagnostics;
 namespace OpenQA.Selenium
 {
     // DELETE IT IN FINAL MERGE
+    [Explicit]
     class _TempSharedDriverServiceTest
     {
         [Test]
