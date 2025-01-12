@@ -51,7 +51,8 @@ class WebDriverWait(Generic[D]):
         Parameters:
         ----------
         driver
-            - Instance of WebDriver (Ie, Firefox, Chrome or Remote) or a WebElement
+            - Instance of WebDriver (Ie, Firefox, Chrome or Remote) or
+            a WebElement
         timeout
             - Number of seconds before timing out
         poll_frequency
@@ -68,8 +69,8 @@ class WebDriverWait(Generic[D]):
         >>> from selenium.common.exceptions import ElementNotVisibleException
         >>>
         >>> # Wait until the element is no longer visible
-        >>> is_disappeared = WebDriverWait(driver, 30, 1, (ElementNotVisibleException)).until_not(
-        ...     lambda x: x.find_element(By.ID, "someId").is_displayed())
+        >>> is_disappeared = WebDriverWait(driver, 30, 1, (ElementNotVisibleException))
+        ...     .until_not(lambda x: x.find_element(By.ID, "someId").is_displayed())
         """
         self._driver = driver
         self._timeout = float(timeout)
@@ -109,7 +110,8 @@ class WebDriverWait(Generic[D]):
         Raises:
         -------
         TimeoutException
-            - If 'method' does not return a truthy value within the WebDriverWait object's timeout
+            - If 'method' does not return a truthy value within the WebDriverWait
+            object's timeout
 
         Example:
         --------
@@ -160,7 +162,8 @@ class WebDriverWait(Generic[D]):
         Raises:
         -------
         TimeoutException
-            - If 'method' does not return False within the WebDriverWait object's timeout
+            - If 'method' does not return False within the WebDriverWait
+            object's timeout
 
         Example:
         --------
@@ -170,7 +173,8 @@ class WebDriverWait(Generic[D]):
 
         # Wait until an element is visible on the page
         >>> wait = WebDriverWait(driver, 10)
-        >>> is_disappeared = wait.until_not(EC.visibility_of_element_located((By.ID, "exampleId")))
+        >>> is_disappeared = wait.until_not(EC.visibility_of_element_located(
+        ... (By.ID, "exampleId")))
         """
         end_time = time.monotonic() + self._timeout
         while True:
