@@ -28,7 +28,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.Locale;
-
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.SessionNotCreatedException;
@@ -147,9 +146,13 @@ class SafariDriverTest extends JupiterTestBase {
     builder.usingPort(port);
 
     assertThatExceptionOfType(NumberFormatException.class)
-    .isThrownBy(builder::build)
-    .withMessage("Couldn't format the port numbers because the System Language is arabic: \"" + String.format("--port=%d", port) +
-        "\", please make sure to add the required arguments \"-Duser.language=en -Duser.region=US\" to your JVM, for more info please visit :" + "\n  https://www.selenium.dev/documentation/webdriver/browsers/");
+        .isThrownBy(builder::build)
+        .withMessage(
+            "Couldn't format the port numbers because the System Language is arabic: \""
+                + String.format("--port=%d", port)
+                + "\", please make sure to add the required arguments \"-Duser.language=en"
+                + " -Duser.region=US\" to your JVM, for more info please visit :\n"
+                + "  https://www.selenium.dev/documentation/webdriver/browsers/");
 
     Locale.setDefault(Locale.US);
   }

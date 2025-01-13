@@ -25,7 +25,6 @@ import static org.openqa.selenium.ie.InternetExplorerDriver.ENABLE_PERSISTENT_HO
 import java.awt.*;
 import java.time.Duration;
 import java.util.Locale;
-
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -157,9 +156,13 @@ class InternetExplorerDriverTest extends JupiterTestBase {
     builder.usingPort(port);
 
     assertThatExceptionOfType(NumberFormatException.class)
-    .isThrownBy(builder::build)
-    .withMessage("Couldn't format the port numbers because the System Language is arabic: \"" + String.format("--port=%d", port) +
-        "\", please make sure to add the required arguments \"-Duser.language=en -Duser.region=US\" to your JVM, for more info please visit :" + "\n  https://www.selenium.dev/documentation/webdriver/browsers/");
+        .isThrownBy(builder::build)
+        .withMessage(
+            "Couldn't format the port numbers because the System Language is arabic: \""
+                + String.format("--port=%d", port)
+                + "\", please make sure to add the required arguments \"-Duser.language=en"
+                + " -Duser.region=US\" to your JVM, for more info please visit :\n"
+                + "  https://www.selenium.dev/documentation/webdriver/browsers/");
 
     Locale.setDefault(Locale.US);
   }

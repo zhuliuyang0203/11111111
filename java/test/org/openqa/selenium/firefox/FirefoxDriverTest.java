@@ -18,8 +18,8 @@
 package org.openqa.selenium.firefox;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.mockito.Mockito.atLeastOnce;
@@ -283,9 +283,13 @@ class FirefoxDriverTest extends JupiterTestBase {
 
     assertThatExceptionOfType(NumberFormatException.class)
     .isThrownBy(builder::build)
-    .withMessage("Couldn't format the port numbers because the System Language is arabic: \"" + String.format("--port=%d", port) +
-        "\", please make sure to add the required arguments \"-Duser.language=en -Duser.region=US\" to your JVM, for more info please visit :" + "\n  https://www.selenium.dev/documentation/webdriver/browsers/");
-
+    .withMessage(
+        "Couldn't format the port numbers because the System Language is arabic: \""
+            + String.format("--port=%d", port)
+            + "\", please make sure to add the required arguments \"-Duser.language=en"
+            + " -Duser.region=US\" to your JVM, for more info please visit :\n"
+            + "  https://www.selenium.dev/documentation/webdriver/browsers/");
+            
     Locale.setDefault(Locale.US);
   }
 
