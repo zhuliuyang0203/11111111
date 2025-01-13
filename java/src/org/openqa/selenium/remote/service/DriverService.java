@@ -514,7 +514,8 @@ public class DriverService implements Closeable {
                     + " visit :\n"
                     + "  https://www.selenium.dev/documentation/webdriver/browsers/",
                 getPort()));
-
+      }
+      
       if (timeout == null) {
         timeout = getDefaultTimeout();
       }
