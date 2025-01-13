@@ -639,26 +639,41 @@ class WebDriver(BaseWebDriver):
         return self.execute(Command.GET_ALL_COOKIES)["value"]
 
     def get_cookie(self, name) -> Optional[Dict]:
-        """Get a single cookie by name. Returns the cookie if found, None if
-        not.
+        """Get a single cookie by name. Raises ValueError if the name is empty or whitespace.
+        Returns the cookie if found, None if not.
 
         :Usage:
             ::
 
                 driver.get_cookie('my_cookie')
+
+        :Raises:
+            ValueError: If the cookie name is empty or whitespace.
         """
+        if not name or name.isspace():
+            raise ValueError("Cookie name cannot be empty")
+
         with contextlib.suppress(NoSuchCookieException):
             return self.execute(Command.GET_COOKIE, {"name": name})["value"]
+
         return None
 
     def delete_cookie(self, name) -> None:
-        """Deletes a single cookie with the given name.
+        """Deletes a single cookie with the given name. Raises ValueError if the name is empty or whitespace.
 
         :Usage:
             ::
 
                 driver.delete_cookie('my_cookie')
+
+        :Raises:
+            ValueError: If the cookie name is empty or whitespace.
         """
+
+        # firefox deletes all cookies when "" is passed as name
+        if not name or name.isspace():
+            raise ValueError("Cookie name cannot be empty")
+
         self.execute(Command.DELETE_COOKIE, {"name": name})
 
     def delete_all_cookies(self) -> None:
