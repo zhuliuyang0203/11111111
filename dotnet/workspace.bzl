@@ -19,7 +19,7 @@ def selenium_register_dotnet():
 
     import_nuget_package(
         name = "moq",
-        file = "third_party/dotnet/nuget/packages/moq.4.12.0.nupkg",
+        file = "third_party/dotnet/nuget/packages/moq.4.20.72.nupkg",
         sha256 = "339bbb71107e137a753a89c6b74adb5d9072f0916cf8f19f48b30ae29c41f434",
     )
 
