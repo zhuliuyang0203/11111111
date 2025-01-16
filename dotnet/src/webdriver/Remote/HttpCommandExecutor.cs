@@ -301,7 +301,7 @@ namespace OpenQA.Selenium.Remote
 
         private Response CreateResponse(HttpResponseInfo responseInfo)
         {
-            Response response = new Response();
+            Response response;
             string body = responseInfo.Body;
             if ((int)responseInfo.StatusCode < 200 || (int)responseInfo.StatusCode > 299)
             {
@@ -311,8 +311,7 @@ namespace OpenQA.Selenium.Remote
                 }
                 else
                 {
-                    response.Status = WebDriverResult.UnknownError;
-                    response.Value = body;
+                    response = new Response(sessionId: null, body, WebDriverResult.UnknownError);
                 }
             }
             else if (responseInfo.ContentType != null && responseInfo.ContentType.StartsWith(JsonMimeType, StringComparison.OrdinalIgnoreCase))
@@ -321,7 +320,7 @@ namespace OpenQA.Selenium.Remote
             }
             else
             {
-                response.Value = body;
+                response = new Response(sessionId: null, body, WebDriverResult.Success);
             }
 
             if (response.Value is string valueString)
