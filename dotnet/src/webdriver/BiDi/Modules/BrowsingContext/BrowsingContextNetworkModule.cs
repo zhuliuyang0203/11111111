@@ -71,7 +71,7 @@ public class BrowsingContextNetworkModule(BrowsingContext context, NetworkModule
 
     public Task SetCacheBehaviorAsync(CacheBehavior behavior, BrowsingContextSetCacheBehaviorOptions? options = null)
     {
-        SetCacheBehaviorOptions setCacheBehaviorOptions = new()
+        SetCacheBehaviorOptions setCacheBehaviorOptions = new(options)
         {
             Contexts = [context]
         };

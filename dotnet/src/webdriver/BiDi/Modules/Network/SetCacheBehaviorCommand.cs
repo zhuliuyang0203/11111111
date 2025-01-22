@@ -33,6 +33,16 @@ internal record SetCacheBehaviorCommandParameters(CacheBehavior CacheBehavior) :
 
 public record SetCacheBehaviorOptions : CommandOptions
 {
+    public SetCacheBehaviorOptions()
+    {
+
+    }
+
+    internal SetCacheBehaviorOptions(BrowsingContextSetCacheBehaviorOptions? options)
+    {
+
+    }
+
     public IEnumerable<BrowsingContext.BrowsingContext>? Contexts { get; set; }
 }
 
