@@ -260,8 +260,7 @@ module Selenium
         end
       end
 
-      describe 'pen stylus', except: [{browser: :firefox, reason: 'Unknown pointerType'},
-                                      {browser: :safari,  reason: 'Some issues with resolution?'}] do
+      describe 'pen stylus', only: [{browser: %i[chrome edge]}] do
         it 'sets pointer event properties' do
           driver.navigate.to url_for('pointerActionsPage.html')
           pointer_area = driver.find_element(id: 'pointerArea')
@@ -302,9 +301,8 @@ module Selenium
         end
       end
 
-      describe '#scroll_to', only: {browser: %i[chrome edge firefox]} do
-        it 'scrolls to element',
-           except: {browser: :firefox, reason: 'incorrect MoveTargetOutOfBoundsError'} do
+      describe '#scroll_to', only: {browser: %i[chrome edge]} do
+        it 'scrolls to element' do
           driver.navigate.to url_for('scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html')
           iframe = driver.find_element(tag_name: 'iframe')
 
@@ -330,8 +328,7 @@ module Selenium
       end
 
       describe '#scroll_from' do
-        it 'scrolls from element by given amount',
-           except: {browser: %i[firefox safari], reason: 'incorrect MoveTargetOutOfBoundsError'} do
+        it 'scrolls from element by given amount', only: {browser: %i[chrome edge]} do
           driver.navigate.to url_for('scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html')
           iframe = driver.find_element(tag_name: 'iframe')
           scroll_origin = WheelActions::ScrollOrigin.element(iframe)
@@ -344,8 +341,7 @@ module Selenium
           expect(in_viewport?(checkbox)).to be true
         end
 
-        it 'scrolls from element by given amount with offset',
-           except: {browser: %i[firefox safari], reason: 'incorrect MoveTargetOutOfBoundsError'} do
+        it 'scrolls from element by given amount with offset', only: {browser: %i[chrome edge]} do
           driver.navigate.to url_for('scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html')
           footer = driver.find_element(tag_name: 'footer')
           scroll_origin = WheelActions::ScrollOrigin.element(footer, 0, -50)
