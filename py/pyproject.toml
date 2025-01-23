@@ -43,6 +43,10 @@ exclude = ["test*"]
 namespaces = true
 # include-package-data is `true` by default in pyproject.toml
 
+[[tool.setuptools-rust.ext-modules]]
+target = "selenium.webdriver.common.selenium-manager"
+binding = "PyO3"
+
 [[tool.setuptools-rust.bins]]
 target = "selenium.webdriver.common.selenium-manager"
 
