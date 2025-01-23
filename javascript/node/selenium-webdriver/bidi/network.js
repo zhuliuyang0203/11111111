@@ -375,7 +375,14 @@ class Network {
       },
     }
 
-    if (contexts) {
+    if (contexts !== null) {
+      if (
+        !Array.isArray(contexts) ||
+        contexts.length === 0 ||
+        contexts.some((c) => typeof c !== 'string' || c.trim() === '')
+      ) {
+        throw new Error('Contexts must be an array of non-empty strings')
+      }
       command.params.contexts = contexts
     }
 

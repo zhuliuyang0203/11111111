@@ -246,6 +246,18 @@ suite(
           /Cache behavior must be either "default" or "bypass"/,
         )
       })
+
+      it('throws error for invalid context id types', async function () {
+        await driver.get(Pages.emptyPage)
+        await assert.rejects(
+          async () => await network.setCacheBehavior('default', ''),
+          /Contexts must be an array of non-empty strings/,
+        )
+        await assert.rejects(
+          async () => await network.setCacheBehavior('default', ['', ' ']),
+          /Contexts must be an array of non-empty strings/,
+        )
+      })
     })
   },
   { browsers: [Browser.FIREFOX, Browser.CHROME, Browser.EDGE] },
