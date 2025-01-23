@@ -50,11 +50,23 @@ namespace OpenQA.Selenium
         private const double DefaultPageHeight = 21.59;
         private const double DefaultPageWidth = 27.94;
         private const double CentimetersPerInch = 2.54;
-
+        public static PageSize A4 { get; } = new PageSize { Width = 21.0, Height = 29.7 }; // cm
+        public static PageSize Legal { get; } = new PageSize { Width = 21.59, Height = 35.56 }; // cm
+        public static PageSize Letter { get; } = new PageSize { Width = 21.59, Height = 27.94 }; // cm
+        public static PageSize Tabloid { get; } = new PageSize { Width = 27.94, Height = 43.18 }; // cm
         private double scale = 1.0;
         private PageSize pageSize = new PageSize();
         private Margins margins = new Margins();
         private readonly HashSet<object> pageRanges = new HashSet<object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PrintOptions"/> class with default values.
+        /// Default page size is set to A4.
+        /// </summary>
+        public PrintOptions()
+        {
+        this.PageDimensions = A4; // Default to A4 page size
+        }
 
         /// <summary>
         /// Gets or sets the orientation of the pages in the printed document.
@@ -97,6 +109,21 @@ namespace OpenQA.Selenium
         {
             get => this.pageSize;
             set => this.pageSize = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+
+        /// <summary>
+        /// Sets the page size to a predefined or custom size.
+        /// </summary>
+        /// <param name="pageSize">The page size to set.</param>
+        /// <exception cref="ArgumentNullException">Thrown if pageSize is null.</exception>
+        public void SetPageSize(PageSize pageSize)
+        {
+            if (pageSize == null)
+            {
+                throw new ArgumentNullException(nameof(pageSize), "Page size cannot be null.");
+            }
+            this.PageDimensions = pageSize;
         }
 
         /// <summary>

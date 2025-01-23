@@ -122,5 +122,56 @@ namespace OpenQA.Selenium
             Assert.That(() => new PrintOptions.Margins { Left = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
             Assert.That(() => new PrintOptions.Margins { Right = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
         }
+
+        [Test]
+        public void DefaultPageSizeIsA4()
+        {
+            var options = new PrintOptions();
+
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.A4.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.A4.Height));
+        }
+
+        [Test]
+        public void CanSetPredefinedPageSizes()
+        {
+            var options = new PrintOptions();
+
+            options.SetPageSize(PrintOptions.A4);
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.A4.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.A4.Height));
+
+            options.SetPageSize(PrintOptions.Legal);
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.Legal.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.Legal.Height));
+
+            options.SetPageSize(PrintOptions.Letter);
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.Letter.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.Letter.Height));
+
+            options.SetPageSize(PrintOptions.Tabloid);
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.Tabloid.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.Tabloid.Height));
+        }
+
+        [Test]
+        public void CanSetCustomPageSize()
+        {
+            var options = new PrintOptions();
+            var customPageSize = new PrintOptions.PageSize { Width = 25.0, Height = 30.0 };
+
+            options.SetPageSize(customPageSize);
+
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(25.0));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(30.0));
+        }
+
+        [Test]
+        public void SettingPageSizeToNullThrowsException()
+        {
+            var options = new PrintOptions();
+            Assert.That(() => options.SetPageSize(null), Throws.InstanceOf<ArgumentNullException>());
+        }
+
     }
 }
