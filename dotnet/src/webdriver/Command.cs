@@ -123,7 +123,7 @@ namespace OpenQA.Selenium
         /// <returns>A string representation of the Command Object</returns>
         public override string ToString()
         {
-            return $"[{this.SessionId}]: {this.Name} Parameters: {this.ParametersAsJsonString}";
+            return $"[{this.SessionId}]: {this.Name} {this.ParametersAsJsonString}";
         }
 
         /// <summary>
