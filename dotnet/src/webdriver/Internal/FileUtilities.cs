@@ -187,20 +187,18 @@ namespace OpenQA.Selenium.Internal
             }
 
             string currentDirectory = location!;
-
-
+#if !NET8_0_OR_GREATER
             // If we're shadow copying, get the directory from the codebase instead
             if (AppDomain.CurrentDomain.ShadowCopyFiles)
             {
-#pragma warning disable SYSLIB0012 // Type or member is obsolete
                 var codeBase = executingAssembly.CodeBase;
-#pragma warning restore SYSLIB0012 // Type or member is obsolete
 
                 if (codeBase is not null)
                 {
                     currentDirectory = Path.GetDirectoryName(codeBase)!;
                 }
             }
+#endif
 
             return currentDirectory;
         }
