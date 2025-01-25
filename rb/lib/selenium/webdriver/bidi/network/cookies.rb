@@ -26,16 +26,11 @@ module Selenium
           merge!(cookies)
         end
 
-        def serialize
-          map do |name, value|
-            {
-              name: name.to_s,
-              value: {
-                type: 'string',
-                value: value.to_s
-              }
-            }
-          end
+        def as_json
+          self[:name] = self[:name].to_s
+          self[:value] = {type: 'string', value: self[:value].to_s}
+
+          [compact]
         end
       end
     end # BiDi

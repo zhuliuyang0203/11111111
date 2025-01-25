@@ -3,16 +3,16 @@ module Selenium
     class BiDi
       class InterceptedResponse < InterceptedItem
         @body: untyped
-        @reason: untyped
+        @cookies: Hash[Symbol, String | Integer]?
+
+        @reason: String
 
         @credentials: untyped
 
         @headers: untyped
 
-        @set_cookie_headers: untyped
-
         attr_reader body: untyped
-        attr_accessor reason: untyped
+        attr_accessor reason: String
 
         attr_accessor status: Integer?
 
@@ -21,6 +21,8 @@ module Selenium
         def body=: -> untyped
 
         def continue: () -> untyped
+
+        def cookies:(?Hash[Symbol, String | Integer]? set_cookie_headers) -> untyped
 
         def credentials: (?username: untyped?, ?password: untyped?) -> untyped
 
