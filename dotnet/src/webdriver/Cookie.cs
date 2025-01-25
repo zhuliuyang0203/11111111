@@ -277,7 +277,7 @@ namespace OpenQA.Selenium
         {
             if (rawCookie == null)
             {
-                throw new ArgumentNullException(nameof(rawCookie), "Dictionary cannot be null");
+                throw new ArgumentNullException(nameof(rawCookie));
             }
 
             string name = rawCookie["name"].ToString();
@@ -351,14 +351,12 @@ namespace OpenQA.Selenium
         public override bool Equals(object obj)
         {
             // Two cookies are equal if the name and value match
-            Cookie cookie = obj as Cookie;
-
             if (this == obj)
             {
                 return true;
             }
 
-            if (cookie == null)
+            if (obj is not Cookie cookie)
             {
                 return false;
             }
@@ -368,7 +366,7 @@ namespace OpenQA.Selenium
                 return false;
             }
 
-            return !(this.cookieValue != null ? !this.cookieValue.Equals(cookie.cookieValue) : cookie.Value != null);
+            return string.Equals(this.cookieValue, cookie.cookieValue);
         }
 
         /// <summary>
