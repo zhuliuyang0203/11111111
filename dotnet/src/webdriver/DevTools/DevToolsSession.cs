@@ -64,7 +64,7 @@ namespace OpenQA.Selenium.DevTools
         private static readonly JsonSerializerOptions s_devToolsSerializerOptions = new()
         {
             TypeInfoResolver = CdpSerializationContext.Default,
-        }
+        };
 
         /// <summary>
         /// Initializes a new instance of the DevToolsSession class, using the specified WebSocket endpoint.
