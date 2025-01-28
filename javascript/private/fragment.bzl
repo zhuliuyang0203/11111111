@@ -61,7 +61,7 @@ def closure_fragment(
     #     See http://code.google.com/p/selenium/issues/detail?id=1333
     wrapper = (
         "function(){" +
-        "return (function(){%output%; return this.%EXPORT_FUNCTION_NAME%.apply(null,arguments);}).apply(window, arguments);}"
+        "return (function(){%output%; return this." + EXPORT_FUNCTION_NAME + ".apply(null,arguments);}).apply(window, arguments);}"
     )
 
     browser_defs = {
