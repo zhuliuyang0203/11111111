@@ -119,8 +119,8 @@ public class DistributorFlags implements HasRoles {
   @Parameter(
       names = {"--purge-nodes-interval"},
       description =
-          "How often, in seconds, will the Distributor purge Nodes that have been down for a while. "
-              + "This is calculated based on the heartbeat received from a particular node. ")
+          "How often, in seconds, will the Distributor purge Nodes that have been down for a while."
+              + " This is calculated based on the heartbeat received from a particular node. ")
   @ConfigValue(section = DISTRIBUTOR_SECTION, name = "purge-nodes-interval", example = "30")
   public int purgeNodesInterval = DEFAULT_PURGE_NODES_INTERVAL;
 
