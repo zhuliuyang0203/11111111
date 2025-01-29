@@ -8,14 +8,9 @@ namespace {{rootNamespace}}
     ///</summary>
     public class DevToolsSessionDomains : OpenQA.Selenium.DevTools.DevToolsSessionDomains
     {
-        internal static readonly global::System.Text.Json.JsonSerializerOptions RequestOptions = new()
+        internal static readonly global::System.Text.Json.JsonSerializerOptions JsonOptions = new()
         {
-            TypeInfoResolver = {{protocolVersion}}JsonRequestSerializerContext.Default
-        };
-
-        internal static readonly global::System.Text.Json.JsonSerializerOptions ResponseOptions = new()
-        {
-            TypeInfoResolver = {{protocolVersion}}JsonResponseSerializerContext.Default
+            TypeInfoResolver = {{protocolVersion}}JsonSerializerContext.Default
         };
 
 {{#each domains}}
@@ -57,12 +52,7 @@ namespace {{rootNamespace}}
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))] // Placeholder in case nothing gets generated
 {{#each commands}}
     [global::System.Text.Json.Serialization.JsonSerializable(typeof({{FullTypeName}}))]
-{{/each}}
-    internal sealed partial class {{protocolVersion}}JsonRequestSerializerContext : global::System.Text.Json.Serialization.JsonSerializerContext;
-
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))] // Placeholder in case nothing gets generated
-{{#each commands}}
     [global::System.Text.Json.Serialization.JsonSerializable(typeof({{FullResponseTypeName}}))]
 {{/each}}
-    internal sealed partial class {{protocolVersion}}JsonResponseSerializerContext : global::System.Text.Json.Serialization.JsonSerializerContext;
+    internal sealed partial class {{protocolVersion}}JsonSerializerContext : global::System.Text.Json.Serialization.JsonSerializerContext;
 }
