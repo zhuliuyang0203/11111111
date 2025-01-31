@@ -18,7 +18,6 @@
 // </copyright>
 
 using OpenQA.Selenium.DevTools;
-using OpenQA.Selenium.DevTools.Json;
 using OpenQA.Selenium.Internal;
 using System;
 using System.Collections.Generic;

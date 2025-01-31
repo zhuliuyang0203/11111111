@@ -17,7 +17,6 @@
 // under the License.
 // </copyright>
 
-using OpenQA.Selenium.DevTools.Json;
 using OpenQA.Selenium.Internal.Logging;
 using System;
 using System.Collections.Concurrent;
