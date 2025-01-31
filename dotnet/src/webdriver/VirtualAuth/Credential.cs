@@ -34,11 +34,11 @@ namespace OpenQA.Selenium.VirtualAuth
         private readonly byte[] id;
         private readonly byte[]? userHandle;
 
-        private Credential(byte[] id, bool isResidentCredential, string rpId, string privateKey, byte[]? userHandle, int signCount)
+        private Credential(byte[] id, bool isResidentCredential, string? rpId, string privateKey, byte[]? userHandle, int signCount)
         {
             this.id = id ?? throw new ArgumentNullException(nameof(id));
             this.IsResidentCredential = isResidentCredential;
-            this.RpId = rpId ?? throw new ArgumentNullException(nameof(rpId));
+            this.RpId = rpId;
             this.PrivateKey = privateKey ?? throw new ArgumentNullException(nameof(privateKey));
             this.userHandle = userHandle;
             this.SignCount = signCount;
@@ -52,8 +52,8 @@ namespace OpenQA.Selenium.VirtualAuth
         /// <param name="privateKey">The private Key for the credentials.</param>
         /// <param name="signCount">The signature counter for the credentials.</param>
         /// <returns>The created instance of the Credential class.</returns>
-        /// <exception cref="ArgumentNullException">If <paramref name="id"/>, <paramref name="rpId"/>, or <paramref name="privateKey"/> are <see langword="null"/>.</exception>
-        public static Credential CreateNonResidentCredential(byte[] id, string rpId, string privateKey, int signCount)
+        /// <exception cref="ArgumentNullException">If <paramref name="id"/> or <paramref name="privateKey"/> are <see langword="null"/>.</exception>
+        public static Credential CreateNonResidentCredential(byte[] id, string? rpId, string privateKey, int signCount)
         {
             return new Credential(id, false, rpId, privateKey, null, signCount);
         }
@@ -67,8 +67,8 @@ namespace OpenQA.Selenium.VirtualAuth
         /// <param name="userHandle">The user handle associated to the credential.</param>
         /// <param name="signCount">The signature counter for the credentials.</param>
         /// <returns>The created instance of the Credential class.</returns>
-        /// <exception cref="ArgumentNullException">If <paramref name="id"/>, <paramref name="rpId"/>, or <paramref name="privateKey"/> are <see langword="null"/>.</exception>
-        public static Credential CreateResidentCredential(byte[] id, string rpId, string privateKey, byte[] userHandle, int signCount)
+        /// <exception cref="ArgumentNullException">If <paramref name="id"/> or <paramref name="privateKey"/> are <see langword="null"/>.</exception>
+        public static Credential CreateResidentCredential(byte[] id, string? rpId, string privateKey, byte[] userHandle, int signCount)
         {
             return new Credential(id, true, rpId, privateKey, userHandle, signCount);
         }
