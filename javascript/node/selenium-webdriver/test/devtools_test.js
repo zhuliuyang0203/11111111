@@ -131,7 +131,7 @@ suite(
           })
           await driver.get(url)
         },
-      )
+      ))
     })
   },
   { browsers: ['chrome'] },
