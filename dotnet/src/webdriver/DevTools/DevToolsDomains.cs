@@ -36,7 +36,7 @@ namespace OpenQA.Selenium.DevTools
         // This is the list of known supported DevTools version implementation.
         // When new versions are implemented for support, new types must be
         // added to this dictionary.
-        private static int[] SupportedProtocolVersions =>
+        private static int[] SupportedDevToolsVersions =>
         [
             130,
             132,
@@ -120,7 +120,7 @@ namespace OpenQA.Selenium.DevTools
         private static DevToolsDomains CreateFallbackDomain(int desiredVersion, DevToolsSession session, int versionRange)
         {
             // Get the list of supported versions and sort descending
-            List<int> supportedVersions = new List<int>(SupportedProtocolVersions);
+            List<int> supportedVersions = new List<int>(SupportedDevToolsVersions);
             supportedVersions.Sort((first, second) => second.CompareTo(first));
 
             foreach (int supportedVersion in supportedVersions)
