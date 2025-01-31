@@ -72,6 +72,7 @@ class WebSocketTransport(Uri _uri) : ITransport, IDisposable
     }
 
     public async Task SendAsJsonAsync<TCommand>(TCommand command, JsonSerializerContext jsonSerializerContext, CancellationToken cancellationToken)
+        where TCommand : Command
     {
         var buffer = JsonSerializer.SerializeToUtf8Bytes(command, typeof(TCommand), jsonSerializerContext);
 
