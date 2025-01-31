@@ -20,6 +20,7 @@
 using OpenQA.Selenium.Internal.Logging;
 using System;
 using System.Collections.Concurrent;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Net.Http;
 using System.Text.Json;
@@ -148,6 +149,8 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        [RequiresUnreferencedCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
+        [RequiresDynamicCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
         public async Task<ICommandResponse<TCommand>> SendCommand<TCommand>(TCommand command, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
             where TCommand : ICommand
         {
@@ -181,6 +184,8 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        [RequiresUnreferencedCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
+        [RequiresDynamicCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
         public async Task<ICommandResponse<TCommand>> SendCommand<TCommand>(TCommand command, string sessionId, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
             where TCommand : ICommand
         {
@@ -214,6 +219,8 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        [RequiresUnreferencedCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
+        [RequiresDynamicCode("SendCommand is not compatible with trimming or AOT. Use the overload that takes JsonNode parameters instead")]
         public async Task<TCommandResponse> SendCommand<TCommand, TCommandResponse>(TCommand command, CancellationToken cancellationToken = default(CancellationToken), int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
             where TCommand : ICommand
             where TCommandResponse : ICommandResponse<TCommand>
