@@ -395,7 +395,7 @@ namespace OpenQA.Selenium
                 objectList.Add(sequence.ToDictionary());
             }
 
-            Dictionary<string, object?> parameters = new Dictionary<string, object?>();
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters["actions"] = objectList;
 
             this.Execute(DriverCommand.Actions, parameters);
