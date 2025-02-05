@@ -221,9 +221,14 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <exception cref="WebDriverException">If <see cref="Value"/> is <see langword="null"/>.</exception>
         [MemberNotNull(nameof(Value))]
-        internal object EnsureValueIsNotNull(string? errorMessage = null)
+        internal Response EnsureValueIsNotNull(string commandName)
         {
-            return Value ?? throw new WebDriverException(errorMessage ?? "Expected not-null response");
+            if (Value is null)
+            {
+                throw new WebDriverException($"{commandName} command returned a successful result, but contained no data");
+            }
+
+            return this;
         }
 
         /// <summary>
