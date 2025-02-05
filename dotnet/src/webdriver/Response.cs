@@ -221,11 +221,11 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <exception cref="WebDriverException">If <see cref="Value"/> is <see langword="null"/>.</exception>
         [MemberNotNull(nameof(Value))]
-        internal Response EnsureValueIsNotNull(string commandName)
+        internal Response EnsureValueIsNotNull()
         {
             if (Value is null)
             {
-                throw new WebDriverException($"{commandName} command returned a successful result, but contained no data");
+                throw new WebDriverException("Remote end doesn't have $.Value property");
             }
 
             return this;
