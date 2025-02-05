@@ -225,7 +225,7 @@ namespace OpenQA.Selenium
         {
             if (Value is null)
             {
-                throw new WebDriverException("Remote end doesn't have $.Value property");
+                throw new WebDriverException("Response from remote end doesn't have $.Value property");
             }
 
             return this;
