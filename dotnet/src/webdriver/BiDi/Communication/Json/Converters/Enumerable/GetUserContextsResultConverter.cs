@@ -21,6 +21,7 @@ using OpenQA.Selenium.BiDi.Modules.Browser;
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 #nullable enable
@@ -31,8 +32,9 @@ internal class GetUserContextsResultConverter : JsonConverter<GetUserContextsRes
 {
     public override GetUserContextsResult Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
-        using var doc = JsonDocument.ParseValue(ref reader);
-        var userContexts = doc.RootElement.GetProperty("userContexts").Deserialize<IReadOnlyList<UserContextInfo>>(options);
+        var jsonNode = JsonNode.Parse(ref reader);
+
+        var userContexts = jsonNode?["userContexts"].Deserialize<IReadOnlyList<UserContextInfo>>(options);
 
         return new GetUserContextsResult(userContexts!);
     }
