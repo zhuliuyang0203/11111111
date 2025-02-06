@@ -79,10 +79,7 @@ namespace OpenQA.Selenium
 
                 Response commandResponse = this.Execute(DriverCommand.GetElementTagName, parameters);
 
-                if (commandResponse.Value is null)
-                {
-                    throw new WebDriverException("GetElementTagName command returned a successful result, but contained no data");
-                }
+                commandResponse.EnsureValueIsNotNull();
                 return commandResponse.Value.ToString()!;
             }
         }
@@ -101,11 +98,7 @@ namespace OpenQA.Selenium
 
                 Response commandResponse = this.Execute(DriverCommand.GetElementText, parameters);
 
-                if (commandResponse.Value is null)
-                {
-                    throw new WebDriverException("GetElementText command returned a successful result, but contained no data");
-                }
-
+                commandResponse.EnsureValueIsNotNull();
                 return commandResponse.Value.ToString()!;
             }
         }
@@ -248,11 +241,7 @@ namespace OpenQA.Selenium
 
                 Response commandResponse = this.Execute(DriverCommand.GetComputedAccessibleLabel, parameters);
 
-                if (commandResponse.Value is null)
-                {
-                    throw new WebDriverException("GetComputedAccessibleLabel command returned a successful result, but contained no data");
-                }
-
+                commandResponse.EnsureValueIsNotNull();
                 return commandResponse.Value.ToString()!;
             }
         }
@@ -559,11 +548,7 @@ namespace OpenQA.Selenium
 
             Response commandResponse = this.Execute(DriverCommand.GetElementValueOfCssProperty, parameters);
 
-            if (commandResponse.Value is null)
-            {
-                throw new WebDriverException("GetElementValueOfCssProperty command returned a successful result, but contained no data");
-            }
-
+            commandResponse.EnsureValueIsNotNull();
             return commandResponse.Value.ToString()!;
         }
 
@@ -578,7 +563,9 @@ namespace OpenQA.Selenium
 
             // Get the screenshot as base64.
             Response screenshotResponse = this.Execute(DriverCommand.ElementScreenshot, parameters);
-            string base64 = screenshotResponse.Value?.ToString() ?? throw new WebDriverException("ElementScreenshot command returned successfully, but with no response");
+
+            screenshotResponse.EnsureValueIsNotNull();
+            string base64 = screenshotResponse.Value.ToString()!;
 
             // ... and convert it.
             return new Screenshot(base64);
@@ -747,8 +734,6 @@ namespace OpenQA.Selenium
             return wrappedAtom;
         }
 
-#nullable restore
-
         private string UploadFile(string localFile)
         {
             string base64zip;
@@ -767,7 +752,9 @@ namespace OpenQA.Selenium
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add("file", base64zip);
                 Response response = this.Execute(DriverCommand.UploadFile, parameters);
-                return response.Value.ToString();
+
+                response.EnsureValueIsNotNull();
+                return response.Value.ToString()!;
             }
             catch (IOException e)
             {
