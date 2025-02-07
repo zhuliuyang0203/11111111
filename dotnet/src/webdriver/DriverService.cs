@@ -239,6 +239,12 @@ namespace OpenQA.Selenium
         {
             if (this.driverServiceProcess != null)
             {
+                bool serviceAvailable = await this.WaitForServiceInitializationAsync().ConfigureAwait(false);
+                if (!serviceAvailable)
+                {
+                    throw new WebDriverException($"Cannot start the driver service on {this.ServiceUrl}");
+                }
+
                 return;
             }
 
