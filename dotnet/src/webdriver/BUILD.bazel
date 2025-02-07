@@ -53,6 +53,7 @@ csharp_library(
     deps = [
         framework("nuget", "NETStandard.Library"),
         framework("nuget", "Microsoft.Bcl.AsyncInterfaces"),
+        framework("nuget", "System.Threading.Channels"),
         framework("nuget", "System.Threading.Tasks.Extensions"),
         framework("nuget", "System.Memory"),
         framework("nuget", "System.Runtime.CompilerServices.Unsafe"),
@@ -119,6 +120,7 @@ csharp_library(
     deps = [
         framework("nuget", "NETStandard.Library"),
         framework("nuget", "Microsoft.Bcl.AsyncInterfaces"),
+        framework("nuget", "System.Threading.Channels"),
         framework("nuget", "System.Threading.Tasks.Extensions"),
         framework("nuget", "System.Memory"),
         framework("nuget", "System.Runtime.CompilerServices.Unsafe"),
