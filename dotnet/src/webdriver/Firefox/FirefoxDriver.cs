@@ -362,12 +362,8 @@ namespace OpenQA.Selenium.Firefox
                 ["temporary"] = temporary
             };
             Response response = this.Execute(InstallAddOnCommand, parameters);
-            if (response.Value is null)
-            {
-                throw new WebDriverException("Firefox add-on installation returned no add-on identifier");
-            }
 
-            return (string)response.Value;
+            return (string)response.Value!;
         }
 
         /// <summary>
@@ -395,7 +391,8 @@ namespace OpenQA.Selenium.Firefox
         {
             Response screenshotResponse = this.Execute(GetFullPageScreenshotCommand, null);
 
-            string base64 = screenshotResponse.Value?.ToString() ?? throw new WebDriverException("GetFullPageScreenshotCommand returned successfully but contained no data");
+            screenshotResponse.EnsureValueIsNotNull();
+            string base64 = screenshotResponse.Value.ToString()!;
             return new Screenshot(base64);
         }
 
