@@ -41,7 +41,7 @@ public class Subscription : IAsyncDisposable
 
     public async Task UnsubscribeAsync()
     {
-        await _broker.UnsubscribeAsync(_eventHandler).ConfigureAwait(false);
+        await _broker.UnsubscribeAsync(_subscription, _eventHandler).ConfigureAwait(false);
     }
 
     public async ValueTask DisposeAsync()

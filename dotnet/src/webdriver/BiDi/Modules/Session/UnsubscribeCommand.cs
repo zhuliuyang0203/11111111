@@ -18,12 +18,20 @@
 // </copyright>
 
 using OpenQA.Selenium.BiDi.Communication;
+using System.Collections.Generic;
 
 #nullable enable
 
 namespace OpenQA.Selenium.BiDi.Modules.Session;
 
-internal class UnsubscribeCommand(SubscribeCommandParameters @params)
-    : Command<SubscribeCommandParameters>(@params, "session.unsubscribe");
+internal class UnsubscribeByIdCommand(UnsubscribeByIdCommandParameters @params)
+    : Command<UnsubscribeByIdCommandParameters>(@params, "session.unsubscribe");
+
+internal class UnsubscribeByAttributesCommand(UnsubscribeByAttributesCommandParameters @params)
+    : Command<UnsubscribeByAttributesCommandParameters>(@params, "session.unsubscribe");
+
+internal record UnsubscribeByIdCommandParameters(IEnumerable<Subscription> Subscriptions) : CommandParameters;
+
+internal record UnsubscribeByAttributesCommandParameters : CommandParameters;
 
 public record UnsubscribeOptions : SubscribeOptions;

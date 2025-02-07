@@ -21,7 +21,7 @@
 
 namespace OpenQA.Selenium.BiDi.Modules.Session;
 
-internal sealed class Subscription
+public sealed class Subscription
 {
     internal Subscription(string id)
     {

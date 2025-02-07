@@ -267,26 +267,13 @@ public class Broker : IAsyncDisposable
         }
     }
 
-    public async Task UnsubscribeAsync(EventHandler eventHandler)
+    public async Task UnsubscribeAsync(Modules.Session.Subscription subscription, EventHandler eventHandler)
     {
         var eventHandlers = _eventHandlers[eventHandler.EventName];
 
         eventHandlers.Remove(eventHandler);
 
-        if (eventHandler.Contexts is not null)
-        {
-            if (!eventHandlers.Any(h => eventHandler.Contexts.Equals(h.Contexts)) && !eventHandlers.Any(h => h.Contexts is null))
-            {
-                await _bidi.SessionModule.UnsubscribeAsync([eventHandler.EventName], new() { Contexts = eventHandler.Contexts }).ConfigureAwait(false);
-            }
-        }
-        else
-        {
-            if (!eventHandlers.Any(h => h.Contexts is not null) && !eventHandlers.Any(h => h.Contexts is null))
-            {
-                await _bidi.SessionModule.UnsubscribeAsync([eventHandler.EventName]).ConfigureAwait(false);
-            }
-        }
+        await _bidi.SessionModule.UnsubscribeAsync([subscription]).ConfigureAwait(false);
     }
 
     public async ValueTask DisposeAsync()
