@@ -37,6 +37,7 @@ namespace OpenQA.Selenium
     public abstract class DriverService : ICommandServer
     {
         private bool isDisposed;
+        private readonly object driverServiceProcessLock = new object();
         private Process? driverServiceProcess;
 
         /// <summary>
@@ -242,40 +243,47 @@ namespace OpenQA.Selenium
                 return;
             }
 
-            var driverServiceProcess = new Process();
-
-            try
+            lock (this.driverServiceProcessLock)
             {
-                if (this.DriverServicePath != null)
+
+                if (this.driverServiceProcess == null)
                 {
-                    if (this.DriverServiceExecutableName is null)
+                    var driverServiceProcess = new Process();
+
+                    try
                     {
-                        throw new InvalidOperationException("If the driver service path is specified, the driver service executable name must be as well");
+                        if (this.DriverServicePath != null)
+                        {
+                            if (this.DriverServiceExecutableName is null)
+                            {
+                                throw new InvalidOperationException("If the driver service path is specified, the driver service executable name must be as well");
+                            }
+
+                            driverServiceProcess.StartInfo.FileName = Path.Combine(this.DriverServicePath, this.DriverServiceExecutableName);
+                        }
+                        else
+                        {
+                            driverServiceProcess.StartInfo.FileName = new DriverFinder(this.GetDefaultDriverOptions()).GetDriverPath();
+                        }
+
+                        driverServiceProcess.StartInfo.Arguments = this.CommandLineArguments;
+                        driverServiceProcess.StartInfo.UseShellExecute = false;
+                        driverServiceProcess.StartInfo.CreateNoWindow = this.HideCommandPromptWindow;
+
+                        DriverProcessStartingEventArgs eventArgs = new DriverProcessStartingEventArgs(driverServiceProcess.StartInfo);
+                        this.OnDriverProcessStarting(eventArgs);
+
+                        driverServiceProcess.Start();
+                    }
+                    catch
+                    {
+                        driverServiceProcess.Dispose();
+                        throw;
                     }
 
-                    driverServiceProcess.StartInfo.FileName = Path.Combine(this.DriverServicePath, this.DriverServiceExecutableName);
+                    this.driverServiceProcess = driverServiceProcess;
                 }
-                else
-                {
-                    driverServiceProcess.StartInfo.FileName = new DriverFinder(this.GetDefaultDriverOptions()).GetDriverPath();
-                }
-
-                driverServiceProcess.StartInfo.Arguments = this.CommandLineArguments;
-                driverServiceProcess.StartInfo.UseShellExecute = false;
-                driverServiceProcess.StartInfo.CreateNoWindow = this.HideCommandPromptWindow;
-
-                DriverProcessStartingEventArgs eventArgs = new DriverProcessStartingEventArgs(driverServiceProcess.StartInfo);
-                this.OnDriverProcessStarting(eventArgs);
-
-                driverServiceProcess.Start();
             }
-            catch
-            {
-                driverServiceProcess.Dispose();
-                throw;
-            }
-
-            this.driverServiceProcess = driverServiceProcess;
 
             bool serviceAvailable = await this.WaitForServiceInitializationAsync().ConfigureAwait(false);
             DriverProcessStartedEventArgs processStartedEventArgs = new DriverProcessStartedEventArgs(driverServiceProcess);
