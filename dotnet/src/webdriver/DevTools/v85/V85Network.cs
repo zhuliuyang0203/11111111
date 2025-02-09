@@ -153,7 +153,7 @@ namespace OpenQA.Selenium.DevTools.V85
                 Url = requestData.Url,
             };
 
-            if (requestData.Headers.Count > 0)
+            if (requestData.Headers != null && requestData.Headers.Count > 0)
             {
                 List<HeaderEntry> headers = new List<HeaderEntry>();
                 foreach (KeyValuePair<string, string> headerPair in requestData.Headers)
@@ -304,7 +304,7 @@ namespace OpenQA.Selenium.DevTools.V85
         }
 
         /// <summary>
-        /// Asynchronously contines an intercepted network response without modification.
+        /// Asynchronously contiunes an intercepted network response without modification.
         /// </summary>
         /// <param name="responseData">The <see cref="HttpResponseData"/> of the network response.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
