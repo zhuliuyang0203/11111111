@@ -172,12 +172,11 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets a value indicating whether the service is responding to HTTP requests.
         /// </summary>
-        [Obsolete("Use the asynchronous method IsInitializedAsync")]
         protected virtual bool IsInitialized
         {
             get
             {
-                return Task.Run(async () => await IsInitializedAsync()).GetAwaiter().GetResult();
+                return Task.Run(this.IsInitializedAsync).GetAwaiter().GetResult();
             }
         }
 
@@ -226,10 +225,9 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Starts the DriverService if it is not already running.
         /// </summary>
-        [Obsolete("Use the asynchronous method StartAsync")]
         public void Start()
         {
-            Task.Run(async () => await StartAsync()).GetAwaiter().GetResult();
+            Task.Run(this.StartAsync).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -300,7 +298,7 @@ namespace OpenQA.Selenium
             {
                 if (disposing)
                 {
-                    Task.Run(() => this.StopAsync()).GetAwaiter().GetResult();
+                    Task.Run(this.StopAsync).GetAwaiter().GetResult();
                 }
 
                 this.isDisposed = true;

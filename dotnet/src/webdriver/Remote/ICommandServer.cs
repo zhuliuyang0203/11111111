@@ -18,7 +18,6 @@
 // </copyright>
 
 using System;
-using System.Threading.Tasks;
 
 #nullable enable
 
@@ -27,18 +26,11 @@ namespace OpenQA.Selenium.Remote
     /// <summary>
     /// Provides a way to start a server that understands remote commands
     /// </summary>
-    public interface ICommandServer : IDisposable, IAsyncDisposable
+    public interface ICommandServer : IDisposable
     {
         /// <summary>
         /// Starts the server.
         /// </summary>
-        [Obsolete("Use the asynchronous method StartAsync")]
         void Start();
-
-        /// <summary>
-        /// Starts the server.
-        /// </summary>
-        /// <returns>A task that represents the asynchronous start operation.</returns>
-        Task StartAsync();
     }
 }
