@@ -268,6 +268,7 @@ namespace OpenQA.Selenium
                 catch
                 {
                     this.driverServiceProcess.Dispose();
+                    this.driverServiceProcess = null;
                     throw;
                 }
             }
