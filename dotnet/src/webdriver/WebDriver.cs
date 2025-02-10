@@ -122,7 +122,7 @@ namespace OpenQA.Selenium
             get
             {
                 Response commandResponse = this.Execute(DriverCommand.GetTitle, null);
-                object returnedTitle = commandResponse?.Value ?? string.Empty;
+                object returnedTitle = commandResponse.Value ?? string.Empty;
 
                 return returnedTitle.ToString();
             }
