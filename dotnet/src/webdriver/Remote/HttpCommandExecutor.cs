@@ -241,13 +241,14 @@ namespace OpenQA.Selenium.Remote
 
             return httpClientHandler;
         }
+
         /// <summary>
         /// Creates an instance of <see cref="HttpClient"/> used by making all HTTP calls to remote end.
         /// </summary>
         /// <returns>An instance of <see cref="HttpClient"/>.</returns>
         protected virtual HttpClient CreateHttpClient()
         {
-            var httpClientHandler = CreateHttpClientHandler();
+            var httpClientHandler = CreateHttpClientHandler() ?? throw new InvalidOperationException($"{nameof(CreateHttpClientHandler)} method returned null");
 
             HttpMessageHandler handler = httpClientHandler;
 
