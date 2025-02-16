@@ -94,6 +94,10 @@ module Selenium
           result = @bidi.send_cmd('browsingContext.create', type: type.to_s, referenceContext: context_id)
           result['context']
         end
+
+        def handle_user_prompt(context_id, accept: true, text: nil)
+          @bidi.send_cmd('browsingContext.handleUserPrompt', context: context_id, accept: accept, text: text)
+        end
       end
     end # BiDi
   end # WebDriver

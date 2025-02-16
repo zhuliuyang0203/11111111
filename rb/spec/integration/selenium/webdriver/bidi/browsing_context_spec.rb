@@ -22,8 +22,7 @@ require_relative '../spec_helper'
 module Selenium
   module WebDriver
     class BiDi
-      describe BrowsingContext, exclusive: {bidi: true, reason: 'only executed when bidi is enabled'},
-                                only: {browser: %i[chrome edge firefox]} do
+      describe BrowsingContext do
         after { |example| reset_driver!(example: example) }
 
         let(:bridge) { driver.instance_variable_get(:@bridge) }
@@ -72,6 +71,39 @@ module Selenium
           handles = driver.window_handles
           expect(handles).to include(window1)
           expect(handles).not_to include(window2)
+        end
+
+        it 'accepts users prompts without text' do
+          reset_driver!(web_socket_url: true) do |driver|
+            browsing_context = described_class.new(driver)
+            window = browsing_context.create
+
+            browsing_context.handle_user_prompt(window, accept: true)
+
+            expect(driver.page_source).to include('hello')
+          end
+        end
+
+        it 'accepts users prompts with text' do
+          reset_driver!(web_socket_url: true) do |driver|
+            browsing_context = described_class.new(driver)
+            window = browsing_context.create
+
+            browsing_context.handle_user_prompt(window, accept: true, text: 'Hello, world!')
+
+            expect(driver.page_source).to include('hello')
+          end
+        end
+
+        it 'rejects users prompts' do
+          reset_driver!(web_socket_url: true) do |driver|
+            browsing_context = described_class.new(driver)
+            window = browsing_context.create
+
+            browsing_context.handle_user_prompt(window, accept: false)
+
+            expect(driver.page_source).to include('goodbye')
+          end
         end
       end
     end # BiDi
