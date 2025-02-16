@@ -77,9 +77,9 @@ module Selenium
         it 'sets the viewport' do
           reset_driver!(web_socket_url: true) do |driver|
             browsing_context = described_class.new(driver)
-            browsing_context.set_viewport(width: 800, height: 600, device_pixel_ratio: 2)
+            browsing_context.set_viewport(width: 800, height: 600, device_pixel_ratio: 2.0)
             expect(driver.execute_script('return [window.innerWidth, window.innerHeight]')).to eq([800, 600])
-            expect(driver.execute_script('return window.devicePixelRatio')).to eq(2)
+            expect(driver.execute_script('return window.devicePixelRatio')).to eq(2.0)
           end
         end
       end
