@@ -1191,11 +1191,11 @@ end
 
 def update_changelog(version, language, path, changelog, header)
   tag = previous_tag(version, language)
-  if language == 'javascript'
-    log = `git --no-pager log #{tag}...HEAD --pretty=format:"- %s" --reverse #{path}`
-  else
-    log = `git --no-pager log #{tag}...HEAD --pretty=format:"* %s" --reverse #{path}`
-  end
+  log = if language == 'javascript'
+          `git --no-pager log #{tag}...HEAD --pretty=format:"- %s" --reverse #{path}`
+        else
+          `git --no-pager log #{tag}...HEAD --pretty=format:"* %s" --reverse #{path}`
+        end
   commits = log.split('>>>').map { |entry|
     lines = entry.split("\n")
     lines.reject! { |line| line.match?(/^(----|Co-authored|Signed-off)/) || line.empty? }
