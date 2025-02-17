@@ -55,7 +55,7 @@ class Network:
 
     def __add_intercept(self, phases=None, contexts=None, url_patterns=None):
         """Add an intercept to the network.
-        
+
         Parameters:
         ----------
             phases (list, optional): A list of phases to intercept.
@@ -82,7 +82,7 @@ class Network:
 
     def __remove_intercept(self, intercept=None, request_id=None):
         """Remove an intercept from the network.
-        
+
         Parameters:
         ----------
             intercept (str, optional): The intercept to remove.
@@ -109,7 +109,7 @@ class Network:
 
     def __continue_with_auth(self, request_id, username, password):
         """Continue with authentication.
-        
+
         Parameters:
         ----------
             request_id (str): The request ID of the intercepted response.
@@ -127,13 +127,13 @@ class Network:
         self.conn.execute(self._command_iterator(command))
 
     def __on(self, event, callback):
-        """Set a callback function to subscribe to a network event. 
-        
+        """Set a callback function to subscribe to a network event.
+
         Parameters:
         ----------
             event (str): The event to subscribe to.
             callback (function): The callback function to execute on event.
-        
+
         Returns:
         -------
             str: The request ID of the intercepted response.
@@ -147,7 +147,7 @@ class Network:
 
     def __handle_event(self, event, data):
         """Perform callback function on event.
-        
+
         Parameters:
             event (str): The event to perform callback function on.
             data (dict): The data to pass to the callback function.
@@ -157,7 +157,7 @@ class Network:
 
     def add_authentication_handler(self, username, password):
         """Adds an authentication handler.
-        
+
         Parameters:
         ----------
             username (str): The username to use for authentication.
@@ -213,7 +213,7 @@ class Network:
 
     def remove_request_handler(self, request_id):
         """Removes a request handler.
-        
+
         Parameters:
         ----------
             request_id (str): The request ID of the intercepted response.
@@ -262,7 +262,7 @@ class Network:
 
     def remove_response_handler(self, response_id):
         """Removes a response handler.
-        
+
         Parameters:
         ----------
             response_id (str): The request ID of the intercepted response.
