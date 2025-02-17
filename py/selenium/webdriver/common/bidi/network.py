@@ -45,7 +45,7 @@ class Network:
             "network.authRequired": [],
         }
 
-    def command_iterator(self, command):
+    def _command_iterator(self, command):
         """Generator to yield command."""
         yield command
 
@@ -54,7 +54,17 @@ class Network:
         return len(self.callbacks) > 0
 
     def __add_intercept(self, phases=None, contexts=None, url_patterns=None):
-        """Add an intercept to the network."""
+        """Add an intercept to the network.
+        
+        Parameters:
+        ----------
+            phases (list, optional): A list of phases to intercept.
+                Default is None.
+            contexts (list, optional): A list of contexts to intercept.
+                Default is None.
+            url_patterns (list, optional): A list of URL patterns to intercept.
+                Default is None.
+        """
         if phases is None:
             phases = []
         if contexts is None and url_patterns is None:
@@ -68,21 +78,44 @@ class Network:
         else:
             params = {"phases": phases, "contexts": contexts, "urlPatterns": url_patterns}
         command = {"method": "network.addIntercept", "params": params}
-        self.conn.execute(self.command_iterator(command))
+        self.conn.execute(self._command_iterator(command))
 
     def __remove_intercept(self, intercept=None, request_id=None):
-        """Remove an intercept from the network."""
+        """Remove an intercept from the network.
+        
+        Parameters:
+        ----------
+            intercept (str, optional): The intercept to remove.
+                Default is None.
+            request_id (str, optional): The request ID of the intercepted response.
+                Default is None.
+
+        Raises:
+        ------
+            ValueError: If neither requestId nor intercept is specified
+
+        Notes:
+        -----
+            Either requestId or intercept must be specified.
+        """
         if request_id is not None:
             command = {"method": "network.removeIntercept", "requestId": request_id}
-            self.conn.execute(self.command_iterator(command))
+            self.conn.execute(self._command_iterator(command))
         elif intercept is not None:
             command = {"method": "network.removeIntercept", "intercept": intercept}
-            self.conn.execute(self.command_iterator(command))
+            self.conn.execute(self._command_iterator(command))
         else:
             raise ValueError("Either requestId or intercept must be specified")
 
     def __continue_with_auth(self, request_id, username, password):
-        """Continue with authentication."""
+        """Continue with authentication.
+        
+        Parameters:
+        ----------
+            request_id (str): The request ID of the intercepted response.
+            username (str): The username to use for authentication.
+            password (str): The password to use for authentication.
+        """
         command = {
             "method": "network.continueWithAuth",
             "params": {
@@ -91,10 +124,20 @@ class Network:
                 "credentials": {"type": "password", "username": username, "password": password},
             },
         }
-        self.conn.execute(self.command_iterator(command))
+        self.conn.execute(self._command_iterator(command))
 
     def __on(self, event, callback):
-        """Set a callback function to subscribe to a network event."""
+        """Set a callback function to subscribe to a network event. 
+        
+        Parameters:
+        ----------
+            event (str): The event to subscribe to.
+            callback (function): The callback function to execute on event.
+        
+        Returns:
+        -------
+            str: The request ID of the intercepted response.
+        """
         event = self.EVENTS.get(event, event)
         self.conn.execute(session_subscribe(event))
         self.callbacks[event] = callback
@@ -103,12 +146,23 @@ class Network:
             return self.conn.add_callback(event, self.__handle_event)
 
     def __handle_event(self, event, data):
-        """Perform callback function on event."""
+        """Perform callback function on event.
+        
+        Parameters:
+            event (str): The event to perform callback function on.
+            data (dict): The data to pass to the callback function.
+        """
         if event in self.callbacks:
             self.callbacks[event](data)
 
     def add_authentication_handler(self, username, password):
-        """Adds an authentication handler."""
+        """Adds an authentication handler.
+        
+        Parameters:
+        ----------
+            username (str): The username to use for authentication.
+            password (str): The password to use for authentication.
+        """
         self.__add_intercept(phases=[self.PHASES["auth_required"]])
         self.__on(
             "auth_required", lambda data: self.__continue_with_auth(data["request"]["request"], username, password)
@@ -126,12 +180,14 @@ class Network:
         request matches the given URL pattern.
 
         Parameters:
+        ----------
             callback (function): A function to be executed when url is matched by a URL pattern
-                The callback function receives a `Response` object as its argument.
+                The callback function receives a `Request` object as its argument.
             url_pattern (str, optional): A substring to match against the response URL.
                 Default is an empty string, which matches all URLs.
 
         Returns:
+        -------
             str: The request ID of the intercepted response.
         """
         self.__add_intercept(phases=[self.PHASES["before_request"]])
@@ -156,7 +212,12 @@ class Network:
         return request_id
 
     def remove_request_handler(self, request_id):
-        """Removes a request handler."""
+        """Removes a request handler.
+        
+        Parameters:
+        ----------
+            request_id (str): The request ID of the intercepted response.
+        """
         self.__remove_intercept(request_id=request_id)
         self.subscriptions["before_request"].remove(request_id)
         del self.callbacks[request_id]
@@ -168,12 +229,14 @@ class Network:
         response matches the given URL pattern.
 
         Parameters:
+        ----------
             callback (function): A function to be executed when url is matched by a url_pattern
                 The callback function receives a `Response` object as its argument.
             url_pattern (str, optional): A substring to match against the response URL.
                 Default is an empty string, which matches all URLs.
 
         Returns:
+        -------
             str: The request ID of the intercepted response.
         """
         self.__add_intercept(phases=[self.PHASES["response_started"]])
@@ -198,7 +261,12 @@ class Network:
         return request_id
 
     def remove_response_handler(self, response_id):
-        """Removes a response handler."""
+        """Removes a response handler.
+        
+        Parameters:
+        ----------
+            response_id (str): The request ID of the intercepted response.
+        """
         self.__remove_intercept(request_id=response_id)
         self.subscriptions["response_started"].remove(response_id)
         del self.callbacks[response_id]
@@ -227,9 +295,9 @@ class Request:
         if self.body is not None:
             params["body"] = self.body
         command = {"method": "network.continueRequest", "params": params}
-        self.network.conn.execute(self.command_iterator(command))
+        self.network.conn.execute(self._command_iterator(command))
 
-    def command_iterator(self, command):
+    def _command_iterator(self, command):
         """Generator to yield command."""
         yield command
 
@@ -251,8 +319,8 @@ class Response:
         if self.body is not None:
             params["body"] = self.body
         command = {"method": "network.continueResponse", "params": params}
-        self.network.conn.execute(self.command_iterator(command))
+        self.network.conn.execute(self._command_iterator(command))
 
-    def command_iterator(self, command):
+    def _command_iterator(self, command):
         """Generator to yield command."""
         yield command
