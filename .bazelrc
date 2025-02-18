@@ -82,7 +82,7 @@ build --test_output=errors
 
 test --test_env=CI
 test --test_env=DASHBOARD_URL
-test --test_env=DISPLAY=":1"
+test --test_env=DISPLAY
 test --test_env=FIREFOX_NIGHTLY_BINARY
 test --test_env=GITHUB_ACTIONS
 test --test_env=MOZ_HEADLESS
