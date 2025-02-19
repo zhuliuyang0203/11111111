@@ -1,4 +1,4 @@
-// <copyright file="V130Network.cs" company="Selenium Committers">
+// <copyright file="V133Network.cs" company="Selenium Committers">
 // Licensed to the Software Freedom Conservancy (SFC) under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -17,8 +17,8 @@
 // under the License.
 // </copyright>
 
-using OpenQA.Selenium.DevTools.V130.Fetch;
-using OpenQA.Selenium.DevTools.V130.Network;
+using OpenQA.Selenium.DevTools.V133.Fetch;
+using OpenQA.Selenium.DevTools.V133.Network;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,23 +26,23 @@ using System.Threading.Tasks;
 
 #nullable enable
 
-namespace OpenQA.Selenium.DevTools.V130
+namespace OpenQA.Selenium.DevTools.V133
 {
     /// <summary>
-    /// Class providing functionality for manipulating network calls using version 130 of the DevTools Protocol
+    /// Class providing functionality for manipulating network calls using version 133 of the DevTools Protocol
     /// </summary>
-    public class V130Network : DevTools.Network
+    public class V133Network : DevTools.Network
     {
         private FetchAdapter fetch;
         private NetworkAdapter network;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="V130Network"/> class.
+        /// Initializes a new instance of the <see cref="V133Network"/> class.
         /// </summary>
         /// <param name="network">The adapter for the Network domain.</param>
         /// <param name="fetch">The adapter for the Fetch domain.</param>
         /// <exception cref="ArgumentNullException">If <paramref name="network"/> or <paramref name="fetch"/> are <see langword="null"/>.</exception>
-        public V130Network(NetworkAdapter network, FetchAdapter fetch)
+        public V133Network(NetworkAdapter network, FetchAdapter fetch)
         {
             this.network = network ?? throw new ArgumentNullException(nameof(network));
             this.fetch = fetch ?? throw new ArgumentNullException(nameof(fetch));
@@ -153,7 +153,7 @@ namespace OpenQA.Selenium.DevTools.V130
                 Url = requestData.Url,
             };
 
-            if (requestData.Headers.Count > 0)
+            if (requestData.Headers?.Count > 0)
             {
                 List<HeaderEntry> headers = new List<HeaderEntry>();
                 foreach (KeyValuePair<string, string> headerPair in requestData.Headers)
@@ -249,9 +249,9 @@ namespace OpenQA.Selenium.DevTools.V130
             await fetch.ContinueWithAuth(new ContinueWithAuthCommandSettings()
             {
                 RequestId = requestId,
-                AuthChallengeResponse = new V130.Fetch.AuthChallengeResponse()
+                AuthChallengeResponse = new V133.Fetch.AuthChallengeResponse()
                 {
-                    Response = V130.Fetch.AuthChallengeResponseResponseValues.ProvideCredentials,
+                    Response = V133.Fetch.AuthChallengeResponseResponseValues.ProvideCredentials,
                     Username = userName,
                     Password = password
                 }
@@ -268,9 +268,9 @@ namespace OpenQA.Selenium.DevTools.V130
             await fetch.ContinueWithAuth(new ContinueWithAuthCommandSettings()
             {
                 RequestId = requestId,
-                AuthChallengeResponse = new OpenQA.Selenium.DevTools.V130.Fetch.AuthChallengeResponse()
+                AuthChallengeResponse = new OpenQA.Selenium.DevTools.V133.Fetch.AuthChallengeResponse()
                 {
-                    Response = V130.Fetch.AuthChallengeResponseResponseValues.CancelAuth
+                    Response = V133.Fetch.AuthChallengeResponseResponseValues.CancelAuth
                 }
             }).ConfigureAwait(false);
         }
@@ -337,7 +337,7 @@ namespace OpenQA.Selenium.DevTools.V130
         {
             if (e.ResponseErrorReason == null && e.ResponseStatusCode == null)
             {
-                var requestData = new HttpRequestData()
+                var requestData = new HttpRequestData
                 {
                     RequestId = e.RequestId,
                     Method = e.Request.Method,
@@ -355,39 +355,34 @@ namespace OpenQA.Selenium.DevTools.V130
                 {
                     RequestId = e.RequestId,
                     Url = e.Request.Url,
-                    ResourceType = e.ResourceType.ToString()
+                    ResourceType = e.ResourceType.ToString(),
+                    StatusCode = e.ResponseStatusCode.GetValueOrDefault(),
+                    ErrorReason = e.ResponseErrorReason?.ToString()
                 };
-                ResponsePausedEventArgs wrappedResponse = new ResponsePausedEventArgs(responseData);
-
-                if (e.ResponseStatusCode.HasValue)
-                {
-                    wrappedResponse.ResponseData.StatusCode = e.ResponseStatusCode.Value;
-                }
 
                 if (e.ResponseHeaders != null)
                 {
                     foreach (var header in e.ResponseHeaders)
                     {
-                        if (header.Name.ToLowerInvariant() == "set-cookie")
+                        if (header.Name.Equals("set-cookie", StringComparison.InvariantCultureIgnoreCase))
                         {
-                            wrappedResponse.ResponseData.CookieHeaders.Add(header.Value);
+                            responseData.CookieHeaders.Add(header.Value);
                         }
                         else
                         {
-                            if (wrappedResponse.ResponseData.Headers.ContainsKey(header.Name))
+                            if (responseData.Headers.TryGetValue(header.Name, out string? currentHeaderValue))
                             {
-                                string currentHeaderValue = wrappedResponse.ResponseData.Headers[header.Name];
-                                wrappedResponse.ResponseData.Headers[header.Name] = currentHeaderValue + ", " + header.Value;
+                                responseData.Headers[header.Name] = currentHeaderValue + ", " + header.Value;
                             }
                             else
                             {
-                                wrappedResponse.ResponseData.Headers.Add(header.Name, header.Value);
+                                responseData.Headers.Add(header.Name, header.Value);
                             }
                         }
                     }
                 }
 
-                this.OnResponsePaused(wrappedResponse);
+                this.OnResponsePaused(new ResponsePausedEventArgs(responseData));
             }
         }
     }
