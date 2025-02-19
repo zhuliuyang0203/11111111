@@ -3,7 +3,11 @@ FROM shs96c/selenium-remote-build:latest
 
 USER root
 
+
+RUN rm -f /etc/apt/sources.list.d/google-chrome.list
 RUN apt-get update -qqy && apt-get install -y wget curl gnupg2
+RUN mkdir -p /etc/apt/keyrings
+RUN wget -qO - https://dl.google.com/linux/linux_signing_key.pub | tee /etc/apt/keyrings/google-chrome.gpg > /dev/null
 
 # So we can install browsers later
 RUN wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && dpkg -i packages-microsoft-prod.deb && rm packages-microsoft-prod.deb
