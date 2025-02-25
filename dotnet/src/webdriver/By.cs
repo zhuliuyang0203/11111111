@@ -48,9 +48,6 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Initializes a new instance of the <see cref="By"/> class.
         /// </summary>
-        /// <remarks>
-        /// When using this constructor, make sure to set the <see cref="FindElementMethod"/> or the <see cref="FindElementsMethod"/> properties.
-        /// </remarks>
         protected By()
         {
         }
@@ -329,7 +326,12 @@ namespace OpenQA.Selenium
         /// <returns>The first matching <see cref="IWebElement"/> on the current context.</returns>
         public virtual IWebElement FindElement(ISearchContext context)
         {
-            return this.FindElementMethod(context);
+            if (this.FindElementMethod is not { } findElementMethod)
+            {
+                throw new InvalidOperationException("FindElement method not set. Override the By.FindElement method, set the By.FindElementMethod property, or use a constructor that sets a query mechanism.");
+            }
+
+            return findElementMethod(context);
         }
 
         /// <summary>
@@ -340,7 +342,12 @@ namespace OpenQA.Selenium
         /// matching the current criteria, or an empty list if nothing matches.</returns>
         public virtual ReadOnlyCollection<IWebElement> FindElements(ISearchContext context)
         {
-            return this.FindElementsMethod(context);
+            if (this.FindElementsMethod is not { } findElementsMethod)
+            {
+                throw new InvalidOperationException("FindElements method not set. Override the By.FindElements method, set the By.FindElementsMethod property, or use a constructor that sets a query mechanism.");
+            }
+
+            return findElementsMethod(context);
         }
 
         /// <summary>
