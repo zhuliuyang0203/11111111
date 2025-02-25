@@ -121,17 +121,17 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Gets or sets the value from JSON.
         /// </summary>
-        public object? Value { get; init; }
+        public object? Value { get; }
 
         /// <summary>
         /// Gets or sets the session ID.
         /// </summary>
-        public string? SessionId { get; init; }
+        public string? SessionId { get; }
 
         /// <summary>
         /// Gets or sets the status value of the response.
         /// </summary>
-        public WebDriverResult Status { get; init; }
+        public WebDriverResult Status { get; }
 
         /// <summary>
         /// Returns a new <see cref="Response"/> from a JSON-encoded string.
