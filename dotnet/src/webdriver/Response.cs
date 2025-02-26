@@ -95,7 +95,7 @@ namespace OpenQA.Selenium
             {
                 // Special case code for the new session command. If the response contains
                 // sessionId and capabilities properties, fix up the session ID and value members.
-                if (valueDictionary.TryGetPropertyValue("sessionId", out JsonNode? session))
+                if (valueDictionary.TryGetPropertyValue("sessionId", out JsonNode? session) && session is not null)
                 {
                     sessionId = session.ToString();
                     if (valueDictionary.TryGetPropertyValue("capabilities", out JsonNode? capabilities))
