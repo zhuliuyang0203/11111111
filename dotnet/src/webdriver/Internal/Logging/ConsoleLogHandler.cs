@@ -1,4 +1,4 @@
-// <copyright file="ConsoleHandler.cs" company="Selenium Committers">
+// <copyright file="ConsoleLogHandler.cs" company="Selenium Committers">
 // Licensed to the Software Freedom Conservancy (SFC) under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -27,5 +27,5 @@ namespace OpenQA.Selenium.Internal.Logging
     /// <summary>
     /// Represents a log handler that writes log events to the given text writer.
     /// </summary>
-    public class ConsoleHandler() : TextWriterHandler(Console.Error);
+    public class ConsoleLogHandler() : TextWriterHandler(Console.Error);
 }
