@@ -217,9 +217,9 @@ namespace OpenQA.Selenium
 
         internal sealed record ResultResponse
         (
-            [property: JsonPropertyName("driver_path")]
+            [property: JsonPropertyName(SeleniumManager.DriverPath)]
             string DriverPath,
-            [property: JsonPropertyName("browser_path")]
+            [property: JsonPropertyName(SeleniumManager.BrowserPath)]
             string BrowserPath
         );
     }

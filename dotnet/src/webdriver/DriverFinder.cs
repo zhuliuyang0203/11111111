@@ -36,8 +36,6 @@ namespace OpenQA.Selenium
     {
         private readonly DriverOptions options;
         private Dictionary<string, string>? paths;
-        private const string BrowserPathKey = "browser_path";
-        private const string DriverPathKey = "driver_path";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DriverFinder"/> class.
