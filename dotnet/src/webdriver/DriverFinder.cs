@@ -111,6 +111,7 @@ namespace OpenQA.Selenium
             }
 
             SeleniumManagerPaths binaryPaths = SeleniumManager.BinaryPaths(CreateArguments());
+
             if (File.Exists(binaryPaths.DriverPath))
             {
             }
