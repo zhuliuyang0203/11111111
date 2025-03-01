@@ -530,8 +530,8 @@ namespace OpenQA.Selenium.Remote
                 throw new WebDriverException("GetDownloadableFiles returned successfully, but response content was not an object: " + commandResponse.Value);
             }
 
-            object[] namesArray = (object[])value["names"]!;
-            return namesArray.Select(obj => obj.ToString()!).ToList();
+            object?[] namesArray = (object?[])value["names"]!;
+            return namesArray.Select(obj => obj!.ToString()!).ToList();
         }
 
         /// <summary>
@@ -539,6 +539,7 @@ namespace OpenQA.Selenium.Remote
         /// </summary>
         /// <param name="fileName">The name of the file to be downloaded.</param>
         /// <param name="targetDirectory">The target directory where the file should be downloaded to.</param>
+        /// <exception cref="ArgumentNullException">If <paramref name="targetDirectory"/> is null.</exception>
         public void DownloadFile(string fileName, string targetDirectory)
         {
             var enableDownloads = this.Capabilities.GetCapability(CapabilityType.EnableDownloads);
