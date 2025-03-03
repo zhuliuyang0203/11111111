@@ -16,7 +16,7 @@
 // under the License.
 
 use crate::config::OS::{LINUX, MACOS, WINDOWS};
-use crate::shell::run_shell_command_by_os;
+use crate::shell::{run_powershell_command, run_shell_command_by_os};
 use crate::{
     default_cache_folder, format_one_arg, path_to_string, Command, ENV_PROCESSOR_ARCHITECTURE,
     REQUEST_TIMEOUT_SEC, UNAME_COMMAND,
@@ -71,8 +71,8 @@ impl ManagerConfig {
         let self_arch = if WINDOWS.is(self_os) {
             let mut architecture = env::var(ENV_PROCESSOR_ARCHITECTURE).unwrap_or_default();
             if architecture.is_empty() {
-                let get_os_command = Command::new_single(WMIC_COMMAND_OS.to_string());
-                architecture = run_shell_command_by_os(self_os, get_os_command).unwrap_or_default();
+                let get_os_command = Command::new_single(PS_GET_OS_COMMAND.to_string());
+                architecture = run_powershell_command(get_os_command).unwrap_or_default();
             }
             if architecture.contains("32") {
                 ARCH_X86.to_string()
