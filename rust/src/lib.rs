@@ -448,20 +448,14 @@ pub trait SeleniumManager {
         ));
         let mut browser_version: Option<String> = None;
         for driver_version_command in commands.into_iter() {
-            let output = if driver_version_command.display().starts_with("(Get-") {
-                match run_powershell_command_with_log(self.get_logger(), driver_version_command) {
-                    Ok(out) => out,
-                    Err(_e) => continue,
-                }
+            let command_result = if driver_version_command.display().starts_with("(Get-") {
+                run_powershell_command_with_log(self.get_logger(), driver_version_command)
             } else {
-                match run_shell_command_with_log(
-                    self.get_logger(),
-                    self.get_os(),
-                    driver_version_command,
-                ) {
-                    Ok(out) => out,
-                    Err(_e) => continue,
-                }
+                run_shell_command_with_log(self.get_logger(), self.get_os(), driver_version_command)
+            };
+            let output = match command_result {
+                Ok(out) => out,
+                Err(_) => continue,
             };
 
             let full_browser_version = parse_version(output, self.get_logger()).unwrap_or_default();
