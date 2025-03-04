@@ -17,7 +17,10 @@
 // under the License.
 // </copyright>
 
+using System;
 using System.Collections.Generic;
+
+#nullable enable
 
 namespace OpenQA.Selenium
 {
@@ -28,30 +31,14 @@ namespace OpenQA.Selenium
     internal static class WebDriverError
     {
         /// <summary>
-        /// Represents the detached shadow root error.
-        /// </summary>
-        public const string DetachedShadowRoot = "detached shadow root";
-
-        /// <summary>
         /// Represents the element click intercepted error.
         /// </summary>
         public const string ElementClickIntercepted = "element click intercepted";
 
         /// <summary>
-        /// Represents the element not selectable error.
-        /// </summary>
-        public const string ElementNotSelectable = "element not selectable";
-
-        /// <summary>
         /// Represents the element not interactable error.
         /// </summary>
         public const string ElementNotInteractable = "element not interactable";
-
-        /// <summary>
-        /// Represents the element not visible error.
-        /// </summary>
-        /// TODO: Remove this string; it is no longer valid in the specification.
-        public const string ElementNotVisible = "element not visible";
 
         /// <summary>
         /// Represents the insecure certificate error.
@@ -67,17 +54,6 @@ namespace OpenQA.Selenium
         /// Represents the invalid cookie domain error.
         /// </summary>
         public const string InvalidCookieDomain = "invalid cookie domain";
-
-        /// <summary>
-        /// Represents the invalid coordinates error.
-        /// </summary>
-        public const string InvalidCoordinates = "invalid coordinates";
-
-        /// <summary>
-        /// Represents the invalid element coordinates error.
-        /// </summary>
-        /// TODO: Remove this string; it is no longer valid in the specification.
-        public const string InvalidElementCoordinates = "invalid element coordinates";
 
         /// <summary>
         /// Represents the invalid element state error.
@@ -150,6 +126,11 @@ namespace OpenQA.Selenium
         public const string StaleElementReference = "stale element reference";
 
         /// <summary>
+        /// Represents the detached shadow root error.
+        /// </summary>
+        public const string DetachedShadowRoot = "detached shadow root";
+
+        /// <summary>
         /// Represents the timeout error.
         /// </summary>
         public const string Timeout = "timeout";
@@ -189,58 +170,52 @@ namespace OpenQA.Selenium
         /// </summary>
         public const string UnsupportedOperation = "unsupported operation";
 
-        private static readonly Dictionary<string, WebDriverResult> resultMap;
-
-        static WebDriverError()
+        private static readonly Dictionary<string, WebDriverResult> resultMap = new Dictionary<string, WebDriverResult>
         {
-            resultMap = new Dictionary<string, WebDriverResult>();
-            resultMap[DetachedShadowRoot] = WebDriverResult.DetachedShadowRoot;
-            resultMap[ElementClickIntercepted] = WebDriverResult.ElementClickIntercepted;
-            resultMap[ElementNotSelectable] = WebDriverResult.ElementNotSelectable;
-            resultMap[ElementNotVisible] = WebDriverResult.ElementNotDisplayed;
-            resultMap[ElementNotInteractable] = WebDriverResult.ElementNotInteractable;
-            resultMap[InsecureCertificate] = WebDriverResult.InsecureCertificate;
-            resultMap[InvalidArgument] = WebDriverResult.InvalidArgument;
-            resultMap[InvalidCookieDomain] = WebDriverResult.InvalidCookieDomain;
-            resultMap[InvalidCoordinates] = WebDriverResult.InvalidElementCoordinates;
-            resultMap[InvalidElementCoordinates] = WebDriverResult.InvalidElementCoordinates;
-            resultMap[InvalidElementState] = WebDriverResult.InvalidElementState;
-            resultMap[InvalidSelector] = WebDriverResult.InvalidSelector;
-            resultMap[InvalidSessionId] = WebDriverResult.NoSuchDriver;
-            resultMap[JavaScriptError] = WebDriverResult.UnexpectedJavaScriptError;
-            resultMap[MoveTargetOutOfBounds] = WebDriverResult.MoveTargetOutOfBounds;
-            resultMap[NoSuchAlert] = WebDriverResult.NoAlertPresent;
-            resultMap[NoSuchCookie] = WebDriverResult.NoSuchCookie;
-            resultMap[NoSuchElement] = WebDriverResult.NoSuchElement;
-            resultMap[NoSuchFrame] = WebDriverResult.NoSuchFrame;
-            resultMap[NoSuchWindow] = WebDriverResult.NoSuchWindow;
-            resultMap[NoSuchShadowRoot] = WebDriverResult.NoSuchShadowRoot;
-            resultMap[ScriptTimeout] = WebDriverResult.AsyncScriptTimeout;
-            resultMap[SessionNotCreated] = WebDriverResult.SessionNotCreated;
-            resultMap[StaleElementReference] = WebDriverResult.ObsoleteElement;
-            resultMap[Timeout] = WebDriverResult.Timeout;
-            resultMap[UnableToSetCookie] = WebDriverResult.UnableToSetCookie;
-            resultMap[UnableToCaptureScreen] = WebDriverResult.UnableToCaptureScreen;
-            resultMap[UnexpectedAlertOpen] = WebDriverResult.UnexpectedAlertOpen;
-            resultMap[UnknownCommand] = WebDriverResult.UnknownCommand;
-            resultMap[UnknownError] = WebDriverResult.UnhandledError;
-            resultMap[UnknownMethod] = WebDriverResult.UnknownCommand;
-            resultMap[UnsupportedOperation] = WebDriverResult.UnhandledError;
-        }
+            { ElementClickIntercepted, WebDriverResult.ElementClickIntercepted },
+            { ElementNotInteractable, WebDriverResult.ElementNotInteractable },
+            { InsecureCertificate, WebDriverResult.InsecureCertificate },
+            { InvalidArgument, WebDriverResult.InvalidArgument },
+            { InvalidCookieDomain, WebDriverResult.InvalidCookieDomain },
+            { InvalidElementState, WebDriverResult.InvalidElementState },
+            { InvalidSelector, WebDriverResult.InvalidSelector },
+            { InvalidSessionId, WebDriverResult.NoSuchDriver },
+            { JavaScriptError, WebDriverResult.UnexpectedJavaScriptError },
+            { MoveTargetOutOfBounds, WebDriverResult.MoveTargetOutOfBounds },
+            { NoSuchAlert, WebDriverResult.NoAlertPresent },
+            { NoSuchCookie, WebDriverResult.NoSuchCookie },
+            { NoSuchElement, WebDriverResult.NoSuchElement },
+            { NoSuchFrame, WebDriverResult.NoSuchFrame },
+            { NoSuchWindow, WebDriverResult.NoSuchWindow },
+            { NoSuchShadowRoot, WebDriverResult.NoSuchShadowRoot },
+            { ScriptTimeout, WebDriverResult.AsyncScriptTimeout },
+            { SessionNotCreated, WebDriverResult.SessionNotCreated },
+            { StaleElementReference, WebDriverResult.ObsoleteElement },
+            { DetachedShadowRoot, WebDriverResult.DetachedShadowRoot },
+            { Timeout, WebDriverResult.Timeout },
+            { UnableToSetCookie, WebDriverResult.UnableToSetCookie },
+            { UnableToCaptureScreen, WebDriverResult.UnableToCaptureScreen },
+            { UnexpectedAlertOpen, WebDriverResult.UnexpectedAlertOpen },
+            { UnknownCommand, WebDriverResult.UnknownCommand },
+            { UnknownError, WebDriverResult.UnknownError },
+            { UnknownMethod, WebDriverResult.UnknownMethod },
+            { UnsupportedOperation, WebDriverResult.UnsupportedOperation }
+        };
 
         /// <summary>
         /// Converts a string error to a <see cref="WebDriverResult"/> value.
         /// </summary>
         /// <param name="error">The error string to convert.</param>
         /// <returns>The converted <see cref="WebDriverResult"/> value.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="error"/> is <see langword="null"/>.</exception>
         public static WebDriverResult ResultFromError(string error)
         {
-            if (!resultMap.ContainsKey(error))
+            if (!resultMap.TryGetValue(error, out WebDriverResult result))
             {
-                error = UnsupportedOperation;
+                return WebDriverResult.UnsupportedOperation;
             }
 
-            return resultMap[error];
+            return result;
         }
     }
 }

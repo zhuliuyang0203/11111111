@@ -69,12 +69,10 @@ namespace OpenQA.Selenium
             IWebElement element = driver.FindElement(By.Id("upload"));
             element.SendKeys(testFile.FullName);
             element.Clear();
-            Assert.AreEqual(string.Empty, element.GetAttribute("value"));
+            Assert.That(element.GetAttribute("value"), Is.Empty);
         }
 
         [Test]
-        [IgnoreBrowser(Browser.Chrome, "Chrome driver does not throw exception.")]
-        [IgnoreBrowser(Browser.Edge, "Edge driver does not throw exception.")]
         public void ClickFileInput()
         {
             driver.Url = uploadPage;

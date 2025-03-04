@@ -17,45 +17,32 @@
 // under the License.
 // </copyright>
 
+using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
+
+#nullable enable
 
 namespace OpenQA.Selenium.Internal.Logging
 {
     internal class LogContextManager
     {
-        private readonly ILogContext _globalLogContext;
-
-        private readonly AsyncLocal<ILogContext> _currentAmbientLogContext = new AsyncLocal<ILogContext>();
+        private readonly AsyncLocal<ILogContext?> _currentAmbientLogContext = new();
 
         public LogContextManager()
         {
-            var defaulConsoleLogHandler = new ConsoleLogHandler();
+            var defaulLogHandler = new TextWriterHandler(Console.Error);
 
-            _globalLogContext = new LogContext(LogEventLevel.Info, null, null, new[] { defaulConsoleLogHandler });
+            GlobalContext = new LogContext(LogEventLevel.Info, null, null, [defaulLogHandler]);
         }
 
-        public ILogContext GlobalContext
-        {
-            get { return _globalLogContext; }
-        }
+        public ILogContext GlobalContext { get; }
 
+        [AllowNull]
         public ILogContext CurrentContext
         {
-            get
-            {
-                if (_currentAmbientLogContext.Value is null)
-                {
-                    return _globalLogContext;
-                }
-                else
-                {
-                    return _currentAmbientLogContext.Value;
-                }
-            }
-            set
-            {
-                _currentAmbientLogContext.Value = value;
-            }
+            get => _currentAmbientLogContext.Value ?? GlobalContext;
+            set => _currentAmbientLogContext.Value = value;
         }
     }
 }

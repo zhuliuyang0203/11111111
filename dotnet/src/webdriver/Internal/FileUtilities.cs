@@ -23,6 +23,8 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 
+#nullable enable
+
 namespace OpenQA.Selenium.Internal
 {
     /// <summary>
@@ -40,7 +42,7 @@ namespace OpenQA.Selenium.Internal
         /// <returns><see langword="true"/> if the copy is completed; otherwise <see langword="false"/>.</returns>
         public static bool CopyDirectory(string sourceDirectory, string destinationDirectory)
         {
-            bool copyComplete = false;
+            bool copyComplete;
             DirectoryInfo sourceDirectoryInfo = new DirectoryInfo(sourceDirectory);
             DirectoryInfo destinationDirectoryInfo = new DirectoryInfo(destinationDirectory);
 
@@ -74,7 +76,7 @@ namespace OpenQA.Selenium.Internal
         /// </summary>
         /// <param name="directoryToDelete">The directory to delete.</param>
         /// <remarks>This method does not throw an exception if the delete fails.</remarks>
-        public static void DeleteDirectory(string directoryToDelete)
+        public static void DeleteDirectory(string? directoryToDelete)
         {
             int numberOfRetries = 0;
             while (Directory.Exists(directoryToDelete) && numberOfRetries < 10)
@@ -132,7 +134,7 @@ namespace OpenQA.Selenium.Internal
 
             // If it's not in the same directory as the executing assembly,
             // try looking in the system path.
-            string systemPath = Environment.GetEnvironmentVariable("PATH");
+            string? systemPath = Environment.GetEnvironmentVariable("PATH");
             if (!string.IsNullOrEmpty(systemPath))
             {
                 string expandedPath = Environment.ExpandEnvironmentVariables(systemPath);
@@ -165,7 +167,7 @@ namespace OpenQA.Selenium.Internal
         public static string GetCurrentDirectory()
         {
             Assembly executingAssembly = typeof(FileUtilities).Assembly;
-            string location = null;
+            string? location = null;
 
             // Make sure not to call Path.GetDirectoryName if assembly location is null or empty
             if (!string.IsNullOrEmpty(executingAssembly.Location))
@@ -184,14 +186,20 @@ namespace OpenQA.Selenium.Internal
                 location = Directory.GetCurrentDirectory();
             }
 
-            string currentDirectory = location;
+            string currentDirectory = location!;
 
+#if !NET8_0_OR_GREATER
             // If we're shadow copying, get the directory from the codebase instead
             if (AppDomain.CurrentDomain.ShadowCopyFiles)
             {
-                Uri uri = new Uri(executingAssembly.CodeBase);
-                currentDirectory = Path.GetDirectoryName(uri.LocalPath);
+                var codeBase = executingAssembly.CodeBase;
+
+                if (codeBase is not null)
+                {
+                    currentDirectory = Path.GetDirectoryName(codeBase);
+                }
             }
+#endif
 
             return currentDirectory;
         }
@@ -202,7 +210,11 @@ namespace OpenQA.Selenium.Internal
         /// <param name="directoryPattern">The pattern to use in creating the directory name, following standard
         /// .NET string replacement tokens.</param>
         /// <returns>The full path to the random directory name in the temporary directory.</returns>
-        public static string GenerateRandomTempDirectoryName(string directoryPattern)
+        public static string GenerateRandomTempDirectoryName(
+#if NET8_0_OR_GREATER
+            [System.Diagnostics.CodeAnalysis.StringSyntax(System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.CompositeFormat)]
+#endif
+        string directoryPattern)
         {
             string directoryName = string.Format(CultureInfo.InvariantCulture, directoryPattern, Guid.NewGuid().ToString("N"));
             return Path.Combine(Path.GetTempPath(), directoryName);

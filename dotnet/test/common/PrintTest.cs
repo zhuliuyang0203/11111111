@@ -89,5 +89,73 @@ namespace OpenQA.Selenium
         {
             Assert.That(() => new PrintOptions { PageMargins = null }, Throws.InstanceOf<ArgumentNullException>());
         }
+
+        [Test]
+        public void PageNumberCannotHaveInvalidValues()
+        {
+            Assert.That(() => new PrintOptions().AddPageToPrint(-1), Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions().AddPageRangeToPrint(null), Throws.TypeOf<ArgumentException>());
+            Assert.That(() => new PrintOptions().AddPageRangeToPrint(""), Throws.TypeOf<ArgumentException>());
+            Assert.That(() => new PrintOptions().AddPageRangeToPrint("1-2-3"), Throws.TypeOf<ArgumentException>());
+            Assert.That(() =>
+            {
+                var options = new PrintOptions();
+                options.AddPageToPrint(1);
+                options.AddPageToPrint(1);
+            }, Throws.TypeOf<ArgumentException>());
+        }
+
+        [Test]
+        public void PageSizeCannotHaveNegativeValues()
+        {
+            Assert.That(() => new PrintOptions.PageSize { Height = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.PageSize { HeightInInches = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.PageSize { Width = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.PageSize { WidthInInches = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+        }
+
+        [Test]
+        public void MarginsCannotHaveNegativeValues()
+        {
+            Assert.That(() => new PrintOptions.Margins { Top = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.Margins { Bottom = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.Margins { Left = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+            Assert.That(() => new PrintOptions.Margins { Right = -1 }, Throws.TypeOf<ArgumentOutOfRangeException>());
+        }
+
+        [Test]
+        public void CanSetPredefinedPageSizes()
+        {
+            var options = new PrintOptions();
+
+            options.PageDimensions = PrintOptions.PageSize.A4;
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.PageSize.A4.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.PageSize.A4.Height));
+
+            options.PageDimensions = PrintOptions.PageSize.Legal;
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.PageSize.Legal.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.PageSize.Legal.Height));
+
+            options.PageDimensions = PrintOptions.PageSize.Letter;
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.PageSize.Letter.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.PageSize.Letter.Height));
+
+            options.PageDimensions = PrintOptions.PageSize.Tabloid;
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(PrintOptions.PageSize.Tabloid.Width));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(PrintOptions.PageSize.Tabloid.Height));
+        }
+
+        [Test]
+        public void CanSetCustomPageSize()
+        {
+            var options = new PrintOptions();
+            var customPageSize = new PrintOptions.PageSize { Width = 25.0, Height = 30.0 };
+
+            options.PageDimensions = customPageSize;
+
+            Assert.That(options.PageDimensions.Width, Is.EqualTo(25.0));
+            Assert.That(options.PageDimensions.Height, Is.EqualTo(30.0));
+        }
+
     }
 }

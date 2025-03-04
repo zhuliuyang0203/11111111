@@ -57,7 +57,7 @@ namespace OpenQA.Selenium
                 driver.Url = simpleTestPage;
                 string text = driver.FindElement(By.CssSelector("p")).Text;
                 await network.StopMonitoring();
-                Assert.AreEqual("I intercepted you", text);
+                Assert.That(text, Is.EqualTo("I intercepted you"));
             }
         }
 
@@ -78,7 +78,34 @@ namespace OpenQA.Selenium
                 driver.Url = authenticationPage;
                 string text = driver.FindElement(By.CssSelector("h1")).Text;
                 await network.StopMonitoring();
-                Assert.AreEqual("authorized", text);
+                Assert.That(text, Is.EqualTo("authorized"));
+            }
+        }
+
+        [Test]
+        [IgnoreBrowser(Selenium.Browser.Firefox, "Firefox does not support Chrome DevTools Protocol")]
+        public async Task TransformNetworkResponse()
+        {
+            if (driver is IDevTools)
+            {
+                var handler = new NetworkResponseHandler()
+                {
+                    ResponseMatcher = _ => true,
+                    ResponseTransformer = _ => new HttpResponseData
+                    {
+                        StatusCode = 200,
+                        Body = "Creamy, delicious cheese!"
+                    }
+                };
+                INetwork networkInterceptor = driver.Manage().Network;
+                networkInterceptor.AddResponseHandler(handler);
+                await networkInterceptor.StartMonitoring();
+
+                driver.Navigate().GoToUrl("https://www.selenium.dev");
+                await networkInterceptor.StopMonitoring();
+
+                var body = driver.FindElement(By.TagName("body"));
+                Assert.AreEqual("Creamy, delicious cheese!", body.Text);
             }
         }
     }

@@ -18,7 +18,10 @@
 // </copyright>
 
 using System;
+using System.Text.Json;
 using System.Text.Json.Nodes;
+
+#nullable enable
 
 namespace OpenQA.Selenium.DevTools
 {
@@ -33,7 +36,7 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="domainName">The domain on which the event is to be raised.</param>
         /// <param name="eventName">The name of the event to be raised.</param>
         /// <param name="eventData">The data for the event to be raised.</param>
-        public DevToolsEventReceivedEventArgs(string domainName, string eventName, JsonNode eventData)
+        public DevToolsEventReceivedEventArgs(string domainName, string eventName, JsonElement eventData)
         {
             DomainName = domainName;
             EventName = eventName;
@@ -43,16 +46,16 @@ namespace OpenQA.Selenium.DevTools
         /// <summary>
         /// Gets the domain on which the event is to be raised.
         /// </summary>
-        public string DomainName { get; private set; }
+        public string DomainName { get; }
 
         /// <summary>
         /// Gets the name of the event to be raised.
         /// </summary>
-        public string EventName { get; private set; }
+        public string EventName { get; }
 
         /// <summary>
         /// Gets the data with which the event is to be raised.
         /// </summary>
-        public JsonNode EventData { get; private set; }
+        public JsonElement EventData { get; }
     }
 }

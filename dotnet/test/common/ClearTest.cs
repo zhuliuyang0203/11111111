@@ -31,18 +31,18 @@ namespace OpenQA.Selenium
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("writableTextInput"));
             element.Clear();
-            Assert.AreEqual(string.Empty, element.GetAttribute("value"));
+            Assert.That(element.GetAttribute("value"), Is.Empty);
         }
 
         [Test]
-        [IgnoreBrowser(Browser.Chrome, "https://bugs.chromium.org/p/chromedriver/issues/detail?id=4743")]
-        [IgnoreBrowser(Browser.Edge, "https://bugs.chromium.org/p/chromedriver/issues/detail?id=4743")]
         public void TextInputShouldNotClearWhenDisabled()
         {
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("textInputNotEnabled"));
             Assert.That(element.Enabled, Is.False);
-            Assert.That(() => element.Clear(), Throws.InstanceOf<InvalidElementStateException>());
+            Assert.That(
+                () => element.Clear(),
+                Throws.InstanceOf<InvalidElementStateException>());
         }
 
         [Test]
@@ -50,7 +50,9 @@ namespace OpenQA.Selenium
         {
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("readOnlyTextInput"));
-            Assert.That(() => element.Clear(), Throws.InstanceOf<InvalidElementStateException>());
+            Assert.That(
+                () => element.Clear(),
+                Throws.InstanceOf<InvalidElementStateException>());
         }
 
         [Test]
@@ -59,12 +61,10 @@ namespace OpenQA.Selenium
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("writableTextArea"));
             element.Clear();
-            Assert.AreEqual(string.Empty, element.GetAttribute("value"));
+            Assert.That(element.GetAttribute("value"), Is.Empty);
         }
 
         [Test]
-        [IgnoreBrowser(Browser.Chrome, "https://bugs.chromium.org/p/chromedriver/issues/detail?id=4743")]
-        [IgnoreBrowser(Browser.Edge, "https://bugs.chromium.org/p/chromedriver/issues/detail?id=4743")]
         public void TextAreaShouldNotClearWhenDisabled()
         {
             driver.Url = readOnlyPage;
@@ -77,7 +77,9 @@ namespace OpenQA.Selenium
         {
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("textAreaReadOnly"));
-            Assert.That(() => element.Clear(), Throws.InstanceOf<InvalidElementStateException>());
+            Assert.That(
+                () => element.Clear(),
+                 Throws.InstanceOf<InvalidElementStateException>());
         }
 
         [Test]
@@ -86,7 +88,8 @@ namespace OpenQA.Selenium
             driver.Url = readOnlyPage;
             IWebElement element = driver.FindElement(By.Id("content-editable"));
             element.Clear();
-            Assert.AreEqual(string.Empty, element.Text);
+
+            Assert.That(element.Text, Is.Empty);
         }
 
         [Test]
@@ -195,9 +198,10 @@ namespace OpenQA.Selenium
         {
             driver.Url = EnvironmentManager.Instance.UrlBuilder.WhereIs("inputs.html");
             IWebElement element = driver.FindElement(locator);
-            Assert.AreEqual(oldValue, element.GetAttribute("value"));
+            Assert.That(element.GetAttribute("value"), Is.EqualTo(oldValue));
+
             element.Clear();
-            Assert.AreEqual(clearedValue, element.GetAttribute("value"));
+            Assert.That(element.GetAttribute("value"), Is.EqualTo(clearedValue));
         }
     }
 }

@@ -17,7 +17,7 @@
 
 package org.openqa.selenium.grid.node.httpd;
 
-import static java.net.HttpURLConnection.HTTP_NO_CONTENT;
+import static java.net.HttpURLConnection.HTTP_OK;
 import static java.net.HttpURLConnection.HTTP_UNAVAILABLE;
 import static org.openqa.selenium.grid.config.StandardGridRoles.EVENT_BUS_ROLE;
 import static org.openqa.selenium.grid.config.StandardGridRoles.HTTPD_ROLE;
@@ -131,13 +131,16 @@ public class NodeServer extends TemplateGridServerCommand {
     HttpHandler readinessCheck =
         req -> {
           if (node.getStatus().hasCapacity()) {
-            return new HttpResponse().setStatus(HTTP_NO_CONTENT);
+            return new HttpResponse()
+                .setStatus(HTTP_OK)
+                .setHeader("Content-Type", MediaType.PLAIN_TEXT_UTF_8.toString())
+                .setContent(Contents.utf8String("Node has capacity available"));
           }
 
           return new HttpResponse()
               .setStatus(HTTP_UNAVAILABLE)
               .setHeader("Content-Type", MediaType.PLAIN_TEXT_UTF_8.toString())
-              .setContent(Contents.utf8String("No capacity available"));
+              .setContent(Contents.utf8String("Node has no capacity available"));
         };
 
     bus.addListener(
@@ -213,6 +216,18 @@ public class NodeServer extends TemplateGridServerCommand {
                 .withMaxDuration(nodeOptions.getRegisterPeriod())
                 .withDelay(nodeOptions.getRegisterCycle())
                 .handleResultIf(result -> true)
+                .onFailure(
+                    event -> {
+                      LOG.severe(
+                          String.format(
+                              "Registration event failed after period of %s seconds. Node will not"
+                                  + " attempt to register again",
+                              nodeOptions.getRegisterPeriod().getSeconds()));
+                      if (nodeOptions.getRegisterShutdownOnFailure()) {
+                        LOG.severe("Shutting down");
+                        System.exit(1);
+                      }
+                    })
                 .build();
 
         LOG.info("Starting registration process for Node " + node.getUri());

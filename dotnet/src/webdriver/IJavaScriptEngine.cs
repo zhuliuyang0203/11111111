@@ -21,6 +21,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+#nullable enable
+
 namespace OpenQA.Selenium
 {
     /// <summary>
@@ -31,22 +33,22 @@ namespace OpenQA.Selenium
         /// <summary>
         /// Occurs when a JavaScript callback with a named binding is executed.
         /// </summary>
-        event EventHandler<JavaScriptCallbackExecutedEventArgs> JavaScriptCallbackExecuted;
+        event EventHandler<JavaScriptCallbackExecutedEventArgs>? JavaScriptCallbackExecuted;
 
         /// <summary>
-        /// Occurs when an exeception is thrown by JavaScript being executed in the browser.
+        /// Occurs when an exception is thrown by JavaScript being executed in the browser.
         /// </summary>
-        event EventHandler<JavaScriptExceptionThrownEventArgs> JavaScriptExceptionThrown;
+        event EventHandler<JavaScriptExceptionThrownEventArgs>? JavaScriptExceptionThrown;
 
         /// <summary>
         /// Occurs when methods on the JavaScript console are called.
         /// </summary>
-        event EventHandler<JavaScriptConsoleApiCalledEventArgs> JavaScriptConsoleApiCalled;
+        event EventHandler<JavaScriptConsoleApiCalledEventArgs>? JavaScriptConsoleApiCalled;
 
         /// <summary>
         /// Occurs when a value of an attribute in an element is being changed.
         /// </summary>
-        event EventHandler<DomMutatedEventArgs> DomMutated;
+        event EventHandler<DomMutatedEventArgs>? DomMutated;
 
         /// <summary>
         /// Gets the read-only list of initialization scripts added for this JavaScript engine.
@@ -87,6 +89,7 @@ namespace OpenQA.Selenium
         /// <param name="scriptName">The friendly name by which to refer to this initialization script.</param>
         /// <param name="script">The JavaScript to be loaded on every page.</param>
         /// <returns>A task containing an <see cref="InitializationScript"/> object representing the script to be loaded on each page.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="scriptName"/> or <paramref name="script"/> are <see langword="null"/>.</exception>
         Task<InitializationScript> AddInitializationScript(string scriptName, string script);
 
         /// <summary>
@@ -94,10 +97,11 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="scriptName">The friendly name of the initialization script to be removed.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="scriptName"/> is <see langword="null"/>.</exception>
         Task RemoveInitializationScript(string scriptName);
 
         /// <summary>
-        /// Asynchronously removes all intialization scripts from being
+        /// Asynchronously removes all initialization scripts from being
         /// loaded on every document load.
         /// </summary>
         /// <returns>A task that represents the asynchronous operation.</returns>
@@ -109,6 +113,7 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="script">The JavaScript to pin</param>
         /// <returns>A task containing a <see cref="PinnedScript"/> object to use to execute the script.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="script"/> is <see langword="null"/>.</exception>
         Task<PinnedScript> PinScript(string script);
 
         /// <summary>
@@ -116,6 +121,7 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="script">The <see cref="PinnedScript"/> object to unpin.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="script"/> is <see langword="null"/>.</exception>
         Task UnpinScript(PinnedScript script);
 
         /// <summary>
@@ -125,6 +131,8 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="bindingName">The name of the callback that will trigger events when called by JavaScript executing in the browser.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="bindingName"/> is <see langword="null"/>.</exception>
+        /// <exception cref="ArgumentException">If A binding with the specified name already exists.</exception>
         Task AddScriptCallbackBinding(string bindingName);
 
         /// <summary>
@@ -132,6 +140,7 @@ namespace OpenQA.Selenium
         /// </summary>
         /// <param name="bindingName">The name of the callback to be removed.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="bindingName"/> is <see langword="null"/>.</exception>
         Task RemoveScriptCallbackBinding(string bindingName);
 
         /// <summary>

@@ -77,6 +77,7 @@ import org.openqa.selenium.grid.data.NodeDrainComplete;
 import org.openqa.selenium.grid.data.NodeHeartBeatEvent;
 import org.openqa.selenium.grid.data.NodeId;
 import org.openqa.selenium.grid.data.NodeRemovedEvent;
+import org.openqa.selenium.grid.data.NodeRestartedEvent;
 import org.openqa.selenium.grid.data.NodeStatus;
 import org.openqa.selenium.grid.data.NodeStatusEvent;
 import org.openqa.selenium.grid.data.RequestId;
@@ -141,6 +142,7 @@ public class LocalDistributor extends Distributor implements Closeable {
   private final GridModel model;
   private final Map<NodeId, Node> nodes;
   private final SlotMatcher slotMatcher;
+  private final Duration purgeNodesInterval;
 
   private final ScheduledExecutorService newSessionService =
       Executors.newSingleThreadScheduledExecutor(
@@ -187,7 +189,8 @@ public class LocalDistributor extends Distributor implements Closeable {
       boolean rejectUnsupportedCaps,
       Duration sessionRequestRetryInterval,
       int newSessionThreadPoolSize,
-      SlotMatcher slotMatcher) {
+      SlotMatcher slotMatcher,
+      Duration purgeNodesInterval) {
     super(tracer, clientFactory, registrationSecret);
     this.tracer = Require.nonNull("Tracer", tracer);
     this.bus = Require.nonNull("Event bus", bus);
@@ -201,10 +204,13 @@ public class LocalDistributor extends Distributor implements Closeable {
     this.nodes = new ConcurrentHashMap<>();
     this.rejectUnsupportedCaps = rejectUnsupportedCaps;
     this.slotMatcher = slotMatcher;
+    this.purgeNodesInterval = purgeNodesInterval;
     Require.nonNull("Session request interval", sessionRequestRetryInterval);
 
     bus.addListener(NodeStatusEvent.listener(this::register));
     bus.addListener(NodeStatusEvent.listener(model::refresh));
+    bus.addListener(
+        NodeRestartedEvent.listener(previousNodeStatus -> remove(previousNodeStatus.getNodeId())));
     bus.addListener(NodeRemovedEvent.listener(nodeStatus -> remove(nodeStatus.getNodeId())));
     bus.addListener(
         NodeHeartBeatEvent.listener(
@@ -229,8 +235,14 @@ public class LocalDistributor extends Distributor implements Closeable {
     NewSessionRunnable newSessionRunnable = new NewSessionRunnable();
     bus.addListener(NodeDrainComplete.listener(this::remove));
 
-    purgeDeadNodesService.scheduleAtFixedRate(
-        GuardedRunnable.guard(model::purgeDeadNodes), 30, 30, TimeUnit.SECONDS);
+    // Disable purge dead nodes service if interval is set to zero
+    if (!this.purgeNodesInterval.isZero()) {
+      purgeDeadNodesService.scheduleAtFixedRate(
+          GuardedRunnable.guard(model::purgeDeadNodes),
+          this.purgeNodesInterval.getSeconds(),
+          this.purgeNodesInterval.getSeconds(),
+          TimeUnit.SECONDS);
+    }
 
     nodeHealthCheckService.scheduleAtFixedRate(
         runNodeHealthChecks(),
@@ -273,7 +285,8 @@ public class LocalDistributor extends Distributor implements Closeable {
         distributorOptions.shouldRejectUnsupportedCaps(),
         newSessionQueueOptions.getSessionRequestRetryInterval(),
         distributorOptions.getNewSessionThreadPoolSize(),
-        distributorOptions.getSlotMatcher());
+        distributorOptions.getSlotMatcher(),
+        distributorOptions.getPurgeNodesInterval());
   }
 
   @Override
@@ -334,6 +347,7 @@ public class LocalDistributor extends Distributor implements Closeable {
     // An exception occurs if Node heartbeat has started but the server is not ready.
     // Unhandled exception blocks the event-bus thread from processing any event henceforth.
     NodeStatus initialNodeStatus;
+    Runnable healthCheck;
     try {
       initialNodeStatus = node.getStatus();
       if (initialNodeStatus.getAvailability() != UP) {
@@ -342,8 +356,17 @@ public class LocalDistributor extends Distributor implements Closeable {
         // We do not need to add this Node for now.
         return this;
       }
-      model.add(initialNodeStatus);
-      nodes.put(node.getId(), node);
+      // Extract the health check
+      healthCheck = asRunnableHealthCheck(node);
+      Lock writeLock = lock.writeLock();
+      writeLock.lock();
+      try {
+        nodes.put(node.getId(), node);
+        model.add(initialNodeStatus);
+        allChecks.put(node.getId(), healthCheck);
+      } finally {
+        writeLock.unlock();
+      }
     } catch (Exception e) {
       LOG.log(
           Debug.getDebugLogLevel(),
@@ -351,10 +374,6 @@ public class LocalDistributor extends Distributor implements Closeable {
           e);
       return this;
     }
-
-    // Extract the health check
-    Runnable healthCheck = asRunnableHealthCheck(node);
-    allChecks.put(node.getId(), healthCheck);
 
     updateNodeStatus(initialNodeStatus, healthCheck);
 
@@ -394,7 +413,15 @@ public class LocalDistributor extends Distributor implements Closeable {
 
   private Runnable runNodeHealthChecks() {
     return () -> {
-      ImmutableMap<NodeId, Runnable> nodeHealthChecks = ImmutableMap.copyOf(allChecks);
+      ImmutableMap<NodeId, Runnable> nodeHealthChecks;
+      Lock readLock = this.lock.readLock();
+      readLock.lock();
+      try {
+        nodeHealthChecks = ImmutableMap.copyOf(allChecks);
+      } finally {
+        readLock.unlock();
+      }
+
       for (Runnable nodeHealthCheck : nodeHealthChecks.values()) {
         GuardedRunnable.guard(nodeHealthCheck).run();
       }
@@ -464,15 +491,13 @@ public class LocalDistributor extends Distributor implements Closeable {
     Lock writeLock = lock.writeLock();
     writeLock.lock();
     try {
-      Node node = nodes.get(nodeId);
+      Node node = nodes.remove(nodeId);
+      model.remove(nodeId);
+      allChecks.remove(nodeId);
 
       if (node instanceof RemoteNode) {
         ((RemoteNode) node).close();
       }
-
-      nodes.remove(nodeId);
-      model.remove(nodeId);
-      allChecks.remove(nodeId);
     } finally {
       writeLock.unlock();
     }
@@ -551,6 +576,11 @@ public class LocalDistributor extends Distributor implements Closeable {
           new SessionNotCreatedException("Unable to create new session");
       for (Capabilities caps : request.getDesiredCapabilities()) {
         if (isNotSupported(caps)) {
+          // e.g. the last node drained, we have to wait for a new to register
+          lastFailure =
+              new SessionNotCreatedException(
+                  "Unable to find a node supporting the desired capabilities");
+          retry = true;
           continue;
         }
 

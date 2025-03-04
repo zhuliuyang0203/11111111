@@ -144,6 +144,7 @@ public class Hub extends TemplateGridServerCommand {
             distributorOptions.getSlotMatcher(),
             newSessionRequestOptions.getSessionRequestTimeoutPeriod(),
             newSessionRequestOptions.getSessionRequestTimeout(),
+            newSessionRequestOptions.getMaximumResponseDelay(),
             secret,
             newSessionRequestOptions.getBatchSize());
     handler.addHandler(queue);
@@ -161,7 +162,8 @@ public class Hub extends TemplateGridServerCommand {
             distributorOptions.shouldRejectUnsupportedCaps(),
             newSessionRequestOptions.getSessionRequestRetryInterval(),
             distributorOptions.getNewSessionThreadPoolSize(),
-            distributorOptions.getSlotMatcher());
+            distributorOptions.getSlotMatcher(),
+            distributorOptions.getPurgeNodesInterval());
     handler.addHandler(distributor);
 
     Router router = new Router(tracer, clientFactory, sessions, queue, distributor);

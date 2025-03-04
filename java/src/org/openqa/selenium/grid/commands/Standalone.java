@@ -150,6 +150,7 @@ public class Standalone extends TemplateGridServerCommand {
             distributorOptions.getSlotMatcher(),
             newSessionRequestOptions.getSessionRequestTimeoutPeriod(),
             newSessionRequestOptions.getSessionRequestTimeout(),
+            newSessionRequestOptions.getMaximumResponseDelay(),
             registrationSecret,
             newSessionRequestOptions.getBatchSize());
     combinedHandler.addHandler(queue);
@@ -167,7 +168,8 @@ public class Standalone extends TemplateGridServerCommand {
             distributorOptions.shouldRejectUnsupportedCaps(),
             newSessionRequestOptions.getSessionRequestRetryInterval(),
             distributorOptions.getNewSessionThreadPoolSize(),
-            distributorOptions.getSlotMatcher());
+            distributorOptions.getSlotMatcher(),
+            distributorOptions.getPurgeNodesInterval());
     combinedHandler.addHandler(distributor);
 
     Router router = new Router(tracer, clientFactory, sessions, queue, distributor);
