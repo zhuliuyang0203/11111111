@@ -1067,8 +1067,7 @@ public class LocalNode extends Node implements Closeable {
         span.addEvent("Node drain complete", attributeMap);
       } else {
         pendingSessions.set(currentSessionCount);
-        span.addEvent(
-            String.format("%s session(s) pending before draining Node", currentSessionCount));
+        span.addEvent(String.format("%s session(s) pending before draining Node", attributeMap));
       }
     }
   }
