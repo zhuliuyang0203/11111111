@@ -38,7 +38,6 @@ java_library(
 
 spotbugs_config(
     name = "spotbugs-config",
-    effort = "default",
     exclude_filter = "spotbugs-excludes.xml",
     fail_on_warning = True,
     visibility = [
