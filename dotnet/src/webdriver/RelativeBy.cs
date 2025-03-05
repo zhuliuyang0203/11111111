@@ -33,12 +33,9 @@ namespace OpenQA.Selenium
     {
         private readonly string wrappedAtom;
         private readonly object root;
-        private readonly List<object> filters = new List<object>();
+        private readonly List<object> filters;
 
-        /// <summary>
-        /// Prevents a default instance of the <see cref="RelativeBy"/> class.
-        /// </summary>
-        protected RelativeBy() : base()
+        private static string GetWrappedAtom()
         {
             string atom;
             using (Stream atomStream = ResourceUtilities.GetResourceStream("find-elements.js", "find-elements.js"))
@@ -49,17 +46,14 @@ namespace OpenQA.Selenium
                 }
             }
 
-            wrappedAtom = string.Format(CultureInfo.InvariantCulture, "/* findElements */return ({0}).apply(null, arguments);", atom);
+            return string.Format(CultureInfo.InvariantCulture, "/* findElements */return ({0}).apply(null, arguments);", atom);
         }
 
-        private RelativeBy(object root, List<object>? filters = null) : this()
+        private RelativeBy(object root, List<object>? filters = null)
         {
+            this.wrappedAtom = GetWrappedAtom();
             this.root = GetSerializableRoot(root);
-
-            if (filters != null)
-            {
-                this.filters.AddRange(filters);
-            }
+            this.filters = filters is null ? [] : [.. filters]; // Clone filters
         }
 
         /// <summary>
