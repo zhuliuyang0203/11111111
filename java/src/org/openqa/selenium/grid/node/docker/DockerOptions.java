@@ -107,7 +107,8 @@ public class DockerOptions {
   }
 
   private Duration getServerStartTimeout() {
-    return Duration.ofSeconds(config.getInt(DOCKER_SECTION, "server-start-timeout").orElse(DEFAULT_SERVER_START_TIMEOUT));
+    return Duration.ofSeconds(
+        config.getInt(DOCKER_SECTION, "server-start-timeout").orElse(DEFAULT_SERVER_START_TIMEOUT));
   }
 
   private boolean isEnabled(Docker docker) {
