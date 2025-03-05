@@ -247,7 +247,6 @@ module Selenium
             .to raise_error(ArgumentError, /Cookie name cannot be null or empty/)
         end
         
-
         it 'deletes all' do
           driver.manage.add_cookie name: 'foo', value: 'bar'
           driver.manage.add_cookie name: 'bar', value: 'foo'
