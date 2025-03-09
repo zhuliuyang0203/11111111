@@ -225,7 +225,7 @@ class CallFunctionParameterTest : BiDiTestFixture
 
     [Test]
     [TestCaseSource(nameof(RoundtripOptions))]
-    public async Task CanCallFunctionAndRoundtrip_Five(LocalValue local, RemoteValue expected, string javaScriptAssert)
+    public async Task CanCallFunctionAndRoundtripArguments(LocalValue local, RemoteValue expected, string javaScriptAssert)
     {
         var response = await context.Script.CallFunctionAsync($$"""
             (arg) => {
