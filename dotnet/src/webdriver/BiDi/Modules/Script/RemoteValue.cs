@@ -158,7 +158,7 @@ public abstract record RemoteValue
 
         public InternalId? InternalId { get; set; }
 
-        public IDictionary<string, RemoteValue>? Value { get; set; }
+        public IReadOnlyList<IReadOnlyList<RemoteValue>>? Value { get; set; }
     }
 
     public record Set : RemoteValue

@@ -19,6 +19,9 @@
 
 using NUnit.Framework;
 using OpenQA.Selenium.BiDi.Modules.Script;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace OpenQA.Selenium.BiDi.Script;
@@ -218,5 +221,141 @@ class CallFunctionParameterTest : BiDiTestFixture
 
         Assert.That(res1, Is.EqualTo(3));
         Assert.That(res2, Is.EqualTo(5));
+    }
+
+    [Test]
+    [TestCaseSource(nameof(RoundtripOptions))]
+    public async Task CanCallFunctionAndRoundtrip_Five(LocalValue local, RemoteValue returned, string javaScriptAssert)
+    {
+        var response = await context.Script.CallFunctionAsync($$"""
+            (arg) => {
+              if ({{javaScriptAssert}}) {
+                return arg;
+              }
+
+              throw new Error("Assert failed: " + arg);
+            }
+            """, false, new() { Arguments = [local] });
+
+        if (response.Result is RemoteValue.Array arrayResponse && returned is RemoteValue.Array expectedArray)
+        {
+            Assert.That(arrayResponse.Value, Is.EqualTo(expectedArray.Value));
+        }
+        else if (response.Result is RemoteValue.Object objectResponse && returned is RemoteValue.Object expectedObject)
+        {
+            Assert.That(objectResponse.Value, Is.EqualTo(expectedObject.Value));
+        }
+        else if (response.Result is RemoteValue.Map mapResponse && returned is RemoteValue.Map expectedMap)
+        {
+            Assert.That(mapResponse.Value, Is.EqualTo(expectedMap.Value));
+        }
+        else if (response.Result is RemoteValue.Date dateResponse && returned is RemoteValue.Date expectedDate)
+        {
+            var actualDate = DateTime.SpecifyKind(DateTime.Parse(dateResponse.Value, CultureInfo.InvariantCulture), DateTimeKind.Utc);
+            Assert.That(actualDate.Kind, Is.EqualTo(DateTimeKind.Utc));
+            Assert.That(actualDate, Is.EqualTo(DateTime.Parse(expectedDate.Value)).Within(TimeSpan.FromMilliseconds(1)));
+        }
+        else
+        {
+            Assert.That(response.Result, Is.EqualTo(returned));
+        }
+    }
+    private const string PinnedDateTimeString = "2025-03-09T00:30:33.083Z";
+    private static IEnumerable<TestCaseData> RoundtripOptions()
+    {
+
+        yield return new TestCaseData(new LocalValue.Null(), new RemoteValue.Null(), "arg === null")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Null)"
+        };
+        yield return new TestCaseData(new LocalValue.Undefined(), new RemoteValue.Undefined(), "typeof arg === 'undefined'")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Undefined)",
+        };
+        //yield return new TestCaseData(new LocalValue.Boolean(true), new RemoteValue.Boolean(true), "typeof arg === true")
+        //{
+        //    TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(true)",
+        //};
+        //yield return new TestCaseData(new LocalValue.Boolean(false), new RemoteValue.Boolean(false), "typeof arg === false")
+        //{
+        //    TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(false)",
+        //};
+        yield return new TestCaseData(new LocalValue.String("whoa"), new RemoteValue.String("whoa"), "arg === 'whoa'")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(String('whoa'))",
+        };
+        yield return new TestCaseData(new LocalValue.String(string.Empty), new RemoteValue.String(string.Empty), "arg === ''")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(String(''))",
+        };
+        yield return new TestCaseData(new LocalValue.Date(PinnedDateTimeString), new RemoteValue.Date(PinnedDateTimeString), $"arg.toISOString() === '{PinnedDateTimeString}'")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Date)",
+        };
+        yield return new TestCaseData(new LocalValue.Number(5), new RemoteValue.Number(5), "arg === 5")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(5))",
+        };
+        yield return new TestCaseData(new LocalValue.Number(0), new RemoteValue.Number(0), "arg === 0")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(0))",
+        };
+        yield return new TestCaseData(new LocalValue.Number(-5), new RemoteValue.Number(-5), "arg === -5")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(-5))",
+        };
+        yield return new TestCaseData(new LocalValue.Number(double.PositiveInfinity), new RemoteValue.Number(double.PositiveInfinity), "arg === Number.POSITIVE_INFINITY")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(Infinity))",
+        };
+        yield return new TestCaseData(new LocalValue.Number(double.NegativeInfinity), new RemoteValue.Number(double.NegativeInfinity), "arg === Number.NEGATIVE_INFINITY")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(-Infinity))",
+        };
+        yield return new TestCaseData(new LocalValue.Number(double.NegativeZero), new RemoteValue.Number(double.NegativeZero), "arg === -0")
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Number(-0))",
+        };
+        yield return new TestCaseData(
+            new LocalValue.RegExp(new LocalValue.RegExp.RegExpValue("foo*") { Flags = "g" }),
+            new RemoteValue.RegExp(new RemoteValue.RegExp.RegExpValue("foo*") { Flags = "g" }),
+            "arg.test('foo') && arg.source === 'foo*' && arg.global"
+        )
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(RegExp(/foo/g))",
+        };
+        yield return new TestCaseData(
+
+                new LocalValue.Array([new LocalValue.String("hi")]),
+                new RemoteValue.Array { Value = [new RemoteValue.String("hi")] },
+                "arg.length === 1 && arg[0] === 'hi'"
+            )
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Array(['hi']))",
+        };
+        yield return new TestCaseData
+        (
+            new LocalValue.Object([[new LocalValue.String("key"), new LocalValue.String("value")]]),
+            new RemoteValue.Object
+            {
+                Value = [[new RemoteValue.String("key"), new RemoteValue.String("value")]]
+            },
+            "arg.key === 'value' && Object.keys(arg).length === 1"
+        )
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Object({key: 'value'}))",
+        };
+        yield return new TestCaseData
+        (
+            new LocalValue.Map([[new LocalValue.String("key"), new LocalValue.String("value")]]),
+            new RemoteValue.Map
+            {
+                Value = [[new RemoteValue.String("key"), new RemoteValue.String("value")]]
+            },
+            "arg.get('key') === 'value' && arg.size === 1"
+        )
+        {
+            TestName = nameof(CanCallFunctionAndRoundtrip_Five) + "(Map({'key': 'value'}))",
+        };
     }
 }

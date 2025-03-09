@@ -103,7 +103,7 @@ public abstract record LocalValue
 
     public record Date(string Value) : LocalValue;
 
-    public record Map(IDictionary<string, LocalValue> Value) : LocalValue; // seems to implement IDictionary
+    public record Map(IEnumerable<IEnumerable<LocalValue>> Value) : LocalValue;
 
     public record Object(IEnumerable<IEnumerable<LocalValue>> Value) : LocalValue;
 
