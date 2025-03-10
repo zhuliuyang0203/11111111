@@ -27,7 +27,7 @@ class CallFunctionLocalValueTest : BiDiTestFixture
     [Test]
     public void CanCallFunctionWithArgumentUndefined()
     {
-        var arg = new LocalValue.Undefined();
+        var undefined = new LocalValue.Undefined();
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
@@ -36,14 +36,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [undefined] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNull()
     {
-        var arg = new LocalValue.Null();
+        var @null = new LocalValue.Null();
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
@@ -52,14 +52,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
               throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [@null] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentEmptyString()
     {
-        var arg = new LocalValue.String(string.Empty);
+        var empty = new LocalValue.String(string.Empty);
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
@@ -68,14 +68,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [empty] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNonEmptyString()
     {
-        var arg = new LocalValue.String("whoa");
+        var whoaString = new LocalValue.String("whoa");
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
@@ -84,7 +84,7 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [whoaString] });
         }, Throws.Nothing);
     }
 
@@ -93,7 +93,7 @@ class CallFunctionLocalValueTest : BiDiTestFixture
     {
         const string PinnedDateTimeString = "2025-03-09T00:30:33.083Z";
 
-        var arg = new LocalValue.Date(PinnedDateTimeString);
+        var date = new LocalValue.Date(PinnedDateTimeString);
 
         Assert.That(async () =>
         {
@@ -103,7 +103,7 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [date] });
         }, Throws.Nothing);
     }
 
@@ -112,7 +112,7 @@ class CallFunctionLocalValueTest : BiDiTestFixture
     {
         const string EpochString = "1970-01-01T00:00:00.000Z";
 
-        var arg = new LocalValue.Date(EpochString);
+        var epochDate = new LocalValue.Date(EpochString);
 
         Assert.That(async () =>
         {
@@ -122,14 +122,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg.toISOString());
               } 
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [epochDate] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumber5()
     {
-        var arg = new LocalValue.Number(5);
+        var number5 = new LocalValue.Number(5);
 
         Assert.That(async () =>
         {
@@ -139,14 +139,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [number5] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumberNegative5()
     {
-        var arg = new LocalValue.Number(-5);
+        var numberMinus5 = new LocalValue.Number(-5);
 
         Assert.That(async () =>
         {
@@ -156,14 +156,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [numberMinus5] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumber0()
     {
-        var arg = new LocalValue.Number(0);
+        var number0 = new LocalValue.Number(0);
 
         Assert.That(async () =>
         {
@@ -173,14 +173,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [number0] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumberNegative0()
     {
-        var arg = new LocalValue.Number(double.NegativeZero);
+        var minus0 = new LocalValue.Number(double.NegativeZero);
 
         Assert.That(async () =>
         {
@@ -190,14 +190,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg.toLocaleString());
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [minus0] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumberPositiveInfinity()
     {
-        var arg = new LocalValue.Number(double.PositiveInfinity);
+        var infinity = new LocalValue.Number(double.PositiveInfinity);
 
         Assert.That(async () =>
         {
@@ -207,14 +207,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [infinity] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumberNegativeInfinity()
     {
-        var arg = new LocalValue.Number(double.NegativeInfinity);
+        var minusInfinity = new LocalValue.Number(double.NegativeInfinity);
 
         Assert.That(async () =>
         {
@@ -224,14 +224,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [minusInfinity] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentNumberNaN()
     {
-        var arg = new LocalValue.Number(double.NaN);
+        var nan = new LocalValue.Number(double.NaN);
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
@@ -240,14 +240,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [nan] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentRegExp()
     {
-        var arg = new LocalValue.RegExp(new LocalValue.RegExp.RegExpValue("foo*") { Flags = "g" });
+        var regex = new LocalValue.RegExp(new LocalValue.RegExp.RegExpValue("foo*") { Flags = "g" });
 
         Assert.That(async () =>
         {
@@ -257,14 +257,14 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [regex] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentArray()
     {
-        var arg = new LocalValue.Array([new LocalValue.String("hi")]);
+        var hiString = new LocalValue.Array([new LocalValue.String("hi")]);
 
         Assert.That(async () =>
         {
@@ -274,37 +274,37 @@ class CallFunctionLocalValueTest : BiDiTestFixture
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [hiString] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentObject()
     {
-        var arg = new LocalValue.Object([[new LocalValue.String("key"), new LocalValue.String("value")]]);
+        var obj = new LocalValue.Object([[new LocalValue.String("objKey"), new LocalValue.String("objValue")]]);
 
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
             (arg) => {
-              if (arg.key !== 'value' || Object.keys(arg).length !== 1) {
+              if (arg.objKey !== 'objValue' || Object.keys(arg).length !== 1) {
                 throw new Error("Assert failed: " + arg);
               }
             }
-            """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [obj] });
         }, Throws.Nothing);
     }
 
     [Test]
     public void CanCallFunctionWithArgumentMap()
     {
-        var arg = new LocalValue.Map([[new LocalValue.String("key"), new LocalValue.String("value")]]);
+        var arg = new LocalValue.Map([[new LocalValue.String("mapKey"), new LocalValue.String("mapValue")]]);
 
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
             (arg) => {
-              if (arg.get('key') !== 'value' || arg.size !== 1) {
+              if (arg.get('mapKey') !== 'mapValue' || arg.size !== 1) {
                 throw new Error("Assert failed: " + arg);
               }
             }
@@ -315,13 +315,13 @@ class CallFunctionLocalValueTest : BiDiTestFixture
     [Test]
     public void CanCallFunctionWithArgumentSet()
     {
-        var argument = new LocalValue.Set([new LocalValue.String("key")]);
+        var argument = new LocalValue.Set([new LocalValue.String("setKey")]);
 
         Assert.That(async () =>
         {
             await context.Script.CallFunctionAsync($$"""
             (arg) => {
-              if (!arg.has('key') || arg.size !== 1) {
+              if (!arg.has('setKey') || arg.size !== 1) {
                 throw new Error("Assert failed: " + arg);
               }
             }
