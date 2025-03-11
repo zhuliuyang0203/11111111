@@ -83,9 +83,10 @@ namespace OpenQA.Selenium.BiDi.Communication.Json.Converters
 
             static bool IsNegativeZero(double x)
             {
-                const long NegativeZeroBits = -9223372036854775808;
+                // Negative zero is less trivial to test, because 0 == -0 is true
+                // We need to do a bit pattern comparison
 
-                return BitConverter.DoubleToInt64Bits(x) == NegativeZeroBits;
+                return BitConverter.DoubleToInt64Bits(x) == BitConverter.DoubleToInt64Bits(-0.0);
             }
         }
     }
