@@ -71,12 +71,9 @@ public abstract record LocalValue
         }
     }
 
-    public abstract record PrimitiveProtocolLocalValue : LocalValue
-    {
+    public abstract record PrimitiveProtocolLocalValue : LocalValue;
 
-    }
-
-    public record Number([property: JsonConverter(typeof(BiDiDoubleConverter))] double Value) : PrimitiveProtocolLocalValue
+    public record Number(double Value) : PrimitiveProtocolLocalValue
     {
         public static explicit operator Number(double n) => new Number(n);
     }
