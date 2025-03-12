@@ -182,13 +182,13 @@ public class CallFunctionRemoteValueTest : BiDiTestFixture
     [Test]
     public async Task CanCallFunctionAndReturnObject()
     {
-        var response = await context.Script.CallFunctionAsync("() => { return { key: 'value' }; }", false);
+        var response = await context.Script.CallFunctionAsync("() => { return { objKey: 'objValue' }; }", false);
 
         Assert.That(response.Result, Is.AssignableTo<RemoteValue.Object>());
 
         var expected = new RemoteValue.Object
         {
-            Value = [[new RemoteValue.String("key"), new RemoteValue.String("value")]]
+            Value = [[new RemoteValue.String("objKey"), new RemoteValue.String("objValue")]]
         };
         Assert.That(((RemoteValue.Object)response.Result).Value, Is.EqualTo(expected.Value));
     }
@@ -198,13 +198,13 @@ public class CallFunctionRemoteValueTest : BiDiTestFixture
     {
         var expected = new RemoteValue.Map
         {
-            Value = [[new RemoteValue.String("key"), new RemoteValue.String("value")]]
+            Value = [[new RemoteValue.String("mapKey"), new RemoteValue.String("mapValue")]]
         };
 
         var response = await context.Script.CallFunctionAsync($$"""
             () => {
               const map = new Map();
-              map.set('key', 'value');
+              map.set('mapKey', 'mapValue');
               return map;
             }
             """, false);
@@ -216,11 +216,11 @@ public class CallFunctionRemoteValueTest : BiDiTestFixture
     [Test]
     public async Task CanCallFunctionAndReturnSet()
     {
-        var expected = new RemoteValue.Set { Value = [new RemoteValue.String("key")] };
+        var expected = new RemoteValue.Set { Value = [new RemoteValue.String("setKey")] };
         var response = await context.Script.CallFunctionAsync($$"""
             () => {
               const set = new Set();
-              set.add('key');
+              set.add('setKey');
               return set;
             }
             """, false);
