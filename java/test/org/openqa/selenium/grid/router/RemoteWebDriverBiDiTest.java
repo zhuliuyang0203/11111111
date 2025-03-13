@@ -52,7 +52,6 @@ import org.openqa.selenium.grid.router.DeploymentTypes.Deployment;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.testing.Ignore;
-import org.openqa.selenium.testing.NotYetImplemented;
 import org.openqa.selenium.testing.drivers.Browser;
 
 class RemoteWebDriverBiDiTest {
