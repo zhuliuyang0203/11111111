@@ -233,14 +233,14 @@ To run Python code locally without building/installing the package, you must fir
 pip install -r py/requirements.txt
 ```
 
-Then, update the generated files:
+Then, build the generated files and copy them into your local source tree:
 ```shell
 ./go py:local_dev
 ```
 
-Then, you can import the selenium package directly from source from the `py` directory.
+After that, you can import the selenium package directly from source from the `py` directory.
 
-To build the selenium package (wheel) and and install it locally:
+Instead of running from source, you can build and install the selenium package (wheel) locally:
 ```shell
 ./go py:install
 ```
