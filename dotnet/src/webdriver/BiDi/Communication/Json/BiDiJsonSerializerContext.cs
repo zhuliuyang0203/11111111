@@ -140,8 +140,7 @@ namespace OpenQA.Selenium.BiDi.Communication.Json;
 [JsonSerializable(typeof(Modules.Network.FetchErrorEventArgs))]
 [JsonSerializable(typeof(Modules.Network.AuthRequiredEventArgs))]
 
-[JsonSerializable(typeof(Modules.Script.Channel), TypeInfoPropertyName = "Script_Channel")]
-[JsonSerializable(typeof(Modules.Script.LocalValue.String), TypeInfoPropertyName = "Script_LocalValue_String")]
+[JsonSerializable(typeof(Modules.Script.ChannelLocalValue), TypeInfoPropertyName = "Script_ChannelLocalValue")]
 [JsonSerializable(typeof(Modules.Script.Target.Realm), TypeInfoPropertyName = "Script_Target_Realm")]
 [JsonSerializable(typeof(Modules.Script.Target.Context), TypeInfoPropertyName = "Script_Target_Context")]
 

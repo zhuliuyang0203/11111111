@@ -110,7 +110,7 @@ class ScriptCommandsTest : BiDiTestFixture
     {
         var preloadScript = await bidi.Script.AddPreloadScriptAsync("(channel) => channel('will_be_send', 'will_be_ignored')", new()
         {
-            Arguments = [new LocalValue.Channel(new(new("channel_name")))]
+            Arguments = [new ChannelLocalValue(new(new("channel_name")))]
         });
 
         Assert.That(preloadScript, Is.Not.Null);
@@ -122,7 +122,7 @@ class ScriptCommandsTest : BiDiTestFixture
     {
         var preloadScript = await bidi.Script.AddPreloadScriptAsync("(channel) => channel('will_be_send', 'will_be_ignored')", new()
         {
-            Arguments = [new LocalValue.Channel(new(new("channel_name"))
+            Arguments = [new ChannelLocalValue(new(new("channel_name"))
             {
                 SerializationOptions = new()
                 {

@@ -138,7 +138,7 @@ class CallFunctionParameterTest : BiDiTestFixture
     [Test]
     public async Task CanCallFunctionWithThisParameter()
     {
-        var thisParameter = new LocalValue.Object([["some_property", 42]]);
+        var thisParameter = new ObjectLocalValue([["some_property", 42]]);
 
         var res = await context.Script.CallFunctionAsync<int>("""
             function(){return this.some_property}
