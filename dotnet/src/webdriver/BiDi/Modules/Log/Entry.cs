@@ -17,12 +17,16 @@
 // under the License.
 // </copyright>
 
+using OpenQA.Selenium.BiDi.Communication.Json.Converters.Polymorphic;
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace OpenQA.Selenium.BiDi.Modules.Log;
 
 // https://github.com/dotnet/runtime/issues/72604
+[JsonConverter(typeof(LogEntryConverter))]
+
 //[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
 //[JsonDerivedType(typeof(Console), "console")]
 //[JsonDerivedType(typeof(Javascript), "javascript")]

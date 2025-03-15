@@ -74,15 +74,9 @@ public class Broker : IAsyncDisposable
                 new InternalIdConverter(_bidi),
                 new PreloadScriptConverter(_bidi),
                 new RealmConverter(_bidi),
+
                 new BiDiDateTimeOffsetConverter(),
                 new JsonStringEnumConverter(JsonNamingPolicy.CamelCase),
-
-                // https://github.com/dotnet/runtime/issues/72604
-                new Json.Converters.Polymorphic.MessageConverter(),
-                new Json.Converters.Polymorphic.EvaluateResultConverter(),
-                new Json.Converters.Polymorphic.RemoteValueConverter(),
-                new Json.Converters.Polymorphic.RealmInfoConverter(),
-                new Json.Converters.Polymorphic.LogEntryConverter(),
             }
         };
 
