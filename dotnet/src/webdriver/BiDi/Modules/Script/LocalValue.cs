@@ -165,7 +165,7 @@ public abstract record LocalValue
 
     public static ObjectLocalValue Object(IDictionary<string, LocalValue> values)
     {
-        var convertedValues = values.Select(pair => new LocalValue[] { new StringLocalValue(pair.Key), pair.Value }).ToList();
+        var convertedValues = values.Select(PairToList).ToList();
         return new ObjectLocalValue(convertedValues);
     }
 
@@ -178,6 +178,11 @@ public abstract record LocalValue
     {
         var convertedValues = values.Select(PairToList).ToList();
         return new MapLocalValue(convertedValues);
+    }
+
+    private static LocalValue[] PairToList(KeyValuePair<string, LocalValue> pair)
+    {
+        return [String(pair.Key), pair.Value];
     }
 
     private static LocalValue[] PairToList(KeyValuePair<LocalValue, LocalValue> pair)
@@ -195,11 +200,11 @@ public abstract record LocalValue
         return new DateLocalValue(value.ToString("o"));
     }
 
-    public static StringLocalValue String(string value)
+    public static LocalValue String(string? value)
     {
         if (value is null)
         {
-            throw new ArgumentNullException(nameof(value), $"string value cannot be null, use {nameof(LocalValue)}.{nameof(Null)} value instead");
+            return Null;
         }
 
         return new StringLocalValue(value);
