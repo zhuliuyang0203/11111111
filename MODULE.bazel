@@ -219,7 +219,7 @@ maven.install(
         "org.junit.platform:junit-platform-commons:1.12.1",
         "org.junit.platform:junit-platform-engine:1.12.1",
         "org.mockito:mockito-core:5.16.1",
-        "org.redisson:redisson:3.45.0",
+        "org.redisson:redisson:3.45.1",
         "org.slf4j:slf4j-api:2.0.17",
         "org.slf4j:slf4j-jdk14:2.0.17",
         "org.tomlj:tomlj:1.1.1",
