@@ -1,3 +1,12 @@
+0.4.30
+======
+* [rust] Remove check for old metadata file
+* [rust] Check lock folder at the end of SM execution and clear it if required
+* [rust] Store reference to lock file to clear folder when necessary
+* [rust] Read PROCESSOR_ARCHITECTURE env in Windows to determine architecture
+* [rust] Selenium Manager support nightly Grid (#13384) (#15366)
+* [rust] Support snap packages (Firefox, Chromium) in Selenium Manager
+
 0.4.29
 ======
 

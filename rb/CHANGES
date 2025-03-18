@@ -1,3 +1,21 @@
+4.30.0 (2025-03-18)
+=========================
+* Bumping versions to nightly
+* [rb] Fix "no anonymous block parameter" in ruby 3.1 (#15315)
+* [rb] release 4.29.1
+* [rb] bump version to nightly
+* [BiDi][rb] Add set viewport for browsing context (#15290)
+* Add support for handling user prompt (#15291)
+* [rb][BiDi] Add Browser context activate command (#15365)
+* modified delete cookie added code and test (#15386)
+* [rb] Add target type param to devtools (#15416)
+* [rb] fix bug preventing running remote driver tests without bazel
+* [rb] remove deprecated html 5 web storage features
+* [rb] remove deprecated script alias for execute_script
+* [rb] add debug message for location of screenshot
+* [cdp] add support for 134 and remove 131
+* [cdp] remove support for v85 since no longer required by Firefox
+
 4.29.1 (2025-02-22)
 =========================
 * [rb] Fix "no anonymous block parameter" in ruby 3.1 (#15315)

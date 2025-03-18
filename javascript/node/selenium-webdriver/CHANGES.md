@@ -1,3 +1,10 @@
+## 4.30.0
+
+- Bumping versions to nightly
+- [js][bidi]: fix chrome and firefox test for CI RBE (#15405)
+- [cdp] add support for 134 and remove 131
+- [cdp] remove support for v85 since no longer required by Firefox
+
 ## 4.29.0
 
 - Add CDP for Chrome 133 and remove 130

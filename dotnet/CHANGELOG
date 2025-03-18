@@ -1,3 +1,49 @@
+v4.30.0
+======
+* [dotnet] Fix dev environment to run tests on Windows/MacOS (#15303)
+* [dotnet] Fix sporadic build issue with selenium manager in msbuild
+* [dotnet] Increment `WebDriver` towards nullability (#15228)
+* [dotnet] Do not warn when passing in null driver paths to driver service (#15328)
+* [dotnet] Add `SystemClock` singleton (#15285)
+* [dotnet] Remove obsoleted members/types for 4.30 (#15342)
+* [dotnet] Parse response before deserialization (#15268)
+* [dotnet] Address some nullability warnings in driver options
+* [dotnet] Make internal console writer more flexible via taking TextWriter only (#15346)
+* [dotnet] Annotate nullability on most remaining types (#15257)
+* [dotnet] Annotate CDP as AOT-unsafe (#14637)
+* [dotnet] Fix placement of obsolete argument in ConsoleLogHandler
+* [dotnet] Annotate nullability on more of `WebElement` (#15230)
+* [dotnet] Annotate nullable reference types on CDP-generated code (#15255)
+* [dotnet] Simplify and nullable annotate `DriverFinder` (#15232)
+* [dotnet] Annotate nullability on `WebDriver.SessionId` (#15350)
+* [dotnet] Enable nullability on remote file download APIs (#15351)
+* [dotnet] Annotate nullability on elements and `WebDriver` (#15352)
+* [dotnet] Annotate nullability on capabilities types (#15353)
+* [dotnet] Enable Nullable Reference Types (#15354)
+* [dotnet] Trim away CDP when publishing AOT apps (#15217)
+* [dotnet] [bidi] Order command properties in json to simplify logs reading
+* [dotnet] [bidi] Add SetFiles command in Input module (#15392)
+* [dotnet] [bidi] Added UnhandledPromptBehavior for new session capability (#15391)
+* [dotnet] [bidi] Encapsulate transport inside `Broker` (#15423)
+* [dotnet] [bidi] Align `Scipt.LocalValue.Map` with spec (#15395)
+* [dotnet] [bidi] Make `DisposeAsyncCore` protected
+* [dotnet] [bidi] Make `LocalValue` types not nested (#15428)
+* [dotnet] [bidi] Migrate RemoteValue to separate types (#15426)
+* [dotnet] [bidi] Reuse RegExpValue in script Local/Remote values
+* [dotnet] [bidi] Make `PartitionDescriptor` as not nested (#15435)
+* [dotnet] [bidi] Make `UrlPattern` as not nested (#15434)
+* [dotnet] [bidi] Make script `Target` as not nested (#15436)
+* [dotnet] [bidi] Make `LogEntry` as not nested (#15432)
+* [cdp] add support for 134 and remove 131
+* [cdp] remove support for v85 since no longer required by Firefox
+* [dotnet] [bidi] Make `BytesValue` not nested (#15433)
+* [dotnet] [bidi] Make input `Actions` as not nested (#15437)
+* [dotnet] [bidi] Make `ProxyConfiguration` as not nested (#15438)
+* [dotnet] [bidi] Make `Locator` types as not nested (#15429)
+* [dotnet] [bidi] Make `ClipRectangle` as not nested (#15431)
+* [dotnet] [bidi] Make `RealmInfo` as not nested (#15444)
+* [dotnet] [bidi] Make input `Origin` as not nested (#15445)
+
 v4.29.0
 ======
 * Add CDP for Chrome 133 and remove 130
