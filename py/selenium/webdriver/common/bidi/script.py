@@ -17,6 +17,7 @@
 
 from dataclasses import dataclass
 from typing import List
+from typing import Optional
 
 from .bidi import BidiObject
 from .session import session_subscribe
@@ -121,4 +122,4 @@ class StackFrame(BidiObject):
 
 @dataclass
 class StackTrace(BidiObject):
-    callFrames: typing.Optional[typing.List[StackFrame]] = None
+    callFrames: Optional[List[StackFrame]] = None
