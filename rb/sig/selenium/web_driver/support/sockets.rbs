@@ -1,0 +1,9 @@
+module Selenium
+  module WebDriver
+    module Support
+      module Sockets
+        def self.free_port: -> Integer
+      end
+    end
+  end
+end

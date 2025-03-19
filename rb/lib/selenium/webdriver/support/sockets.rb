@@ -17,24 +17,19 @@
 # specific language governing permissions and limitations
 # under the License.
 
+require 'socket'
+
 module Selenium
   module WebDriver
-    module Firefox
-      class Service < WebDriver::Service
-        DEFAULT_PORT = 4444
-        EXECUTABLE = 'geckodriver'
-        SHUTDOWN_SUPPORTED = false
-        DRIVER_PATH_ENV_KEY = 'SE_GECKODRIVER'
-
-        def initialize(path: nil, port: nil, log: nil, args: nil)
-          args ||= []
-          unless args.any? { |arg| arg.include?('--connect-existing') }
-            args << '--websocket-port'
-            args << Support::Sockets.free_port.to_s
-          end
-          super
+    module Support
+      module Sockets
+        def self.free_port
+          server = TCPServer.new('127.0.0.1', 0)
+          port = server.addr[1]
+          server.close
+          port
         end
-      end # Service
-    end # Firefox
+      end # Sockets
+    end # Support
   end # WebDriver
 end # Selenium

@@ -51,7 +51,7 @@ module Selenium
           it 'does not create args by default' do
             service = described_class.new
 
-            expect(service.extra_args).to be_empty
+            expect(service.extra_args.count).to eq 2
           end
 
           it 'uses sets log path to stdout' do
@@ -73,9 +73,24 @@ module Selenium
           end
 
           it 'uses provided args' do
-            service = described_class.new(args: ['--foo', '--bar'])
+            service = described_class.new(args: %w[--foo --bar])
+            expect(service.extra_args).to include(*%w[--foo --bar])
+          end
 
-            expect(service.extra_args).to eq ['--foo', '--bar']
+          context 'with websocket parameter' do
+            it 'validates the websocket parameter is present and there is a random port' do
+              service = described_class.new
+              ws_index = service.extra_args.index('--websocket-port')
+              port = service.extra_args[ws_index + 1].to_i
+              expect(port).to be > 0
+              expect(port).to be < 65_536
+            end
+
+            it 'validates with --connect-existing that there is no --websocket-port and the port is not random' do
+              service = described_class.new(args: ['--connect-existing'])
+              expect(service.extra_args).not_to include('--websocket-port')
+              expect(service.extra_args).to eq(['--connect-existing'])
+            end
           end
         end
 
@@ -83,7 +98,7 @@ module Selenium
           let(:driver) { Firefox::Driver }
           let(:service) do
             instance_double(described_class, launch: service_manager, executable_path: nil, 'executable_path=': nil,
-                                             class: described_class)
+                            class: described_class)
           end
           let(:service_manager) { instance_double(ServiceManager, uri: 'http://example.com') }
           let(:bridge) { instance_double(Remote::Bridge, quit: nil, create_session: {}) }
