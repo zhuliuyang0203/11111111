@@ -23,7 +23,7 @@ clones the selenium repo and then runs ``tox -c py/tox.ini`` building the Python
     cd selenium/
     # uncomment and switch to your development branch if needed 
     #git switch -c feature-branch origin/feature-branch
-    tox -c py/tox.ini
+    tox -c py/tox.ini -e docs
 
 This works in a similar manner as the larger selenium bazel build, but does just the Python
 documentation portion.
