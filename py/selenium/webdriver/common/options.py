@@ -285,7 +285,7 @@ class BaseOptions(metaclass=ABCMeta):
     """
 
     web_socket_url = _BaseOptionsDescriptor("webSocketUrl")
-    """Gets and Set whether the session accepts insecure certificates.
+    """Gets and Sets WebSocket URL.
 
     Usage:
     ------
