@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  id: PressureSource
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  children:
+  - OpenQA.Selenium.DevTools.V134.Emulation.PressureSource.Cpu
+  langs:
+  - csharp
+  - vb
+  name: PressureSource
+  nameWithType: PressureSource
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureSource.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PressureSource
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureSource.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: PressureSource
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PressureSource>))]
+
+      public enum PressureSource
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PressureSource)))>
+
+      Public Enum PressureSource
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource.Cpu
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.PressureSource.Cpu
+  id: Cpu
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  langs:
+  - csharp
+  - vb
+  name: Cpu
+  nameWithType: PressureSource.Cpu
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource.Cpu
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureSource.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Cpu
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureSource.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the cpu value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "cpu")]
+
+      Cpu = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+    content.vb: >-
+      <EnumMember(Value:="cpu")>
+
+      Cpu = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: cpu
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V134.Emulation
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.PressureSource
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource.html
+  name: PressureSource
+  nameWithType: PressureSource
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureSource

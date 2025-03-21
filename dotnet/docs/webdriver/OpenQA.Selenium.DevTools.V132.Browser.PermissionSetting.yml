@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  commentId: T:OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  id: PermissionSetting
+  parent: OpenQA.Selenium.DevTools.V132.Browser
+  children:
+  - OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Denied
+  - OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Granted
+  - OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Prompt
+  langs:
+  - csharp
+  - vb
+  name: PermissionSetting
+  nameWithType: PermissionSetting
+  fullName: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PermissionSetting
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Browser
+  summary: PermissionSetting
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PermissionSetting>))]
+
+      public enum PermissionSetting
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PermissionSetting)))>
+
+      Public Enum PermissionSetting
+- uid: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Granted
+  commentId: F:OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Granted
+  id: Granted
+  parent: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  langs:
+  - csharp
+  - vb
+  name: Granted
+  nameWithType: PermissionSetting.Granted
+  fullName: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Granted
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Granted
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Browser
+  summary: Enumerated member for the granted value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "granted")]
+
+      Granted = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+    content.vb: >-
+      <EnumMember(Value:="granted")>
+
+      Granted = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: granted
+- uid: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Denied
+  commentId: F:OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Denied
+  id: Denied
+  parent: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  langs:
+  - csharp
+  - vb
+  name: Denied
+  nameWithType: PermissionSetting.Denied
+  fullName: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Denied
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Denied
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Browser
+  summary: Enumerated member for the denied value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "denied")]
+
+      Denied = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+    content.vb: >-
+      <EnumMember(Value:="denied")>
+
+      Denied = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: denied
+- uid: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Prompt
+  commentId: F:OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Prompt
+  id: Prompt
+  parent: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  langs:
+  - csharp
+  - vb
+  name: Prompt
+  nameWithType: PermissionSetting.Prompt
+  fullName: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.Prompt
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Prompt
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Browser/PermissionSetting.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Browser
+  summary: Enumerated member for the prompt value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "prompt")]
+
+      Prompt = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+    content.vb: >-
+      <EnumMember(Value:="prompt")>
+
+      Prompt = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: prompt
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Browser
+  commentId: N:OpenQA.Selenium.DevTools.V132.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Browser
+  nameWithType: OpenQA.Selenium.DevTools.V132.Browser
+  fullName: OpenQA.Selenium.DevTools.V132.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Browser
+    name: Browser
+    href: OpenQA.Selenium.DevTools.V132.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Browser
+    name: Browser
+    href: OpenQA.Selenium.DevTools.V132.Browser.html
+- uid: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  commentId: T:OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting
+  parent: OpenQA.Selenium.DevTools.V132.Browser
+  href: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting.html
+  name: PermissionSetting
+  nameWithType: PermissionSetting
+  fullName: OpenQA.Selenium.DevTools.V132.Browser.PermissionSetting

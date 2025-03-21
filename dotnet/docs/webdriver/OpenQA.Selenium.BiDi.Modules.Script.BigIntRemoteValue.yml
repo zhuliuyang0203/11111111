@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+  id: BigIntRemoteValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor(System.String)
+  - OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value
+  langs:
+  - csharp
+  - vb
+  name: BigIntRemoteValue
+  nameWithType: BigIntRemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BigIntRemoteValue
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 103
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record BigIntRemoteValue : PrimitiveProtocolRemoteValue, IEquatable<RemoteValue>, IEquatable<PrimitiveProtocolRemoteValue>, IEquatable<BigIntRemoteValue>'
+    content.vb: Public Class BigIntRemoteValue Inherits PrimitiveProtocolRemoteValue Implements IEquatable(Of RemoteValue), IEquatable(Of PrimitiveProtocolRemoteValue), IEquatable(Of BigIntRemoteValue)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  - OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor(System.String)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: BigIntRemoteValue(string)
+  nameWithType: BigIntRemoteValue.BigIntRemoteValue(string)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.BigIntRemoteValue(string)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 103
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public BigIntRemoteValue(string Value)
+    parameters:
+    - id: Value
+      type: System.String
+    content.vb: Public Sub New(Value As String)
+  overload: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor*
+  nameWithType.vb: BigIntRemoteValue.New(String)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.New(String)
+  name.vb: New(String)
+- uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value
+  id: Value
+  parent: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: BigIntRemoteValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Value
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 103
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public string Value { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  name: RemoteValue
+  nameWithType: RemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+- uid: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue.html
+  name: PrimitiveProtocolRemoteValue
+  nameWithType: PrimitiveProtocolRemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RemoteValue>
+  nameWithType: IEquatable<RemoteValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.RemoteValue>
+  nameWithType.vb: IEquatable(Of RemoteValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.RemoteValue)
+  name.vb: IEquatable(Of RemoteValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PrimitiveProtocolRemoteValue>
+  nameWithType: IEquatable<PrimitiveProtocolRemoteValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue>
+  nameWithType.vb: IEquatable(Of PrimitiveProtocolRemoteValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue)
+  name.vb: IEquatable(Of PrimitiveProtocolRemoteValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+    name: PrimitiveProtocolRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue
+    name: PrimitiveProtocolRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.PrimitiveProtocolRemoteValue.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BigIntRemoteValue>
+  nameWithType: IEquatable<BigIntRemoteValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue>
+  nameWithType.vb: IEquatable(Of BigIntRemoteValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue)
+  name.vb: IEquatable(Of BigIntRemoteValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+    name: BigIntRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue
+    name: BigIntRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  name: ConvertTo<TResult>()
+  nameWithType: RemoteValue.ConvertTo<TResult>()
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo<TResult>()
+  nameWithType.vb: RemoteValue.ConvertTo(Of TResult)()
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo(Of TResult)()
+  name.vb: ConvertTo(Of TResult)()
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+    name: ConvertTo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+    name: ConvertTo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_BigIntRemoteValue__ctor_System_String_
+  name: BigIntRemoteValue
+  nameWithType: BigIntRemoteValue.BigIntRemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.BigIntRemoteValue
+  nameWithType.vb: BigIntRemoteValue.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value
+  href: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_BigIntRemoteValue_Value
+  name: Value
+  nameWithType: BigIntRemoteValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.BigIntRemoteValue.Value

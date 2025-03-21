@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  commentId: T:OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  id: LineStylePatternValues
+  parent: OpenQA.Selenium.DevTools.V133.Overlay
+  children:
+  - OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dashed
+  - OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dotted
+  langs:
+  - csharp
+  - vb
+  name: LineStylePatternValues
+  nameWithType: LineStylePatternValues
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LineStylePatternValues
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: Enumerated values for Overlay.LineStyle.pattern
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<LineStylePatternValues>))]
+
+      public enum LineStylePatternValues
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of LineStylePatternValues)))>
+
+      Public Enum LineStylePatternValues
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dashed
+  commentId: F:OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dashed
+  id: Dashed
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  langs:
+  - csharp
+  - vb
+  name: Dashed
+  nameWithType: LineStylePatternValues.Dashed
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dashed
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Dashed
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: Enumerated member for the dashed value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "dashed")]
+
+      Dashed = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+    content.vb: >-
+      <EnumMember(Value:="dashed")>
+
+      Dashed = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: dashed
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dotted
+  commentId: F:OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dotted
+  id: Dotted
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  langs:
+  - csharp
+  - vb
+  name: Dotted
+  nameWithType: LineStylePatternValues.Dotted
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.Dotted
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Dotted
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/LineStylePatternValues.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: Enumerated member for the dotted value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "dotted")]
+
+      Dotted = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+    content.vb: >-
+      <EnumMember(Value:="dotted")>
+
+      Dotted = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: dotted
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Overlay
+  commentId: N:OpenQA.Selenium.DevTools.V133.Overlay
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Overlay
+  nameWithType: OpenQA.Selenium.DevTools.V133.Overlay
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V133.Overlay.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V133.Overlay.html
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  commentId: T:OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues
+  parent: OpenQA.Selenium.DevTools.V133.Overlay
+  href: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues.html
+  name: LineStylePatternValues
+  nameWithType: LineStylePatternValues
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.LineStylePatternValues

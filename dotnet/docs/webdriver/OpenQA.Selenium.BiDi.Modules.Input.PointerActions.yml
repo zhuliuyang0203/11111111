@@ -1,0 +1,833 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  id: PointerActions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+  langs:
+  - csharp
+  - vb
+  name: PointerActions
+  nameWithType: PointerActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PointerActions
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 71
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: 'public record PointerActions : SourceActions<IPointerSourceAction>, IEquatable<SourceActions>, IEnumerable<ISourceAction>, IEnumerable, IEquatable<SourceActions<IPointerSourceAction>>, IEquatable<PointerActions>'
+    content.vb: Public Class PointerActions Inherits SourceActions(Of IPointerSourceAction) Implements IEquatable(Of SourceActions), IEnumerable(Of ISourceAction), IEnumerable, IEquatable(Of SourceActions(Of IPointerSourceAction)), IEquatable(Of PointerActions)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions}
+  - System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Input.ISourceAction}
+  - System.Collections.IEnumerable
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.PointerActions}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Actions
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.GetEnumerator
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions.Id
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+  id: Options
+  parent: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: PointerActions.Options
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Options
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: public PointerParameters? Options { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+    content.vb: Public Property Options As PointerParameters
+  overload: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.html
+  name: SourceActions
+  nameWithType: SourceActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  definition: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  name: SourceActions<IPointerSourceAction>
+  nameWithType: SourceActions<IPointerSourceAction>
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction>
+  nameWithType.vb: SourceActions(Of IPointerSourceAction)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction)
+  name.vb: SourceActions(Of IPointerSourceAction)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+    name: IPointerSourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction.html
+  - name: '>'
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+    name: IPointerSourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SourceActions>
+  nameWithType: IEquatable<SourceActions>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Input.SourceActions>
+  nameWithType.vb: IEquatable(Of SourceActions)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Input.SourceActions)
+  name.vb: IEquatable(Of SourceActions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Input.ISourceAction}
+  commentId: T:System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Input.ISourceAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ISourceAction>
+  nameWithType: IEnumerable<ISourceAction>
+  fullName: System.Collections.Generic.IEnumerable<OpenQA.Selenium.BiDi.Modules.Input.ISourceAction>
+  nameWithType.vb: IEnumerable(Of ISourceAction)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  name.vb: IEnumerable(Of ISourceAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SourceActions<IPointerSourceAction>>
+  nameWithType: IEquatable<SourceActions<IPointerSourceAction>>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Input.SourceActions<OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction>>
+  nameWithType.vb: IEquatable(Of SourceActions(Of IPointerSourceAction))
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction))
+  name.vb: IEquatable(Of SourceActions(Of IPointerSourceAction))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+    name: IPointerSourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+    name: IPointerSourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction.html
+  - name: )
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.PointerActions}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Input.PointerActions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PointerActions>
+  nameWithType: IEquatable<PointerActions>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Input.PointerActions>
+  nameWithType.vb: IEquatable(Of PointerActions)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Input.PointerActions)
+  name.vb: IEquatable(Of PointerActions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+    name: PointerActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+    name: PointerActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Actions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Actions
+  parent: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  definition: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Actions
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Actions
+  name: Actions
+  nameWithType: SourceActions<IPointerSourceAction>.Actions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction>.Actions
+  nameWithType.vb: SourceActions(Of IPointerSourceAction).Actions
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction).Actions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.GetEnumerator
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.GetEnumerator
+  parent: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  definition: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.GetEnumerator
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: SourceActions<IPointerSourceAction>.GetEnumerator()
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction>.GetEnumerator()
+  nameWithType.vb: SourceActions(Of IPointerSourceAction).GetEnumerator()
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction).GetEnumerator()
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.GetEnumerator
+    name: GetEnumerator
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.GetEnumerator
+    name: GetEnumerator
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  parent: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}
+  definition: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  name: Add(ISourceAction)
+  nameWithType: SourceActions<IPointerSourceAction>.Add(ISourceAction)
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction>.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  nameWithType.vb: SourceActions(Of IPointerSourceAction).Add(ISourceAction)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction).Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+    name: Add
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  - name: (
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions{OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction}.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+    name: Add
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  - name: (
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.Id
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.SourceActions.Id
+  parent: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_Id
+  name: Id
+  nameWithType: SourceActions.Id
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.Id
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  name: SourceActions<T>
+  nameWithType: SourceActions<T>
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<T>
+  nameWithType.vb: SourceActions(Of T)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of T)
+  name.vb: SourceActions(Of T)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Actions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Actions
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Actions
+  name: Actions
+  nameWithType: SourceActions<T>.Actions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<T>.Actions
+  nameWithType.vb: SourceActions(Of T).Actions
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of T).Actions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.GetEnumerator
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.GetEnumerator
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  name: GetEnumerator()
+  nameWithType: SourceActions<T>.GetEnumerator()
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<T>.GetEnumerator()
+  nameWithType.vb: SourceActions(Of T).GetEnumerator()
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.GetEnumerator
+    name: GetEnumerator
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.GetEnumerator
+    name: GetEnumerator
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_GetEnumerator
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  name: Add(ISourceAction)
+  nameWithType: SourceActions<T>.Add(ISourceAction)
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<T>.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  nameWithType.vb: SourceActions(Of T).Add(ISourceAction)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of T).Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+    name: Add
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  - name: (
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1.Add(OpenQA.Selenium.BiDi.Modules.Input.ISourceAction)
+    name: Add
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html#OpenQA_Selenium_BiDi_Modules_Input_SourceActions_1_Add_OpenQA_Selenium_BiDi_Modules_Input_ISourceAction_
+  - name: (
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+    name: ISourceAction
+    href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.html#OpenQA_Selenium_BiDi_Modules_Input_PointerActions_Options
+  name: Options
+  nameWithType: PointerActions.Options
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.Options
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters.html
+  name: PointerParameters
+  nameWithType: PointerParameters
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters

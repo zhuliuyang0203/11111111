@@ -1,0 +1,857 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  id: ConsoleLogEntry
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Log.Level,OpenQA.Selenium.BiDi.Modules.Script.Source,System.String,System.DateTimeOffset,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue})
+  - OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args
+  - OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+  langs:
+  - csharp
+  - vb
+  name: ConsoleLogEntry
+  nameWithType: ConsoleLogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConsoleLogEntry
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: 'public record ConsoleLogEntry : LogEntry, IEquatable<EventArgs>, IEquatable<LogEntry>, IEquatable<ConsoleLogEntry>'
+    content.vb: Public Class ConsoleLogEntry Inherits LogEntry Implements IEquatable(Of EventArgs), IEquatable(Of LogEntry), IEquatable(Of ConsoleLogEntry)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.EventArgs
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Level
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Source
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Text
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Timestamp
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry.StackTrace
+  - OpenQA.Selenium.BiDi.EventArgs.BiDi
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Log.Level,OpenQA.Selenium.BiDi.Modules.Script.Source,System.String,System.DateTimeOffset,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue})
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Log.Level,OpenQA.Selenium.BiDi.Modules.Script.Source,System.String,System.DateTimeOffset,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue})
+  id: '#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Log.Level,OpenQA.Selenium.BiDi.Modules.Script.Source,System.String,System.DateTimeOffset,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue})'
+  parent: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  langs:
+  - csharp
+  - vb
+  name: ConsoleLogEntry(BiDi, Level, Source, string, DateTimeOffset, string, IReadOnlyList<RemoteValue>)
+  nameWithType: ConsoleLogEntry.ConsoleLogEntry(BiDi, Level, Source, string, DateTimeOffset, string, IReadOnlyList<RemoteValue>)
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.ConsoleLogEntry(OpenQA.Selenium.BiDi.BiDi, OpenQA.Selenium.BiDi.Modules.Log.Level, OpenQA.Selenium.BiDi.Modules.Script.Source, string, System.DateTimeOffset, string, System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Script.RemoteValue>)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: public ConsoleLogEntry(BiDi BiDi, Level Level, Source Source, string Text, DateTimeOffset Timestamp, string Method, IReadOnlyList<RemoteValue> Args)
+    parameters:
+    - id: BiDi
+      type: OpenQA.Selenium.BiDi.BiDi
+    - id: Level
+      type: OpenQA.Selenium.BiDi.Modules.Log.Level
+    - id: Source
+      type: OpenQA.Selenium.BiDi.Modules.Script.Source
+    - id: Text
+      type: System.String
+    - id: Timestamp
+      type: System.DateTimeOffset
+    - id: Method
+      type: System.String
+    - id: Args
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+    content.vb: Public Sub New(BiDi As BiDi, Level As Level, Source As Source, Text As String, Timestamp As DateTimeOffset, Method As String, Args As IReadOnlyList(Of RemoteValue))
+  overload: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor*
+  nameWithType.vb: ConsoleLogEntry.New(BiDi, Level, Source, String, DateTimeOffset, String, IReadOnlyList(Of RemoteValue))
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.New(OpenQA.Selenium.BiDi.BiDi, OpenQA.Selenium.BiDi.Modules.Log.Level, OpenQA.Selenium.BiDi.Modules.Script.Source, String, System.DateTimeOffset, String, System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Script.RemoteValue))
+  name.vb: New(BiDi, Level, Source, String, DateTimeOffset, String, IReadOnlyList(Of RemoteValue))
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+  id: Method
+  parent: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: ConsoleLogEntry.Method
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Method
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: public string Method { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Method As String
+  overload: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method*
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args
+  id: Args
+  parent: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  langs:
+  - csharp
+  - vb
+  name: Args
+  nameWithType: ConsoleLogEntry.Args
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Args
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: public IReadOnlyList<RemoteValue> Args { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+    content.vb: Public Property Args As IReadOnlyList(Of RemoteValue)
+  overload: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.EventArgs
+  commentId: T:OpenQA.Selenium.BiDi.EventArgs
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.EventArgs.html
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: OpenQA.Selenium.BiDi.EventArgs
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EventArgs>
+  nameWithType: IEquatable<EventArgs>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.EventArgs>
+  nameWithType.vb: IEquatable(Of EventArgs)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.EventArgs)
+  name.vb: IEquatable(Of EventArgs)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.EventArgs
+    name: EventArgs
+    href: OpenQA.Selenium.BiDi.EventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.EventArgs
+    name: EventArgs
+    href: OpenQA.Selenium.BiDi.EventArgs.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LogEntry>
+  nameWithType: IEquatable<LogEntry>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Log.LogEntry>
+  nameWithType.vb: IEquatable(Of LogEntry)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Log.LogEntry)
+  name.vb: IEquatable(Of LogEntry)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ConsoleLogEntry>
+  nameWithType: IEquatable<ConsoleLogEntry>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry>
+  nameWithType.vb: IEquatable(Of ConsoleLogEntry)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry)
+  name.vb: IEquatable(Of ConsoleLogEntry)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+    name: ConsoleLogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+    name: ConsoleLogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Level
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Level
+  parent: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_LogEntry_Level
+  name: Level
+  nameWithType: LogEntry.Level
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Source
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Source
+  parent: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_LogEntry_Source
+  name: Source
+  nameWithType: LogEntry.Source
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Source
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Text
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Text
+  parent: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_LogEntry_Text
+  name: Text
+  nameWithType: LogEntry.Text
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Text
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Timestamp
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Timestamp
+  parent: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_LogEntry_Timestamp
+  name: Timestamp
+  nameWithType: LogEntry.Timestamp
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.Timestamp
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.StackTrace
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Log.LogEntry.StackTrace
+  parent: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_LogEntry_StackTrace
+  name: StackTrace
+  nameWithType: LogEntry.StackTrace
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.StackTrace
+- uid: OpenQA.Selenium.BiDi.EventArgs.BiDi
+  commentId: P:OpenQA.Selenium.BiDi.EventArgs.BiDi
+  parent: OpenQA.Selenium.BiDi.EventArgs
+  href: OpenQA.Selenium.BiDi.EventArgs.html#OpenQA_Selenium_BiDi_EventArgs_BiDi
+  name: BiDi
+  nameWithType: EventArgs.BiDi
+  fullName: OpenQA.Selenium.BiDi.EventArgs.BiDi
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_ConsoleLogEntry__ctor_OpenQA_Selenium_BiDi_BiDi_OpenQA_Selenium_BiDi_Modules_Log_Level_OpenQA_Selenium_BiDi_Modules_Script_Source_System_String_System_DateTimeOffset_System_String_System_Collections_Generic_IReadOnlyList_OpenQA_Selenium_BiDi_Modules_Script_RemoteValue__
+  name: ConsoleLogEntry
+  nameWithType: ConsoleLogEntry.ConsoleLogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.ConsoleLogEntry
+  nameWithType.vb: ConsoleLogEntry.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.BiDi
+  commentId: T:OpenQA.Selenium.BiDi.BiDi
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BiDi.html
+  name: BiDi
+  nameWithType: BiDi
+  fullName: OpenQA.Selenium.BiDi.BiDi
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.Level
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.Level.html
+  name: Level
+  nameWithType: Level
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Source
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Source
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Source.html
+  name: Source
+  nameWithType: Source
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Source
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  commentId: T:System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<RemoteValue>
+  nameWithType: IReadOnlyList<RemoteValue>
+  fullName: System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Script.RemoteValue>
+  nameWithType.vb: IReadOnlyList(Of RemoteValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Script.RemoteValue)
+  name.vb: IReadOnlyList(Of RemoteValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+  href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_ConsoleLogEntry_Method
+  name: Method
+  nameWithType: ConsoleLogEntry.Method
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Method
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args
+  href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html#OpenQA_Selenium_BiDi_Modules_Log_ConsoleLogEntry_Args
+  name: Args
+  nameWithType: ConsoleLogEntry.Args
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.Args

@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  id: Input
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Input.DownKey
+  - OpenQA.Selenium.BiDi.Modules.Input.DownPointer
+  - OpenQA.Selenium.BiDi.Modules.Input.ElementOrigin
+  - OpenQA.Selenium.BiDi.Modules.Input.IKeySourceAction
+  - OpenQA.Selenium.BiDi.Modules.Input.INoneSourceAction
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  - OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  - OpenQA.Selenium.BiDi.Modules.Input.IWheelSourceAction
+  - OpenQA.Selenium.BiDi.Modules.Input.InputModule
+  - OpenQA.Selenium.BiDi.Modules.Input.Key
+  - OpenQA.Selenium.BiDi.Modules.Input.KeyActions
+  - OpenQA.Selenium.BiDi.Modules.Input.MovePointer
+  - OpenQA.Selenium.BiDi.Modules.Input.None
+  - OpenQA.Selenium.BiDi.Modules.Input.NoneActions
+  - OpenQA.Selenium.BiDi.Modules.Input.Origin
+  - OpenQA.Selenium.BiDi.Modules.Input.Pause
+  - OpenQA.Selenium.BiDi.Modules.Input.PerformActionsOptions
+  - OpenQA.Selenium.BiDi.Modules.Input.Pointer
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerOrigin
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  - OpenQA.Selenium.BiDi.Modules.Input.ReleaseActionsOptions
+  - OpenQA.Selenium.BiDi.Modules.Input.ScrollWheel
+  - OpenQA.Selenium.BiDi.Modules.Input.SetFilesOptions
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  - OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  - OpenQA.Selenium.BiDi.Modules.Input.UpKey
+  - OpenQA.Selenium.BiDi.Modules.Input.UpPointer
+  - OpenQA.Selenium.BiDi.Modules.Input.ViewportOrigin
+  - OpenQA.Selenium.BiDi.Modules.Input.Wheel
+  - OpenQA.Selenium.BiDi.Modules.Input.WheelActions
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.DownKey
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.DownKey
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.DownKey.html
+  name: DownKey
+  nameWithType: DownKey
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.DownKey
+- uid: OpenQA.Selenium.BiDi.Modules.Input.DownPointer
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.DownPointer
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.DownPointer.html
+  name: DownPointer
+  nameWithType: DownPointer
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.DownPointer
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ElementOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ElementOrigin
+  href: OpenQA.Selenium.BiDi.Modules.Input.ElementOrigin.html
+  name: ElementOrigin
+  nameWithType: ElementOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ElementOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IKeySourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IKeySourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.IKeySourceAction.html
+  name: IKeySourceAction
+  nameWithType: IKeySourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IKeySourceAction
+- uid: OpenQA.Selenium.BiDi.Modules.Input.INoneSourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.INoneSourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.INoneSourceAction.html
+  name: INoneSourceAction
+  nameWithType: INoneSourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.INoneSourceAction
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html
+  name: IPointerCommonProperties
+  nameWithType: IPointerCommonProperties
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction.html
+  name: IPointerSourceAction
+  nameWithType: IPointerSourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction.html
+  name: ISourceAction
+  nameWithType: ISourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IWheelSourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IWheelSourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.IWheelSourceAction.html
+  name: IWheelSourceAction
+  nameWithType: IWheelSourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IWheelSourceAction
+- uid: OpenQA.Selenium.BiDi.Modules.Input.InputModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.InputModule
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.InputModule.html
+  name: InputModule
+  nameWithType: InputModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.InputModule
+- uid: OpenQA.Selenium.BiDi.Modules.Input.Key
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.Key
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.Key.html
+  name: Key
+  nameWithType: Key
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.Key
+- uid: OpenQA.Selenium.BiDi.Modules.Input.KeyActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.KeyActions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.KeyActions.html
+  name: KeyActions
+  nameWithType: KeyActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.KeyActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.MovePointer
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.MovePointer
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.MovePointer.html
+  name: MovePointer
+  nameWithType: MovePointer
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.MovePointer
+- uid: OpenQA.Selenium.BiDi.Modules.Input.None
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.None
+  href: OpenQA.Selenium.BiDi.Modules.Input.None.html
+  name: None
+  nameWithType: None
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.None
+- uid: OpenQA.Selenium.BiDi.Modules.Input.NoneActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.NoneActions
+  href: OpenQA.Selenium.BiDi.Modules.Input.NoneActions.html
+  name: NoneActions
+  nameWithType: NoneActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.NoneActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.Origin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.Origin
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.Origin.html
+  name: Origin
+  nameWithType: Origin
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.Origin
+- uid: OpenQA.Selenium.BiDi.Modules.Input.Pause
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.Pause
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.Pause.html
+  name: Pause
+  nameWithType: Pause
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.Pause
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PerformActionsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PerformActionsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.PerformActionsOptions.html
+  name: PerformActionsOptions
+  nameWithType: PerformActionsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PerformActionsOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.Pointer
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.Pointer
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.Pointer.html
+  name: Pointer
+  nameWithType: Pointer
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.Pointer
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerActions.html
+  name: PointerActions
+  nameWithType: PointerActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerOrigin
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerOrigin.html
+  name: PointerOrigin
+  nameWithType: PointerOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters.html
+  name: PointerParameters
+  nameWithType: PointerParameters
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerParameters
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerType.html
+  name: PointerType
+  nameWithType: PointerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ReleaseActionsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ReleaseActionsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.ReleaseActionsOptions.html
+  name: ReleaseActionsOptions
+  nameWithType: ReleaseActionsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ReleaseActionsOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ScrollWheel
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ScrollWheel
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.ScrollWheel.html
+  name: ScrollWheel
+  nameWithType: ScrollWheel
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ScrollWheel
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SetFilesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SetFilesOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.SetFilesOptions.html
+  name: SetFilesOptions
+  nameWithType: SetFilesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SetFilesOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions.html
+  name: SourceActions
+  nameWithType: SourceActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+  href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  name: SourceActions<T>
+  nameWithType: SourceActions<T>
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.SourceActions<T>
+  nameWithType.vb: SourceActions(Of T)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Input.SourceActions(Of T)
+  name.vb: SourceActions(Of T)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Input.SourceActions`1
+    name: SourceActions
+    href: OpenQA.Selenium.BiDi.Modules.Input.SourceActions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Input.UpKey
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.UpKey
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.UpKey.html
+  name: UpKey
+  nameWithType: UpKey
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.UpKey
+- uid: OpenQA.Selenium.BiDi.Modules.Input.UpPointer
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.UpPointer
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.UpPointer.html
+  name: UpPointer
+  nameWithType: UpPointer
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.UpPointer
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ViewportOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ViewportOrigin
+  href: OpenQA.Selenium.BiDi.Modules.Input.ViewportOrigin.html
+  name: ViewportOrigin
+  nameWithType: ViewportOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ViewportOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.Input.Wheel
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.Wheel
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.Wheel.html
+  name: Wheel
+  nameWithType: Wheel
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.Wheel
+- uid: OpenQA.Selenium.BiDi.Modules.Input.WheelActions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.WheelActions
+  href: OpenQA.Selenium.BiDi.Modules.Input.WheelActions.html
+  name: WheelActions
+  nameWithType: WheelActions
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.WheelActions
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html

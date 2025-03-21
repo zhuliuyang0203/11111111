@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  id: ISourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISourceAction
+  nameWithType: ISourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.ISourceAction
+  type: Interface
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ISourceAction
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: public interface ISourceAction
+    content.vb: Public Interface ISourceAction
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html

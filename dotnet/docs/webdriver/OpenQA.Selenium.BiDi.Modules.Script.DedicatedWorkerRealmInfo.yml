@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+  id: DedicatedWorkerRealmInfo
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Script.Realm,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm})
+  - OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners
+  langs:
+  - csharp
+  - vb
+  name: DedicatedWorkerRealmInfo
+  nameWithType: DedicatedWorkerRealmInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DedicatedWorkerRealmInfo
+    path: ../src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record DedicatedWorkerRealmInfo : RealmInfo, IEquatable<EventArgs>, IEquatable<RealmInfo>, IEquatable<DedicatedWorkerRealmInfo>'
+    content.vb: Public Class DedicatedWorkerRealmInfo Inherits RealmInfo Implements IEquatable(Of EventArgs), IEquatable(Of RealmInfo), IEquatable(Of DedicatedWorkerRealmInfo)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.EventArgs
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RealmInfo}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Realm
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Origin
+  - OpenQA.Selenium.BiDi.EventArgs.BiDi
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Script.Realm,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm})
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Script.Realm,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm})
+  id: '#ctor(OpenQA.Selenium.BiDi.BiDi,OpenQA.Selenium.BiDi.Modules.Script.Realm,System.String,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm})'
+  parent: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+  langs:
+  - csharp
+  - vb
+  name: DedicatedWorkerRealmInfo(BiDi, Realm, string, IReadOnlyList<Realm>)
+  nameWithType: DedicatedWorkerRealmInfo.DedicatedWorkerRealmInfo(BiDi, Realm, string, IReadOnlyList<Realm>)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.DedicatedWorkerRealmInfo(OpenQA.Selenium.BiDi.BiDi, OpenQA.Selenium.BiDi.Modules.Script.Realm, string, System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Script.Realm>)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public DedicatedWorkerRealmInfo(BiDi BiDi, Realm Realm, string Origin, IReadOnlyList<Realm> Owners)
+    parameters:
+    - id: BiDi
+      type: OpenQA.Selenium.BiDi.BiDi
+    - id: Realm
+      type: OpenQA.Selenium.BiDi.Modules.Script.Realm
+    - id: Origin
+      type: System.String
+    - id: Owners
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm}
+    content.vb: Public Sub New(BiDi As BiDi, Realm As Realm, Origin As String, Owners As IReadOnlyList(Of Realm))
+  overload: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor*
+  nameWithType.vb: DedicatedWorkerRealmInfo.New(BiDi, Realm, String, IReadOnlyList(Of Realm))
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.New(OpenQA.Selenium.BiDi.BiDi, OpenQA.Selenium.BiDi.Modules.Script.Realm, String, System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Script.Realm))
+  name.vb: New(BiDi, Realm, String, IReadOnlyList(Of Realm))
+- uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners
+  id: Owners
+  parent: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+  langs:
+  - csharp
+  - vb
+  name: Owners
+  nameWithType: DedicatedWorkerRealmInfo.Owners
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Owners
+    path: ../src/webdriver/BiDi/Modules/Script/RealmInfo.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public IReadOnlyList<Realm> Owners { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm}
+    content.vb: Public Property Owners As IReadOnlyList(Of Realm)
+  overload: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.EventArgs
+  commentId: T:OpenQA.Selenium.BiDi.EventArgs
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.EventArgs.html
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: OpenQA.Selenium.BiDi.EventArgs
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.html
+  name: RealmInfo
+  nameWithType: RealmInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.EventArgs}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EventArgs>
+  nameWithType: IEquatable<EventArgs>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.EventArgs>
+  nameWithType.vb: IEquatable(Of EventArgs)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.EventArgs)
+  name.vb: IEquatable(Of EventArgs)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.EventArgs
+    name: EventArgs
+    href: OpenQA.Selenium.BiDi.EventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.EventArgs
+    name: EventArgs
+    href: OpenQA.Selenium.BiDi.EventArgs.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RealmInfo}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RealmInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RealmInfo>
+  nameWithType: IEquatable<RealmInfo>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.RealmInfo>
+  nameWithType.vb: IEquatable(Of RealmInfo)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.RealmInfo)
+  name.vb: IEquatable(Of RealmInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+    name: RealmInfo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+    name: RealmInfo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DedicatedWorkerRealmInfo>
+  nameWithType: IEquatable<DedicatedWorkerRealmInfo>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo>
+  nameWithType.vb: IEquatable(Of DedicatedWorkerRealmInfo)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo)
+  name.vb: IEquatable(Of DedicatedWorkerRealmInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+    name: DedicatedWorkerRealmInfo
+    href: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo
+    name: DedicatedWorkerRealmInfo
+    href: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Realm
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Realm
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+  href: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.html#OpenQA_Selenium_BiDi_Modules_Script_RealmInfo_Realm
+  name: Realm
+  nameWithType: RealmInfo.Realm
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Realm
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Origin
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Origin
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo
+  href: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.html#OpenQA_Selenium_BiDi_Modules_Script_RealmInfo_Origin
+  name: Origin
+  nameWithType: RealmInfo.Origin
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmInfo.Origin
+- uid: OpenQA.Selenium.BiDi.EventArgs.BiDi
+  commentId: P:OpenQA.Selenium.BiDi.EventArgs.BiDi
+  parent: OpenQA.Selenium.BiDi.EventArgs
+  href: OpenQA.Selenium.BiDi.EventArgs.html#OpenQA_Selenium_BiDi_EventArgs_BiDi
+  name: BiDi
+  nameWithType: EventArgs.BiDi
+  fullName: OpenQA.Selenium.BiDi.EventArgs.BiDi
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.html#OpenQA_Selenium_BiDi_Modules_Script_DedicatedWorkerRealmInfo__ctor_OpenQA_Selenium_BiDi_BiDi_OpenQA_Selenium_BiDi_Modules_Script_Realm_System_String_System_Collections_Generic_IReadOnlyList_OpenQA_Selenium_BiDi_Modules_Script_Realm__
+  name: DedicatedWorkerRealmInfo
+  nameWithType: DedicatedWorkerRealmInfo.DedicatedWorkerRealmInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.DedicatedWorkerRealmInfo
+  nameWithType.vb: DedicatedWorkerRealmInfo.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.BiDi
+  commentId: T:OpenQA.Selenium.BiDi.BiDi
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BiDi.html
+  name: BiDi
+  nameWithType: BiDi
+  fullName: OpenQA.Selenium.BiDi.BiDi
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Realm
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Realm
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Realm.html
+  name: Realm
+  nameWithType: Realm
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Realm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm}
+  commentId: T:System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Script.Realm}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Realm>
+  nameWithType: IReadOnlyList<Realm>
+  fullName: System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Script.Realm>
+  nameWithType.vb: IReadOnlyList(Of Realm)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Script.Realm)
+  name.vb: IReadOnlyList(Of Realm)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.Realm
+    name: Realm
+    href: OpenQA.Selenium.BiDi.Modules.Script.Realm.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.Realm
+    name: Realm
+    href: OpenQA.Selenium.BiDi.Modules.Script.Realm.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners
+  href: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.html#OpenQA_Selenium_BiDi_Modules_Script_DedicatedWorkerRealmInfo_Owners
+  name: Owners
+  nameWithType: DedicatedWorkerRealmInfo.Owners
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.DedicatedWorkerRealmInfo.Owners

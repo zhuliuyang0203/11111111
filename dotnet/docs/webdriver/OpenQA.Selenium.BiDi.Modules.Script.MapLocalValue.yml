@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+  id: MapLocalValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}})
+  - OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value
+  langs:
+  - csharp
+  - vb
+  name: MapLocalValue
+  nameWithType: MapLocalValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/LocalValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MapLocalValue
+    path: ../src/webdriver/BiDi/Modules/Script/LocalValue.cs
+    startLine: 110
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record MapLocalValue : LocalValue, IEquatable<LocalValue>, IEquatable<MapLocalValue>'
+    content.vb: Public Class MapLocalValue Inherits LocalValue Implements IEquatable(Of LocalValue), IEquatable(Of MapLocalValue)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(System.Object)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}})
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}})
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}})'
+  parent: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+  langs:
+  - csharp
+  - vb
+  name: MapLocalValue(IEnumerable<IEnumerable<LocalValue>>)
+  nameWithType: MapLocalValue.MapLocalValue(IEnumerable<IEnumerable<LocalValue>>)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.MapLocalValue(System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<OpenQA.Selenium.BiDi.Modules.Script.LocalValue>>)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/LocalValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Script/LocalValue.cs
+    startLine: 110
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public MapLocalValue(IEnumerable<IEnumerable<LocalValue>> Value)
+    parameters:
+    - id: Value
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}}
+    content.vb: Public Sub New(Value As IEnumerable(Of IEnumerable(Of LocalValue)))
+  overload: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor*
+  nameWithType.vb: MapLocalValue.New(IEnumerable(Of IEnumerable(Of LocalValue)))
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.New(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of OpenQA.Selenium.BiDi.Modules.Script.LocalValue)))
+  name.vb: New(IEnumerable(Of IEnumerable(Of LocalValue)))
+- uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value
+  id: Value
+  parent: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: MapLocalValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/LocalValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Value
+    path: ../src/webdriver/BiDi/Modules/Script/LocalValue.cs
+    startLine: 110
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public IEnumerable<IEnumerable<LocalValue>> Value { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}}
+    content.vb: Public Property Value As IEnumerable(Of IEnumerable(Of LocalValue))
+  overload: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html
+  name: LocalValue
+  nameWithType: LocalValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LocalValue>
+  nameWithType: IEquatable<LocalValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.LocalValue>
+  nameWithType.vb: IEquatable(Of LocalValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.LocalValue)
+  name.vb: IEquatable(Of LocalValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+    name: LocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+    name: LocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MapLocalValue>
+  nameWithType: IEquatable<MapLocalValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue>
+  nameWithType.vb: IEquatable(Of MapLocalValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue)
+  name.vb: IEquatable(Of MapLocalValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+    name: MapLocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue
+    name: MapLocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(System.Object)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(System.Object)
+  parent: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+  isExternal: true
+  href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html#OpenQA_Selenium_BiDi_Modules_Script_LocalValue_ConvertFrom_System_Object_
+  name: ConvertFrom(object)
+  nameWithType: LocalValue.ConvertFrom(object)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(object)
+  nameWithType.vb: LocalValue.ConvertFrom(Object)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(Object)
+  name.vb: ConvertFrom(Object)
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(System.Object)
+    name: ConvertFrom
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html#OpenQA_Selenium_BiDi_Modules_Script_LocalValue_ConvertFrom_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.ConvertFrom(System.Object)
+    name: ConvertFrom
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html#OpenQA_Selenium_BiDi_Modules_Script_LocalValue_ConvertFrom_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.html#OpenQA_Selenium_BiDi_Modules_Script_MapLocalValue__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_OpenQA_Selenium_BiDi_Modules_Script_LocalValue___
+  name: MapLocalValue
+  nameWithType: MapLocalValue.MapLocalValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.MapLocalValue
+  nameWithType.vb: MapLocalValue.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{OpenQA.Selenium.BiDi.Modules.Script.LocalValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IEnumerable<LocalValue>>
+  nameWithType: IEnumerable<IEnumerable<LocalValue>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<OpenQA.Selenium.BiDi.Modules.Script.LocalValue>>
+  nameWithType.vb: IEnumerable(Of IEnumerable(Of LocalValue))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of OpenQA.Selenium.BiDi.Modules.Script.LocalValue))
+  name.vb: IEnumerable(Of IEnumerable(Of LocalValue))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+    name: LocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.LocalValue
+    name: LocalValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.LocalValue.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value
+  href: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.html#OpenQA_Selenium_BiDi_Modules_Script_MapLocalValue_Value
+  name: Value
+  nameWithType: MapLocalValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.MapLocalValue.Value

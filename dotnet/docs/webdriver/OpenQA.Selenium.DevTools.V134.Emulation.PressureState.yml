@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  id: PressureState
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  children:
+  - OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Critical
+  - OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Fair
+  - OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Nominal
+  - OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Serious
+  langs:
+  - csharp
+  - vb
+  name: PressureState
+  nameWithType: PressureState
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PressureState
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: PressureState
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PressureState>))]
+
+      public enum PressureState
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PressureState)))>
+
+      Public Enum PressureState
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Nominal
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Nominal
+  id: Nominal
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  langs:
+  - csharp
+  - vb
+  name: Nominal
+  nameWithType: PressureState.Nominal
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Nominal
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Nominal
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the nominal value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "nominal")]
+
+      Nominal = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+    content.vb: >-
+      <EnumMember(Value:="nominal")>
+
+      Nominal = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: nominal
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Fair
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Fair
+  id: Fair
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  langs:
+  - csharp
+  - vb
+  name: Fair
+  nameWithType: PressureState.Fair
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Fair
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Fair
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the fair value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "fair")]
+
+      Fair = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+    content.vb: >-
+      <EnumMember(Value:="fair")>
+
+      Fair = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: fair
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Serious
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Serious
+  id: Serious
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  langs:
+  - csharp
+  - vb
+  name: Serious
+  nameWithType: PressureState.Serious
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Serious
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Serious
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the serious value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "serious")]
+
+      Serious = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+    content.vb: >-
+      <EnumMember(Value:="serious")>
+
+      Serious = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: serious
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Critical
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Critical
+  id: Critical
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  langs:
+  - csharp
+  - vb
+  name: Critical
+  nameWithType: PressureState.Critical
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.Critical
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Critical
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/PressureState.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the critical value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "critical")]
+
+      Critical = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+    content.vb: >-
+      <EnumMember(Value:="critical")>
+
+      Critical = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: critical
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V134.Emulation
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.PressureState
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.Selenium.DevTools.V134.Emulation.PressureState.html
+  name: PressureState
+  nameWithType: PressureState
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.PressureState

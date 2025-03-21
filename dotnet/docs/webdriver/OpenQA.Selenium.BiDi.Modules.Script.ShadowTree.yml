@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  id: ShadowTree
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.All
+  - OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.None
+  - OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.Open
+  langs:
+  - csharp
+  - vb
+  name: ShadowTree
+  nameWithType: ShadowTree
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ShadowTree
+    path: ../src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public enum ShadowTree
+    content.vb: Public Enum ShadowTree
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.None
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.None
+  id: None
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ShadowTree.None
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.None
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: None
+    path: ../src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: None = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.Open
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.Open
+  id: Open
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  langs:
+  - csharp
+  - vb
+  name: Open
+  nameWithType: ShadowTree.Open
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.Open
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Open
+    path: ../src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Open = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.All
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.All
+  id: All
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: ShadowTree.All
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.All
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: All
+    path: ../src/webdriver/BiDi/Modules/Script/SerializationOptions.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: All = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.ShadowTree
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree.html
+  name: ShadowTree
+  nameWithType: ShadowTree
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ShadowTree

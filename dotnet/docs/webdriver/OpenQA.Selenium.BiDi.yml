@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  id: BiDi
+  parent: OpenQA.Selenium
+  children:
+  - OpenQA.Selenium.BiDi.BiDi
+  - OpenQA.Selenium.BiDi.BiDiException
+  - OpenQA.Selenium.BiDi.BrowsingContextEventArgs
+  - OpenQA.Selenium.BiDi.BrowsingContextsSubscriptionOptions
+  - OpenQA.Selenium.BiDi.Communication
+  - OpenQA.Selenium.BiDi.EventArgs
+  - OpenQA.Selenium.BiDi.Modules
+  - OpenQA.Selenium.BiDi.Subscription
+  - OpenQA.Selenium.BiDi.SubscriptionOptions
+  - OpenQA.Selenium.BiDi.WebDriverExtensions
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+- uid: OpenQA.Selenium.BiDi.Modules
+  commentId: N:OpenQA.Selenium.BiDi.Modules
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules
+  nameWithType: OpenQA.Selenium.BiDi.Modules
+  fullName: OpenQA.Selenium.BiDi.Modules
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+- uid: OpenQA.Selenium.BiDi.BiDi
+  commentId: T:OpenQA.Selenium.BiDi.BiDi
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BiDi.html
+  name: BiDi
+  nameWithType: BiDi
+  fullName: OpenQA.Selenium.BiDi.BiDi
+- uid: OpenQA.Selenium.BiDi.BiDiException
+  commentId: T:OpenQA.Selenium.BiDi.BiDiException
+  href: OpenQA.Selenium.BiDi.BiDiException.html
+  name: BiDiException
+  nameWithType: BiDiException
+  fullName: OpenQA.Selenium.BiDi.BiDiException
+- uid: OpenQA.Selenium.BiDi.BrowsingContextEventArgs
+  commentId: T:OpenQA.Selenium.BiDi.BrowsingContextEventArgs
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BrowsingContextEventArgs.html
+  name: BrowsingContextEventArgs
+  nameWithType: BrowsingContextEventArgs
+  fullName: OpenQA.Selenium.BiDi.BrowsingContextEventArgs
+- uid: OpenQA.Selenium.BiDi.BrowsingContextsSubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.BrowsingContextsSubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BrowsingContextsSubscriptionOptions.html
+  name: BrowsingContextsSubscriptionOptions
+  nameWithType: BrowsingContextsSubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.BrowsingContextsSubscriptionOptions
+- uid: OpenQA.Selenium.BiDi.EventArgs
+  commentId: T:OpenQA.Selenium.BiDi.EventArgs
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.EventArgs.html
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: OpenQA.Selenium.BiDi.EventArgs
+- uid: OpenQA.Selenium.BiDi.Subscription
+  commentId: T:OpenQA.Selenium.BiDi.Subscription
+  href: OpenQA.Selenium.BiDi.Subscription.html
+  name: Subscription
+  nameWithType: Subscription
+  fullName: OpenQA.Selenium.BiDi.Subscription
+- uid: OpenQA.Selenium.BiDi.SubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.SubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.SubscriptionOptions.html
+  name: SubscriptionOptions
+  nameWithType: SubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.SubscriptionOptions
+- uid: OpenQA.Selenium.BiDi.WebDriverExtensions
+  commentId: T:OpenQA.Selenium.BiDi.WebDriverExtensions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.WebDriverExtensions.html
+  name: WebDriverExtensions
+  nameWithType: WebDriverExtensions
+  fullName: OpenQA.Selenium.BiDi.WebDriverExtensions
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html

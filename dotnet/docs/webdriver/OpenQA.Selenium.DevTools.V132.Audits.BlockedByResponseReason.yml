@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  commentId: T:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  id: BlockedByResponseReason
+  parent: OpenQA.Selenium.DevTools.V132.Audits
+  children:
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoepFrameResourceNeedsCoepHeader
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoopSandboxedIFrameCannotNavigateToCoopPage
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOrigin
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  - OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameSite
+  langs:
+  - csharp
+  - vb
+  name: BlockedByResponseReason
+  nameWithType: BlockedByResponseReason
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BlockedByResponseReason
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: BlockedByResponseReason
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<BlockedByResponseReason>))]
+
+      public enum BlockedByResponseReason
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of BlockedByResponseReason)))>
+
+      Public Enum BlockedByResponseReason
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoepFrameResourceNeedsCoepHeader
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoepFrameResourceNeedsCoepHeader
+  id: CoepFrameResourceNeedsCoepHeader
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CoepFrameResourceNeedsCoepHeader
+  nameWithType: BlockedByResponseReason.CoepFrameResourceNeedsCoepHeader
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoepFrameResourceNeedsCoepHeader
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CoepFrameResourceNeedsCoepHeader
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CoepFrameResourceNeedsCoepHeader value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CoepFrameResourceNeedsCoepHeader")]
+
+      CoepFrameResourceNeedsCoepHeader = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CoepFrameResourceNeedsCoepHeader")>
+
+      CoepFrameResourceNeedsCoepHeader = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CoepFrameResourceNeedsCoepHeader
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoopSandboxedIFrameCannotNavigateToCoopPage
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoopSandboxedIFrameCannotNavigateToCoopPage
+  id: CoopSandboxedIFrameCannotNavigateToCoopPage
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CoopSandboxedIFrameCannotNavigateToCoopPage
+  nameWithType: BlockedByResponseReason.CoopSandboxedIFrameCannotNavigateToCoopPage
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CoopSandboxedIFrameCannotNavigateToCoopPage
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CoopSandboxedIFrameCannotNavigateToCoopPage
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CoopSandboxedIFrameCannotNavigateToCoopPage value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CoopSandboxedIFrameCannotNavigateToCoopPage")]
+
+      CoopSandboxedIFrameCannotNavigateToCoopPage = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CoopSandboxedIFrameCannotNavigateToCoopPage")>
+
+      CoopSandboxedIFrameCannotNavigateToCoopPage = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CoopSandboxedIFrameCannotNavigateToCoopPage
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOrigin
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOrigin
+  id: CorpNotSameOrigin
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CorpNotSameOrigin
+  nameWithType: BlockedByResponseReason.CorpNotSameOrigin
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOrigin
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorpNotSameOrigin
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CorpNotSameOrigin value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CorpNotSameOrigin")]
+
+      CorpNotSameOrigin = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CorpNotSameOrigin")>
+
+      CorpNotSameOrigin = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CorpNotSameOrigin
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  id: CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  nameWithType: BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CorpNotSameOriginAfterDefaultedToSameOriginByCoep value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CorpNotSameOriginAfterDefaultedToSameOriginByCoep")]
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByCoep = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CorpNotSameOriginAfterDefaultedToSameOriginByCoep")>
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByCoep = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  id: CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  nameWithType: BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByDip
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorpNotSameOriginAfterDefaultedToSameOriginByDip
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CorpNotSameOriginAfterDefaultedToSameOriginByDip value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CorpNotSameOriginAfterDefaultedToSameOriginByDip")]
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByDip = 4
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CorpNotSameOriginAfterDefaultedToSameOriginByDip")>
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByDip = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CorpNotSameOriginAfterDefaultedToSameOriginByDip
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  id: CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  nameWithType: BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip")]
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip = 5
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip")>
+
+      CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CorpNotSameOriginAfterDefaultedToSameOriginByCoepAndDip
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameSite
+  commentId: F:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameSite
+  id: CorpNotSameSite
+  parent: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  langs:
+  - csharp
+  - vb
+  name: CorpNotSameSite
+  nameWithType: BlockedByResponseReason.CorpNotSameSite
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.CorpNotSameSite
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorpNotSameSite
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Audits/BlockedByResponseReason.cs
+    startLine: 48
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Audits
+  summary: Enumerated member for the CorpNotSameSite value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CorpNotSameSite")]
+
+      CorpNotSameSite = 6
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+    content.vb: >-
+      <EnumMember(Value:="CorpNotSameSite")>
+
+      CorpNotSameSite = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CorpNotSameSite
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Audits
+  commentId: N:OpenQA.Selenium.DevTools.V132.Audits
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Audits
+  nameWithType: OpenQA.Selenium.DevTools.V132.Audits
+  fullName: OpenQA.Selenium.DevTools.V132.Audits
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V132.Audits.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V132.Audits.html
+- uid: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  commentId: T:OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason
+  parent: OpenQA.Selenium.DevTools.V132.Audits
+  href: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason.html
+  name: BlockedByResponseReason
+  nameWithType: BlockedByResponseReason
+  fullName: OpenQA.Selenium.DevTools.V132.Audits.BlockedByResponseReason

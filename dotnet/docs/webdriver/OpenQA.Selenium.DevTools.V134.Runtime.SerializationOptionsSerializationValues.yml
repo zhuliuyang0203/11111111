@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  id: SerializationOptionsSerializationValues
+  parent: OpenQA.Selenium.DevTools.V134.Runtime
+  children:
+  - OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Deep
+  - OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.IdOnly
+  - OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Json
+  langs:
+  - csharp
+  - vb
+  name: SerializationOptionsSerializationValues
+  nameWithType: SerializationOptionsSerializationValues
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SerializationOptionsSerializationValues
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Runtime
+  summary: Enumerated values for Runtime.SerializationOptions.serialization
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<SerializationOptionsSerializationValues>))]
+
+      public enum SerializationOptionsSerializationValues
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of SerializationOptionsSerializationValues)))>
+
+      Public Enum SerializationOptionsSerializationValues
+- uid: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Deep
+  commentId: F:OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Deep
+  id: Deep
+  parent: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  langs:
+  - csharp
+  - vb
+  name: Deep
+  nameWithType: SerializationOptionsSerializationValues.Deep
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Deep
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Deep
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Runtime
+  summary: Enumerated member for the deep value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "deep")]
+
+      Deep = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+    content.vb: >-
+      <EnumMember(Value:="deep")>
+
+      Deep = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: deep
+- uid: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Json
+  commentId: F:OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Json
+  id: Json
+  parent: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  langs:
+  - csharp
+  - vb
+  name: Json
+  nameWithType: SerializationOptionsSerializationValues.Json
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.Json
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Json
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Runtime
+  summary: Enumerated member for the json value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "json")]
+
+      Json = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+    content.vb: >-
+      <EnumMember(Value:="json")>
+
+      Json = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: json
+- uid: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.IdOnly
+  commentId: F:OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.IdOnly
+  id: IdOnly
+  parent: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  langs:
+  - csharp
+  - vb
+  name: IdOnly
+  nameWithType: SerializationOptionsSerializationValues.IdOnly
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.IdOnly
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IdOnly
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Runtime/SerializationOptionsSerializationValues.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Runtime
+  summary: Enumerated member for the idOnly value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "idOnly")]
+
+      IdOnly = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+    content.vb: >-
+      <EnumMember(Value:="idOnly")>
+
+      IdOnly = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: idOnly
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Runtime
+  commentId: N:OpenQA.Selenium.DevTools.V134.Runtime
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Runtime
+  nameWithType: OpenQA.Selenium.DevTools.V134.Runtime
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Runtime
+    name: Runtime
+    href: OpenQA.Selenium.DevTools.V134.Runtime.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Runtime
+    name: Runtime
+    href: OpenQA.Selenium.DevTools.V134.Runtime.html
+- uid: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues
+  parent: OpenQA.Selenium.DevTools.V134.Runtime
+  href: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues.html
+  name: SerializationOptionsSerializationValues
+  nameWithType: SerializationOptionsSerializationValues
+  fullName: OpenQA.Selenium.DevTools.V134.Runtime.SerializationOptionsSerializationValues

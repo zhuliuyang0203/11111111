@@ -1,0 +1,1718 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  commentId: T:OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  id: PseudoType
+  parent: OpenQA.Selenium.DevTools.V132.DOM
+  children:
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.After
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Backdrop
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Before
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Check
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Column
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.DetailsContent
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FileSelectorButton
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLetter
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLine
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLineInherited
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.GrammarError
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Highlight
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.InputListButton
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Marker
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Picker
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Placeholder
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Resizer
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarker
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarkerGroup
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollNextButton
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollPrevButton
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Scrollbar
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarButton
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarCorner
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarThumb
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrack
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrackPiece
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SearchText
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SelectArrow
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Selection
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SpellingError
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.TargetText
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransition
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionGroup
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionImagePair
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionNew
+  - OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionOld
+  langs:
+  - csharp
+  - vb
+  name: PseudoType
+  nameWithType: PseudoType
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PseudoType
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: PseudoType
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PseudoType>))]
+
+      public enum PseudoType
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PseudoType)))>
+
+      Public Enum PseudoType
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLine
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLine
+  id: FirstLine
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: FirstLine
+  nameWithType: PseudoType.FirstLine
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLine
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FirstLine
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the first-line value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "first-line")]
+
+      FirstLine = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="first-line")>
+
+      FirstLine = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: first-line
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLetter
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLetter
+  id: FirstLetter
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: FirstLetter
+  nameWithType: PseudoType.FirstLetter
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLetter
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FirstLetter
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the first-letter value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "first-letter")]
+
+      FirstLetter = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="first-letter")>
+
+      FirstLetter = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: first-letter
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Check
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Check
+  id: Check
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Check
+  nameWithType: PseudoType.Check
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Check
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Check
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the check value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "check")]
+
+      Check = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="check")>
+
+      Check = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: check
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Before
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Before
+  id: Before
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Before
+  nameWithType: PseudoType.Before
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Before
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Before
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the before value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "before")]
+
+      Before = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="before")>
+
+      Before = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: before
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.After
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.After
+  id: After
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: After
+  nameWithType: PseudoType.After
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.After
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: After
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the after value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "after")]
+
+      After = 4
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="after")>
+
+      After = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: after
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SelectArrow
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SelectArrow
+  id: SelectArrow
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: SelectArrow
+  nameWithType: PseudoType.SelectArrow
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SelectArrow
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SelectArrow
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the select-arrow value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "select-arrow")]
+
+      SelectArrow = 5
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="select-arrow")>
+
+      SelectArrow = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: select-arrow
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Marker
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Marker
+  id: Marker
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Marker
+  nameWithType: PseudoType.Marker
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Marker
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Marker
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 48
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the marker value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "marker")]
+
+      Marker = 6
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="marker")>
+
+      Marker = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: marker
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Backdrop
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Backdrop
+  id: Backdrop
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Backdrop
+  nameWithType: PseudoType.Backdrop
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Backdrop
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Backdrop
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the backdrop value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "backdrop")]
+
+      Backdrop = 7
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="backdrop")>
+
+      Backdrop = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: backdrop
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Column
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Column
+  id: Column
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Column
+  nameWithType: PseudoType.Column
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Column
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Column
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the column value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "column")]
+
+      Column = 8
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="column")>
+
+      Column = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: column
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Selection
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Selection
+  id: Selection
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Selection
+  nameWithType: PseudoType.Selection
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Selection
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Selection
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 63
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the selection value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "selection")]
+
+      Selection = 9
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="selection")>
+
+      Selection = 9
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: selection
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SearchText
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SearchText
+  id: SearchText
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: SearchText
+  nameWithType: PseudoType.SearchText
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SearchText
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SearchText
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 68
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the search-text value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "search-text")]
+
+      SearchText = 10
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="search-text")>
+
+      SearchText = 10
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: search-text
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.TargetText
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.TargetText
+  id: TargetText
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: TargetText
+  nameWithType: PseudoType.TargetText
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.TargetText
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TargetText
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the target-text value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "target-text")]
+
+      TargetText = 11
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="target-text")>
+
+      TargetText = 11
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: target-text
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SpellingError
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SpellingError
+  id: SpellingError
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: SpellingError
+  nameWithType: PseudoType.SpellingError
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.SpellingError
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SpellingError
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 78
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the spelling-error value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "spelling-error")]
+
+      SpellingError = 12
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="spelling-error")>
+
+      SpellingError = 12
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: spelling-error
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.GrammarError
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.GrammarError
+  id: GrammarError
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: GrammarError
+  nameWithType: PseudoType.GrammarError
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.GrammarError
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GrammarError
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 83
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the grammar-error value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "grammar-error")]
+
+      GrammarError = 13
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="grammar-error")>
+
+      GrammarError = 13
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: grammar-error
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Highlight
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Highlight
+  id: Highlight
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Highlight
+  nameWithType: PseudoType.Highlight
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Highlight
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Highlight
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 88
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the highlight value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "highlight")]
+
+      Highlight = 14
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="highlight")>
+
+      Highlight = 14
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: highlight
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLineInherited
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLineInherited
+  id: FirstLineInherited
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: FirstLineInherited
+  nameWithType: PseudoType.FirstLineInherited
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FirstLineInherited
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FirstLineInherited
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 93
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the first-line-inherited value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "first-line-inherited")]
+
+      FirstLineInherited = 15
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="first-line-inherited")>
+
+      FirstLineInherited = 15
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: first-line-inherited
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarker
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarker
+  id: ScrollMarker
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollMarker
+  nameWithType: PseudoType.ScrollMarker
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarker
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollMarker
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 98
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scroll-marker value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scroll-marker")]
+
+      ScrollMarker = 16
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scroll-marker")>
+
+      ScrollMarker = 16
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scroll-marker
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarkerGroup
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarkerGroup
+  id: ScrollMarkerGroup
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollMarkerGroup
+  nameWithType: PseudoType.ScrollMarkerGroup
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollMarkerGroup
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollMarkerGroup
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 103
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scroll-marker-group value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scroll-marker-group")]
+
+      ScrollMarkerGroup = 17
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scroll-marker-group")>
+
+      ScrollMarkerGroup = 17
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scroll-marker-group
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollNextButton
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollNextButton
+  id: ScrollNextButton
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollNextButton
+  nameWithType: PseudoType.ScrollNextButton
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollNextButton
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollNextButton
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 108
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scroll-next-button value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scroll-next-button")]
+
+      ScrollNextButton = 18
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scroll-next-button")>
+
+      ScrollNextButton = 18
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scroll-next-button
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollPrevButton
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollPrevButton
+  id: ScrollPrevButton
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollPrevButton
+  nameWithType: PseudoType.ScrollPrevButton
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollPrevButton
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollPrevButton
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 113
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scroll-prev-button value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scroll-prev-button")]
+
+      ScrollPrevButton = 19
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scroll-prev-button")>
+
+      ScrollPrevButton = 19
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scroll-prev-button
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Scrollbar
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Scrollbar
+  id: Scrollbar
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Scrollbar
+  nameWithType: PseudoType.Scrollbar
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Scrollbar
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Scrollbar
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 118
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar")]
+
+      Scrollbar = 20
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar")>
+
+      Scrollbar = 20
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarThumb
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarThumb
+  id: ScrollbarThumb
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollbarThumb
+  nameWithType: PseudoType.ScrollbarThumb
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarThumb
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollbarThumb
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 123
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar-thumb value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar-thumb")]
+
+      ScrollbarThumb = 21
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar-thumb")>
+
+      ScrollbarThumb = 21
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar-thumb
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarButton
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarButton
+  id: ScrollbarButton
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollbarButton
+  nameWithType: PseudoType.ScrollbarButton
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarButton
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollbarButton
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 128
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar-button value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar-button")]
+
+      ScrollbarButton = 22
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar-button")>
+
+      ScrollbarButton = 22
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar-button
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrack
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrack
+  id: ScrollbarTrack
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollbarTrack
+  nameWithType: PseudoType.ScrollbarTrack
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrack
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollbarTrack
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 133
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar-track value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar-track")]
+
+      ScrollbarTrack = 23
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar-track")>
+
+      ScrollbarTrack = 23
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar-track
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrackPiece
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrackPiece
+  id: ScrollbarTrackPiece
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollbarTrackPiece
+  nameWithType: PseudoType.ScrollbarTrackPiece
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarTrackPiece
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollbarTrackPiece
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 138
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar-track-piece value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar-track-piece")]
+
+      ScrollbarTrackPiece = 24
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar-track-piece")>
+
+      ScrollbarTrackPiece = 24
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar-track-piece
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarCorner
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarCorner
+  id: ScrollbarCorner
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ScrollbarCorner
+  nameWithType: PseudoType.ScrollbarCorner
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ScrollbarCorner
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScrollbarCorner
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 143
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the scrollbar-corner value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "scrollbar-corner")]
+
+      ScrollbarCorner = 25
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="scrollbar-corner")>
+
+      ScrollbarCorner = 25
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: scrollbar-corner
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Resizer
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Resizer
+  id: Resizer
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Resizer
+  nameWithType: PseudoType.Resizer
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Resizer
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Resizer
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 148
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the resizer value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "resizer")]
+
+      Resizer = 26
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="resizer")>
+
+      Resizer = 26
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: resizer
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.InputListButton
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.InputListButton
+  id: InputListButton
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: InputListButton
+  nameWithType: PseudoType.InputListButton
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.InputListButton
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InputListButton
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 153
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the input-list-button value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "input-list-button")]
+
+      InputListButton = 27
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="input-list-button")>
+
+      InputListButton = 27
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: input-list-button
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransition
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransition
+  id: ViewTransition
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ViewTransition
+  nameWithType: PseudoType.ViewTransition
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransition
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ViewTransition
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 158
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the view-transition value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "view-transition")]
+
+      ViewTransition = 28
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="view-transition")>
+
+      ViewTransition = 28
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: view-transition
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionGroup
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionGroup
+  id: ViewTransitionGroup
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ViewTransitionGroup
+  nameWithType: PseudoType.ViewTransitionGroup
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionGroup
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ViewTransitionGroup
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 163
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the view-transition-group value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "view-transition-group")]
+
+      ViewTransitionGroup = 29
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="view-transition-group")>
+
+      ViewTransitionGroup = 29
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: view-transition-group
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionImagePair
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionImagePair
+  id: ViewTransitionImagePair
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ViewTransitionImagePair
+  nameWithType: PseudoType.ViewTransitionImagePair
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionImagePair
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ViewTransitionImagePair
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 168
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the view-transition-image-pair value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "view-transition-image-pair")]
+
+      ViewTransitionImagePair = 30
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="view-transition-image-pair")>
+
+      ViewTransitionImagePair = 30
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: view-transition-image-pair
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionOld
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionOld
+  id: ViewTransitionOld
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ViewTransitionOld
+  nameWithType: PseudoType.ViewTransitionOld
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionOld
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ViewTransitionOld
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 173
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the view-transition-old value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "view-transition-old")]
+
+      ViewTransitionOld = 31
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="view-transition-old")>
+
+      ViewTransitionOld = 31
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: view-transition-old
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionNew
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionNew
+  id: ViewTransitionNew
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: ViewTransitionNew
+  nameWithType: PseudoType.ViewTransitionNew
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.ViewTransitionNew
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ViewTransitionNew
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 178
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the view-transition-new value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "view-transition-new")]
+
+      ViewTransitionNew = 32
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="view-transition-new")>
+
+      ViewTransitionNew = 32
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: view-transition-new
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Placeholder
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Placeholder
+  id: Placeholder
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Placeholder
+  nameWithType: PseudoType.Placeholder
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Placeholder
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Placeholder
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 183
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the placeholder value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "placeholder")]
+
+      Placeholder = 33
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="placeholder")>
+
+      Placeholder = 33
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: placeholder
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FileSelectorButton
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FileSelectorButton
+  id: FileSelectorButton
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: FileSelectorButton
+  nameWithType: PseudoType.FileSelectorButton
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.FileSelectorButton
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FileSelectorButton
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 188
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the file-selector-button value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "file-selector-button")]
+
+      FileSelectorButton = 34
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="file-selector-button")>
+
+      FileSelectorButton = 34
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: file-selector-button
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.DetailsContent
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.DetailsContent
+  id: DetailsContent
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: DetailsContent
+  nameWithType: PseudoType.DetailsContent
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.DetailsContent
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DetailsContent
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 193
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the details-content value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "details-content")]
+
+      DetailsContent = 35
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="details-content")>
+
+      DetailsContent = 35
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: details-content
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Picker
+  commentId: F:OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Picker
+  id: Picker
+  parent: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  langs:
+  - csharp
+  - vb
+  name: Picker
+  nameWithType: PseudoType.Picker
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.Picker
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Picker
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/DOM/PseudoType.cs
+    startLine: 198
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.DOM
+  summary: Enumerated member for the picker value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "picker")]
+
+      Picker = 36
+    return:
+      type: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+    content.vb: >-
+      <EnumMember(Value:="picker")>
+
+      Picker = 36
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: picker
+references:
+- uid: OpenQA.Selenium.DevTools.V132.DOM
+  commentId: N:OpenQA.Selenium.DevTools.V132.DOM
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DOM
+  nameWithType: OpenQA.Selenium.DevTools.V132.DOM
+  fullName: OpenQA.Selenium.DevTools.V132.DOM
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V132.DOM.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V132.DOM.html
+- uid: OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  commentId: T:OpenQA.Selenium.DevTools.V132.DOM.PseudoType
+  parent: OpenQA.Selenium.DevTools.V132.DOM
+  href: OpenQA.Selenium.DevTools.V132.DOM.PseudoType.html
+  name: PseudoType
+  nameWithType: PseudoType
+  fullName: OpenQA.Selenium.DevTools.V132.DOM.PseudoType

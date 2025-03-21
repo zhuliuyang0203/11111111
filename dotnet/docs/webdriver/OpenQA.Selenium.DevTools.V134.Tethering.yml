@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Tethering
+  commentId: N:OpenQA.Selenium.DevTools.V134.Tethering
+  id: Tethering
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.Tethering.AcceptedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Tethering.BindCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Tethering.BindCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Tethering.TetheringAdapter
+  - OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.Tethering
+  nameWithType: OpenQA.Selenium.DevTools.V134.Tethering
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.AcceptedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.AcceptedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Tethering.AcceptedEventArgs.html
+  name: AcceptedEventArgs
+  nameWithType: AcceptedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.AcceptedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.BindCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandResponse.html
+  name: BindCommandResponse
+  nameWithType: BindCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.BindCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Tethering
+  href: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandSettings.html
+  name: BindCommandSettings
+  nameWithType: BindCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.BindCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.TetheringAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.TetheringAdapter
+  parent: OpenQA.Selenium.DevTools.V134.Tethering
+  href: OpenQA.Selenium.DevTools.V134.Tethering.TetheringAdapter.html
+  name: TetheringAdapter
+  nameWithType: TetheringAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.TetheringAdapter
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandResponse.html
+  name: UnbindCommandResponse
+  nameWithType: UnbindCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Tethering
+  href: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandSettings.html
+  name: UnbindCommandSettings
+  nameWithType: UnbindCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering.UnbindCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Tethering
+  commentId: N:OpenQA.Selenium.DevTools.V134.Tethering
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Tethering
+  nameWithType: OpenQA.Selenium.DevTools.V134.Tethering
+  fullName: OpenQA.Selenium.DevTools.V134.Tethering
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Tethering
+    name: Tethering
+    href: OpenQA.Selenium.DevTools.V134.Tethering.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Tethering
+    name: Tethering
+    href: OpenQA.Selenium.DevTools.V134.Tethering.html

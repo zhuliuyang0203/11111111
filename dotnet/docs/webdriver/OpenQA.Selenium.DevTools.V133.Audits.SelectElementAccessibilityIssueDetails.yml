@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  id: SelectElementAccessibilityIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  children:
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: SelectElementAccessibilityIssueDetails
+  nameWithType: SelectElementAccessibilityIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SelectElementAccessibilityIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: SelectElementAccessibilityIssueDetails
+  example: []
+  syntax:
+    content: public sealed class SelectElementAccessibilityIssueDetails
+    content.vb: Public NotInheritable Class SelectElementAccessibilityIssueDetails
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+  id: NodeId
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: NodeId
+  nameWithType: SelectElementAccessibilityIssueDetails.NodeId
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NodeId
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: nodeId
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("nodeId")]
+
+      public long NodeId { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <JsonPropertyName("nodeId")>
+
+      Public Property NodeId As Long
+  overload: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: nodeId
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  id: SelectElementAccessibilityIssueReason
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: SelectElementAccessibilityIssueReason
+  nameWithType: SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SelectElementAccessibilityIssueReason
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: selectElementAccessibilityIssueReason
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("selectElementAccessibilityIssueReason")]
+
+      public SelectElementAccessibilityIssueReason SelectElementAccessibilityIssueReason { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <JsonPropertyName("selectElementAccessibilityIssueReason")>
+
+      Public Property SelectElementAccessibilityIssueReason As SelectElementAccessibilityIssueReason
+  overload: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: selectElementAccessibilityIssueReason
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  id: HasDisallowedAttributes
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: HasDisallowedAttributes
+  nameWithType: SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HasDisallowedAttributes
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueDetails.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: hasDisallowedAttributes
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("hasDisallowedAttributes")]
+
+      public bool HasDisallowedAttributes { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("hasDisallowedAttributes")>
+
+      Public Property HasDisallowedAttributes As Boolean
+  overload: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: hasDisallowedAttributes
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Audits
+  commentId: N:OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Audits
+  nameWithType: OpenQA.Selenium.DevTools.V133.Audits
+  fullName: OpenQA.Selenium.DevTools.V133.Audits
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_SelectElementAccessibilityIssueDetails_NodeId
+  name: NodeId
+  nameWithType: SelectElementAccessibilityIssueDetails.NodeId
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.NodeId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_SelectElementAccessibilityIssueDetails_SelectElementAccessibilityIssueReason
+  name: SelectElementAccessibilityIssueReason
+  nameWithType: SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.SelectElementAccessibilityIssueReason
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.html
+  name: SelectElementAccessibilityIssueReason
+  nameWithType: SelectElementAccessibilityIssueReason
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_SelectElementAccessibilityIssueDetails_HasDisallowedAttributes
+  name: HasDisallowedAttributes
+  nameWithType: SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.HasDisallowedAttributes
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

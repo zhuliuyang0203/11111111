@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  id: AnimationTypeValues
+  parent: OpenQA.Selenium.DevTools.V134.Animation
+  children:
+  - OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSAnimation
+  - OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSTransition
+  - OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.WebAnimation
+  langs:
+  - csharp
+  - vb
+  name: AnimationTypeValues
+  nameWithType: AnimationTypeValues
+  fullName: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AnimationTypeValues
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Animation
+  summary: Enumerated values for Animation.Animation.type
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<AnimationTypeValues>))]
+
+      public enum AnimationTypeValues
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of AnimationTypeValues)))>
+
+      Public Enum AnimationTypeValues
+- uid: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSTransition
+  commentId: F:OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSTransition
+  id: CSSTransition
+  parent: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  langs:
+  - csharp
+  - vb
+  name: CSSTransition
+  nameWithType: AnimationTypeValues.CSSTransition
+  fullName: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSTransition
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CSSTransition
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Animation
+  summary: Enumerated member for the CSSTransition value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CSSTransition")]
+
+      CSSTransition = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+    content.vb: >-
+      <EnumMember(Value:="CSSTransition")>
+
+      CSSTransition = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CSSTransition
+- uid: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSAnimation
+  commentId: F:OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSAnimation
+  id: CSSAnimation
+  parent: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  langs:
+  - csharp
+  - vb
+  name: CSSAnimation
+  nameWithType: AnimationTypeValues.CSSAnimation
+  fullName: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.CSSAnimation
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CSSAnimation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Animation
+  summary: Enumerated member for the CSSAnimation value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "CSSAnimation")]
+
+      CSSAnimation = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+    content.vb: >-
+      <EnumMember(Value:="CSSAnimation")>
+
+      CSSAnimation = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: CSSAnimation
+- uid: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.WebAnimation
+  commentId: F:OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.WebAnimation
+  id: WebAnimation
+  parent: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  langs:
+  - csharp
+  - vb
+  name: WebAnimation
+  nameWithType: AnimationTypeValues.WebAnimation
+  fullName: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.WebAnimation
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WebAnimation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Animation/AnimationTypeValues.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Animation
+  summary: Enumerated member for the WebAnimation value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "WebAnimation")]
+
+      WebAnimation = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+    content.vb: >-
+      <EnumMember(Value:="WebAnimation")>
+
+      WebAnimation = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: WebAnimation
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Animation
+  commentId: N:OpenQA.Selenium.DevTools.V134.Animation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Animation
+  nameWithType: OpenQA.Selenium.DevTools.V134.Animation
+  fullName: OpenQA.Selenium.DevTools.V134.Animation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Animation
+    name: Animation
+    href: OpenQA.Selenium.DevTools.V134.Animation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Animation
+    name: Animation
+    href: OpenQA.Selenium.DevTools.V134.Animation.html
+- uid: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues
+  parent: OpenQA.Selenium.DevTools.V134.Animation
+  href: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues.html
+  name: AnimationTypeValues
+  nameWithType: AnimationTypeValues
+  fullName: OpenQA.Selenium.DevTools.V134.Animation.AnimationTypeValues

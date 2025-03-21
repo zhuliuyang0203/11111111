@@ -1,0 +1,1430 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  id: DispatchKeyEventCommandSettings
+  parent: OpenQA.Selenium.DevTools.V132.Input
+  children:
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+  - OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  langs:
+  - csharp
+  - vb
+  name: DispatchKeyEventCommandSettings
+  nameWithType: DispatchKeyEventCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DispatchKeyEventCommandSettings
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: DispatchKeyEvent
+  example: []
+  syntax:
+    content: 'public sealed class DispatchKeyEventCommandSettings : ICommand'
+    content.vb: Public NotInheritable Class DispatchKeyEventCommandSettings Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+  id: CommandName
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: CommandName
+  nameWithType: DispatchKeyEventCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CommandName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets the name of the command.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string CommandName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property CommandName As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName*
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand.CommandName
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+  id: Type
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: DispatchKeyEventCommandSettings.Type
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Type
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the type
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("type")]
+
+      public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("type")>
+
+      Public Property Type As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: type
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+  id: Modifiers
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Modifiers
+  nameWithType: DispatchKeyEventCommandSettings.Modifiers
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Modifiers
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the modifiers
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("modifiers")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? Modifiers { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("modifiers")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Modifiers As Long?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: modifiers
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+  id: Timestamp
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: DispatchKeyEventCommandSettings.Timestamp
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Timestamp
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the timestamp
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("timestamp")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? Timestamp { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("timestamp")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Timestamp As Double?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: timestamp
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+  id: Text
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: DispatchKeyEventCommandSettings.Text
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Text
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the text
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("text")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("text")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Text As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: text
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+  id: UnmodifiedText
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: UnmodifiedText
+  nameWithType: DispatchKeyEventCommandSettings.UnmodifiedText
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UnmodifiedText
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the unmodifiedText
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("unmodifiedText")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? UnmodifiedText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("unmodifiedText")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property UnmodifiedText As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: unmodifiedText
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+  id: KeyIdentifier
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: KeyIdentifier
+  nameWithType: DispatchKeyEventCommandSettings.KeyIdentifier
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: KeyIdentifier
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the keyIdentifier
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("keyIdentifier")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? KeyIdentifier { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("keyIdentifier")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property KeyIdentifier As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: keyIdentifier
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+  id: Code
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: DispatchKeyEventCommandSettings.Code
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Code
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 66
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the code
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("code")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Code { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("code")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Code As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: code
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+  id: Key
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: DispatchKeyEventCommandSettings.Key
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Key
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the key
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("key")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("key")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Key As String
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: key
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  id: WindowsVirtualKeyCode
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: WindowsVirtualKeyCode
+  nameWithType: DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WindowsVirtualKeyCode
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 80
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the windowsVirtualKeyCode
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("windowsVirtualKeyCode")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? WindowsVirtualKeyCode { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("windowsVirtualKeyCode")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property WindowsVirtualKeyCode As Long?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: windowsVirtualKeyCode
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  id: NativeVirtualKeyCode
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: NativeVirtualKeyCode
+  nameWithType: DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NativeVirtualKeyCode
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 87
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the nativeVirtualKeyCode
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("nativeVirtualKeyCode")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? NativeVirtualKeyCode { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("nativeVirtualKeyCode")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property NativeVirtualKeyCode As Long?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: nativeVirtualKeyCode
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+  id: AutoRepeat
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: AutoRepeat
+  nameWithType: DispatchKeyEventCommandSettings.AutoRepeat
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AutoRepeat
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 94
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the autoRepeat
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("autoRepeat")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? AutoRepeat { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("autoRepeat")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property AutoRepeat As Boolean?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: autoRepeat
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+  id: IsKeypad
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: IsKeypad
+  nameWithType: DispatchKeyEventCommandSettings.IsKeypad
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IsKeypad
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 101
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the isKeypad
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("isKeypad")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? IsKeypad { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("isKeypad")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property IsKeypad As Boolean?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: isKeypad
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+  id: IsSystemKey
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: IsSystemKey
+  nameWithType: DispatchKeyEventCommandSettings.IsSystemKey
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IsSystemKey
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 108
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the isSystemKey
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("isSystemKey")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? IsSystemKey { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("isSystemKey")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property IsSystemKey As Boolean?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: isSystemKey
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+  id: Location
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: DispatchKeyEventCommandSettings.Location
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Location
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 115
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the location
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("location")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? Location { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("location")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Location As Long?
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: location
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+  commentId: P:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+  id: Commands
+  parent: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Commands
+  nameWithType: DispatchKeyEventCommandSettings.Commands
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Commands
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Input/DispatchKeyEventCommand.cs
+    startLine: 122
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Input
+  summary: Gets or sets the commands
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("commands")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string[]? Commands { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: >-
+      <JsonPropertyName("commands")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Commands As String()
+  overload: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: commands
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Input
+  commentId: N:OpenQA.Selenium.DevTools.V132.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Input
+  nameWithType: OpenQA.Selenium.DevTools.V132.Input
+  fullName: OpenQA.Selenium.DevTools.V132.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Input
+    name: Input
+    href: OpenQA.Selenium.DevTools.V132.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Input
+    name: Input
+    href: OpenQA.Selenium.DevTools.V132.Input.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.DevTools.ICommand
+  commentId: T:OpenQA.Selenium.DevTools.ICommand
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: OpenQA.Selenium.DevTools.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_CommandName
+  name: CommandName
+  nameWithType: DispatchKeyEventCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.CommandName
+- uid: OpenQA.Selenium.DevTools.ICommand.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.ICommand.CommandName
+  parent: OpenQA.Selenium.DevTools.ICommand
+  href: OpenQA.Selenium.DevTools.ICommand.html#OpenQA_Selenium_DevTools_ICommand_CommandName
+  name: CommandName
+  nameWithType: ICommand.CommandName
+  fullName: OpenQA.Selenium.DevTools.ICommand.CommandName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Type
+  name: Type
+  nameWithType: DispatchKeyEventCommandSettings.Type
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Type
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Modifiers
+  name: Modifiers
+  nameWithType: DispatchKeyEventCommandSettings.Modifiers
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Modifiers
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Timestamp
+  name: Timestamp
+  nameWithType: DispatchKeyEventCommandSettings.Timestamp
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Timestamp
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Text
+  name: Text
+  nameWithType: DispatchKeyEventCommandSettings.Text
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Text
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_UnmodifiedText
+  name: UnmodifiedText
+  nameWithType: DispatchKeyEventCommandSettings.UnmodifiedText
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.UnmodifiedText
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_KeyIdentifier
+  name: KeyIdentifier
+  nameWithType: DispatchKeyEventCommandSettings.KeyIdentifier
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.KeyIdentifier
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Code
+  name: Code
+  nameWithType: DispatchKeyEventCommandSettings.Code
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Code
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Key
+  name: Key
+  nameWithType: DispatchKeyEventCommandSettings.Key
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Key
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_WindowsVirtualKeyCode
+  name: WindowsVirtualKeyCode
+  nameWithType: DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.WindowsVirtualKeyCode
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_NativeVirtualKeyCode
+  name: NativeVirtualKeyCode
+  nameWithType: DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.NativeVirtualKeyCode
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_AutoRepeat
+  name: AutoRepeat
+  nameWithType: DispatchKeyEventCommandSettings.AutoRepeat
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.AutoRepeat
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_IsKeypad
+  name: IsKeypad
+  nameWithType: DispatchKeyEventCommandSettings.IsKeypad
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsKeypad
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_IsSystemKey
+  name: IsSystemKey
+  nameWithType: DispatchKeyEventCommandSettings.IsSystemKey
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.IsSystemKey
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Location
+  name: Location
+  nameWithType: DispatchKeyEventCommandSettings.Location
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Location
+- uid: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+  href: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.html#OpenQA_Selenium_DevTools_V132_Input_DispatchKeyEventCommandSettings_Commands
+  name: Commands
+  nameWithType: DispatchKeyEventCommandSettings.Commands
+  fullName: OpenQA.Selenium.DevTools.V132.Input.DispatchKeyEventCommandSettings.Commands
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  id: BrowserModule
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor(OpenQA.Selenium.BiDi.Communication.Broker)
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions)
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions)
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions)
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions)
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext,OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions)
+  langs:
+  - csharp
+  - vb
+  name: BrowserModule
+  nameWithType: BrowserModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BrowserModule
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: 'public sealed class BrowserModule : Module'
+    content.vb: Public NotInheritable Class BrowserModule Inherits Module
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Module
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor(OpenQA.Selenium.BiDi.Communication.Broker)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor(OpenQA.Selenium.BiDi.Communication.Broker)
+  id: '#ctor(OpenQA.Selenium.BiDi.Communication.Broker)'
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: BrowserModule(Broker)
+  nameWithType: BrowserModule.BrowserModule(Broker)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.BrowserModule(OpenQA.Selenium.BiDi.Communication.Broker)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public BrowserModule(Broker broker)
+    parameters:
+    - id: broker
+      type: OpenQA.Selenium.BiDi.Communication.Broker
+    content.vb: Public Sub New(broker As Broker)
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor*
+  nameWithType.vb: BrowserModule.New(Broker)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.New(OpenQA.Selenium.BiDi.Communication.Broker)
+  name.vb: New(Broker)
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions)
+  id: CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: CloseAsync(CloseOptions?)
+  nameWithType: BrowserModule.CloseAsync(CloseOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CloseAsync
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public Task CloseAsync(CloseOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CloseAsync(options As CloseOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync*
+  nameWithType.vb: BrowserModule.CloseAsync(CloseOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync(OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions)
+  name.vb: CloseAsync(CloseOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions)
+  id: CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: CreateUserContextAsync(CreateUserContextOptions?)
+  nameWithType: BrowserModule.CreateUserContextAsync(CreateUserContextOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CreateUserContextAsync
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public Task<UserContextInfo> CreateUserContextAsync(CreateUserContextOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo}
+    content.vb: Public Function CreateUserContextAsync(options As CreateUserContextOptions = Nothing) As Task(Of UserContextInfo)
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync*
+  nameWithType.vb: BrowserModule.CreateUserContextAsync(CreateUserContextOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions)
+  name.vb: CreateUserContextAsync(CreateUserContextOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions)
+  id: GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: GetUserContextsAsync(GetUserContextsOptions?)
+  nameWithType: BrowserModule.GetUserContextsAsync(GetUserContextsOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetUserContextsAsync
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public Task<GetUserContextsResult> GetUserContextsAsync(GetUserContextsOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult}
+    content.vb: Public Function GetUserContextsAsync(options As GetUserContextsOptions = Nothing) As Task(Of GetUserContextsResult)
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync*
+  nameWithType.vb: BrowserModule.GetUserContextsAsync(GetUserContextsOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions)
+  name.vb: GetUserContextsAsync(GetUserContextsOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext,OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext,OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions)
+  id: RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext,OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: RemoveUserContextAsync(UserContext, RemoveUserContextOptions?)
+  nameWithType: BrowserModule.RemoveUserContextAsync(UserContext, RemoveUserContextOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext, OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RemoveUserContextAsync
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 42
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public Task RemoveUserContextAsync(UserContext userContext, RemoveUserContextOptions? options = null)
+    parameters:
+    - id: userContext
+      type: OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RemoveUserContextAsync(userContext As UserContext, options As RemoveUserContextOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync*
+  nameWithType.vb: BrowserModule.RemoveUserContextAsync(UserContext, RemoveUserContextOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync(OpenQA.Selenium.BiDi.Modules.Browser.UserContext, OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions)
+  name.vb: RemoveUserContextAsync(UserContext, RemoveUserContextOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions)
+  id: GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  langs:
+  - csharp
+  - vb
+  name: GetClientWindowsAsync(GetClientWindowsOptions?)
+  nameWithType: BrowserModule.GetClientWindowsAsync(GetClientWindowsOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetClientWindowsAsync
+    path: ../src/webdriver/BiDi/Modules/Browser/BrowserModule.cs
+    startLine: 49
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public Task<GetClientWindowsResult> GetClientWindowsAsync(GetClientWindowsOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult}
+    content.vb: Public Function GetClientWindowsAsync(options As GetClientWindowsOptions = Nothing) As Task(Of GetClientWindowsResult)
+  overload: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync*
+  nameWithType.vb: BrowserModule.GetClientWindowsAsync(GetClientWindowsOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync(OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions)
+  name.vb: GetClientWindowsAsync(GetClientWindowsOptions)
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Browser
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Browser
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Module
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Module
+  parent: OpenQA.Selenium.BiDi.Modules
+  href: OpenQA.Selenium.BiDi.Modules.Module.html
+  name: Module
+  nameWithType: Module
+  fullName: OpenQA.Selenium.BiDi.Modules.Module
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules
+  commentId: N:OpenQA.Selenium.BiDi.Modules
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules
+  nameWithType: OpenQA.Selenium.BiDi.Modules
+  fullName: OpenQA.Selenium.BiDi.Modules
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule__ctor_OpenQA_Selenium_BiDi_Communication_Broker_
+  name: BrowserModule
+  nameWithType: BrowserModule.BrowserModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.BrowserModule
+  nameWithType.vb: BrowserModule.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.Communication.Broker
+  commentId: T:OpenQA.Selenium.BiDi.Communication.Broker
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html
+  name: Broker
+  nameWithType: Broker
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule_CloseAsync_OpenQA_Selenium_BiDi_Modules_Browser_CloseOptions_
+  name: CloseAsync
+  nameWithType: BrowserModule.CloseAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CloseAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions.html
+  name: CloseOptions
+  nameWithType: CloseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule_CreateUserContextAsync_OpenQA_Selenium_BiDi_Modules_Browser_CreateUserContextOptions_
+  name: CreateUserContextAsync
+  nameWithType: BrowserModule.CreateUserContextAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.CreateUserContextAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions.html
+  name: CreateUserContextOptions
+  nameWithType: CreateUserContextOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UserContextInfo>
+  nameWithType: Task<UserContextInfo>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo>
+  nameWithType.vb: Task(Of UserContextInfo)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo)
+  name.vb: Task(Of UserContextInfo)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+    name: UserContextInfo
+    href: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+    name: UserContextInfo
+    href: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule_GetUserContextsAsync_OpenQA_Selenium_BiDi_Modules_Browser_GetUserContextsOptions_
+  name: GetUserContextsAsync
+  nameWithType: BrowserModule.GetUserContextsAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetUserContextsAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions.html
+  name: GetUserContextsOptions
+  nameWithType: GetUserContextsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetUserContextsResult>
+  nameWithType: Task<GetUserContextsResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult>
+  nameWithType.vb: Task(Of GetUserContextsResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult)
+  name.vb: Task(Of GetUserContextsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+    name: GetUserContextsResult
+    href: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+    name: GetUserContextsResult
+    href: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule_RemoveUserContextAsync_OpenQA_Selenium_BiDi_Modules_Browser_UserContext_OpenQA_Selenium_BiDi_Modules_Browser_RemoveUserContextOptions_
+  name: RemoveUserContextAsync
+  nameWithType: BrowserModule.RemoveUserContextAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.RemoveUserContextAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.UserContext.html
+  name: UserContext
+  nameWithType: UserContext
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions.html
+  name: RemoveUserContextOptions
+  nameWithType: RemoveUserContextOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html#OpenQA_Selenium_BiDi_Modules_Browser_BrowserModule_GetClientWindowsAsync_OpenQA_Selenium_BiDi_Modules_Browser_GetClientWindowsOptions_
+  name: GetClientWindowsAsync
+  nameWithType: BrowserModule.GetClientWindowsAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.GetClientWindowsAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions.html
+  name: GetClientWindowsOptions
+  nameWithType: GetClientWindowsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetClientWindowsResult>
+  nameWithType: Task<GetClientWindowsResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult>
+  nameWithType.vb: Task(Of GetClientWindowsResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult)
+  name.vb: Task(Of GetClientWindowsResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+    name: GetClientWindowsResult
+    href: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+    name: GetClientWindowsResult
+    href: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult.html
+  - name: )

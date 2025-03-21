@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.ISharedReference
+  id: ISharedReference
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+  - OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+  langs:
+  - csharp
+  - vb
+  name: ISharedReference
+  nameWithType: ISharedReference
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference
+  type: Interface
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ISharedReference
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public interface ISharedReference : IRemoteReference'
+    content.vb: Public Interface ISharedReference Inherits IRemoteReference
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+  id: SharedId
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference
+  langs:
+  - csharp
+  - vb
+  name: SharedId
+  nameWithType: ISharedReference.SharedId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedId
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: string SharedId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SharedId As String
+  overload: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+  id: Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: ISharedReference.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Handle
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Handle? Handle { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.Handle
+    content.vb: Property Handle As Handle
+  overload: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+  href: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.html#OpenQA_Selenium_BiDi_Modules_Script_ISharedReference_SharedId
+  name: SharedId
+  nameWithType: ISharedReference.SharedId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.SharedId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+  href: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.html#OpenQA_Selenium_BiDi_Modules_Script_ISharedReference_Handle
+  name: Handle
+  nameWithType: ISharedReference.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ISharedReference.Handle
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Handle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Handle.html
+  name: Handle
+  nameWithType: Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Handle

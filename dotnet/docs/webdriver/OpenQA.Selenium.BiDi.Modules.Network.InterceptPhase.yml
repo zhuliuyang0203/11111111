@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  id: InterceptPhase
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.AuthRequired
+  - OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.BeforeRequestSent
+  - OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.ResponseStarted
+  langs:
+  - csharp
+  - vb
+  name: InterceptPhase
+  nameWithType: InterceptPhase
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InterceptPhase
+    path: ../src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+    startLine: 50
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public enum InterceptPhase
+    content.vb: Public Enum InterceptPhase
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.BeforeRequestSent
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.BeforeRequestSent
+  id: BeforeRequestSent
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  langs:
+  - csharp
+  - vb
+  name: BeforeRequestSent
+  nameWithType: InterceptPhase.BeforeRequestSent
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.BeforeRequestSent
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BeforeRequestSent
+    path: ../src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: BeforeRequestSent = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.ResponseStarted
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.ResponseStarted
+  id: ResponseStarted
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  langs:
+  - csharp
+  - vb
+  name: ResponseStarted
+  nameWithType: InterceptPhase.ResponseStarted
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.ResponseStarted
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResponseStarted
+    path: ../src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: ResponseStarted = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.AuthRequired
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.AuthRequired
+  id: AuthRequired
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  langs:
+  - csharp
+  - vb
+  name: AuthRequired
+  nameWithType: InterceptPhase.AuthRequired
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.AuthRequired
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AuthRequired
+    path: ../src/webdriver/BiDi/Modules/Network/AddInterceptCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: AuthRequired = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase.html
+  name: InterceptPhase
+  nameWithType: InterceptPhase
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InterceptPhase

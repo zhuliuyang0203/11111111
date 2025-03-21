@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  id: ManualProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+  langs:
+  - csharp
+  - vb
+  name: ManualProxyConfiguration
+  nameWithType: ManualProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ManualProxyConfiguration
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 35
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: 'public record ManualProxyConfiguration : ProxyConfiguration, IEquatable<ProxyConfiguration>, IEquatable<ManualProxyConfiguration>'
+    content.vb: Public Class ManualProxyConfiguration Inherits ProxyConfiguration Implements IEquatable(Of ProxyConfiguration), IEquatable(Of ManualProxyConfiguration)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+  id: FtpProxy
+  parent: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  langs:
+  - csharp
+  - vb
+  name: FtpProxy
+  nameWithType: ManualProxyConfiguration.FtpProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FtpProxy
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public string? FtpProxy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FtpProxy As String
+  overload: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+  id: HttpProxy
+  parent: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  langs:
+  - csharp
+  - vb
+  name: HttpProxy
+  nameWithType: ManualProxyConfiguration.HttpProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HttpProxy
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 39
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public string? HttpProxy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HttpProxy As String
+  overload: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+  id: SslProxy
+  parent: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SslProxy
+  nameWithType: ManualProxyConfiguration.SslProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SslProxy
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 41
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public string? SslProxy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SslProxy As String
+  overload: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+  id: SocksProxy
+  parent: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SocksProxy
+  nameWithType: ManualProxyConfiguration.SocksProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SocksProxy
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public string? SocksProxy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SocksProxy As String
+  overload: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+  id: SocksVersion
+  parent: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SocksVersion
+  nameWithType: ManualProxyConfiguration.SocksVersion
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SocksVersion
+    path: ../src/webdriver/BiDi/Modules/Session/ProxyConfiguration.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public long? SocksVersion { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property SocksVersion As Long?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration.html
+  name: ProxyConfiguration
+  nameWithType: ProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ProxyConfiguration>
+  nameWithType: IEquatable<ProxyConfiguration>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration>
+  nameWithType.vb: IEquatable(Of ProxyConfiguration)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration)
+  name.vb: IEquatable(Of ProxyConfiguration)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+    name: ProxyConfiguration
+    href: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+    name: ProxyConfiguration
+    href: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ManualProxyConfiguration>
+  nameWithType: IEquatable<ManualProxyConfiguration>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration>
+  nameWithType.vb: IEquatable(Of ManualProxyConfiguration)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration)
+  name.vb: IEquatable(Of ManualProxyConfiguration)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+    name: ManualProxyConfiguration
+    href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+    name: ManualProxyConfiguration
+    href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html#OpenQA_Selenium_BiDi_Modules_Session_ManualProxyConfiguration_FtpProxy
+  name: FtpProxy
+  nameWithType: ManualProxyConfiguration.FtpProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.FtpProxy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html#OpenQA_Selenium_BiDi_Modules_Session_ManualProxyConfiguration_HttpProxy
+  name: HttpProxy
+  nameWithType: ManualProxyConfiguration.HttpProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.HttpProxy
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html#OpenQA_Selenium_BiDi_Modules_Session_ManualProxyConfiguration_SslProxy
+  name: SslProxy
+  nameWithType: ManualProxyConfiguration.SslProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SslProxy
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html#OpenQA_Selenium_BiDi_Modules_Session_ManualProxyConfiguration_SocksProxy
+  name: SocksProxy
+  nameWithType: ManualProxyConfiguration.SocksProxy
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksProxy
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html#OpenQA_Selenium_BiDi_Modules_Session_ManualProxyConfiguration_SocksVersion
+  name: SocksVersion
+  nameWithType: ManualProxyConfiguration.SocksVersion
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.SocksVersion
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

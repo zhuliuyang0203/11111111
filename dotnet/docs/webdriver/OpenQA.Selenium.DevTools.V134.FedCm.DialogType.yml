@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  commentId: T:OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  id: DialogType
+  parent: OpenQA.Selenium.DevTools.V134.FedCm
+  children:
+  - OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AccountChooser
+  - OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AutoReauthn
+  - OpenQA.Selenium.DevTools.V134.FedCm.DialogType.ConfirmIdpLogin
+  - OpenQA.Selenium.DevTools.V134.FedCm.DialogType.Error
+  langs:
+  - csharp
+  - vb
+  name: DialogType
+  nameWithType: DialogType
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DialogType
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.FedCm
+  summary: DialogType
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<DialogType>))]
+
+      public enum DialogType
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of DialogType)))>
+
+      Public Enum DialogType
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AccountChooser
+  commentId: F:OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AccountChooser
+  id: AccountChooser
+  parent: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  langs:
+  - csharp
+  - vb
+  name: AccountChooser
+  nameWithType: DialogType.AccountChooser
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AccountChooser
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AccountChooser
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.FedCm
+  summary: Enumerated member for the AccountChooser value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "AccountChooser")]
+
+      AccountChooser = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+    content.vb: >-
+      <EnumMember(Value:="AccountChooser")>
+
+      AccountChooser = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: AccountChooser
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AutoReauthn
+  commentId: F:OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AutoReauthn
+  id: AutoReauthn
+  parent: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  langs:
+  - csharp
+  - vb
+  name: AutoReauthn
+  nameWithType: DialogType.AutoReauthn
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.AutoReauthn
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AutoReauthn
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.FedCm
+  summary: Enumerated member for the AutoReauthn value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "AutoReauthn")]
+
+      AutoReauthn = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+    content.vb: >-
+      <EnumMember(Value:="AutoReauthn")>
+
+      AutoReauthn = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: AutoReauthn
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.ConfirmIdpLogin
+  commentId: F:OpenQA.Selenium.DevTools.V134.FedCm.DialogType.ConfirmIdpLogin
+  id: ConfirmIdpLogin
+  parent: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  langs:
+  - csharp
+  - vb
+  name: ConfirmIdpLogin
+  nameWithType: DialogType.ConfirmIdpLogin
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.ConfirmIdpLogin
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConfirmIdpLogin
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.FedCm
+  summary: Enumerated member for the ConfirmIdpLogin value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "ConfirmIdpLogin")]
+
+      ConfirmIdpLogin = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+    content.vb: >-
+      <EnumMember(Value:="ConfirmIdpLogin")>
+
+      ConfirmIdpLogin = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ConfirmIdpLogin
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.Error
+  commentId: F:OpenQA.Selenium.DevTools.V134.FedCm.DialogType.Error
+  id: Error
+  parent: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: DialogType.Error
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.Error
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Error
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/FedCm/DialogType.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.FedCm
+  summary: Enumerated member for the Error value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Error")]
+
+      Error = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+    content.vb: >-
+      <EnumMember(Value:="Error")>
+
+      Error = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Error
+references:
+- uid: OpenQA.Selenium.DevTools.V134.FedCm
+  commentId: N:OpenQA.Selenium.DevTools.V134.FedCm
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.FedCm
+  nameWithType: OpenQA.Selenium.DevTools.V134.FedCm
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V134.FedCm.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V134.FedCm.html
+- uid: OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  commentId: T:OpenQA.Selenium.DevTools.V134.FedCm.DialogType
+  parent: OpenQA.Selenium.DevTools.V134.FedCm
+  href: OpenQA.Selenium.DevTools.V134.FedCm.DialogType.html
+  name: DialogType
+  nameWithType: DialogType
+  fullName: OpenQA.Selenium.DevTools.V134.FedCm.DialogType

@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  commentId: N:OpenQA.Selenium.DevTools.V133.DeviceAccess
+  id: DeviceAccess
+  parent: OpenQA.Selenium.DevTools.V133
+  children:
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandResponse
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandSettings
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceAccessAdapter
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceRequestPromptedEventArgs
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.PromptDevice
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandResponse
+  - OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  nameWithType: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandResponse.html
+  name: CancelPromptCommandResponse
+  nameWithType: CancelPromptCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandSettings.html
+  name: CancelPromptCommandSettings
+  nameWithType: CancelPromptCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.CancelPromptCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceAccessAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceAccessAdapter
+  parent: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceAccessAdapter.html
+  name: DeviceAccessAdapter
+  nameWithType: DeviceAccessAdapter
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceAccessAdapter
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceRequestPromptedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceRequestPromptedEventArgs
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceRequestPromptedEventArgs.html
+  name: DeviceRequestPromptedEventArgs
+  nameWithType: DeviceRequestPromptedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.DeviceRequestPromptedEventArgs
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.PromptDevice
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.PromptDevice
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.PromptDevice.html
+  name: PromptDevice
+  nameWithType: PromptDevice
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.PromptDevice
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandResponse.html
+  name: SelectPromptCommandResponse
+  nameWithType: SelectPromptCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandSettings.html
+  name: SelectPromptCommandSettings
+  nameWithType: SelectPromptCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess.SelectPromptCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  commentId: N:OpenQA.Selenium.DevTools.V133.DeviceAccess
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  nameWithType: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  fullName: OpenQA.Selenium.DevTools.V133.DeviceAccess
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.DeviceAccess
+    name: DeviceAccess
+    href: OpenQA.Selenium.DevTools.V133.DeviceAccess.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.DeviceAccess
+    name: DeviceAccess
+    href: OpenQA.Selenium.DevTools.V133.DeviceAccess.html

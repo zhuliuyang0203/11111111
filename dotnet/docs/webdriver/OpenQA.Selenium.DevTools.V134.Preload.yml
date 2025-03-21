@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Preload
+  commentId: N:OpenQA.Selenium.DevTools.V134.Preload
+  id: Preload
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.Preload.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Preload.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Preload.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Preload.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatus
+  - OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatusUpdatedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadAdapter
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadEnabledStateUpdatedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptKey
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSource
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSourcesUpdatedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.PreloadingStatus
+  - OpenQA.Selenium.DevTools.V134.Preload.PrerenderFinalStatus
+  - OpenQA.Selenium.DevTools.V134.Preload.PrerenderMismatchedHeaders
+  - OpenQA.Selenium.DevTools.V134.Preload.PrerenderStatusUpdatedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.RuleSet
+  - OpenQA.Selenium.DevTools.V134.Preload.RuleSetErrorType
+  - OpenQA.Selenium.DevTools.V134.Preload.RuleSetRemovedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.RuleSetUpdatedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Preload.SpeculationAction
+  - OpenQA.Selenium.DevTools.V134.Preload.SpeculationTargetHint
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.Preload
+  nameWithType: OpenQA.Selenium.DevTools.V134.Preload
+  fullName: OpenQA.Selenium.DevTools.V134.Preload
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatus
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatus.html
+  name: PrefetchStatus
+  nameWithType: PrefetchStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatus
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatusUpdatedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatusUpdatedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatusUpdatedEventArgs.html
+  name: PrefetchStatusUpdatedEventArgs
+  nameWithType: PrefetchStatusUpdatedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PrefetchStatusUpdatedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadAdapter
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadAdapter.html
+  name: PreloadAdapter
+  nameWithType: PreloadAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadAdapter
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadEnabledStateUpdatedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadEnabledStateUpdatedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadEnabledStateUpdatedEventArgs.html
+  name: PreloadEnabledStateUpdatedEventArgs
+  nameWithType: PreloadEnabledStateUpdatedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadEnabledStateUpdatedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptKey
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptKey
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptKey.html
+  name: PreloadingAttemptKey
+  nameWithType: PreloadingAttemptKey
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptKey
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSource
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSource
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSource.html
+  name: PreloadingAttemptSource
+  nameWithType: PreloadingAttemptSource
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSource
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSourcesUpdatedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSourcesUpdatedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSourcesUpdatedEventArgs.html
+  name: PreloadingAttemptSourcesUpdatedEventArgs
+  nameWithType: PreloadingAttemptSourcesUpdatedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadingAttemptSourcesUpdatedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PreloadingStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PreloadingStatus
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.PreloadingStatus.html
+  name: PreloadingStatus
+  nameWithType: PreloadingStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PreloadingStatus
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PrerenderFinalStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PrerenderFinalStatus
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.PrerenderFinalStatus.html
+  name: PrerenderFinalStatus
+  nameWithType: PrerenderFinalStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PrerenderFinalStatus
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PrerenderMismatchedHeaders
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PrerenderMismatchedHeaders
+  href: OpenQA.Selenium.DevTools.V134.Preload.PrerenderMismatchedHeaders.html
+  name: PrerenderMismatchedHeaders
+  nameWithType: PrerenderMismatchedHeaders
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PrerenderMismatchedHeaders
+- uid: OpenQA.Selenium.DevTools.V134.Preload.PrerenderStatusUpdatedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.PrerenderStatusUpdatedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.PrerenderStatusUpdatedEventArgs.html
+  name: PrerenderStatusUpdatedEventArgs
+  nameWithType: PrerenderStatusUpdatedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.PrerenderStatusUpdatedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.RuleSet
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.RuleSet
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.RuleSet.html
+  name: RuleSet
+  nameWithType: RuleSet
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.RuleSet
+- uid: OpenQA.Selenium.DevTools.V134.Preload.RuleSetErrorType
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.RuleSetErrorType
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.RuleSetErrorType.html
+  name: RuleSetErrorType
+  nameWithType: RuleSetErrorType
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.RuleSetErrorType
+- uid: OpenQA.Selenium.DevTools.V134.Preload.RuleSetRemovedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.RuleSetRemovedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.RuleSetRemovedEventArgs.html
+  name: RuleSetRemovedEventArgs
+  nameWithType: RuleSetRemovedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.RuleSetRemovedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.RuleSetUpdatedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.RuleSetUpdatedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Preload.RuleSetUpdatedEventArgs.html
+  name: RuleSetUpdatedEventArgs
+  nameWithType: RuleSetUpdatedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.RuleSetUpdatedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Preload.SpeculationAction
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.SpeculationAction
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.SpeculationAction.html
+  name: SpeculationAction
+  nameWithType: SpeculationAction
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.SpeculationAction
+- uid: OpenQA.Selenium.DevTools.V134.Preload.SpeculationTargetHint
+  commentId: T:OpenQA.Selenium.DevTools.V134.Preload.SpeculationTargetHint
+  parent: OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.Selenium.DevTools.V134.Preload.SpeculationTargetHint.html
+  name: SpeculationTargetHint
+  nameWithType: SpeculationTargetHint
+  fullName: OpenQA.Selenium.DevTools.V134.Preload.SpeculationTargetHint
+- uid: OpenQA.Selenium.DevTools.V134.Preload
+  commentId: N:OpenQA.Selenium.DevTools.V134.Preload
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Preload
+  nameWithType: OpenQA.Selenium.DevTools.V134.Preload
+  fullName: OpenQA.Selenium.DevTools.V134.Preload
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Preload
+    name: Preload
+    href: OpenQA.Selenium.DevTools.V134.Preload.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Preload
+    name: Preload
+    href: OpenQA.Selenium.DevTools.V134.Preload.html

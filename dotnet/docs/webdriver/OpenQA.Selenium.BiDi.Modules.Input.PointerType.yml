@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  id: PointerType
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerType.Mouse
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerType.Pen
+  - OpenQA.Selenium.BiDi.Modules.Input.PointerType.Touch
+  langs:
+  - csharp
+  - vb
+  name: PointerType
+  nameWithType: PointerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PointerType
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 146
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: public enum PointerType
+    content.vb: Public Enum PointerType
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Mouse
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Input.PointerType.Mouse
+  id: Mouse
+  parent: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  langs:
+  - csharp
+  - vb
+  name: Mouse
+  nameWithType: PointerType.Mouse
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Mouse
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Mouse
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 148
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: Mouse = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Pen
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Input.PointerType.Pen
+  id: Pen
+  parent: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  langs:
+  - csharp
+  - vb
+  name: Pen
+  nameWithType: PointerType.Pen
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Pen
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Pen
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 149
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: Pen = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Touch
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Input.PointerType.Touch
+  id: Touch
+  parent: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  langs:
+  - csharp
+  - vb
+  name: Touch
+  nameWithType: PointerType.Touch
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType.Touch
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Touch
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 150
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: Touch = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+- uid: OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.PointerType
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.Selenium.BiDi.Modules.Input.PointerType.html
+  name: PointerType
+  nameWithType: PointerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.PointerType

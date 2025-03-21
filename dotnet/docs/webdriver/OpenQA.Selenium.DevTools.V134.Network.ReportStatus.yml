@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  id: ReportStatus
+  parent: OpenQA.Selenium.DevTools.V134.Network
+  children:
+  - OpenQA.Selenium.DevTools.V134.Network.ReportStatus.MarkedForRemoval
+  - OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Pending
+  - OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Queued
+  - OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Success
+  langs:
+  - csharp
+  - vb
+  name: ReportStatus
+  nameWithType: ReportStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReportStatus
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: ReportStatus
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<ReportStatus>))]
+
+      public enum ReportStatus
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of ReportStatus)))>
+
+      Public Enum ReportStatus
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Queued
+  commentId: F:OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Queued
+  id: Queued
+  parent: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  langs:
+  - csharp
+  - vb
+  name: Queued
+  nameWithType: ReportStatus.Queued
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Queued
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Queued
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: Enumerated member for the Queued value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Queued")]
+
+      Queued = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+    content.vb: >-
+      <EnumMember(Value:="Queued")>
+
+      Queued = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Queued
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Pending
+  commentId: F:OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Pending
+  id: Pending
+  parent: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  langs:
+  - csharp
+  - vb
+  name: Pending
+  nameWithType: ReportStatus.Pending
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Pending
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Pending
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: Enumerated member for the Pending value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Pending")]
+
+      Pending = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+    content.vb: >-
+      <EnumMember(Value:="Pending")>
+
+      Pending = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Pending
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.MarkedForRemoval
+  commentId: F:OpenQA.Selenium.DevTools.V134.Network.ReportStatus.MarkedForRemoval
+  id: MarkedForRemoval
+  parent: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  langs:
+  - csharp
+  - vb
+  name: MarkedForRemoval
+  nameWithType: ReportStatus.MarkedForRemoval
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.MarkedForRemoval
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MarkedForRemoval
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: Enumerated member for the MarkedForRemoval value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "MarkedForRemoval")]
+
+      MarkedForRemoval = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+    content.vb: >-
+      <EnumMember(Value:="MarkedForRemoval")>
+
+      MarkedForRemoval = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: MarkedForRemoval
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Success
+  commentId: F:OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Success
+  id: Success
+  parent: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: ReportStatus.Success
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.Success
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Success
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/ReportStatus.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: Enumerated member for the Success value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Success")]
+
+      Success = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+    content.vb: >-
+      <EnumMember(Value:="Success")>
+
+      Success = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Success
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Network
+  commentId: N:OpenQA.Selenium.DevTools.V134.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Network
+  nameWithType: OpenQA.Selenium.DevTools.V134.Network
+  fullName: OpenQA.Selenium.DevTools.V134.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V134.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V134.Network.html
+- uid: OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Network.ReportStatus
+  parent: OpenQA.Selenium.DevTools.V134.Network
+  href: OpenQA.Selenium.DevTools.V134.Network.ReportStatus.html
+  name: ReportStatus
+  nameWithType: ReportStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Network.ReportStatus

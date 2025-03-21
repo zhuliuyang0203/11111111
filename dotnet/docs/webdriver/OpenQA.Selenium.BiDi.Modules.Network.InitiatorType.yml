@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  id: InitiatorType
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Other
+  - OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Parser
+  - OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Preflight
+  - OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Script
+  langs:
+  - csharp
+  - vb
+  name: InitiatorType
+  nameWithType: InitiatorType
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Initiator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InitiatorType
+    path: ../src/webdriver/BiDi/Modules/Network/Initiator.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public enum InitiatorType
+    content.vb: Public Enum InitiatorType
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Parser
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Parser
+  id: Parser
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: InitiatorType.Parser
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Parser
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Initiator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Parser
+    path: ../src/webdriver/BiDi/Modules/Network/Initiator.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Parser = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Script
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Script
+  id: Script
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  langs:
+  - csharp
+  - vb
+  name: Script
+  nameWithType: InitiatorType.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Script
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Initiator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Script
+    path: ../src/webdriver/BiDi/Modules/Network/Initiator.cs
+    startLine: 35
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Script = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Preflight
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Preflight
+  id: Preflight
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  langs:
+  - csharp
+  - vb
+  name: Preflight
+  nameWithType: InitiatorType.Preflight
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Preflight
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Initiator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Preflight
+    path: ../src/webdriver/BiDi/Modules/Network/Initiator.cs
+    startLine: 36
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Preflight = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Other
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Other
+  id: Other
+  parent: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: InitiatorType.Other
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.Other
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Initiator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Other
+    path: ../src/webdriver/BiDi/Modules/Network/Initiator.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Other = 3
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.InitiatorType
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType.html
+  name: InitiatorType
+  nameWithType: InitiatorType
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.InitiatorType

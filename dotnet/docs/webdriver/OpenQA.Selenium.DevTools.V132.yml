@@ -1,0 +1,2597 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132
+  commentId: N:OpenQA.Selenium.DevTools.V132
+  id: V132
+  parent: OpenQA.Selenium.DevTools
+  children:
+  - OpenQA.Selenium.DevTools.V132.Accessibility
+  - OpenQA.Selenium.DevTools.V132.Animation
+  - OpenQA.Selenium.DevTools.V132.Audits
+  - OpenQA.Selenium.DevTools.V132.Autofill
+  - OpenQA.Selenium.DevTools.V132.BackgroundService
+  - OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  - OpenQA.Selenium.DevTools.V132.Browser
+  - OpenQA.Selenium.DevTools.V132.CSS
+  - OpenQA.Selenium.DevTools.V132.CacheStorage
+  - OpenQA.Selenium.DevTools.V132.Cast
+  - OpenQA.Selenium.DevTools.V132.Console
+  - OpenQA.Selenium.DevTools.V132.DOM
+  - OpenQA.Selenium.DevTools.V132.DOMDebugger
+  - OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  - OpenQA.Selenium.DevTools.V132.DOMStorage
+  - OpenQA.Selenium.DevTools.V132.Database
+  - OpenQA.Selenium.DevTools.V132.Debugger
+  - OpenQA.Selenium.DevTools.V132.DevToolsSessionDomains
+  - OpenQA.Selenium.DevTools.V132.DeviceAccess
+  - OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  - OpenQA.Selenium.DevTools.V132.Emulation
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  - OpenQA.Selenium.DevTools.V132.Extensions
+  - OpenQA.Selenium.DevTools.V132.FedCm
+  - OpenQA.Selenium.DevTools.V132.Fetch
+  - OpenQA.Selenium.DevTools.V132.FileSystem
+  - OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  - OpenQA.Selenium.DevTools.V132.HeapProfiler
+  - OpenQA.Selenium.DevTools.V132.IO
+  - OpenQA.Selenium.DevTools.V132.IndexedDB
+  - OpenQA.Selenium.DevTools.V132.Input
+  - OpenQA.Selenium.DevTools.V132.Inspector
+  - OpenQA.Selenium.DevTools.V132.LayerTree
+  - OpenQA.Selenium.DevTools.V132.Log
+  - OpenQA.Selenium.DevTools.V132.Media
+  - OpenQA.Selenium.DevTools.V132.Memory
+  - OpenQA.Selenium.DevTools.V132.Network
+  - OpenQA.Selenium.DevTools.V132.Overlay
+  - OpenQA.Selenium.DevTools.V132.PWA
+  - OpenQA.Selenium.DevTools.V132.Page
+  - OpenQA.Selenium.DevTools.V132.Performance
+  - OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  - OpenQA.Selenium.DevTools.V132.Preload
+  - OpenQA.Selenium.DevTools.V132.Profiler
+  - OpenQA.Selenium.DevTools.V132.Runtime
+  - OpenQA.Selenium.DevTools.V132.Schema
+  - OpenQA.Selenium.DevTools.V132.Security
+  - OpenQA.Selenium.DevTools.V132.ServiceWorker
+  - OpenQA.Selenium.DevTools.V132.Storage
+  - OpenQA.Selenium.DevTools.V132.SystemInfo
+  - OpenQA.Selenium.DevTools.V132.Target
+  - OpenQA.Selenium.DevTools.V132.Tethering
+  - OpenQA.Selenium.DevTools.V132.Tracing
+  - OpenQA.Selenium.DevTools.V132.V132Domains
+  - OpenQA.Selenium.DevTools.V132.V132JavaScript
+  - OpenQA.Selenium.DevTools.V132.V132Log
+  - OpenQA.Selenium.DevTools.V132.V132Network
+  - OpenQA.Selenium.DevTools.V132.V132Target
+  - OpenQA.Selenium.DevTools.V132.WebAudio
+  - OpenQA.Selenium.DevTools.V132.WebAuthn
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V132
+  nameWithType: OpenQA.Selenium.DevTools.V132
+  fullName: OpenQA.Selenium.DevTools.V132
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility
+  commentId: N:OpenQA.Selenium.DevTools.V132.Accessibility
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Accessibility
+  nameWithType: OpenQA.Selenium.DevTools.V132.Accessibility
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Accessibility
+    name: Accessibility
+    href: OpenQA.Selenium.DevTools.V132.Accessibility.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Accessibility
+    name: Accessibility
+    href: OpenQA.Selenium.DevTools.V132.Accessibility.html
+- uid: OpenQA.Selenium.DevTools.V132.Animation
+  commentId: N:OpenQA.Selenium.DevTools.V132.Animation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Animation
+  nameWithType: OpenQA.Selenium.DevTools.V132.Animation
+  fullName: OpenQA.Selenium.DevTools.V132.Animation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Animation
+    name: Animation
+    href: OpenQA.Selenium.DevTools.V132.Animation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Animation
+    name: Animation
+    href: OpenQA.Selenium.DevTools.V132.Animation.html
+- uid: OpenQA.Selenium.DevTools.V132.Audits
+  commentId: N:OpenQA.Selenium.DevTools.V132.Audits
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Audits
+  nameWithType: OpenQA.Selenium.DevTools.V132.Audits
+  fullName: OpenQA.Selenium.DevTools.V132.Audits
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V132.Audits.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V132.Audits.html
+- uid: OpenQA.Selenium.DevTools.V132.Autofill
+  commentId: N:OpenQA.Selenium.DevTools.V132.Autofill
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Autofill
+  nameWithType: OpenQA.Selenium.DevTools.V132.Autofill
+  fullName: OpenQA.Selenium.DevTools.V132.Autofill
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Autofill
+    name: Autofill
+    href: OpenQA.Selenium.DevTools.V132.Autofill.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Autofill
+    name: Autofill
+    href: OpenQA.Selenium.DevTools.V132.Autofill.html
+- uid: OpenQA.Selenium.DevTools.V132.BackgroundService
+  commentId: N:OpenQA.Selenium.DevTools.V132.BackgroundService
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.BackgroundService
+  nameWithType: OpenQA.Selenium.DevTools.V132.BackgroundService
+  fullName: OpenQA.Selenium.DevTools.V132.BackgroundService
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.BackgroundService
+    name: BackgroundService
+    href: OpenQA.Selenium.DevTools.V132.BackgroundService.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.BackgroundService
+    name: BackgroundService
+    href: OpenQA.Selenium.DevTools.V132.BackgroundService.html
+- uid: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  commentId: N:OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  nameWithType: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  fullName: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+    name: BluetoothEmulation
+    href: OpenQA.Selenium.DevTools.V132.BluetoothEmulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.BluetoothEmulation
+    name: BluetoothEmulation
+    href: OpenQA.Selenium.DevTools.V132.BluetoothEmulation.html
+- uid: OpenQA.Selenium.DevTools.V132.Browser
+  commentId: N:OpenQA.Selenium.DevTools.V132.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Browser
+  nameWithType: OpenQA.Selenium.DevTools.V132.Browser
+  fullName: OpenQA.Selenium.DevTools.V132.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Browser
+    name: Browser
+    href: OpenQA.Selenium.DevTools.V132.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Browser
+    name: Browser
+    href: OpenQA.Selenium.DevTools.V132.Browser.html
+- uid: OpenQA.Selenium.DevTools.V132.CSS
+  commentId: N:OpenQA.Selenium.DevTools.V132.CSS
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.CSS
+  nameWithType: OpenQA.Selenium.DevTools.V132.CSS
+  fullName: OpenQA.Selenium.DevTools.V132.CSS
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.CSS
+    name: CSS
+    href: OpenQA.Selenium.DevTools.V132.CSS.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.CSS
+    name: CSS
+    href: OpenQA.Selenium.DevTools.V132.CSS.html
+- uid: OpenQA.Selenium.DevTools.V132.CacheStorage
+  commentId: N:OpenQA.Selenium.DevTools.V132.CacheStorage
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.CacheStorage
+  nameWithType: OpenQA.Selenium.DevTools.V132.CacheStorage
+  fullName: OpenQA.Selenium.DevTools.V132.CacheStorage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.CacheStorage
+    name: CacheStorage
+    href: OpenQA.Selenium.DevTools.V132.CacheStorage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.CacheStorage
+    name: CacheStorage
+    href: OpenQA.Selenium.DevTools.V132.CacheStorage.html
+- uid: OpenQA.Selenium.DevTools.V132.Cast
+  commentId: N:OpenQA.Selenium.DevTools.V132.Cast
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Cast
+  nameWithType: OpenQA.Selenium.DevTools.V132.Cast
+  fullName: OpenQA.Selenium.DevTools.V132.Cast
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Cast
+    name: Cast
+    href: OpenQA.Selenium.DevTools.V132.Cast.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Cast
+    name: Cast
+    href: OpenQA.Selenium.DevTools.V132.Cast.html
+- uid: OpenQA.Selenium.DevTools.V132.Console
+  commentId: N:OpenQA.Selenium.DevTools.V132.Console
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Console
+  nameWithType: OpenQA.Selenium.DevTools.V132.Console
+  fullName: OpenQA.Selenium.DevTools.V132.Console
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Console
+    name: Console
+    href: OpenQA.Selenium.DevTools.V132.Console.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Console
+    name: Console
+    href: OpenQA.Selenium.DevTools.V132.Console.html
+- uid: OpenQA.Selenium.DevTools.V132.DOM
+  commentId: N:OpenQA.Selenium.DevTools.V132.DOM
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DOM
+  nameWithType: OpenQA.Selenium.DevTools.V132.DOM
+  fullName: OpenQA.Selenium.DevTools.V132.DOM
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V132.DOM.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V132.DOM.html
+- uid: OpenQA.Selenium.DevTools.V132.DOMDebugger
+  commentId: N:OpenQA.Selenium.DevTools.V132.DOMDebugger
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DOMDebugger
+  nameWithType: OpenQA.Selenium.DevTools.V132.DOMDebugger
+  fullName: OpenQA.Selenium.DevTools.V132.DOMDebugger
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMDebugger
+    name: DOMDebugger
+    href: OpenQA.Selenium.DevTools.V132.DOMDebugger.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMDebugger
+    name: DOMDebugger
+    href: OpenQA.Selenium.DevTools.V132.DOMDebugger.html
+- uid: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  commentId: N:OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  nameWithType: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  fullName: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+    name: DOMSnapshot
+    href: OpenQA.Selenium.DevTools.V132.DOMSnapshot.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMSnapshot
+    name: DOMSnapshot
+    href: OpenQA.Selenium.DevTools.V132.DOMSnapshot.html
+- uid: OpenQA.Selenium.DevTools.V132.DOMStorage
+  commentId: N:OpenQA.Selenium.DevTools.V132.DOMStorage
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DOMStorage
+  nameWithType: OpenQA.Selenium.DevTools.V132.DOMStorage
+  fullName: OpenQA.Selenium.DevTools.V132.DOMStorage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMStorage
+    name: DOMStorage
+    href: OpenQA.Selenium.DevTools.V132.DOMStorage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DOMStorage
+    name: DOMStorage
+    href: OpenQA.Selenium.DevTools.V132.DOMStorage.html
+- uid: OpenQA.Selenium.DevTools.V132.Database
+  commentId: N:OpenQA.Selenium.DevTools.V132.Database
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Database
+  nameWithType: OpenQA.Selenium.DevTools.V132.Database
+  fullName: OpenQA.Selenium.DevTools.V132.Database
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Database
+    name: Database
+    href: OpenQA.Selenium.DevTools.V132.Database.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Database
+    name: Database
+    href: OpenQA.Selenium.DevTools.V132.Database.html
+- uid: OpenQA.Selenium.DevTools.V132.Debugger
+  commentId: N:OpenQA.Selenium.DevTools.V132.Debugger
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Debugger
+  nameWithType: OpenQA.Selenium.DevTools.V132.Debugger
+  fullName: OpenQA.Selenium.DevTools.V132.Debugger
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Debugger
+    name: Debugger
+    href: OpenQA.Selenium.DevTools.V132.Debugger.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Debugger
+    name: Debugger
+    href: OpenQA.Selenium.DevTools.V132.Debugger.html
+- uid: OpenQA.Selenium.DevTools.V132.DeviceAccess
+  commentId: N:OpenQA.Selenium.DevTools.V132.DeviceAccess
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DeviceAccess
+  nameWithType: OpenQA.Selenium.DevTools.V132.DeviceAccess
+  fullName: OpenQA.Selenium.DevTools.V132.DeviceAccess
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DeviceAccess
+    name: DeviceAccess
+    href: OpenQA.Selenium.DevTools.V132.DeviceAccess.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DeviceAccess
+    name: DeviceAccess
+    href: OpenQA.Selenium.DevTools.V132.DeviceAccess.html
+- uid: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  commentId: N:OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  nameWithType: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  fullName: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+    name: DeviceOrientation
+    href: OpenQA.Selenium.DevTools.V132.DeviceOrientation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.DeviceOrientation
+    name: DeviceOrientation
+    href: OpenQA.Selenium.DevTools.V132.DeviceOrientation.html
+- uid: OpenQA.Selenium.DevTools.V132.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V132.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V132.Emulation
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V132.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V132.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  commentId: N:OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  nameWithType: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+    name: EventBreakpoints
+    href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+    name: EventBreakpoints
+    href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.html
+- uid: OpenQA.Selenium.DevTools.V132.Extensions
+  commentId: N:OpenQA.Selenium.DevTools.V132.Extensions
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Extensions
+  nameWithType: OpenQA.Selenium.DevTools.V132.Extensions
+  fullName: OpenQA.Selenium.DevTools.V132.Extensions
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V132.Extensions.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V132.Extensions.html
+- uid: OpenQA.Selenium.DevTools.V132.FedCm
+  commentId: N:OpenQA.Selenium.DevTools.V132.FedCm
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.FedCm
+  nameWithType: OpenQA.Selenium.DevTools.V132.FedCm
+  fullName: OpenQA.Selenium.DevTools.V132.FedCm
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V132.FedCm.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V132.FedCm.html
+- uid: OpenQA.Selenium.DevTools.V132.Fetch
+  commentId: N:OpenQA.Selenium.DevTools.V132.Fetch
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Fetch
+  nameWithType: OpenQA.Selenium.DevTools.V132.Fetch
+  fullName: OpenQA.Selenium.DevTools.V132.Fetch
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Fetch
+    name: Fetch
+    href: OpenQA.Selenium.DevTools.V132.Fetch.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Fetch
+    name: Fetch
+    href: OpenQA.Selenium.DevTools.V132.Fetch.html
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem
+  commentId: N:OpenQA.Selenium.DevTools.V132.FileSystem
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.FileSystem
+  nameWithType: OpenQA.Selenium.DevTools.V132.FileSystem
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V132.FileSystem.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V132.FileSystem.html
+- uid: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  commentId: N:OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  nameWithType: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  fullName: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+    name: HeadlessExperimental
+    href: OpenQA.Selenium.DevTools.V132.HeadlessExperimental.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.HeadlessExperimental
+    name: HeadlessExperimental
+    href: OpenQA.Selenium.DevTools.V132.HeadlessExperimental.html
+- uid: OpenQA.Selenium.DevTools.V132.HeapProfiler
+  commentId: N:OpenQA.Selenium.DevTools.V132.HeapProfiler
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.HeapProfiler
+  nameWithType: OpenQA.Selenium.DevTools.V132.HeapProfiler
+  fullName: OpenQA.Selenium.DevTools.V132.HeapProfiler
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.HeapProfiler
+    name: HeapProfiler
+    href: OpenQA.Selenium.DevTools.V132.HeapProfiler.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.HeapProfiler
+    name: HeapProfiler
+    href: OpenQA.Selenium.DevTools.V132.HeapProfiler.html
+- uid: OpenQA.Selenium.DevTools.V132.IO
+  commentId: N:OpenQA.Selenium.DevTools.V132.IO
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.IO
+  nameWithType: OpenQA.Selenium.DevTools.V132.IO
+  fullName: OpenQA.Selenium.DevTools.V132.IO
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.IO
+    name: IO
+    href: OpenQA.Selenium.DevTools.V132.IO.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.IO
+    name: IO
+    href: OpenQA.Selenium.DevTools.V132.IO.html
+- uid: OpenQA.Selenium.DevTools.V132.IndexedDB
+  commentId: N:OpenQA.Selenium.DevTools.V132.IndexedDB
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.IndexedDB
+  nameWithType: OpenQA.Selenium.DevTools.V132.IndexedDB
+  fullName: OpenQA.Selenium.DevTools.V132.IndexedDB
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.IndexedDB
+    name: IndexedDB
+    href: OpenQA.Selenium.DevTools.V132.IndexedDB.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.IndexedDB
+    name: IndexedDB
+    href: OpenQA.Selenium.DevTools.V132.IndexedDB.html
+- uid: OpenQA.Selenium.DevTools.V132.Input
+  commentId: N:OpenQA.Selenium.DevTools.V132.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Input
+  nameWithType: OpenQA.Selenium.DevTools.V132.Input
+  fullName: OpenQA.Selenium.DevTools.V132.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Input
+    name: Input
+    href: OpenQA.Selenium.DevTools.V132.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Input
+    name: Input
+    href: OpenQA.Selenium.DevTools.V132.Input.html
+- uid: OpenQA.Selenium.DevTools.V132.Inspector
+  commentId: N:OpenQA.Selenium.DevTools.V132.Inspector
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Inspector
+  nameWithType: OpenQA.Selenium.DevTools.V132.Inspector
+  fullName: OpenQA.Selenium.DevTools.V132.Inspector
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Inspector
+    name: Inspector
+    href: OpenQA.Selenium.DevTools.V132.Inspector.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Inspector
+    name: Inspector
+    href: OpenQA.Selenium.DevTools.V132.Inspector.html
+- uid: OpenQA.Selenium.DevTools.V132.LayerTree
+  commentId: N:OpenQA.Selenium.DevTools.V132.LayerTree
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.LayerTree
+  nameWithType: OpenQA.Selenium.DevTools.V132.LayerTree
+  fullName: OpenQA.Selenium.DevTools.V132.LayerTree
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.LayerTree
+    name: LayerTree
+    href: OpenQA.Selenium.DevTools.V132.LayerTree.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.LayerTree
+    name: LayerTree
+    href: OpenQA.Selenium.DevTools.V132.LayerTree.html
+- uid: OpenQA.Selenium.DevTools.V132.Log
+  commentId: N:OpenQA.Selenium.DevTools.V132.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Log
+  nameWithType: OpenQA.Selenium.DevTools.V132.Log
+  fullName: OpenQA.Selenium.DevTools.V132.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V132.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V132.Log.html
+- uid: OpenQA.Selenium.DevTools.V132.Media
+  commentId: N:OpenQA.Selenium.DevTools.V132.Media
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Media
+  nameWithType: OpenQA.Selenium.DevTools.V132.Media
+  fullName: OpenQA.Selenium.DevTools.V132.Media
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Media
+    name: Media
+    href: OpenQA.Selenium.DevTools.V132.Media.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Media
+    name: Media
+    href: OpenQA.Selenium.DevTools.V132.Media.html
+- uid: OpenQA.Selenium.DevTools.V132.Memory
+  commentId: N:OpenQA.Selenium.DevTools.V132.Memory
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Memory
+  nameWithType: OpenQA.Selenium.DevTools.V132.Memory
+  fullName: OpenQA.Selenium.DevTools.V132.Memory
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Memory
+    name: Memory
+    href: OpenQA.Selenium.DevTools.V132.Memory.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Memory
+    name: Memory
+    href: OpenQA.Selenium.DevTools.V132.Memory.html
+- uid: OpenQA.Selenium.DevTools.V132.Network
+  commentId: N:OpenQA.Selenium.DevTools.V132.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Network
+  nameWithType: OpenQA.Selenium.DevTools.V132.Network
+  fullName: OpenQA.Selenium.DevTools.V132.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+- uid: OpenQA.Selenium.DevTools.V132.Overlay
+  commentId: N:OpenQA.Selenium.DevTools.V132.Overlay
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Overlay
+  nameWithType: OpenQA.Selenium.DevTools.V132.Overlay
+  fullName: OpenQA.Selenium.DevTools.V132.Overlay
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V132.Overlay.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V132.Overlay.html
+- uid: OpenQA.Selenium.DevTools.V132.PWA
+  commentId: N:OpenQA.Selenium.DevTools.V132.PWA
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.PWA
+  nameWithType: OpenQA.Selenium.DevTools.V132.PWA
+  fullName: OpenQA.Selenium.DevTools.V132.PWA
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V132.PWA.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V132.PWA.html
+- uid: OpenQA.Selenium.DevTools.V132.Page
+  commentId: N:OpenQA.Selenium.DevTools.V132.Page
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Page
+  nameWithType: OpenQA.Selenium.DevTools.V132.Page
+  fullName: OpenQA.Selenium.DevTools.V132.Page
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V132.Page.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V132.Page.html
+- uid: OpenQA.Selenium.DevTools.V132.Performance
+  commentId: N:OpenQA.Selenium.DevTools.V132.Performance
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Performance
+  nameWithType: OpenQA.Selenium.DevTools.V132.Performance
+  fullName: OpenQA.Selenium.DevTools.V132.Performance
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Performance
+    name: Performance
+    href: OpenQA.Selenium.DevTools.V132.Performance.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Performance
+    name: Performance
+    href: OpenQA.Selenium.DevTools.V132.Performance.html
+- uid: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  commentId: N:OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  nameWithType: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  fullName: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+    name: PerformanceTimeline
+    href: OpenQA.Selenium.DevTools.V132.PerformanceTimeline.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.PerformanceTimeline
+    name: PerformanceTimeline
+    href: OpenQA.Selenium.DevTools.V132.PerformanceTimeline.html
+- uid: OpenQA.Selenium.DevTools.V132.Preload
+  commentId: N:OpenQA.Selenium.DevTools.V132.Preload
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Preload
+  nameWithType: OpenQA.Selenium.DevTools.V132.Preload
+  fullName: OpenQA.Selenium.DevTools.V132.Preload
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Preload
+    name: Preload
+    href: OpenQA.Selenium.DevTools.V132.Preload.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Preload
+    name: Preload
+    href: OpenQA.Selenium.DevTools.V132.Preload.html
+- uid: OpenQA.Selenium.DevTools.V132.Profiler
+  commentId: N:OpenQA.Selenium.DevTools.V132.Profiler
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Profiler
+  nameWithType: OpenQA.Selenium.DevTools.V132.Profiler
+  fullName: OpenQA.Selenium.DevTools.V132.Profiler
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Profiler
+    name: Profiler
+    href: OpenQA.Selenium.DevTools.V132.Profiler.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Profiler
+    name: Profiler
+    href: OpenQA.Selenium.DevTools.V132.Profiler.html
+- uid: OpenQA.Selenium.DevTools.V132.Runtime
+  commentId: N:OpenQA.Selenium.DevTools.V132.Runtime
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Runtime
+  nameWithType: OpenQA.Selenium.DevTools.V132.Runtime
+  fullName: OpenQA.Selenium.DevTools.V132.Runtime
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Runtime
+    name: Runtime
+    href: OpenQA.Selenium.DevTools.V132.Runtime.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Runtime
+    name: Runtime
+    href: OpenQA.Selenium.DevTools.V132.Runtime.html
+- uid: OpenQA.Selenium.DevTools.V132.Schema
+  commentId: N:OpenQA.Selenium.DevTools.V132.Schema
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Schema
+  nameWithType: OpenQA.Selenium.DevTools.V132.Schema
+  fullName: OpenQA.Selenium.DevTools.V132.Schema
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Schema
+    name: Schema
+    href: OpenQA.Selenium.DevTools.V132.Schema.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Schema
+    name: Schema
+    href: OpenQA.Selenium.DevTools.V132.Schema.html
+- uid: OpenQA.Selenium.DevTools.V132.Security
+  commentId: N:OpenQA.Selenium.DevTools.V132.Security
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Security
+  nameWithType: OpenQA.Selenium.DevTools.V132.Security
+  fullName: OpenQA.Selenium.DevTools.V132.Security
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Security
+    name: Security
+    href: OpenQA.Selenium.DevTools.V132.Security.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Security
+    name: Security
+    href: OpenQA.Selenium.DevTools.V132.Security.html
+- uid: OpenQA.Selenium.DevTools.V132.ServiceWorker
+  commentId: N:OpenQA.Selenium.DevTools.V132.ServiceWorker
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.ServiceWorker
+  nameWithType: OpenQA.Selenium.DevTools.V132.ServiceWorker
+  fullName: OpenQA.Selenium.DevTools.V132.ServiceWorker
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.ServiceWorker
+    name: ServiceWorker
+    href: OpenQA.Selenium.DevTools.V132.ServiceWorker.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.ServiceWorker
+    name: ServiceWorker
+    href: OpenQA.Selenium.DevTools.V132.ServiceWorker.html
+- uid: OpenQA.Selenium.DevTools.V132.Storage
+  commentId: N:OpenQA.Selenium.DevTools.V132.Storage
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Storage
+  nameWithType: OpenQA.Selenium.DevTools.V132.Storage
+  fullName: OpenQA.Selenium.DevTools.V132.Storage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Storage
+    name: Storage
+    href: OpenQA.Selenium.DevTools.V132.Storage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Storage
+    name: Storage
+    href: OpenQA.Selenium.DevTools.V132.Storage.html
+- uid: OpenQA.Selenium.DevTools.V132.SystemInfo
+  commentId: N:OpenQA.Selenium.DevTools.V132.SystemInfo
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.SystemInfo
+  nameWithType: OpenQA.Selenium.DevTools.V132.SystemInfo
+  fullName: OpenQA.Selenium.DevTools.V132.SystemInfo
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.SystemInfo
+    name: SystemInfo
+    href: OpenQA.Selenium.DevTools.V132.SystemInfo.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.SystemInfo
+    name: SystemInfo
+    href: OpenQA.Selenium.DevTools.V132.SystemInfo.html
+- uid: OpenQA.Selenium.DevTools.V132.Target
+  commentId: N:OpenQA.Selenium.DevTools.V132.Target
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Target
+  nameWithType: OpenQA.Selenium.DevTools.V132.Target
+  fullName: OpenQA.Selenium.DevTools.V132.Target
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Target
+    name: Target
+    href: OpenQA.Selenium.DevTools.V132.Target.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Target
+    name: Target
+    href: OpenQA.Selenium.DevTools.V132.Target.html
+- uid: OpenQA.Selenium.DevTools.V132.Tethering
+  commentId: N:OpenQA.Selenium.DevTools.V132.Tethering
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Tethering
+  nameWithType: OpenQA.Selenium.DevTools.V132.Tethering
+  fullName: OpenQA.Selenium.DevTools.V132.Tethering
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Tethering
+    name: Tethering
+    href: OpenQA.Selenium.DevTools.V132.Tethering.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Tethering
+    name: Tethering
+    href: OpenQA.Selenium.DevTools.V132.Tethering.html
+- uid: OpenQA.Selenium.DevTools.V132.Tracing
+  commentId: N:OpenQA.Selenium.DevTools.V132.Tracing
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Tracing
+  nameWithType: OpenQA.Selenium.DevTools.V132.Tracing
+  fullName: OpenQA.Selenium.DevTools.V132.Tracing
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Tracing
+    name: Tracing
+    href: OpenQA.Selenium.DevTools.V132.Tracing.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Tracing
+    name: Tracing
+    href: OpenQA.Selenium.DevTools.V132.Tracing.html
+- uid: OpenQA.Selenium.DevTools.V132.WebAudio
+  commentId: N:OpenQA.Selenium.DevTools.V132.WebAudio
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.WebAudio
+  nameWithType: OpenQA.Selenium.DevTools.V132.WebAudio
+  fullName: OpenQA.Selenium.DevTools.V132.WebAudio
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V132.WebAudio.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V132.WebAudio.html
+- uid: OpenQA.Selenium.DevTools.V132.WebAuthn
+  commentId: N:OpenQA.Selenium.DevTools.V132.WebAuthn
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.WebAuthn
+  nameWithType: OpenQA.Selenium.DevTools.V132.WebAuthn
+  fullName: OpenQA.Selenium.DevTools.V132.WebAuthn
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.WebAuthn
+    name: WebAuthn
+    href: OpenQA.Selenium.DevTools.V132.WebAuthn.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.WebAuthn
+    name: WebAuthn
+    href: OpenQA.Selenium.DevTools.V132.WebAuthn.html
+- uid: OpenQA.Selenium.DevTools.V132.DevToolsSessionDomains
+  commentId: T:OpenQA.Selenium.DevTools.V132.DevToolsSessionDomains
+  href: OpenQA.Selenium.DevTools.V132.DevToolsSessionDomains.html
+  name: DevToolsSessionDomains
+  nameWithType: DevToolsSessionDomains
+  fullName: OpenQA.Selenium.DevTools.V132.DevToolsSessionDomains
+- uid: OpenQA.Selenium.DevTools.V132.V132Domains
+  commentId: T:OpenQA.Selenium.DevTools.V132.V132Domains
+  href: OpenQA.Selenium.DevTools.V132.V132Domains.html
+  name: V132Domains
+  nameWithType: V132Domains
+  fullName: OpenQA.Selenium.DevTools.V132.V132Domains
+- uid: OpenQA.Selenium.DevTools.V132.V132JavaScript
+  commentId: T:OpenQA.Selenium.DevTools.V132.V132JavaScript
+  href: OpenQA.Selenium.DevTools.V132.V132JavaScript.html
+  name: V132JavaScript
+  nameWithType: V132JavaScript
+  fullName: OpenQA.Selenium.DevTools.V132.V132JavaScript
+- uid: OpenQA.Selenium.DevTools.V132.V132Log
+  commentId: T:OpenQA.Selenium.DevTools.V132.V132Log
+  href: OpenQA.Selenium.DevTools.V132.V132Log.html
+  name: V132Log
+  nameWithType: V132Log
+  fullName: OpenQA.Selenium.DevTools.V132.V132Log
+- uid: OpenQA.Selenium.DevTools.V132.V132Network
+  commentId: T:OpenQA.Selenium.DevTools.V132.V132Network
+  href: OpenQA.Selenium.DevTools.V132.V132Network.html
+  name: V132Network
+  nameWithType: V132Network
+  fullName: OpenQA.Selenium.DevTools.V132.V132Network
+- uid: OpenQA.Selenium.DevTools.V132.V132Target
+  commentId: T:OpenQA.Selenium.DevTools.V132.V132Target
+  href: OpenQA.Selenium.DevTools.V132.V132Target.html
+  name: V132Target
+  nameWithType: V132Target
+  fullName: OpenQA.Selenium.DevTools.V132.V132Target

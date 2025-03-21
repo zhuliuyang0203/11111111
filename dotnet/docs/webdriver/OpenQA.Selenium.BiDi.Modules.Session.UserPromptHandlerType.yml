@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  id: UserPromptHandlerType
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Accept
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Dismiss
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Ignore
+  langs:
+  - csharp
+  - vb
+  name: UserPromptHandlerType
+  nameWithType: UserPromptHandlerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserPromptHandlerType
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 36
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public enum UserPromptHandlerType
+    content.vb: Public Enum UserPromptHandlerType
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Accept
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Accept
+  id: Accept
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  langs:
+  - csharp
+  - vb
+  name: Accept
+  nameWithType: UserPromptHandlerType.Accept
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Accept
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Accept
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: Accept = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Dismiss
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Dismiss
+  id: Dismiss
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  langs:
+  - csharp
+  - vb
+  name: Dismiss
+  nameWithType: UserPromptHandlerType.Dismiss
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Dismiss
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Dismiss
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 39
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: Dismiss = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Ignore
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Ignore
+  id: Ignore
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  langs:
+  - csharp
+  - vb
+  name: Ignore
+  nameWithType: UserPromptHandlerType.Ignore
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.Ignore
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Ignore
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: Ignore = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.html
+  name: UserPromptHandlerType
+  nameWithType: UserPromptHandlerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType

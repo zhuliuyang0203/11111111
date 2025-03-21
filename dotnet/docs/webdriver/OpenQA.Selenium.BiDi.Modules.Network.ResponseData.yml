@@ -1,0 +1,1122 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  id: ResponseData
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor(System.String,System.String,System.Int32,System.String,System.Boolean,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header},System.String,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64},OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+  - OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+  langs:
+  - csharp
+  - vb
+  name: ResponseData
+  nameWithType: ResponseData
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResponseData
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: 'public record ResponseData : IEquatable<ResponseData>'
+    content.vb: Public Class ResponseData Implements IEquatable(Of ResponseData)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.ResponseData}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor(System.String,System.String,System.Int32,System.String,System.Boolean,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header},System.String,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64},OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor(System.String,System.String,System.Int32,System.String,System.Boolean,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header},System.String,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64},OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.Boolean,System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header},System.String,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64},OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)'
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: ResponseData(string, string, int, string, bool, IReadOnlyList<Header>, string, long, long?, long?, ResponseContent)
+  nameWithType: ResponseData.ResponseData(string, string, int, string, bool, IReadOnlyList<Header>, string, long, long?, long?, ResponseContent)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.ResponseData(string, string, int, string, bool, System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Network.Header>, string, long, long?, long?, OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public ResponseData(string Url, string Protocol, int Status, string StatusText, bool FromCache, IReadOnlyList<Header> Headers, string MimeType, long BytesReceived, long? HeadersSize, long? BodySize, ResponseContent Content)
+    parameters:
+    - id: Url
+      type: System.String
+    - id: Protocol
+      type: System.String
+    - id: Status
+      type: System.Int32
+    - id: StatusText
+      type: System.String
+    - id: FromCache
+      type: System.Boolean
+    - id: Headers
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header}
+    - id: MimeType
+      type: System.String
+    - id: BytesReceived
+      type: System.Int64
+    - id: HeadersSize
+      type: System.Nullable{System.Int64}
+    - id: BodySize
+      type: System.Nullable{System.Int64}
+    - id: Content
+      type: OpenQA.Selenium.BiDi.Modules.Network.ResponseContent
+    content.vb: Public Sub New(Url As String, Protocol As String, Status As Integer, StatusText As String, FromCache As Boolean, Headers As IReadOnlyList(Of Header), MimeType As String, BytesReceived As Long, HeadersSize As Long?, BodySize As Long?, Content As ResponseContent)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor*
+  nameWithType.vb: ResponseData.New(String, String, Integer, String, Boolean, IReadOnlyList(Of Header), String, Long, Long?, Long?, ResponseContent)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.New(String, String, Integer, String, Boolean, System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Network.Header), String, Long, Long?, Long?, OpenQA.Selenium.BiDi.Modules.Network.ResponseContent)
+  name.vb: New(String, String, Integer, String, Boolean, IReadOnlyList(Of Header), String, Long, Long?, Long?, ResponseContent)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+  id: Url
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: ResponseData.Url
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Url
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public string Url { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+  id: Protocol
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: ResponseData.Protocol
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Protocol
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public string Protocol { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Protocol As String
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+  id: Status
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ResponseData.Status
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Status
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 26
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public int Status { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Status As Integer
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+  id: StatusText
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: StatusText
+  nameWithType: ResponseData.StatusText
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StatusText
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public string StatusText { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StatusText As String
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+  id: FromCache
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: FromCache
+  nameWithType: ResponseData.FromCache
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FromCache
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public bool FromCache { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FromCache As Boolean
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+  id: Headers
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: ResponseData.Headers
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Headers
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public IReadOnlyList<Header> Headers { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header}
+    content.vb: Public Property Headers As IReadOnlyList(Of Header)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+  id: MimeType
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: MimeType
+  nameWithType: ResponseData.MimeType
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MimeType
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public string MimeType { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MimeType As String
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+  id: BytesReceived
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: BytesReceived
+  nameWithType: ResponseData.BytesReceived
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BytesReceived
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public long BytesReceived { get; init; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property BytesReceived As Long
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+  id: HeadersSize
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: HeadersSize
+  nameWithType: ResponseData.HeadersSize
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HeadersSize
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public long? HeadersSize { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property HeadersSize As Long?
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+  id: BodySize
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: BodySize
+  nameWithType: ResponseData.BodySize
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BodySize
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public long? BodySize { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property BodySize As Long?
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+  id: Content
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: ResponseData.Content
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Content
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public ResponseContent Content { get; init; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.ResponseContent
+    content.vb: Public Property Content As ResponseContent
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+  id: AuthChallenges
+  parent: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+  langs:
+  - csharp
+  - vb
+  name: AuthChallenges
+  nameWithType: ResponseData.AuthChallenges
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/ResponseData.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AuthChallenges
+    path: ../src/webdriver/BiDi/Modules/Network/ResponseData.cs
+    startLine: 36
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: >-
+      [JsonInclude]
+
+      public IReadOnlyList<AuthChallenge>? AuthChallenges { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge}
+    content.vb: >-
+      <JsonInclude>
+
+      Public Property AuthChallenges As IReadOnlyList(Of AuthChallenge)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIncludeAttribute
+    ctor: System.Text.Json.Serialization.JsonIncludeAttribute.#ctor
+    arguments: []
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.ResponseData}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.ResponseData}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ResponseData>
+  nameWithType: IEquatable<ResponseData>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Network.ResponseData>
+  nameWithType.vb: IEquatable(Of ResponseData)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Network.ResponseData)
+  name.vb: IEquatable(Of ResponseData)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+    name: ResponseData
+    href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData
+    name: ResponseData
+    href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData__ctor_System_String_System_String_System_Int32_System_String_System_Boolean_System_Collections_Generic_IReadOnlyList_OpenQA_Selenium_BiDi_Modules_Network_Header__System_String_System_Int64_System_Nullable_System_Int64__System_Nullable_System_Int64__OpenQA_Selenium_BiDi_Modules_Network_ResponseContent_
+  name: ResponseData
+  nameWithType: ResponseData.ResponseData
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.ResponseData
+  nameWithType.vb: ResponseData.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header}
+  commentId: T:System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.Header}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Header>
+  nameWithType: IReadOnlyList<Header>
+  fullName: System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Network.Header>
+  nameWithType.vb: IReadOnlyList(Of Header)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Network.Header)
+  name.vb: IReadOnlyList(Of Header)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.Header
+    name: Header
+    href: OpenQA.Selenium.BiDi.Modules.Network.Header.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.Header
+    name: Header
+    href: OpenQA.Selenium.BiDi.Modules.Network.Header.html
+  - name: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseContent
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ResponseContent
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseContent.html
+  name: ResponseContent
+  nameWithType: ResponseContent
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseContent
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_Url
+  name: Url
+  nameWithType: ResponseData.Url
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Url
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_Protocol
+  name: Protocol
+  nameWithType: ResponseData.Protocol
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Protocol
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_Status
+  name: Status
+  nameWithType: ResponseData.Status
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Status
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_StatusText
+  name: StatusText
+  nameWithType: ResponseData.StatusText
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.StatusText
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_FromCache
+  name: FromCache
+  nameWithType: ResponseData.FromCache
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.FromCache
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_Headers
+  name: Headers
+  nameWithType: ResponseData.Headers
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Headers
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_MimeType
+  name: MimeType
+  nameWithType: ResponseData.MimeType
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.MimeType
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_BytesReceived
+  name: BytesReceived
+  nameWithType: ResponseData.BytesReceived
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BytesReceived
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_HeadersSize
+  name: HeadersSize
+  nameWithType: ResponseData.HeadersSize
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.HeadersSize
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_BodySize
+  name: BodySize
+  nameWithType: ResponseData.BodySize
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.BodySize
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_Content
+  name: Content
+  nameWithType: ResponseData.Content
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.Content
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+  href: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.html#OpenQA_Selenium_BiDi_Modules_Network_ResponseData_AuthChallenges
+  name: AuthChallenges
+  nameWithType: ResponseData.AuthChallenges
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ResponseData.AuthChallenges
+- uid: System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge}
+  commentId: T:System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<AuthChallenge>
+  nameWithType: IReadOnlyList<AuthChallenge>
+  fullName: System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge>
+  nameWithType.vb: IReadOnlyList(Of AuthChallenge)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge)
+  name.vb: IReadOnlyList(Of AuthChallenge)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge
+    name: AuthChallenge
+    href: OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge
+    name: AuthChallenge
+    href: OpenQA.Selenium.BiDi.Modules.Network.AuthChallenge.html
+  - name: )

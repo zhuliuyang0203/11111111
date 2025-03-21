@@ -1,0 +1,1109 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Communication.Broker
+  commentId: T:OpenQA.Selenium.BiDi.Communication.Broker
+  id: Broker
+  parent: OpenQA.Selenium.BiDi.Communication
+  children:
+  - OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync(System.Threading.CancellationToken)
+  - OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync
+  - OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore
+  - OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``1(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  - OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``2(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  - OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Action{``0},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Func{``0,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync(OpenQA.Selenium.BiDi.Modules.Session.Subscription,OpenQA.Selenium.BiDi.Communication.EventHandler)
+  langs:
+  - csharp
+  - vb
+  name: Broker
+  nameWithType: Broker
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Broker
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: 'public class Broker : IAsyncDisposable'
+    content.vb: Public Class Broker Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync(System.Threading.CancellationToken)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync(System.Threading.CancellationToken)
+  id: ConnectAsync(System.Threading.CancellationToken)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(CancellationToken)
+  nameWithType: Broker.ConnectAsync(CancellationToken)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 111
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: public Task ConnectAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ConnectAsync(cancellationToken As CancellationToken) As Task
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync*
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``2(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``2(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  id: ExecuteCommandAsync``2(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommandAsync<TCommand, TResult>(TCommand, CommandOptions?)
+  nameWithType: Broker.ExecuteCommandAsync<TCommand, TResult>(TCommand, CommandOptions?)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync<TCommand, TResult>(TCommand, OpenQA.Selenium.BiDi.Communication.CommandOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ExecuteCommandAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 185
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: 'public Task<TResult> ExecuteCommandAsync<TCommand, TResult>(TCommand command, CommandOptions? options) where TCommand : Command'
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    - id: options
+      type: OpenQA.Selenium.BiDi.Communication.CommandOptions
+    typeParameters:
+    - id: TCommand
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: Public Function ExecuteCommandAsync(Of TCommand As Command, TResult)(command As TCommand, options As CommandOptions) As Task(Of TResult)
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync*
+  nameWithType.vb: Broker.ExecuteCommandAsync(Of TCommand, TResult)(TCommand, CommandOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync(Of TCommand, TResult)(TCommand, OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  name.vb: ExecuteCommandAsync(Of TCommand, TResult)(TCommand, CommandOptions)
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``1(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync``1(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  id: ExecuteCommandAsync``1(``0,OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommandAsync<TCommand>(TCommand, CommandOptions?)
+  nameWithType: Broker.ExecuteCommandAsync<TCommand>(TCommand, CommandOptions?)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync<TCommand>(TCommand, OpenQA.Selenium.BiDi.Communication.CommandOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ExecuteCommandAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 193
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: 'public Task ExecuteCommandAsync<TCommand>(TCommand command, CommandOptions? options) where TCommand : Command'
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    - id: options
+      type: OpenQA.Selenium.BiDi.Communication.CommandOptions
+    typeParameters:
+    - id: TCommand
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ExecuteCommandAsync(Of TCommand As Command)(command As TCommand, options As CommandOptions) As Task
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync*
+  nameWithType.vb: Broker.ExecuteCommandAsync(Of TCommand)(TCommand, CommandOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync(Of TCommand)(TCommand, OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  name.vb: ExecuteCommandAsync(Of TCommand)(TCommand, CommandOptions)
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Action{``0},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Action{``0},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: SubscribeAsync``1(System.String,System.Action{``0},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<TEventArgs>(string, Action<TEventArgs>, SubscriptionOptions?)
+  nameWithType: Broker.SubscribeAsync<TEventArgs>(string, Action<TEventArgs>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync<TEventArgs>(string, System.Action<TEventArgs>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SubscribeAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 221
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: 'public Task<Subscription> SubscribeAsync<TEventArgs>(string eventName, Action<TEventArgs> action, SubscriptionOptions? options = null) where TEventArgs : EventArgs'
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: action
+      type: System.Action{{TEventArgs}}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    typeParameters:
+    - id: TEventArgs
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function SubscribeAsync(Of TEventArgs As EventArgs)(eventName As String, action As Action(Of TEventArgs), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync*
+  nameWithType.vb: Broker.SubscribeAsync(Of TEventArgs)(String, Action(Of TEventArgs), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync(Of TEventArgs)(String, System.Action(Of TEventArgs), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: SubscribeAsync(Of TEventArgs)(String, Action(Of TEventArgs), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Func{``0,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync``1(System.String,System.Func{``0,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: SubscribeAsync``1(System.String,System.Func{``0,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<TEventArgs>(string, Func<TEventArgs, Task>, SubscriptionOptions?)
+  nameWithType: Broker.SubscribeAsync<TEventArgs>(string, Func<TEventArgs, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync<TEventArgs>(string, System.Func<TEventArgs, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SubscribeAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 248
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: 'public Task<Subscription> SubscribeAsync<TEventArgs>(string eventName, Func<TEventArgs, Task> func, SubscriptionOptions? options = null) where TEventArgs : EventArgs'
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: func
+      type: System.Func{{TEventArgs},System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    typeParameters:
+    - id: TEventArgs
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function SubscribeAsync(Of TEventArgs As EventArgs)(eventName As String, func As Func(Of TEventArgs, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync*
+  nameWithType.vb: Broker.SubscribeAsync(Of TEventArgs)(String, Func(Of TEventArgs, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync(Of TEventArgs)(String, System.Func(Of TEventArgs, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: SubscribeAsync(Of TEventArgs)(String, Func(Of TEventArgs, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync(OpenQA.Selenium.BiDi.Modules.Session.Subscription,OpenQA.Selenium.BiDi.Communication.EventHandler)
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync(OpenQA.Selenium.BiDi.Modules.Session.Subscription,OpenQA.Selenium.BiDi.Communication.EventHandler)
+  id: UnsubscribeAsync(OpenQA.Selenium.BiDi.Modules.Session.Subscription,OpenQA.Selenium.BiDi.Communication.EventHandler)
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeAsync(Subscription, EventHandler)
+  nameWithType: Broker.UnsubscribeAsync(Subscription, EventHandler)
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync(OpenQA.Selenium.BiDi.Modules.Session.Subscription, OpenQA.Selenium.BiDi.Communication.EventHandler)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UnsubscribeAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 275
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: public Task UnsubscribeAsync(Subscription subscription, EventHandler eventHandler)
+    parameters:
+    - id: subscription
+      type: OpenQA.Selenium.BiDi.Modules.Session.Subscription
+    - id: eventHandler
+      type: OpenQA.Selenium.BiDi.Communication.EventHandler
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UnsubscribeAsync(subscription As Subscription, eventHandler As EventHandler) As Task
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync*
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync
+  id: DisposeAsync
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: Broker.DisposeAsync()
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisposeAsync
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 304
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore
+  commentId: M:OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore
+  id: DisposeAsyncCore
+  parent: OpenQA.Selenium.BiDi.Communication.Broker
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsyncCore()
+  nameWithType: Broker.DisposeAsyncCore()
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Communication/Broker.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisposeAsyncCore
+    path: ../src/webdriver/BiDi/Communication/Broker.cs
+    startLine: 310
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Communication
+  syntax:
+    content: protected virtual ValueTask DisposeAsyncCore()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Protected Overridable Function DisposeAsyncCore() As ValueTask
+  overload: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore*
+references:
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_ConnectAsync_System_Threading_CancellationToken_
+  name: ConnectAsync
+  nameWithType: Broker.ConnectAsync
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.ConnectAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_ExecuteCommandAsync__2___0_OpenQA_Selenium_BiDi_Communication_CommandOptions_
+  name: ExecuteCommandAsync
+  nameWithType: Broker.ExecuteCommandAsync
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.ExecuteCommandAsync
+- uid: '{TCommand}'
+  commentId: '!:TCommand'
+  definition: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: OpenQA.Selenium.BiDi.Communication.CommandOptions
+  commentId: T:OpenQA.Selenium.BiDi.Communication.CommandOptions
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html
+  name: CommandOptions
+  nameWithType: CommandOptions
+  fullName: OpenQA.Selenium.BiDi.Communication.CommandOptions
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_SubscribeAsync__1_System_String_System_Action___0__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: SubscribeAsync
+  nameWithType: Broker.SubscribeAsync
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.SubscribeAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{{TEventArgs}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEventArgs>
+  nameWithType: Action<TEventArgs>
+  fullName: System.Action<TEventArgs>
+  nameWithType.vb: Action(Of TEventArgs)
+  fullName.vb: System.Action(Of TEventArgs)
+  name.vb: Action(Of TEventArgs)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: OpenQA.Selenium.BiDi.SubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.SubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.SubscriptionOptions.html
+  name: SubscriptionOptions
+  nameWithType: SubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.SubscriptionOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Subscription>
+  nameWithType: Task<Subscription>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Subscription>
+  nameWithType.vb: Task(Of Subscription)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Subscription)
+  name.vb: Task(Of Subscription)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: System.Func{{TEventArgs},System.Threading.Tasks.Task}
+  commentId: T:System.Func{``0,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TEventArgs, Task>
+  nameWithType: Func<TEventArgs, Task>
+  fullName: System.Func<TEventArgs, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of TEventArgs, Task)
+  fullName.vb: System.Func(Of TEventArgs, System.Threading.Tasks.Task)
+  name.vb: Func(Of TEventArgs, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TEventArgs
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_UnsubscribeAsync_OpenQA_Selenium_BiDi_Modules_Session_Subscription_OpenQA_Selenium_BiDi_Communication_EventHandler_
+  name: UnsubscribeAsync
+  nameWithType: Broker.UnsubscribeAsync
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.UnsubscribeAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Session.Subscription
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.Subscription
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.Subscription.html
+  name: Subscription
+  nameWithType: Subscription
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.Subscription
+- uid: OpenQA.Selenium.BiDi.Communication.EventHandler
+  commentId: T:OpenQA.Selenium.BiDi.Communication.EventHandler
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.EventHandler.html
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: OpenQA.Selenium.BiDi.Communication.EventHandler
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_DisposeAsync
+  name: DisposeAsync
+  nameWithType: Broker.DisposeAsync
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore*
+  commentId: Overload:OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html#OpenQA_Selenium_BiDi_Communication_Broker_DisposeAsyncCore
+  name: DisposeAsyncCore
+  nameWithType: Broker.DisposeAsyncCore
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker.DisposeAsyncCore

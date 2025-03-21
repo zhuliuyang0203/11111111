@@ -1,0 +1,1502 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  id: GetMatchedStylesForNodeCommandResponse
+  parent: OpenQA.Selenium.DevTools.V134.CSS
+  children:
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  - OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+  langs:
+  - csharp
+  - vb
+  name: GetMatchedStylesForNodeCommandResponse
+  nameWithType: GetMatchedStylesForNodeCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetMatchedStylesForNodeCommandResponse
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Response for GetMatchedStylesForNode
+  example: []
+  syntax:
+    content: 'public sealed class GetMatchedStylesForNodeCommandResponse : ICommandResponse<GetMatchedStylesForNodeCommandSettings>, ICommandResponse'
+    content.vb: Public NotInheritable Class GetMatchedStylesForNodeCommandResponse Implements ICommandResponse(Of GetMatchedStylesForNodeCommandSettings), ICommandResponse
+  inheritance:
+  - System.Object
+  implements:
+  - OpenQA.Selenium.DevTools.ICommandResponse{OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings}
+  - OpenQA.Selenium.DevTools.ICommandResponse
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - OpenQA.Selenium.DevTools.ICommandResponse.OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+  id: InlineStyle
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: InlineStyle
+  nameWithType: GetMatchedStylesForNodeCommandResponse.InlineStyle
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InlineStyle
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the inlineStyle
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("inlineStyle")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSStyle? InlineStyle { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSStyle
+    content.vb: >-
+      <JsonPropertyName("inlineStyle")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property InlineStyle As CSSStyle
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: inlineStyle
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  id: AttributesStyle
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: AttributesStyle
+  nameWithType: GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AttributesStyle
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the attributesStyle
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("attributesStyle")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSStyle? AttributesStyle { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSStyle
+    content.vb: >-
+      <JsonPropertyName("attributesStyle")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property AttributesStyle As CSSStyle
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: attributesStyle
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  id: MatchedCSSRules
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: MatchedCSSRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MatchedCSSRules
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the matchedCSSRules
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("matchedCSSRules")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public RuleMatch[]? MatchedCSSRules { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch[]
+    content.vb: >-
+      <JsonPropertyName("matchedCSSRules")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MatchedCSSRules As RuleMatch()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: matchedCSSRules
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+  id: PseudoElements
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: PseudoElements
+  nameWithType: GetMatchedStylesForNodeCommandResponse.PseudoElements
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PseudoElements
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the pseudoElements
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pseudoElements")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public PseudoElementMatches[]? PseudoElements { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches[]
+    content.vb: >-
+      <JsonPropertyName("pseudoElements")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PseudoElements As PseudoElementMatches()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pseudoElements
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+  id: Inherited
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: Inherited
+  nameWithType: GetMatchedStylesForNodeCommandResponse.Inherited
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Inherited
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 66
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the inherited
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("inherited")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public InheritedStyleEntry[]? Inherited { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry[]
+    content.vb: >-
+      <JsonPropertyName("inherited")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Inherited As InheritedStyleEntry()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: inherited
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  id: InheritedPseudoElements
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: InheritedPseudoElements
+  nameWithType: GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InheritedPseudoElements
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the inheritedPseudoElements
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("inheritedPseudoElements")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public InheritedPseudoElementMatches[]? InheritedPseudoElements { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches[]
+    content.vb: >-
+      <JsonPropertyName("inheritedPseudoElements")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property InheritedPseudoElements As InheritedPseudoElementMatches()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: inheritedPseudoElements
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  id: CssKeyframesRules
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: CssKeyframesRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CssKeyframesRules
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 80
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the cssKeyframesRules
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cssKeyframesRules")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSKeyframesRule[]? CssKeyframesRules { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule[]
+    content.vb: >-
+      <JsonPropertyName("cssKeyframesRules")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CssKeyframesRules As CSSKeyframesRule()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cssKeyframesRules
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  id: CssPositionTryRules
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: CssPositionTryRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CssPositionTryRules
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 87
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the cssPositionTryRules
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cssPositionTryRules")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSPositionTryRule[]? CssPositionTryRules { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule[]
+    content.vb: >-
+      <JsonPropertyName("cssPositionTryRules")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CssPositionTryRules As CSSPositionTryRule()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cssPositionTryRules
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  id: ActivePositionFallbackIndex
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: ActivePositionFallbackIndex
+  nameWithType: GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ActivePositionFallbackIndex
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 94
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the activePositionFallbackIndex
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("activePositionFallbackIndex")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? ActivePositionFallbackIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("activePositionFallbackIndex")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ActivePositionFallbackIndex As Long?
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: activePositionFallbackIndex
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  id: CssPropertyRules
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: CssPropertyRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CssPropertyRules
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 101
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the cssPropertyRules
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cssPropertyRules")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSPropertyRule[]? CssPropertyRules { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule[]
+    content.vb: >-
+      <JsonPropertyName("cssPropertyRules")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CssPropertyRules As CSSPropertyRule()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cssPropertyRules
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  id: CssPropertyRegistrations
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: CssPropertyRegistrations
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CssPropertyRegistrations
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 108
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the cssPropertyRegistrations
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cssPropertyRegistrations")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSPropertyRegistration[]? CssPropertyRegistrations { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration[]
+    content.vb: >-
+      <JsonPropertyName("cssPropertyRegistrations")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CssPropertyRegistrations As CSSPropertyRegistration()
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cssPropertyRegistrations
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  id: CssFontPaletteValuesRule
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: CssFontPaletteValuesRule
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CssFontPaletteValuesRule
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 115
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the cssFontPaletteValuesRule
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cssFontPaletteValuesRule")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CSSFontPaletteValuesRule? CssFontPaletteValuesRule { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.CSS.CSSFontPaletteValuesRule
+    content.vb: >-
+      <JsonPropertyName("cssFontPaletteValuesRule")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CssFontPaletteValuesRule As CSSFontPaletteValuesRule
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cssFontPaletteValuesRule
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  commentId: P:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  id: ParentLayoutNodeId
+  parent: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse
+  langs:
+  - csharp
+  - vb
+  name: ParentLayoutNodeId
+  nameWithType: GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ParentLayoutNodeId
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/CSS/GetMatchedStylesForNodeCommand.cs
+    startLine: 122
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.CSS
+  summary: Gets or sets the parentLayoutNodeId
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("parentLayoutNodeId")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? ParentLayoutNodeId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("parentLayoutNodeId")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ParentLayoutNodeId As Long?
+  overload: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: parentLayoutNodeId
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V134.CSS
+  commentId: N:OpenQA.Selenium.DevTools.V134.CSS
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.CSS
+  nameWithType: OpenQA.Selenium.DevTools.V134.CSS
+  fullName: OpenQA.Selenium.DevTools.V134.CSS
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.CSS
+    name: CSS
+    href: OpenQA.Selenium.DevTools.V134.CSS.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.CSS
+    name: CSS
+    href: OpenQA.Selenium.DevTools.V134.CSS.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.DevTools.ICommandResponse{OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings}
+  commentId: T:OpenQA.Selenium.DevTools.ICommandResponse{OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings}
+  parent: OpenQA.Selenium.DevTools
+  definition: OpenQA.Selenium.DevTools.ICommandResponse`1
+  href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  name: ICommandResponse<GetMatchedStylesForNodeCommandSettings>
+  nameWithType: ICommandResponse<GetMatchedStylesForNodeCommandSettings>
+  fullName: OpenQA.Selenium.DevTools.ICommandResponse<OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings>
+  nameWithType.vb: ICommandResponse(Of GetMatchedStylesForNodeCommandSettings)
+  fullName.vb: OpenQA.Selenium.DevTools.ICommandResponse(Of OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings)
+  name.vb: ICommandResponse(Of GetMatchedStylesForNodeCommandSettings)
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse`1
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings
+    name: GetMatchedStylesForNodeCommandSettings
+    href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse`1
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings
+    name: GetMatchedStylesForNodeCommandSettings
+    href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandSettings.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.ICommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.ICommandResponse
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommandResponse.html
+  name: ICommandResponse
+  nameWithType: ICommandResponse
+  fullName: OpenQA.Selenium.DevTools.ICommandResponse
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.ICommandResponse.OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1
+  commentId: M:OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+  parent: OpenQA.Selenium.DevTools.ICommandResponseExtensions
+  definition: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+  href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  name: GetResponse<TCommandResponse>(ICommandResponse)
+  nameWithType: ICommandResponseExtensions.GetResponse<TCommandResponse>(ICommandResponse)
+  fullName: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse<TCommandResponse>(OpenQA.Selenium.DevTools.ICommandResponse)
+  nameWithType.vb: ICommandResponseExtensions.GetResponse(Of TCommandResponse)(ICommandResponse)
+  fullName.vb: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse(Of TCommandResponse)(OpenQA.Selenium.DevTools.ICommandResponse)
+  name.vb: GetResponse(Of TCommandResponse)(ICommandResponse)
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+    name: GetResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  - name: <
+  - name: TCommandResponse
+  - name: '>'
+  - name: (
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse.html
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+    name: GetResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommandResponse
+  - name: )
+  - name: (
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.ICommandResponse`1
+  commentId: T:OpenQA.Selenium.DevTools.ICommandResponse`1
+  href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  name: ICommandResponse<T>
+  nameWithType: ICommandResponse<T>
+  fullName: OpenQA.Selenium.DevTools.ICommandResponse<T>
+  nameWithType.vb: ICommandResponse(Of T)
+  fullName.vb: OpenQA.Selenium.DevTools.ICommandResponse(Of T)
+  name.vb: ICommandResponse(Of T)
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse`1
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse`1
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+  commentId: M:OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+  href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  name: GetResponse<TCommandResponse>(ICommandResponse)
+  nameWithType: ICommandResponseExtensions.GetResponse<TCommandResponse>(ICommandResponse)
+  fullName: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse<TCommandResponse>(OpenQA.Selenium.DevTools.ICommandResponse)
+  nameWithType.vb: ICommandResponseExtensions.GetResponse(Of TCommandResponse)(ICommandResponse)
+  fullName.vb: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse(Of TCommandResponse)(OpenQA.Selenium.DevTools.ICommandResponse)
+  name.vb: GetResponse(Of TCommandResponse)(ICommandResponse)
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+    name: GetResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  - name: <
+  - name: TCommandResponse
+  - name: '>'
+  - name: (
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse.html
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions.GetResponse``1(OpenQA.Selenium.DevTools.ICommandResponse)
+    name: GetResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html#OpenQA_Selenium_DevTools_ICommandResponseExtensions_GetResponse__1_OpenQA_Selenium_DevTools_ICommandResponse_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommandResponse
+  - name: )
+  - name: (
+  - uid: OpenQA.Selenium.DevTools.ICommandResponse
+    name: ICommandResponse
+    href: OpenQA.Selenium.DevTools.ICommandResponse.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.ICommandResponseExtensions
+  commentId: T:OpenQA.Selenium.DevTools.ICommandResponseExtensions
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommandResponseExtensions.html
+  name: ICommandResponseExtensions
+  nameWithType: ICommandResponseExtensions
+  fullName: OpenQA.Selenium.DevTools.ICommandResponseExtensions
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_InlineStyle
+  name: InlineStyle
+  nameWithType: GetMatchedStylesForNodeCommandResponse.InlineStyle
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InlineStyle
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSStyle
+  commentId: T:OpenQA.Selenium.DevTools.V134.CSS.CSSStyle
+  parent: OpenQA.Selenium.DevTools.V134.CSS
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSStyle.html
+  name: CSSStyle
+  nameWithType: CSSStyle
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSStyle
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_AttributesStyle
+  name: AttributesStyle
+  nameWithType: GetMatchedStylesForNodeCommandResponse.AttributesStyle
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.AttributesStyle
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_MatchedCSSRules
+  name: MatchedCSSRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.MatchedCSSRules
+- uid: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch.html
+  name: RuleMatch[]
+  nameWithType: RuleMatch[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch[]
+  nameWithType.vb: RuleMatch()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch()
+  name.vb: RuleMatch()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch
+    name: RuleMatch
+    href: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch
+    name: RuleMatch
+    href: OpenQA.Selenium.DevTools.V134.CSS.RuleMatch.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_PseudoElements
+  name: PseudoElements
+  nameWithType: GetMatchedStylesForNodeCommandResponse.PseudoElements
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.PseudoElements
+- uid: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches.html
+  name: PseudoElementMatches[]
+  nameWithType: PseudoElementMatches[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches[]
+  nameWithType.vb: PseudoElementMatches()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches()
+  name.vb: PseudoElementMatches()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches
+    name: PseudoElementMatches
+    href: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches
+    name: PseudoElementMatches
+    href: OpenQA.Selenium.DevTools.V134.CSS.PseudoElementMatches.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_Inherited
+  name: Inherited
+  nameWithType: GetMatchedStylesForNodeCommandResponse.Inherited
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.Inherited
+- uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry.html
+  name: InheritedStyleEntry[]
+  nameWithType: InheritedStyleEntry[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry[]
+  nameWithType.vb: InheritedStyleEntry()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry()
+  name.vb: InheritedStyleEntry()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry
+    name: InheritedStyleEntry
+    href: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry
+    name: InheritedStyleEntry
+    href: OpenQA.Selenium.DevTools.V134.CSS.InheritedStyleEntry.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_InheritedPseudoElements
+  name: InheritedPseudoElements
+  nameWithType: GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.InheritedPseudoElements
+- uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches.html
+  name: InheritedPseudoElementMatches[]
+  nameWithType: InheritedPseudoElementMatches[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches[]
+  nameWithType.vb: InheritedPseudoElementMatches()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches()
+  name.vb: InheritedPseudoElementMatches()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches
+    name: InheritedPseudoElementMatches
+    href: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches
+    name: InheritedPseudoElementMatches
+    href: OpenQA.Selenium.DevTools.V134.CSS.InheritedPseudoElementMatches.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_CssKeyframesRules
+  name: CssKeyframesRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssKeyframesRules
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule.html
+  name: CSSKeyframesRule[]
+  nameWithType: CSSKeyframesRule[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule[]
+  nameWithType.vb: CSSKeyframesRule()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule()
+  name.vb: CSSKeyframesRule()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule
+    name: CSSKeyframesRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule
+    name: CSSKeyframesRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSKeyframesRule.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_CssPositionTryRules
+  name: CssPositionTryRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPositionTryRules
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule.html
+  name: CSSPositionTryRule[]
+  nameWithType: CSSPositionTryRule[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule[]
+  nameWithType.vb: CSSPositionTryRule()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule()
+  name.vb: CSSPositionTryRule()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule
+    name: CSSPositionTryRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule
+    name: CSSPositionTryRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPositionTryRule.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_ActivePositionFallbackIndex
+  name: ActivePositionFallbackIndex
+  nameWithType: GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ActivePositionFallbackIndex
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_CssPropertyRules
+  name: CssPropertyRules
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRules
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule.html
+  name: CSSPropertyRule[]
+  nameWithType: CSSPropertyRule[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule[]
+  nameWithType.vb: CSSPropertyRule()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule()
+  name.vb: CSSPropertyRule()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule
+    name: CSSPropertyRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule
+    name: CSSPropertyRule
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRule.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_CssPropertyRegistrations
+  name: CssPropertyRegistrations
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssPropertyRegistrations
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration.html
+  name: CSSPropertyRegistration[]
+  nameWithType: CSSPropertyRegistration[]
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration[]
+  nameWithType.vb: CSSPropertyRegistration()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration()
+  name.vb: CSSPropertyRegistration()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration
+    name: CSSPropertyRegistration
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration
+    name: CSSPropertyRegistration
+    href: OpenQA.Selenium.DevTools.V134.CSS.CSSPropertyRegistration.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_CssFontPaletteValuesRule
+  name: CssFontPaletteValuesRule
+  nameWithType: GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.CssFontPaletteValuesRule
+- uid: OpenQA.Selenium.DevTools.V134.CSS.CSSFontPaletteValuesRule
+  commentId: T:OpenQA.Selenium.DevTools.V134.CSS.CSSFontPaletteValuesRule
+  parent: OpenQA.Selenium.DevTools.V134.CSS
+  href: OpenQA.Selenium.DevTools.V134.CSS.CSSFontPaletteValuesRule.html
+  name: CSSFontPaletteValuesRule
+  nameWithType: CSSFontPaletteValuesRule
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.CSSFontPaletteValuesRule
+- uid: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  href: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.html#OpenQA_Selenium_DevTools_V134_CSS_GetMatchedStylesForNodeCommandResponse_ParentLayoutNodeId
+  name: ParentLayoutNodeId
+  nameWithType: GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId
+  fullName: OpenQA.Selenium.DevTools.V134.CSS.GetMatchedStylesForNodeCommandResponse.ParentLayoutNodeId

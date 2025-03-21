@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  id: Communication
+  parent: OpenQA.Selenium.BiDi
+  children:
+  - OpenQA.Selenium.BiDi.Communication.Broker
+  - OpenQA.Selenium.BiDi.Communication.Command
+  - OpenQA.Selenium.BiDi.Communication.CommandOptions
+  - OpenQA.Selenium.BiDi.Communication.EventHandler
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Communication.Broker
+  commentId: T:OpenQA.Selenium.BiDi.Communication.Broker
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.Broker.html
+  name: Broker
+  nameWithType: Broker
+  fullName: OpenQA.Selenium.BiDi.Communication.Broker
+- uid: OpenQA.Selenium.BiDi.Communication.Command
+  commentId: T:OpenQA.Selenium.BiDi.Communication.Command
+  href: OpenQA.Selenium.BiDi.Communication.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: OpenQA.Selenium.BiDi.Communication.Command
+- uid: OpenQA.Selenium.BiDi.Communication.CommandOptions
+  commentId: T:OpenQA.Selenium.BiDi.Communication.CommandOptions
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html
+  name: CommandOptions
+  nameWithType: CommandOptions
+  fullName: OpenQA.Selenium.BiDi.Communication.CommandOptions
+- uid: OpenQA.Selenium.BiDi.Communication.EventHandler
+  commentId: T:OpenQA.Selenium.BiDi.Communication.EventHandler
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.EventHandler.html
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: OpenQA.Selenium.BiDi.Communication.EventHandler
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html

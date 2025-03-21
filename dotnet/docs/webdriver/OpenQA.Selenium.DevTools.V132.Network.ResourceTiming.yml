@@ -1,0 +1,1433 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  commentId: T:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  id: ResourceTiming
+  parent: OpenQA.Selenium.DevTools.V132.Network
+  children:
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+  - OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+  langs:
+  - csharp
+  - vb
+  name: ResourceTiming
+  nameWithType: ResourceTiming
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResourceTiming
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: ResourceTiming
+  example: []
+  syntax:
+    content: public sealed class ResourceTiming
+    content.vb: Public NotInheritable Class ResourceTiming
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+  id: RequestTime
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: RequestTime
+  nameWithType: ResourceTiming.RequestTime
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RequestTime
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: requestTime
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("requestTime")]
+
+      public double RequestTime { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("requestTime")>
+
+      Public Property RequestTime As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: requestTime
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+  id: ProxyStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ProxyStart
+  nameWithType: ResourceTiming.ProxyStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ProxyStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: proxyStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("proxyStart")]
+
+      public double ProxyStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("proxyStart")>
+
+      Public Property ProxyStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: proxyStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+  id: ProxyEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ProxyEnd
+  nameWithType: ResourceTiming.ProxyEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ProxyEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: proxyEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("proxyEnd")]
+
+      public double ProxyEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("proxyEnd")>
+
+      Public Property ProxyEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: proxyEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+  id: DnsStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: DnsStart
+  nameWithType: ResourceTiming.DnsStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DnsStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: dnsStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("dnsStart")]
+
+      public double DnsStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("dnsStart")>
+
+      Public Property DnsStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: dnsStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+  id: DnsEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: DnsEnd
+  nameWithType: ResourceTiming.DnsEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DnsEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: dnsEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("dnsEnd")]
+
+      public double DnsEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("dnsEnd")>
+
+      Public Property DnsEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: dnsEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+  id: ConnectStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ConnectStart
+  nameWithType: ResourceTiming.ConnectStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: connectStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("connectStart")]
+
+      public double ConnectStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("connectStart")>
+
+      Public Property ConnectStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: connectStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+  id: ConnectEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ConnectEnd
+  nameWithType: ResourceTiming.ConnectEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: connectEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("connectEnd")]
+
+      public double ConnectEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("connectEnd")>
+
+      Public Property ConnectEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: connectEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+  id: SslStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: SslStart
+  nameWithType: ResourceTiming.SslStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SslStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: sslStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sslStart")]
+
+      public double SslStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("sslStart")>
+
+      Public Property SslStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sslStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+  id: SslEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: SslEnd
+  nameWithType: ResourceTiming.SslEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SslEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 72
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: sslEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sslEnd")]
+
+      public double SslEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("sslEnd")>
+
+      Public Property SslEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sslEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+  id: WorkerStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerStart
+  nameWithType: ResourceTiming.WorkerStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 79
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerStart")]
+
+      public double WorkerStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("workerStart")>
+
+      Public Property WorkerStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+  id: WorkerReady
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerReady
+  nameWithType: ResourceTiming.WorkerReady
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerReady
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 86
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerReady
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerReady")]
+
+      public double WorkerReady { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("workerReady")>
+
+      Public Property WorkerReady As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerReady
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+  id: WorkerFetchStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerFetchStart
+  nameWithType: ResourceTiming.WorkerFetchStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerFetchStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 93
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerFetchStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerFetchStart")]
+
+      public double WorkerFetchStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("workerFetchStart")>
+
+      Public Property WorkerFetchStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerFetchStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+  id: WorkerRespondWithSettled
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerRespondWithSettled
+  nameWithType: ResourceTiming.WorkerRespondWithSettled
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerRespondWithSettled
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 100
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerRespondWithSettled
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerRespondWithSettled")]
+
+      public double WorkerRespondWithSettled { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("workerRespondWithSettled")>
+
+      Public Property WorkerRespondWithSettled As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerRespondWithSettled
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+  id: WorkerRouterEvaluationStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerRouterEvaluationStart
+  nameWithType: ResourceTiming.WorkerRouterEvaluationStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerRouterEvaluationStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 107
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerRouterEvaluationStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerRouterEvaluationStart")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? WorkerRouterEvaluationStart { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("workerRouterEvaluationStart")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property WorkerRouterEvaluationStart As Double?
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerRouterEvaluationStart
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+  id: WorkerCacheLookupStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: WorkerCacheLookupStart
+  nameWithType: ResourceTiming.WorkerCacheLookupStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WorkerCacheLookupStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 114
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: workerCacheLookupStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("workerCacheLookupStart")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? WorkerCacheLookupStart { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("workerCacheLookupStart")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property WorkerCacheLookupStart As Double?
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: workerCacheLookupStart
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+  id: SendStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: SendStart
+  nameWithType: ResourceTiming.SendStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SendStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 121
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: sendStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sendStart")]
+
+      public double SendStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("sendStart")>
+
+      Public Property SendStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sendStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+  id: SendEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: SendEnd
+  nameWithType: ResourceTiming.SendEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SendEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 128
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: sendEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sendEnd")]
+
+      public double SendEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("sendEnd")>
+
+      Public Property SendEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sendEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+  id: PushStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: PushStart
+  nameWithType: ResourceTiming.PushStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PushStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 135
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: pushStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pushStart")]
+
+      public double PushStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("pushStart")>
+
+      Public Property PushStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pushStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+  id: PushEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: PushEnd
+  nameWithType: ResourceTiming.PushEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PushEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 142
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: pushEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pushEnd")]
+
+      public double PushEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("pushEnd")>
+
+      Public Property PushEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pushEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+  id: ReceiveHeadersStart
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ReceiveHeadersStart
+  nameWithType: ResourceTiming.ReceiveHeadersStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReceiveHeadersStart
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 149
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: receiveHeadersStart
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("receiveHeadersStart")]
+
+      public double ReceiveHeadersStart { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("receiveHeadersStart")>
+
+      Public Property ReceiveHeadersStart As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: receiveHeadersStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd
+  commentId: P:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd
+  id: ReceiveHeadersEnd
+  parent: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming
+  langs:
+  - csharp
+  - vb
+  name: ReceiveHeadersEnd
+  nameWithType: ResourceTiming.ReceiveHeadersEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReceiveHeadersEnd
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/ResourceTiming.cs
+    startLine: 156
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: receiveHeadersEnd
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("receiveHeadersEnd")]
+
+      public double ReceiveHeadersEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("receiveHeadersEnd")>
+
+      Public Property ReceiveHeadersEnd As Double
+  overload: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: receiveHeadersEnd
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Network
+  commentId: N:OpenQA.Selenium.DevTools.V132.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Network
+  nameWithType: OpenQA.Selenium.DevTools.V132.Network
+  fullName: OpenQA.Selenium.DevTools.V132.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_RequestTime
+  name: RequestTime
+  nameWithType: ResourceTiming.RequestTime
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.RequestTime
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ProxyStart
+  name: ProxyStart
+  nameWithType: ResourceTiming.ProxyStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ProxyEnd
+  name: ProxyEnd
+  nameWithType: ResourceTiming.ProxyEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ProxyEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_DnsStart
+  name: DnsStart
+  nameWithType: ResourceTiming.DnsStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_DnsEnd
+  name: DnsEnd
+  nameWithType: ResourceTiming.DnsEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.DnsEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ConnectStart
+  name: ConnectStart
+  nameWithType: ResourceTiming.ConnectStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ConnectEnd
+  name: ConnectEnd
+  nameWithType: ResourceTiming.ConnectEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ConnectEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_SslStart
+  name: SslStart
+  nameWithType: ResourceTiming.SslStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_SslEnd
+  name: SslEnd
+  nameWithType: ResourceTiming.SslEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SslEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerStart
+  name: WorkerStart
+  nameWithType: ResourceTiming.WorkerStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerReady
+  name: WorkerReady
+  nameWithType: ResourceTiming.WorkerReady
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerReady
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerFetchStart
+  name: WorkerFetchStart
+  nameWithType: ResourceTiming.WorkerFetchStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerFetchStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerRespondWithSettled
+  name: WorkerRespondWithSettled
+  nameWithType: ResourceTiming.WorkerRespondWithSettled
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRespondWithSettled
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerRouterEvaluationStart
+  name: WorkerRouterEvaluationStart
+  nameWithType: ResourceTiming.WorkerRouterEvaluationStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerRouterEvaluationStart
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_WorkerCacheLookupStart
+  name: WorkerCacheLookupStart
+  nameWithType: ResourceTiming.WorkerCacheLookupStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.WorkerCacheLookupStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_SendStart
+  name: SendStart
+  nameWithType: ResourceTiming.SendStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_SendEnd
+  name: SendEnd
+  nameWithType: ResourceTiming.SendEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.SendEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_PushStart
+  name: PushStart
+  nameWithType: ResourceTiming.PushStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_PushEnd
+  name: PushEnd
+  nameWithType: ResourceTiming.PushEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.PushEnd
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ReceiveHeadersStart
+  name: ReceiveHeadersStart
+  nameWithType: ResourceTiming.ReceiveHeadersStart
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersStart
+- uid: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd
+  href: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.html#OpenQA_Selenium_DevTools_V132_Network_ResourceTiming_ReceiveHeadersEnd
+  name: ReceiveHeadersEnd
+  nameWithType: ResourceTiming.ReceiveHeadersEnd
+  fullName: OpenQA.Selenium.DevTools.V132.Network.ResourceTiming.ReceiveHeadersEnd

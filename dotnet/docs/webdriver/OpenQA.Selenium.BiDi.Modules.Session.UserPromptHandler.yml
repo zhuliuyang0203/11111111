@@ -1,0 +1,647 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  id: UserPromptHandler
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt
+  langs:
+  - csharp
+  - vb
+  name: UserPromptHandler
+  nameWithType: UserPromptHandler
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserPromptHandler
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 21
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: 'public record UserPromptHandler : IEquatable<UserPromptHandler>'
+    content.vb: Public Class UserPromptHandler Implements IEquatable(Of UserPromptHandler)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+  id: Alert
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: Alert
+  nameWithType: UserPromptHandler.Alert
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Alert
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? Alert { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property Alert As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+  id: BeforeUnload
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: BeforeUnload
+  nameWithType: UserPromptHandler.BeforeUnload
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BeforeUnload
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? BeforeUnload { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property BeforeUnload As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+  id: Confirm
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: Confirm
+  nameWithType: UserPromptHandler.Confirm
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Confirm
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? Confirm { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property Confirm As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+  id: Default
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: UserPromptHandler.Default
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Default
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? Default { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property [Default] As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+  id: File
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: UserPromptHandler.File
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: File
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? File { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property File As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File*
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt
+  id: Prompt
+  parent: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  langs:
+  - csharp
+  - vb
+  name: Prompt
+  nameWithType: UserPromptHandler.Prompt
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Prompt
+    path: ../src/webdriver/BiDi/Modules/Session/UserPromptHandler.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Session
+  syntax:
+    content: public UserPromptHandlerType? Prompt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+    content.vb: Public Property Prompt As UserPromptHandlerType?
+  overload: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UserPromptHandler>
+  nameWithType: IEquatable<UserPromptHandler>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler>
+  nameWithType.vb: IEquatable(Of UserPromptHandler)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler)
+  name.vb: IEquatable(Of UserPromptHandler)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+    name: UserPromptHandler
+    href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+    name: UserPromptHandler
+    href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_Alert
+  name: Alert
+  nameWithType: UserPromptHandler.Alert
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Alert
+- uid: System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+  commentId: T:System.Nullable{OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType}
+  parent: System
+  definition: System.Nullable`1
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.html
+  name: UserPromptHandlerType?
+  nameWithType: UserPromptHandlerType?
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType?
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+    name: UserPromptHandlerType
+    href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.html
+  - name: '?'
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+    name: UserPromptHandlerType
+    href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_BeforeUnload
+  name: BeforeUnload
+  nameWithType: UserPromptHandler.BeforeUnload
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.BeforeUnload
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_Confirm
+  name: Confirm
+  nameWithType: UserPromptHandler.Confirm
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Confirm
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_Default
+  name: Default
+  nameWithType: UserPromptHandler.Default
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Default
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_File
+  name: File
+  nameWithType: UserPromptHandler.File
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.File
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html#OpenQA_Selenium_BiDi_Modules_Session_UserPromptHandler_Prompt
+  name: Prompt
+  nameWithType: UserPromptHandler.Prompt
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.Prompt

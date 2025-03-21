@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  commentId: N:OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  id: HeadlessExperimental
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandResponse
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandSettings
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.HeadlessExperimentalAdapter
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParams
+  - OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParamsFormatValues
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  nameWithType: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandResponse.html
+  name: BeginFrameCommandResponse
+  nameWithType: BeginFrameCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandSettings.html
+  name: BeginFrameCommandSettings
+  nameWithType: BeginFrameCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.BeginFrameCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.HeadlessExperimentalAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.HeadlessExperimentalAdapter
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.HeadlessExperimentalAdapter.html
+  name: HeadlessExperimentalAdapter
+  nameWithType: HeadlessExperimentalAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.HeadlessExperimentalAdapter
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParams
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParams
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParams.html
+  name: ScreenshotParams
+  nameWithType: ScreenshotParams
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParams
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParamsFormatValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParamsFormatValues
+  parent: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParamsFormatValues.html
+  name: ScreenshotParamsFormatValues
+  nameWithType: ScreenshotParamsFormatValues
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.ScreenshotParamsFormatValues
+- uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  commentId: N:OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  nameWithType: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  fullName: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+    name: HeadlessExperimental
+    href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.HeadlessExperimental
+    name: HeadlessExperimental
+    href: OpenQA.Selenium.DevTools.V134.HeadlessExperimental.html

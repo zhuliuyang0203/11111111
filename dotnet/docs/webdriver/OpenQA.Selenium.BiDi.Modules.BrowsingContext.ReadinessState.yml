@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  id: ReadinessState
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Complete
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Interactive
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.None
+  langs:
+  - csharp
+  - vb
+  name: ReadinessState
+  nameWithType: ReadinessState
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReadinessState
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public enum ReadinessState
+    content.vb: Public Enum ReadinessState
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.None
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.None
+  id: None
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ReadinessState.None
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.None
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: None
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+    startLine: 35
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: None = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Interactive
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Interactive
+  id: Interactive
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  langs:
+  - csharp
+  - vb
+  name: Interactive
+  nameWithType: ReadinessState.Interactive
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Interactive
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Interactive
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+    startLine: 36
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Interactive = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Complete
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Complete
+  id: Complete
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  langs:
+  - csharp
+  - vb
+  name: Complete
+  nameWithType: ReadinessState.Complete
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.Complete
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Complete
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/NavigateCommand.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Complete = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.html
+  name: ReadinessState
+  nameWithType: ReadinessState
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState

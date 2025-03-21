@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Mode
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Mode
+  id: Mode
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.Mode.Closed
+  - OpenQA.Selenium.BiDi.Modules.Script.Mode.Open
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: Mode
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Mode
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Mode
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 273
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public enum Mode
+    content.vb: Public Enum Mode
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Mode.Open
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.Mode.Open
+  id: Open
+  parent: OpenQA.Selenium.BiDi.Modules.Script.Mode
+  langs:
+  - csharp
+  - vb
+  name: Open
+  nameWithType: Mode.Open
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Mode.Open
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Open
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 275
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Open = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.Mode
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Mode.Closed
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.Mode.Closed
+  id: Closed
+  parent: OpenQA.Selenium.BiDi.Modules.Script.Mode
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: Mode.Closed
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Mode.Closed
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Closed
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 276
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Closed = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.Mode
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Mode
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Mode
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Mode.html
+  name: Mode
+  nameWithType: Mode
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Mode

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Storage
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Storage
+  id: Storage
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Storage.ContextPartitionDescriptor
+  - OpenQA.Selenium.BiDi.Modules.Storage.CookieFilter
+  - OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesOptions
+  - OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesResult
+  - OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesOptions
+  - OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesResult
+  - OpenQA.Selenium.BiDi.Modules.Storage.PartialCookie
+  - OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  - OpenQA.Selenium.BiDi.Modules.Storage.PartitionKey
+  - OpenQA.Selenium.BiDi.Modules.Storage.SetCookieOptions
+  - OpenQA.Selenium.BiDi.Modules.Storage.SetCookieResult
+  - OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  - OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.Storage
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.ContextPartitionDescriptor
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.ContextPartitionDescriptor
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.ContextPartitionDescriptor.html
+  name: ContextPartitionDescriptor
+  nameWithType: ContextPartitionDescriptor
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.ContextPartitionDescriptor
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.CookieFilter
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.CookieFilter
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.CookieFilter.html
+  name: CookieFilter
+  nameWithType: CookieFilter
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.CookieFilter
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesOptions.html
+  name: DeleteCookiesOptions
+  nameWithType: DeleteCookiesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesResult
+  href: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesResult.html
+  name: DeleteCookiesResult
+  nameWithType: DeleteCookiesResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.DeleteCookiesResult
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesOptions.html
+  name: GetCookiesOptions
+  nameWithType: GetCookiesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesResult
+  href: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesResult.html
+  name: GetCookiesResult
+  nameWithType: GetCookiesResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.GetCookiesResult
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.PartialCookie
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.PartialCookie
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.PartialCookie.html
+  name: PartialCookie
+  nameWithType: PartialCookie
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.PartialCookie
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor.html
+  name: PartitionDescriptor
+  nameWithType: PartitionDescriptor
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.PartitionKey
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.PartitionKey
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.PartitionKey.html
+  name: PartitionKey
+  nameWithType: PartitionKey
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.PartitionKey
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.SetCookieOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieOptions.html
+  name: SetCookieOptions
+  nameWithType: SetCookieOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.SetCookieResult
+  href: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieResult.html
+  name: SetCookieResult
+  nameWithType: SetCookieResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.SetCookieResult
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.html
+  name: StorageKeyPartitionDescriptor
+  nameWithType: StorageKeyPartitionDescriptor
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule.html
+  name: StorageModule
+  nameWithType: StorageModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+- uid: OpenQA.Selenium.BiDi.Modules.Storage
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Storage
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html

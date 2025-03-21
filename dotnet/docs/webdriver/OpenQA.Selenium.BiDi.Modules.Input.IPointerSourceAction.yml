@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  id: IPointerSourceAction
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IPointerSourceAction
+  nameWithType: IPointerSourceAction
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerSourceAction
+  type: Interface
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IPointerSourceAction
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 64
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: >-
+      [JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
+
+      [JsonDerivedType(typeof(Pause), "pause")]
+
+      [JsonDerivedType(typeof(DownPointer), "pointerDown")]
+
+      [JsonDerivedType(typeof(UpPointer), "pointerUp")]
+
+      [JsonDerivedType(typeof(MovePointer), "pointerMove")]
+
+      public interface IPointerSourceAction : ISourceAction
+    content.vb: >-
+      <JsonPolymorphic(TypeDiscriminatorPropertyName:="type")>
+
+      <JsonDerivedType(GetType(Pause), "pause")>
+
+      <JsonDerivedType(GetType(DownPointer), "pointerDown")>
+
+      <JsonDerivedType(GetType(UpPointer), "pointerUp")>
+
+      <JsonDerivedType(GetType(MovePointer), "pointerMove")>
+
+      Public Interface IPointerSourceAction Inherits ISourceAction
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPolymorphicAttribute
+    ctor: System.Text.Json.Serialization.JsonPolymorphicAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: TypeDiscriminatorPropertyName
+      type: System.String
+      value: type
+  - type: System.Text.Json.Serialization.JsonDerivedTypeAttribute
+    ctor: System.Text.Json.Serialization.JsonDerivedTypeAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: OpenQA.Selenium.BiDi.Modules.Input.Pause
+    - type: System.String
+      value: pause
+  - type: System.Text.Json.Serialization.JsonDerivedTypeAttribute
+    ctor: System.Text.Json.Serialization.JsonDerivedTypeAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: OpenQA.Selenium.BiDi.Modules.Input.DownPointer
+    - type: System.String
+      value: pointerDown
+  - type: System.Text.Json.Serialization.JsonDerivedTypeAttribute
+    ctor: System.Text.Json.Serialization.JsonDerivedTypeAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: OpenQA.Selenium.BiDi.Modules.Input.UpPointer
+    - type: System.String
+      value: pointerUp
+  - type: System.Text.Json.Serialization.JsonDerivedTypeAttribute
+    ctor: System.Text.Json.Serialization.JsonDerivedTypeAttribute.#ctor(System.Type,System.String)
+    arguments:
+    - type: System.Type
+      value: OpenQA.Selenium.BiDi.Modules.Input.MovePointer
+    - type: System.String
+      value: pointerMove
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html

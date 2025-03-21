@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  id: Session
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Session.AutoDetectProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.CapabilitiesRequest
+  - OpenQA.Selenium.BiDi.Modules.Session.Capability
+  - OpenQA.Selenium.BiDi.Modules.Session.CapabilityRequest
+  - OpenQA.Selenium.BiDi.Modules.Session.DirectProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.NewOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.NewResult
+  - OpenQA.Selenium.BiDi.Modules.Session.PacProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.StatusOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+  - OpenQA.Selenium.BiDi.Modules.Session.SubscribeOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.Subscription
+  - OpenQA.Selenium.BiDi.Modules.Session.SystemProxyConfiguration
+  - OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByAttributesOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByIdOptions
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  - OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Session.AutoDetectProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.AutoDetectProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.AutoDetectProxyConfiguration.html
+  name: AutoDetectProxyConfiguration
+  nameWithType: AutoDetectProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.AutoDetectProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.CapabilitiesRequest
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.CapabilitiesRequest
+  href: OpenQA.Selenium.BiDi.Modules.Session.CapabilitiesRequest.html
+  name: CapabilitiesRequest
+  nameWithType: CapabilitiesRequest
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.CapabilitiesRequest
+- uid: OpenQA.Selenium.BiDi.Modules.Session.Capability
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.Capability
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.Capability.html
+  name: Capability
+  nameWithType: Capability
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.Capability
+- uid: OpenQA.Selenium.BiDi.Modules.Session.CapabilityRequest
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.CapabilityRequest
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.CapabilityRequest.html
+  name: CapabilityRequest
+  nameWithType: CapabilityRequest
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.CapabilityRequest
+- uid: OpenQA.Selenium.BiDi.Modules.Session.DirectProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.DirectProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.DirectProxyConfiguration.html
+  name: DirectProxyConfiguration
+  nameWithType: DirectProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.DirectProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.EndOptions.html
+  name: EndOptions
+  nameWithType: EndOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration.html
+  name: ManualProxyConfiguration
+  nameWithType: ManualProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ManualProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.NewOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.NewOptions
+  href: OpenQA.Selenium.BiDi.Modules.Session.NewOptions.html
+  name: NewOptions
+  nameWithType: NewOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.NewOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.NewResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.NewResult
+  href: OpenQA.Selenium.BiDi.Modules.Session.NewResult.html
+  name: NewResult
+  nameWithType: NewResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.NewResult
+- uid: OpenQA.Selenium.BiDi.Modules.Session.PacProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.PacProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.PacProxyConfiguration.html
+  name: PacProxyConfiguration
+  nameWithType: PacProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.PacProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration.html
+  name: ProxyConfiguration
+  nameWithType: ProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.ProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.StatusOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.StatusOptions
+  href: OpenQA.Selenium.BiDi.Modules.Session.StatusOptions.html
+  name: StatusOptions
+  nameWithType: StatusOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.StatusOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+  href: OpenQA.Selenium.BiDi.Modules.Session.StatusResult.html
+  name: StatusResult
+  nameWithType: StatusResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+- uid: OpenQA.Selenium.BiDi.Modules.Session.SubscribeOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.SubscribeOptions
+  href: OpenQA.Selenium.BiDi.Modules.Session.SubscribeOptions.html
+  name: SubscribeOptions
+  nameWithType: SubscribeOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.SubscribeOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.Subscription
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.Subscription
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.Subscription.html
+  name: Subscription
+  nameWithType: Subscription
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.Subscription
+- uid: OpenQA.Selenium.BiDi.Modules.Session.SystemProxyConfiguration
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.SystemProxyConfiguration
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.SystemProxyConfiguration.html
+  name: SystemProxyConfiguration
+  nameWithType: SystemProxyConfiguration
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.SystemProxyConfiguration
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByAttributesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByAttributesOptions
+  href: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByAttributesOptions.html
+  name: UnsubscribeByAttributesOptions
+  nameWithType: UnsubscribeByAttributesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByAttributesOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByIdOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByIdOptions
+  href: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByIdOptions.html
+  name: UnsubscribeByIdOptions
+  nameWithType: UnsubscribeByIdOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UnsubscribeByIdOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler.html
+  name: UserPromptHandler
+  nameWithType: UserPromptHandler
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandler
+- uid: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType.html
+  name: UserPromptHandlerType
+  nameWithType: UserPromptHandlerType
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.UserPromptHandlerType
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html

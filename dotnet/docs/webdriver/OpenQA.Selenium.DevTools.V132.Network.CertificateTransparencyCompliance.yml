@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  commentId: T:OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  id: CertificateTransparencyCompliance
+  parent: OpenQA.Selenium.DevTools.V132.Network
+  children:
+  - OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Compliant
+  - OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.NotCompliant
+  - OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Unknown
+  langs:
+  - csharp
+  - vb
+  name: CertificateTransparencyCompliance
+  nameWithType: CertificateTransparencyCompliance
+  fullName: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CertificateTransparencyCompliance
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: CertificateTransparencyCompliance
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<CertificateTransparencyCompliance>))]
+
+      public enum CertificateTransparencyCompliance
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of CertificateTransparencyCompliance)))>
+
+      Public Enum CertificateTransparencyCompliance
+- uid: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Unknown
+  commentId: F:OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Unknown
+  id: Unknown
+  parent: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: CertificateTransparencyCompliance.Unknown
+  fullName: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Unknown
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Unknown
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: Enumerated member for the unknown value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "unknown")]
+
+      Unknown = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+    content.vb: >-
+      <EnumMember(Value:="unknown")>
+
+      Unknown = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: unknown
+- uid: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.NotCompliant
+  commentId: F:OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.NotCompliant
+  id: NotCompliant
+  parent: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  langs:
+  - csharp
+  - vb
+  name: NotCompliant
+  nameWithType: CertificateTransparencyCompliance.NotCompliant
+  fullName: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.NotCompliant
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NotCompliant
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: Enumerated member for the not-compliant value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "not-compliant")]
+
+      NotCompliant = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+    content.vb: >-
+      <EnumMember(Value:="not-compliant")>
+
+      NotCompliant = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: not-compliant
+- uid: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Compliant
+  commentId: F:OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Compliant
+  id: Compliant
+  parent: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  langs:
+  - csharp
+  - vb
+  name: Compliant
+  nameWithType: CertificateTransparencyCompliance.Compliant
+  fullName: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.Compliant
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Compliant
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Network/CertificateTransparencyCompliance.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Network
+  summary: Enumerated member for the compliant value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "compliant")]
+
+      Compliant = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+    content.vb: >-
+      <EnumMember(Value:="compliant")>
+
+      Compliant = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: compliant
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Network
+  commentId: N:OpenQA.Selenium.DevTools.V132.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Network
+  nameWithType: OpenQA.Selenium.DevTools.V132.Network
+  fullName: OpenQA.Selenium.DevTools.V132.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V132.Network.html
+- uid: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  commentId: T:OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance
+  parent: OpenQA.Selenium.DevTools.V132.Network
+  href: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance.html
+  name: CertificateTransparencyCompliance
+  nameWithType: CertificateTransparencyCompliance
+  fullName: OpenQA.Selenium.DevTools.V132.Network.CertificateTransparencyCompliance

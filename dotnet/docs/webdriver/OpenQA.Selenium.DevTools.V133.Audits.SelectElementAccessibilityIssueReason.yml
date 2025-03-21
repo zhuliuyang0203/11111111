@@ -1,0 +1,310 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  id: SelectElementAccessibilityIssueReason
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  children:
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedOptGroupChild
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedSelectChild
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentLegendChild
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentOptionChild
+  - OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.NonPhrasingContentOptionChild
+  langs:
+  - csharp
+  - vb
+  name: SelectElementAccessibilityIssueReason
+  nameWithType: SelectElementAccessibilityIssueReason
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SelectElementAccessibilityIssueReason
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: SelectElementAccessibilityIssueReason
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<SelectElementAccessibilityIssueReason>))]
+
+      public enum SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of SelectElementAccessibilityIssueReason)))>
+
+      Public Enum SelectElementAccessibilityIssueReason
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedSelectChild
+  commentId: F:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedSelectChild
+  id: DisallowedSelectChild
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: DisallowedSelectChild
+  nameWithType: SelectElementAccessibilityIssueReason.DisallowedSelectChild
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedSelectChild
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisallowedSelectChild
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: Enumerated member for the DisallowedSelectChild value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "DisallowedSelectChild")]
+
+      DisallowedSelectChild = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <EnumMember(Value:="DisallowedSelectChild")>
+
+      DisallowedSelectChild = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: DisallowedSelectChild
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedOptGroupChild
+  commentId: F:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedOptGroupChild
+  id: DisallowedOptGroupChild
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: DisallowedOptGroupChild
+  nameWithType: SelectElementAccessibilityIssueReason.DisallowedOptGroupChild
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.DisallowedOptGroupChild
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisallowedOptGroupChild
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: Enumerated member for the DisallowedOptGroupChild value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "DisallowedOptGroupChild")]
+
+      DisallowedOptGroupChild = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <EnumMember(Value:="DisallowedOptGroupChild")>
+
+      DisallowedOptGroupChild = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: DisallowedOptGroupChild
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.NonPhrasingContentOptionChild
+  commentId: F:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.NonPhrasingContentOptionChild
+  id: NonPhrasingContentOptionChild
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: NonPhrasingContentOptionChild
+  nameWithType: SelectElementAccessibilityIssueReason.NonPhrasingContentOptionChild
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.NonPhrasingContentOptionChild
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NonPhrasingContentOptionChild
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: Enumerated member for the NonPhrasingContentOptionChild value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "NonPhrasingContentOptionChild")]
+
+      NonPhrasingContentOptionChild = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <EnumMember(Value:="NonPhrasingContentOptionChild")>
+
+      NonPhrasingContentOptionChild = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: NonPhrasingContentOptionChild
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentOptionChild
+  commentId: F:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentOptionChild
+  id: InteractiveContentOptionChild
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: InteractiveContentOptionChild
+  nameWithType: SelectElementAccessibilityIssueReason.InteractiveContentOptionChild
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentOptionChild
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InteractiveContentOptionChild
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: Enumerated member for the InteractiveContentOptionChild value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "InteractiveContentOptionChild")]
+
+      InteractiveContentOptionChild = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <EnumMember(Value:="InteractiveContentOptionChild")>
+
+      InteractiveContentOptionChild = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: InteractiveContentOptionChild
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentLegendChild
+  commentId: F:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentLegendChild
+  id: InteractiveContentLegendChild
+  parent: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  langs:
+  - csharp
+  - vb
+  name: InteractiveContentLegendChild
+  nameWithType: SelectElementAccessibilityIssueReason.InteractiveContentLegendChild
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.InteractiveContentLegendChild
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InteractiveContentLegendChild
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/SelectElementAccessibilityIssueReason.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: Enumerated member for the InteractiveContentLegendChild value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "InteractiveContentLegendChild")]
+
+      InteractiveContentLegendChild = 4
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+    content.vb: >-
+      <EnumMember(Value:="InteractiveContentLegendChild")>
+
+      InteractiveContentLegendChild = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: InteractiveContentLegendChild
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Audits
+  commentId: N:OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Audits
+  nameWithType: OpenQA.Selenium.DevTools.V133.Audits
+  fullName: OpenQA.Selenium.DevTools.V133.Audits
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason.html
+  name: SelectElementAccessibilityIssueReason
+  nameWithType: SelectElementAccessibilityIssueReason
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueReason

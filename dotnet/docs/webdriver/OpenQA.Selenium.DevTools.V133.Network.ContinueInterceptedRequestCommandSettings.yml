@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  id: ContinueInterceptedRequestCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Network
+  children:
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+  - OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+  langs:
+  - csharp
+  - vb
+  name: ContinueInterceptedRequestCommandSettings
+  nameWithType: ContinueInterceptedRequestCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueInterceptedRequestCommandSettings
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: ContinueInterceptedRequest
+  example: []
+  syntax:
+    content: 'public sealed class ContinueInterceptedRequestCommandSettings : ICommand'
+    content.vb: Public NotInheritable Class ContinueInterceptedRequestCommandSettings Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+  id: CommandName
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: CommandName
+  nameWithType: ContinueInterceptedRequestCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CommandName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets the name of the command.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string CommandName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property CommandName As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName*
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand.CommandName
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+  id: InterceptionId
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: InterceptionId
+  nameWithType: ContinueInterceptedRequestCommandSettings.InterceptionId
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InterceptionId
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the interceptionId
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("interceptionId")]
+
+      public string InterceptionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("interceptionId")>
+
+      Public Property InterceptionId As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: interceptionId
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+  id: ErrorReason
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: ErrorReason
+  nameWithType: ContinueInterceptedRequestCommandSettings.ErrorReason
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ErrorReason
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the errorReason
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("errorReason")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ErrorReason? ErrorReason { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.DevTools.V133.Network.ErrorReason}
+    content.vb: >-
+      <JsonPropertyName("errorReason")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ErrorReason As ErrorReason?
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: errorReason
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+  id: RawResponse
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: RawResponse
+  nameWithType: ContinueInterceptedRequestCommandSettings.RawResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RawResponse
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the rawResponse
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("rawResponse")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? RawResponse { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("rawResponse")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property RawResponse As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: rawResponse
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+  id: Url
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: ContinueInterceptedRequestCommandSettings.Url
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Url
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the url
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("url")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("url")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Url As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: url
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+  id: Method
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: ContinueInterceptedRequestCommandSettings.Method
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Method
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the method
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("method")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Method { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("method")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Method As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: method
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+  id: PostData
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PostData
+  nameWithType: ContinueInterceptedRequestCommandSettings.PostData
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PostData
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the postData
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("postData")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? PostData { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("postData")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PostData As String
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: postData
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+  id: Headers
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: ContinueInterceptedRequestCommandSettings.Headers
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Headers
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 66
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the headers
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("headers")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public Headers? Headers { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Network.Headers
+    content.vb: >-
+      <JsonPropertyName("headers")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Headers As Headers
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: headers
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  commentId: P:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  id: AuthChallengeResponse
+  parent: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: AuthChallengeResponse
+  nameWithType: ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AuthChallengeResponse
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Network/ContinueInterceptedRequestCommand.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Network
+  summary: Gets or sets the authChallengeResponse
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("authChallengeResponse")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public AuthChallengeResponse? AuthChallengeResponse { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Network.AuthChallengeResponse
+    content.vb: >-
+      <JsonPropertyName("authChallengeResponse")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property AuthChallengeResponse As AuthChallengeResponse
+  overload: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: authChallengeResponse
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Network
+  commentId: N:OpenQA.Selenium.DevTools.V133.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Network
+  nameWithType: OpenQA.Selenium.DevTools.V133.Network
+  fullName: OpenQA.Selenium.DevTools.V133.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V133.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V133.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.DevTools.ICommand
+  commentId: T:OpenQA.Selenium.DevTools.ICommand
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: OpenQA.Selenium.DevTools.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_CommandName
+  name: CommandName
+  nameWithType: ContinueInterceptedRequestCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.CommandName
+- uid: OpenQA.Selenium.DevTools.ICommand.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.ICommand.CommandName
+  parent: OpenQA.Selenium.DevTools.ICommand
+  href: OpenQA.Selenium.DevTools.ICommand.html#OpenQA_Selenium_DevTools_ICommand_CommandName
+  name: CommandName
+  nameWithType: ICommand.CommandName
+  fullName: OpenQA.Selenium.DevTools.ICommand.CommandName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_InterceptionId
+  name: InterceptionId
+  nameWithType: ContinueInterceptedRequestCommandSettings.InterceptionId
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.InterceptionId
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_ErrorReason
+  name: ErrorReason
+  nameWithType: ContinueInterceptedRequestCommandSettings.ErrorReason
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.ErrorReason
+- uid: System.Nullable{OpenQA.Selenium.DevTools.V133.Network.ErrorReason}
+  commentId: T:System.Nullable{OpenQA.Selenium.DevTools.V133.Network.ErrorReason}
+  parent: System
+  definition: System.Nullable`1
+  href: OpenQA.Selenium.DevTools.V133.Network.ErrorReason.html
+  name: ErrorReason?
+  nameWithType: ErrorReason?
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ErrorReason?
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Network.ErrorReason
+    name: ErrorReason
+    href: OpenQA.Selenium.DevTools.V133.Network.ErrorReason.html
+  - name: '?'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Network.ErrorReason
+    name: ErrorReason
+    href: OpenQA.Selenium.DevTools.V133.Network.ErrorReason.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_RawResponse
+  name: RawResponse
+  nameWithType: ContinueInterceptedRequestCommandSettings.RawResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.RawResponse
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_Url
+  name: Url
+  nameWithType: ContinueInterceptedRequestCommandSettings.Url
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Url
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_Method
+  name: Method
+  nameWithType: ContinueInterceptedRequestCommandSettings.Method
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Method
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_PostData
+  name: PostData
+  nameWithType: ContinueInterceptedRequestCommandSettings.PostData
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.PostData
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_Headers
+  name: Headers
+  nameWithType: ContinueInterceptedRequestCommandSettings.Headers
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.Headers
+- uid: OpenQA.Selenium.DevTools.V133.Network.Headers
+  commentId: T:OpenQA.Selenium.DevTools.V133.Network.Headers
+  parent: OpenQA.Selenium.DevTools.V133.Network
+  href: OpenQA.Selenium.DevTools.V133.Network.Headers.html
+  name: Headers
+  nameWithType: Headers
+  fullName: OpenQA.Selenium.DevTools.V133.Network.Headers
+- uid: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  href: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.html#OpenQA_Selenium_DevTools_V133_Network_ContinueInterceptedRequestCommandSettings_AuthChallengeResponse
+  name: AuthChallengeResponse
+  nameWithType: ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Network.ContinueInterceptedRequestCommandSettings.AuthChallengeResponse
+- uid: OpenQA.Selenium.DevTools.V133.Network.AuthChallengeResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.Network.AuthChallengeResponse
+  parent: OpenQA.Selenium.DevTools.V133.Network
+  href: OpenQA.Selenium.DevTools.V133.Network.AuthChallengeResponse.html
+  name: AuthChallengeResponse
+  nameWithType: AuthChallengeResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Network.AuthChallengeResponse

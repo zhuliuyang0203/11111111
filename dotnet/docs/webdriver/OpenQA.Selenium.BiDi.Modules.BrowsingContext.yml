@@ -1,0 +1,544 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  id: BrowsingContext
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextType
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CssLocator
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ElementClipRectangle
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ImageFormat
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.Navigation
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPage
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPageRange
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryResult
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptClosedEventArgs
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptOpenedEventArgs
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.Viewport
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.XPathLocator
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.html
+  name: AccessibilityLocator
+  nameWithType: AccessibilityLocator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.html
+  name: AccessibilityLocator.AccessibilityLocatorValue
+  nameWithType: AccessibilityLocator.AccessibilityLocatorValue
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+    name: AccessibilityLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+    name: AccessibilityLocatorValue
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator
+    name: AccessibilityLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue
+    name: AccessibilityLocatorValue
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.AccessibilityLocator.AccessibilityLocatorValue.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions.html
+  name: ActivateOptions
+  nameWithType: ActivateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html
+  name: BoxClipRectangle
+  nameWithType: BoxClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html
+  name: BrowsingContext
+  nameWithType: BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions.html
+  name: BrowsingContextGetTreeOptions
+  nameWithType: BrowsingContextGetTreeOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo.html
+  name: BrowsingContextInfo
+  nameWithType: BrowsingContextInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule.html
+  name: BrowsingContextInputModule
+  nameWithType: BrowsingContextInputModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.html
+  name: BrowsingContextLogModule
+  nameWithType: BrowsingContextLogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule.html
+  name: BrowsingContextModule
+  nameWithType: BrowsingContextModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule.html
+  name: BrowsingContextNetworkModule
+  nameWithType: BrowsingContextNetworkModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule.html
+  name: BrowsingContextScriptModule
+  nameWithType: BrowsingContextScriptModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule.html
+  name: BrowsingContextStorageModule
+  nameWithType: BrowsingContextStorageModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  name: CaptureScreenshotOptions
+  nameWithType: CaptureScreenshotOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  name: CaptureScreenshotOptions.ScreenshotOrigin
+  nameWithType: CaptureScreenshotOptions.ScreenshotOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+    name: CaptureScreenshotOptions
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+    name: ScreenshotOrigin
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+    name: CaptureScreenshotOptions
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+    name: ScreenshotOrigin
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult.html
+  name: CaptureScreenshotResult
+  nameWithType: CaptureScreenshotResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle.html
+  name: ClipRectangle
+  nameWithType: ClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions.html
+  name: CloseOptions
+  nameWithType: CloseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.html
+  name: ContextLocator
+  nameWithType: ContextLocator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.html
+  name: ContextLocator.ContextLocatorValue
+  nameWithType: ContextLocator.ContextLocatorValue
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+    name: ContextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+    name: ContextLocatorValue
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator
+    name: ContextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue
+    name: ContextLocatorValue
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextLocator.ContextLocatorValue.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextType
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextType.html
+  name: ContextType
+  nameWithType: ContextType
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ContextType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateOptions.html
+  name: CreateOptions
+  nameWithType: CreateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateResult.html
+  name: CreateResult
+  nameWithType: CreateResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CreateResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CssLocator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CssLocator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CssLocator.html
+  name: CssLocator
+  nameWithType: CssLocator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CssLocator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ElementClipRectangle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ElementClipRectangle
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ElementClipRectangle.html
+  name: ElementClipRectangle
+  nameWithType: ElementClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ElementClipRectangle
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeOptions.html
+  name: GetTreeOptions
+  nameWithType: GetTreeOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeResult.html
+  name: GetTreeResult
+  nameWithType: GetTreeResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.GetTreeResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions.html
+  name: HandleUserPromptOptions
+  nameWithType: HandleUserPromptOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ImageFormat
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ImageFormat
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ImageFormat.html
+  name: ImageFormat
+  nameWithType: ImageFormat
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ImageFormat
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  name: InnerTextLocator
+  nameWithType: InnerTextLocator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  name: InnerTextLocator.Match
+  nameWithType: InnerTextLocator.Match
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+    name: InnerTextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+    name: Match
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+    name: InnerTextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+    name: Match
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions.html
+  name: LocateNodesOptions
+  nameWithType: LocateNodesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult.html
+  name: LocateNodesResult
+  nameWithType: LocateNodesResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator.html
+  name: Locator
+  nameWithType: Locator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions.html
+  name: NavigateOptions
+  nameWithType: NavigateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult.html
+  name: NavigateResult
+  nameWithType: NavigateResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Navigation
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.Navigation
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Navigation.html
+  name: Navigation
+  nameWithType: Navigation
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Navigation
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo.html
+  name: NavigationInfo
+  nameWithType: NavigationInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.html
+  name: PrintMargin
+  nameWithType: PrintMargin
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions.html
+  name: PrintOptions
+  nameWithType: PrintOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.html
+  name: PrintOrientation
+  nameWithType: PrintOrientation
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPage
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPage
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPage.html
+  name: PrintPage
+  nameWithType: PrintPage
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPage
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPageRange
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPageRange
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPageRange.html
+  name: PrintPageRange
+  nameWithType: PrintPageRange
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintPageRange
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult.html
+  name: PrintResult
+  nameWithType: PrintResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState.html
+  name: ReadinessState
+  nameWithType: ReadinessState
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReadinessState
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions.html
+  name: ReloadOptions
+  nameWithType: ReloadOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions.html
+  name: SetViewportOptions
+  nameWithType: SetViewportOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions.html
+  name: TraverseHistoryOptions
+  nameWithType: TraverseHistoryOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryResult
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryResult.html
+  name: TraverseHistoryResult
+  nameWithType: TraverseHistoryResult
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryResult
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptClosedEventArgs
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptClosedEventArgs
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptClosedEventArgs.html
+  name: UserPromptClosedEventArgs
+  nameWithType: UserPromptClosedEventArgs
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptClosedEventArgs
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptOpenedEventArgs
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptOpenedEventArgs
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptOpenedEventArgs.html
+  name: UserPromptOpenedEventArgs
+  nameWithType: UserPromptOpenedEventArgs
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptOpenedEventArgs
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.html
+  name: UserPromptType
+  nameWithType: UserPromptType
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Viewport
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.Viewport
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Viewport.html
+  name: Viewport
+  nameWithType: Viewport
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Viewport
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.XPathLocator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.XPathLocator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.XPathLocator.html
+  name: XPathLocator
+  nameWithType: XPathLocator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.XPathLocator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html

@@ -1,0 +1,662 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  commentId: T:OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  id: StorageType
+  parent: OpenQA.Selenium.DevTools.V134.Storage
+  children:
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.All
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.CacheStorage
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.Cookies
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.FileSystems
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.Indexeddb
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.InterestGroups
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.LocalStorage
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.Other
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.ServiceWorkers
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.ShaderCache
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.SharedStorage
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.StorageBuckets
+  - OpenQA.Selenium.DevTools.V134.Storage.StorageType.Websql
+  langs:
+  - csharp
+  - vb
+  name: StorageType
+  nameWithType: StorageType
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StorageType
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: StorageType
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<StorageType>))]
+
+      public enum StorageType
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of StorageType)))>
+
+      Public Enum StorageType
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Cookies
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.Cookies
+  id: Cookies
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: StorageType.Cookies
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Cookies
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Cookies
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the cookies value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "cookies")]
+
+      Cookies = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="cookies")>
+
+      Cookies = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: cookies
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.FileSystems
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.FileSystems
+  id: FileSystems
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: FileSystems
+  nameWithType: StorageType.FileSystems
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.FileSystems
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FileSystems
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the file_systems value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "file_systems")]
+
+      FileSystems = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="file_systems")>
+
+      FileSystems = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: file_systems
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Indexeddb
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.Indexeddb
+  id: Indexeddb
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: Indexeddb
+  nameWithType: StorageType.Indexeddb
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Indexeddb
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Indexeddb
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the indexeddb value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "indexeddb")]
+
+      Indexeddb = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="indexeddb")>
+
+      Indexeddb = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: indexeddb
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.LocalStorage
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.LocalStorage
+  id: LocalStorage
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: LocalStorage
+  nameWithType: StorageType.LocalStorage
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.LocalStorage
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LocalStorage
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the local_storage value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "local_storage")]
+
+      LocalStorage = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="local_storage")>
+
+      LocalStorage = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: local_storage
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.ShaderCache
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.ShaderCache
+  id: ShaderCache
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: ShaderCache
+  nameWithType: StorageType.ShaderCache
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.ShaderCache
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ShaderCache
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the shader_cache value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "shader_cache")]
+
+      ShaderCache = 4
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="shader_cache")>
+
+      ShaderCache = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: shader_cache
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Websql
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.Websql
+  id: Websql
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: Websql
+  nameWithType: StorageType.Websql
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Websql
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Websql
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the websql value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "websql")]
+
+      Websql = 5
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="websql")>
+
+      Websql = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: websql
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.ServiceWorkers
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.ServiceWorkers
+  id: ServiceWorkers
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: ServiceWorkers
+  nameWithType: StorageType.ServiceWorkers
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.ServiceWorkers
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ServiceWorkers
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 48
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the service_workers value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "service_workers")]
+
+      ServiceWorkers = 6
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="service_workers")>
+
+      ServiceWorkers = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: service_workers
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.CacheStorage
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.CacheStorage
+  id: CacheStorage
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: CacheStorage
+  nameWithType: StorageType.CacheStorage
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.CacheStorage
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CacheStorage
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the cache_storage value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "cache_storage")]
+
+      CacheStorage = 7
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="cache_storage")>
+
+      CacheStorage = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: cache_storage
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.InterestGroups
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.InterestGroups
+  id: InterestGroups
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: InterestGroups
+  nameWithType: StorageType.InterestGroups
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.InterestGroups
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InterestGroups
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the interest_groups value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "interest_groups")]
+
+      InterestGroups = 8
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="interest_groups")>
+
+      InterestGroups = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: interest_groups
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.SharedStorage
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.SharedStorage
+  id: SharedStorage
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: SharedStorage
+  nameWithType: StorageType.SharedStorage
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.SharedStorage
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedStorage
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 63
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the shared_storage value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "shared_storage")]
+
+      SharedStorage = 9
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="shared_storage")>
+
+      SharedStorage = 9
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: shared_storage
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.StorageBuckets
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.StorageBuckets
+  id: StorageBuckets
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: StorageBuckets
+  nameWithType: StorageType.StorageBuckets
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.StorageBuckets
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StorageBuckets
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 68
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the storage_buckets value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "storage_buckets")]
+
+      StorageBuckets = 10
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="storage_buckets")>
+
+      StorageBuckets = 10
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: storage_buckets
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.All
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.All
+  id: All
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: StorageType.All
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.All
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: All
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the all value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "all")]
+
+      All = 11
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="all")>
+
+      All = 11
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: all
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Other
+  commentId: F:OpenQA.Selenium.DevTools.V134.Storage.StorageType.Other
+  id: Other
+  parent: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: StorageType.Other
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType.Other
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Other
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Storage/StorageType.cs
+    startLine: 78
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Storage
+  summary: Enumerated member for the other value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "other")]
+
+      Other = 12
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+    content.vb: >-
+      <EnumMember(Value:="other")>
+
+      Other = 12
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: other
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Storage
+  commentId: N:OpenQA.Selenium.DevTools.V134.Storage
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Storage
+  nameWithType: OpenQA.Selenium.DevTools.V134.Storage
+  fullName: OpenQA.Selenium.DevTools.V134.Storage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Storage
+    name: Storage
+    href: OpenQA.Selenium.DevTools.V134.Storage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Storage
+    name: Storage
+    href: OpenQA.Selenium.DevTools.V134.Storage.html
+- uid: OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  commentId: T:OpenQA.Selenium.DevTools.V134.Storage.StorageType
+  parent: OpenQA.Selenium.DevTools.V134.Storage
+  href: OpenQA.Selenium.DevTools.V134.Storage.StorageType.html
+  name: StorageType
+  nameWithType: StorageType
+  fullName: OpenQA.Selenium.DevTools.V134.Storage.StorageType

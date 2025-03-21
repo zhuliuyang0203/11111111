@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  id: ClientWindowState
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Fullscreen
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Maximized
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Minimized
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Normal
+  langs:
+  - csharp
+  - vb
+  name: ClientWindowState
+  nameWithType: ClientWindowState
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ClientWindowState
+    path: ../src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: public enum ClientWindowState
+    content.vb: Public Enum ClientWindowState
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Fullscreen
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Fullscreen
+  id: Fullscreen
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  langs:
+  - csharp
+  - vb
+  name: Fullscreen
+  nameWithType: ClientWindowState.Fullscreen
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Fullscreen
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Fullscreen
+    path: ../src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: Fullscreen = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Maximized
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Maximized
+  id: Maximized
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  langs:
+  - csharp
+  - vb
+  name: Maximized
+  nameWithType: ClientWindowState.Maximized
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Maximized
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Maximized
+    path: ../src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: Maximized = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Minimized
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Minimized
+  id: Minimized
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  langs:
+  - csharp
+  - vb
+  name: Minimized
+  nameWithType: ClientWindowState.Minimized
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Minimized
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Minimized
+    path: ../src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: Minimized = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Normal
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Normal
+  id: Normal
+  parent: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: ClientWindowState.Normal
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.Normal
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Normal
+    path: ../src/webdriver/BiDi/Modules/Browser/ClientWindowInfo.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Browser
+  syntax:
+    content: Normal = 3
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Browser
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Browser
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.html
+  name: ClientWindowState
+  nameWithType: ClientWindowState
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState

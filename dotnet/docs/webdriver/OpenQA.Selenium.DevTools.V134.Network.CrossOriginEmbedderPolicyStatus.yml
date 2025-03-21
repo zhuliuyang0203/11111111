@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  id: CrossOriginEmbedderPolicyStatus
+  parent: OpenQA.Selenium.DevTools.V134.Network
+  children:
+  - OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  - OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  - OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  - OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+  langs:
+  - csharp
+  - vb
+  name: CrossOriginEmbedderPolicyStatus
+  nameWithType: CrossOriginEmbedderPolicyStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CrossOriginEmbedderPolicyStatus
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: CrossOriginEmbedderPolicyStatus
+  example: []
+  syntax:
+    content: public sealed class CrossOriginEmbedderPolicyStatus
+    content.vb: Public NotInheritable Class CrossOriginEmbedderPolicyStatus
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+  commentId: P:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+  id: Value
+  parent: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: CrossOriginEmbedderPolicyStatus.Value
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Value
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: value
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("value")]
+
+      public CrossOriginEmbedderPolicyValue Value { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue
+    content.vb: >-
+      <JsonPropertyName("value")>
+
+      Public Property Value As CrossOriginEmbedderPolicyValue
+  overload: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: value
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  commentId: P:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  id: ReportOnlyValue
+  parent: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  langs:
+  - csharp
+  - vb
+  name: ReportOnlyValue
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReportOnlyValue
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: reportOnlyValue
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("reportOnlyValue")]
+
+      public CrossOriginEmbedderPolicyValue ReportOnlyValue { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue
+    content.vb: >-
+      <JsonPropertyName("reportOnlyValue")>
+
+      Public Property ReportOnlyValue As CrossOriginEmbedderPolicyValue
+  overload: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reportOnlyValue
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  commentId: P:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  id: ReportingEndpoint
+  parent: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  langs:
+  - csharp
+  - vb
+  name: ReportingEndpoint
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReportingEndpoint
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: reportingEndpoint
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("reportingEndpoint")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? ReportingEndpoint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("reportingEndpoint")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ReportingEndpoint As String
+  overload: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reportingEndpoint
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  commentId: P:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  id: ReportOnlyReportingEndpoint
+  parent: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus
+  langs:
+  - csharp
+  - vb
+  name: ReportOnlyReportingEndpoint
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReportOnlyReportingEndpoint
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Network/CrossOriginEmbedderPolicyStatus.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Network
+  summary: reportOnlyReportingEndpoint
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("reportOnlyReportingEndpoint")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? ReportOnlyReportingEndpoint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("reportOnlyReportingEndpoint")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ReportOnlyReportingEndpoint As String
+  overload: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reportOnlyReportingEndpoint
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Network
+  commentId: N:OpenQA.Selenium.DevTools.V134.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Network
+  nameWithType: OpenQA.Selenium.DevTools.V134.Network
+  fullName: OpenQA.Selenium.DevTools.V134.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V134.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Network
+    name: Network
+    href: OpenQA.Selenium.DevTools.V134.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+  href: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.html#OpenQA_Selenium_DevTools_V134_Network_CrossOriginEmbedderPolicyStatus_Value
+  name: Value
+  nameWithType: CrossOriginEmbedderPolicyStatus.Value
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.Value
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue
+  commentId: T:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue
+  parent: OpenQA.Selenium.DevTools.V134.Network
+  href: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue.html
+  name: CrossOriginEmbedderPolicyValue
+  nameWithType: CrossOriginEmbedderPolicyValue
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyValue
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  href: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.html#OpenQA_Selenium_DevTools_V134_Network_CrossOriginEmbedderPolicyStatus_ReportOnlyValue
+  name: ReportOnlyValue
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyValue
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  href: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.html#OpenQA_Selenium_DevTools_V134_Network_CrossOriginEmbedderPolicyStatus_ReportingEndpoint
+  name: ReportingEndpoint
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportingEndpoint
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  href: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.html#OpenQA_Selenium_DevTools_V134_Network_CrossOriginEmbedderPolicyStatus_ReportOnlyReportingEndpoint
+  name: ReportOnlyReportingEndpoint
+  nameWithType: CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint
+  fullName: OpenQA.Selenium.DevTools.V134.Network.CrossOriginEmbedderPolicyStatus.ReportOnlyReportingEndpoint

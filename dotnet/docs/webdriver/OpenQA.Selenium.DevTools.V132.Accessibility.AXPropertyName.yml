@@ -1,0 +1,1894 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  commentId: T:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  id: AXPropertyName
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility
+  children:
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Actions
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Activedescendant
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Atomic
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Autocomplete
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Busy
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Checked
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Controls
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Describedby
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Details
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Disabled
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Editable
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Errormessage
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Expanded
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Flowto
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focusable
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focused
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HasPopup
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Hidden
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HiddenRoot
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Invalid
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Keyshortcuts
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Labelledby
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Level
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Live
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Modal
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiline
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiselectable
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Orientation
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Owns
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Pressed
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Readonly
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Relevant
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Required
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Roledescription
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Root
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Selected
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Settable
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Url
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemax
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemin
+  - OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuetext
+  langs:
+  - csharp
+  - vb
+  name: AXPropertyName
+  nameWithType: AXPropertyName
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AXPropertyName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: AXPropertyName
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<AXPropertyName>))]
+
+      public enum AXPropertyName
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of AXPropertyName)))>
+
+      Public Enum AXPropertyName
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Actions
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Actions
+  id: Actions
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Actions
+  nameWithType: AXPropertyName.Actions
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Actions
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Actions
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the actions value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "actions")]
+
+      Actions = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="actions")>
+
+      Actions = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: actions
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Busy
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Busy
+  id: Busy
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Busy
+  nameWithType: AXPropertyName.Busy
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Busy
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Busy
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the busy value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "busy")]
+
+      Busy = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="busy")>
+
+      Busy = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: busy
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Disabled
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Disabled
+  id: Disabled
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: AXPropertyName.Disabled
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Disabled
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Disabled
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the disabled value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "disabled")]
+
+      Disabled = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="disabled")>
+
+      Disabled = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: disabled
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Editable
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Editable
+  id: Editable
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Editable
+  nameWithType: AXPropertyName.Editable
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Editable
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Editable
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the editable value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "editable")]
+
+      Editable = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="editable")>
+
+      Editable = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: editable
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focusable
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focusable
+  id: Focusable
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Focusable
+  nameWithType: AXPropertyName.Focusable
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focusable
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Focusable
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the focusable value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "focusable")]
+
+      Focusable = 4
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="focusable")>
+
+      Focusable = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: focusable
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focused
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focused
+  id: Focused
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Focused
+  nameWithType: AXPropertyName.Focused
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Focused
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Focused
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the focused value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "focused")]
+
+      Focused = 5
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="focused")>
+
+      Focused = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: focused
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Hidden
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Hidden
+  id: Hidden
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Hidden
+  nameWithType: AXPropertyName.Hidden
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Hidden
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Hidden
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 48
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the hidden value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "hidden")]
+
+      Hidden = 6
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="hidden")>
+
+      Hidden = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: hidden
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HiddenRoot
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HiddenRoot
+  id: HiddenRoot
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: HiddenRoot
+  nameWithType: AXPropertyName.HiddenRoot
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HiddenRoot
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HiddenRoot
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the hiddenRoot value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "hiddenRoot")]
+
+      HiddenRoot = 7
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="hiddenRoot")>
+
+      HiddenRoot = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: hiddenRoot
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Invalid
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Invalid
+  id: Invalid
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: AXPropertyName.Invalid
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Invalid
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Invalid
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the invalid value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "invalid")]
+
+      Invalid = 8
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="invalid")>
+
+      Invalid = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: invalid
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Keyshortcuts
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Keyshortcuts
+  id: Keyshortcuts
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Keyshortcuts
+  nameWithType: AXPropertyName.Keyshortcuts
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Keyshortcuts
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Keyshortcuts
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 63
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the keyshortcuts value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "keyshortcuts")]
+
+      Keyshortcuts = 9
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="keyshortcuts")>
+
+      Keyshortcuts = 9
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: keyshortcuts
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Settable
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Settable
+  id: Settable
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Settable
+  nameWithType: AXPropertyName.Settable
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Settable
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Settable
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 68
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the settable value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "settable")]
+
+      Settable = 10
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="settable")>
+
+      Settable = 10
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: settable
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Roledescription
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Roledescription
+  id: Roledescription
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Roledescription
+  nameWithType: AXPropertyName.Roledescription
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Roledescription
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Roledescription
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the roledescription value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "roledescription")]
+
+      Roledescription = 11
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="roledescription")>
+
+      Roledescription = 11
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: roledescription
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Live
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Live
+  id: Live
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Live
+  nameWithType: AXPropertyName.Live
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Live
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Live
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 78
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the live value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "live")]
+
+      Live = 12
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="live")>
+
+      Live = 12
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: live
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Atomic
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Atomic
+  id: Atomic
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Atomic
+  nameWithType: AXPropertyName.Atomic
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Atomic
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Atomic
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 83
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the atomic value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "atomic")]
+
+      Atomic = 13
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="atomic")>
+
+      Atomic = 13
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: atomic
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Relevant
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Relevant
+  id: Relevant
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Relevant
+  nameWithType: AXPropertyName.Relevant
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Relevant
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Relevant
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 88
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the relevant value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "relevant")]
+
+      Relevant = 14
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="relevant")>
+
+      Relevant = 14
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: relevant
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Root
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Root
+  id: Root
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Root
+  nameWithType: AXPropertyName.Root
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Root
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Root
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 93
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the root value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "root")]
+
+      Root = 15
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="root")>
+
+      Root = 15
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: root
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Autocomplete
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Autocomplete
+  id: Autocomplete
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Autocomplete
+  nameWithType: AXPropertyName.Autocomplete
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Autocomplete
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Autocomplete
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 98
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the autocomplete value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "autocomplete")]
+
+      Autocomplete = 16
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="autocomplete")>
+
+      Autocomplete = 16
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: autocomplete
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HasPopup
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HasPopup
+  id: HasPopup
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: HasPopup
+  nameWithType: AXPropertyName.HasPopup
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.HasPopup
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HasPopup
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 103
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the hasPopup value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "hasPopup")]
+
+      HasPopup = 17
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="hasPopup")>
+
+      HasPopup = 17
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: hasPopup
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Level
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Level
+  id: Level
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: AXPropertyName.Level
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Level
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Level
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 108
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the level value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "level")]
+
+      Level = 18
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="level")>
+
+      Level = 18
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: level
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiselectable
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiselectable
+  id: Multiselectable
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Multiselectable
+  nameWithType: AXPropertyName.Multiselectable
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiselectable
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Multiselectable
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 113
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the multiselectable value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "multiselectable")]
+
+      Multiselectable = 19
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="multiselectable")>
+
+      Multiselectable = 19
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: multiselectable
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Orientation
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Orientation
+  id: Orientation
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: AXPropertyName.Orientation
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Orientation
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Orientation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 118
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the orientation value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "orientation")]
+
+      Orientation = 20
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="orientation")>
+
+      Orientation = 20
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: orientation
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiline
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiline
+  id: Multiline
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Multiline
+  nameWithType: AXPropertyName.Multiline
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Multiline
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Multiline
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 123
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the multiline value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "multiline")]
+
+      Multiline = 21
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="multiline")>
+
+      Multiline = 21
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: multiline
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Readonly
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Readonly
+  id: Readonly
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Readonly
+  nameWithType: AXPropertyName.Readonly
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Readonly
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Readonly
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 128
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the readonly value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "readonly")]
+
+      Readonly = 22
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="readonly")>
+
+      Readonly = 22
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: readonly
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Required
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Required
+  id: Required
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: AXPropertyName.Required
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Required
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Required
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 133
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the required value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "required")]
+
+      Required = 23
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="required")>
+
+      Required = 23
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: required
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemin
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemin
+  id: Valuemin
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Valuemin
+  nameWithType: AXPropertyName.Valuemin
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemin
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Valuemin
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 138
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the valuemin value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "valuemin")]
+
+      Valuemin = 24
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="valuemin")>
+
+      Valuemin = 24
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: valuemin
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemax
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemax
+  id: Valuemax
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Valuemax
+  nameWithType: AXPropertyName.Valuemax
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuemax
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Valuemax
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 143
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the valuemax value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "valuemax")]
+
+      Valuemax = 25
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="valuemax")>
+
+      Valuemax = 25
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: valuemax
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuetext
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuetext
+  id: Valuetext
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Valuetext
+  nameWithType: AXPropertyName.Valuetext
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Valuetext
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Valuetext
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 148
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the valuetext value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "valuetext")]
+
+      Valuetext = 26
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="valuetext")>
+
+      Valuetext = 26
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: valuetext
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Checked
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Checked
+  id: Checked
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Checked
+  nameWithType: AXPropertyName.Checked
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Checked
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Checked
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 153
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the checked value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "checked")]
+
+      Checked = 27
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="checked")>
+
+      Checked = 27
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: checked
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Expanded
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Expanded
+  id: Expanded
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Expanded
+  nameWithType: AXPropertyName.Expanded
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Expanded
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Expanded
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 158
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the expanded value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "expanded")]
+
+      Expanded = 28
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="expanded")>
+
+      Expanded = 28
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: expanded
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Modal
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Modal
+  id: Modal
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Modal
+  nameWithType: AXPropertyName.Modal
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Modal
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Modal
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 163
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the modal value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "modal")]
+
+      Modal = 29
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="modal")>
+
+      Modal = 29
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: modal
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Pressed
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Pressed
+  id: Pressed
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Pressed
+  nameWithType: AXPropertyName.Pressed
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Pressed
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Pressed
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 168
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the pressed value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "pressed")]
+
+      Pressed = 30
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="pressed")>
+
+      Pressed = 30
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: pressed
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Selected
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Selected
+  id: Selected
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Selected
+  nameWithType: AXPropertyName.Selected
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Selected
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Selected
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 173
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the selected value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "selected")]
+
+      Selected = 31
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="selected")>
+
+      Selected = 31
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: selected
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Activedescendant
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Activedescendant
+  id: Activedescendant
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Activedescendant
+  nameWithType: AXPropertyName.Activedescendant
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Activedescendant
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Activedescendant
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 178
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the activedescendant value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "activedescendant")]
+
+      Activedescendant = 32
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="activedescendant")>
+
+      Activedescendant = 32
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: activedescendant
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Controls
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Controls
+  id: Controls
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Controls
+  nameWithType: AXPropertyName.Controls
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Controls
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Controls
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 183
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the controls value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "controls")]
+
+      Controls = 33
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="controls")>
+
+      Controls = 33
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: controls
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Describedby
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Describedby
+  id: Describedby
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Describedby
+  nameWithType: AXPropertyName.Describedby
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Describedby
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Describedby
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 188
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the describedby value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "describedby")]
+
+      Describedby = 34
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="describedby")>
+
+      Describedby = 34
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: describedby
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Details
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Details
+  id: Details
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: AXPropertyName.Details
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Details
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Details
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 193
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the details value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "details")]
+
+      Details = 35
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="details")>
+
+      Details = 35
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: details
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Errormessage
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Errormessage
+  id: Errormessage
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Errormessage
+  nameWithType: AXPropertyName.Errormessage
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Errormessage
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Errormessage
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 198
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the errormessage value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "errormessage")]
+
+      Errormessage = 36
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="errormessage")>
+
+      Errormessage = 36
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: errormessage
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Flowto
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Flowto
+  id: Flowto
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Flowto
+  nameWithType: AXPropertyName.Flowto
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Flowto
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Flowto
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 203
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the flowto value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "flowto")]
+
+      Flowto = 37
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="flowto")>
+
+      Flowto = 37
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: flowto
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Labelledby
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Labelledby
+  id: Labelledby
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Labelledby
+  nameWithType: AXPropertyName.Labelledby
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Labelledby
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Labelledby
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 208
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the labelledby value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "labelledby")]
+
+      Labelledby = 38
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="labelledby")>
+
+      Labelledby = 38
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: labelledby
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Owns
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Owns
+  id: Owns
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Owns
+  nameWithType: AXPropertyName.Owns
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Owns
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Owns
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 213
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the owns value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "owns")]
+
+      Owns = 39
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="owns")>
+
+      Owns = 39
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: owns
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Url
+  commentId: F:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Url
+  id: Url
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: AXPropertyName.Url
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.Url
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Url
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Accessibility/AXPropertyName.cs
+    startLine: 218
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Accessibility
+  summary: Enumerated member for the url value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "url")]
+
+      Url = 40
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+    content.vb: >-
+      <EnumMember(Value:="url")>
+
+      Url = 40
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: url
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility
+  commentId: N:OpenQA.Selenium.DevTools.V132.Accessibility
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Accessibility
+  nameWithType: OpenQA.Selenium.DevTools.V132.Accessibility
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Accessibility
+    name: Accessibility
+    href: OpenQA.Selenium.DevTools.V132.Accessibility.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Accessibility
+    name: Accessibility
+    href: OpenQA.Selenium.DevTools.V132.Accessibility.html
+- uid: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  commentId: T:OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
+  parent: OpenQA.Selenium.DevTools.V132.Accessibility
+  href: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName.html
+  name: AXPropertyName
+  nameWithType: AXPropertyName
+  fullName: OpenQA.Selenium.DevTools.V132.Accessibility.AXPropertyName
