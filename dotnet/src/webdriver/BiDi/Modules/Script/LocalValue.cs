@@ -93,9 +93,6 @@ public abstract record LocalValue
         }
     }
 
-    private static readonly BigInteger MaxDouble = new BigInteger(double.MaxValue);
-    private static readonly BigInteger MinDouble = new BigInteger(double.MinValue);
-
     public static LocalValue ConvertFrom(JsonNode? node)
     {
         if (node is null)
@@ -121,14 +118,16 @@ public abstract record LocalValue
                 {
                     var numberString = node.ToString();
 
-                    var bigNumber = BigInteger.Parse(numberString);
+                    var numberAsDouble = double.Parse(numberString);
 
-                    if (bigNumber > MaxDouble || bigNumber < MinDouble)
+                    if (double.IsInfinity(numberAsDouble))
                     {
+                        // Numbers outside of Int64's range will successfully parse, but become +- Infinity
+                        // We can retain the value using a BigInt
                         return new BigIntLocalValue(numberString);
                     }
 
-                    return new NumberLocalValue(double.Parse(numberString));
+                    return new NumberLocalValue(numberAsDouble);
                 }
 
             case System.Text.Json.JsonValueKind.Array:
