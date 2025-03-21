@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  commentId: T:OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  id: DisplayMode
+  parent: OpenQA.Selenium.DevTools.V134.PWA
+  children:
+  - OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Browser
+  - OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Standalone
+  langs:
+  - csharp
+  - vb
+  name: DisplayMode
+  nameWithType: DisplayMode
+  fullName: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisplayMode
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.PWA
+  summary: DisplayMode
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<DisplayMode>))]
+
+      public enum DisplayMode
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of DisplayMode)))>
+
+      Public Enum DisplayMode
+- uid: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Standalone
+  commentId: F:OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Standalone
+  id: Standalone
+  parent: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  langs:
+  - csharp
+  - vb
+  name: Standalone
+  nameWithType: DisplayMode.Standalone
+  fullName: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Standalone
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Standalone
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.PWA
+  summary: Enumerated member for the standalone value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "standalone")]
+
+      Standalone = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+    content.vb: >-
+      <EnumMember(Value:="standalone")>
+
+      Standalone = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: standalone
+- uid: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Browser
+  commentId: F:OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Browser
+  id: Browser
+  parent: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  langs:
+  - csharp
+  - vb
+  name: Browser
+  nameWithType: DisplayMode.Browser
+  fullName: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.Browser
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Browser
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/PWA/DisplayMode.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.PWA
+  summary: Enumerated member for the browser value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "browser")]
+
+      Browser = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+    content.vb: >-
+      <EnumMember(Value:="browser")>
+
+      Browser = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: browser
+references:
+- uid: OpenQA.Selenium.DevTools.V134.PWA
+  commentId: N:OpenQA.Selenium.DevTools.V134.PWA
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.PWA
+  nameWithType: OpenQA.Selenium.DevTools.V134.PWA
+  fullName: OpenQA.Selenium.DevTools.V134.PWA
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V134.PWA.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V134.PWA.html
+- uid: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  commentId: T:OpenQA.Selenium.DevTools.V134.PWA.DisplayMode
+  parent: OpenQA.Selenium.DevTools.V134.PWA
+  href: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode.html
+  name: DisplayMode
+  nameWithType: DisplayMode
+  fullName: OpenQA.Selenium.DevTools.V134.PWA.DisplayMode

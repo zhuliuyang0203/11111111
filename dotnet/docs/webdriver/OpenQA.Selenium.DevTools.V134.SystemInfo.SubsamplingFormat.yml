@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  commentId: T:OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  id: SubsamplingFormat
+  parent: OpenQA.Selenium.DevTools.V134.SystemInfo
+  children:
+  - OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv420
+  - OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv422
+  - OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv444
+  langs:
+  - csharp
+  - vb
+  name: SubsamplingFormat
+  nameWithType: SubsamplingFormat
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SubsamplingFormat
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.SystemInfo
+  summary: SubsamplingFormat
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<SubsamplingFormat>))]
+
+      public enum SubsamplingFormat
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of SubsamplingFormat)))>
+
+      Public Enum SubsamplingFormat
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv420
+  commentId: F:OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv420
+  id: Yuv420
+  parent: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  langs:
+  - csharp
+  - vb
+  name: Yuv420
+  nameWithType: SubsamplingFormat.Yuv420
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv420
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Yuv420
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.SystemInfo
+  summary: Enumerated member for the yuv420 value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "yuv420")]
+
+      Yuv420 = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+    content.vb: >-
+      <EnumMember(Value:="yuv420")>
+
+      Yuv420 = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: yuv420
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv422
+  commentId: F:OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv422
+  id: Yuv422
+  parent: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  langs:
+  - csharp
+  - vb
+  name: Yuv422
+  nameWithType: SubsamplingFormat.Yuv422
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv422
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Yuv422
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.SystemInfo
+  summary: Enumerated member for the yuv422 value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "yuv422")]
+
+      Yuv422 = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+    content.vb: >-
+      <EnumMember(Value:="yuv422")>
+
+      Yuv422 = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: yuv422
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv444
+  commentId: F:OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv444
+  id: Yuv444
+  parent: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  langs:
+  - csharp
+  - vb
+  name: Yuv444
+  nameWithType: SubsamplingFormat.Yuv444
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.Yuv444
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Yuv444
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/SystemInfo/SubsamplingFormat.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.SystemInfo
+  summary: Enumerated member for the yuv444 value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "yuv444")]
+
+      Yuv444 = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+    content.vb: >-
+      <EnumMember(Value:="yuv444")>
+
+      Yuv444 = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: yuv444
+references:
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo
+  commentId: N:OpenQA.Selenium.DevTools.V134.SystemInfo
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.SystemInfo
+  nameWithType: OpenQA.Selenium.DevTools.V134.SystemInfo
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.SystemInfo
+    name: SystemInfo
+    href: OpenQA.Selenium.DevTools.V134.SystemInfo.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.SystemInfo
+    name: SystemInfo
+    href: OpenQA.Selenium.DevTools.V134.SystemInfo.html
+- uid: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  commentId: T:OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat
+  parent: OpenQA.Selenium.DevTools.V134.SystemInfo
+  href: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat.html
+  name: SubsamplingFormat
+  nameWithType: SubsamplingFormat
+  fullName: OpenQA.Selenium.DevTools.V134.SystemInfo.SubsamplingFormat

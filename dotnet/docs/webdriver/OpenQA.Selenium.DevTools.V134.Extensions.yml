@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions
+  commentId: N:OpenQA.Selenium.DevTools.V134.Extensions
+  id: Extensions
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  - OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  - OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.Extensions
+  nameWithType: OpenQA.Selenium.DevTools.V134.Extensions
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse.html
+  name: ClearStorageItemsCommandResponse
+  nameWithType: ClearStorageItemsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings.html
+  name: ClearStorageItemsCommandSettings
+  nameWithType: ClearStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html
+  name: ExtensionsAdapter
+  nameWithType: ExtensionsAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse.html
+  name: GetStorageItemsCommandResponse
+  nameWithType: GetStorageItemsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings.html
+  name: GetStorageItemsCommandSettings
+  nameWithType: GetStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse.html
+  name: LoadUnpackedCommandResponse
+  nameWithType: LoadUnpackedCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings.html
+  name: LoadUnpackedCommandSettings
+  nameWithType: LoadUnpackedCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse.html
+  name: RemoveStorageItemsCommandResponse
+  nameWithType: RemoveStorageItemsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings.html
+  name: RemoveStorageItemsCommandSettings
+  nameWithType: RemoveStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse.html
+  name: SetStorageItemsCommandResponse
+  nameWithType: SetStorageItemsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings.html
+  name: SetStorageItemsCommandSettings
+  nameWithType: SetStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.html
+  name: StorageArea
+  nameWithType: StorageArea
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse.html
+  name: UninstallCommandResponse
+  nameWithType: UninstallCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings.html
+  name: UninstallCommandSettings
+  nameWithType: UninstallCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Extensions
+  commentId: N:OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Extensions
+  nameWithType: OpenQA.Selenium.DevTools.V134.Extensions
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html

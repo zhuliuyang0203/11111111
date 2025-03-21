@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  id: CaptureScreenshotOptions.ScreenshotOrigin
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Document
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Viewport
+  langs:
+  - csharp
+  - vb
+  name: CaptureScreenshotOptions.ScreenshotOrigin
+  nameWithType: CaptureScreenshotOptions.ScreenshotOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScreenshotOrigin
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public enum CaptureScreenshotOptions.ScreenshotOrigin
+    content.vb: Public Enum CaptureScreenshotOptions.ScreenshotOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Viewport
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Viewport
+  id: Viewport
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  langs:
+  - csharp
+  - vb
+  name: Viewport
+  nameWithType: CaptureScreenshotOptions.ScreenshotOrigin.Viewport
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Viewport
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Viewport
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 39
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Viewport = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Document
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Document
+  id: Document
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: CaptureScreenshotOptions.ScreenshotOrigin.Document
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.Document
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Document
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Document = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  name: CaptureScreenshotOptions.ScreenshotOrigin
+  nameWithType: CaptureScreenshotOptions.ScreenshotOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+    name: CaptureScreenshotOptions
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+    name: ScreenshotOrigin
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+    name: CaptureScreenshotOptions
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin
+    name: ScreenshotOrigin
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.ScreenshotOrigin.html

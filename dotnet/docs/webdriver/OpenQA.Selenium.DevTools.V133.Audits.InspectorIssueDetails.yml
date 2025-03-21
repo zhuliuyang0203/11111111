@@ -1,0 +1,1795 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  id: InspectorIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  children:
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+  - OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: InspectorIssueDetails
+  nameWithType: InspectorIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InspectorIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: InspectorIssueDetails
+  example: []
+  syntax:
+    content: public sealed class InspectorIssueDetails
+    content.vb: Public NotInheritable Class InspectorIssueDetails
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+  id: CookieIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: CookieIssueDetails
+  nameWithType: InspectorIssueDetails.CookieIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CookieIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: cookieIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cookieIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CookieIssueDetails? CookieIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.CookieIssueDetails
+    content.vb: >-
+      <JsonPropertyName("cookieIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CookieIssueDetails As CookieIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cookieIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+  id: MixedContentIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: MixedContentIssueDetails
+  nameWithType: InspectorIssueDetails.MixedContentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MixedContentIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: mixedContentIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("mixedContentIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public MixedContentIssueDetails? MixedContentIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.MixedContentIssueDetails
+    content.vb: >-
+      <JsonPropertyName("mixedContentIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MixedContentIssueDetails As MixedContentIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mixedContentIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+  id: BlockedByResponseIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: BlockedByResponseIssueDetails
+  nameWithType: InspectorIssueDetails.BlockedByResponseIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BlockedByResponseIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: blockedByResponseIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("blockedByResponseIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BlockedByResponseIssueDetails? BlockedByResponseIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.BlockedByResponseIssueDetails
+    content.vb: >-
+      <JsonPropertyName("blockedByResponseIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property BlockedByResponseIssueDetails As BlockedByResponseIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: blockedByResponseIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+  id: HeavyAdIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: HeavyAdIssueDetails
+  nameWithType: InspectorIssueDetails.HeavyAdIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HeavyAdIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: heavyAdIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("heavyAdIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public HeavyAdIssueDetails? HeavyAdIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.HeavyAdIssueDetails
+    content.vb: >-
+      <JsonPropertyName("heavyAdIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property HeavyAdIssueDetails As HeavyAdIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: heavyAdIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  id: ContentSecurityPolicyIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: ContentSecurityPolicyIssueDetails
+  nameWithType: InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContentSecurityPolicyIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: contentSecurityPolicyIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("contentSecurityPolicyIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ContentSecurityPolicyIssueDetails? ContentSecurityPolicyIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.ContentSecurityPolicyIssueDetails
+    content.vb: >-
+      <JsonPropertyName("contentSecurityPolicyIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ContentSecurityPolicyIssueDetails As ContentSecurityPolicyIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: contentSecurityPolicyIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+  id: SharedArrayBufferIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: SharedArrayBufferIssueDetails
+  nameWithType: InspectorIssueDetails.SharedArrayBufferIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedArrayBufferIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: sharedArrayBufferIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sharedArrayBufferIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public SharedArrayBufferIssueDetails? SharedArrayBufferIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SharedArrayBufferIssueDetails
+    content.vb: >-
+      <JsonPropertyName("sharedArrayBufferIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property SharedArrayBufferIssueDetails As SharedArrayBufferIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sharedArrayBufferIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+  id: LowTextContrastIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: LowTextContrastIssueDetails
+  nameWithType: InspectorIssueDetails.LowTextContrastIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LowTextContrastIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: lowTextContrastIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("lowTextContrastIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LowTextContrastIssueDetails? LowTextContrastIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.LowTextContrastIssueDetails
+    content.vb: >-
+      <JsonPropertyName("lowTextContrastIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property LowTextContrastIssueDetails As LowTextContrastIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: lowTextContrastIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+  id: CorsIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: CorsIssueDetails
+  nameWithType: InspectorIssueDetails.CorsIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CorsIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: corsIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("corsIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CorsIssueDetails? CorsIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.CorsIssueDetails
+    content.vb: >-
+      <JsonPropertyName("corsIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CorsIssueDetails As CorsIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: corsIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+  id: AttributionReportingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: AttributionReportingIssueDetails
+  nameWithType: InspectorIssueDetails.AttributionReportingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AttributionReportingIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 72
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: attributionReportingIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("attributionReportingIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public AttributionReportingIssueDetails? AttributionReportingIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.AttributionReportingIssueDetails
+    content.vb: >-
+      <JsonPropertyName("attributionReportingIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property AttributionReportingIssueDetails As AttributionReportingIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: attributionReportingIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+  id: QuirksModeIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: QuirksModeIssueDetails
+  nameWithType: InspectorIssueDetails.QuirksModeIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: QuirksModeIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 79
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: quirksModeIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("quirksModeIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public QuirksModeIssueDetails? QuirksModeIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.QuirksModeIssueDetails
+    content.vb: >-
+      <JsonPropertyName("quirksModeIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property QuirksModeIssueDetails As QuirksModeIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: quirksModeIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  id: NavigatorUserAgentIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: NavigatorUserAgentIssueDetails
+  nameWithType: InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NavigatorUserAgentIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 86
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: navigatorUserAgentIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("navigatorUserAgentIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public NavigatorUserAgentIssueDetails? NavigatorUserAgentIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.NavigatorUserAgentIssueDetails
+    content.vb: >-
+      <JsonPropertyName("navigatorUserAgentIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property NavigatorUserAgentIssueDetails As NavigatorUserAgentIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: navigatorUserAgentIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+  id: GenericIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: GenericIssueDetails
+  nameWithType: InspectorIssueDetails.GenericIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GenericIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 93
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: genericIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("genericIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public GenericIssueDetails? GenericIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.GenericIssueDetails
+    content.vb: >-
+      <JsonPropertyName("genericIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property GenericIssueDetails As GenericIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: genericIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+  id: DeprecationIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: DeprecationIssueDetails
+  nameWithType: InspectorIssueDetails.DeprecationIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DeprecationIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 100
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: deprecationIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("deprecationIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public DeprecationIssueDetails? DeprecationIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.DeprecationIssueDetails
+    content.vb: >-
+      <JsonPropertyName("deprecationIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property DeprecationIssueDetails As DeprecationIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: deprecationIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+  id: ClientHintIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: ClientHintIssueDetails
+  nameWithType: InspectorIssueDetails.ClientHintIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ClientHintIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 107
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: clientHintIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("clientHintIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ClientHintIssueDetails? ClientHintIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.ClientHintIssueDetails
+    content.vb: >-
+      <JsonPropertyName("clientHintIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ClientHintIssueDetails As ClientHintIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: clientHintIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  id: FederatedAuthRequestIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: FederatedAuthRequestIssueDetails
+  nameWithType: InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FederatedAuthRequestIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 114
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: federatedAuthRequestIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("federatedAuthRequestIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public FederatedAuthRequestIssueDetails? FederatedAuthRequestIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthRequestIssueDetails
+    content.vb: >-
+      <JsonPropertyName("federatedAuthRequestIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FederatedAuthRequestIssueDetails As FederatedAuthRequestIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: federatedAuthRequestIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+  id: BounceTrackingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: BounceTrackingIssueDetails
+  nameWithType: InspectorIssueDetails.BounceTrackingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BounceTrackingIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 121
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: bounceTrackingIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("bounceTrackingIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BounceTrackingIssueDetails? BounceTrackingIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.BounceTrackingIssueDetails
+    content.vb: >-
+      <JsonPropertyName("bounceTrackingIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property BounceTrackingIssueDetails As BounceTrackingIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bounceTrackingIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  id: CookieDeprecationMetadataIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: CookieDeprecationMetadataIssueDetails
+  nameWithType: InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CookieDeprecationMetadataIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 128
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: cookieDeprecationMetadataIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("cookieDeprecationMetadataIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public CookieDeprecationMetadataIssueDetails? CookieDeprecationMetadataIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.CookieDeprecationMetadataIssueDetails
+    content.vb: >-
+      <JsonPropertyName("cookieDeprecationMetadataIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CookieDeprecationMetadataIssueDetails As CookieDeprecationMetadataIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cookieDeprecationMetadataIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+  id: StylesheetLoadingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: StylesheetLoadingIssueDetails
+  nameWithType: InspectorIssueDetails.StylesheetLoadingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StylesheetLoadingIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 135
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: stylesheetLoadingIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("stylesheetLoadingIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public StylesheetLoadingIssueDetails? StylesheetLoadingIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.StylesheetLoadingIssueDetails
+    content.vb: >-
+      <JsonPropertyName("stylesheetLoadingIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property StylesheetLoadingIssueDetails As StylesheetLoadingIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: stylesheetLoadingIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+  id: PropertyRuleIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: PropertyRuleIssueDetails
+  nameWithType: InspectorIssueDetails.PropertyRuleIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PropertyRuleIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 142
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: propertyRuleIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("propertyRuleIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public PropertyRuleIssueDetails? PropertyRuleIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.PropertyRuleIssueDetails
+    content.vb: >-
+      <JsonPropertyName("propertyRuleIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PropertyRuleIssueDetails As PropertyRuleIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: propertyRuleIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  id: FederatedAuthUserInfoRequestIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: FederatedAuthUserInfoRequestIssueDetails
+  nameWithType: InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FederatedAuthUserInfoRequestIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 149
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: federatedAuthUserInfoRequestIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("federatedAuthUserInfoRequestIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public FederatedAuthUserInfoRequestIssueDetails? FederatedAuthUserInfoRequestIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthUserInfoRequestIssueDetails
+    content.vb: >-
+      <JsonPropertyName("federatedAuthUserInfoRequestIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FederatedAuthUserInfoRequestIssueDetails As FederatedAuthUserInfoRequestIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: federatedAuthUserInfoRequestIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+  id: SharedDictionaryIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: SharedDictionaryIssueDetails
+  nameWithType: InspectorIssueDetails.SharedDictionaryIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedDictionaryIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 156
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: sharedDictionaryIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("sharedDictionaryIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public SharedDictionaryIssueDetails? SharedDictionaryIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SharedDictionaryIssueDetails
+    content.vb: >-
+      <JsonPropertyName("sharedDictionaryIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property SharedDictionaryIssueDetails As SharedDictionaryIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sharedDictionaryIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  commentId: P:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  id: SelectElementAccessibilityIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails
+  langs:
+  - csharp
+  - vb
+  name: SelectElementAccessibilityIssueDetails
+  nameWithType: InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SelectElementAccessibilityIssueDetails
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Audits/InspectorIssueDetails.cs
+    startLine: 163
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Audits
+  summary: selectElementAccessibilityIssueDetails
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("selectElementAccessibilityIssueDetails")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public SelectElementAccessibilityIssueDetails? SelectElementAccessibilityIssueDetails { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+    content.vb: >-
+      <JsonPropertyName("selectElementAccessibilityIssueDetails")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property SelectElementAccessibilityIssueDetails As SelectElementAccessibilityIssueDetails
+  overload: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: selectElementAccessibilityIssueDetails
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Audits
+  commentId: N:OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Audits
+  nameWithType: OpenQA.Selenium.DevTools.V133.Audits
+  fullName: OpenQA.Selenium.DevTools.V133.Audits
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Audits
+    name: Audits
+    href: OpenQA.Selenium.DevTools.V133.Audits.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_CookieIssueDetails
+  name: CookieIssueDetails
+  nameWithType: InspectorIssueDetails.CookieIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.CookieIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.CookieIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.CookieIssueDetails.html
+  name: CookieIssueDetails
+  nameWithType: CookieIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.CookieIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_MixedContentIssueDetails
+  name: MixedContentIssueDetails
+  nameWithType: InspectorIssueDetails.MixedContentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.MixedContentIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.MixedContentIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.MixedContentIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.MixedContentIssueDetails.html
+  name: MixedContentIssueDetails
+  nameWithType: MixedContentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.MixedContentIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_BlockedByResponseIssueDetails
+  name: BlockedByResponseIssueDetails
+  nameWithType: InspectorIssueDetails.BlockedByResponseIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BlockedByResponseIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.BlockedByResponseIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.BlockedByResponseIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.BlockedByResponseIssueDetails.html
+  name: BlockedByResponseIssueDetails
+  nameWithType: BlockedByResponseIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.BlockedByResponseIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_HeavyAdIssueDetails
+  name: HeavyAdIssueDetails
+  nameWithType: InspectorIssueDetails.HeavyAdIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.HeavyAdIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.HeavyAdIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.HeavyAdIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.HeavyAdIssueDetails.html
+  name: HeavyAdIssueDetails
+  nameWithType: HeavyAdIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.HeavyAdIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_ContentSecurityPolicyIssueDetails
+  name: ContentSecurityPolicyIssueDetails
+  nameWithType: InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ContentSecurityPolicyIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.ContentSecurityPolicyIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.ContentSecurityPolicyIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.ContentSecurityPolicyIssueDetails.html
+  name: ContentSecurityPolicyIssueDetails
+  nameWithType: ContentSecurityPolicyIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.ContentSecurityPolicyIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_SharedArrayBufferIssueDetails
+  name: SharedArrayBufferIssueDetails
+  nameWithType: InspectorIssueDetails.SharedArrayBufferIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedArrayBufferIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SharedArrayBufferIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SharedArrayBufferIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.SharedArrayBufferIssueDetails.html
+  name: SharedArrayBufferIssueDetails
+  nameWithType: SharedArrayBufferIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SharedArrayBufferIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_LowTextContrastIssueDetails
+  name: LowTextContrastIssueDetails
+  nameWithType: InspectorIssueDetails.LowTextContrastIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.LowTextContrastIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.LowTextContrastIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.LowTextContrastIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.LowTextContrastIssueDetails.html
+  name: LowTextContrastIssueDetails
+  nameWithType: LowTextContrastIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.LowTextContrastIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_CorsIssueDetails
+  name: CorsIssueDetails
+  nameWithType: InspectorIssueDetails.CorsIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CorsIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.CorsIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.CorsIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.CorsIssueDetails.html
+  name: CorsIssueDetails
+  nameWithType: CorsIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.CorsIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_AttributionReportingIssueDetails
+  name: AttributionReportingIssueDetails
+  nameWithType: InspectorIssueDetails.AttributionReportingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.AttributionReportingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.AttributionReportingIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.AttributionReportingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.AttributionReportingIssueDetails.html
+  name: AttributionReportingIssueDetails
+  nameWithType: AttributionReportingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.AttributionReportingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_QuirksModeIssueDetails
+  name: QuirksModeIssueDetails
+  nameWithType: InspectorIssueDetails.QuirksModeIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.QuirksModeIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.QuirksModeIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.QuirksModeIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.QuirksModeIssueDetails.html
+  name: QuirksModeIssueDetails
+  nameWithType: QuirksModeIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.QuirksModeIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_NavigatorUserAgentIssueDetails
+  name: NavigatorUserAgentIssueDetails
+  nameWithType: InspectorIssueDetails.NavigatorUserAgentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.NavigatorUserAgentIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.NavigatorUserAgentIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.NavigatorUserAgentIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.NavigatorUserAgentIssueDetails.html
+  name: NavigatorUserAgentIssueDetails
+  nameWithType: NavigatorUserAgentIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.NavigatorUserAgentIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_GenericIssueDetails
+  name: GenericIssueDetails
+  nameWithType: InspectorIssueDetails.GenericIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.GenericIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.GenericIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.GenericIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.GenericIssueDetails.html
+  name: GenericIssueDetails
+  nameWithType: GenericIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.GenericIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_DeprecationIssueDetails
+  name: DeprecationIssueDetails
+  nameWithType: InspectorIssueDetails.DeprecationIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.DeprecationIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.DeprecationIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.DeprecationIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.DeprecationIssueDetails.html
+  name: DeprecationIssueDetails
+  nameWithType: DeprecationIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.DeprecationIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_ClientHintIssueDetails
+  name: ClientHintIssueDetails
+  nameWithType: InspectorIssueDetails.ClientHintIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.ClientHintIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.ClientHintIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.ClientHintIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.ClientHintIssueDetails.html
+  name: ClientHintIssueDetails
+  nameWithType: ClientHintIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.ClientHintIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_FederatedAuthRequestIssueDetails
+  name: FederatedAuthRequestIssueDetails
+  nameWithType: InspectorIssueDetails.FederatedAuthRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthRequestIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthRequestIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthRequestIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthRequestIssueDetails.html
+  name: FederatedAuthRequestIssueDetails
+  nameWithType: FederatedAuthRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthRequestIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_BounceTrackingIssueDetails
+  name: BounceTrackingIssueDetails
+  nameWithType: InspectorIssueDetails.BounceTrackingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.BounceTrackingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.BounceTrackingIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.BounceTrackingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.BounceTrackingIssueDetails.html
+  name: BounceTrackingIssueDetails
+  nameWithType: BounceTrackingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.BounceTrackingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_CookieDeprecationMetadataIssueDetails
+  name: CookieDeprecationMetadataIssueDetails
+  nameWithType: InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.CookieDeprecationMetadataIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.CookieDeprecationMetadataIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.CookieDeprecationMetadataIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.CookieDeprecationMetadataIssueDetails.html
+  name: CookieDeprecationMetadataIssueDetails
+  nameWithType: CookieDeprecationMetadataIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.CookieDeprecationMetadataIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_StylesheetLoadingIssueDetails
+  name: StylesheetLoadingIssueDetails
+  nameWithType: InspectorIssueDetails.StylesheetLoadingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.StylesheetLoadingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.StylesheetLoadingIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.StylesheetLoadingIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.StylesheetLoadingIssueDetails.html
+  name: StylesheetLoadingIssueDetails
+  nameWithType: StylesheetLoadingIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.StylesheetLoadingIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_PropertyRuleIssueDetails
+  name: PropertyRuleIssueDetails
+  nameWithType: InspectorIssueDetails.PropertyRuleIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.PropertyRuleIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.PropertyRuleIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.PropertyRuleIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.PropertyRuleIssueDetails.html
+  name: PropertyRuleIssueDetails
+  nameWithType: PropertyRuleIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.PropertyRuleIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_FederatedAuthUserInfoRequestIssueDetails
+  name: FederatedAuthUserInfoRequestIssueDetails
+  nameWithType: InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.FederatedAuthUserInfoRequestIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthUserInfoRequestIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthUserInfoRequestIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthUserInfoRequestIssueDetails.html
+  name: FederatedAuthUserInfoRequestIssueDetails
+  nameWithType: FederatedAuthUserInfoRequestIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.FederatedAuthUserInfoRequestIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_SharedDictionaryIssueDetails
+  name: SharedDictionaryIssueDetails
+  nameWithType: InspectorIssueDetails.SharedDictionaryIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SharedDictionaryIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SharedDictionaryIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SharedDictionaryIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.SharedDictionaryIssueDetails.html
+  name: SharedDictionaryIssueDetails
+  nameWithType: SharedDictionaryIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SharedDictionaryIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  href: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.html#OpenQA_Selenium_DevTools_V133_Audits_InspectorIssueDetails_SelectElementAccessibilityIssueDetails
+  name: SelectElementAccessibilityIssueDetails
+  nameWithType: InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.InspectorIssueDetails.SelectElementAccessibilityIssueDetails
+- uid: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  commentId: T:OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails
+  parent: OpenQA.Selenium.DevTools.V133.Audits
+  href: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails.html
+  name: SelectElementAccessibilityIssueDetails
+  nameWithType: SelectElementAccessibilityIssueDetails
+  fullName: OpenQA.Selenium.DevTools.V133.Audits.SelectElementAccessibilityIssueDetails

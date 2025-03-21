@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  id: UserPromptType
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Alert
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.BeforeUnload
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Confirm
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Prompt
+  langs:
+  - csharp
+  - vb
+  name: UserPromptType
+  nameWithType: UserPromptType
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserPromptType
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public enum UserPromptType
+    content.vb: Public Enum UserPromptType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Alert
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Alert
+  id: Alert
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  langs:
+  - csharp
+  - vb
+  name: Alert
+  nameWithType: UserPromptType.Alert
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Alert
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Alert
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Alert = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Confirm
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Confirm
+  id: Confirm
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  langs:
+  - csharp
+  - vb
+  name: Confirm
+  nameWithType: UserPromptType.Confirm
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Confirm
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Confirm
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Confirm = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Prompt
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Prompt
+  id: Prompt
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  langs:
+  - csharp
+  - vb
+  name: Prompt
+  nameWithType: UserPromptType.Prompt
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.Prompt
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Prompt
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Prompt = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.BeforeUnload
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.BeforeUnload
+  id: BeforeUnload
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  langs:
+  - csharp
+  - vb
+  name: BeforeUnload
+  nameWithType: UserPromptType.BeforeUnload
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.BeforeUnload
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BeforeUnload
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/UserPromptOpenedEventArgs.cs
+    startLine: 35
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: BeforeUnload = 3
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType.html
+  name: UserPromptType
+  nameWithType: UserPromptType
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.UserPromptType

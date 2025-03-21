@@ -1,0 +1,67 @@
+### YamlMime:TableOfContent
+items:
+- uid: OpenQA.Selenium.Support
+  name: OpenQA.Selenium.Support
+  type: Namespace
+  items:
+  - uid: OpenQA.Selenium.Support.Events
+    name: Events
+    type: Namespace
+    items:
+    - uid: OpenQA.Selenium.Support.Events.EventFiringWebDriver
+      name: EventFiringWebDriver
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.FindElementEventArgs
+      name: FindElementEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.GetShadowRootEventArgs
+      name: GetShadowRootEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.WebDriverExceptionEventArgs
+      name: WebDriverExceptionEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.WebDriverNavigationEventArgs
+      name: WebDriverNavigationEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.WebDriverScriptEventArgs
+      name: WebDriverScriptEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.WebElementEventArgs
+      name: WebElementEventArgs
+      type: Class
+    - uid: OpenQA.Selenium.Support.Events.WebElementValueEventArgs
+      name: WebElementValueEventArgs
+      type: Class
+  - uid: OpenQA.Selenium.Support.Extensions
+    name: Extensions
+    type: Namespace
+    items:
+    - uid: OpenQA.Selenium.Support.Extensions.WebDriverExtensions
+      name: WebDriverExtensions
+      type: Class
+  - uid: OpenQA.Selenium.Support.UI
+    name: UI
+    type: Namespace
+    items:
+    - uid: OpenQA.Selenium.Support.UI.ILoadableComponent
+      name: ILoadableComponent
+      type: Interface
+    - uid: OpenQA.Selenium.Support.UI.LoadableComponentException
+      name: LoadableComponentException
+      type: Class
+    - uid: OpenQA.Selenium.Support.UI.LoadableComponent`1
+      name: LoadableComponent<T>
+      type: Class
+    - uid: OpenQA.Selenium.Support.UI.PopupWindowFinder
+      name: PopupWindowFinder
+      type: Class
+    - uid: OpenQA.Selenium.Support.UI.SelectElement
+      name: SelectElement
+      type: Class
+    - uid: OpenQA.Selenium.Support.UI.SlowLoadableComponent`1
+      name: SlowLoadableComponent<T>
+      type: Class
+    - uid: OpenQA.Selenium.Support.UI.UnexpectedTagNameException
+      name: UnexpectedTagNameException
+      type: Class
+memberLayout: SamePage

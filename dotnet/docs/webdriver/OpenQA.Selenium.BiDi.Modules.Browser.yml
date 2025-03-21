@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Browser
+  id: Browser
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindow
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowInfo
+  - OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  - OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+  - OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+  - OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+  - OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+  - OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+  - OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+  - OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+  - OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+  - OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.Browser
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Browser
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html
+  name: BrowserModule
+  nameWithType: BrowserModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindow
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindow
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindow.html
+  name: ClientWindow
+  nameWithType: ClientWindow
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindow
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowInfo
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowInfo.html
+  name: ClientWindowInfo
+  nameWithType: ClientWindowInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowInfo
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState.html
+  name: ClientWindowState
+  nameWithType: ClientWindowState
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.ClientWindowState
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions.html
+  name: CloseOptions
+  nameWithType: CloseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.CloseOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions.html
+  name: CreateUserContextOptions
+  nameWithType: CreateUserContextOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.CreateUserContextOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions.html
+  name: GetClientWindowsOptions
+  nameWithType: GetClientWindowsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult.html
+  name: GetClientWindowsResult
+  nameWithType: GetClientWindowsResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetClientWindowsResult
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions.html
+  name: GetUserContextsOptions
+  nameWithType: GetUserContextsOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+  href: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult.html
+  name: GetUserContextsResult
+  nameWithType: GetUserContextsResult
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.GetUserContextsResult
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions.html
+  name: RemoveUserContextOptions
+  nameWithType: RemoveUserContextOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.RemoveUserContextOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.UserContext.html
+  name: UserContext
+  nameWithType: UserContext
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.UserContext
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo.html
+  name: UserContextInfo
+  nameWithType: UserContextInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.UserContextInfo
+- uid: OpenQA.Selenium.BiDi.Modules.Browser
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Browser
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Browser
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html

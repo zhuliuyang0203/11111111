@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference
+  id: IRemoteObjectReference
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+  - OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+  langs:
+  - csharp
+  - vb
+  name: IRemoteObjectReference
+  nameWithType: IRemoteObjectReference
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference
+  type: Interface
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IRemoteObjectReference
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public interface IRemoteObjectReference : IRemoteReference'
+    content.vb: Public Interface IRemoteObjectReference Inherits IRemoteReference
+- uid: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+  id: Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: IRemoteObjectReference.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Handle
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Handle Handle { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.Handle
+    content.vb: ReadOnly Property Handle As Handle
+  overload: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+  id: SharedId
+  parent: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference
+  langs:
+  - csharp
+  - vb
+  name: SharedId
+  nameWithType: IRemoteObjectReference.SharedId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedId
+    path: ../src/webdriver/BiDi/Modules/Script/IRemoteReference.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: string? SharedId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SharedId As String
+  overload: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+  href: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.html#OpenQA_Selenium_BiDi_Modules_Script_IRemoteObjectReference_Handle
+  name: Handle
+  nameWithType: IRemoteObjectReference.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.Handle
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Handle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Handle.html
+  name: Handle
+  nameWithType: Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Handle
+- uid: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+  href: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.html#OpenQA_Selenium_BiDi_Modules_Script_IRemoteObjectReference_SharedId
+  name: SharedId
+  nameWithType: IRemoteObjectReference.SharedId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.IRemoteObjectReference.SharedId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

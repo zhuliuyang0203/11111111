@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  id: StorageKeyPartitionDescriptor
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin
+  - OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+  langs:
+  - csharp
+  - vb
+  name: StorageKeyPartitionDescriptor
+  nameWithType: StorageKeyPartitionDescriptor
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StorageKeyPartitionDescriptor
+    path: ../src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+    startLine: 88
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Storage
+  syntax:
+    content: 'public record StorageKeyPartitionDescriptor : PartitionDescriptor, IEquatable<PartitionDescriptor>, IEquatable<StorageKeyPartitionDescriptor>'
+    content.vb: Public Class StorageKeyPartitionDescriptor Inherits PartitionDescriptor Implements IEquatable(Of PartitionDescriptor), IEquatable(Of StorageKeyPartitionDescriptor)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+  id: UserContext
+  parent: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  langs:
+  - csharp
+  - vb
+  name: UserContext
+  nameWithType: StorageKeyPartitionDescriptor.UserContext
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserContext
+    path: ../src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+    startLine: 90
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Storage
+  syntax:
+    content: public string? UserContext { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserContext As String
+  overload: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext*
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin
+  id: SourceOrigin
+  parent: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+  langs:
+  - csharp
+  - vb
+  name: SourceOrigin
+  nameWithType: StorageKeyPartitionDescriptor.SourceOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SourceOrigin
+    path: ../src/webdriver/BiDi/Modules/Storage/GetCookiesCommand.cs
+    startLine: 92
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Storage
+  syntax:
+    content: public string? SourceOrigin { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SourceOrigin As String
+  overload: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Storage
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Storage
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor.html
+  name: PartitionDescriptor
+  nameWithType: PartitionDescriptor
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PartitionDescriptor>
+  nameWithType: IEquatable<PartitionDescriptor>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor>
+  nameWithType.vb: IEquatable(Of PartitionDescriptor)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor)
+  name.vb: IEquatable(Of PartitionDescriptor)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+    name: PartitionDescriptor
+    href: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor
+    name: PartitionDescriptor
+    href: OpenQA.Selenium.BiDi.Modules.Storage.PartitionDescriptor.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StorageKeyPartitionDescriptor>
+  nameWithType: IEquatable<StorageKeyPartitionDescriptor>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor>
+  nameWithType.vb: IEquatable(Of StorageKeyPartitionDescriptor)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor)
+  name.vb: IEquatable(Of StorageKeyPartitionDescriptor)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+    name: StorageKeyPartitionDescriptor
+    href: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor
+    name: StorageKeyPartitionDescriptor
+    href: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+  href: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.html#OpenQA_Selenium_BiDi_Modules_Storage_StorageKeyPartitionDescriptor_UserContext
+  name: UserContext
+  nameWithType: StorageKeyPartitionDescriptor.UserContext
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.UserContext
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin
+  href: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.html#OpenQA_Selenium_BiDi_Modules_Storage_StorageKeyPartitionDescriptor_SourceOrigin
+  name: SourceOrigin
+  nameWithType: StorageKeyPartitionDescriptor.SourceOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageKeyPartitionDescriptor.SourceOrigin

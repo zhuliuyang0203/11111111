@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  id: WindowProxyRemoteValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)
+  - OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+  - OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+  - OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+  langs:
+  - csharp
+  - vb
+  name: WindowProxyRemoteValue
+  nameWithType: WindowProxyRemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WindowProxyRemoteValue
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 262
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record WindowProxyRemoteValue : RemoteValue, IEquatable<RemoteValue>, IEquatable<WindowProxyRemoteValue>'
+    content.vb: Public Class WindowProxyRemoteValue Inherits RemoteValue Implements IEquatable(Of RemoteValue), IEquatable(Of WindowProxyRemoteValue)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)
+  id: '#ctor(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)'
+  parent: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: WindowProxyRemoteValue(Properties)
+  nameWithType: WindowProxyRemoteValue.WindowProxyRemoteValue(WindowProxyRemoteValue.Properties)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.WindowProxyRemoteValue(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 262
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public WindowProxyRemoteValue(WindowProxyRemoteValue.Properties Value)
+    parameters:
+    - id: Value
+      type: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+    content.vb: Public Sub New(Value As WindowProxyRemoteValue.Properties)
+  overload: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor*
+  nameWithType.vb: WindowProxyRemoteValue.New(WindowProxyRemoteValue.Properties)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.New(OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties)
+  name.vb: New(Properties)
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+  id: Value
+  parent: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: WindowProxyRemoteValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Value
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 262
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public WindowProxyRemoteValue.Properties Value { get; init; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+    content.vb: Public Property Value As WindowProxyRemoteValue.Properties
+  overload: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+  id: Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: WindowProxyRemoteValue.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Handle
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 264
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public Handle? Handle { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.Handle
+    content.vb: Public Property Handle As Handle
+  overload: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+  id: InternalId
+  parent: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+  langs:
+  - csharp
+  - vb
+  name: InternalId
+  nameWithType: WindowProxyRemoteValue.InternalId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: InternalId
+    path: ../src/webdriver/BiDi/Modules/Script/RemoteValue.cs
+    startLine: 266
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public InternalId? InternalId { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.InternalId
+    content.vb: Public Property InternalId As InternalId
+  overload: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  name: RemoteValue
+  nameWithType: RemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.RemoteValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RemoteValue>
+  nameWithType: IEquatable<RemoteValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.RemoteValue>
+  nameWithType.vb: IEquatable(Of RemoteValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.RemoteValue)
+  name.vb: IEquatable(Of RemoteValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+    name: RemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<WindowProxyRemoteValue>
+  nameWithType: IEquatable<WindowProxyRemoteValue>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue>
+  nameWithType.vb: IEquatable(Of WindowProxyRemoteValue)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue)
+  name.vb: IEquatable(Of WindowProxyRemoteValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+    name: WindowProxyRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+    name: WindowProxyRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue
+  href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  name: ConvertTo<TResult>()
+  nameWithType: RemoteValue.ConvertTo<TResult>()
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo<TResult>()
+  nameWithType.vb: RemoteValue.ConvertTo(Of TResult)()
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo(Of TResult)()
+  name.vb: ConvertTo(Of TResult)()
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+    name: ConvertTo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.ConvertTo``1
+    name: ConvertTo
+    href: OpenQA.Selenium.BiDi.Modules.Script.RemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_RemoteValue_ConvertTo__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_WindowProxyRemoteValue__ctor_OpenQA_Selenium_BiDi_Modules_Script_WindowProxyRemoteValue_Properties_
+  name: WindowProxyRemoteValue
+  nameWithType: WindowProxyRemoteValue.WindowProxyRemoteValue
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.WindowProxyRemoteValue
+  nameWithType.vb: WindowProxyRemoteValue.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html
+  name: WindowProxyRemoteValue.Properties
+  nameWithType: WindowProxyRemoteValue.Properties
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+    name: WindowProxyRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+    name: Properties
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue
+    name: WindowProxyRemoteValue
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties
+    name: Properties
+    href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Properties.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+  href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_WindowProxyRemoteValue_Value
+  name: Value
+  nameWithType: WindowProxyRemoteValue.Value
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Value
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+  href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_WindowProxyRemoteValue_Handle
+  name: Handle
+  nameWithType: WindowProxyRemoteValue.Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.Handle
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Handle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Handle
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Handle.html
+  name: Handle
+  nameWithType: Handle
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Handle
+- uid: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+  href: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.html#OpenQA_Selenium_BiDi_Modules_Script_WindowProxyRemoteValue_InternalId
+  name: InternalId
+  nameWithType: WindowProxyRemoteValue.InternalId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.WindowProxyRemoteValue.InternalId
+- uid: OpenQA.Selenium.BiDi.Modules.Script.InternalId
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.InternalId
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.InternalId.html
+  name: InternalId
+  nameWithType: InternalId
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.InternalId

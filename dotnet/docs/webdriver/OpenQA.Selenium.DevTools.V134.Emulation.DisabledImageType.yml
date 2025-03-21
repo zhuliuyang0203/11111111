@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  id: DisabledImageType
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  children:
+  - OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Avif
+  - OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Webp
+  langs:
+  - csharp
+  - vb
+  name: DisabledImageType
+  nameWithType: DisabledImageType
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisabledImageType
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: DisabledImageType
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<DisabledImageType>))]
+
+      public enum DisabledImageType
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of DisabledImageType)))>
+
+      Public Enum DisabledImageType
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Avif
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Avif
+  id: Avif
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  langs:
+  - csharp
+  - vb
+  name: Avif
+  nameWithType: DisabledImageType.Avif
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Avif
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Avif
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the avif value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "avif")]
+
+      Avif = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+    content.vb: >-
+      <EnumMember(Value:="avif")>
+
+      Avif = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: avif
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Webp
+  commentId: F:OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Webp
+  id: Webp
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  langs:
+  - csharp
+  - vb
+  name: Webp
+  nameWithType: DisabledImageType.Webp
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.Webp
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Webp
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/DisabledImageType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: Enumerated member for the webp value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "webp")]
+
+      Webp = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+    content.vb: >-
+      <EnumMember(Value:="webp")>
+
+      Webp = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: webp
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V134.Emulation
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType.html
+  name: DisabledImageType
+  nameWithType: DisabledImageType
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.DisabledImageType

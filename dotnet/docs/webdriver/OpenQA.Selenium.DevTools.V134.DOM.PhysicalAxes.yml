@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  commentId: T:OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  id: PhysicalAxes
+  parent: OpenQA.Selenium.DevTools.V134.DOM
+  children:
+  - OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Both
+  - OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Horizontal
+  - OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Vertical
+  langs:
+  - csharp
+  - vb
+  name: PhysicalAxes
+  nameWithType: PhysicalAxes
+  fullName: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PhysicalAxes
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.DOM
+  summary: PhysicalAxes
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PhysicalAxes>))]
+
+      public enum PhysicalAxes
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PhysicalAxes)))>
+
+      Public Enum PhysicalAxes
+- uid: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Horizontal
+  commentId: F:OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Horizontal
+  id: Horizontal
+  parent: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: PhysicalAxes.Horizontal
+  fullName: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Horizontal
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Horizontal
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.DOM
+  summary: Enumerated member for the Horizontal value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Horizontal")]
+
+      Horizontal = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+    content.vb: >-
+      <EnumMember(Value:="Horizontal")>
+
+      Horizontal = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Horizontal
+- uid: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Vertical
+  commentId: F:OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Vertical
+  id: Vertical
+  parent: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: PhysicalAxes.Vertical
+  fullName: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Vertical
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Vertical
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.DOM
+  summary: Enumerated member for the Vertical value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Vertical")]
+
+      Vertical = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+    content.vb: >-
+      <EnumMember(Value:="Vertical")>
+
+      Vertical = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Vertical
+- uid: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Both
+  commentId: F:OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Both
+  id: Both
+  parent: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: PhysicalAxes.Both
+  fullName: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.Both
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Both
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/DOM/PhysicalAxes.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.DOM
+  summary: Enumerated member for the Both value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Both")]
+
+      Both = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+    content.vb: >-
+      <EnumMember(Value:="Both")>
+
+      Both = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Both
+references:
+- uid: OpenQA.Selenium.DevTools.V134.DOM
+  commentId: N:OpenQA.Selenium.DevTools.V134.DOM
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.DOM
+  nameWithType: OpenQA.Selenium.DevTools.V134.DOM
+  fullName: OpenQA.Selenium.DevTools.V134.DOM
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V134.DOM.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.DOM
+    name: DOM
+    href: OpenQA.Selenium.DevTools.V134.DOM.html
+- uid: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  commentId: T:OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes
+  parent: OpenQA.Selenium.DevTools.V134.DOM
+  href: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes.html
+  name: PhysicalAxes
+  nameWithType: PhysicalAxes
+  fullName: OpenQA.Selenium.DevTools.V134.DOM.PhysicalAxes

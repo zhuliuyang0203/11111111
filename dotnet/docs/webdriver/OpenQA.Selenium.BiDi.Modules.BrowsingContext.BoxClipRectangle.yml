@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  id: BoxClipRectangle
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor(System.Double,System.Double,System.Double,System.Double)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+  langs:
+  - csharp
+  - vb
+  name: BoxClipRectangle
+  nameWithType: BoxClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BoxClipRectangle
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: 'public record BoxClipRectangle : ClipRectangle, IEquatable<ClipRectangle>, IEquatable<BoxClipRectangle>'
+    content.vb: Public Class BoxClipRectangle Inherits ClipRectangle Implements IEquatable(Of ClipRectangle), IEquatable(Of BoxClipRectangle)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor(System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double)'
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  langs:
+  - csharp
+  - vb
+  name: BoxClipRectangle(double, double, double, double)
+  nameWithType: BoxClipRectangle.BoxClipRectangle(double, double, double, double)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.BoxClipRectangle(double, double, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BoxClipRectangle(double X, double Y, double Width, double Height)
+    parameters:
+    - id: X
+      type: System.Double
+    - id: Y
+      type: System.Double
+    - id: Width
+      type: System.Double
+    - id: Height
+      type: System.Double
+    content.vb: Public Sub New(X As Double, Y As Double, Width As Double, Height As Double)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor*
+  nameWithType.vb: BoxClipRectangle.New(Double, Double, Double, Double)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.New(Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+  id: X
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: BoxClipRectangle.X
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: X
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double X { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property X As Double
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+  id: Y
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: BoxClipRectangle.Y
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Y
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double Y { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Y As Double
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+  id: Width
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: BoxClipRectangle.Width
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Width
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double Width { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Width As Double
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height
+  id: Height
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: BoxClipRectangle.Height
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Height
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/CaptureScreenshotCommand.cs
+    startLine: 54
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double Height { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Height As Double
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle.html
+  name: ClipRectangle
+  nameWithType: ClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ClipRectangle>
+  nameWithType: IEquatable<ClipRectangle>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle>
+  nameWithType.vb: IEquatable(Of ClipRectangle)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle)
+  name.vb: IEquatable(Of ClipRectangle)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+    name: ClipRectangle
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle
+    name: ClipRectangle
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ClipRectangle.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BoxClipRectangle>
+  nameWithType: IEquatable<BoxClipRectangle>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle>
+  nameWithType.vb: IEquatable(Of BoxClipRectangle)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle)
+  name.vb: IEquatable(Of BoxClipRectangle)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+    name: BoxClipRectangle
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle
+    name: BoxClipRectangle
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BoxClipRectangle__ctor_System_Double_System_Double_System_Double_System_Double_
+  name: BoxClipRectangle
+  nameWithType: BoxClipRectangle.BoxClipRectangle
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.BoxClipRectangle
+  nameWithType.vb: BoxClipRectangle.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BoxClipRectangle_X
+  name: X
+  nameWithType: BoxClipRectangle.X
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.X
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BoxClipRectangle_Y
+  name: Y
+  nameWithType: BoxClipRectangle.Y
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Y
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BoxClipRectangle_Width
+  name: Width
+  nameWithType: BoxClipRectangle.Width
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Width
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BoxClipRectangle_Height
+  name: Height
+  nameWithType: BoxClipRectangle.Height
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BoxClipRectangle.Height

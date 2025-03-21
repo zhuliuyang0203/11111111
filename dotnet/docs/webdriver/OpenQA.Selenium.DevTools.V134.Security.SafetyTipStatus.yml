@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  id: SafetyTipStatus
+  parent: OpenQA.Selenium.DevTools.V134.Security
+  children:
+  - OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.BadReputation
+  - OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.Lookalike
+  langs:
+  - csharp
+  - vb
+  name: SafetyTipStatus
+  nameWithType: SafetyTipStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SafetyTipStatus
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Security
+  summary: SafetyTipStatus
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<SafetyTipStatus>))]
+
+      public enum SafetyTipStatus
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of SafetyTipStatus)))>
+
+      Public Enum SafetyTipStatus
+- uid: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.BadReputation
+  commentId: F:OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.BadReputation
+  id: BadReputation
+  parent: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  langs:
+  - csharp
+  - vb
+  name: BadReputation
+  nameWithType: SafetyTipStatus.BadReputation
+  fullName: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.BadReputation
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BadReputation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Security
+  summary: Enumerated member for the badReputation value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "badReputation")]
+
+      BadReputation = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+    content.vb: >-
+      <EnumMember(Value:="badReputation")>
+
+      BadReputation = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: badReputation
+- uid: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.Lookalike
+  commentId: F:OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.Lookalike
+  id: Lookalike
+  parent: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  langs:
+  - csharp
+  - vb
+  name: Lookalike
+  nameWithType: SafetyTipStatus.Lookalike
+  fullName: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.Lookalike
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Lookalike
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Security/SafetyTipStatus.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Security
+  summary: Enumerated member for the lookalike value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "lookalike")]
+
+      Lookalike = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+    content.vb: >-
+      <EnumMember(Value:="lookalike")>
+
+      Lookalike = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: lookalike
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Security
+  commentId: N:OpenQA.Selenium.DevTools.V134.Security
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Security
+  nameWithType: OpenQA.Selenium.DevTools.V134.Security
+  fullName: OpenQA.Selenium.DevTools.V134.Security
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Security
+    name: Security
+    href: OpenQA.Selenium.DevTools.V134.Security.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Security
+    name: Security
+    href: OpenQA.Selenium.DevTools.V134.Security.html
+- uid: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  commentId: T:OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus
+  parent: OpenQA.Selenium.DevTools.V134.Security
+  href: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus.html
+  name: SafetyTipStatus
+  nameWithType: SafetyTipStatus
+  fullName: OpenQA.Selenium.DevTools.V134.Security.SafetyTipStatus

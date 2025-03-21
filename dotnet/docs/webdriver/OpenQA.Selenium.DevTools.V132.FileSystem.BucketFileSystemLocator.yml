@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  commentId: T:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  id: BucketFileSystemLocator
+  parent: OpenQA.Selenium.DevTools.V132.FileSystem
+  children:
+  - OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+  - OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+  - OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+  langs:
+  - csharp
+  - vb
+  name: BucketFileSystemLocator
+  nameWithType: BucketFileSystemLocator
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BucketFileSystemLocator
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.FileSystem
+  summary: BucketFileSystemLocator
+  example: []
+  syntax:
+    content: public sealed class BucketFileSystemLocator
+    content.vb: Public NotInheritable Class BucketFileSystemLocator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+  commentId: P:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+  id: StorageKey
+  parent: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  langs:
+  - csharp
+  - vb
+  name: StorageKey
+  nameWithType: BucketFileSystemLocator.StorageKey
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StorageKey
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.FileSystem
+  summary: storageKey
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("storageKey")]
+
+      public string StorageKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("storageKey")>
+
+      Public Property StorageKey As String
+  overload: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: storageKey
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+  commentId: P:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+  id: BucketName
+  parent: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  langs:
+  - csharp
+  - vb
+  name: BucketName
+  nameWithType: BucketFileSystemLocator.BucketName
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BucketName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.FileSystem
+  summary: bucketName
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("bucketName")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? BucketName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("bucketName")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property BucketName As String
+  overload: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bucketName
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+  commentId: P:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+  id: PathComponents
+  parent: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator
+  langs:
+  - csharp
+  - vb
+  name: PathComponents
+  nameWithType: BucketFileSystemLocator.PathComponents
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PathComponents
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/FileSystem/BucketFileSystemLocator.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.FileSystem
+  summary: pathComponents
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pathComponents")]
+
+      public string[] PathComponents { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: >-
+      <JsonPropertyName("pathComponents")>
+
+      Public Property PathComponents As String()
+  overload: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pathComponents
+references:
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem
+  commentId: N:OpenQA.Selenium.DevTools.V132.FileSystem
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.FileSystem
+  nameWithType: OpenQA.Selenium.DevTools.V132.FileSystem
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V132.FileSystem.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V132.FileSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+  href: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.html#OpenQA_Selenium_DevTools_V132_FileSystem_BucketFileSystemLocator_StorageKey
+  name: StorageKey
+  nameWithType: BucketFileSystemLocator.StorageKey
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.StorageKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+  href: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.html#OpenQA_Selenium_DevTools_V132_FileSystem_BucketFileSystemLocator_BucketName
+  name: BucketName
+  nameWithType: BucketFileSystemLocator.BucketName
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.BucketName
+- uid: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents*
+  commentId: Overload:OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+  href: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.html#OpenQA_Selenium_DevTools_V132_FileSystem_BucketFileSystemLocator_PathComponents
+  name: PathComponents
+  nameWithType: BucketFileSystemLocator.PathComponents
+  fullName: OpenQA.Selenium.DevTools.V132.FileSystem.BucketFileSystemLocator.PathComponents
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

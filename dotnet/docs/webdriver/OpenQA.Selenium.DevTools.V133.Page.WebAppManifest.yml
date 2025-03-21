@@ -1,0 +1,1948 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  id: WebAppManifest
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  children:
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+  - OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor
+  langs:
+  - csharp
+  - vb
+  name: WebAppManifest
+  nameWithType: WebAppManifest
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: WebAppManifest
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: WebAppManifest
+  example: []
+  syntax:
+    content: public sealed class WebAppManifest
+    content.vb: Public NotInheritable Class WebAppManifest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+  id: BackgroundColor
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: WebAppManifest.BackgroundColor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BackgroundColor
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: backgroundColor
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("backgroundColor")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? BackgroundColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("backgroundColor")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property BackgroundColor As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: backgroundColor
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+  id: Description
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: WebAppManifest.Description
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Description
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: description
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("description")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("description")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Description As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+  id: Dir
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Dir
+  nameWithType: WebAppManifest.Dir
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Dir
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: dir
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("dir")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Dir { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("dir")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Dir As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: dir
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+  id: Display
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Display
+  nameWithType: WebAppManifest.Display
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Display
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: display
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("display")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Display { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("display")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Display As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: display
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+  id: DisplayOverrides
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: DisplayOverrides
+  nameWithType: WebAppManifest.DisplayOverrides
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisplayOverrides
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: displayOverrides
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("displayOverrides")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string[]? DisplayOverrides { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: >-
+      <JsonPropertyName("displayOverrides")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property DisplayOverrides As String()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: displayOverrides
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+  id: FileHandlers
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: FileHandlers
+  nameWithType: WebAppManifest.FileHandlers
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FileHandlers
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: fileHandlers
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("fileHandlers")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public FileHandler[]? FileHandlers { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.FileHandler[]
+    content.vb: >-
+      <JsonPropertyName("fileHandlers")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FileHandlers As FileHandler()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: fileHandlers
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+  id: Icons
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Icons
+  nameWithType: WebAppManifest.Icons
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Icons
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: icons
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("icons")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ImageResource[]? Icons { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.ImageResource[]
+    content.vb: >-
+      <JsonPropertyName("icons")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Icons As ImageResource()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: icons
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+  id: Id
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: WebAppManifest.Id
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Id
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: id
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("id")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("id")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Id As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: id
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+  id: Lang
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Lang
+  nameWithType: WebAppManifest.Lang
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Lang
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 72
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: lang
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("lang")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Lang { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("lang")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Lang As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: lang
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+  id: LaunchHandler
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: LaunchHandler
+  nameWithType: WebAppManifest.LaunchHandler
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LaunchHandler
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 79
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: launchHandler
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("launchHandler")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LaunchHandler? LaunchHandler { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.LaunchHandler
+    content.vb: >-
+      <JsonPropertyName("launchHandler")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property LaunchHandler As LaunchHandler
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: launchHandler
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+  id: Name
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: WebAppManifest.Name
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Name
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 86
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: name
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("name")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("name")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Name As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: name
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+  id: Orientation
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: WebAppManifest.Orientation
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Orientation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 93
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: orientation
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("orientation")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Orientation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("orientation")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Orientation As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: orientation
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+  id: PreferRelatedApplications
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: PreferRelatedApplications
+  nameWithType: WebAppManifest.PreferRelatedApplications
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PreferRelatedApplications
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 100
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: preferRelatedApplications
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("preferRelatedApplications")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? PreferRelatedApplications { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("preferRelatedApplications")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PreferRelatedApplications As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: preferRelatedApplications
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+  id: ProtocolHandlers
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: ProtocolHandlers
+  nameWithType: WebAppManifest.ProtocolHandlers
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ProtocolHandlers
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 107
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: protocolHandlers
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("protocolHandlers")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ProtocolHandler[]? ProtocolHandlers { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler[]
+    content.vb: >-
+      <JsonPropertyName("protocolHandlers")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ProtocolHandlers As ProtocolHandler()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: protocolHandlers
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+  id: RelatedApplications
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: RelatedApplications
+  nameWithType: WebAppManifest.RelatedApplications
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RelatedApplications
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 114
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: relatedApplications
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("relatedApplications")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public RelatedApplication[]? RelatedApplications { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication[]
+    content.vb: >-
+      <JsonPropertyName("relatedApplications")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property RelatedApplications As RelatedApplication()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: relatedApplications
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+  id: Scope
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: WebAppManifest.Scope
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Scope
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 121
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: scope
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("scope")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Scope { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("scope")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Scope As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: scope
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+  id: ScopeExtensions
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: ScopeExtensions
+  nameWithType: WebAppManifest.ScopeExtensions
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScopeExtensions
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 128
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: scopeExtensions
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("scopeExtensions")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ScopeExtension[]? ScopeExtensions { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension[]
+    content.vb: >-
+      <JsonPropertyName("scopeExtensions")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ScopeExtensions As ScopeExtension()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: scopeExtensions
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+  id: Screenshots
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Screenshots
+  nameWithType: WebAppManifest.Screenshots
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Screenshots
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 135
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: screenshots
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("screenshots")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public Screenshot[]? Screenshots { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.Screenshot[]
+    content.vb: >-
+      <JsonPropertyName("screenshots")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Screenshots As Screenshot()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: screenshots
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+  id: ShareTarget
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: ShareTarget
+  nameWithType: WebAppManifest.ShareTarget
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ShareTarget
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 142
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: shareTarget
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("shareTarget")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ShareTarget? ShareTarget { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.ShareTarget
+    content.vb: >-
+      <JsonPropertyName("shareTarget")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ShareTarget As ShareTarget
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: shareTarget
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+  id: ShortName
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: ShortName
+  nameWithType: WebAppManifest.ShortName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ShortName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 149
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: shortName
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("shortName")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? ShortName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("shortName")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ShortName As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: shortName
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+  id: Shortcuts
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: Shortcuts
+  nameWithType: WebAppManifest.Shortcuts
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Shortcuts
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 156
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: shortcuts
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("shortcuts")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public Shortcut[]? Shortcuts { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.Shortcut[]
+    content.vb: >-
+      <JsonPropertyName("shortcuts")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Shortcuts As Shortcut()
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: shortcuts
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+  id: StartUrl
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: StartUrl
+  nameWithType: WebAppManifest.StartUrl
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StartUrl
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 163
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: startUrl
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("startUrl")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? StartUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("startUrl")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property StartUrl As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: startUrl
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor
+  id: ThemeColor
+  parent: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest
+  langs:
+  - csharp
+  - vb
+  name: ThemeColor
+  nameWithType: WebAppManifest.ThemeColor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ThemeColor
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/WebAppManifest.cs
+    startLine: 170
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: themeColor
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("themeColor")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? ThemeColor { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("themeColor")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ThemeColor As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: themeColor
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Page
+  commentId: N:OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Page
+  nameWithType: OpenQA.Selenium.DevTools.V133.Page
+  fullName: OpenQA.Selenium.DevTools.V133.Page
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_BackgroundColor
+  name: BackgroundColor
+  nameWithType: WebAppManifest.BackgroundColor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.BackgroundColor
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Description
+  name: Description
+  nameWithType: WebAppManifest.Description
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Description
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Dir
+  name: Dir
+  nameWithType: WebAppManifest.Dir
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Dir
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Display
+  name: Display
+  nameWithType: WebAppManifest.Display
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Display
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_DisplayOverrides
+  name: DisplayOverrides
+  nameWithType: WebAppManifest.DisplayOverrides
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.DisplayOverrides
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_FileHandlers
+  name: FileHandlers
+  nameWithType: WebAppManifest.FileHandlers
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.FileHandlers
+- uid: OpenQA.Selenium.DevTools.V133.Page.FileHandler[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.FileHandler.html
+  name: FileHandler[]
+  nameWithType: FileHandler[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.FileHandler[]
+  nameWithType.vb: FileHandler()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.FileHandler()
+  name.vb: FileHandler()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.FileHandler
+    name: FileHandler
+    href: OpenQA.Selenium.DevTools.V133.Page.FileHandler.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.FileHandler
+    name: FileHandler
+    href: OpenQA.Selenium.DevTools.V133.Page.FileHandler.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Icons
+  name: Icons
+  nameWithType: WebAppManifest.Icons
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Icons
+- uid: OpenQA.Selenium.DevTools.V133.Page.ImageResource[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.ImageResource.html
+  name: ImageResource[]
+  nameWithType: ImageResource[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.ImageResource[]
+  nameWithType.vb: ImageResource()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.ImageResource()
+  name.vb: ImageResource()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ImageResource
+    name: ImageResource
+    href: OpenQA.Selenium.DevTools.V133.Page.ImageResource.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ImageResource
+    name: ImageResource
+    href: OpenQA.Selenium.DevTools.V133.Page.ImageResource.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Id
+  name: Id
+  nameWithType: WebAppManifest.Id
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Id
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Lang
+  name: Lang
+  nameWithType: WebAppManifest.Lang
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Lang
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_LaunchHandler
+  name: LaunchHandler
+  nameWithType: WebAppManifest.LaunchHandler
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.LaunchHandler
+- uid: OpenQA.Selenium.DevTools.V133.Page.LaunchHandler
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.LaunchHandler
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.Selenium.DevTools.V133.Page.LaunchHandler.html
+  name: LaunchHandler
+  nameWithType: LaunchHandler
+  fullName: OpenQA.Selenium.DevTools.V133.Page.LaunchHandler
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Name
+  name: Name
+  nameWithType: WebAppManifest.Name
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Name
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Orientation
+  name: Orientation
+  nameWithType: WebAppManifest.Orientation
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Orientation
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_PreferRelatedApplications
+  name: PreferRelatedApplications
+  nameWithType: WebAppManifest.PreferRelatedApplications
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.PreferRelatedApplications
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_ProtocolHandlers
+  name: ProtocolHandlers
+  nameWithType: WebAppManifest.ProtocolHandlers
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ProtocolHandlers
+- uid: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler.html
+  name: ProtocolHandler[]
+  nameWithType: ProtocolHandler[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler[]
+  nameWithType.vb: ProtocolHandler()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler()
+  name.vb: ProtocolHandler()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler
+    name: ProtocolHandler
+    href: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler
+    name: ProtocolHandler
+    href: OpenQA.Selenium.DevTools.V133.Page.ProtocolHandler.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_RelatedApplications
+  name: RelatedApplications
+  nameWithType: WebAppManifest.RelatedApplications
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.RelatedApplications
+- uid: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication.html
+  name: RelatedApplication[]
+  nameWithType: RelatedApplication[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication[]
+  nameWithType.vb: RelatedApplication()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication()
+  name.vb: RelatedApplication()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication
+    name: RelatedApplication
+    href: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication
+    name: RelatedApplication
+    href: OpenQA.Selenium.DevTools.V133.Page.RelatedApplication.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Scope
+  name: Scope
+  nameWithType: WebAppManifest.Scope
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Scope
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_ScopeExtensions
+  name: ScopeExtensions
+  nameWithType: WebAppManifest.ScopeExtensions
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ScopeExtensions
+- uid: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension.html
+  name: ScopeExtension[]
+  nameWithType: ScopeExtension[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension[]
+  nameWithType.vb: ScopeExtension()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension()
+  name.vb: ScopeExtension()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension
+    name: ScopeExtension
+    href: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension
+    name: ScopeExtension
+    href: OpenQA.Selenium.DevTools.V133.Page.ScopeExtension.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Screenshots
+  name: Screenshots
+  nameWithType: WebAppManifest.Screenshots
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Screenshots
+- uid: OpenQA.Selenium.DevTools.V133.Page.Screenshot[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.Screenshot.html
+  name: Screenshot[]
+  nameWithType: Screenshot[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.Screenshot[]
+  nameWithType.vb: Screenshot()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.Screenshot()
+  name.vb: Screenshot()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.Screenshot
+    name: Screenshot
+    href: OpenQA.Selenium.DevTools.V133.Page.Screenshot.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.Screenshot
+    name: Screenshot
+    href: OpenQA.Selenium.DevTools.V133.Page.Screenshot.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_ShareTarget
+  name: ShareTarget
+  nameWithType: WebAppManifest.ShareTarget
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShareTarget
+- uid: OpenQA.Selenium.DevTools.V133.Page.ShareTarget
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.ShareTarget
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.Selenium.DevTools.V133.Page.ShareTarget.html
+  name: ShareTarget
+  nameWithType: ShareTarget
+  fullName: OpenQA.Selenium.DevTools.V133.Page.ShareTarget
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_ShortName
+  name: ShortName
+  nameWithType: WebAppManifest.ShortName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ShortName
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_Shortcuts
+  name: Shortcuts
+  nameWithType: WebAppManifest.Shortcuts
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.Shortcuts
+- uid: OpenQA.Selenium.DevTools.V133.Page.Shortcut[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V133.Page.Shortcut.html
+  name: Shortcut[]
+  nameWithType: Shortcut[]
+  fullName: OpenQA.Selenium.DevTools.V133.Page.Shortcut[]
+  nameWithType.vb: Shortcut()
+  fullName.vb: OpenQA.Selenium.DevTools.V133.Page.Shortcut()
+  name.vb: Shortcut()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.Shortcut
+    name: Shortcut
+    href: OpenQA.Selenium.DevTools.V133.Page.Shortcut.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V133.Page.Shortcut
+    name: Shortcut
+    href: OpenQA.Selenium.DevTools.V133.Page.Shortcut.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_StartUrl
+  name: StartUrl
+  nameWithType: WebAppManifest.StartUrl
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.StartUrl
+- uid: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor
+  href: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.html#OpenQA_Selenium_DevTools_V133_Page_WebAppManifest_ThemeColor
+  name: ThemeColor
+  nameWithType: WebAppManifest.ThemeColor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.WebAppManifest.ThemeColor

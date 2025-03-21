@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  id: ContextTarget
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)
+  - OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+  - OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+  langs:
+  - csharp
+  - vb
+  name: ContextTarget
+  nameWithType: ContextTarget
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/Target.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContextTarget
+    path: ../src/webdriver/BiDi/Modules/Script/Target.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record ContextTarget : Target, IEquatable<Target>, IEquatable<ContextTarget>'
+    content.vb: Public Class ContextTarget Inherits Target Implements IEquatable(Of Target), IEquatable(Of ContextTarget)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Modules.Script.Target
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.Target}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.ContextTarget}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)
+  id: '#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)'
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  langs:
+  - csharp
+  - vb
+  name: ContextTarget(BrowsingContext)
+  nameWithType: ContextTarget.ContextTarget(BrowsingContext)
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.ContextTarget(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/Target.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Script/Target.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public ContextTarget(BrowsingContext Context)
+    parameters:
+    - id: Context
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+    content.vb: Public Sub New(Context As BrowsingContext)
+  overload: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor*
+  nameWithType.vb: ContextTarget.New(BrowsingContext)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.New(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext)
+  name.vb: New(BrowsingContext)
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+  id: Context
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: ContextTarget.Context
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/Target.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Context
+    path: ../src/webdriver/BiDi/Modules/Script/Target.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public BrowsingContext Context { get; init; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+    content.vb: Public Property Context As BrowsingContext
+  overload: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+  id: Sandbox
+  parent: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+  langs:
+  - csharp
+  - vb
+  name: Sandbox
+  nameWithType: ContextTarget.Sandbox
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/Target.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Sandbox
+    path: ../src/webdriver/BiDi/Modules/Script/Target.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public string? Sandbox { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Sandbox As String
+  overload: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Modules.Script.Target
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.Target
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.Target.html
+  name: Target
+  nameWithType: Target
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.Target
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.Target}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.Target}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Target>
+  nameWithType: IEquatable<Target>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.Target>
+  nameWithType.vb: IEquatable(Of Target)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.Target)
+  name.vb: IEquatable(Of Target)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.Target
+    name: Target
+    href: OpenQA.Selenium.BiDi.Modules.Script.Target.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.Target
+    name: Target
+    href: OpenQA.Selenium.BiDi.Modules.Script.Target.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.ContextTarget}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.ContextTarget}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ContextTarget>
+  nameWithType: IEquatable<ContextTarget>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.ContextTarget>
+  nameWithType.vb: IEquatable(Of ContextTarget)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.ContextTarget)
+  name.vb: IEquatable(Of ContextTarget)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+    name: ContextTarget
+    href: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget
+    name: ContextTarget
+    href: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.html#OpenQA_Selenium_BiDi_Modules_Script_ContextTarget__ctor_OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_
+  name: ContextTarget
+  nameWithType: ContextTarget.ContextTarget
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.ContextTarget
+  nameWithType.vb: ContextTarget.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html
+  name: BrowsingContext
+  nameWithType: BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+  href: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.html#OpenQA_Selenium_BiDi_Modules_Script_ContextTarget_Context
+  name: Context
+  nameWithType: ContextTarget.Context
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Context
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+  href: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.html#OpenQA_Selenium_BiDi_Modules_Script_ContextTarget_Sandbox
+  name: Sandbox
+  nameWithType: ContextTarget.Sandbox
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ContextTarget.Sandbox
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

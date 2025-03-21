@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  id: IPointerCommonProperties
+  parent: OpenQA.Selenium.BiDi.Modules.Input
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+  - OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+  langs:
+  - csharp
+  - vb
+  name: IPointerCommonProperties
+  nameWithType: IPointerCommonProperties
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  type: Interface
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: IPointerCommonProperties
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 153
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: public interface IPointerCommonProperties
+    content.vb: Public Interface IPointerCommonProperties
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+  id: Width
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: IPointerCommonProperties.Width
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Width
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 155
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: int? Width { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Property Width As Integer?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+  id: Height
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: IPointerCommonProperties.Height
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Height
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 157
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: int? Height { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Property Height As Integer?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+  id: Pressure
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: Pressure
+  nameWithType: IPointerCommonProperties.Pressure
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Pressure
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 159
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: double? Pressure { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Property Pressure As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+  id: TangentialPressure
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: TangentialPressure
+  nameWithType: IPointerCommonProperties.TangentialPressure
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TangentialPressure
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 161
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: double? TangentialPressure { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Property TangentialPressure As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+  id: Twist
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: Twist
+  nameWithType: IPointerCommonProperties.Twist
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Twist
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 163
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: int? Twist { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Property Twist As Integer?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+  id: AltitudeAngle
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: AltitudeAngle
+  nameWithType: IPointerCommonProperties.AltitudeAngle
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AltitudeAngle
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 165
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: double? AltitudeAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Property AltitudeAngle As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle*
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle
+  id: AzimuthAngle
+  parent: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties
+  langs:
+  - csharp
+  - vb
+  name: AzimuthAngle
+  nameWithType: IPointerCommonProperties.AzimuthAngle
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Input/SourceActions.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AzimuthAngle
+    path: ../src/webdriver/BiDi/Modules/Input/SourceActions.cs
+    startLine: 167
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Input
+  syntax:
+    content: double? AzimuthAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Property AzimuthAngle As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Input
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Input
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Input
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.Input
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Input
+    name: Input
+    href: OpenQA.Selenium.BiDi.Modules.Input.html
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_Width
+  name: Width
+  nameWithType: IPointerCommonProperties.Width
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Width
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_Height
+  name: Height
+  nameWithType: IPointerCommonProperties.Height
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Height
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_Pressure
+  name: Pressure
+  nameWithType: IPointerCommonProperties.Pressure
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Pressure
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_TangentialPressure
+  name: TangentialPressure
+  nameWithType: IPointerCommonProperties.TangentialPressure
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.TangentialPressure
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_Twist
+  name: Twist
+  nameWithType: IPointerCommonProperties.Twist
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.Twist
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_AltitudeAngle
+  name: AltitudeAngle
+  nameWithType: IPointerCommonProperties.AltitudeAngle
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AltitudeAngle
+- uid: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle
+  href: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.html#OpenQA_Selenium_BiDi_Modules_Input_IPointerCommonProperties_AzimuthAngle
+  name: AzimuthAngle
+  nameWithType: IPointerCommonProperties.AzimuthAngle
+  fullName: OpenQA.Selenium.BiDi.Modules.Input.IPointerCommonProperties.AzimuthAngle

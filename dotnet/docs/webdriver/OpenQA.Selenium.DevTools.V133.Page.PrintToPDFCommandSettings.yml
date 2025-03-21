@@ -1,0 +1,1517 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  id: PrintToPDFCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  children:
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+  - OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+  langs:
+  - csharp
+  - vb
+  name: PrintToPDFCommandSettings
+  nameWithType: PrintToPDFCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PrintToPDFCommandSettings
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: PrintToPDF
+  example: []
+  syntax:
+    content: 'public sealed class PrintToPDFCommandSettings : ICommand'
+    content.vb: Public NotInheritable Class PrintToPDFCommandSettings Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+  id: CommandName
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: CommandName
+  nameWithType: PrintToPDFCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CommandName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets the name of the command.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string CommandName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property CommandName As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName*
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand.CommandName
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+  id: Landscape
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Landscape
+  nameWithType: PrintToPDFCommandSettings.Landscape
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Landscape
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the landscape
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("landscape")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? Landscape { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("landscape")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Landscape As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: landscape
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+  id: DisplayHeaderFooter
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: DisplayHeaderFooter
+  nameWithType: PrintToPDFCommandSettings.DisplayHeaderFooter
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisplayHeaderFooter
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the displayHeaderFooter
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("displayHeaderFooter")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? DisplayHeaderFooter { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("displayHeaderFooter")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property DisplayHeaderFooter As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: displayHeaderFooter
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+  id: PrintBackground
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PrintBackground
+  nameWithType: PrintToPDFCommandSettings.PrintBackground
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PrintBackground
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the printBackground
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("printBackground")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? PrintBackground { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("printBackground")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PrintBackground As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: printBackground
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+  id: Scale
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: PrintToPDFCommandSettings.Scale
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Scale
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the scale
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("scale")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? Scale { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("scale")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Scale As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: scale
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+  id: PaperWidth
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PaperWidth
+  nameWithType: PrintToPDFCommandSettings.PaperWidth
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PaperWidth
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the paperWidth
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("paperWidth")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? PaperWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("paperWidth")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PaperWidth As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: paperWidth
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+  id: PaperHeight
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PaperHeight
+  nameWithType: PrintToPDFCommandSettings.PaperHeight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PaperHeight
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the paperHeight
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("paperHeight")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? PaperHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("paperHeight")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PaperHeight As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: paperHeight
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+  id: MarginTop
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: MarginTop
+  nameWithType: PrintToPDFCommandSettings.MarginTop
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MarginTop
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 66
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the marginTop
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("marginTop")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? MarginTop { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("marginTop")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MarginTop As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: marginTop
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+  id: MarginBottom
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: MarginBottom
+  nameWithType: PrintToPDFCommandSettings.MarginBottom
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MarginBottom
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the marginBottom
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("marginBottom")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? MarginBottom { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("marginBottom")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MarginBottom As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: marginBottom
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+  id: MarginLeft
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: MarginLeft
+  nameWithType: PrintToPDFCommandSettings.MarginLeft
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MarginLeft
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 80
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the marginLeft
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("marginLeft")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? MarginLeft { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("marginLeft")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MarginLeft As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: marginLeft
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+  id: MarginRight
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: MarginRight
+  nameWithType: PrintToPDFCommandSettings.MarginRight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MarginRight
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 87
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the marginRight
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("marginRight")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? MarginRight { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("marginRight")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MarginRight As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: marginRight
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+  id: PageRanges
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PageRanges
+  nameWithType: PrintToPDFCommandSettings.PageRanges
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PageRanges
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 94
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the pageRanges
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("pageRanges")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? PageRanges { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("pageRanges")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PageRanges As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pageRanges
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+  id: HeaderTemplate
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: HeaderTemplate
+  nameWithType: PrintToPDFCommandSettings.HeaderTemplate
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HeaderTemplate
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 101
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the headerTemplate
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("headerTemplate")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? HeaderTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("headerTemplate")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property HeaderTemplate As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: headerTemplate
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+  id: FooterTemplate
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: FooterTemplate
+  nameWithType: PrintToPDFCommandSettings.FooterTemplate
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FooterTemplate
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 108
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the footerTemplate
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("footerTemplate")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? FooterTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("footerTemplate")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FooterTemplate As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: footerTemplate
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+  id: PreferCSSPageSize
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PreferCSSPageSize
+  nameWithType: PrintToPDFCommandSettings.PreferCSSPageSize
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PreferCSSPageSize
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 115
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the preferCSSPageSize
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("preferCSSPageSize")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? PreferCSSPageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("preferCSSPageSize")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PreferCSSPageSize As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: preferCSSPageSize
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+  id: TransferMode
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: TransferMode
+  nameWithType: PrintToPDFCommandSettings.TransferMode
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TransferMode
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 122
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the transferMode
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("transferMode")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? TransferMode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("transferMode")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property TransferMode As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: transferMode
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+  id: GenerateTaggedPDF
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: GenerateTaggedPDF
+  nameWithType: PrintToPDFCommandSettings.GenerateTaggedPDF
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GenerateTaggedPDF
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 129
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the generateTaggedPDF
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("generateTaggedPDF")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? GenerateTaggedPDF { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("generateTaggedPDF")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property GenerateTaggedPDF As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: generateTaggedPDF
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline
+  id: GenerateDocumentOutline
+  parent: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: GenerateDocumentOutline
+  nameWithType: PrintToPDFCommandSettings.GenerateDocumentOutline
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GenerateDocumentOutline
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/PrintToPDFCommand.cs
+    startLine: 136
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the generateDocumentOutline
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("generateDocumentOutline")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? GenerateDocumentOutline { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("generateDocumentOutline")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property GenerateDocumentOutline As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: generateDocumentOutline
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Page
+  commentId: N:OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Page
+  nameWithType: OpenQA.Selenium.DevTools.V133.Page
+  fullName: OpenQA.Selenium.DevTools.V133.Page
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.DevTools.ICommand
+  commentId: T:OpenQA.Selenium.DevTools.ICommand
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: OpenQA.Selenium.DevTools.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_CommandName
+  name: CommandName
+  nameWithType: PrintToPDFCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.CommandName
+- uid: OpenQA.Selenium.DevTools.ICommand.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.ICommand.CommandName
+  parent: OpenQA.Selenium.DevTools.ICommand
+  href: OpenQA.Selenium.DevTools.ICommand.html#OpenQA_Selenium_DevTools_ICommand_CommandName
+  name: CommandName
+  nameWithType: ICommand.CommandName
+  fullName: OpenQA.Selenium.DevTools.ICommand.CommandName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_Landscape
+  name: Landscape
+  nameWithType: PrintToPDFCommandSettings.Landscape
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Landscape
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_DisplayHeaderFooter
+  name: DisplayHeaderFooter
+  nameWithType: PrintToPDFCommandSettings.DisplayHeaderFooter
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.DisplayHeaderFooter
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_PrintBackground
+  name: PrintBackground
+  nameWithType: PrintToPDFCommandSettings.PrintBackground
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PrintBackground
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_Scale
+  name: Scale
+  nameWithType: PrintToPDFCommandSettings.Scale
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.Scale
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_PaperWidth
+  name: PaperWidth
+  nameWithType: PrintToPDFCommandSettings.PaperWidth
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperWidth
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_PaperHeight
+  name: PaperHeight
+  nameWithType: PrintToPDFCommandSettings.PaperHeight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PaperHeight
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_MarginTop
+  name: MarginTop
+  nameWithType: PrintToPDFCommandSettings.MarginTop
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginTop
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_MarginBottom
+  name: MarginBottom
+  nameWithType: PrintToPDFCommandSettings.MarginBottom
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginBottom
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_MarginLeft
+  name: MarginLeft
+  nameWithType: PrintToPDFCommandSettings.MarginLeft
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginLeft
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_MarginRight
+  name: MarginRight
+  nameWithType: PrintToPDFCommandSettings.MarginRight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.MarginRight
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_PageRanges
+  name: PageRanges
+  nameWithType: PrintToPDFCommandSettings.PageRanges
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PageRanges
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_HeaderTemplate
+  name: HeaderTemplate
+  nameWithType: PrintToPDFCommandSettings.HeaderTemplate
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.HeaderTemplate
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_FooterTemplate
+  name: FooterTemplate
+  nameWithType: PrintToPDFCommandSettings.FooterTemplate
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.FooterTemplate
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_PreferCSSPageSize
+  name: PreferCSSPageSize
+  nameWithType: PrintToPDFCommandSettings.PreferCSSPageSize
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.PreferCSSPageSize
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_TransferMode
+  name: TransferMode
+  nameWithType: PrintToPDFCommandSettings.TransferMode
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.TransferMode
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_GenerateTaggedPDF
+  name: GenerateTaggedPDF
+  nameWithType: PrintToPDFCommandSettings.GenerateTaggedPDF
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateTaggedPDF
+- uid: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline
+  href: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_PrintToPDFCommandSettings_GenerateDocumentOutline
+  name: GenerateDocumentOutline
+  nameWithType: PrintToPDFCommandSettings.GenerateDocumentOutline
+  fullName: OpenQA.Selenium.DevTools.V133.Page.PrintToPDFCommandSettings.GenerateDocumentOutline

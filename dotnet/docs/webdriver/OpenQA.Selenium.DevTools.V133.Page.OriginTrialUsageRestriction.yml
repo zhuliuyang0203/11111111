@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  id: OriginTrialUsageRestriction
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  children:
+  - OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.None
+  - OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.Subset
+  langs:
+  - csharp
+  - vb
+  name: OriginTrialUsageRestriction
+  nameWithType: OriginTrialUsageRestriction
+  fullName: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OriginTrialUsageRestriction
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: OriginTrialUsageRestriction
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<OriginTrialUsageRestriction>))]
+
+      public enum OriginTrialUsageRestriction
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of OriginTrialUsageRestriction)))>
+
+      Public Enum OriginTrialUsageRestriction
+- uid: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.None
+  commentId: F:OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.None
+  id: None
+  parent: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OriginTrialUsageRestriction.None
+  fullName: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.None
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: None
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Enumerated member for the None value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "None")]
+
+      None = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+    content.vb: >-
+      <EnumMember(Value:="None")>
+
+      None = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: None
+- uid: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.Subset
+  commentId: F:OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.Subset
+  id: Subset
+  parent: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  langs:
+  - csharp
+  - vb
+  name: Subset
+  nameWithType: OriginTrialUsageRestriction.Subset
+  fullName: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.Subset
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Subset
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/OriginTrialUsageRestriction.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Enumerated member for the Subset value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "Subset")]
+
+      Subset = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+    content.vb: >-
+      <EnumMember(Value:="Subset")>
+
+      Subset = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: Subset
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Page
+  commentId: N:OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Page
+  nameWithType: OpenQA.Selenium.DevTools.V133.Page
+  fullName: OpenQA.Selenium.DevTools.V133.Page
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+- uid: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction.html
+  name: OriginTrialUsageRestriction
+  nameWithType: OriginTrialUsageRestriction
+  fullName: OpenQA.Selenium.DevTools.V133.Page.OriginTrialUsageRestriction

@@ -1,0 +1,948 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  commentId: T:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  id: UserAgentMetadata
+  parent: OpenQA.Selenium.DevTools.V134.Emulation
+  children:
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+  - OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+  langs:
+  - csharp
+  - vb
+  name: UserAgentMetadata
+  nameWithType: UserAgentMetadata
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserAgentMetadata
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: UserAgentMetadata
+  example: []
+  syntax:
+    content: public sealed class UserAgentMetadata
+    content.vb: Public NotInheritable Class UserAgentMetadata
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+  id: Brands
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Brands
+  nameWithType: UserAgentMetadata.Brands
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Brands
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: brands
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("brands")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public UserAgentBrandVersion[]? Brands { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion[]
+    content.vb: >-
+      <JsonPropertyName("brands")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Brands As UserAgentBrandVersion()
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: brands
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+  id: FullVersionList
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: FullVersionList
+  nameWithType: UserAgentMetadata.FullVersionList
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FullVersionList
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: fullVersionList
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("fullVersionList")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public UserAgentBrandVersion[]? FullVersionList { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion[]
+    content.vb: >-
+      <JsonPropertyName("fullVersionList")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FullVersionList As UserAgentBrandVersion()
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: fullVersionList
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+  id: FullVersion
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: FullVersion
+  nameWithType: UserAgentMetadata.FullVersion
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FullVersion
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: fullVersion
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("fullVersion")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? FullVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("fullVersion")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property FullVersion As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: fullVersion
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+  id: Platform
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Platform
+  nameWithType: UserAgentMetadata.Platform
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Platform
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: platform
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("platform")]
+
+      public string Platform { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("platform")>
+
+      Public Property Platform As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: platform
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+  id: PlatformVersion
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: PlatformVersion
+  nameWithType: UserAgentMetadata.PlatformVersion
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PlatformVersion
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: platformVersion
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("platformVersion")]
+
+      public string PlatformVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("platformVersion")>
+
+      Public Property PlatformVersion As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: platformVersion
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+  id: Architecture
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Architecture
+  nameWithType: UserAgentMetadata.Architecture
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Architecture
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: architecture
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("architecture")]
+
+      public string Architecture { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("architecture")>
+
+      Public Property Architecture As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: architecture
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+  id: Model
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: UserAgentMetadata.Model
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Model
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: model
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("model")]
+
+      public string Model { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("model")>
+
+      Public Property Model As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: model
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+  id: Mobile
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Mobile
+  nameWithType: UserAgentMetadata.Mobile
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Mobile
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: mobile
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("mobile")]
+
+      public bool Mobile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("mobile")>
+
+      Public Property Mobile As Boolean
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mobile
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+  id: Bitness
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Bitness
+  nameWithType: UserAgentMetadata.Bitness
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Bitness
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 72
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: bitness
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("bitness")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public string? Bitness { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("bitness")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Bitness As String
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: bitness
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+  commentId: P:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+  id: Wow64
+  parent: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata
+  langs:
+  - csharp
+  - vb
+  name: Wow64
+  nameWithType: UserAgentMetadata.Wow64
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Wow64
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Emulation/UserAgentMetadata.cs
+    startLine: 79
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Emulation
+  summary: wow64
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("wow64")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? Wow64 { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("wow64")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Wow64 As Boolean?
+  overload: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: wow64
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V134.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V134.Emulation
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V134.Emulation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Brands
+  name: Brands
+  nameWithType: UserAgentMetadata.Brands
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Brands
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion[]
+  isExternal: true
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion.html
+  name: UserAgentBrandVersion[]
+  nameWithType: UserAgentBrandVersion[]
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion[]
+  nameWithType.vb: UserAgentBrandVersion()
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion()
+  name.vb: UserAgentBrandVersion()
+  spec.csharp:
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion
+    name: UserAgentBrandVersion
+    href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion
+    name: UserAgentBrandVersion
+    href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentBrandVersion.html
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_FullVersionList
+  name: FullVersionList
+  nameWithType: UserAgentMetadata.FullVersionList
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersionList
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_FullVersion
+  name: FullVersion
+  nameWithType: UserAgentMetadata.FullVersion
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.FullVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Platform
+  name: Platform
+  nameWithType: UserAgentMetadata.Platform
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Platform
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_PlatformVersion
+  name: PlatformVersion
+  nameWithType: UserAgentMetadata.PlatformVersion
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.PlatformVersion
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Architecture
+  name: Architecture
+  nameWithType: UserAgentMetadata.Architecture
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Architecture
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Model
+  name: Model
+  nameWithType: UserAgentMetadata.Model
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Model
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Mobile
+  name: Mobile
+  nameWithType: UserAgentMetadata.Mobile
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Mobile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Bitness
+  name: Bitness
+  nameWithType: UserAgentMetadata.Bitness
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Bitness
+- uid: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+  href: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.html#OpenQA_Selenium_DevTools_V134_Emulation_UserAgentMetadata_Wow64
+  name: Wow64
+  nameWithType: UserAgentMetadata.Wow64
+  fullName: OpenQA.Selenium.DevTools.V134.Emulation.UserAgentMetadata.Wow64
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,2416 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  id: BrowsingContext
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals(System.Object)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator,OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync(System.String,OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync(System.Int32,OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  langs:
+  - csharp
+  - vb
+  name: BrowsingContext
+  nameWithType: BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BrowsingContext
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public class BrowsingContext
+    content.vb: Public Class BrowsingContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+  id: BiDi
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: BiDi
+  nameWithType: BrowsingContext.BiDi
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BiDi
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 47
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BiDi BiDi { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.BiDi
+    content.vb: Public ReadOnly Property BiDi As BiDi
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+  id: Log
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: BrowsingContext.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Log
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 49
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextLogModule Log { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+    content.vb: Public ReadOnly Property Log As BrowsingContextLogModule
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+  id: Network
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Network
+  nameWithType: BrowsingContext.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Network
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextNetworkModule Network { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+    content.vb: Public ReadOnly Property Network As BrowsingContextNetworkModule
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+  id: Script
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Script
+  nameWithType: BrowsingContext.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Script
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextScriptModule Script { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+    content.vb: Public ReadOnly Property Script As BrowsingContextScriptModule
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+  id: Storage
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Storage
+  nameWithType: BrowsingContext.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Storage
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 55
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextStorageModule Storage { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+    content.vb: Public ReadOnly Property Storage As BrowsingContextStorageModule
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+  id: Input
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: BrowsingContext.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Input
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 57
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextInputModule Input { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+    content.vb: Public ReadOnly Property Input As BrowsingContextInputModule
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync(System.String,OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync(System.String,OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions)
+  id: NavigateAsync(System.String,OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: NavigateAsync(string, NavigateOptions?)
+  nameWithType: BrowsingContext.NavigateAsync(string, NavigateOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync(string, OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NavigateAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<NavigateResult> NavigateAsync(string url, NavigateOptions? options = null)
+    parameters:
+    - id: url
+      type: System.String
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult}
+    content.vb: Public Function NavigateAsync(url As String, options As NavigateOptions = Nothing) As Task(Of NavigateResult)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync*
+  nameWithType.vb: BrowsingContext.NavigateAsync(String, NavigateOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync(String, OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions)
+  name.vb: NavigateAsync(String, NavigateOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions)
+  id: ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: ReloadAsync(ReloadOptions?)
+  nameWithType: BrowsingContext.ReloadAsync(ReloadOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ReloadAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 64
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<NavigateResult> ReloadAsync(ReloadOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult}
+    content.vb: Public Function ReloadAsync(options As ReloadOptions = Nothing) As Task(Of NavigateResult)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync*
+  nameWithType.vb: BrowsingContext.ReloadAsync(ReloadOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions)
+  name.vb: ReloadAsync(ReloadOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions)
+  id: ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: ActivateAsync(ActivateOptions?)
+  nameWithType: BrowsingContext.ActivateAsync(ActivateOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ActivateAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 69
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task ActivateAsync(ActivateOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ActivateAsync(options As ActivateOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync*
+  nameWithType.vb: BrowsingContext.ActivateAsync(ActivateOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions)
+  name.vb: ActivateAsync(ActivateOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator,OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator,OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions)
+  id: LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator,OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: LocateNodesAsync(Locator, LocateNodesOptions?)
+  nameWithType: BrowsingContext.LocateNodesAsync(Locator, LocateNodesOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator, OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LocateNodesAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 74
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<LocateNodesResult> LocateNodesAsync(Locator locator, LocateNodesOptions? options = null)
+    parameters:
+    - id: locator
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult}
+    content.vb: Public Function LocateNodesAsync(locator As Locator, options As LocateNodesOptions = Nothing) As Task(Of LocateNodesResult)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync*
+  nameWithType.vb: BrowsingContext.LocateNodesAsync(Locator, LocateNodesOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator, OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions)
+  name.vb: LocateNodesAsync(Locator, LocateNodesOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions)
+  id: CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: CaptureScreenshotAsync(CaptureScreenshotOptions?)
+  nameWithType: BrowsingContext.CaptureScreenshotAsync(CaptureScreenshotOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CaptureScreenshotAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 79
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<CaptureScreenshotResult> CaptureScreenshotAsync(CaptureScreenshotOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult}
+    content.vb: Public Function CaptureScreenshotAsync(options As CaptureScreenshotOptions = Nothing) As Task(Of CaptureScreenshotResult)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync*
+  nameWithType.vb: BrowsingContext.CaptureScreenshotAsync(CaptureScreenshotOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions)
+  name.vb: CaptureScreenshotAsync(CaptureScreenshotOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions)
+  id: CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: CloseAsync(CloseOptions?)
+  nameWithType: BrowsingContext.CloseAsync(CloseOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CloseAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 84
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task CloseAsync(CloseOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CloseAsync(options As CloseOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync*
+  nameWithType.vb: BrowsingContext.CloseAsync(CloseOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions)
+  name.vb: CloseAsync(CloseOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync(System.Int32,OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync(System.Int32,OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  id: TraverseHistoryAsync(System.Int32,OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: TraverseHistoryAsync(int, TraverseHistoryOptions?)
+  nameWithType: BrowsingContext.TraverseHistoryAsync(int, TraverseHistoryOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync(int, OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TraverseHistoryAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 89
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task TraverseHistoryAsync(int delta, TraverseHistoryOptions? options = null)
+    parameters:
+    - id: delta
+      type: System.Int32
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function TraverseHistoryAsync(delta As Integer, options As TraverseHistoryOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync*
+  nameWithType.vb: BrowsingContext.TraverseHistoryAsync(Integer, TraverseHistoryOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync(Integer, OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  name.vb: TraverseHistoryAsync(Integer, TraverseHistoryOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  id: NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: NavigateBackAsync(TraverseHistoryOptions?)
+  nameWithType: BrowsingContext.NavigateBackAsync(TraverseHistoryOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NavigateBackAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 94
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task NavigateBackAsync(TraverseHistoryOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function NavigateBackAsync(options As TraverseHistoryOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync*
+  nameWithType.vb: BrowsingContext.NavigateBackAsync(TraverseHistoryOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  name.vb: NavigateBackAsync(TraverseHistoryOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  id: NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: NavigateForwardAsync(TraverseHistoryOptions?)
+  nameWithType: BrowsingContext.NavigateForwardAsync(TraverseHistoryOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: NavigateForwardAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 99
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task NavigateForwardAsync(TraverseHistoryOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function NavigateForwardAsync(options As TraverseHistoryOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync*
+  nameWithType.vb: BrowsingContext.NavigateForwardAsync(TraverseHistoryOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions)
+  name.vb: NavigateForwardAsync(TraverseHistoryOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions)
+  id: SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: SetViewportAsync(SetViewportOptions?)
+  nameWithType: BrowsingContext.SetViewportAsync(SetViewportOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SetViewportAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 104
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task SetViewportAsync(SetViewportOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SetViewportAsync(options As SetViewportOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync*
+  nameWithType.vb: BrowsingContext.SetViewportAsync(SetViewportOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions)
+  name.vb: SetViewportAsync(SetViewportOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions)
+  id: PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: PrintAsync(PrintOptions?)
+  nameWithType: BrowsingContext.PrintAsync(PrintOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PrintAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 109
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<PrintResult> PrintAsync(PrintOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult}
+    content.vb: Public Function PrintAsync(options As PrintOptions = Nothing) As Task(Of PrintResult)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync*
+  nameWithType.vb: BrowsingContext.PrintAsync(PrintOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions)
+  name.vb: PrintAsync(PrintOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions)
+  id: HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: HandleUserPromptAsync(HandleUserPromptOptions?)
+  nameWithType: BrowsingContext.HandleUserPromptAsync(HandleUserPromptOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: HandleUserPromptAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 114
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task HandleUserPromptAsync(HandleUserPromptOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function HandleUserPromptAsync(options As HandleUserPromptOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync*
+  nameWithType.vb: BrowsingContext.HandleUserPromptAsync(HandleUserPromptOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions)
+  name.vb: HandleUserPromptAsync(HandleUserPromptOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions)
+  id: GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: GetTreeAsync(BrowsingContextGetTreeOptions?)
+  nameWithType: BrowsingContext.GetTreeAsync(BrowsingContextGetTreeOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetTreeAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 119
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<IReadOnlyList<BrowsingContextInfo>> GetTreeAsync(BrowsingContextGetTreeOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo}}
+    content.vb: Public Function GetTreeAsync(options As BrowsingContextGetTreeOptions = Nothing) As Task(Of IReadOnlyList(Of BrowsingContextInfo))
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync*
+  nameWithType.vb: BrowsingContext.GetTreeAsync(BrowsingContextGetTreeOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions)
+  name.vb: GetTreeAsync(BrowsingContextGetTreeOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationStartedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationStartedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationStartedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 129
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationStartedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationStartedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationStartedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationStartedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationStartedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationStartedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationStartedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationStartedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 134
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationStartedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationStartedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationStartedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationStartedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnFragmentNavigatedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnFragmentNavigatedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnFragmentNavigatedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnFragmentNavigatedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 139
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnFragmentNavigatedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnFragmentNavigatedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync*
+  nameWithType.vb: BrowsingContext.OnFragmentNavigatedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnFragmentNavigatedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnFragmentNavigatedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnFragmentNavigatedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnFragmentNavigatedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnFragmentNavigatedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 144
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnFragmentNavigatedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnFragmentNavigatedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync*
+  nameWithType.vb: BrowsingContext.OnFragmentNavigatedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnFragmentNavigatedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnDomContentLoadedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnDomContentLoadedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnDomContentLoadedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnDomContentLoadedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 149
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnDomContentLoadedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnDomContentLoadedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync*
+  nameWithType.vb: BrowsingContext.OnDomContentLoadedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnDomContentLoadedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnDomContentLoadedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnDomContentLoadedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnDomContentLoadedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnDomContentLoadedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 154
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnDomContentLoadedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnDomContentLoadedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync*
+  nameWithType.vb: BrowsingContext.OnDomContentLoadedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnDomContentLoadedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnLoadAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnLoadAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnLoadAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnLoadAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 159
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnLoadAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnLoadAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync*
+  nameWithType.vb: BrowsingContext.OnLoadAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnLoadAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnLoadAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnLoadAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnLoadAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnLoadAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 164
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnLoadAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnLoadAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync*
+  nameWithType.vb: BrowsingContext.OnLoadAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnLoadAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnDownloadWillBeginAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnDownloadWillBeginAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnDownloadWillBeginAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnDownloadWillBeginAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 169
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnDownloadWillBeginAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnDownloadWillBeginAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync*
+  nameWithType.vb: BrowsingContext.OnDownloadWillBeginAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnDownloadWillBeginAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnDownloadWillBeginAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnDownloadWillBeginAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnDownloadWillBeginAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnDownloadWillBeginAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 174
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnDownloadWillBeginAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnDownloadWillBeginAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync*
+  nameWithType.vb: BrowsingContext.OnDownloadWillBeginAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnDownloadWillBeginAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationAbortedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationAbortedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationAbortedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationAbortedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 179
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationAbortedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationAbortedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationAbortedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationAbortedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationAbortedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationAbortedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationAbortedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationAbortedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 184
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationAbortedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationAbortedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationAbortedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationAbortedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationFailedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationFailedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationFailedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationFailedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 189
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationFailedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationFailedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationFailedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationFailedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationFailedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationFailedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationFailedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationFailedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 194
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationFailedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationFailedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationFailedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationFailedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationCommittedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationCommittedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationCommittedAsync(Action<NavigationInfo>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationCommittedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 199
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationCommittedAsync(Action<NavigationInfo> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationCommittedAsync(handler As Action(Of NavigationInfo), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationCommittedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationCommittedAsync(Action(Of NavigationInfo), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnNavigationCommittedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationCommittedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContext.OnNavigationCommittedAsync(Func<NavigationInfo, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnNavigationCommittedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 204
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnNavigationCommittedAsync(Func<NavigationInfo, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnNavigationCommittedAsync(handler As Func(Of NavigationInfo, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync*
+  nameWithType.vb: BrowsingContext.OnNavigationCommittedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnNavigationCommittedAsync(Func(Of NavigationInfo, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals(System.Object)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: BrowsingContext.Equals(object?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Equals
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 209
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals*
+  nameWithType.vb: BrowsingContext.Equals(Object)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals(Object)
+  name.vb: Equals(Object)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode
+  id: GetHashCode
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BrowsingContext.GetHashCode()
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetHashCode
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContext.cs
+    startLine: 216
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_BiDi
+  name: BiDi
+  nameWithType: BrowsingContext.BiDi
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.BiDi
+- uid: OpenQA.Selenium.BiDi.BiDi
+  commentId: T:OpenQA.Selenium.BiDi.BiDi
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.BiDi.html
+  name: BiDi
+  nameWithType: BiDi
+  fullName: OpenQA.Selenium.BiDi.BiDi
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Log
+  name: Log
+  nameWithType: BrowsingContext.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Log
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.html
+  name: BrowsingContextLogModule
+  nameWithType: BrowsingContextLogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Network
+  name: Network
+  nameWithType: BrowsingContext.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Network
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule.html
+  name: BrowsingContextNetworkModule
+  nameWithType: BrowsingContextNetworkModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextNetworkModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Script
+  name: Script
+  nameWithType: BrowsingContext.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Script
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule.html
+  name: BrowsingContextScriptModule
+  nameWithType: BrowsingContextScriptModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextScriptModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Storage
+  name: Storage
+  nameWithType: BrowsingContext.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Storage
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule.html
+  name: BrowsingContextStorageModule
+  nameWithType: BrowsingContextStorageModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextStorageModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Input
+  name: Input
+  nameWithType: BrowsingContext.Input
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Input
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule.html
+  name: BrowsingContextInputModule
+  nameWithType: BrowsingContextInputModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInputModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_NavigateAsync_System_String_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigateOptions_
+  name: NavigateAsync
+  nameWithType: BrowsingContext.NavigateAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions.html
+  name: NavigateOptions
+  nameWithType: NavigateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<NavigateResult>
+  nameWithType: Task<NavigateResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult>
+  nameWithType.vb: Task(Of NavigateResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult)
+  name.vb: Task(Of NavigateResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+    name: NavigateResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult
+    name: NavigateResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigateResult.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_ReloadAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_ReloadOptions_
+  name: ReloadAsync
+  nameWithType: BrowsingContext.ReloadAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ReloadAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions.html
+  name: ReloadOptions
+  nameWithType: ReloadOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ReloadOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_ActivateAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_ActivateOptions_
+  name: ActivateAsync
+  nameWithType: BrowsingContext.ActivateAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.ActivateAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions.html
+  name: ActivateOptions
+  nameWithType: ActivateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.ActivateOptions
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_LocateNodesAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_Locator_OpenQA_Selenium_BiDi_Modules_BrowsingContext_LocateNodesOptions_
+  name: LocateNodesAsync
+  nameWithType: BrowsingContext.LocateNodesAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.LocateNodesAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator.html
+  name: Locator
+  nameWithType: Locator
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.Locator
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions.html
+  name: LocateNodesOptions
+  nameWithType: LocateNodesOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<LocateNodesResult>
+  nameWithType: Task<LocateNodesResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult>
+  nameWithType.vb: Task(Of LocateNodesResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult)
+  name.vb: Task(Of LocateNodesResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+    name: LocateNodesResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult
+    name: LocateNodesResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.LocateNodesResult.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_CaptureScreenshotAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_CaptureScreenshotOptions_
+  name: CaptureScreenshotAsync
+  nameWithType: BrowsingContext.CaptureScreenshotAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CaptureScreenshotAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions.html
+  name: CaptureScreenshotOptions
+  nameWithType: CaptureScreenshotOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CaptureScreenshotResult>
+  nameWithType: Task<CaptureScreenshotResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult>
+  nameWithType.vb: Task(Of CaptureScreenshotResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult)
+  name.vb: Task(Of CaptureScreenshotResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+    name: CaptureScreenshotResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult
+    name: CaptureScreenshotResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CaptureScreenshotResult.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_CloseAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_CloseOptions_
+  name: CloseAsync
+  nameWithType: BrowsingContext.CloseAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.CloseAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions.html
+  name: CloseOptions
+  nameWithType: CloseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.CloseOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_TraverseHistoryAsync_System_Int32_OpenQA_Selenium_BiDi_Modules_BrowsingContext_TraverseHistoryOptions_
+  name: TraverseHistoryAsync
+  nameWithType: BrowsingContext.TraverseHistoryAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.TraverseHistoryAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions.html
+  name: TraverseHistoryOptions
+  nameWithType: TraverseHistoryOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.TraverseHistoryOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_NavigateBackAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_TraverseHistoryOptions_
+  name: NavigateBackAsync
+  nameWithType: BrowsingContext.NavigateBackAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateBackAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_NavigateForwardAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_TraverseHistoryOptions_
+  name: NavigateForwardAsync
+  nameWithType: BrowsingContext.NavigateForwardAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.NavigateForwardAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_SetViewportAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_SetViewportOptions_
+  name: SetViewportAsync
+  nameWithType: BrowsingContext.SetViewportAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.SetViewportAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions.html
+  name: SetViewportOptions
+  nameWithType: SetViewportOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.SetViewportOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_PrintAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_PrintOptions_
+  name: PrintAsync
+  nameWithType: BrowsingContext.PrintAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.PrintAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions.html
+  name: PrintOptions
+  nameWithType: PrintOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PrintResult>
+  nameWithType: Task<PrintResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult>
+  nameWithType.vb: Task(Of PrintResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult)
+  name.vb: Task(Of PrintResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+    name: PrintResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult
+    name: PrintResult
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintResult.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_HandleUserPromptAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_HandleUserPromptOptions_
+  name: HandleUserPromptAsync
+  nameWithType: BrowsingContext.HandleUserPromptAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.HandleUserPromptAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions.html
+  name: HandleUserPromptOptions
+  nameWithType: HandleUserPromptOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.HandleUserPromptOptions
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_GetTreeAsync_OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContextGetTreeOptions_
+  name: GetTreeAsync
+  nameWithType: BrowsingContext.GetTreeAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetTreeAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions.html
+  name: BrowsingContextGetTreeOptions
+  nameWithType: BrowsingContextGetTreeOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextGetTreeOptions
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<BrowsingContextInfo>>
+  nameWithType: Task<IReadOnlyList<BrowsingContextInfo>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of BrowsingContextInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo))
+  name.vb: Task(Of IReadOnlyList(Of BrowsingContextInfo))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+    name: BrowsingContextInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo
+    name: BrowsingContextInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextInfo.html
+  - name: )
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnNavigationStartedAsync_System_Func_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnNavigationStartedAsync
+  nameWithType: BrowsingContext.OnNavigationStartedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationStartedAsync
+- uid: System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+  commentId: T:System.Func{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<NavigationInfo, Task>
+  nameWithType: Func<NavigationInfo, Task>
+  fullName: System.Func<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of NavigationInfo, Task)
+  fullName.vb: System.Func(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo, System.Threading.Tasks.Task)
+  name.vb: Func(Of NavigationInfo, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+    name: NavigationInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+    name: NavigationInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: OpenQA.Selenium.BiDi.SubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.SubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.SubscriptionOptions.html
+  name: SubscriptionOptions
+  nameWithType: SubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.SubscriptionOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Subscription>
+  nameWithType: Task<Subscription>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Subscription>
+  nameWithType.vb: Task(Of Subscription)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Subscription)
+  name.vb: Task(Of Subscription)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+  commentId: T:System.Action{OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<NavigationInfo>
+  nameWithType: Action<NavigationInfo>
+  fullName: System.Action<OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo>
+  nameWithType.vb: Action(Of NavigationInfo)
+  fullName.vb: System.Action(Of OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo)
+  name.vb: Action(Of NavigationInfo)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+    name: NavigationInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo
+    name: NavigationInfo
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.NavigationInfo.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnFragmentNavigatedAsync_System_Func_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnFragmentNavigatedAsync
+  nameWithType: BrowsingContext.OnFragmentNavigatedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnFragmentNavigatedAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnDomContentLoadedAsync_System_Func_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnDomContentLoadedAsync
+  nameWithType: BrowsingContext.OnDomContentLoadedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDomContentLoadedAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnLoadAsync_System_Action_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnLoadAsync
+  nameWithType: BrowsingContext.OnLoadAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnLoadAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnDownloadWillBeginAsync_System_Action_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnDownloadWillBeginAsync
+  nameWithType: BrowsingContext.OnDownloadWillBeginAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnDownloadWillBeginAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnNavigationAbortedAsync_System_Action_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnNavigationAbortedAsync
+  nameWithType: BrowsingContext.OnNavigationAbortedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationAbortedAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnNavigationFailedAsync_System_Action_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnNavigationFailedAsync
+  nameWithType: BrowsingContext.OnNavigationFailedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationFailedAsync
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OnNavigationCommittedAsync_System_Action_OpenQA_Selenium_BiDi_Modules_BrowsingContext_NavigationInfo__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnNavigationCommittedAsync
+  nameWithType: BrowsingContext.OnNavigationCommittedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.OnNavigationCommittedAsync
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_Equals_System_Object_
+  name: Equals
+  nameWithType: BrowsingContext.Equals
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_GetHashCode
+  name: GetHashCode
+  nameWithType: BrowsingContext.GetHashCode
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.GetHashCode

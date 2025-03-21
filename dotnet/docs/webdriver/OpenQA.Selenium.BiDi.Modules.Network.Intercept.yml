@@ -1,0 +1,1125 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  id: Intercept
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals(System.Object)
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+  - OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync
+  langs:
+  - csharp
+  - vb
+  name: Intercept
+  nameWithType: Intercept
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Intercept
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 26
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: 'public class Intercept : IAsyncDisposable'
+    content.vb: Public Class Intercept Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+  id: OnBeforeRequestSentSubscriptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeRequestSentSubscriptions
+  nameWithType: Intercept.OnBeforeRequestSentSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnBeforeRequestSentSubscriptions
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: protected IList<Subscription> OnBeforeRequestSentSubscriptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Protected ReadOnly Property OnBeforeRequestSentSubscriptions As IList(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+  id: OnResponseStartedSubscriptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnResponseStartedSubscriptions
+  nameWithType: Intercept.OnResponseStartedSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnResponseStartedSubscriptions
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 39
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: protected IList<Subscription> OnResponseStartedSubscriptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Protected ReadOnly Property OnResponseStartedSubscriptions As IList(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+  id: OnAuthRequiredSubscriptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnAuthRequiredSubscriptions
+  nameWithType: Intercept.OnAuthRequiredSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnAuthRequiredSubscriptions
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: protected IList<Subscription> OnAuthRequiredSubscriptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Protected ReadOnly Property OnAuthRequiredSubscriptions As IList(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync
+  id: RemoveAsync
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync()
+  nameWithType: Intercept.RemoveAsync()
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RemoveAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 42
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task RemoveAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RemoveAsync() As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnBeforeRequestSentAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeRequestSentAsync(Func<BeforeRequestSentEventArgs, Task>, SubscriptionOptions?)
+  nameWithType: Intercept.OnBeforeRequestSentAsync(Func<BeforeRequestSentEventArgs, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync(System.Func<OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnBeforeRequestSentAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 62
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task OnBeforeRequestSentAsync(Func<BeforeRequestSentEventArgs, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function OnBeforeRequestSentAsync(handler As Func(Of BeforeRequestSentEventArgs, Task), options As SubscriptionOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync*
+  nameWithType.vb: Intercept.OnBeforeRequestSentAsync(Func(Of BeforeRequestSentEventArgs, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnBeforeRequestSentAsync(Func(Of BeforeRequestSentEventArgs, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnResponseStartedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnResponseStartedAsync(Func<ResponseStartedEventArgs, Task>, SubscriptionOptions?)
+  nameWithType: Intercept.OnResponseStartedAsync(Func<ResponseStartedEventArgs, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnResponseStartedAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 69
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task OnResponseStartedAsync(Func<ResponseStartedEventArgs, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function OnResponseStartedAsync(handler As Func(Of ResponseStartedEventArgs, Task), options As SubscriptionOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync*
+  nameWithType.vb: Intercept.OnResponseStartedAsync(Func(Of ResponseStartedEventArgs, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnResponseStartedAsync(Func(Of ResponseStartedEventArgs, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnAuthRequiredAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: OnAuthRequiredAsync(Func<AuthRequiredEventArgs, Task>, SubscriptionOptions?)
+  nameWithType: Intercept.OnAuthRequiredAsync(Func<AuthRequiredEventArgs, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync(System.Func<OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnAuthRequiredAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 76
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task OnAuthRequiredAsync(Func<AuthRequiredEventArgs, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function OnAuthRequiredAsync(handler As Func(Of AuthRequiredEventArgs, Task), options As SubscriptionOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync*
+  nameWithType.vb: Intercept.OnAuthRequiredAsync(Func(Of AuthRequiredEventArgs, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnAuthRequiredAsync(Func(Of AuthRequiredEventArgs, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync
+  id: DisposeAsync
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: Intercept.DisposeAsync()
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisposeAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 107
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals(System.Object)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Intercept.Equals(object?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Equals
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 112
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals*
+  nameWithType.vb: Intercept.Equals(Object)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals(Object)
+  name.vb: Equals(Object)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode
+  id: GetHashCode
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Intercept
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Intercept.GetHashCode()
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Intercept.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetHashCode
+    path: ../src/webdriver/BiDi/Modules/Network/Intercept.cs
+    startLine: 119
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnBeforeRequestSentSubscriptions
+  name: OnBeforeRequestSentSubscriptions
+  nameWithType: Intercept.OnBeforeRequestSentSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentSubscriptions
+- uid: System.Collections.Generic.IList{OpenQA.Selenium.BiDi.Subscription}
+  commentId: T:System.Collections.Generic.IList{OpenQA.Selenium.BiDi.Subscription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<Subscription>
+  nameWithType: IList<Subscription>
+  fullName: System.Collections.Generic.IList<OpenQA.Selenium.BiDi.Subscription>
+  nameWithType.vb: IList(Of Subscription)
+  fullName.vb: System.Collections.Generic.IList(Of OpenQA.Selenium.BiDi.Subscription)
+  name.vb: IList(Of Subscription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnResponseStartedSubscriptions
+  name: OnResponseStartedSubscriptions
+  nameWithType: Intercept.OnResponseStartedSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedSubscriptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnAuthRequiredSubscriptions
+  name: OnAuthRequiredSubscriptions
+  nameWithType: Intercept.OnAuthRequiredSubscriptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredSubscriptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_RemoveAsync
+  name: RemoveAsync
+  nameWithType: Intercept.RemoveAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.RemoveAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnBeforeRequestSentAsync_System_Func_OpenQA_Selenium_BiDi_Modules_Network_BeforeRequestSentEventArgs_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnBeforeRequestSentAsync
+  nameWithType: Intercept.OnBeforeRequestSentAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnBeforeRequestSentAsync
+- uid: System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task}
+  commentId: T:System.Func{OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<BeforeRequestSentEventArgs, Task>
+  nameWithType: Func<BeforeRequestSentEventArgs, Task>
+  fullName: System.Func<OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of BeforeRequestSentEventArgs, Task)
+  fullName.vb: System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs, System.Threading.Tasks.Task)
+  name.vb: Func(Of BeforeRequestSentEventArgs, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs
+    name: BeforeRequestSentEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs
+    name: BeforeRequestSentEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.BeforeRequestSentEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: OpenQA.Selenium.BiDi.SubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.SubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.SubscriptionOptions.html
+  name: SubscriptionOptions
+  nameWithType: SubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.SubscriptionOptions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnResponseStartedAsync_System_Func_OpenQA_Selenium_BiDi_Modules_Network_ResponseStartedEventArgs_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnResponseStartedAsync
+  nameWithType: Intercept.OnResponseStartedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnResponseStartedAsync
+- uid: System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task}
+  commentId: T:System.Func{OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ResponseStartedEventArgs, Task>
+  nameWithType: Func<ResponseStartedEventArgs, Task>
+  fullName: System.Func<OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of ResponseStartedEventArgs, Task)
+  fullName.vb: System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs, System.Threading.Tasks.Task)
+  name.vb: Func(Of ResponseStartedEventArgs, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs
+    name: ResponseStartedEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs
+    name: ResponseStartedEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.ResponseStartedEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_OnAuthRequiredAsync_System_Func_OpenQA_Selenium_BiDi_Modules_Network_AuthRequiredEventArgs_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnAuthRequiredAsync
+  nameWithType: Intercept.OnAuthRequiredAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.OnAuthRequiredAsync
+- uid: System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task}
+  commentId: T:System.Func{OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<AuthRequiredEventArgs, Task>
+  nameWithType: Func<AuthRequiredEventArgs, Task>
+  fullName: System.Func<OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of AuthRequiredEventArgs, Task)
+  fullName.vb: System.Func(Of OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs, System.Threading.Tasks.Task)
+  name.vb: Func(Of AuthRequiredEventArgs, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs
+    name: AuthRequiredEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs
+    name: AuthRequiredEventArgs
+    href: OpenQA.Selenium.BiDi.Modules.Network.AuthRequiredEventArgs.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_DisposeAsync
+  name: DisposeAsync
+  nameWithType: Intercept.DisposeAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_Equals_System_Object_
+  name: Equals
+  nameWithType: Intercept.Equals
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode
+  href: OpenQA.Selenium.BiDi.Modules.Network.Intercept.html#OpenQA_Selenium_BiDi_Modules_Network_Intercept_GetHashCode
+  name: GetHashCode
+  nameWithType: Intercept.GetHashCode
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Intercept.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  commentId: T:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  id: FlexContainerHighlightConfig
+  parent: OpenQA.Selenium.DevTools.V133.Overlay
+  children:
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+  - OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+  langs:
+  - csharp
+  - vb
+  name: FlexContainerHighlightConfig
+  nameWithType: FlexContainerHighlightConfig
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FlexContainerHighlightConfig
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: FlexContainerHighlightConfig
+  example: []
+  syntax:
+    content: public sealed class FlexContainerHighlightConfig
+    content.vb: Public NotInheritable Class FlexContainerHighlightConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+  id: ContainerBorder
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: ContainerBorder
+  nameWithType: FlexContainerHighlightConfig.ContainerBorder
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContainerBorder
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 16
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: containerBorder
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("containerBorder")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LineStyle? ContainerBorder { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+    content.vb: >-
+      <JsonPropertyName("containerBorder")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ContainerBorder As LineStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: containerBorder
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+  id: LineSeparator
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: LineSeparator
+  nameWithType: FlexContainerHighlightConfig.LineSeparator
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LineSeparator
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: lineSeparator
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("lineSeparator")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LineStyle? LineSeparator { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+    content.vb: >-
+      <JsonPropertyName("lineSeparator")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property LineSeparator As LineStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: lineSeparator
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+  id: ItemSeparator
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: ItemSeparator
+  nameWithType: FlexContainerHighlightConfig.ItemSeparator
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ItemSeparator
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: itemSeparator
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("itemSeparator")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LineStyle? ItemSeparator { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+    content.vb: >-
+      <JsonPropertyName("itemSeparator")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ItemSeparator As LineStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: itemSeparator
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+  id: MainDistributedSpace
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: MainDistributedSpace
+  nameWithType: FlexContainerHighlightConfig.MainDistributedSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: MainDistributedSpace
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 37
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: mainDistributedSpace
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("mainDistributedSpace")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BoxStyle? MainDistributedSpace { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+    content.vb: >-
+      <JsonPropertyName("mainDistributedSpace")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property MainDistributedSpace As BoxStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mainDistributedSpace
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+  id: CrossDistributedSpace
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: CrossDistributedSpace
+  nameWithType: FlexContainerHighlightConfig.CrossDistributedSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CrossDistributedSpace
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: crossDistributedSpace
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("crossDistributedSpace")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BoxStyle? CrossDistributedSpace { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+    content.vb: >-
+      <JsonPropertyName("crossDistributedSpace")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CrossDistributedSpace As BoxStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: crossDistributedSpace
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+  id: RowGapSpace
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: RowGapSpace
+  nameWithType: FlexContainerHighlightConfig.RowGapSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RowGapSpace
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: rowGapSpace
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("rowGapSpace")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BoxStyle? RowGapSpace { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+    content.vb: >-
+      <JsonPropertyName("rowGapSpace")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property RowGapSpace As BoxStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: rowGapSpace
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+  id: ColumnGapSpace
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: ColumnGapSpace
+  nameWithType: FlexContainerHighlightConfig.ColumnGapSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ColumnGapSpace
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: columnGapSpace
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("columnGapSpace")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public BoxStyle? ColumnGapSpace { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+    content.vb: >-
+      <JsonPropertyName("columnGapSpace")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ColumnGapSpace As BoxStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: columnGapSpace
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment
+  commentId: P:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment
+  id: CrossAlignment
+  parent: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig
+  langs:
+  - csharp
+  - vb
+  name: CrossAlignment
+  nameWithType: FlexContainerHighlightConfig.CrossAlignment
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CrossAlignment
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Overlay/FlexContainerHighlightConfig.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Overlay
+  summary: crossAlignment
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("crossAlignment")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public LineStyle? CrossAlignment { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+    content.vb: >-
+      <JsonPropertyName("crossAlignment")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property CrossAlignment As LineStyle
+  overload: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: crossAlignment
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Overlay
+  commentId: N:OpenQA.Selenium.DevTools.V133.Overlay
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Overlay
+  nameWithType: OpenQA.Selenium.DevTools.V133.Overlay
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V133.Overlay.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Overlay
+    name: Overlay
+    href: OpenQA.Selenium.DevTools.V133.Overlay.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_ContainerBorder
+  name: ContainerBorder
+  nameWithType: FlexContainerHighlightConfig.ContainerBorder
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ContainerBorder
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+  commentId: T:OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+  parent: OpenQA.Selenium.DevTools.V133.Overlay
+  href: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle.html
+  name: LineStyle
+  nameWithType: LineStyle
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.LineStyle
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_LineSeparator
+  name: LineSeparator
+  nameWithType: FlexContainerHighlightConfig.LineSeparator
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.LineSeparator
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_ItemSeparator
+  name: ItemSeparator
+  nameWithType: FlexContainerHighlightConfig.ItemSeparator
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ItemSeparator
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_MainDistributedSpace
+  name: MainDistributedSpace
+  nameWithType: FlexContainerHighlightConfig.MainDistributedSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.MainDistributedSpace
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+  commentId: T:OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+  parent: OpenQA.Selenium.DevTools.V133.Overlay
+  href: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle.html
+  name: BoxStyle
+  nameWithType: BoxStyle
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.BoxStyle
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_CrossDistributedSpace
+  name: CrossDistributedSpace
+  nameWithType: FlexContainerHighlightConfig.CrossDistributedSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossDistributedSpace
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_RowGapSpace
+  name: RowGapSpace
+  nameWithType: FlexContainerHighlightConfig.RowGapSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.RowGapSpace
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_ColumnGapSpace
+  name: ColumnGapSpace
+  nameWithType: FlexContainerHighlightConfig.ColumnGapSpace
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.ColumnGapSpace
+- uid: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment
+  href: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.html#OpenQA_Selenium_DevTools_V133_Overlay_FlexContainerHighlightConfig_CrossAlignment
+  name: CrossAlignment
+  nameWithType: FlexContainerHighlightConfig.CrossAlignment
+  fullName: OpenQA.Selenium.DevTools.V133.Overlay.FlexContainerHighlightConfig.CrossAlignment

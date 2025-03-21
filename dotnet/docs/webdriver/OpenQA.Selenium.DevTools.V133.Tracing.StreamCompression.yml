@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  commentId: T:OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  id: StreamCompression
+  parent: OpenQA.Selenium.DevTools.V133.Tracing
+  children:
+  - OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.Gzip
+  - OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.None
+  langs:
+  - csharp
+  - vb
+  name: StreamCompression
+  nameWithType: StreamCompression
+  fullName: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StreamCompression
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Tracing
+  summary: StreamCompression
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<StreamCompression>))]
+
+      public enum StreamCompression
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of StreamCompression)))>
+
+      Public Enum StreamCompression
+- uid: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.None
+  commentId: F:OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.None
+  id: None
+  parent: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: StreamCompression.None
+  fullName: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.None
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: None
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Tracing
+  summary: Enumerated member for the none value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "none")]
+
+      None = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+    content.vb: >-
+      <EnumMember(Value:="none")>
+
+      None = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: none
+- uid: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.Gzip
+  commentId: F:OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.Gzip
+  id: Gzip
+  parent: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  langs:
+  - csharp
+  - vb
+  name: Gzip
+  nameWithType: StreamCompression.Gzip
+  fullName: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.Gzip
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Gzip
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Tracing/StreamCompression.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Tracing
+  summary: Enumerated member for the gzip value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "gzip")]
+
+      Gzip = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+    content.vb: >-
+      <EnumMember(Value:="gzip")>
+
+      Gzip = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: gzip
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Tracing
+  commentId: N:OpenQA.Selenium.DevTools.V133.Tracing
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Tracing
+  nameWithType: OpenQA.Selenium.DevTools.V133.Tracing
+  fullName: OpenQA.Selenium.DevTools.V133.Tracing
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Tracing
+    name: Tracing
+    href: OpenQA.Selenium.DevTools.V133.Tracing.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Tracing
+    name: Tracing
+    href: OpenQA.Selenium.DevTools.V133.Tracing.html
+- uid: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  commentId: T:OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression
+  parent: OpenQA.Selenium.DevTools.V133.Tracing
+  href: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression.html
+  name: StreamCompression
+  nameWithType: StreamCompression
+  fullName: OpenQA.Selenium.DevTools.V133.Tracing.StreamCompression

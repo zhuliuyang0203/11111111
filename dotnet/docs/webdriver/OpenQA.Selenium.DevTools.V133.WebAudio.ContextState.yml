@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  commentId: T:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  id: ContextState
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio
+  children:
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Closed
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Interrupted
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Running
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Suspended
+  langs:
+  - csharp
+  - vb
+  name: ContextState
+  nameWithType: ContextState
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContextState
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: ContextState
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<ContextState>))]
+
+      public enum ContextState
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of ContextState)))>
+
+      Public Enum ContextState
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Suspended
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Suspended
+  id: Suspended
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  langs:
+  - csharp
+  - vb
+  name: Suspended
+  nameWithType: ContextState.Suspended
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Suspended
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Suspended
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the suspended value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "suspended")]
+
+      Suspended = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+    content.vb: >-
+      <EnumMember(Value:="suspended")>
+
+      Suspended = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: suspended
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Running
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Running
+  id: Running
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: ContextState.Running
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Running
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Running
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the running value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "running")]
+
+      Running = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+    content.vb: >-
+      <EnumMember(Value:="running")>
+
+      Running = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: running
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Closed
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Closed
+  id: Closed
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: ContextState.Closed
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Closed
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Closed
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the closed value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "closed")]
+
+      Closed = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+    content.vb: >-
+      <EnumMember(Value:="closed")>
+
+      Closed = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: closed
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Interrupted
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Interrupted
+  id: Interrupted
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  langs:
+  - csharp
+  - vb
+  name: Interrupted
+  nameWithType: ContextState.Interrupted
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.Interrupted
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Interrupted
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextState.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the interrupted value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "interrupted")]
+
+      Interrupted = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+    content.vb: >-
+      <EnumMember(Value:="interrupted")>
+
+      Interrupted = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: interrupted
+references:
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio
+  commentId: N:OpenQA.Selenium.DevTools.V133.WebAudio
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.WebAudio
+  nameWithType: OpenQA.Selenium.DevTools.V133.WebAudio
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V133.WebAudio.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V133.WebAudio.html
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  commentId: T:OpenQA.Selenium.DevTools.V133.WebAudio.ContextState
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio
+  href: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState.html
+  name: ContextState
+  nameWithType: ContextState
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextState

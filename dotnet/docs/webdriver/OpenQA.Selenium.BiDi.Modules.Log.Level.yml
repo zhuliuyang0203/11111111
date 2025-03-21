@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.Level
+  id: Level
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Log.Level.Debug
+  - OpenQA.Selenium.BiDi.Modules.Log.Level.Error
+  - OpenQA.Selenium.BiDi.Modules.Log.Level.Info
+  - OpenQA.Selenium.BiDi.Modules.Log.Level.Warn
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: Level
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Level
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: public enum Level
+    content.vb: Public Enum Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level.Debug
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Log.Level.Debug
+  id: Debug
+  parent: OpenQA.Selenium.BiDi.Modules.Log.Level
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: Level.Debug
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level.Debug
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Debug
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 42
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: Debug = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Log.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level.Info
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Log.Level.Info
+  id: Info
+  parent: OpenQA.Selenium.BiDi.Modules.Log.Level
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: Level.Info
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level.Info
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Info
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 43
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: Info = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Log.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level.Warn
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Log.Level.Warn
+  id: Warn
+  parent: OpenQA.Selenium.BiDi.Modules.Log.Level
+  langs:
+  - csharp
+  - vb
+  name: Warn
+  nameWithType: Level.Warn
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level.Warn
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Warn
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 44
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: Warn = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Log.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level.Error
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Log.Level.Error
+  id: Error
+  parent: OpenQA.Selenium.BiDi.Modules.Log.Level
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: Level.Error
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level.Error
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Log/LogEntry.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Error
+    path: ../src/webdriver/BiDi/Modules/Log/LogEntry.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Log
+  syntax:
+    content: Error = 3
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Log.Level
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.Level
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.Level.html
+  name: Level
+  nameWithType: Level
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level

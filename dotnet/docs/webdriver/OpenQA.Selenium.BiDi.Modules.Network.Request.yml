@@ -1,0 +1,734 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.Request
+  id: Request
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials,OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions)
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+  - OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions)
+  langs:
+  - csharp
+  - vb
+  name: Request
+  nameWithType: Request
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Request
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public class Request
+    content.vb: Public Class Request
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+  id: Id
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Request.Id
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Id
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.Id*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions)
+  id: ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ContinueAsync(ContinueRequestOptions?)
+  nameWithType: Request.ContinueAsync(ContinueRequestOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 35
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ContinueAsync(ContinueRequestOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ContinueAsync(options As ContinueRequestOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync*
+  nameWithType.vb: Request.ContinueAsync(ContinueRequestOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions)
+  name.vb: ContinueAsync(ContinueRequestOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync
+  id: FailAsync
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: FailAsync()
+  nameWithType: Request.FailAsync()
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FailAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 40
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task FailAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function FailAsync() As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions)
+  id: ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ProvideResponseAsync(ProvideResponseOptions?)
+  nameWithType: Request.ProvideResponseAsync(ProvideResponseOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ProvideResponseAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ProvideResponseAsync(ProvideResponseOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ProvideResponseAsync(options As ProvideResponseOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync*
+  nameWithType.vb: Request.ProvideResponseAsync(ProvideResponseOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions)
+  name.vb: ProvideResponseAsync(ProvideResponseOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions)
+  id: ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ContinueResponseAsync(ContinueResponseOptions?)
+  nameWithType: Request.ContinueResponseAsync(ContinueResponseOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueResponseAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 50
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ContinueResponseAsync(ContinueResponseOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ContinueResponseAsync(options As ContinueResponseOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync*
+  nameWithType.vb: Request.ContinueResponseAsync(ContinueResponseOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions)
+  name.vb: ContinueResponseAsync(ContinueResponseOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials,OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials,OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions)
+  id: ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials,OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ContinueWithAuthAsync(AuthCredentials, ContinueWithAuthOptions?)
+  nameWithType: Request.ContinueWithAuthAsync(AuthCredentials, ContinueWithAuthOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials, OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueWithAuthAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 55
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ContinueWithAuthAsync(AuthCredentials credentials, ContinueWithAuthOptions? options = null)
+    parameters:
+    - id: credentials
+      type: OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ContinueWithAuthAsync(credentials As AuthCredentials, options As ContinueWithAuthOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync*
+  nameWithType.vb: Request.ContinueWithAuthAsync(AuthCredentials, ContinueWithAuthOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials, OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions)
+  name.vb: ContinueWithAuthAsync(AuthCredentials, ContinueWithAuthOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions)
+  id: ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ContinueWithAuthAsync(ContinueWithDefaultAuthOptions?)
+  nameWithType: Request.ContinueWithAuthAsync(ContinueWithDefaultAuthOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueWithAuthAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 60
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ContinueWithAuthAsync(ContinueWithDefaultAuthOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ContinueWithAuthAsync(options As ContinueWithDefaultAuthOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync*
+  nameWithType.vb: Request.ContinueWithAuthAsync(ContinueWithDefaultAuthOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions)
+  name.vb: ContinueWithAuthAsync(ContinueWithDefaultAuthOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions)
+  id: ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.Network.Request
+  langs:
+  - csharp
+  - vb
+  name: ContinueWithAuthAsync(ContinueWithCancelledAuthOptions?)
+  nameWithType: Request.ContinueWithAuthAsync(ContinueWithCancelledAuthOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Request.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContinueWithAuthAsync
+    path: ../src/webdriver/BiDi/Modules/Network/Request.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public Task ContinueWithAuthAsync(ContinueWithCancelledAuthOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ContinueWithAuthAsync(options As ContinueWithCancelledAuthOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync*
+  nameWithType.vb: Request.ContinueWithAuthAsync(ContinueWithCancelledAuthOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync(OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions)
+  name.vb: ContinueWithAuthAsync(ContinueWithCancelledAuthOptions)
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.Id*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_Id
+  name: Id
+  nameWithType: Request.Id
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_ContinueAsync_OpenQA_Selenium_BiDi_Modules_Network_ContinueRequestOptions_
+  name: ContinueAsync
+  nameWithType: Request.ContinueAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions.html
+  name: ContinueRequestOptions
+  nameWithType: ContinueRequestOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ContinueRequestOptions
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_FailAsync
+  name: FailAsync
+  nameWithType: Request.FailAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.FailAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_ProvideResponseAsync_OpenQA_Selenium_BiDi_Modules_Network_ProvideResponseOptions_
+  name: ProvideResponseAsync
+  nameWithType: Request.ProvideResponseAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ProvideResponseAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions.html
+  name: ProvideResponseOptions
+  nameWithType: ProvideResponseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ProvideResponseOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_ContinueResponseAsync_OpenQA_Selenium_BiDi_Modules_Network_ContinueResponseOptions_
+  name: ContinueResponseAsync
+  nameWithType: Request.ContinueResponseAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueResponseAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions.html
+  name: ContinueResponseOptions
+  nameWithType: ContinueResponseOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ContinueResponseOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync
+  href: OpenQA.Selenium.BiDi.Modules.Network.Request.html#OpenQA_Selenium_BiDi_Modules_Network_Request_ContinueWithAuthAsync_OpenQA_Selenium_BiDi_Modules_Network_AuthCredentials_OpenQA_Selenium_BiDi_Modules_Network_ContinueWithAuthOptions_
+  name: ContinueWithAuthAsync
+  nameWithType: Request.ContinueWithAuthAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.Request.ContinueWithAuthAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials.html
+  name: AuthCredentials
+  nameWithType: AuthCredentials
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.AuthCredentials
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions.html
+  name: ContinueWithAuthOptions
+  nameWithType: ContinueWithAuthOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithAuthOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions.html
+  name: ContinueWithDefaultAuthOptions
+  nameWithType: ContinueWithDefaultAuthOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithDefaultAuthOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions.html
+  name: ContinueWithCancelledAuthOptions
+  nameWithType: ContinueWithCancelledAuthOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.ContinueWithCancelledAuthOptions

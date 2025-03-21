@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  id: StorageArea
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  children:
+  - OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Local
+  - OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Managed
+  - OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Session
+  - OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Sync
+  langs:
+  - csharp
+  - vb
+  name: StorageArea
+  nameWithType: StorageArea
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StorageArea
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: StorageArea
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<StorageArea>))]
+
+      public enum StorageArea
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of StorageArea)))>
+
+      Public Enum StorageArea
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Session
+  commentId: F:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Session
+  id: Session
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: StorageArea.Session
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Session
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Session
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Enumerated member for the session value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "session")]
+
+      Session = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+    content.vb: >-
+      <EnumMember(Value:="session")>
+
+      Session = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: session
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Local
+  commentId: F:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Local
+  id: Local
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: StorageArea.Local
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Local
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Local
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Enumerated member for the local value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "local")]
+
+      Local = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+    content.vb: >-
+      <EnumMember(Value:="local")>
+
+      Local = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: local
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Sync
+  commentId: F:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Sync
+  id: Sync
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  langs:
+  - csharp
+  - vb
+  name: Sync
+  nameWithType: StorageArea.Sync
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Sync
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Sync
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Enumerated member for the sync value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "sync")]
+
+      Sync = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+    content.vb: >-
+      <EnumMember(Value:="sync")>
+
+      Sync = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: sync
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Managed
+  commentId: F:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Managed
+  id: Managed
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  langs:
+  - csharp
+  - vb
+  name: Managed
+  nameWithType: StorageArea.Managed
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.Managed
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Managed
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/StorageArea.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Enumerated member for the managed value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "managed")]
+
+      Managed = 3
+    return:
+      type: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+    content.vb: >-
+      <EnumMember(Value:="managed")>
+
+      Managed = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: managed
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions
+  commentId: N:OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Extensions
+  nameWithType: OpenQA.Selenium.DevTools.V134.Extensions
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.StorageArea
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea.html
+  name: StorageArea
+  nameWithType: StorageArea
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.StorageArea

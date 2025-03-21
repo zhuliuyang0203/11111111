@@ -1,0 +1,1284 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  id: SetDeviceMetricsOverrideCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  children:
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+  - OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+  langs:
+  - csharp
+  - vb
+  name: SetDeviceMetricsOverrideCommandSettings
+  nameWithType: SetDeviceMetricsOverrideCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SetDeviceMetricsOverrideCommandSettings
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 11
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: SetDeviceMetricsOverride
+  example: []
+  syntax:
+    content: 'public sealed class SetDeviceMetricsOverrideCommandSettings : ICommand'
+    content.vb: Public NotInheritable Class SetDeviceMetricsOverrideCommandSettings Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+  id: CommandName
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: CommandName
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: CommandName
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets the name of the command.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public string CommandName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property CommandName As String
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName*
+  implements:
+  - OpenQA.Selenium.DevTools.ICommand.CommandName
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+  id: Width
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Width
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Width
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the width
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("width")]
+
+      public long Width { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <JsonPropertyName("width")>
+
+      Public Property Width As Long
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: width
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+  id: Height
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Height
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Height
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the height
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("height")]
+
+      public long Height { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <JsonPropertyName("height")>
+
+      Public Property Height As Long
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: height
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  id: DeviceScaleFactor
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: DeviceScaleFactor
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DeviceScaleFactor
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the deviceScaleFactor
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("deviceScaleFactor")]
+
+      public double DeviceScaleFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonPropertyName("deviceScaleFactor")>
+
+      Public Property DeviceScaleFactor As Double
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: deviceScaleFactor
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+  id: Mobile
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Mobile
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Mobile
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Mobile
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 45
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the mobile
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("mobile")]
+
+      public bool Mobile { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("mobile")>
+
+      Public Property Mobile As Boolean
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mobile
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+  id: Scale
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Scale
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Scale
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 52
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the scale
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("scale")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public double? Scale { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: >-
+      <JsonPropertyName("scale")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Scale As Double?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: scale
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  id: ScreenWidth
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: ScreenWidth
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScreenWidth
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the screenWidth
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("screenWidth")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? ScreenWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("screenWidth")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ScreenWidth As Long?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: screenWidth
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  id: ScreenHeight
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: ScreenHeight
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScreenHeight
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 66
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the screenHeight
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("screenHeight")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? ScreenHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("screenHeight")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ScreenHeight As Long?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: screenHeight
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+  id: PositionX
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PositionX
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.PositionX
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PositionX
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the positionX
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("positionX")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? PositionX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("positionX")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PositionX As Long?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: positionX
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+  id: PositionY
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: PositionY
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.PositionY
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PositionY
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 80
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the positionY
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("positionY")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public long? PositionY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: >-
+      <JsonPropertyName("positionY")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property PositionY As Long?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: positionY
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  id: DontSetVisibleSize
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: DontSetVisibleSize
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DontSetVisibleSize
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 87
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the dontSetVisibleSize
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("dontSetVisibleSize")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public bool? DontSetVisibleSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <JsonPropertyName("dontSetVisibleSize")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property DontSetVisibleSize As Boolean?
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: dontSetVisibleSize
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  id: ScreenOrientation
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: ScreenOrientation
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ScreenOrientation
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 94
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the screenOrientation
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("screenOrientation")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public ScreenOrientation? ScreenOrientation { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Emulation.ScreenOrientation
+    content.vb: >-
+      <JsonPropertyName("screenOrientation")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property ScreenOrientation As ScreenOrientation
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: screenOrientation
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+  commentId: P:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+  id: Viewport
+  parent: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: Viewport
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Viewport
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Viewport
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Page/SetDeviceMetricsOverrideCommand.cs
+    startLine: 101
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Page
+  summary: Gets or sets the viewport
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("viewport")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+
+      public Viewport? Viewport { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Page.Viewport
+    content.vb: >-
+      <JsonPropertyName("viewport")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingDefault)>
+
+      Public Property Viewport As Viewport
+  overload: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: viewport
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 2
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Page
+  commentId: N:OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Page
+  nameWithType: OpenQA.Selenium.DevTools.V133.Page
+  fullName: OpenQA.Selenium.DevTools.V133.Page
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Page
+    name: Page
+    href: OpenQA.Selenium.DevTools.V133.Page.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.DevTools.ICommand
+  commentId: T:OpenQA.Selenium.DevTools.ICommand
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: OpenQA.Selenium.DevTools.ICommand
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_CommandName
+  name: CommandName
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.CommandName
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.CommandName
+- uid: OpenQA.Selenium.DevTools.ICommand.CommandName
+  commentId: P:OpenQA.Selenium.DevTools.ICommand.CommandName
+  parent: OpenQA.Selenium.DevTools.ICommand
+  href: OpenQA.Selenium.DevTools.ICommand.html#OpenQA_Selenium_DevTools_ICommand_CommandName
+  name: CommandName
+  nameWithType: ICommand.CommandName
+  fullName: OpenQA.Selenium.DevTools.ICommand.CommandName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_Width
+  name: Width
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Width
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Width
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_Height
+  name: Height
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Height
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Height
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_DeviceScaleFactor
+  name: DeviceScaleFactor
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DeviceScaleFactor
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_Mobile
+  name: Mobile
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Mobile
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Mobile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_Scale
+  name: Scale
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Scale
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Scale
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_ScreenWidth
+  name: ScreenWidth
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenWidth
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_ScreenHeight
+  name: ScreenHeight
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenHeight
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_PositionX
+  name: PositionX
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.PositionX
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionX
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_PositionY
+  name: PositionY
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.PositionY
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.PositionY
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_DontSetVisibleSize
+  name: DontSetVisibleSize
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.DontSetVisibleSize
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_ScreenOrientation
+  name: ScreenOrientation
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.ScreenOrientation
+- uid: OpenQA.Selenium.DevTools.V133.Emulation.ScreenOrientation
+  commentId: T:OpenQA.Selenium.DevTools.V133.Emulation.ScreenOrientation
+  parent: OpenQA.Selenium.DevTools.V133.Emulation
+  href: OpenQA.Selenium.DevTools.V133.Emulation.ScreenOrientation.html
+  name: ScreenOrientation
+  nameWithType: ScreenOrientation
+  fullName: OpenQA.Selenium.DevTools.V133.Emulation.ScreenOrientation
+- uid: OpenQA.Selenium.DevTools.V133.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V133.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V133.Emulation
+  fullName: OpenQA.Selenium.DevTools.V133.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V133.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V133.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport*
+  commentId: Overload:OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+  href: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.html#OpenQA_Selenium_DevTools_V133_Page_SetDeviceMetricsOverrideCommandSettings_Viewport
+  name: Viewport
+  nameWithType: SetDeviceMetricsOverrideCommandSettings.Viewport
+  fullName: OpenQA.Selenium.DevTools.V133.Page.SetDeviceMetricsOverrideCommandSettings.Viewport
+- uid: OpenQA.Selenium.DevTools.V133.Page.Viewport
+  commentId: T:OpenQA.Selenium.DevTools.V133.Page.Viewport
+  parent: OpenQA.Selenium.DevTools.V133.Page
+  href: OpenQA.Selenium.DevTools.V133.Page.Viewport.html
+  name: Viewport
+  nameWithType: Viewport
+  fullName: OpenQA.Selenium.DevTools.V133.Page.Viewport

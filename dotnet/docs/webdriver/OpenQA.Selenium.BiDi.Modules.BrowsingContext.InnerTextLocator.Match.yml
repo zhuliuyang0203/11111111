@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  id: InnerTextLocator.Match
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Full
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Partial
+  langs:
+  - csharp
+  - vb
+  name: InnerTextLocator.Match
+  nameWithType: InnerTextLocator.Match
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Match
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+    startLine: 55
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public enum InnerTextLocator.Match
+    content.vb: Public Enum InnerTextLocator.Match
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Full
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Full
+  id: Full
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: InnerTextLocator.Match.Full
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Full
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Full
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+    startLine: 57
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Full = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Partial
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Partial
+  id: Partial
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  langs:
+  - csharp
+  - vb
+  name: Partial
+  nameWithType: InnerTextLocator.Match.Partial
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.Partial
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Partial
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/Locator.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Partial = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  name: InnerTextLocator.Match
+  nameWithType: InnerTextLocator.Match
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+    name: InnerTextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+    name: Match
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.html
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator
+    name: InnerTextLocator
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match
+    name: Match
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.InnerTextLocator.Match.html

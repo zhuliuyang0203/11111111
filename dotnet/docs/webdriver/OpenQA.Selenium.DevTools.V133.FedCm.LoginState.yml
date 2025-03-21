@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  commentId: T:OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  id: LoginState
+  parent: OpenQA.Selenium.DevTools.V133.FedCm
+  children:
+  - OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignIn
+  - OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignUp
+  langs:
+  - csharp
+  - vb
+  name: LoginState
+  nameWithType: LoginState
+  fullName: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LoginState
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.FedCm
+  summary: LoginState
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<LoginState>))]
+
+      public enum LoginState
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of LoginState)))>
+
+      Public Enum LoginState
+- uid: OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignIn
+  commentId: F:OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignIn
+  id: SignIn
+  parent: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  langs:
+  - csharp
+  - vb
+  name: SignIn
+  nameWithType: LoginState.SignIn
+  fullName: OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignIn
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SignIn
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.FedCm
+  summary: Enumerated member for the SignIn value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "SignIn")]
+
+      SignIn = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+    content.vb: >-
+      <EnumMember(Value:="SignIn")>
+
+      SignIn = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: SignIn
+- uid: OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignUp
+  commentId: F:OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignUp
+  id: SignUp
+  parent: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  langs:
+  - csharp
+  - vb
+  name: SignUp
+  nameWithType: LoginState.SignUp
+  fullName: OpenQA.Selenium.DevTools.V133.FedCm.LoginState.SignUp
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SignUp
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/FedCm/LoginState.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.FedCm
+  summary: Enumerated member for the SignUp value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "SignUp")]
+
+      SignUp = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+    content.vb: >-
+      <EnumMember(Value:="SignUp")>
+
+      SignUp = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: SignUp
+references:
+- uid: OpenQA.Selenium.DevTools.V133.FedCm
+  commentId: N:OpenQA.Selenium.DevTools.V133.FedCm
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.FedCm
+  nameWithType: OpenQA.Selenium.DevTools.V133.FedCm
+  fullName: OpenQA.Selenium.DevTools.V133.FedCm
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V133.FedCm.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.FedCm
+    name: FedCm
+    href: OpenQA.Selenium.DevTools.V133.FedCm.html
+- uid: OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  commentId: T:OpenQA.Selenium.DevTools.V133.FedCm.LoginState
+  parent: OpenQA.Selenium.DevTools.V133.FedCm
+  href: OpenQA.Selenium.DevTools.V133.FedCm.LoginState.html
+  name: LoginState
+  nameWithType: LoginState
+  fullName: OpenQA.Selenium.DevTools.V133.FedCm.LoginState

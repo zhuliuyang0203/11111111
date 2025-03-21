@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  id: EvaluateOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+  - OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+  - OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+  langs:
+  - csharp
+  - vb
+  name: EvaluateOptions
+  nameWithType: EvaluateOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: EvaluateOptions
+    path: ../src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: 'public record EvaluateOptions : CommandOptions, IEquatable<CommandOptions>, IEquatable<EvaluateOptions>'
+    content.vb: Public Class EvaluateOptions Inherits CommandOptions Implements IEquatable(Of CommandOptions), IEquatable(Of EvaluateOptions)
+  inheritance:
+  - System.Object
+  - OpenQA.Selenium.BiDi.Communication.CommandOptions
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Communication.CommandOptions}
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions}
+  inheritedMembers:
+  - OpenQA.Selenium.BiDi.Communication.CommandOptions.Timeout
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+  id: ResultOwnership
+  parent: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  langs:
+  - csharp
+  - vb
+  name: ResultOwnership
+  nameWithType: EvaluateOptions.ResultOwnership
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResultOwnership
+    path: ../src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public ResultOwnership? ResultOwnership { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership}
+    content.vb: Public Property ResultOwnership As ResultOwnership?
+  overload: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+  id: SerializationOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  langs:
+  - csharp
+  - vb
+  name: SerializationOptions
+  nameWithType: EvaluateOptions.SerializationOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SerializationOptions
+    path: ../src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public SerializationOptions? SerializationOptions { get; set; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.SerializationOptions
+    content.vb: Public Property SerializationOptions As SerializationOptions
+  overload: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions*
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+  id: UserActivation
+  parent: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+  langs:
+  - csharp
+  - vb
+  name: UserActivation
+  nameWithType: EvaluateOptions.UserActivation
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: UserActivation
+    path: ../src/webdriver/BiDi/Modules/Script/EvaluateCommand.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public bool? UserActivation { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property UserActivation As Boolean?
+  overload: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OpenQA.Selenium.BiDi.Communication.CommandOptions
+  commentId: T:OpenQA.Selenium.BiDi.Communication.CommandOptions
+  parent: OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html
+  name: CommandOptions
+  nameWithType: CommandOptions
+  fullName: OpenQA.Selenium.BiDi.Communication.CommandOptions
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Communication.CommandOptions}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Communication.CommandOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CommandOptions>
+  nameWithType: IEquatable<CommandOptions>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Communication.CommandOptions>
+  nameWithType.vb: IEquatable(Of CommandOptions)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Communication.CommandOptions)
+  name.vb: IEquatable(Of CommandOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Communication.CommandOptions
+    name: CommandOptions
+    href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Communication.CommandOptions
+    name: CommandOptions
+    href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html
+  - name: )
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EvaluateOptions>
+  nameWithType: IEquatable<EvaluateOptions>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions>
+  nameWithType.vb: IEquatable(Of EvaluateOptions)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions)
+  name.vb: IEquatable(Of EvaluateOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+    name: EvaluateOptions
+    href: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions
+    name: EvaluateOptions
+    href: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Communication.CommandOptions.Timeout
+  commentId: P:OpenQA.Selenium.BiDi.Communication.CommandOptions.Timeout
+  parent: OpenQA.Selenium.BiDi.Communication.CommandOptions
+  href: OpenQA.Selenium.BiDi.Communication.CommandOptions.html#OpenQA_Selenium_BiDi_Communication_CommandOptions_Timeout
+  name: Timeout
+  nameWithType: CommandOptions.Timeout
+  fullName: OpenQA.Selenium.BiDi.Communication.CommandOptions.Timeout
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Communication
+  commentId: N:OpenQA.Selenium.BiDi.Communication
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Communication
+  nameWithType: OpenQA.Selenium.BiDi.Communication
+  fullName: OpenQA.Selenium.BiDi.Communication
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Communication
+    name: Communication
+    href: OpenQA.Selenium.BiDi.Communication.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+  href: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.html#OpenQA_Selenium_BiDi_Modules_Script_EvaluateOptions_ResultOwnership
+  name: ResultOwnership
+  nameWithType: EvaluateOptions.ResultOwnership
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.ResultOwnership
+- uid: System.Nullable{OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership}
+  commentId: T:System.Nullable{OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership}
+  parent: System
+  definition: System.Nullable`1
+  href: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership.html
+  name: ResultOwnership?
+  nameWithType: ResultOwnership?
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership?
+  spec.csharp:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership
+    name: ResultOwnership
+    href: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership.html
+  - name: '?'
+  spec.vb:
+  - uid: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership
+    name: ResultOwnership
+    href: OpenQA.Selenium.BiDi.Modules.Script.ResultOwnership.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+  href: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.html#OpenQA_Selenium_BiDi_Modules_Script_EvaluateOptions_SerializationOptions
+  name: SerializationOptions
+  nameWithType: EvaluateOptions.SerializationOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.SerializationOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Script.SerializationOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.SerializationOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.SerializationOptions.html
+  name: SerializationOptions
+  nameWithType: SerializationOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.SerializationOptions
+- uid: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+  href: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.html#OpenQA_Selenium_BiDi_Modules_Script_EvaluateOptions_UserActivation
+  name: UserActivation
+  nameWithType: EvaluateOptions.UserActivation
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.EvaluateOptions.UserActivation
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'

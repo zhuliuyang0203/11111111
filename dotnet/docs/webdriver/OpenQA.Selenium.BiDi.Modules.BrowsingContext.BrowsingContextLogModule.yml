@@ -1,0 +1,781 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  id: BrowsingContextLogModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext,OpenQA.Selenium.BiDi.Modules.Log.LogModule)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  langs:
+  - csharp
+  - vb
+  name: BrowsingContextLogModule
+  nameWithType: BrowsingContextLogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BrowsingContextLogModule
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public class BrowsingContextLogModule
+    content.vb: Public Class BrowsingContextLogModule
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext,OpenQA.Selenium.BiDi.Modules.Log.LogModule)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext,OpenQA.Selenium.BiDi.Modules.Log.LogModule)
+  id: '#ctor(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext,OpenQA.Selenium.BiDi.Modules.Log.LogModule)'
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  langs:
+  - csharp
+  - vb
+  name: BrowsingContextLogModule(BrowsingContext, LogModule)
+  nameWithType: BrowsingContextLogModule.BrowsingContextLogModule(BrowsingContext, LogModule)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.BrowsingContextLogModule(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext, OpenQA.Selenium.BiDi.Modules.Log.LogModule)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public BrowsingContextLogModule(BrowsingContext context, LogModule logModule)
+    parameters:
+    - id: context
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+    - id: logModule
+      type: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+    content.vb: Public Sub New(context As BrowsingContext, logModule As LogModule)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor*
+  nameWithType.vb: BrowsingContextLogModule.New(BrowsingContext, LogModule)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.New(OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext, OpenQA.Selenium.BiDi.Modules.Log.LogModule)
+  name.vb: New(BrowsingContext, LogModule)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnEntryAddedAsync(System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  langs:
+  - csharp
+  - vb
+  name: OnEntryAddedAsync(Func<LogEntry, Task>, SubscriptionOptions?)
+  nameWithType: BrowsingContextLogModule.OnEntryAddedAsync(Func<LogEntry, Task>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Func<OpenQA.Selenium.BiDi.Modules.Log.LogEntry, System.Threading.Tasks.Task>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnEntryAddedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnEntryAddedAsync(Func<LogEntry, Task> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnEntryAddedAsync(handler As Func(Of LogEntry, Task), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync*
+  nameWithType.vb: BrowsingContextLogModule.OnEntryAddedAsync(Func(Of LogEntry, Task), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Func(Of OpenQA.Selenium.BiDi.Modules.Log.LogEntry, System.Threading.Tasks.Task), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnEntryAddedAsync(Func(Of LogEntry, Task), SubscriptionOptions)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  id: OnEntryAddedAsync(System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry},OpenQA.Selenium.BiDi.SubscriptionOptions)
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule
+  langs:
+  - csharp
+  - vb
+  name: OnEntryAddedAsync(Action<LogEntry>, SubscriptionOptions?)
+  nameWithType: BrowsingContextLogModule.OnEntryAddedAsync(Action<LogEntry>, SubscriptionOptions?)
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Action<OpenQA.Selenium.BiDi.Modules.Log.LogEntry>, OpenQA.Selenium.BiDi.SubscriptionOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: OnEntryAddedAsync
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/BrowsingContextLogModule.cs
+    startLine: 38
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public Task<Subscription> OnEntryAddedAsync(Action<LogEntry> handler, SubscriptionOptions? options = null)
+    parameters:
+    - id: handler
+      type: System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+    - id: options
+      type: OpenQA.Selenium.BiDi.SubscriptionOptions
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+    content.vb: Public Function OnEntryAddedAsync(handler As Action(Of LogEntry), options As SubscriptionOptions = Nothing) As Task(Of Subscription)
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync*
+  nameWithType.vb: BrowsingContextLogModule.OnEntryAddedAsync(Action(Of LogEntry), SubscriptionOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync(System.Action(Of OpenQA.Selenium.BiDi.Modules.Log.LogEntry), OpenQA.Selenium.BiDi.SubscriptionOptions)
+  name.vb: OnEntryAddedAsync(Action(Of LogEntry), SubscriptionOptions)
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContextLogModule__ctor_OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContext_OpenQA_Selenium_BiDi_Modules_Log_LogModule_
+  name: BrowsingContextLogModule
+  nameWithType: BrowsingContextLogModule.BrowsingContextLogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.BrowsingContextLogModule
+  nameWithType.vb: BrowsingContextLogModule.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.New
+  name.vb: New
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext.html
+  name: BrowsingContext
+  nameWithType: BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContext
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogModule.html
+  name: LogModule
+  nameWithType: LogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_BrowsingContextLogModule_OnEntryAddedAsync_System_Func_OpenQA_Selenium_BiDi_Modules_Log_LogEntry_System_Threading_Tasks_Task__OpenQA_Selenium_BiDi_SubscriptionOptions_
+  name: OnEntryAddedAsync
+  nameWithType: BrowsingContextLogModule.OnEntryAddedAsync
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextLogModule.OnEntryAddedAsync
+- uid: System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task}
+  commentId: T:System.Func{OpenQA.Selenium.BiDi.Modules.Log.LogEntry,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<LogEntry, Task>
+  nameWithType: Func<LogEntry, Task>
+  fullName: System.Func<OpenQA.Selenium.BiDi.Modules.Log.LogEntry, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of LogEntry, Task)
+  fullName.vb: System.Func(Of OpenQA.Selenium.BiDi.Modules.Log.LogEntry, System.Threading.Tasks.Task)
+  name.vb: Func(Of LogEntry, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: OpenQA.Selenium.BiDi.SubscriptionOptions
+  commentId: T:OpenQA.Selenium.BiDi.SubscriptionOptions
+  parent: OpenQA.Selenium.BiDi
+  href: OpenQA.Selenium.BiDi.SubscriptionOptions.html
+  name: SubscriptionOptions
+  nameWithType: SubscriptionOptions
+  fullName: OpenQA.Selenium.BiDi.SubscriptionOptions
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Subscription}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Subscription>
+  nameWithType: Task<Subscription>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Subscription>
+  nameWithType.vb: Task(Of Subscription)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Subscription)
+  name.vb: Task(Of Subscription)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Subscription
+    name: Subscription
+    href: OpenQA.Selenium.BiDi.Subscription.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+  commentId: T:System.Action{OpenQA.Selenium.BiDi.Modules.Log.LogEntry}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<LogEntry>
+  nameWithType: Action<LogEntry>
+  fullName: System.Action<OpenQA.Selenium.BiDi.Modules.Log.LogEntry>
+  nameWithType.vb: Action(Of LogEntry)
+  fullName.vb: System.Action(Of OpenQA.Selenium.BiDi.Modules.Log.LogEntry)
+  name.vb: Action(Of LogEntry)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+    name: LogEntry
+    href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

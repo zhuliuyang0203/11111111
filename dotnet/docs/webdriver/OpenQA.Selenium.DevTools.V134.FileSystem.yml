@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem
+  commentId: N:OpenQA.Selenium.DevTools.V134.FileSystem
+  id: FileSystem
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.FileSystem.BucketFileSystemLocator
+  - OpenQA.Selenium.DevTools.V134.FileSystem.Directory
+  - OpenQA.Selenium.DevTools.V134.FileSystem.File
+  - OpenQA.Selenium.DevTools.V134.FileSystem.FileSystemAdapter
+  - OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandResponse
+  - OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.FileSystem
+  nameWithType: OpenQA.Selenium.DevTools.V134.FileSystem
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.BucketFileSystemLocator
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.BucketFileSystemLocator
+  parent: OpenQA.Selenium.DevTools.V134.FileSystem
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.BucketFileSystemLocator.html
+  name: BucketFileSystemLocator
+  nameWithType: BucketFileSystemLocator
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.BucketFileSystemLocator
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.Directory
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.Directory
+  parent: OpenQA.Selenium.DevTools.V134.FileSystem
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.Directory.html
+  name: Directory
+  nameWithType: Directory
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.Directory
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.File
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.File
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.File.html
+  name: File
+  nameWithType: File
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.File
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.FileSystemAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.FileSystemAdapter
+  parent: OpenQA.Selenium.DevTools.V134.FileSystem
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.FileSystemAdapter.html
+  name: FileSystemAdapter
+  nameWithType: FileSystemAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.FileSystemAdapter
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandResponse.html
+  name: GetDirectoryCommandResponse
+  nameWithType: GetDirectoryCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.FileSystem
+  href: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandSettings.html
+  name: GetDirectoryCommandSettings
+  nameWithType: GetDirectoryCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem.GetDirectoryCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.FileSystem
+  commentId: N:OpenQA.Selenium.DevTools.V134.FileSystem
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.FileSystem
+  nameWithType: OpenQA.Selenium.DevTools.V134.FileSystem
+  fullName: OpenQA.Selenium.DevTools.V134.FileSystem
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V134.FileSystem.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.FileSystem
+    name: FileSystem
+    href: OpenQA.Selenium.DevTools.V134.FileSystem.html

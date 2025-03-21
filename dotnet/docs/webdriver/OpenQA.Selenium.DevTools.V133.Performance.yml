@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Performance
+  commentId: N:OpenQA.Selenium.DevTools.V133.Performance
+  id: Performance
+  parent: OpenQA.Selenium.DevTools.V133
+  children:
+  - OpenQA.Selenium.DevTools.V133.Performance.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.Performance.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.Performance.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.Performance.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandResponse
+  - OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandSettings
+  - OpenQA.Selenium.DevTools.V133.Performance.Metric
+  - OpenQA.Selenium.DevTools.V133.Performance.MetricsEventArgs
+  - OpenQA.Selenium.DevTools.V133.Performance.PerformanceAdapter
+  - OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandResponse
+  - OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V133.Performance
+  nameWithType: OpenQA.Selenium.DevTools.V133.Performance
+  fullName: OpenQA.Selenium.DevTools.V133.Performance
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandResponse.html
+  name: GetMetricsCommandResponse
+  nameWithType: GetMetricsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandSettings.html
+  name: GetMetricsCommandSettings
+  nameWithType: GetMetricsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.GetMetricsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.Performance.Metric
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.Metric
+  href: OpenQA.Selenium.DevTools.V133.Performance.Metric.html
+  name: Metric
+  nameWithType: Metric
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.Metric
+- uid: OpenQA.Selenium.DevTools.V133.Performance.MetricsEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.MetricsEventArgs
+  href: OpenQA.Selenium.DevTools.V133.Performance.MetricsEventArgs.html
+  name: MetricsEventArgs
+  nameWithType: MetricsEventArgs
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.MetricsEventArgs
+- uid: OpenQA.Selenium.DevTools.V133.Performance.PerformanceAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.PerformanceAdapter
+  parent: OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.Selenium.DevTools.V133.Performance.PerformanceAdapter.html
+  name: PerformanceAdapter
+  nameWithType: PerformanceAdapter
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.PerformanceAdapter
+- uid: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandResponse.html
+  name: SetTimeDomainCommandResponse
+  nameWithType: SetTimeDomainCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandSettings.html
+  name: SetTimeDomainCommandSettings
+  nameWithType: SetTimeDomainCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.Performance.SetTimeDomainCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.Performance
+  commentId: N:OpenQA.Selenium.DevTools.V133.Performance
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Performance
+  nameWithType: OpenQA.Selenium.DevTools.V133.Performance
+  fullName: OpenQA.Selenium.DevTools.V133.Performance
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Performance
+    name: Performance
+    href: OpenQA.Selenium.DevTools.V133.Performance.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Performance
+    name: Performance
+    href: OpenQA.Selenium.DevTools.V133.Performance.html

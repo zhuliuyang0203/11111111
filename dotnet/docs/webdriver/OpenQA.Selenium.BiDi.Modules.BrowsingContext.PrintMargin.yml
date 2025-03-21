@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  id: PrintMargin
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top
+  langs:
+  - csharp
+  - vb
+  name: PrintMargin
+  nameWithType: PrintMargin
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  type: Struct
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PrintMargin
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 47
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public struct PrintMargin
+    content.vb: Public Structure PrintMargin
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+  id: Bottom
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: PrintMargin.Bottom
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Bottom
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 49
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double? Bottom { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Bottom As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+  id: Left
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: PrintMargin.Left
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Left
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 51
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double? Left { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Left As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+  id: Right
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: PrintMargin.Right
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Right
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 53
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double? Right { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Right As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right*
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top
+  commentId: P:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top
+  id: Top
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: PrintMargin.Top
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Top
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 55
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public double? Top { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Top As Double?
+  overload: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_PrintMargin_Bottom
+  name: Bottom
+  nameWithType: PrintMargin.Bottom
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Bottom
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_PrintMargin_Left
+  name: Left
+  nameWithType: PrintMargin.Left
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Left
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_PrintMargin_Right
+  name: Right
+  nameWithType: PrintMargin.Right
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Right
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.html#OpenQA_Selenium_BiDi_Modules_BrowsingContext_PrintMargin_Top
+  name: Top
+  nameWithType: PrintMargin.Top
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintMargin.Top

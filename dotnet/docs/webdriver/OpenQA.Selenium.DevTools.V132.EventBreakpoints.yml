@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  commentId: N:OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  id: EventBreakpoints
+  parent: OpenQA.Selenium.DevTools.V132
+  children:
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.EventBreakpointsAdapter
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandResponse
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandSettings
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandResponse
+  - OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  nameWithType: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.EventBreakpointsAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.EventBreakpointsAdapter
+  parent: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.EventBreakpointsAdapter.html
+  name: EventBreakpointsAdapter
+  nameWithType: EventBreakpointsAdapter
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.EventBreakpointsAdapter
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandResponse
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandResponse.html
+  name: RemoveInstrumentationBreakpointCommandResponse
+  nameWithType: RemoveInstrumentationBreakpointCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandResponse
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandSettings
+  parent: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandSettings.html
+  name: RemoveInstrumentationBreakpointCommandSettings
+  nameWithType: RemoveInstrumentationBreakpointCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.RemoveInstrumentationBreakpointCommandSettings
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandResponse
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandResponse.html
+  name: SetInstrumentationBreakpointCommandResponse
+  nameWithType: SetInstrumentationBreakpointCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandResponse
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandSettings
+  parent: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandSettings.html
+  name: SetInstrumentationBreakpointCommandSettings
+  nameWithType: SetInstrumentationBreakpointCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints.SetInstrumentationBreakpointCommandSettings
+- uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  commentId: N:OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  nameWithType: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  fullName: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+    name: EventBreakpoints
+    href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.EventBreakpoints
+    name: EventBreakpoints
+    href: OpenQA.Selenium.DevTools.V132.EventBreakpoints.html

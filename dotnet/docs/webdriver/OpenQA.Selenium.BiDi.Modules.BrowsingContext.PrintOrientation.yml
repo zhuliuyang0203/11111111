@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  id: PrintOrientation
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  children:
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Landscape
+  - OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Portrait
+  langs:
+  - csharp
+  - vb
+  name: PrintOrientation
+  nameWithType: PrintOrientation
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PrintOrientation
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 58
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: public enum PrintOrientation
+    content.vb: Public Enum PrintOrientation
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Portrait
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Portrait
+  id: Portrait
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  langs:
+  - csharp
+  - vb
+  name: Portrait
+  nameWithType: PrintOrientation.Portrait
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Portrait
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Portrait
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 60
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Portrait = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Landscape
+  commentId: F:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Landscape
+  id: Landscape
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  langs:
+  - csharp
+  - vb
+  name: Landscape
+  nameWithType: PrintOrientation.Landscape
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.Landscape
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Landscape
+    path: ../src/webdriver/BiDi/Modules/BrowsingContext/PrintCommand.cs
+    startLine: 61
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  syntax:
+    content: Landscape = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation.html
+  name: PrintOrientation
+  nameWithType: PrintOrientation
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.PrintOrientation

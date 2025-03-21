@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  commentId: T:OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  id: LogEntryCategoryValues
+  parent: OpenQA.Selenium.DevTools.V133.Log
+  children:
+  - OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues.Cors
+  langs:
+  - csharp
+  - vb
+  name: LogEntryCategoryValues
+  nameWithType: LogEntryCategoryValues
+  fullName: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Log/LogEntryCategoryValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LogEntryCategoryValues
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Log/LogEntryCategoryValues.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Log
+  summary: Enumerated values for Log.LogEntry.category
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<LogEntryCategoryValues>))]
+
+      public enum LogEntryCategoryValues
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of LogEntryCategoryValues)))>
+
+      Public Enum LogEntryCategoryValues
+- uid: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues.Cors
+  commentId: F:OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues.Cors
+  id: Cors
+  parent: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  langs:
+  - csharp
+  - vb
+  name: Cors
+  nameWithType: LogEntryCategoryValues.Cors
+  fullName: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues.Cors
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/Log/LogEntryCategoryValues.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Cors
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/Log/LogEntryCategoryValues.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.Log
+  summary: Enumerated member for the cors value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "cors")]
+
+      Cors = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+    content.vb: >-
+      <EnumMember(Value:="cors")>
+
+      Cors = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: cors
+references:
+- uid: OpenQA.Selenium.DevTools.V133.Log
+  commentId: N:OpenQA.Selenium.DevTools.V133.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.Log
+  nameWithType: OpenQA.Selenium.DevTools.V133.Log
+  fullName: OpenQA.Selenium.DevTools.V133.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V133.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V133.Log.html
+- uid: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  commentId: T:OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues
+  parent: OpenQA.Selenium.DevTools.V133.Log
+  href: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues.html
+  name: LogEntryCategoryValues
+  nameWithType: LogEntryCategoryValues
+  fullName: OpenQA.Selenium.DevTools.V133.Log.LogEntryCategoryValues

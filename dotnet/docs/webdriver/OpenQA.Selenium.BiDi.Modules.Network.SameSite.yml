@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  id: SameSite
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.SameSite.Lax
+  - OpenQA.Selenium.BiDi.Modules.Network.SameSite.None
+  - OpenQA.Selenium.BiDi.Modules.Network.SameSite.Strict
+  langs:
+  - csharp
+  - vb
+  name: SameSite
+  nameWithType: SameSite
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Cookie.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SameSite
+    path: ../src/webdriver/BiDi/Modules/Network/Cookie.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public enum SameSite
+    content.vb: Public Enum SameSite
+- uid: OpenQA.Selenium.BiDi.Modules.Network.SameSite.Strict
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.SameSite.Strict
+  id: Strict
+  parent: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  langs:
+  - csharp
+  - vb
+  name: Strict
+  nameWithType: SameSite.Strict
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.SameSite.Strict
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Cookie.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Strict
+    path: ../src/webdriver/BiDi/Modules/Network/Cookie.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Strict = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+- uid: OpenQA.Selenium.BiDi.Modules.Network.SameSite.Lax
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.SameSite.Lax
+  id: Lax
+  parent: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  langs:
+  - csharp
+  - vb
+  name: Lax
+  nameWithType: SameSite.Lax
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.SameSite.Lax
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Cookie.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Lax
+    path: ../src/webdriver/BiDi/Modules/Network/Cookie.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: Lax = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+- uid: OpenQA.Selenium.BiDi.Modules.Network.SameSite.None
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Network.SameSite.None
+  id: None
+  parent: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: SameSite.None
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.SameSite.None
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/Cookie.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: None
+    path: ../src/webdriver/BiDi/Modules/Network/Cookie.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: None = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.SameSite
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.SameSite.html
+  name: SameSite
+  nameWithType: SameSite
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.SameSite

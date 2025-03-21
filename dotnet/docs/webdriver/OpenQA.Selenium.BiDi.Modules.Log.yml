@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  id: Log
+  parent: OpenQA.Selenium.BiDi.Modules
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  - OpenQA.Selenium.BiDi.Modules.Log.JavascriptLogEntry
+  - OpenQA.Selenium.BiDi.Modules.Log.Level
+  - OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  - OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry.html
+  name: ConsoleLogEntry
+  nameWithType: ConsoleLogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.ConsoleLogEntry
+- uid: OpenQA.Selenium.BiDi.Modules.Log.JavascriptLogEntry
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.JavascriptLogEntry
+  href: OpenQA.Selenium.BiDi.Modules.Log.JavascriptLogEntry.html
+  name: JavascriptLogEntry
+  nameWithType: JavascriptLogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.JavascriptLogEntry
+- uid: OpenQA.Selenium.BiDi.Modules.Log.Level
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.Level
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.Level.html
+  name: Level
+  nameWithType: Level
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.Level
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogEntry.html
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogEntry
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogModule.html
+  name: LogModule
+  nameWithType: LogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html

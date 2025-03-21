@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  commentId: N:OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  id: BluetoothEmulation
+  parent: OpenQA.Selenium.DevTools.V133
+  children:
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.BluetoothEmulationAdapter
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.CentralState
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ManufacturerData
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanEntry
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanRecord
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandResponse
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandSettings
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandResponse
+  - OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  nameWithType: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.BluetoothEmulationAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.BluetoothEmulationAdapter
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.BluetoothEmulationAdapter.html
+  name: BluetoothEmulationAdapter
+  nameWithType: BluetoothEmulationAdapter
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.BluetoothEmulationAdapter
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.CentralState
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.CentralState
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.CentralState.html
+  name: CentralState
+  nameWithType: CentralState
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.CentralState
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ManufacturerData
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ManufacturerData
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ManufacturerData.html
+  name: ManufacturerData
+  nameWithType: ManufacturerData
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ManufacturerData
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanEntry
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanEntry
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanEntry.html
+  name: ScanEntry
+  nameWithType: ScanEntry
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanEntry
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanRecord
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanRecord
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanRecord.html
+  name: ScanRecord
+  nameWithType: ScanRecord
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.ScanRecord
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandResponse.html
+  name: SimulateAdvertisementCommandResponse
+  nameWithType: SimulateAdvertisementCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandSettings.html
+  name: SimulateAdvertisementCommandSettings
+  nameWithType: SimulateAdvertisementCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulateAdvertisementCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandResponse.html
+  name: SimulatePreconnectedPeripheralCommandResponse
+  nameWithType: SimulatePreconnectedPeripheralCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandSettings.html
+  name: SimulatePreconnectedPeripheralCommandSettings
+  nameWithType: SimulatePreconnectedPeripheralCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.SimulatePreconnectedPeripheralCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  commentId: N:OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  nameWithType: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  fullName: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+    name: BluetoothEmulation
+    href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.BluetoothEmulation
+    name: BluetoothEmulation
+    href: OpenQA.Selenium.DevTools.V133.BluetoothEmulation.html

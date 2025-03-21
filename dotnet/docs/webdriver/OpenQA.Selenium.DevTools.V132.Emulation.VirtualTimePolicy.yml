@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  commentId: T:OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  id: VirtualTimePolicy
+  parent: OpenQA.Selenium.DevTools.V132.Emulation
+  children:
+  - OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Advance
+  - OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Pause
+  - OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.PauseIfNetworkFetchesPending
+  langs:
+  - csharp
+  - vb
+  name: VirtualTimePolicy
+  nameWithType: VirtualTimePolicy
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: VirtualTimePolicy
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Emulation
+  summary: VirtualTimePolicy
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<VirtualTimePolicy>))]
+
+      public enum VirtualTimePolicy
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of VirtualTimePolicy)))>
+
+      Public Enum VirtualTimePolicy
+- uid: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Advance
+  commentId: F:OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Advance
+  id: Advance
+  parent: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  langs:
+  - csharp
+  - vb
+  name: Advance
+  nameWithType: VirtualTimePolicy.Advance
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Advance
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Advance
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Emulation
+  summary: Enumerated member for the advance value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "advance")]
+
+      Advance = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+    content.vb: >-
+      <EnumMember(Value:="advance")>
+
+      Advance = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: advance
+- uid: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Pause
+  commentId: F:OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Pause
+  id: Pause
+  parent: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  langs:
+  - csharp
+  - vb
+  name: Pause
+  nameWithType: VirtualTimePolicy.Pause
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.Pause
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Pause
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Emulation
+  summary: Enumerated member for the pause value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "pause")]
+
+      Pause = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+    content.vb: >-
+      <EnumMember(Value:="pause")>
+
+      Pause = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: pause
+- uid: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.PauseIfNetworkFetchesPending
+  commentId: F:OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.PauseIfNetworkFetchesPending
+  id: PauseIfNetworkFetchesPending
+  parent: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  langs:
+  - csharp
+  - vb
+  name: PauseIfNetworkFetchesPending
+  nameWithType: VirtualTimePolicy.PauseIfNetworkFetchesPending
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.PauseIfNetworkFetchesPending
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PauseIfNetworkFetchesPending
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Emulation/VirtualTimePolicy.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Emulation
+  summary: Enumerated member for the pauseIfNetworkFetchesPending value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "pauseIfNetworkFetchesPending")]
+
+      PauseIfNetworkFetchesPending = 2
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+    content.vb: >-
+      <EnumMember(Value:="pauseIfNetworkFetchesPending")>
+
+      PauseIfNetworkFetchesPending = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: pauseIfNetworkFetchesPending
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Emulation
+  commentId: N:OpenQA.Selenium.DevTools.V132.Emulation
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Emulation
+  nameWithType: OpenQA.Selenium.DevTools.V132.Emulation
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V132.Emulation.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Emulation
+    name: Emulation
+    href: OpenQA.Selenium.DevTools.V132.Emulation.html
+- uid: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  commentId: T:OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy
+  parent: OpenQA.Selenium.DevTools.V132.Emulation
+  href: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy.html
+  name: VirtualTimePolicy
+  nameWithType: VirtualTimePolicy
+  fullName: OpenQA.Selenium.DevTools.V132.Emulation.VirtualTimePolicy

@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  commentId: T:OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  id: ContextType
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio
+  children:
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Offline
+  - OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Realtime
+  langs:
+  - csharp
+  - vb
+  name: ContextType
+  nameWithType: ContextType
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ContextType
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: ContextType
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<ContextType>))]
+
+      public enum ContextType
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of ContextType)))>
+
+      Public Enum ContextType
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Realtime
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Realtime
+  id: Realtime
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  langs:
+  - csharp
+  - vb
+  name: Realtime
+  nameWithType: ContextType.Realtime
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Realtime
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Realtime
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the realtime value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "realtime")]
+
+      Realtime = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+    content.vb: >-
+      <EnumMember(Value:="realtime")>
+
+      Realtime = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: realtime
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Offline
+  commentId: F:OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Offline
+  id: Offline
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  langs:
+  - csharp
+  - vb
+  name: Offline
+  nameWithType: ContextType.Offline
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.Offline
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Offline
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v133/WebAudio/ContextType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V133.WebAudio
+  summary: Enumerated member for the offline value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "offline")]
+
+      Offline = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+    content.vb: >-
+      <EnumMember(Value:="offline")>
+
+      Offline = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: offline
+references:
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio
+  commentId: N:OpenQA.Selenium.DevTools.V133.WebAudio
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.WebAudio
+  nameWithType: OpenQA.Selenium.DevTools.V133.WebAudio
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V133.WebAudio.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.WebAudio
+    name: WebAudio
+    href: OpenQA.Selenium.DevTools.V133.WebAudio.html
+- uid: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  commentId: T:OpenQA.Selenium.DevTools.V133.WebAudio.ContextType
+  parent: OpenQA.Selenium.DevTools.V133.WebAudio
+  href: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType.html
+  name: ContextType
+  nameWithType: ContextType
+  fullName: OpenQA.Selenium.DevTools.V133.WebAudio.ContextType

@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  id: RealmType
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.AudioWorker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.DedicatedWorker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.PaintWorker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.ServiceWorker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.SharedWorker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.Window
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worker
+  - OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worklet
+  langs:
+  - csharp
+  - vb
+  name: RealmType
+  nameWithType: RealmType
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  type: Enum
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RealmType
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 21
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: public enum RealmType
+    content.vb: Public Enum RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Window
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.Window
+  id: Window
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: RealmType.Window
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Window
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Window
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Window = 0
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.DedicatedWorker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.DedicatedWorker
+  id: DedicatedWorker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: DedicatedWorker
+  nameWithType: RealmType.DedicatedWorker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.DedicatedWorker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DedicatedWorker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: DedicatedWorker = 1
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.SharedWorker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.SharedWorker
+  id: SharedWorker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: SharedWorker
+  nameWithType: RealmType.SharedWorker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.SharedWorker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SharedWorker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: SharedWorker = 2
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.ServiceWorker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.ServiceWorker
+  id: ServiceWorker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: ServiceWorker
+  nameWithType: RealmType.ServiceWorker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.ServiceWorker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ServiceWorker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 26
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: ServiceWorker = 3
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worker
+  id: Worker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: Worker
+  nameWithType: RealmType.Worker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Worker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Worker = 4
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.PaintWorker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.PaintWorker
+  id: PaintWorker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: PaintWorker
+  nameWithType: RealmType.PaintWorker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.PaintWorker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PaintWorker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: PaintWorker = 5
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.AudioWorker
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.AudioWorker
+  id: AudioWorker
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: AudioWorker
+  nameWithType: RealmType.AudioWorker
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.AudioWorker
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: AudioWorker
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: AudioWorker = 6
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worklet
+  commentId: F:OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worklet
+  id: Worklet
+  parent: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  langs:
+  - csharp
+  - vb
+  name: Worklet
+  nameWithType: RealmType.Worklet
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType.Worklet
+  type: Field
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Script/RealmType.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Worklet
+    path: ../src/webdriver/BiDi/Modules/Script/RealmType.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Script
+  syntax:
+    content: Worklet = 7
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.RealmType
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.RealmType.html
+  name: RealmType
+  nameWithType: RealmType
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.RealmType

@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Log
+  commentId: N:OpenQA.Selenium.DevTools.V134.Log
+  id: Log
+  parent: OpenQA.Selenium.DevTools.V134
+  children:
+  - OpenQA.Selenium.DevTools.V134.Log.ClearCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Log.ClearCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Log.DisableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Log.DisableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Log.EnableCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Log.EnableCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Log.EntryAddedEventArgs
+  - OpenQA.Selenium.DevTools.V134.Log.LogAdapter
+  - OpenQA.Selenium.DevTools.V134.Log.LogEntry
+  - OpenQA.Selenium.DevTools.V134.Log.LogEntryCategoryValues
+  - OpenQA.Selenium.DevTools.V134.Log.LogEntryLevelValues
+  - OpenQA.Selenium.DevTools.V134.Log.LogEntrySourceValues
+  - OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandResponse
+  - OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandSettings
+  - OpenQA.Selenium.DevTools.V134.Log.ViolationSetting
+  - OpenQA.Selenium.DevTools.V134.Log.ViolationSettingNameValues
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V134.Log
+  nameWithType: OpenQA.Selenium.DevTools.V134.Log
+  fullName: OpenQA.Selenium.DevTools.V134.Log
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Log.ClearCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.ClearCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Log.ClearCommandResponse.html
+  name: ClearCommandResponse
+  nameWithType: ClearCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Log.ClearCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Log.ClearCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.ClearCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.ClearCommandSettings.html
+  name: ClearCommandSettings
+  nameWithType: ClearCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Log.ClearCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Log.DisableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.DisableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Log.DisableCommandResponse.html
+  name: DisableCommandResponse
+  nameWithType: DisableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Log.DisableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Log.DisableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.DisableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.DisableCommandSettings.html
+  name: DisableCommandSettings
+  nameWithType: DisableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Log.DisableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Log.EnableCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.EnableCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Log.EnableCommandResponse.html
+  name: EnableCommandResponse
+  nameWithType: EnableCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Log.EnableCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Log.EnableCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.EnableCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.EnableCommandSettings.html
+  name: EnableCommandSettings
+  nameWithType: EnableCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Log.EnableCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Log.EntryAddedEventArgs
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.EntryAddedEventArgs
+  href: OpenQA.Selenium.DevTools.V134.Log.EntryAddedEventArgs.html
+  name: EntryAddedEventArgs
+  nameWithType: EntryAddedEventArgs
+  fullName: OpenQA.Selenium.DevTools.V134.Log.EntryAddedEventArgs
+- uid: OpenQA.Selenium.DevTools.V134.Log.LogAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.LogAdapter
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.LogAdapter.html
+  name: LogAdapter
+  nameWithType: LogAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Log.LogAdapter
+- uid: OpenQA.Selenium.DevTools.V134.Log.LogEntry
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.LogEntry
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.LogEntry.html
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: OpenQA.Selenium.DevTools.V134.Log.LogEntry
+- uid: OpenQA.Selenium.DevTools.V134.Log.LogEntryCategoryValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.LogEntryCategoryValues
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.LogEntryCategoryValues.html
+  name: LogEntryCategoryValues
+  nameWithType: LogEntryCategoryValues
+  fullName: OpenQA.Selenium.DevTools.V134.Log.LogEntryCategoryValues
+- uid: OpenQA.Selenium.DevTools.V134.Log.LogEntryLevelValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.LogEntryLevelValues
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.LogEntryLevelValues.html
+  name: LogEntryLevelValues
+  nameWithType: LogEntryLevelValues
+  fullName: OpenQA.Selenium.DevTools.V134.Log.LogEntryLevelValues
+- uid: OpenQA.Selenium.DevTools.V134.Log.LogEntrySourceValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.LogEntrySourceValues
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.LogEntrySourceValues.html
+  name: LogEntrySourceValues
+  nameWithType: LogEntrySourceValues
+  fullName: OpenQA.Selenium.DevTools.V134.Log.LogEntrySourceValues
+- uid: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandResponse.html
+  name: StartViolationsReportCommandResponse
+  nameWithType: StartViolationsReportCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandSettings.html
+  name: StartViolationsReportCommandSettings
+  nameWithType: StartViolationsReportCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Log.StartViolationsReportCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandResponse
+  href: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandResponse.html
+  name: StopViolationsReportCommandResponse
+  nameWithType: StopViolationsReportCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandResponse
+- uid: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandSettings.html
+  name: StopViolationsReportCommandSettings
+  nameWithType: StopViolationsReportCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Log.StopViolationsReportCommandSettings
+- uid: OpenQA.Selenium.DevTools.V134.Log.ViolationSetting
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.ViolationSetting
+  href: OpenQA.Selenium.DevTools.V134.Log.ViolationSetting.html
+  name: ViolationSetting
+  nameWithType: ViolationSetting
+  fullName: OpenQA.Selenium.DevTools.V134.Log.ViolationSetting
+- uid: OpenQA.Selenium.DevTools.V134.Log.ViolationSettingNameValues
+  commentId: T:OpenQA.Selenium.DevTools.V134.Log.ViolationSettingNameValues
+  parent: OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.Selenium.DevTools.V134.Log.ViolationSettingNameValues.html
+  name: ViolationSettingNameValues
+  nameWithType: ViolationSettingNameValues
+  fullName: OpenQA.Selenium.DevTools.V134.Log.ViolationSettingNameValues
+- uid: OpenQA.Selenium.DevTools.V134.Log
+  commentId: N:OpenQA.Selenium.DevTools.V134.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Log
+  nameWithType: OpenQA.Selenium.DevTools.V134.Log
+  fullName: OpenQA.Selenium.DevTools.V134.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V134.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Log
+    name: Log
+    href: OpenQA.Selenium.DevTools.V134.Log.html

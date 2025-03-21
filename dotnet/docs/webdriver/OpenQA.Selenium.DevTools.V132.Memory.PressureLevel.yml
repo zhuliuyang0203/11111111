@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  commentId: T:OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  id: PressureLevel
+  parent: OpenQA.Selenium.DevTools.V132.Memory
+  children:
+  - OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Critical
+  - OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Moderate
+  langs:
+  - csharp
+  - vb
+  name: PressureLevel
+  nameWithType: PressureLevel
+  fullName: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  type: Enum
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: PressureLevel
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+    startLine: 12
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Memory
+  summary: PressureLevel
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(JsonEnumMemberConverter<PressureLevel>))]
+
+      public enum PressureLevel
+    content.vb: >-
+      <JsonConverter(GetType(JsonEnumMemberConverter(Of PressureLevel)))>
+
+      Public Enum PressureLevel
+- uid: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Moderate
+  commentId: F:OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Moderate
+  id: Moderate
+  parent: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  langs:
+  - csharp
+  - vb
+  name: Moderate
+  nameWithType: PressureLevel.Moderate
+  fullName: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Moderate
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Moderate
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+    startLine: 18
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Memory
+  summary: Enumerated member for the moderate value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "moderate")]
+
+      Moderate = 0
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+    content.vb: >-
+      <EnumMember(Value:="moderate")>
+
+      Moderate = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: moderate
+- uid: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Critical
+  commentId: F:OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Critical
+  id: Critical
+  parent: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  langs:
+  - csharp
+  - vb
+  name: Critical
+  nameWithType: PressureLevel.Critical
+  fullName: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.Critical
+  type: Field
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Critical
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v132/Memory/PressureLevel.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V132.Memory
+  summary: Enumerated member for the critical value.
+  example: []
+  syntax:
+    content: >-
+      [EnumMember(Value = "critical")]
+
+      Critical = 1
+    return:
+      type: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+    content.vb: >-
+      <EnumMember(Value:="critical")>
+
+      Critical = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: critical
+references:
+- uid: OpenQA.Selenium.DevTools.V132.Memory
+  commentId: N:OpenQA.Selenium.DevTools.V132.Memory
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V132.Memory
+  nameWithType: OpenQA.Selenium.DevTools.V132.Memory
+  fullName: OpenQA.Selenium.DevTools.V132.Memory
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Memory
+    name: Memory
+    href: OpenQA.Selenium.DevTools.V132.Memory.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132
+    name: V132
+    href: OpenQA.Selenium.DevTools.V132.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V132.Memory
+    name: Memory
+    href: OpenQA.Selenium.DevTools.V132.Memory.html
+- uid: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  commentId: T:OpenQA.Selenium.DevTools.V132.Memory.PressureLevel
+  parent: OpenQA.Selenium.DevTools.V132.Memory
+  href: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel.html
+  name: PressureLevel
+  nameWithType: PressureLevel
+  fullName: OpenQA.Selenium.DevTools.V132.Memory.PressureLevel

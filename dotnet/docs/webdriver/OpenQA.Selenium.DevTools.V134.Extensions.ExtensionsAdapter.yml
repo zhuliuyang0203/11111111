@@ -1,0 +1,1151 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  id: ExtensionsAdapter
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  children:
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor(OpenQA.Selenium.DevTools.IDevToolsSession)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  - OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ExtensionsAdapter
+  nameWithType: ExtensionsAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  type: Class
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ExtensionsAdapter
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 15
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Represents an adapter for the Extensions domain to simplify the command interface.
+  example: []
+  syntax:
+    content: public class ExtensionsAdapter
+    content.vb: Public Class ExtensionsAdapter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor(OpenQA.Selenium.DevTools.IDevToolsSession)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor(OpenQA.Selenium.DevTools.IDevToolsSession)
+  id: '#ctor(OpenQA.Selenium.DevTools.IDevToolsSession)'
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: ExtensionsAdapter(IDevToolsSession)
+  nameWithType: ExtensionsAdapter.ExtensionsAdapter(IDevToolsSession)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ExtensionsAdapter(OpenQA.Selenium.DevTools.IDevToolsSession)
+  type: Constructor
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Initializes a new instance of the ExtensionsAdapter class.
+  example: []
+  syntax:
+    content: public ExtensionsAdapter(IDevToolsSession session)
+    parameters:
+    - id: session
+      type: OpenQA.Selenium.DevTools.IDevToolsSession
+      description: The IDevToolsSession to be used with this adapter.
+    content.vb: Public Sub New(session As IDevToolsSession)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If <code class="paramref">session</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: ExtensionsAdapter.New(IDevToolsSession)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.New(OpenQA.Selenium.DevTools.IDevToolsSession)
+  name.vb: New(IDevToolsSession)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+  commentId: P:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+  id: Session
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: ExtensionsAdapter.Session
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+  type: Property
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Session
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 34
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: Gets the DevToolsSession associated with the adapter.
+  example: []
+  syntax:
+    content: public IDevToolsSession Session { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.DevTools.IDevToolsSession
+    content.vb: Public ReadOnly Property Session As IDevToolsSession
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session*
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: LoadUnpacked(LoadUnpackedCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.LoadUnpacked(LoadUnpackedCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: LoadUnpacked
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 41
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: loadUnpacked
+  example: []
+  syntax:
+    content: public Task<LoadUnpackedCommandResponse> LoadUnpacked(LoadUnpackedCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse}
+    content.vb: Public Function LoadUnpacked(command As LoadUnpackedCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of LoadUnpackedCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked*
+  nameWithType.vb: ExtensionsAdapter.LoadUnpacked(LoadUnpackedCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked(OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: LoadUnpacked(LoadUnpackedCommandSettings, CancellationToken, Integer?, Boolean)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: Uninstall(UninstallCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.Uninstall(UninstallCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Uninstall
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 49
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: uninstall
+  example: []
+  syntax:
+    content: public Task<UninstallCommandResponse?> Uninstall(UninstallCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse}
+    content.vb: Public Function Uninstall(command As UninstallCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of UninstallCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall*
+  nameWithType.vb: ExtensionsAdapter.Uninstall(UninstallCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall(OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: Uninstall(UninstallCommandSettings, CancellationToken, Integer?, Boolean)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetStorageItems(GetStorageItemsCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.GetStorageItems(GetStorageItemsCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: GetStorageItems
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 57
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: getStorageItems
+  example: []
+  syntax:
+    content: public Task<GetStorageItemsCommandResponse> GetStorageItems(GetStorageItemsCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse}
+    content.vb: Public Function GetStorageItems(command As GetStorageItemsCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of GetStorageItemsCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems*
+  nameWithType.vb: ExtensionsAdapter.GetStorageItems(GetStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: GetStorageItems(GetStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: RemoveStorageItems(RemoveStorageItemsCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.RemoveStorageItems(RemoveStorageItemsCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RemoveStorageItems
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 65
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: removeStorageItems
+  example: []
+  syntax:
+    content: public Task<RemoveStorageItemsCommandResponse?> RemoveStorageItems(RemoveStorageItemsCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse}
+    content.vb: Public Function RemoveStorageItems(command As RemoveStorageItemsCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of RemoveStorageItemsCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems*
+  nameWithType.vb: ExtensionsAdapter.RemoveStorageItems(RemoveStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: RemoveStorageItems(RemoveStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: ClearStorageItems(ClearStorageItemsCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.ClearStorageItems(ClearStorageItemsCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ClearStorageItems
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 73
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: clearStorageItems
+  example: []
+  syntax:
+    content: public Task<ClearStorageItemsCommandResponse?> ClearStorageItems(ClearStorageItemsCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse}
+    content.vb: Public Function ClearStorageItems(command As ClearStorageItemsCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of ClearStorageItemsCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems*
+  nameWithType.vb: ExtensionsAdapter.ClearStorageItems(ClearStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: ClearStorageItems(ClearStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  commentId: M:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  id: SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings,System.Threading.CancellationToken,System.Nullable{System.Int32},System.Boolean)
+  parent: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter
+  langs:
+  - csharp
+  - vb
+  name: SetStorageItems(SetStorageItemsCommandSettings, CancellationToken, int?, bool)
+  nameWithType: ExtensionsAdapter.SetStorageItems(SetStorageItemsCommandSettings, CancellationToken, int?, bool)
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings, System.Threading.CancellationToken, int?, bool)
+  type: Method
+  source:
+    remote:
+      path: bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: SetStorageItems
+    path: ../../bazel-bin/dotnet/src/webdriver/cdp/v134/Extensions/ExtensionsAdapter.cs
+    startLine: 81
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.DevTools.V134.Extensions
+  summary: setStorageItems
+  example: []
+  syntax:
+    content: public Task<SetStorageItemsCommandResponse?> SetStorageItems(SetStorageItemsCommandSettings command, CancellationToken cancellationToken = default, int? millisecondsTimeout = null, bool throwExceptionIfResponseNotReceived = true)
+    parameters:
+    - id: command
+      type: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    - id: millisecondsTimeout
+      type: System.Nullable{System.Int32}
+    - id: throwExceptionIfResponseNotReceived
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse}
+    content.vb: Public Function SetStorageItems(command As SetStorageItemsCommandSettings, cancellationToken As CancellationToken = Nothing, millisecondsTimeout As Integer? = Nothing, throwExceptionIfResponseNotReceived As Boolean = True) As Task(Of SetStorageItemsCommandResponse)
+  overload: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems*
+  nameWithType.vb: ExtensionsAdapter.SetStorageItems(SetStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems(OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings, System.Threading.CancellationToken, Integer?, Boolean)
+  name.vb: SetStorageItems(SetStorageItemsCommandSettings, CancellationToken, Integer?, Boolean)
+references:
+- uid: OpenQA.Selenium.DevTools.V134.Extensions
+  commentId: N:OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V134.Extensions
+  nameWithType: OpenQA.Selenium.DevTools.V134.Extensions
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134
+    name: V134
+    href: OpenQA.Selenium.DevTools.V134.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions
+    name: Extensions
+    href: OpenQA.Selenium.DevTools.V134.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.#ctor
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter__ctor_OpenQA_Selenium_DevTools_IDevToolsSession_
+  name: ExtensionsAdapter
+  nameWithType: ExtensionsAdapter.ExtensionsAdapter
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ExtensionsAdapter
+  nameWithType.vb: ExtensionsAdapter.New
+  fullName.vb: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.New
+  name.vb: New
+- uid: OpenQA.Selenium.DevTools.IDevToolsSession
+  commentId: T:OpenQA.Selenium.DevTools.IDevToolsSession
+  parent: OpenQA.Selenium.DevTools
+  href: OpenQA.Selenium.DevTools.IDevToolsSession.html
+  name: IDevToolsSession
+  nameWithType: IDevToolsSession
+  fullName: OpenQA.Selenium.DevTools.IDevToolsSession
+- uid: OpenQA.Selenium.DevTools
+  commentId: N:OpenQA.Selenium.DevTools
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools
+  nameWithType: OpenQA.Selenium.DevTools
+  fullName: OpenQA.Selenium.DevTools
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_Session
+  name: Session
+  nameWithType: ExtensionsAdapter.Session
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Session
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_LoadUnpacked_OpenQA_Selenium_DevTools_V134_Extensions_LoadUnpackedCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: LoadUnpacked
+  nameWithType: ExtensionsAdapter.LoadUnpacked
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.LoadUnpacked
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings.html
+  name: LoadUnpackedCommandSettings
+  nameWithType: LoadUnpackedCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandSettings
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<LoadUnpackedCommandResponse>
+  nameWithType: Task<LoadUnpackedCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse>
+  nameWithType.vb: Task(Of LoadUnpackedCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse)
+  name.vb: Task(Of LoadUnpackedCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+    name: LoadUnpackedCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse
+    name: LoadUnpackedCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.LoadUnpackedCommandResponse.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_Uninstall_OpenQA_Selenium_DevTools_V134_Extensions_UninstallCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: Uninstall
+  nameWithType: ExtensionsAdapter.Uninstall
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.Uninstall
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings.html
+  name: UninstallCommandSettings
+  nameWithType: UninstallCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandSettings
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UninstallCommandResponse>
+  nameWithType: Task<UninstallCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse>
+  nameWithType.vb: Task(Of UninstallCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse)
+  name.vb: Task(Of UninstallCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+    name: UninstallCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse
+    name: UninstallCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.UninstallCommandResponse.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_GetStorageItems_OpenQA_Selenium_DevTools_V134_Extensions_GetStorageItemsCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: GetStorageItems
+  nameWithType: ExtensionsAdapter.GetStorageItems
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.GetStorageItems
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings.html
+  name: GetStorageItemsCommandSettings
+  nameWithType: GetStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandSettings
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetStorageItemsCommandResponse>
+  nameWithType: Task<GetStorageItemsCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse>
+  nameWithType.vb: Task(Of GetStorageItemsCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse)
+  name.vb: Task(Of GetStorageItemsCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+    name: GetStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse
+    name: GetStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.GetStorageItemsCommandResponse.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_RemoveStorageItems_OpenQA_Selenium_DevTools_V134_Extensions_RemoveStorageItemsCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: RemoveStorageItems
+  nameWithType: ExtensionsAdapter.RemoveStorageItems
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.RemoveStorageItems
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings.html
+  name: RemoveStorageItemsCommandSettings
+  nameWithType: RemoveStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandSettings
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<RemoveStorageItemsCommandResponse>
+  nameWithType: Task<RemoveStorageItemsCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse>
+  nameWithType.vb: Task(Of RemoveStorageItemsCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse)
+  name.vb: Task(Of RemoveStorageItemsCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+    name: RemoveStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse
+    name: RemoveStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.RemoveStorageItemsCommandResponse.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_ClearStorageItems_OpenQA_Selenium_DevTools_V134_Extensions_ClearStorageItemsCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: ClearStorageItems
+  nameWithType: ExtensionsAdapter.ClearStorageItems
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.ClearStorageItems
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings.html
+  name: ClearStorageItemsCommandSettings
+  nameWithType: ClearStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandSettings
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ClearStorageItemsCommandResponse>
+  nameWithType: Task<ClearStorageItemsCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse>
+  nameWithType.vb: Task(Of ClearStorageItemsCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse)
+  name.vb: Task(Of ClearStorageItemsCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+    name: ClearStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse
+    name: ClearStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.ClearStorageItemsCommandResponse.html
+  - name: )
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems*
+  commentId: Overload:OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems
+  href: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.html#OpenQA_Selenium_DevTools_V134_Extensions_ExtensionsAdapter_SetStorageItems_OpenQA_Selenium_DevTools_V134_Extensions_SetStorageItemsCommandSettings_System_Threading_CancellationToken_System_Nullable_System_Int32__System_Boolean_
+  name: SetStorageItems
+  nameWithType: ExtensionsAdapter.SetStorageItems
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.ExtensionsAdapter.SetStorageItems
+- uid: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V134.Extensions
+  href: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings.html
+  name: SetStorageItemsCommandSettings
+  nameWithType: SetStorageItemsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandSettings
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SetStorageItemsCommandResponse>
+  nameWithType: Task<SetStorageItemsCommandResponse>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse>
+  nameWithType.vb: Task(Of SetStorageItemsCommandResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse)
+  name.vb: Task(Of SetStorageItemsCommandResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+    name: SetStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse
+    name: SetStorageItemsCommandResponse
+    href: OpenQA.Selenium.DevTools.V134.Extensions.SetStorageItemsCommandResponse.html
+  - name: )

@@ -1,0 +1,1277 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.BiDi
+  commentId: T:OpenQA.Selenium.BiDi.BiDi
+  id: BiDi
+  parent: OpenQA.Selenium.BiDi
+  children:
+  - OpenQA.Selenium.BiDi.BiDi.Browser
+  - OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+  - OpenQA.Selenium.BiDi.BiDi.ConnectAsync(System.String)
+  - OpenQA.Selenium.BiDi.BiDi.DisposeAsync
+  - OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore
+  - OpenQA.Selenium.BiDi.BiDi.EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions)
+  - OpenQA.Selenium.BiDi.BiDi.Log
+  - OpenQA.Selenium.BiDi.BiDi.Network
+  - OpenQA.Selenium.BiDi.BiDi.Script
+  - OpenQA.Selenium.BiDi.BiDi.StatusAsync
+  - OpenQA.Selenium.BiDi.BiDi.Storage
+  langs:
+  - csharp
+  - vb
+  name: BiDi
+  nameWithType: BiDi
+  fullName: OpenQA.Selenium.BiDi.BiDi
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BiDi
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: 'public class BiDi : IAsyncDisposable'
+    content.vb: Public Class BiDi Implements IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+  id: BrowsingContext
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: BrowsingContext
+  nameWithType: BiDi.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: BrowsingContext
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 55
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public BrowsingContextModule BrowsingContext { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+    content.vb: Public ReadOnly Property BrowsingContext As BrowsingContextModule
+  overload: OpenQA.Selenium.BiDi.BiDi.BrowsingContext*
+- uid: OpenQA.Selenium.BiDi.BiDi.Browser
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.Browser
+  id: Browser
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: Browser
+  nameWithType: BiDi.Browser
+  fullName: OpenQA.Selenium.BiDi.BiDi.Browser
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Browser
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 56
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public BrowserModule Browser { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+    content.vb: Public ReadOnly Property Browser As BrowserModule
+  overload: OpenQA.Selenium.BiDi.BiDi.Browser*
+- uid: OpenQA.Selenium.BiDi.BiDi.Network
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.Network
+  id: Network
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: Network
+  nameWithType: BiDi.Network
+  fullName: OpenQA.Selenium.BiDi.BiDi.Network
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Network
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 57
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public NetworkModule Network { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Network.NetworkModule
+    content.vb: Public ReadOnly Property Network As NetworkModule
+  overload: OpenQA.Selenium.BiDi.BiDi.Network*
+- uid: OpenQA.Selenium.BiDi.BiDi.Script
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.Script
+  id: Script
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: Script
+  nameWithType: BiDi.Script
+  fullName: OpenQA.Selenium.BiDi.BiDi.Script
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Script
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 59
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public ScriptModule Script { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Script.ScriptModule
+    content.vb: Public ReadOnly Property Script As ScriptModule
+  overload: OpenQA.Selenium.BiDi.BiDi.Script*
+- uid: OpenQA.Selenium.BiDi.BiDi.Log
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.Log
+  id: Log
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: BiDi.Log
+  fullName: OpenQA.Selenium.BiDi.BiDi.Log
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Log
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 60
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public LogModule Log { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+    content.vb: Public ReadOnly Property Log As LogModule
+  overload: OpenQA.Selenium.BiDi.BiDi.Log*
+- uid: OpenQA.Selenium.BiDi.BiDi.Storage
+  commentId: P:OpenQA.Selenium.BiDi.BiDi.Storage
+  id: Storage
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: Storage
+  nameWithType: BiDi.Storage
+  fullName: OpenQA.Selenium.BiDi.BiDi.Storage
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: Storage
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 61
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public StorageModule Storage { get; }
+    parameters: []
+    return:
+      type: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+    content.vb: Public ReadOnly Property Storage As StorageModule
+  overload: OpenQA.Selenium.BiDi.BiDi.Storage*
+- uid: OpenQA.Selenium.BiDi.BiDi.StatusAsync
+  commentId: M:OpenQA.Selenium.BiDi.BiDi.StatusAsync
+  id: StatusAsync
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: StatusAsync()
+  nameWithType: BiDi.StatusAsync()
+  fullName: OpenQA.Selenium.BiDi.BiDi.StatusAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: StatusAsync
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 63
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public Task<StatusResult> StatusAsync()
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Session.StatusResult}
+    content.vb: Public Function StatusAsync() As Task(Of StatusResult)
+  overload: OpenQA.Selenium.BiDi.BiDi.StatusAsync*
+- uid: OpenQA.Selenium.BiDi.BiDi.ConnectAsync(System.String)
+  commentId: M:OpenQA.Selenium.BiDi.BiDi.ConnectAsync(System.String)
+  id: ConnectAsync(System.String)
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(string)
+  nameWithType: BiDi.ConnectAsync(string)
+  fullName: OpenQA.Selenium.BiDi.BiDi.ConnectAsync(string)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectAsync
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 68
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public static Task<BiDi> ConnectAsync(string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.BiDi}
+    content.vb: Public Shared Function ConnectAsync(url As String) As Task(Of BiDi)
+  overload: OpenQA.Selenium.BiDi.BiDi.ConnectAsync*
+  nameWithType.vb: BiDi.ConnectAsync(String)
+  fullName.vb: OpenQA.Selenium.BiDi.BiDi.ConnectAsync(String)
+  name.vb: ConnectAsync(String)
+- uid: OpenQA.Selenium.BiDi.BiDi.EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions)
+  commentId: M:OpenQA.Selenium.BiDi.BiDi.EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions)
+  id: EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions)
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: EndAsync(EndOptions?)
+  nameWithType: BiDi.EndAsync(EndOptions?)
+  fullName: OpenQA.Selenium.BiDi.BiDi.EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions?)
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: EndAsync
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 77
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: public Task EndAsync(EndOptions? options = null)
+    parameters:
+    - id: options
+      type: OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function EndAsync(options As EndOptions = Nothing) As Task
+  overload: OpenQA.Selenium.BiDi.BiDi.EndAsync*
+  nameWithType.vb: BiDi.EndAsync(EndOptions)
+  fullName.vb: OpenQA.Selenium.BiDi.BiDi.EndAsync(OpenQA.Selenium.BiDi.Modules.Session.EndOptions)
+  name.vb: EndAsync(EndOptions)
+- uid: OpenQA.Selenium.BiDi.BiDi.DisposeAsync
+  commentId: M:OpenQA.Selenium.BiDi.BiDi.DisposeAsync
+  id: DisposeAsync
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: BiDi.DisposeAsync()
+  fullName: OpenQA.Selenium.BiDi.BiDi.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisposeAsync
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 82
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or
+
+    resetting unmanaged resources asynchronously.
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: OpenQA.Selenium.BiDi.BiDi.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore
+  commentId: M:OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore
+  id: DisposeAsyncCore
+  parent: OpenQA.Selenium.BiDi.BiDi
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsyncCore()
+  nameWithType: BiDi.DisposeAsyncCore()
+  fullName: OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore()
+  type: Method
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/BiDi.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DisposeAsyncCore
+    path: ../src/webdriver/BiDi/BiDi.cs
+    startLine: 88
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi
+  syntax:
+    content: protected virtual ValueTask DisposeAsyncCore()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Protected Overridable Function DisposeAsyncCore() As ValueTask
+  overload: OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore*
+references:
+- uid: OpenQA.Selenium.BiDi
+  commentId: N:OpenQA.Selenium.BiDi
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi
+  nameWithType: OpenQA.Selenium.BiDi
+  fullName: OpenQA.Selenium.BiDi
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OpenQA.Selenium.BiDi.BiDi.BrowsingContext*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_BrowsingContext
+  name: BrowsingContext
+  nameWithType: BiDi.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.BiDi.BrowsingContext
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+  parent: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule.html
+  name: BrowsingContextModule
+  nameWithType: BrowsingContextModule
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext.BrowsingContextModule
+- uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  commentId: N:OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  nameWithType: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  fullName: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.BrowsingContext
+    name: BrowsingContext
+    href: OpenQA.Selenium.BiDi.Modules.BrowsingContext.html
+- uid: OpenQA.Selenium.BiDi.BiDi.Browser*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.Browser
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_Browser
+  name: Browser
+  nameWithType: BiDi.Browser
+  fullName: OpenQA.Selenium.BiDi.BiDi.Browser
+- uid: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+  parent: OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule.html
+  name: BrowserModule
+  nameWithType: BrowserModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser.BrowserModule
+- uid: OpenQA.Selenium.BiDi.Modules.Browser
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Browser
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Browser
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Browser
+  fullName: OpenQA.Selenium.BiDi.Modules.Browser
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Browser
+    name: Browser
+    href: OpenQA.Selenium.BiDi.Modules.Browser.html
+- uid: OpenQA.Selenium.BiDi.BiDi.Network*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.Network
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_Network
+  name: Network
+  nameWithType: BiDi.Network
+  fullName: OpenQA.Selenium.BiDi.BiDi.Network
+- uid: OpenQA.Selenium.BiDi.Modules.Network.NetworkModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.NetworkModule
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.Selenium.BiDi.Modules.Network.NetworkModule.html
+  name: NetworkModule
+  nameWithType: NetworkModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.NetworkModule
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: OpenQA.Selenium.BiDi.BiDi.Script*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.Script
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_Script
+  name: Script
+  nameWithType: BiDi.Script
+  fullName: OpenQA.Selenium.BiDi.BiDi.Script
+- uid: OpenQA.Selenium.BiDi.Modules.Script.ScriptModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Script.ScriptModule
+  parent: OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.Selenium.BiDi.Modules.Script.ScriptModule.html
+  name: ScriptModule
+  nameWithType: ScriptModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Script.ScriptModule
+- uid: OpenQA.Selenium.BiDi.Modules.Script
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Script
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Script
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Script
+  fullName: OpenQA.Selenium.BiDi.Modules.Script
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Script
+    name: Script
+    href: OpenQA.Selenium.BiDi.Modules.Script.html
+- uid: OpenQA.Selenium.BiDi.BiDi.Log*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.Log
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_Log
+  name: Log
+  nameWithType: BiDi.Log
+  fullName: OpenQA.Selenium.BiDi.BiDi.Log
+- uid: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Log.LogModule
+  parent: OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.Selenium.BiDi.Modules.Log.LogModule.html
+  name: LogModule
+  nameWithType: LogModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Log.LogModule
+- uid: OpenQA.Selenium.BiDi.Modules.Log
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Log
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Log
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Log
+  fullName: OpenQA.Selenium.BiDi.Modules.Log
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Log
+    name: Log
+    href: OpenQA.Selenium.BiDi.Modules.Log.html
+- uid: OpenQA.Selenium.BiDi.BiDi.Storage*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.Storage
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_Storage
+  name: Storage
+  nameWithType: BiDi.Storage
+  fullName: OpenQA.Selenium.BiDi.BiDi.Storage
+- uid: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+  parent: OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule.html
+  name: StorageModule
+  nameWithType: StorageModule
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage.StorageModule
+- uid: OpenQA.Selenium.BiDi.Modules.Storage
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Storage
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Storage
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Storage
+  fullName: OpenQA.Selenium.BiDi.Modules.Storage
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Storage
+    name: Storage
+    href: OpenQA.Selenium.BiDi.Modules.Storage.html
+- uid: OpenQA.Selenium.BiDi.BiDi.StatusAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.StatusAsync
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_StatusAsync
+  name: StatusAsync
+  nameWithType: BiDi.StatusAsync
+  fullName: OpenQA.Selenium.BiDi.BiDi.StatusAsync
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Session.StatusResult}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.Modules.Session.StatusResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<StatusResult>
+  nameWithType: Task<StatusResult>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.Modules.Session.StatusResult>
+  nameWithType.vb: Task(Of StatusResult)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.Modules.Session.StatusResult)
+  name.vb: Task(Of StatusResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+    name: StatusResult
+    href: OpenQA.Selenium.BiDi.Modules.Session.StatusResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Session.StatusResult
+    name: StatusResult
+    href: OpenQA.Selenium.BiDi.Modules.Session.StatusResult.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: OpenQA.Selenium.BiDi.BiDi.ConnectAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.ConnectAsync
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_ConnectAsync_System_String_
+  name: ConnectAsync
+  nameWithType: BiDi.ConnectAsync
+  fullName: OpenQA.Selenium.BiDi.BiDi.ConnectAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.BiDi}
+  commentId: T:System.Threading.Tasks.Task{OpenQA.Selenium.BiDi.BiDi}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<BiDi>
+  nameWithType: Task<BiDi>
+  fullName: System.Threading.Tasks.Task<OpenQA.Selenium.BiDi.BiDi>
+  nameWithType.vb: Task(Of BiDi)
+  fullName.vb: System.Threading.Tasks.Task(Of OpenQA.Selenium.BiDi.BiDi)
+  name.vb: Task(Of BiDi)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.BiDi.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.BiDi.html
+  - name: )
+- uid: OpenQA.Selenium.BiDi.BiDi.EndAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.EndAsync
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_EndAsync_OpenQA_Selenium_BiDi_Modules_Session_EndOptions_
+  name: EndAsync
+  nameWithType: BiDi.EndAsync
+  fullName: OpenQA.Selenium.BiDi.BiDi.EndAsync
+- uid: OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+  parent: OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.Selenium.BiDi.Modules.Session.EndOptions.html
+  name: EndOptions
+  nameWithType: EndOptions
+  fullName: OpenQA.Selenium.BiDi.Modules.Session.EndOptions
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: OpenQA.Selenium.BiDi.Modules.Session
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Session
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Session
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Session
+  fullName: OpenQA.Selenium.BiDi.Modules.Session
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Session
+    name: Session
+    href: OpenQA.Selenium.BiDi.Modules.Session.html
+- uid: OpenQA.Selenium.BiDi.BiDi.DisposeAsync*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.DisposeAsync
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_DisposeAsync
+  name: DisposeAsync
+  nameWithType: BiDi.DisposeAsync
+  fullName: OpenQA.Selenium.BiDi.BiDi.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore*
+  commentId: Overload:OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore
+  href: OpenQA.Selenium.BiDi.BiDi.html#OpenQA_Selenium_BiDi_BiDi_DisposeAsyncCore
+  name: DisposeAsyncCore
+  nameWithType: BiDi.DisposeAsyncCore
+  fullName: OpenQA.Selenium.BiDi.BiDi.DisposeAsyncCore

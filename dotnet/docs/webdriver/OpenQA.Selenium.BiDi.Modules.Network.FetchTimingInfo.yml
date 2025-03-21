@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  commentId: T:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  id: FetchTimingInfo
+  parent: OpenQA.Selenium.BiDi.Modules.Network
+  children:
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+  - OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+  langs:
+  - csharp
+  - vb
+  name: FetchTimingInfo
+  nameWithType: FetchTimingInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  type: Class
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FetchTimingInfo
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 21
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: 'public record FetchTimingInfo : IEquatable<FetchTimingInfo>'
+    content.vb: Public Class FetchTimingInfo Implements IEquatable(Of FetchTimingInfo)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: FetchTimingInfo(double, double, double, double, double, double, double, double, double, double, double, double, double)
+  nameWithType: FetchTimingInfo.FetchTimingInfo(double, double, double, double, double, double, double, double, double, double, double, double, double)
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchTimingInfo(double, double, double, double, double, double, double, double, double, double, double, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: .ctor
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 21
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public FetchTimingInfo(double TimeOrigin, double RequestTime, double RedirectStart, double RedirectEnd, double FetchStart, double DnsStart, double DnsEnd, double ConnectStart, double ConnectEnd, double TlsStart, double RequestStart, double ResponseStart, double ResponseEnd)
+    parameters:
+    - id: TimeOrigin
+      type: System.Double
+    - id: RequestTime
+      type: System.Double
+    - id: RedirectStart
+      type: System.Double
+    - id: RedirectEnd
+      type: System.Double
+    - id: FetchStart
+      type: System.Double
+    - id: DnsStart
+      type: System.Double
+    - id: DnsEnd
+      type: System.Double
+    - id: ConnectStart
+      type: System.Double
+    - id: ConnectEnd
+      type: System.Double
+    - id: TlsStart
+      type: System.Double
+    - id: RequestStart
+      type: System.Double
+    - id: ResponseStart
+      type: System.Double
+    - id: ResponseEnd
+      type: System.Double
+    content.vb: Public Sub New(TimeOrigin As Double, RequestTime As Double, RedirectStart As Double, RedirectEnd As Double, FetchStart As Double, DnsStart As Double, DnsEnd As Double, ConnectStart As Double, ConnectEnd As Double, TlsStart As Double, RequestStart As Double, ResponseStart As Double, ResponseEnd As Double)
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor*
+  nameWithType.vb: FetchTimingInfo.New(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.New(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+  id: TimeOrigin
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: TimeOrigin
+  nameWithType: FetchTimingInfo.TimeOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TimeOrigin
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 21
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double TimeOrigin { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property TimeOrigin As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+  id: RequestTime
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: RequestTime
+  nameWithType: FetchTimingInfo.RequestTime
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RequestTime
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 22
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double RequestTime { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RequestTime As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+  id: RedirectStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: RedirectStart
+  nameWithType: FetchTimingInfo.RedirectStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RedirectStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 23
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double RedirectStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RedirectStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+  id: RedirectEnd
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: RedirectEnd
+  nameWithType: FetchTimingInfo.RedirectEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RedirectEnd
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 24
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double RedirectEnd { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RedirectEnd As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+  id: FetchStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: FetchStart
+  nameWithType: FetchTimingInfo.FetchStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: FetchStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 25
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double FetchStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FetchStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+  id: DnsStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: DnsStart
+  nameWithType: FetchTimingInfo.DnsStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DnsStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 26
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double DnsStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DnsStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+  id: DnsEnd
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: DnsEnd
+  nameWithType: FetchTimingInfo.DnsEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: DnsEnd
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 27
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double DnsEnd { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DnsEnd As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+  id: ConnectStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: ConnectStart
+  nameWithType: FetchTimingInfo.ConnectStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 28
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double ConnectStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ConnectStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+  id: ConnectEnd
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: ConnectEnd
+  nameWithType: FetchTimingInfo.ConnectEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ConnectEnd
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 29
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double ConnectEnd { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ConnectEnd As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+  id: TlsStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: TlsStart
+  nameWithType: FetchTimingInfo.TlsStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: TlsStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 30
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double TlsStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property TlsStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+  id: RequestStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: RequestStart
+  nameWithType: FetchTimingInfo.RequestStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: RequestStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 31
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double RequestStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RequestStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+  id: ResponseStart
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: ResponseStart
+  nameWithType: FetchTimingInfo.ResponseStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResponseStart
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 32
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double ResponseStart { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ResponseStart As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart*
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd
+  commentId: P:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd
+  id: ResponseEnd
+  parent: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+  langs:
+  - csharp
+  - vb
+  name: ResponseEnd
+  nameWithType: FetchTimingInfo.ResponseEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd
+  type: Property
+  source:
+    remote:
+      path: dotnet/src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+      branch: trunk
+      repo: https://github.com/SeleniumHQ/selenium
+    id: ResponseEnd
+    path: ../src/webdriver/BiDi/Modules/Network/FetchTimingInfo.cs
+    startLine: 33
+  assemblies:
+  - WebDriver
+  namespace: OpenQA.Selenium.BiDi.Modules.Network
+  syntax:
+    content: public double ResponseEnd { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ResponseEnd As Double
+  overload: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd*
+references:
+- uid: OpenQA.Selenium.BiDi.Modules.Network
+  commentId: N:OpenQA.Selenium.BiDi.Modules.Network
+  href: OpenQA.html
+  name: OpenQA.Selenium.BiDi.Modules.Network
+  nameWithType: OpenQA.Selenium.BiDi.Modules.Network
+  fullName: OpenQA.Selenium.BiDi.Modules.Network
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi
+    name: BiDi
+    href: OpenQA.Selenium.BiDi.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules
+    name: Modules
+    href: OpenQA.Selenium.BiDi.Modules.html
+  - name: .
+  - uid: OpenQA.Selenium.BiDi.Modules.Network
+    name: Network
+    href: OpenQA.Selenium.BiDi.Modules.Network.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo}
+  commentId: T:System.IEquatable{OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<FetchTimingInfo>
+  nameWithType: IEquatable<FetchTimingInfo>
+  fullName: System.IEquatable<OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo>
+  nameWithType.vb: IEquatable(Of FetchTimingInfo)
+  fullName.vb: System.IEquatable(Of OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo)
+  name.vb: IEquatable(Of FetchTimingInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+    name: FetchTimingInfo
+    href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo
+    name: FetchTimingInfo
+    href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.#ctor
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: FetchTimingInfo
+  nameWithType: FetchTimingInfo.FetchTimingInfo
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchTimingInfo
+  nameWithType.vb: FetchTimingInfo.New
+  fullName.vb: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_TimeOrigin
+  name: TimeOrigin
+  nameWithType: FetchTimingInfo.TimeOrigin
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TimeOrigin
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_RequestTime
+  name: RequestTime
+  nameWithType: FetchTimingInfo.RequestTime
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestTime
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_RedirectStart
+  name: RedirectStart
+  nameWithType: FetchTimingInfo.RedirectStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_RedirectEnd
+  name: RedirectEnd
+  nameWithType: FetchTimingInfo.RedirectEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RedirectEnd
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_FetchStart
+  name: FetchStart
+  nameWithType: FetchTimingInfo.FetchStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.FetchStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_DnsStart
+  name: DnsStart
+  nameWithType: FetchTimingInfo.DnsStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_DnsEnd
+  name: DnsEnd
+  nameWithType: FetchTimingInfo.DnsEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.DnsEnd
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_ConnectStart
+  name: ConnectStart
+  nameWithType: FetchTimingInfo.ConnectStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_ConnectEnd
+  name: ConnectEnd
+  nameWithType: FetchTimingInfo.ConnectEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ConnectEnd
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_TlsStart
+  name: TlsStart
+  nameWithType: FetchTimingInfo.TlsStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.TlsStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_RequestStart
+  name: RequestStart
+  nameWithType: FetchTimingInfo.RequestStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.RequestStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_ResponseStart
+  name: ResponseStart
+  nameWithType: FetchTimingInfo.ResponseStart
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseStart
+- uid: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd*
+  commentId: Overload:OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd
+  href: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.html#OpenQA_Selenium_BiDi_Modules_Network_FetchTimingInfo_ResponseEnd
+  name: ResponseEnd
+  nameWithType: FetchTimingInfo.ResponseEnd
+  fullName: OpenQA.Selenium.BiDi.Modules.Network.FetchTimingInfo.ResponseEnd

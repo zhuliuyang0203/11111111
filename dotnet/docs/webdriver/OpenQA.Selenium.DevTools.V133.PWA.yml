@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: OpenQA.Selenium.DevTools.V133.PWA
+  commentId: N:OpenQA.Selenium.DevTools.V133.PWA
+  id: PWA
+  parent: OpenQA.Selenium.DevTools.V133
+  children:
+  - OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.DisplayMode
+  - OpenQA.Selenium.DevTools.V133.PWA.FileHandler
+  - OpenQA.Selenium.DevTools.V133.PWA.FileHandlerAccept
+  - OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.InstallCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.InstallCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandSettings
+  - OpenQA.Selenium.DevTools.V133.PWA.PWAAdapter
+  - OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandResponse
+  - OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandSettings
+  langs:
+  - csharp
+  - vb
+  name: OpenQA.Selenium.DevTools.V133.PWA
+  nameWithType: OpenQA.Selenium.DevTools.V133.PWA
+  fullName: OpenQA.Selenium.DevTools.V133.PWA
+  type: Namespace
+  assemblies:
+  - WebDriver
+references:
+- uid: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandResponse.html
+  name: ChangeAppUserSettingsCommandResponse
+  nameWithType: ChangeAppUserSettingsCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandSettings.html
+  name: ChangeAppUserSettingsCommandSettings
+  nameWithType: ChangeAppUserSettingsCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.ChangeAppUserSettingsCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.DisplayMode
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.DisplayMode
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.DisplayMode.html
+  name: DisplayMode
+  nameWithType: DisplayMode
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.DisplayMode
+- uid: OpenQA.Selenium.DevTools.V133.PWA.FileHandler
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.FileHandler
+  href: OpenQA.Selenium.DevTools.V133.PWA.FileHandler.html
+  name: FileHandler
+  nameWithType: FileHandler
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.FileHandler
+- uid: OpenQA.Selenium.DevTools.V133.PWA.FileHandlerAccept
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.FileHandlerAccept
+  href: OpenQA.Selenium.DevTools.V133.PWA.FileHandlerAccept.html
+  name: FileHandlerAccept
+  nameWithType: FileHandlerAccept
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.FileHandlerAccept
+- uid: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandResponse.html
+  name: GetOsAppStateCommandResponse
+  nameWithType: GetOsAppStateCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandSettings.html
+  name: GetOsAppStateCommandSettings
+  nameWithType: GetOsAppStateCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.GetOsAppStateCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.InstallCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandResponse.html
+  name: InstallCommandResponse
+  nameWithType: InstallCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.InstallCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandSettings.html
+  name: InstallCommandSettings
+  nameWithType: InstallCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.InstallCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandResponse.html
+  name: LaunchCommandResponse
+  nameWithType: LaunchCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandSettings.html
+  name: LaunchCommandSettings
+  nameWithType: LaunchCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.LaunchCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandResponse.html
+  name: LaunchFilesInAppCommandResponse
+  nameWithType: LaunchFilesInAppCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandSettings.html
+  name: LaunchFilesInAppCommandSettings
+  nameWithType: LaunchFilesInAppCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.LaunchFilesInAppCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandResponse.html
+  name: OpenCurrentPageInAppCommandResponse
+  nameWithType: OpenCurrentPageInAppCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandSettings.html
+  name: OpenCurrentPageInAppCommandSettings
+  nameWithType: OpenCurrentPageInAppCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.OpenCurrentPageInAppCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA.PWAAdapter
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.PWAAdapter
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.PWAAdapter.html
+  name: PWAAdapter
+  nameWithType: PWAAdapter
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.PWAAdapter
+- uid: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandResponse
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandResponse
+  href: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandResponse.html
+  name: UninstallCommandResponse
+  nameWithType: UninstallCommandResponse
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandResponse
+- uid: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandSettings
+  commentId: T:OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandSettings
+  parent: OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandSettings.html
+  name: UninstallCommandSettings
+  nameWithType: UninstallCommandSettings
+  fullName: OpenQA.Selenium.DevTools.V133.PWA.UninstallCommandSettings
+- uid: OpenQA.Selenium.DevTools.V133.PWA
+  commentId: N:OpenQA.Selenium.DevTools.V133.PWA
+  href: OpenQA.html
+  name: OpenQA.Selenium.DevTools.V133.PWA
+  nameWithType: OpenQA.Selenium.DevTools.V133.PWA
+  fullName: OpenQA.Selenium.DevTools.V133.PWA
+  spec.csharp:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V133.PWA.html
+  spec.vb:
+  - uid: OpenQA
+    name: OpenQA
+    href: OpenQA.html
+  - name: .
+  - uid: OpenQA.Selenium
+    name: Selenium
+    href: OpenQA.Selenium.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools
+    name: DevTools
+    href: OpenQA.Selenium.DevTools.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133
+    name: V133
+    href: OpenQA.Selenium.DevTools.V133.html
+  - name: .
+  - uid: OpenQA.Selenium.DevTools.V133.PWA
+    name: PWA
+    href: OpenQA.Selenium.DevTools.V133.PWA.html
