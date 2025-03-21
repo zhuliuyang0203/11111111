@@ -55,7 +55,7 @@ class Storage {
 
     if (
       partition !== undefined &&
-      !(partition instanceof (BrowsingContextPartitionDescriptor || StorageKeyPartitionDescriptor))
+      !(partition instanceof BrowsingContextPartitionDescriptor || partition instanceof StorageKeyPartitionDescriptor)
     ) {
       throw new Error(`Params must be an instance of PartitionDescriptor. Received:'${partition}'`)
     }
@@ -118,7 +118,7 @@ class Storage {
 
     if (
       partition !== undefined &&
-      !(partition instanceof (BrowsingContextPartitionDescriptor || StorageKeyPartitionDescriptor))
+      !(partition instanceof BrowsingContextPartitionDescriptor || partition instanceof StorageKeyPartitionDescriptor)
     ) {
       throw new Error(`Params must be an instance of PartitionDescriptor. Received:'${partition}'`)
     }
@@ -158,7 +158,7 @@ class Storage {
 
     if (
       partition !== undefined &&
-      !(partition instanceof (BrowsingContextPartitionDescriptor || StorageKeyPartitionDescriptor))
+      !(partition instanceof BrowsingContextPartitionDescriptor || partition instanceof StorageKeyPartitionDescriptor)
     ) {
       throw new Error(`Params must be an instance of PartitionDescriptor. Received:'${partition}'`)
     }
