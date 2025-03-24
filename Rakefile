@@ -740,7 +740,7 @@ namespace :rb do
     {
       '//javascript/atoms/fragments:find-elements': 'findElements.js',
       '//javascript/atoms/fragments:is-displayed': 'isDisplayed.js',
-      '//javascript/webdriver/atoms:get-attribute': 'getAttribute.js',
+      '//javascript/webdriver/atoms:get-attribute': 'getAttribute.js'
     }.each do |target, name|
       puts "Generating #{target} as #{name}"
 
