@@ -14,6 +14,8 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
+import re
+from unittest.mock import Mock
 
 import pytest
 
@@ -45,6 +47,16 @@ def test_should_get_the_size_of_the_current_window(driver):
     assert size.get("height") > 0
 
 
+@pytest.mark.parametrize("missing_key", ["width", "height"])
+def test_get_the_size_of_the_current_window_raises(driver, missing_key):
+    driver.get_window_rect = Mock(return_value={k: 100 for k in ("width", "height") if k != missing_key})
+
+    with pytest.raises(
+        KeyError, match=re.escape(f"No size with key: {missing_key} existed in {driver.get_window_rect.return_value}")
+    ):
+        driver.get_window_size()
+
+
 def test_should_set_the_size_of_the_current_window(driver):
     size = driver.get_window_size()
 
@@ -62,6 +74,17 @@ def test_should_get_the_position_of_the_current_window(driver):
     position = driver.get_window_position()
     assert position.get("x") >= 0
     assert position.get("y") >= 0
+
+
+@pytest.mark.parametrize("missing_key", ["x", "y"])
+def test_get_the_position_of_the_current_window_raises(driver, missing_key):
+    driver.get_window_rect = Mock(return_value={k: 100 for k in ("x", "y") if k != missing_key})
+
+    with pytest.raises(
+        KeyError,
+        match=re.escape(f"No position with key: {missing_key} existed in {driver.get_window_rect.return_value}"),
+    ):
+        driver.get_window_position()
 
 
 def test_should_set_the_position_of_the_current_window(driver):

@@ -1044,7 +1044,10 @@ class WebDriver(BaseWebDriver):
         if size.get("value", None):
             size = size["value"]
 
-        return {k: size[k] for k in ("width", "height")}
+        try:
+            return {k: size[k] for k in ("width", "height")}
+        except KeyError as e:
+            raise KeyError(f"No size with key: {e.args[0]} existed in {size}")
 
     def set_window_position(self, x: float, y: float, windowHandle: str = "current") -> dict:
         """Sets the x,y position of the current window. (window.moveTo)
@@ -1075,7 +1078,10 @@ class WebDriver(BaseWebDriver):
         self._check_if_window_handle_is_current(windowHandle)
         position = self.get_window_rect()
 
-        return {k: position[k] for k in ("x", "y")}
+        try:
+            return {k: position[k] for k in ("x", "y")}
+        except KeyError as e:
+            raise KeyError(f"No position with key: {e.args[0]} existed in {position}")
 
     def _check_if_window_handle_is_current(self, windowHandle: str) -> None:
         """Warns if the window handle is not equal to `current`."""
