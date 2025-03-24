@@ -378,7 +378,7 @@ task ios_driver: [
 # ./go java:package['--config=release']
 desc 'Create stamped zipped assets for Java for uploading to GitHub'
 task :'java-release-zip' do
-  Rake::Task['java:package'].invoke('--config=remote_release')
+  Rake::Task['java:package'].invoke('--config=rbe_release')
 end
 
 task 'release-java': %i[java-release-zip publish-maven]
@@ -494,8 +494,8 @@ namespace :node do
   end
 
   desc 'Release Node npm package'
-  task :release, [:nightly] do |_task, arguments|
-    nightly = arguments[:nightly]
+  task :release do |_task, arguments|
+    nightly = arguments.to_a.include?('nightly')
     if nightly
       puts 'Updating Node version to nightly...'
       Rake::Task['node:version'].invoke('nightly') if nightly
@@ -565,8 +565,8 @@ namespace :py do
   end
 
   desc 'Release Python wheel and sdist to pypi'
-  task :release, [:nightly] do |_task, arguments|
-    nightly = arguments[:nightly]
+  task :release do |_task, arguments|
+    nightly = arguments.to_a.include?('nightly')
     if nightly
       puts 'Updating Python version to nightly...'
       Rake::Task['py:version'].invoke('nightly')
@@ -741,8 +741,8 @@ namespace :rb do
   end
 
   desc 'Push Ruby gems to rubygems'
-  task :release, [:nightly] do |_task, arguments|
-    nightly = arguments[:nightly]
+  task :release do |_task, arguments|
+    nightly = arguments.to_a.include?('nightly')
 
     if nightly
       puts 'Bumping Ruby nightly version...'
@@ -751,9 +751,11 @@ namespace :rb do
       puts 'Releasing nightly WebDriver gem...'
       Bazel.execute('run', ['--config=release'], '//rb:selenium-webdriver-release-nightly')
     else
+      patch_release = ruby_version.split('.').fetch(2, '0').to_i.positive?
+
       puts 'Releasing Ruby gems...'
       Bazel.execute('run', ['--config=release'], '//rb:selenium-webdriver-release')
-      Bazel.execute('run', ['--config=release'], '//rb:selenium-devtools-release')
+      Bazel.execute('run', ['--config=release'], '//rb:selenium-devtools-release') unless patch_release
     end
   end
 
@@ -823,8 +825,8 @@ namespace :dotnet do
   end
 
   desc 'Upload nupkg files to Nuget'
-  task :release, [:nightly] do |_task, arguments|
-    nightly = arguments[:nightly]
+  task :release do |_task, arguments|
+    nightly = arguments.to_a.include?('nightly')
     if nightly
       puts 'Updating .NET version to nightly...'
       Rake::Task['dotnet:version'].invoke('nightly')
@@ -941,8 +943,8 @@ namespace :java do
   end
 
   desc 'Deploy all jars to Maven'
-  task :release, [:nightly] do |_task, arguments|
-    nightly = arguments[:nightly]
+  task :release do |_task, arguments|
+    nightly = arguments.to_a.include?('nightly')
 
     ENV['MAVEN_USER'] ||= ENV.fetch('SEL_M2_USER', nil)
     ENV['MAVEN_PASSWORD'] ||= ENV.fetch('SEL_M2_PASS', nil)
@@ -1142,17 +1144,17 @@ namespace :all do
   end
 
   desc 'Release all artifacts for all language bindings'
-  task :release, [:nightly] do |_task, arguments|
+  task :release do |_task, arguments|
     Rake::Task['clean'].invoke
 
-    nightly = arguments[:nightly]
-    Rake::Task['java:release'].invoke(nightly)
-    Rake::Task['py:release'].invoke(nightly)
-    Rake::Task['rb:release'].invoke(nightly)
-    Rake::Task['dotnet:release'].invoke(nightly)
-    Rake::Task['node:release'].invoke(nightly)
+    args = arguments.to_a.include?('nightly') ? ['nightly'] : []
+    Rake::Task['java:release'].invoke(*args)
+    Rake::Task['py:release'].invoke(*args)
+    Rake::Task['rb:release'].invoke(*args)
+    Rake::Task['dotnet:release'].invoke(*args)
+    Rake::Task['node:release'].invoke(*args)
 
-    unless nightly
+    unless args.include?('nightly')
       puts 'bump all versions to nightly'
       Rake::Task['all:version'].invoke('nightly')
     end
