@@ -17,6 +17,7 @@
 
 import pytest
 
+from selenium.webdriver.common.bidi.network import Request
 from selenium.webdriver.common.by import By
 
 
@@ -26,69 +27,63 @@ def test_network_initialized(driver):
 
 
 @pytest.mark.xfail_safari
-def test_add_response_handler(driver, pages):
-    passed = [False]
-
-    def callback(response):
-        passed[0] = True
-        response.continue_response()
-
-    driver.network.add_response_handler(callback)
-    pages.load("basicAuth")
-    assert passed[0], "Callback was NOT successful"
+def test_add_intercept(driver, pages):
+    result = driver.network.add_intercept()
+    assert result is not None, "Intercept not added"
 
 
 @pytest.mark.xfail_safari
-def test_remove_response_handler(driver, pages):
-    passed = [False]
-
-    def callback(response):
-        passed[0] = True
-        response.continue_response()
-
-    test_response_id = driver.network.add_response_handler(callback)
-    driver.network.remove_response_handler(response_id=test_response_id)
-    pages.load("basicAuth")
-    assert not passed[0], "Callback should NOT be successful"
+def test_remove_intercept(driver):
+    result = driver.network.add_intercept()
+    driver.network.remove_intercept(result["intercept"])
+    assert driver.network.intercepts == [], "Intercept not removed"
 
 
 @pytest.mark.xfail_safari
 def test_add_request_handler(driver, pages):
-    passed = [False]
+
+    requests = []
 
     def callback(request):
-        passed[0] = True
-        request.continue_request()
+        requests.append(request)
 
-    driver.network.add_request_handler(callback)
-    pages.load("basicAuth")
-    assert passed[0], "Callback was NOT successful"
+    callback_id = driver.network.add_request_handler("before_request", callback)
+    assert callback_id is not None, "Request handler not added"
+    driver.get("http://www.google.com")
+    assert requests, "No requests intercepted"
 
 
 @pytest.mark.xfail_safari
 def test_remove_request_handler(driver, pages):
-    passed = [False]
+
+    requests = []
 
     def callback(request):
-        passed[0] = True
+        requests.append(request)
+
+    callback_id = driver.network.add_request_handler("before_request", callback)
+    assert callback_id is not None, "Request handler not added"
+    driver.network.remove_request_handler("before_request", callback_id)
+    driver.get("http://www.google.com")
+    assert not requests, "No requests intercepted"
+
+
+@pytest.mark.xfail_safari
+def test_continue_request(driver, pages):
+
+    def callback(request: Request):
         request.continue_request()
 
-    test_request_id = driver.network.add_request_handler(callback)
-    driver.network.remove_request_handler(request_id=test_request_id)
-    pages.load("basicAuth")
-    assert not passed[0], "Callback should NOT be successful"
+    callback_id = driver.network.add_request_handler("before_request", callback)
+    assert callback_id is not None, "Request handler not added"
+    driver.get("http://www.google.com")
+    assert driver.title == "Site is not secure", "Request not continued"
 
 
 @pytest.mark.xfail_safari
-def test_add_authentication_handler(driver, pages):
-    driver.network.add_authentication_handler("test", "test")
-    pages.load("basicAuth")
-    assert driver.find_element(By.TAG_NAME, "h1").text == "authorized", "Authentication was NOT successful"
+def test_continue_with_auth(driver, pages):
 
-
-@pytest.mark.xfail_safari
-def test_remove_authentication_handler(driver, pages):
-    driver.network.add_authentication_handler("test", "test")
-    driver.network.remove_authentication_handler()
+    callback_id = driver.network.add_auth_handler("test", "test")
+    assert callback_id is not None, "Request handler not added"
     pages.load("basicAuth")
-    assert driver.find_element(By.TAG_NAME, "h1").text != "authorized", "Authentication was successful"
+    assert driver.find_element(By.TAG_NAME, "h1").text == "authorized", "Authorization failed"
