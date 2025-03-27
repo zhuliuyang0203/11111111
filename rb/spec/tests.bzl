@@ -42,8 +42,8 @@ BROWSERS = {
             "WD_SPEC_DRIVER": "chrome-beta",
         } | select({
             "@selenium//common:use_pinned_linux_chrome": {
-                "CHROME_BINARY": "$(location @linux_chrome_beta//:chrome-linux64/chrome)",
-                "CHROMEDRIVER_BINARY": "$(location @linux_chromedriver_beta//:chromedriver)",
+                "CHROME_BINARY": "$(location @linux_beta_chrome//:chrome-linux64/chrome)",
+                "CHROMEDRIVER_BINARY": "$(location @linux_beta_chromedriver//:chromedriver)",
             },
             "@selenium//common:use_pinned_macos_chrome": {
                 "CHROME_BINARY": "$(location @mac_chrome_beta//:Chrome.app)/Contents/MacOS/Chrome",

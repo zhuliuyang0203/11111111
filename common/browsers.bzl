@@ -86,8 +86,8 @@ firefox_beta_data = select({
 
 chrome_beta_data = select({
     "@selenium//common:use_pinned_linux_chrome": [
-        "@linux_chrome_beta//:files",
-        "@linux_chrome_beta//:chrome-linux64/chrome",
+        "@linux_beta_chrome//:files",
+        "@linux_beta_chrome//:chrome-linux64/chrome",
     ],
     "@selenium//common:use_pinned_macos_chrome": [
         "@mac_chrome_beta//:Chrome.app",
