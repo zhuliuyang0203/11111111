@@ -95,7 +95,7 @@ public class TerseFormatter extends Formatter {
     return buffer.toString();
   }
 
-  private static String levelNumberToCommonsLevelName(Level level) {
+  private String levelNumberToCommonsLevelName(Level level) {
     switch (level.intValue()) {
       case FINE:
         return "DEBUG";

@@ -133,7 +133,10 @@ public class LocalNodeFactory {
                   driverServiceBuilder =
                       driverServiceBuilder.usingDriverExecutable(new File(webDriverExecutablePath));
                 }
-              } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+              } catch (InstantiationException
+                  | IllegalAccessException
+                  | InvocationTargetException
+                  | NoSuchMethodException e) {
                 throw new IllegalArgumentException(
                     String.format("Class %s could not be found or instantiated", clazz));
               }

@@ -99,7 +99,10 @@ public class DescribedOption implements Comparable<DescribedOption> {
         try {
           Object fieldInstance = field.get(clazz.getDeclaredConstructor().newInstance());
           fieldValue = fieldInstance == null ? "" : fieldInstance.toString();
-        } catch (IllegalAccessException | InstantiationException | InvocationTargetException | NoSuchMethodException ignore) {
+        } catch (IllegalAccessException
+            | InstantiationException
+            | InvocationTargetException
+            | NoSuchMethodException ignore) {
           // We'll swallow this exception since we are just trying to get field's default value
         }
         if (param != null && configValue != null) {

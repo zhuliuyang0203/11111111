@@ -240,7 +240,10 @@ class VirtualAuthenticatorTest extends JupiterTestBase {
             "getCredential([]).then(arguments[arguments.length - 1]);");
 
     assertThat(response).asInstanceOf(MAP).containsEntry("status", "OK");
-    assertThat(response).extracting("attestation.userHandle").asInstanceOf(InstanceOfAssertFactories.LIST).containsExactly(1L);
+    assertThat(response)
+        .extracting("attestation.userHandle")
+        .asInstanceOf(InstanceOfAssertFactories.LIST)
+        .containsExactly(1L);
   }
 
   @Test
