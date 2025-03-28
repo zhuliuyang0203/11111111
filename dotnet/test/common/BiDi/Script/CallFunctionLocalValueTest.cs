@@ -79,12 +79,12 @@ class CallFunctionLocalValueTest : BiDiTestFixture
         var arg = new BooleanLocalValue(false);
 
         var result = await context.Script.CallFunctionAsync($$"""
-        (arg) => {
-            if (arg !== false) {
-            throw new Error("Assert failed: " + arg);
+            (arg) => {
+                if (arg !== false) {
+                throw new Error("Assert failed: " + arg);
+                }
             }
-        }
-        """, false, new() { Arguments = [arg] });
+            """, false, new() { Arguments = [arg] });
 
         Assert.That(result, Is.TypeOf<EvaluateResultSuccess>(), $"Call was not successful: {result}");
     }
