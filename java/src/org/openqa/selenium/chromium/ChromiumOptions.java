@@ -67,6 +67,7 @@ public class ChromiumOptions<T extends ChromiumOptions<?>>
   public ChromiumOptions(String capabilityType, String browserType, String capability) {
     this.capabilityName = capability;
     setCapability(capabilityType, browserType);
+    enableBiDi();
   }
 
   /**

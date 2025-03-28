@@ -66,6 +66,7 @@ public class FirefoxOptions extends AbstractDriverOptions<FirefoxOptions> {
     // will enable it.
     // https://fxdx.dev/deprecating-cdp-support-in-firefox-embracing-the-future-with-webdriver-bidi/.
     addPreference("remote.active-protocols", 3);
+    enableBiDi();
   }
 
   public FirefoxOptions(Capabilities source) {
