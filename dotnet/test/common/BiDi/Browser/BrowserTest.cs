@@ -73,6 +73,7 @@ class BrowserTest : BiDiTestFixture
     }
 
     [Test]
+    [Ignore("Not yet implemented by all vendors")]
     public async Task CanSetClientWindowNamedState()
     {
         var clientWindows = await bidi.Browser.GetClientWindowsAsync();
@@ -84,6 +85,7 @@ class BrowserTest : BiDiTestFixture
     }
 
     [Test]
+    [Ignore("Not yet implemented by all vendors")]
     public async Task CanSetClientWindowRectState()
     {
         var clientWindows = await bidi.Browser.GetClientWindowsAsync();
