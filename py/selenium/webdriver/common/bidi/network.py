@@ -201,13 +201,13 @@ class Network:
     def __init__(self, conn):
         self.conn = conn
 
-    async def add_intercept(self, params: AddInterceptParameters):
-        result = await self.conn.execute(AddIntercept(params).cmd())
+    def add_intercept(self, params: AddInterceptParameters):
+        result = self.conn.execute(AddIntercept(params).cmd())
         return result
 
-    async def continue_request(self, params: ContinueRequestParameters):
-        result = await self.conn.execute(ContinueRequest(params).cmd())
+    def continue_request(self, params: ContinueRequestParameters):
+        result = self.conn.execute(ContinueRequest(params).cmd())
         return result
 
-    async def remove_intercept(self, params: RemoveInterceptParameters):
-        await self.conn.execute(RemoveIntercept(params).cmd())
+    def remove_intercept(self, params: RemoveInterceptParameters):
+        self.conn.execute(RemoveIntercept(params).cmd())

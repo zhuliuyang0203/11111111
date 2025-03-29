@@ -1253,8 +1253,13 @@ class WebDriver(BaseWebDriver):
 
     @property
     def network(self):
+        if not self._websocket_connection:
+            self._start_bidi()
+
         if not self._network:
-            self._network = Network(self)
+            # Bidi 'network.setCacheBehavior' is not implemented in v130
+            self.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
+            self._network = Network(self._websocket_connection, self)
 
         return self._network
 

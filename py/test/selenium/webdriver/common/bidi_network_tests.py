@@ -21,7 +21,7 @@ from selenium.webdriver.common.bidi.network import UrlPatternString
 
 @pytest.mark.xfail_firefox
 @pytest.mark.xfail_safari
-async def test_request_handler(driver, pages):
+def test_request_handler(driver, pages):
 
     url1 = pages.url("simpleTest.html")
     url2 = pages.url("clicks.html")
@@ -35,22 +35,21 @@ async def test_request_handler(driver, pages):
         json = {"request": request, "url": url3}
         return json
 
-    async with driver.network.set_context():
-        # Multiple intercepts
-        intercept1 = await driver.network.add_request_handler(request_handler, pattern1)
-        intercept2 = await driver.network.add_request_handler(request_handler, pattern2)
-        await driver.network.get(url1)
-        assert driver.title == "We Leave From Here"
-        await driver.network.get(url2)
-        assert driver.title == "We Leave From Here"
+    # Multiple intercepts
+    intercept1 = driver.network.add_request_handler(request_handler, pattern1)
+    intercept2 = driver.network.add_request_handler(request_handler, pattern2)
+    driver.network.get(url1)
+    assert driver.title == "We Leave From Here"
+    driver.network.get(url2)
+    assert driver.title == "We Leave From Here"
 
-        # Removal of a single intercept
-        await driver.network.remove_intercept(intercept2)
-        await driver.network.get(url2)
-        assert driver.title == "clicks"
-        await driver.network.get(url1)
-        assert driver.title == "We Leave From Here"
+    # Removal of a single intercept
+    driver.network.remove_intercept(intercept2)
+    driver.network.get(url2)
+    assert driver.title == "clicks"
+    driver.network.get(url1)
+    assert driver.title == "We Leave From Here"
 
-        await driver.network.remove_intercept(intercept1)
-        await driver.network.get(url1)
-        assert driver.title == "Hello WebDriver"
+    driver.network.remove_intercept(intercept1)
+    driver.network.get(url1)
+    assert driver.title == "Hello WebDriver"
