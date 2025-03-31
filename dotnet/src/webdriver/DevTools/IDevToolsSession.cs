@@ -18,18 +18,17 @@
 // </copyright>
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
 
-#nullable enable
-
 namespace OpenQA.Selenium.DevTools
 {
     /// <summary>
     /// Represents a WebSocket connection to a running DevTools instance that can be used to send
-    /// commands and recieve events.
+    /// commands and receive events.
     ///</summary>
     public interface IDevToolsSession : IDisposable
     {
@@ -50,6 +49,7 @@ namespace OpenQA.Selenium.DevTools
         /// A <see cref="DevToolsSessionDomains"/> type specific to the version of Developer Tools with which to communicate.
         /// </typeparam>
         /// <returns>The version-specific domains for this Developer Tools connection.</returns>
+        /// <exception cref="InvalidOperationException">If the provided <typeparamref name="T"/> is not the right protocol version which is running.</exception>
         T GetVersionSpecificDomains<T>() where T : DevToolsSessionDomains;
 
         /// <summary>
@@ -61,6 +61,9 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="command"/> is <see langword="null"/>.</exception>
+        [RequiresUnreferencedCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
+        [RequiresDynamicCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
         Task<ICommandResponse<TCommand>?> SendCommand<TCommand>(TCommand command, CancellationToken cancellationToken, int? millisecondsTimeout, bool throwExceptionIfResponseNotReceived)
             where TCommand : ICommand;
 
@@ -74,6 +77,9 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="command"/> is <see langword="null"/>.</exception>
+        [RequiresUnreferencedCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
+        [RequiresDynamicCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
         Task<TCommandResponse?> SendCommand<TCommand, TCommandResponse>(TCommand command, CancellationToken cancellationToken, int? millisecondsTimeout, bool throwExceptionIfResponseNotReceived)
             where TCommand : ICommand
             where TCommandResponse : ICommandResponse<TCommand>;
@@ -87,6 +93,9 @@ namespace OpenQA.Selenium.DevTools
         /// <param name="millisecondsTimeout">The execution timeout of the command in milliseconds.</param>
         /// <param name="throwExceptionIfResponseNotReceived"><see langword="true"/> to throw an exception if a response is not received; otherwise, <see langword="false"/>.</param>
         /// <returns>The command response object implementing the <see cref="ICommandResponse{T}"/> interface.</returns>
+        /// <exception cref="ArgumentNullException">If <paramref name="commandName"/> is <see langword="null"/>.</exception>
+        [RequiresUnreferencedCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
+        [RequiresDynamicCode(DevToolsSession.CDP_AOTIncompatibilityMessage)]
         Task<JsonElement?> SendCommand(string commandName, JsonNode @params, CancellationToken cancellationToken, int? millisecondsTimeout, bool throwExceptionIfResponseNotReceived);
     }
 }
