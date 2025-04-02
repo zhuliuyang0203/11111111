@@ -342,11 +342,22 @@ def driver_executable(request):
     return request.config.option.executable
 
 
+def get_driver_class(driver_option):
+    """Generate the driver class name from the lowercase driver option"""
+    if driver_option == "webkitgtk":
+        driver_class = "WebKitGTK"
+    elif driver_option == "wpewebkit":
+        driver_class = "WPEWebKit"
+    else:
+        driver_class = driver_option.capitalize()
+    return driver_class
+
+
 @pytest.fixture(scope="function")
 def clean_service(request):
     try:
-        driver_class = request.config.option.drivers[0].capitalize()
-    except AttributeError:
+        driver_class = get_driver_class(request.config.option.drivers[0])
+    except (AttributeError, TypeError):
         raise Exception("This test requires a --driver to be specified.")
 
     yield get_service(driver_class, request.config.option.executable)
@@ -355,8 +366,8 @@ def clean_service(request):
 @pytest.fixture(scope="function")
 def clean_driver(request):
     try:
-        driver_class = request.config.option.drivers[0].capitalize()
-    except AttributeError:
+        driver_class = get_driver_class(request.config.option.drivers[0])
+    except (AttributeError, TypeError):
         raise Exception("This test requires a --driver to be specified.")
 
     driver_reference = getattr(webdriver, driver_class)
