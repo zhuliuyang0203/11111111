@@ -97,3 +97,13 @@ def test_continue_with_auth(driver):
     assert callback_id is not None, "Request handler not added"
     driver.get("https://httpbin.org/basic-auth/user/passwd")
     assert "authenticated" in driver.page_source, "Authorization failed"
+
+
+@pytest.mark.xfail_chrome
+@pytest.mark.xfail_edge
+@pytest.mark.xfail_safari
+def test_remove_auth_handler(driver):
+    callback_id = driver.network.add_auth_handler("user", "passwd")
+    assert callback_id is not None, "Request handler not added"
+    driver.network.remove_auth_handler(callback_id)
+    assert driver.network.intercepts == [], "Intercept not removed"

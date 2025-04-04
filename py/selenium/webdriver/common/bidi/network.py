@@ -255,6 +255,16 @@ class Network:
 
         return self.add_request_handler(event, _callback)
 
+    def remove_auth_handler(self, callback_id):
+        """Remove an authentication handler from the network.
+
+        Parameters:
+        ----------
+            callback_id (int): The callback id to remove.
+        """
+        event = "auth_required"
+        self.remove_request_handler(event, callback_id)
+
 
 class Request:
     """Represents an intercepted network request."""
