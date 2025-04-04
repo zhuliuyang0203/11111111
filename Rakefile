@@ -166,7 +166,7 @@ end
 desc 'Update Selenium Manager to latest release'
 task :update_manager do |_task, _arguments|
   puts 'Updating Selenium Manager references'
-  Bazel.execute('run', args, '//scripts:selenium_manager')
+  Bazel.execute('run', [], '//scripts:selenium_manager')
 
   @git.add('common/selenium_manager.bzl')
 end
@@ -1092,18 +1092,6 @@ namespace :rust do
     @git.add('rust/Cargo.Bazel.lock')
     @git.add('rust/Cargo.lock')
   end
-
-  # Creating a special task for this because Rust version needs to be managed at a different place than
-  # everything else; want to use changelog updates later in process
-  namespace :version do
-    desc 'Commits updates from Rust version changes'
-    task :commit do
-      @git.reset
-      commit!("update Rust version to #{rust_version}",
-              ['rust/BUILD.bazel', 'rust/Cargo.Bazel.lock', 'rust/Cargo.lock', 'rust/Cargo.toml'])
-      commit!('Rust Changelog', ['rust/CHANGELOG.md'])
-    end
-  end
 end
 
 namespace :all do
@@ -1181,6 +1169,7 @@ namespace :all do
     Rake::Task['py:lint'].invoke
   end
 
+  # Example: `./go all:prepare 4.31.0 early-stable`
   desc 'Update everything in preparation for a release'
   task :prepare, [:version, :channel] do |_task, arguments|
     version = arguments[:version]
@@ -1206,8 +1195,6 @@ namespace :all do
     Rake::Task['rust:version'].invoke(version)
 
     unless version == 'nightly'
-      Rake::Task['all:changelogs']
-
       major_minor = arguments[:version][/^\d+\.\d+/]
       file = '.github/ISSUE_TEMPLATE/bug-report.yml'
       old_version_pattern = /The latest released version of Selenium is (\d+\.\d+)/
@@ -1323,14 +1310,4 @@ def update_changelog(version, language, path, changelog, header)
   content = File.read(changelog)
   File.write(changelog, "#{header}\n#{commits}\n\n#{content}")
   @git.add(changelog)
-end
-
-def commit!(message, files = [], all: false)
-  files.each do |file|
-    puts "adding: #{file}"
-    @git.add(file)
-  end
-  all ? @git.commit_all(message) : @git.commit(message)
-rescue Git::FailedError => e
-  puts e.message
 end
