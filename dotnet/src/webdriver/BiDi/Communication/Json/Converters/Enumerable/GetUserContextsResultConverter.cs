@@ -20,20 +20,18 @@
 using OpenQA.Selenium.BiDi.Modules.Browser;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace OpenQA.Selenium.BiDi.Communication.Json.Converters.Enumerable;
 
-[UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Json serializer options should have AOT-safe type resolution")]
-[UnconditionalSuppressMessage("AOT", "IL3050", Justification = "Json serializer options should have AOT-safe type resolution")]
 internal class GetUserContextsResultConverter : JsonConverter<GetUserContextsResult>
 {
     public override GetUserContextsResult Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         using var doc = JsonDocument.ParseValue(ref reader);
-        var userContexts = doc.RootElement.GetProperty("userContexts").Deserialize<IReadOnlyList<UserContextInfo>>(options);
+        var userContexts = doc.RootElement.GetProperty("userContexts").Deserialize((JsonTypeInfo<IReadOnlyList<UserContextInfo>>)options.GetTypeInfo(typeof(IReadOnlyList<UserContextInfo>)));
 
         return new GetUserContextsResult(userContexts!);
     }

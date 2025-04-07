@@ -20,21 +20,19 @@
 using OpenQA.Selenium.BiDi.Modules.Storage;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace OpenQA.Selenium.BiDi.Communication.Json.Converters.Enumerable;
 
-[UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Json serializer options should have AOT-safe type resolution")]
-[UnconditionalSuppressMessage("AOT", "IL3050", Justification = "Json serializer options should have AOT-safe type resolution")]
 internal class GetCookiesResultConverter : JsonConverter<GetCookiesResult>
 {
     public override GetCookiesResult Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         using var doc = JsonDocument.ParseValue(ref reader);
-        var cookies = doc.RootElement.GetProperty("cookies").Deserialize<IReadOnlyList<Modules.Network.Cookie>>(options);
-        var partitionKey = doc.RootElement.GetProperty("partitionKey").Deserialize<PartitionKey>(options);
+        var cookies = doc.RootElement.GetProperty("cookies").Deserialize((JsonTypeInfo<IReadOnlyList<Modules.Network.Cookie>>)options.GetTypeInfo(typeof(IReadOnlyList<Modules.Network.Cookie>)));
+        var partitionKey = doc.RootElement.GetProperty("partitionKey").Deserialize((JsonTypeInfo<PartitionKey>)options.GetTypeInfo(typeof(PartitionKey)));
 
         return new GetCookiesResult(cookies!, partitionKey!);
     }

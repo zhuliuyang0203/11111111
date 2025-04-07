@@ -20,20 +20,18 @@
 using OpenQA.Selenium.BiDi.Modules.Browser;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace OpenQA.Selenium.BiDi.Communication.Json.Converters.Enumerable;
 
-[UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Json serializer options should have AOT-safe type resolution")]
-[UnconditionalSuppressMessage("AOT", "IL3050", Justification = "Json serializer options should have AOT-safe type resolution")]
 internal class GetClientWindowsResultConverter : JsonConverter<GetClientWindowsResult>
 {
     public override GetClientWindowsResult Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         using var doc = JsonDocument.ParseValue(ref reader);
-        var clientWindows = doc.RootElement.GetProperty("clientWindows").Deserialize<IReadOnlyList<ClientWindowInfo>>(options);
+        var clientWindows = doc.RootElement.GetProperty("clientWindows").Deserialize((JsonTypeInfo<IReadOnlyList<ClientWindowInfo>>)options.GetTypeInfo(typeof(IReadOnlyList<ClientWindowInfo>)));
 
         return new GetClientWindowsResult(clientWindows!);
     }

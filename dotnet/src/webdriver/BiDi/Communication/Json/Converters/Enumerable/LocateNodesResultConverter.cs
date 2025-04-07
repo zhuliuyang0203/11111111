@@ -21,20 +21,18 @@ using OpenQA.Selenium.BiDi.Modules.BrowsingContext;
 using OpenQA.Selenium.BiDi.Modules.Script;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace OpenQA.Selenium.BiDi.Communication.Json.Converters.Enumerable;
 
-[UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Json serializer options should have AOT-safe type resolution")]
-[UnconditionalSuppressMessage("AOT", "IL3050", Justification = "Json serializer options should have AOT-safe type resolution")]
 internal class LocateNodesResultConverter : JsonConverter<LocateNodesResult>
 {
     public override LocateNodesResult Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         using var doc = JsonDocument.ParseValue(ref reader);
-        var nodes = doc.RootElement.GetProperty("nodes").Deserialize<IReadOnlyList<NodeRemoteValue>>(options);
+        var nodes = doc.RootElement.GetProperty("nodes").Deserialize((JsonTypeInfo<IReadOnlyList<NodeRemoteValue>>)options.GetTypeInfo(typeof(IReadOnlyList<NodeRemoteValue>)));
 
         return new LocateNodesResult(nodes!);
     }
