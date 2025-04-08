@@ -33,10 +33,11 @@ public record StackTrace(IReadOnlyList<StackFrame> CallFrames)
         }
 
         const string Preamble = "---> ";
-        string firstLineIndentString = Environment.NewLine + new string(' ', indent);
-        string indentString = Environment.NewLine + new string(' ', indent + Preamble.Length);
 
+        string firstLineIndentString = Environment.NewLine + new string(' ', indent);
         string firstLine = firstLineIndentString + Preamble + CallFrames[0].FormatStackFrame();
+
+        string indentString = Environment.NewLine + new string(' ', indent + Preamble.Length);
         return firstLine + indentString + string.Join(indentString, CallFrames.Skip(1).Select(frame => frame.FormatStackFrame()));
     }
 }

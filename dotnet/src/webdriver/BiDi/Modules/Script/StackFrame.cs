@@ -27,6 +27,7 @@ public record StackFrame(long LineNumber, long ColumnNumber, string Url, string 
         {
             return $"({LineNumber},{ColumnNumber}) {Url}";
         }
+
         return $"{FunctionName} ({LineNumber},{ColumnNumber}) {Url}";
     }
 }
