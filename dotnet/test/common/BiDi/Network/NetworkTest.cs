@@ -51,7 +51,7 @@ class NetworkTest : BiDiTestFixture
     [Test]
     public async Task CanAddInterceptUrlPattern()
     {
-        await using var intercept = await bidi.Network.InterceptRequestAsync(e => Task.CompletedTask, interceptOptions: new()
+        await using var intercept = await bidi.Network.InterceptRequestAsync(e => Task.CompletedTask, options: new()
         {
             UrlPatterns = [new PatternUrlPattern()
             {
