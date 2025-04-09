@@ -156,7 +156,7 @@ def driver(request):
             options = get_options(driver_class, request.config)
             # There are issues with window size/position when running Firefox
             # under Wayland, so we use XWayland instead.
-            os.environ['MOZ_ENABLE_WAYLAND'] = '0'
+            os.environ["MOZ_ENABLE_WAYLAND"] = "0"
         if driver_class == "Chrome":
             options = get_options(driver_class, request.config)
         if driver_class == "Edge":
@@ -171,7 +171,7 @@ def driver(request):
             options.enable_downloads = True
             # There are issues with window size/position when running Firefox
             # under Wayland, so we use XWayland instead.
-            os.environ['MOZ_ENABLE_WAYLAND'] = '0'
+            os.environ["MOZ_ENABLE_WAYLAND"] = "0"
         if driver_path is not None:
             kwargs["service"] = get_service(driver_class, driver_path)
         if options is not None:
