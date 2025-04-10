@@ -22,6 +22,7 @@ from unittest.mock import patch
 import pytest
 
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 
 
 def is_running_wayland():
@@ -31,12 +32,15 @@ def is_running_wayland():
 
 
 @pytest.mark.skipif(not is_running_wayland(), reason="This test only runs on Linux under Wayland")
-def test_firefox_opens_large_when_running_xwayland():
+def test_firefox_opens_large_when_running_xwayland(request):
+    options = Options()
+    if request.config.getoption("--headless"):
+        options.add_argument("-headless")
     # setting environment variable `MOZ_ENABLE_WAYLAND=0` forces Firefox
     # to run under XWayland on Wayland based systems
     with patch.dict("os.environ", {"MOZ_ENABLE_WAYLAND": "0"}):
         try:
-            driver = webdriver.Firefox()
+            driver = webdriver.Firefox(options=options)
             size = driver.get_window_size()
             assert size["height"] > 500
             assert size["width"] > 500
@@ -48,8 +52,11 @@ def test_firefox_opens_large_when_running_xwayland():
 @pytest.mark.xfail(reason="https://bugzilla.mozilla.org/show_bug.cgi?id=1959040")
 # Firefox opens in a small window when running on Linux/Wayland
 def test_firefox_opens_large_when_running_wayland():
+    options = Options()
+    if request.config.getoption("--headless"):
+        options.add_argument("-headless")
     try:
-        driver = webdriver.Firefox()
+        driver = webdriver.Firefox(options=options)
         size = driver.get_window_size()
         assert size["height"] > 500
         assert size["width"] > 500
