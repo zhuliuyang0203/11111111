@@ -41,6 +41,7 @@ BROWSERS = {
         "env": {
             "WD_REMOTE_BROWSER": "chrome",
             "WD_SPEC_DRIVER": "chrome",
+            "WD_BROWSER_VERSION": "beta",
         } | select({
             "@selenium//common:use_pinned_linux_chrome": {
                 "CHROME_BINARY": "$(location @linux_beta_chrome//:chrome-linux64/chrome)",
@@ -110,6 +111,7 @@ BROWSERS = {
         "env": {
             "WD_REMOTE_BROWSER": "firefox",
             "WD_SPEC_DRIVER": "firefox",
+            "WD_BROWSER_VERSION": "beta",
         } | select({
             "@selenium//common:use_pinned_linux_firefox": {
                 "FIREFOX_BINARY": "$(location @linux_beta_firefox//:firefox/firefox)",
