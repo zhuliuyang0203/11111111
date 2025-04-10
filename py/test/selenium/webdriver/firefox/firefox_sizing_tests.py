@@ -26,9 +26,7 @@ from selenium.webdriver.firefox.options import Options
 
 
 def is_running_wayland():
-    if platform.system() == "Linux" and os.getenv("WAYLAND_DISPLAY"):
-        return True
-    return False
+    return platform.system() == "Linux" and os.getenv("WAYLAND_DISPLAY")
 
 
 @pytest.mark.skipif(not is_running_wayland(), reason="This test only runs on Linux under Wayland")
