@@ -18,6 +18,8 @@
 from typing import Dict
 from typing import List
 
+from selenium.webdriver.common.bidi.common import command_builder
+
 
 class ClientWindowState:
     """Represents a window state."""
@@ -143,21 +145,6 @@ class Browser:
     def __init__(self, conn):
         self.conn = conn
 
-    def command_builder(self, method: str, params: Dict = None) -> Dict:
-        """Build a command iterator to send to the browser.
-
-        Parameters:
-        -----------
-            method: The method to execute.
-            params: The parameters to pass to the method. Default is None.
-        """
-        if params is None:
-            params = {}
-
-        command = {"method": method, "params": params}
-        cmd = yield command
-        return cmd
-
     def create_user_context(self) -> str:
         """Creates a new user context.
 
@@ -165,7 +152,7 @@ class Browser:
         -------
             str: The ID of the created user context.
         """
-        result = self.conn.execute(self.command_builder("browser.createUserContext", {}))
+        result = self.conn.execute(command_builder("browser.createUserContext", {}))
         return result["userContext"]
 
     def get_user_contexts(self) -> List[str]:
@@ -175,7 +162,7 @@ class Browser:
         -------
             List[str]: A list of user context IDs.
         """
-        result = self.conn.execute(self.command_builder("browser.getUserContexts", {}))
+        result = self.conn.execute(command_builder("browser.getUserContexts", {}))
         return [context_info["userContext"] for context_info in result["userContexts"]]
 
     def remove_user_context(self, user_context_id: str) -> None:
@@ -190,7 +177,7 @@ class Browser:
             Exception: If the user context ID is "default" or does not exist.
         """
         params = {"userContext": user_context_id}
-        self.conn.execute(self.command_builder("browser.removeUserContext", params))
+        self.conn.execute(command_builder("browser.removeUserContext", params))
 
     def get_client_windows(self) -> List[ClientWindowInfo]:
         """Gets all client windows.
@@ -199,5 +186,5 @@ class Browser:
         -------
             List[ClientWindowInfo]: A list of client window information.
         """
-        result = self.conn.execute(self.command_builder("browser.getClientWindows", {}))
+        result = self.conn.execute(command_builder("browser.getClientWindows", {}))
         return [ClientWindowInfo.from_dict(window) for window in result["clientWindows"]]
