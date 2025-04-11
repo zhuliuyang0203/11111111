@@ -15,7 +15,7 @@ build:
     - pip install -r py/docs/requirements.txt
     - pip install -r py/requirements.txt
     - PYTHONPATH=py sphinx-autogen -o $READTHEDOCS_OUTPUT/html py/docs/source/api.rst
-    - sphinx-build -b html -d build/docs/doctrees py/docs/source $READTHEDOCS_OUTPUT/html
+    - PYTHONPATH=py sphinx-build -b html -d build/docs/doctrees py/docs/source $READTHEDOCS_OUTPUT/html
 
 sphinx:
   configuration: py/docs/source/conf.py
