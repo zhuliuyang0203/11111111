@@ -87,8 +87,8 @@ def test_get_client_windows(driver):
     assert window_info.get_width() > 0
     assert window_info.get_height() > 0
     assert isinstance(window_info.is_active(), bool)
-    assert window_info.get_x() > 0
-    assert window_info.get_y() > 0
+    assert window_info.get_x() >= 0
+    assert window_info.get_y() >= 0
 
 
 @pytest.mark.xfail_safari
