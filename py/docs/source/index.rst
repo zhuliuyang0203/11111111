@@ -9,24 +9,40 @@ Python language bindings for Selenium WebDriver.
 
 The `selenium` package is used to automate web browser interaction from Python.
 
-+-----------------+--------------------------------------------------------------------------------------+
-| **Home**:       | https://selenium.dev                                                                 |
-+-----------------+--------------------------------------------------------------------------------------+
-| **GitHub**:     | https://github.com/SeleniumHQ/Selenium                                               |
-+-----------------+--------------------------------------------------------------------------------------+
-| **PyPI**:       | https://pypi.org/project/selenium                                                    |
-+-----------------+--------------------------------------------------------------------------------------+
-| **API Docs**:   | `api.html <api.html>`_                                                               |
-+-----------------+--------------------------------------------------------------------------------------+
-| **IRC/Slack**:  | `Selenium chat room <https://www.selenium.dev/support/#ChatRoom>`_                   |
-+-----------------+--------------------------------------------------------------------------------------+
++-------------------+------------------------------------------------+
+| **Home**:         | https://selenium.dev                           |
++-------------------+------------------------------------------------+
+| **GitHub**:       | https://github.com/SeleniumHQ/Selenium         |
++-------------------+------------------------------------------------+
+| **PyPI**:         | https://pypi.org/project/selenium              |
++-------------------+------------------------------------------------+
+| **IRC/Slack**:    | https://www.selenium.dev/support/#ChatRoom     |
++-------------------+------------------------------------------------+
+| **Docs**:         | https://www.selenium.dev/selenium/docs/api/py  |
++-------------------+------------------------------------------------+
+| **API Docs**:     | `api.html <api.html>`_                         |
++-------------------+------------------------------------------------+
 
-Several browsers/drivers are supported (Firefox, Chrome, Edge, Safari), as well as the Remote protocol.
+Updated documentation published with each commit is available at: https://selenium-python-api-docs.readthedocs.io
+
+----
 
 Supported Python Versions
 =========================
 
 * Python 3.9+
+
+Supported Browsers
+==================
+
+Several browsers are supported, as well as the Remote protocol:
+
+* Chrome
+* Edge
+* Firefox
+* Safari
+* WebKitGTK
+* WPEWebKit
 
 Installing
 ==========
@@ -107,7 +123,8 @@ Example 1:
 Example 2:
 ==========
 
-Selenium WebDriver is often used as a basis for testing web applications. Here is a simple example using Python's standard `unittest <http://docs.python.org/3/library/unittest.html>`_ library:
+Selenium WebDriver is often used as a basis for testing web applications. Here is a simple example using Python's standard
+`unittest <http://docs.python.org/3/library/unittest.html>`_ library:
 
 .. code-block:: python
 
@@ -150,11 +167,15 @@ View source code online:
 Contributing
 =============
 
+ - Fork the selenium repo and clone it locally
  - Create a branch for your work
- - Ensure `tox` is installed (using a `virtualenv` is recommended)
- - Run: `python -m venv venv && source venv/bin/activate && pip install tox`
- - After making changes, before committing execute `tox -e linting`
- - If tox exits `0`, commit and push. Otherwise fix the newly introduced style violations.
- - `flake8` requires manual fixes
- - `black` will rewrite the violations automatically, however the files are unstaged and should staged again.
- - `isort` will rewrite the violations automatically, however the files are unstaged and should staged again.
+   - `git checkout -b my-cool-branch-name`
+ - Create a virtual environment and install tox
+   - `python -m venv venv && source venv/bin/activate && pip install tox`
+ - Make your changes
+ - Run `tox -e linting`
+ - If tox exits `0`, commit and push. Otherwise, fix the newly introduced style violations
+   - `flake8` requires manual fixes
+   - `black` will rewrite the violations automatically, however the files are unstaged and should staged again
+   - `isort` will rewrite the violations automatically, however the files are unstaged and should staged again
+ - Submit a Pull Request
