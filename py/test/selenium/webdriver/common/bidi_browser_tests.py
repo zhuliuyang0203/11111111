@@ -17,7 +17,8 @@
 
 import pytest
 
-from selenium.webdriver.common.bidi.browser import ClientWindowInfo, ClientWindowState
+from selenium.webdriver.common.bidi.browser import ClientWindowInfo
+from selenium.webdriver.common.bidi.browser import ClientWindowState
 
 
 @pytest.mark.xfail_safari

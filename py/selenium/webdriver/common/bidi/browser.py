@@ -15,11 +15,13 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Dict, List
+from typing import Dict
+from typing import List
 
 
 class ClientWindowState:
     """Represents a window state."""
+
     FULLSCREEN = "fullscreen"
     MAXIMIZED = "maximized"
     MINIMIZED = "minimized"
