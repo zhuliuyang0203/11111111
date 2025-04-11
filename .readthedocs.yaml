@@ -1,6 +1,9 @@
 # .readthedocs.yaml
 # Read the Docs configuration file
-# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+#
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for configuration options
+# See https://app.readthedocs.org/projects/selenium-python-api-docs for job configuration
+# See https://selenium-python-api-docs.readthedocs.io for published docs
 
 version: 2
 
