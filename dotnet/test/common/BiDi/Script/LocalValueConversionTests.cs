@@ -166,7 +166,8 @@ class LocalValueConversionTests
         {
             UIntNumber = 5u,
             Array = new int[] { 1, 2 },
-            List = new List<string> { "a", "b" }
+            List = new List<string> { "a", "b" },
+            Dictionary = new Dictionary<string, object> { { "a", 1 }, { "b", 2 } }
         };
 
         var value = LocalValue.ConvertFrom(arg);
@@ -177,6 +178,6 @@ class LocalValueConversionTests
 
         var objValue = value as ObjectLocalValue;
 
-        Assert.That(objValue.Value, Has.Exactly(3).Count);
+        Assert.That(objValue.Value, Has.Exactly(4).Count);
     }
 }

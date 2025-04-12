@@ -79,13 +79,7 @@ public abstract record LocalValue
             case string str:
                 return ConvertFrom(str);
 
-            case IDictionary<string, string?> dictionary:
-                return ConvertFrom(dictionary);
-
-            case IDictionary<string, object?> dictionary:
-                return ConvertFrom(dictionary);
-
-            case IDictionary<int, object?> dictionary:
+            case IDictionary dictionary:
                 return ConvertFrom(dictionary);
 
             case ISet<object?> set:
@@ -206,12 +200,7 @@ public abstract record LocalValue
         return new ArrayLocalValue(list);
     }
 
-    public static LocalValue ConvertFrom<TValue>(IDictionary<string, TValue?>? value)
-    {
-        return ConvertFrom<string, TValue>(value);
-    }
-
-    public static LocalValue ConvertFrom<TKey, TValue>(IDictionary<TKey, TValue?>? value)
+    public static LocalValue ConvertFrom(IDictionary? value)
     {
         if (value is null)
         {
@@ -220,14 +209,9 @@ public abstract record LocalValue
 
         var bidiObject = new List<List<LocalValue>>(value.Count);
 
-        foreach (KeyValuePair<TKey, TValue?> item in value)
+        foreach (var key in value.Keys)
         {
-            bidiObject.Add([ConvertFrom(item.Key), ConvertFrom(item.Value)]);
-        }
-
-        if (typeof(TKey) == typeof(string))
-        {
-            return new ObjectLocalValue(bidiObject);
+            bidiObject.Add([ConvertFrom(key), ConvertFrom(value[key])]);
         }
 
         return new MapLocalValue(bidiObject);
