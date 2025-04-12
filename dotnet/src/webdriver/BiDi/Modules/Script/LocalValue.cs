@@ -81,22 +81,21 @@ public abstract record LocalValue
 
             case { } when value.GetType().GetInterfaces()
                 .Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(ISet<>)):
-                IEnumerable set = (IEnumerable)value;
-
-                List<LocalValue> setValues = [];
-
-                foreach (var obj in set)
                 {
-                    setValues.Add(ConvertFrom(obj));
-                }
+                    IEnumerable set = (IEnumerable)value;
 
-                return new SetLocalValue(setValues);
+                    List<LocalValue> setValues = [];
+
+                    foreach (var obj in set)
+                    {
+                        setValues.Add(ConvertFrom(obj));
+                    }
+
+                    return new SetLocalValue(setValues);
+                }
 
             case IDictionary dictionary:
                 return ConvertFrom(dictionary);
-
-            case IList list:
-                return ConvertFrom(list);
 
             case IEnumerable enumerable:
                 return ConvertFrom(enumerable);
@@ -174,23 +173,6 @@ public abstract record LocalValue
         }
 
         return new NullLocalValue();
-    }
-
-    public static LocalValue ConvertFrom(IList? value)
-    {
-        if (value is null)
-        {
-            return new NullLocalValue();
-        }
-
-        List<LocalValue> list = [];
-
-        foreach (var element in value)
-        {
-            list.Add(ConvertFrom(element));
-        }
-
-        return new ArrayLocalValue(list);
     }
 
     public static LocalValue ConvertFrom(IEnumerable? value)
