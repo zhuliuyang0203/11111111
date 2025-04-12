@@ -94,8 +94,8 @@ public abstract record LocalValue
             case IList set:
                 return ConvertFrom(set);
 
-            case IEnumerable<object?> list:
-                return ConvertFrom(list);
+            case IEnumerable enumerable:
+                return ConvertFrom(enumerable);
 
             default:
                 return ReflectionBasedConvertFrom(value);
@@ -172,18 +172,24 @@ public abstract record LocalValue
         return new NullLocalValue();
     }
 
-    public static LocalValue ConvertFrom(IEnumerable<object?>? value)
+    public static LocalValue ConvertFrom(IList? value)
     {
         if (value is null)
         {
             return new NullLocalValue();
         }
 
-        LocalValue[] convertedList = [.. value.Select(ConvertFrom)];
-        return new ArrayLocalValue(convertedList);
+        List<LocalValue> list = [];
+
+        foreach (var element in value)
+        {
+            list.Add(ConvertFrom(element));
+        }
+
+        return new ArrayLocalValue(list);
     }
 
-    public static LocalValue ConvertFrom(IList? value)
+    public static LocalValue ConvertFrom(IEnumerable? value)
     {
         if (value is null)
         {
