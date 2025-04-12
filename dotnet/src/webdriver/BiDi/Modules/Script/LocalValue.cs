@@ -101,11 +101,6 @@ public abstract record LocalValue
         }
     }
 
-    public static LocalValue ConvertFrom(bool value)
-    {
-        return new BooleanLocalValue(value);
-    }
-
     public static LocalValue ConvertFrom(bool? value)
     {
         if (value is bool b)
@@ -114,11 +109,6 @@ public abstract record LocalValue
         }
 
         return new NullLocalValue();
-    }
-
-    public static LocalValue ConvertFrom(int value)
-    {
-        return new NumberLocalValue(value);
     }
 
     public static LocalValue ConvertFrom(int? value)
@@ -131,11 +121,6 @@ public abstract record LocalValue
         return new NullLocalValue();
     }
 
-    public static LocalValue ConvertFrom(double value)
-    {
-        return new NumberLocalValue(value);
-    }
-
     public static LocalValue ConvertFrom(double? value)
     {
         if (value is double b)
@@ -144,11 +129,6 @@ public abstract record LocalValue
         }
 
         return new NullLocalValue();
-    }
-
-    public static LocalValue ConvertFrom(long value)
-    {
-        return new NumberLocalValue(value);
     }
 
     public static LocalValue ConvertFrom(long? value)
@@ -171,52 +151,63 @@ public abstract record LocalValue
         return new NullLocalValue();
     }
 
-    public static LocalValue ConvertFrom(DateTime dateTime)
+    public static LocalValue ConvertFrom(DateTime? value)
     {
-        return new DateLocalValue(dateTime.ToString("o"));
-    }
-
-    public static LocalValue ConvertFrom(BigInteger bigInt)
-    {
-        return new BigIntLocalValue(bigInt.ToString());
-    }
-
-    public static LocalValue ConvertFrom(IEnumerable<object?>? values)
-    {
-        if (values is null)
+        if (value is null)
         {
             return new NullLocalValue();
         }
 
-        LocalValue[] convertedList = values.Select(ConvertFrom).ToArray();
+        return new DateLocalValue(value.Value.ToString("o"));
+    }
+
+    public static LocalValue ConvertFrom(BigInteger? value)
+    {
+        if (value is not null)
+        {
+            return new BigIntLocalValue(value.Value.ToString());
+        }
+
+        return new NullLocalValue();
+    }
+
+    public static LocalValue ConvertFrom(IEnumerable<object?>? value)
+    {
+        if (value is null)
+        {
+            return new NullLocalValue();
+        }
+
+        LocalValue[] convertedList = [.. value.Select(ConvertFrom)];
         return new ArrayLocalValue(convertedList);
     }
 
-    public static LocalValue ConvertFrom<T>(IList<T?>? values)
+    public static LocalValue ConvertFrom<T>(IList<T?>? value)
     {
-        if (values is null)
+        if (value is null)
         {
             return new NullLocalValue();
         }
 
-        List<LocalValue> convertedList = [.. values.Select(element => ConvertFrom(element))];
+        List<LocalValue> convertedList = [.. value.Select(element => ConvertFrom(element))];
         return new ArrayLocalValue(convertedList);
     }
 
-    public static LocalValue ConvertFrom<TValue>(IDictionary<string, TValue?>? dictionary)
+    public static LocalValue ConvertFrom<TValue>(IDictionary<string, TValue?>? value)
     {
-        return ConvertFrom<string, TValue>(dictionary);
+        return ConvertFrom<string, TValue>(value);
     }
 
-    public static LocalValue ConvertFrom<TKey, TValue>(IDictionary<TKey, TValue?>? dictionary)
+    public static LocalValue ConvertFrom<TKey, TValue>(IDictionary<TKey, TValue?>? value)
     {
-        if (dictionary is null)
+        if (value is null)
         {
             return new NullLocalValue();
         }
 
-        var bidiObject = new List<List<LocalValue>>(dictionary.Count);
-        foreach (KeyValuePair<TKey, TValue?> item in dictionary)
+        var bidiObject = new List<List<LocalValue>>(value.Count);
+
+        foreach (KeyValuePair<TKey, TValue?> item in value)
         {
             bidiObject.Add([ConvertFrom(item.Key), ConvertFrom(item.Value)]);
         }
@@ -229,14 +220,15 @@ public abstract record LocalValue
         return new MapLocalValue(bidiObject);
     }
 
-    public static LocalValue ConvertFrom<T>(ISet<T?>? set)
+    public static LocalValue ConvertFrom<T>(ISet<T?>? value)
     {
-        if (set is null)
+        if (value is null)
         {
             return new NullLocalValue();
         }
 
-        LocalValue[] convertedValues = [.. set.Select(x => ConvertFrom(x))];
+        LocalValue[] convertedValues = [.. value.Select(x => ConvertFrom(x))];
+
         return new SetLocalValue(convertedValues);
     }
 
@@ -252,9 +244,11 @@ public abstract record LocalValue
         System.Reflection.PropertyInfo[] properties = value.GetType().GetProperties(Flags);
 
         var values = new List<List<LocalValue>>(properties.Length);
+
         foreach (System.Reflection.PropertyInfo? property in properties)
         {
             object? propertyValue;
+
             try
             {
                 propertyValue = property.GetValue(value);
@@ -263,6 +257,7 @@ public abstract record LocalValue
             {
                 throw new BiDiException($"Could not retrieve property {property.Name} from {property.DeclaringType}", ex);
             }
+
             values.Add([property.Name, ConvertFrom(propertyValue)]);
         }
 

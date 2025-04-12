@@ -19,6 +19,8 @@
 
 using NUnit.Framework;
 using OpenQA.Selenium.BiDi.Modules.Script;
+using System;
+using System.Collections.Generic;
 
 namespace OpenQA.Selenium.BiDi.Script;
 
@@ -28,72 +30,151 @@ class LocalValueConversionTests
     public void CanConvertNullBoolToLocalValue()
     {
         bool? arg = null;
-        LocalValue result = arg;
-        Assert.That(result, Is.TypeOf<NullLocalValue>());
+
+        AssertValue(arg);
+        AssertValue(LocalValue.ConvertFrom(arg));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NullLocalValue>());
+        }
     }
 
     [Test]
     public void CanConvertTrueToLocalValue()
     {
-        LocalValue result = true;
-        Assert.That(result, Is.TypeOf<BooleanLocalValue>());
-        Assert.That((result as BooleanLocalValue).Value, Is.True);
+        AssertValue(true);
+
+        AssertValue(LocalValue.ConvertFrom(true));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<BooleanLocalValue>());
+            Assert.That((value as BooleanLocalValue).Value, Is.True);
+        }
     }
 
     [Test]
     public void CanConvertFalseToLocalValue()
     {
-        LocalValue result = false;
-        Assert.That(result, Is.TypeOf<BooleanLocalValue>());
-        Assert.That((result as BooleanLocalValue).Value, Is.False);
+        AssertValue(false);
+
+        AssertValue(LocalValue.ConvertFrom(false));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<BooleanLocalValue>());
+            Assert.That((value as BooleanLocalValue).Value, Is.False);
+        }
     }
 
     [Test]
     public void CanConvertNullIntToLocalValue()
     {
         int? arg = null;
-        LocalValue result = arg;
-        Assert.That(result, Is.TypeOf<NullLocalValue>());
+
+        AssertValue(arg);
+
+        AssertValue(LocalValue.ConvertFrom(arg));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NullLocalValue>());
+        }
     }
 
     [Test]
     public void CanConvertZeroIntToLocalValue()
     {
-        LocalValue result = 0;
-        Assert.That(result, Is.TypeOf<NumberLocalValue>());
-        Assert.That((result as NumberLocalValue).Value, Is.Zero);
+        LocalValue arg = 0;
+
+        AssertValue(arg);
+
+        AssertValue(LocalValue.ConvertFrom(0));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NumberLocalValue>());
+            Assert.That((value as NumberLocalValue).Value, Is.Zero);
+        }
     }
 
     [Test]
     public void CanConvertNullDoubleToLocalValue()
     {
         double? arg = null;
-        LocalValue result = arg;
-        Assert.That(result, Is.TypeOf<NullLocalValue>());
+
+        AssertValue(arg);
+
+        AssertValue(LocalValue.ConvertFrom(arg));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NullLocalValue>());
+        }
     }
 
     [Test]
     public void CanConvertZeroDoubleToLocalValue()
     {
         double arg = 0;
-        LocalValue result = arg;
-        Assert.That(result, Is.TypeOf<NumberLocalValue>());
-        Assert.That((result as NumberLocalValue).Value, Is.Zero);
+
+        AssertValue(arg);
+
+        AssertValue(LocalValue.ConvertFrom(0));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NumberLocalValue>());
+            Assert.That((value as NumberLocalValue).Value, Is.Zero);
+        }
     }
 
     [Test]
     public void CanConvertNullStringToLocalValue()
     {
         string arg = null;
-        LocalValue result = arg;
-        Assert.That(result, Is.TypeOf<NullLocalValue>());
+
+        AssertValue(arg);
+
+        AssertValue(LocalValue.ConvertFrom(arg));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<NullLocalValue>());
+        }
     }
 
     [Test]
     public void CanConvertStringToLocalValue()
     {
-        LocalValue result = "value";
-        Assert.That(result, Is.TypeOf<StringLocalValue>());
-        Assert.That((result as StringLocalValue).Value, Is.EqualTo("value"));
+        AssertValue("value");
+
+        AssertValue(LocalValue.ConvertFrom("value"));
+
+        static void AssertValue(LocalValue value)
+        {
+            Assert.That(value, Is.TypeOf<StringLocalValue>());
+            Assert.That((value as StringLocalValue).Value, Is.EqualTo("value"));
+        }
+    }
+
+    [Test]
+    public void CanConvertObjectValue()
+    {
+        var my = new MyClass() { IntNumber = 5 };
+
+        var value = LocalValue.ConvertFrom(my);
+
+        Console.WriteLine(value);
+
+        Assert.That(value, Is.TypeOf<ObjectLocalValue>());
+    }
+
+    class MyClass
+    {
+        public int IntNumber { get; set; }
+
+        public List<int> ListOfInt { get; set; }
     }
 }
