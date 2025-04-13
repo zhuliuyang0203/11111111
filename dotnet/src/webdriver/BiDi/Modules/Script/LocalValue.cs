@@ -23,6 +23,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 namespace OpenQA.Selenium.BiDi.Modules.Script;
 
@@ -78,6 +79,9 @@ public abstract record LocalValue
 
             case string str:
                 return ConvertFrom(str);
+
+            case Regex regex:
+                return ConvertFrom(regex);
 
             case { } when value.GetType().GetInterfaces()
                 .Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(ISet<>)):
@@ -153,6 +157,27 @@ public abstract record LocalValue
         }
 
         return new NullLocalValue();
+    }
+
+    /// <summary>
+    /// Converts a .NET Regex into a BiDi Regex
+    /// </summary>
+    /// <param name="regex">A .NET Regex.</param>
+    /// <returns>A BiDi Regex.</returns>
+    /// <remarks>
+    /// Note that the .NET regular expression engine does not work the same as the JavaScript engine.
+    /// To minimize the differences between the two engines, it is recommended to enabled the <see cref="RegexOptions.ECMAScript"/> option.
+    /// </remarks>
+    public static LocalValue ConvertFrom(Regex? regex)
+    {
+        if (regex is null)
+        {
+            return new NullLocalValue();
+        }
+
+        string? flags = RegExpValue.GetRegExpFlags(regex.Options);
+
+        return new RegExpLocalValue(new RegExpValue(regex.ToString()) { Flags = flags });
     }
 
     public static LocalValue ConvertFrom(DateTime? value)
