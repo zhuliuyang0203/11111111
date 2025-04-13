@@ -49,7 +49,7 @@ public abstract record EvaluateResult : EmptyResult
             return success.Result;
         }
 
-        throw new BiDiException(ToString());
+        throw new InvalidCastException($"Expected the result to be {nameof(EvaluateResultSuccess)}, but received {this}");
     }
 }
 
