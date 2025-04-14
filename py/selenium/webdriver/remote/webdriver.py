@@ -44,6 +44,7 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.bidi.browser import Browser
 from selenium.webdriver.common.bidi.network import Network
 from selenium.webdriver.common.bidi.script import Script
+from selenium.webdriver.common.bidi.session import Session
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.options import ArgOptions
 from selenium.webdriver.common.options import BaseOptions
@@ -256,6 +257,7 @@ class WebDriver(BaseWebDriver):
         self._script = None
         self._network = None
         self._browser = None
+        self._session = None
 
     def __repr__(self):
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self.session_id}")>'
@@ -1294,29 +1296,23 @@ class WebDriver(BaseWebDriver):
 
         return self._browser
 
-    def get_bidi_session_status(self):
-        """
-        Get the session status using WebDriver BiDi.
-        Returns information about whether a remote end is in a state
-        in which it can create new sessions.
-
-        Returns:
-        -------
-        dict
-            Dictionary containing the ready state (bool), message (str) and metadata
+    @property
+    def session(self):
+        """Returns the BiDi session object for the current WebDriver session.
 
         Example:
         --------
-        >>> status = driver.get_bidi_session_status()
-        >>> print(status["ready"])
-        >>> print(status["message"])
+        >>> driver.session.subscribe()
+        >>> driver.session.unsubscribe()
+        >>> session = driver.session.status()
         """
         if not self._websocket_connection:
             self._start_bidi()
 
-        from selenium.webdriver.common.bidi.session import session_status
+        if self._session is None:
+            self._session = Session(self._websocket_connection)
 
-        return self._websocket_connection.execute(session_status())
+        return self._session
 
     def _get_cdp_details(self):
         import json
