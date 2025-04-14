@@ -23,7 +23,7 @@ using System.Text.Json.Serialization;
 namespace OpenQA.Selenium.BiDi.Modules.Browser;
 
 internal class SetClientWindowStateCommand(SetClientWindowStateCommandParameters @params)
-    : Command<SetClientWindowStateCommandParameters>(@params, "browser.setClientWindowState");
+    : Command<SetClientWindowStateCommandParameters, ClientWindowInfo>(@params, "browser.setClientWindowState");
 
 [JsonDerivedType(typeof(SetClientWindowNamedStateCommandParameters))]
 [JsonDerivedType(typeof(SetClientWindowRectStateCommandParameters))]
