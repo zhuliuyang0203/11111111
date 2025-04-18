@@ -66,7 +66,7 @@ def test_log_output_as_stdout(capfd) -> None:
 
 def test_driver_is_stopped_if_browser_cant_start(clean_driver) -> None:
     options = Options()
-    options.add_argument("-profile==/no/such/location")
+    options.add_argument("-profile=/no/such/location")
     service = Service()
     with pytest.raises(SessionNotCreatedException):
         driver = clean_driver(options=options, service=service)
