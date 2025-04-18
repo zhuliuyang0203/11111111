@@ -1174,7 +1174,6 @@ class WebDriver(BaseWebDriver):
         else:
             raise WebDriverException("You can only set the orientation to 'LANDSCAPE' and 'PORTRAIT'")
 
-
     def start_devtools(self):
         global devtools
         if self._websocket_connection:

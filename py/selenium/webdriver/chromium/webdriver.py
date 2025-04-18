@@ -150,7 +150,6 @@ class ChromiumDriver(RemoteWebDriver):
         session."""
         return self.execute("getIssueMessage")["value"]
 
-
     @property
     def log_types(self):
         """Gets a list of the available log types.
@@ -160,7 +159,6 @@ class ChromiumDriver(RemoteWebDriver):
         >>> driver.log_types
         """
         return self.execute(Command.GET_AVAILABLE_LOG_TYPES)["value"]
-
 
     def get_log(self, log_type):
         """Gets the log for a given log type.
@@ -178,7 +176,6 @@ class ChromiumDriver(RemoteWebDriver):
         >>> driver.get_log('server')
         """
         return self.execute(Command.GET_LOG, {"type": log_type})["value"]
-
 
     def set_sink_to_use(self, sink_name: str) -> dict:
         """Sets a specific sink, using its name, as a Cast session receiver
