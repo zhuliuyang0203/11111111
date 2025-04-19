@@ -146,7 +146,7 @@ target-version = ['py39']
 
 [tool.autoflake]
 exclude = "*/devtools/*"
-ignore-pass-statements = true
+ignore-pass-after-docstring = true
 in-place = true
 recursive = true
 remove-duplicate-keys = true
