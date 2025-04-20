@@ -135,24 +135,34 @@ ignore_missing_imports = true
 # Automatically keep imports alphabetically sorted, on single lines in
 # PEP recommended sections (https://peps.python.org/pep-0008/#imports)
 # files or individual lines can be ignored via `# isort:skip|# isort:skip_file`.
-profile = "black"
-py_version=39
 force_single_line = true
+profile = "black"
+py_version = 39
+only_modified = true
 
 [tool.black]
-extend-exclude = 'selenium/webdriver/common/devtools'
+extend-exclude = "selenium/webdriver/common/devtools"
 line-length = 120
-target-version = ['py39']
+target-version = ["py39"]
 
 [tool.autoflake]
-exclude = "*/devtools/*"
+exclude = "selenium/webdriver/common/devtools"
 ignore-pass-after-docstring = true
 in-place = true
+quiet = true
 recursive = true
 remove-duplicate-keys = true
 remove-unused-variables = true
 
+[tool.flake8]
+exclude = "selenium/webdriver/common/devtools"
+# Disable E501 once line length is better handled
+extend-ignore = ["E501", "E203"]
+# This does nothing for now as E501 is ignored
+max-line-length = 120
+min-python-version = 3.9
+
 [tool.docformatter]
-exclude = 'selenium/webdriver/common/devtools'
+exclude = "selenium/webdriver/common/devtools"
 in-place = true
 recursive = true
