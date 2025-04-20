@@ -61,7 +61,7 @@ namespace OpenQA.Selenium
                 {
                     platform = SupportedPlatform.MacOS;
                 }
-#elif NETSTANDARD2_0
+#else
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
                     platform = SupportedPlatform.Windows;
