@@ -161,7 +161,7 @@ exclude = "selenium/webdriver/common/devtools"
 extend-ignore = ["E501", "E203"]
 # This does nothing for now as E501 is ignored
 max-line-length = 120
-min-python-version = 3.9
+min-python-version = "3.9"
 
 [tool.docformatter]
 exclude = "selenium/webdriver/common/devtools"
