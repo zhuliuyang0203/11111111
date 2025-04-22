@@ -113,9 +113,17 @@ driver_instance = None
 @pytest.fixture(scope="function")
 def driver(request):
     kwargs = {}
+    driver_option = getattr(request, "param", "Chrome")
+
     # browser can be changed with `--driver=firefox` as an argument or to addopts in pytest.ini
-    driver_class = get_driver_class(getattr(request, "param", "Chrome"))
-    # skip tests if not available on the platform
+    driver_class = get_driver_class(driver_option)
+
+    # skip tests in the 'remote' directory if run with a local driver
+    test_dir_name = os.path.basename(os.path.dirname(request.node.fspath))
+    if test_dir_name == "remote" and driver_class != "Remote":
+        pytest.skip(f"Remote tests can't be run with driver '{driver_option}'")
+
+    # skip tests that can't run on certain platforms
     _platform = platform.system()
     if driver_class == "Safari" and _platform != "Darwin":
         pytest.skip("Safari tests can only run on an Apple OS")
@@ -123,10 +131,12 @@ def driver(request):
         pytest.skip("IE and EdgeHTML Tests can only run on Windows")
     if "WebKit" in driver_class and _platform == "Windows":
         pytest.skip("WebKit tests cannot be run on Windows")
+
     # skip tests for drivers that don't support BiDi when --bidi is enabled
     if request.config.option.bidi:
         if driver_class in ("Ie", "Safari", "WebKitGTK", "WPEWebKit"):
             pytest.skip(f"{driver_class} does not support BiDi")
+
     # conditionally mark tests as expected to fail based on driver
     marker = request.node.get_closest_marker(f"xfail_{driver_class.lower()}")
 
@@ -177,6 +187,7 @@ def driver(request):
             kwargs["options"] = options
 
         driver_instance = getattr(webdriver, driver_class)(**kwargs)
+
     yield driver_instance
     # Close the browser after BiDi tests. Those make event subscriptions
     # and doesn't seems to be stable enough, causing the flakiness of the
@@ -201,23 +212,20 @@ def get_options(driver_class, config):
     browser_args = config.option.args
     headless = config.option.headless
     bidi = config.option.bidi
-    options = None
 
-    if browser_path or browser_args:
-        if not options:
-            options = getattr(webdriver, f"{driver_class}Options")()
-        if driver_class == "WebKitGTK":
-            options.overlay_scrollbars_enabled = False
-        if browser_path is not None:
-            options.binary_location = browser_path.strip("'")
-        if browser_args is not None:
-            for arg in browser_args.split():
-                options.add_argument(arg)
+    options = getattr(webdriver, f"{driver_class}Options")()
+
+    if driver_class == "WebKitGTK":
+        options.overlay_scrollbars_enabled = False
+
+    if browser_path is not None:
+        options.binary_location = browser_path.strip("'")
+
+    if browser_args is not None:
+        for arg in browser_args.split():
+            options.add_argument(arg)
 
     if headless:
-        if not options:
-            options = getattr(webdriver, f"{driver_class}Options")()
-
         if driver_class == "Chrome" or driver_class == "Edge":
             options.add_argument("--headless=new")
         if driver_class == "Firefox":
@@ -226,7 +234,6 @@ def get_options(driver_class, config):
     if bidi:
         if not options:
             options = getattr(webdriver, f"{driver_class}Options")()
-
         options.web_socket_url = True
         options.unhandled_prompt_behavior = "ignore"
 

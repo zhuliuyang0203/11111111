@@ -26,25 +26,35 @@ class MyCustomElement(WebElement):
 
 def test_find_element_with_custom_class(driver, pages):
     """Test to ensure custom element class is used for a single element."""
-    driver._web_element_cls = MyCustomElement
-    pages.load("simpleTest.html")
-    element = driver.find_element(By.TAG_NAME, "body")
-    assert isinstance(element, MyCustomElement)
-    assert element.custom_method() == "Custom element method"
+    try:
+        driver._web_element_cls = MyCustomElement
+        pages.load("simpleTest.html")
+        element = driver.find_element(By.TAG_NAME, "body")
+        assert isinstance(element, MyCustomElement)
+        assert element.custom_method() == "Custom element method"
+    finally:
+        driver._web_element_cls = WebElement
 
 
 def test_find_elements_with_custom_class(driver, pages):
     """Test to ensure custom element class is used for multiple elements."""
-    driver._web_element_cls = MyCustomElement
-    pages.load("simpleTest.html")
-    elements = driver.find_elements(By.TAG_NAME, "div")
-    assert all(isinstance(el, MyCustomElement) for el in elements)
-    assert all(el.custom_method() == "Custom element method" for el in elements)
+    try:
+        driver._web_element_cls = MyCustomElement
+        pages.load("simpleTest.html")
+        elements = driver.find_elements(By.TAG_NAME, "div")
+        assert all(isinstance(el, MyCustomElement) for el in elements)
+        assert all(el.custom_method() == "Custom element method" for el in elements)
+    finally:
+        driver._web_element_cls = WebElement
 
 
 def test_default_element_class(driver, pages):
     """Test to ensure default WebElement class is used."""
-    pages.load("simpleTest.html")
-    element = driver.find_element(By.TAG_NAME, "body")
-    assert isinstance(element, WebElement)
-    assert not hasattr(element, "custom_method")
+    try:
+        pages.load("simpleTest.html")
+        element = driver.find_element(By.TAG_NAME, "body")
+        assert isinstance(element, WebElement)
+        assert not hasattr(element, "custom_method")
+    finally:
+        driver._web_element_cls = WebElement
+

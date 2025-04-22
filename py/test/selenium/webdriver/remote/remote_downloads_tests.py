@@ -14,13 +14,23 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
+
 import os
 import tempfile
+
+import pytest
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 
+@pytest.mark.xfail_chrome
+@pytest.mark.xfail_edge
+@pytest.mark.xfail_ie
+@pytest.mark.xfail_firefox
+@pytest.mark.xfail_safari
+@pytest.mark.xfail_webkitgtk
+@pytest.mark.xfail_wpewebkit
 def test_get_downloadable_files(driver, pages):
     _browser_downloads(driver, pages)
 
@@ -31,6 +41,13 @@ def test_get_downloadable_files(driver, pages):
     assert type(file_names) is list
 
 
+@pytest.mark.xfail_chrome
+@pytest.mark.xfail_edge
+@pytest.mark.xfail_ie
+@pytest.mark.xfail_firefox
+@pytest.mark.xfail_safari
+@pytest.mark.xfail_webkitgtk
+@pytest.mark.xfail_wpewebkit
 def test_download_file(driver, pages):
     _browser_downloads(driver, pages)
 

@@ -15,26 +15,16 @@
 # specific language governing permissions and limitations
 # under the License.
 
-import pytest
-
 from selenium import webdriver
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
+from selenium.webdriver.firefox.options import Options
 
 
-@pytest.fixture
-def driver(options):
-    with pytest.warns(None) as record:
-        driver = webdriver.Remote(options=options)
-    assert len(record) == 0
-    yield driver
-    driver.quit()
-
-
-@pytest.fixture
-def options():
-    options = webdriver.FirefoxOptions()
-    options.set_preference("browser.startup.homepage", "about:")
-    return options
-
-
-def test_profile_is_used(driver):
-    assert "about:blank" == driver.current_url or "about:" == driver.current_url
+def test_profile_is_used():
+    ff_profile = FirefoxProfile()
+    ff_profile.set_preference("browser.startup.page", "1")
+    options = Options()
+    options.profile = ff_profile
+    options.add_argument("-headless")
+    with webdriver.Remote(options=options) as driver:
+        assert "browser/content/blanktab.html" in driver.current_url
