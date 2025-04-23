@@ -137,7 +137,7 @@ class DefaultWheelTest extends JupiterTestBase {
         appServer.whereIs("scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html"));
     WebElement footer = driver.findElement(By.tagName("footer"));
     int deltaY = footer.getRect().y;
-    
+
     input.perform(
         windowHandle,
         new Actions(driver)
