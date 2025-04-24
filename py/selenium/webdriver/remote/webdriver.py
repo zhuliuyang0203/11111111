@@ -46,6 +46,7 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.bidi.browser import Browser
 from selenium.webdriver.common.bidi.network import Network
 from selenium.webdriver.common.bidi.script import Script
+from selenium.webdriver.common.bidi.session import Session
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.options import ArgOptions
 from selenium.webdriver.common.options import BaseOptions
@@ -224,7 +225,11 @@ class WebDriver(BaseWebDriver):
             - Custom client configuration to use. Defaults to None.
         """
 
-        if isinstance(options, list):
+        if options is None:
+            raise TypeError(
+                "missing 1 required keyword-only argument: 'options' (instance of driver `options.Options` class)"
+            )
+        elif isinstance(options, list):
             capabilities = create_matches(options)
             _ignore_local_proxy = False
         else:
@@ -258,6 +263,7 @@ class WebDriver(BaseWebDriver):
         self._script = None
         self._network = None
         self._browser = None
+        self._bidi_session = None
 
     def __repr__(self):
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self.session_id}")>'
@@ -350,7 +356,7 @@ class WebDriver(BaseWebDriver):
             self.session_id = response.get("sessionId")
             self.caps = response.get("capabilities")
         except Exception:
-            if self.service is not None:
+            if hasattr(self, "service") and self.service is not None:
                 self.service.stop()
             raise
 
@@ -1174,34 +1180,6 @@ class WebDriver(BaseWebDriver):
         else:
             raise WebDriverException("You can only set the orientation to 'LANDSCAPE' and 'PORTRAIT'")
 
-    @property
-    def log_types(self):
-        """Gets a list of the available log types. This only works with w3c
-        compliant browsers.
-
-        Example:
-        --------
-        >>> driver.log_types
-        """
-        return self.execute(Command.GET_AVAILABLE_LOG_TYPES)["value"]
-
-    def get_log(self, log_type):
-        """Gets the log for a given log type.
-
-        Parameters:
-        -----------
-        log_type : str
-            - Type of log that which will be returned
-
-        Example:
-        --------
-        >>> driver.get_log('browser')
-        >>> driver.get_log('driver')
-        >>> driver.get_log('client')
-        >>> driver.get_log('server')
-        """
-        return self.execute(Command.GET_LOG, {"type": log_type})["value"]
-
     def start_devtools(self):
         global devtools
         if self._websocket_connection:
@@ -1300,6 +1278,19 @@ class WebDriver(BaseWebDriver):
             self._browser = Browser(self._websocket_connection)
 
         return self._browser
+
+    @property
+    def _session(self):
+        """
+        Returns the BiDi session object for the current WebDriver session.
+        """
+        if not self._websocket_connection:
+            self._start_bidi()
+
+        if self._bidi_session is None:
+            self._bidi_session = Session(self._websocket_connection)
+
+        return self._bidi_session
 
     def _get_cdp_details(self):
         import json
