@@ -855,10 +855,8 @@ public class LocalNode extends Node implements Closeable {
   }
 
   private void stopAllSessions() {
-    if (currentSessions.estimatedSize() > 0) {
-      LOG.info("Trying to stop all running sessions before shutting down...");
-      currentSessions.invalidateAll();
-    }
+    LOG.info("Trying to stop all running sessions before shutting down...");
+    currentSessions.invalidateAll();
   }
 
   private Session createExternalSession(
