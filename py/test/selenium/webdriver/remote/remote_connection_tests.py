@@ -45,9 +45,8 @@ def test_remote_webdriver_with_http_timeout(firefox_options, webserver):
     server_addr = f"http://{webserver.host}:{webserver.port}"
     client_config = ClientConfig(remote_server_addr=server_addr, timeout=http_timeout)
     assert client_config.timeout == http_timeout
-    driver = webdriver.Remote(options=firefox_options, client_config=client_config)
-    driver.get(f"{server_addr}/simpleTest.html")
-    driver.implicitly_wait(wait_timeout)
-    with pytest.raises(ReadTimeoutError):
-        driver.find_element(By.ID, "no_element_to_be_found")
-    driver.quit()
+    with webdriver.Remote(options=firefox_options, client_config=client_config) as driver:
+        driver.get(f"{server_addr}/simpleTest.html")
+        driver.implicitly_wait(wait_timeout)
+        with pytest.raises(ReadTimeoutError):
+            driver.find_element(By.ID, "no_element_to_be_found")
