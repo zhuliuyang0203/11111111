@@ -97,15 +97,13 @@ class ClientConfig:
         self.proxy = proxy
         self.ignore_certificates = ignore_certificates
         self.init_args_for_pool_manager = init_args_for_pool_manager or {}
-        self.timeout = timeout
+        self.timeout = socket.getdefaulttimeout() if timeout is None else timeout
         self.username = username
         self.password = password
         self.auth_type = auth_type
         self.token = token
         self.user_agent = user_agent
         self.extra_headers = extra_headers
-
-        self.timeout = socket.getdefaulttimeout() if timeout is None else timeout
 
         self.ca_certs = (
             (os.getenv("REQUESTS_CA_BUNDLE") if "REQUESTS_CA_BUNDLE" in os.environ else certifi.where())
