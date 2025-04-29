@@ -364,8 +364,6 @@ def test_driver_with_http_timeout(driver, pages):
     """This test starts a webdriver with an http client timeout set less than the implicit
     wait, and verifies the http timeout is triggered first when waiting for an element.
     """
-    http_timeout = 6
-    wait_timeout = 8
     pages.load("simpleTest.html")
     driver.command_executor.client_config.timeout = 6
     driver.implicitly_wait(8)
