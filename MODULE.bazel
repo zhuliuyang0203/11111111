@@ -30,10 +30,10 @@ bazel_dep(name = "rules_ruby", version = "0.18.0")
 # Until `rules_jvm_external` 6.8 ships
 git_override(
     module_name = "rules_jvm_external",
-    remote = "https://github.com/bazel-contrib/rules_jvm_external.git",
     commit = "d8af22108bd8b353a226140570008231f2921931",
     patch_strip = 1,
     patches = ["//java:rules_jvm_external_javadoc.patch"],
+    remote = "https://github.com/bazel-contrib/rules_jvm_external.git",
 )
 
 linter = use_extension("@apple_rules_lint//lint:extensions.bzl", "linter")
