@@ -27,6 +27,13 @@ bazel_dep(name = "rules_python", version = "1.1.0")
 bazel_dep(name = "rules_proto", version = "7.0.2")
 bazel_dep(name = "rules_ruby", version = "0.18.0")
 
+# Until `rules_jvm_external` 6.8 ships
+git_override(
+    module_name = "rules_jvm_external",
+    remote = "https://github.com/bazel-contrib/rules_jvm_external.git",
+    commit = "d8af22108bd8b353a226140570008231f2921931",
+)
+
 linter = use_extension("@apple_rules_lint//lint:extensions.bzl", "linter")
 linter.configure(
     name = "java-spotbugs",
@@ -139,16 +146,6 @@ pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 use_repo(pip, "py_dev_requirements")
 
 register_toolchains("@pythons_hub//:all")
-
-# https://github.com/bazelbuild/rules_jvm_external/pull/1079
-archive_override(
-    module_name = "rules_jvm_external",
-    integrity = "sha256-yS8Qes1PLbYbe10b1WSgl0Auqn/1Wlxg8O3wSr7a/Sg=",
-    patch_strip = 1,
-    patches = ["//java:rules_jvm_external_javadoc.patch"],
-    strip_prefix = "rules_jvm_external-f572a26116c7ef71d8842dd056c2605782f7be8d",
-    urls = ["https://github.com/bazelbuild/rules_jvm_external/archive/f572a26116c7ef71d8842dd056c2605782f7be8d.tar.gz"],
-)
 
 java_toolchains = use_extension("@rules_java//java:extensions.bzl", "toolchains")
 use_repo(
