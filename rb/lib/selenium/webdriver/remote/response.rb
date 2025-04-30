@@ -27,6 +27,7 @@ module Selenium
       class Response
         attr_reader :code, :payload
 
+        # @rbs (Integer, ?Hash[untyped, untyped]) -> void
         def initialize(code, payload = nil)
           @code = code
           @payload = payload || {}
@@ -34,6 +35,7 @@ module Selenium
           assert_ok
         end
 
+        # @rbs () -> nil
         def error
           error, message, backtrace = process_error
           klass = Error.for_error(error) || return
@@ -42,12 +44,14 @@ module Selenium
           ex
         end
 
+        # @rbs (String) -> (Hash[untyped, untyped] | String)?
         def [](key)
           @payload[key]
         end
 
         private
 
+        # @rbs () -> nil
         def assert_ok
           e = error
           raise e if e
@@ -82,6 +86,7 @@ module Selenium
           end
         end
 
+        # @rbs () -> Array[untyped]?
         def process_error
           return unless self['value'].is_a?(Hash)
 

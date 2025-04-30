@@ -25,6 +25,7 @@ module Selenium
       # @param [String, nil] error
       #
 
+      # @rbs (nil) -> nil
       def self.for_error(error)
         return if error.nil?
 

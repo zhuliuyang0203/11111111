@@ -29,6 +29,7 @@ module Selenium
         class Guard
           attr_reader :guarded, :type, :messages, :reason, :tracker
 
+          # @rbs (Hash[untyped, untyped], Symbol, ?Selenium::WebDriver::Support::Guards) -> void
           def initialize(guarded, type, guards = nil)
             @guarded = guarded
             @tracker = guards&.bug_tracker || ''
@@ -63,22 +64,26 @@ module Selenium
           end
 
           # Bug is present on all configurations specified
+          # @rbs () -> bool
           def except?
             @type == :except
           end
 
           # Bug is present on all configurations not specified
+          # @rbs () -> bool
           def only?
             @type == :only
           end
 
           # Bug is present on all configurations specified, but test can not be run because it breaks other tests,
           # or it is flaky and unreliable
+          # @rbs () -> bool
           def exclude?
             @type == :exclude || @type == :flaky
           end
 
           # Test only applies to configurations specified
+          # @rbs () -> bool
           def exclusive?
             @type == :exclusive
           end

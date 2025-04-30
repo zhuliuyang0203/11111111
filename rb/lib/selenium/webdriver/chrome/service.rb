@@ -26,6 +26,7 @@ module Selenium
         SHUTDOWN_SUPPORTED = true
         DRIVER_PATH_ENV_KEY = 'SE_CHROMEDRIVER'
 
+        # @rbs () -> nil
         def log
           return @log unless @log.is_a? String
 

@@ -24,6 +24,7 @@ module Selenium
     #
 
     class SocketLock
+      # @rbs (Integer, Integer) -> void
       def initialize(port, timeout)
         @port    = port
         @server  = nil
@@ -35,6 +36,7 @@ module Selenium
       # execution block if the lock could be successfully obtained.
       #
 
+      # @rbs () -> nil
       def locked
         lock
 
@@ -47,6 +49,7 @@ module Selenium
 
       private
 
+      # @rbs () -> void
       def lock
         max_time = current_time + @timeout
 
@@ -57,14 +60,17 @@ module Selenium
         raise Error::WebDriverError, "unable to bind to locking port #{@port} within #{@timeout} seconds"
       end
 
+      # @rbs () -> Float
       def current_time
         Process.clock_gettime(Process::CLOCK_MONOTONIC)
       end
 
+      # @rbs () -> nil
       def release
         @server&.close
       end
 
+      # @rbs () -> bool
       def can_lock?
         @server = TCPServer.new(Platform.localhost, @port)
         @server.close_on_exec = true
@@ -74,6 +80,7 @@ module Selenium
         false
       end
 
+      # @rbs () -> bool
       def did_lock?
         !@server.nil?
       end

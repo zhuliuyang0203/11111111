@@ -29,6 +29,7 @@ module Selenium
       class << self
         attr_reader :driver_path
 
+        # @rbs (**Array[untyped] | Hash[untyped, untyped] | nil) -> Selenium::WebDriver::Chrome::Options
         def chrome(**opts)
           Chrome::Options.new(**opts)
         end
@@ -68,6 +69,7 @@ module Selenium
 
       attr_accessor :options
 
+      # @rbs (**Array[untyped] | Hash[untyped, untyped] | nil) -> void
       def initialize(**opts)
         self.class.set_capabilities
 
@@ -103,6 +105,7 @@ module Selenium
       # @api private
       #
 
+      # @rbs (*untyped) -> Hash[untyped, untyped]
       def as_json(*)
         options = @options.dup
 
@@ -125,10 +128,12 @@ module Selenium
 
       private
 
+      # @rbs (Symbol) -> bool
       def w3c?(key)
         W3C_OPTIONS.include?(key) || key.to_s.include?(':')
       end
 
+      # @rbs (Hash[untyped, untyped]) -> Hash[untyped, untyped]
       def process_w3c_options(options)
         w3c_options = options.select { |key, val| w3c?(key) && !val.nil? }
         w3c_options[:unhandled_prompt_behavior] &&= w3c_options[:unhandled_prompt_behavior]&.to_s&.tr('_', ' ')
@@ -144,6 +149,7 @@ module Selenium
         true
       end
 
+      # @rbs (String | Array[untyped] | Hash[untyped, untyped], ?camelize_keys: bool) -> (String | Array[untyped] | Hash[untyped, untyped])
       def generate_as_json(value, camelize_keys: true)
         if value.is_a?(Hash)
           process_json_hash(value, camelize_keys)
@@ -158,6 +164,7 @@ module Selenium
         end
       end
 
+      # @rbs (Hash[untyped, untyped], bool) -> Hash[untyped, untyped]
       def process_json_hash(value, camelize_keys)
         value.each_with_object({}) do |(key, val), hash|
           next if val.respond_to?(:empty?) && val.empty?
@@ -168,6 +175,7 @@ module Selenium
         end
       end
 
+      # @rbs (Symbol | String, ?camelize: bool) -> String
       def convert_json_key(key, camelize: true)
         key = key.to_s if key.is_a?(Symbol)
         key = camel_case(key) if camelize
@@ -176,6 +184,7 @@ module Selenium
         raise TypeError, "expected String or Symbol, got #{key.inspect}:#{key.class}"
       end
 
+      # @rbs (String) -> String
       def camel_case(str)
         str.gsub(/_([a-z])/) { Regexp.last_match(1)&.upcase }
       end

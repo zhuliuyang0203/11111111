@@ -29,6 +29,7 @@ module Selenium
         attr_reader :messages
         attr_accessor :bug_tracker
 
+        # @rbs (RSpec::Core::Example, ?bug_tracker: String, ?conditions: nil) -> void
         def initialize(example, bug_tracker: '', conditions: nil)
           @example = example
           @bug_tracker = bug_tracker
@@ -37,6 +38,7 @@ module Selenium
           @messages = {}
         end
 
+        # @rbs (Symbol, ?(Symbol | bool)?) -> void
         def add_condition(name, condition = false, &block)
           condition = false if condition.nil?
           @guard_conditions << GuardCondition.new(name, condition, &block)
@@ -47,6 +49,7 @@ module Selenium
           @messages[name] = message
         end
 
+        # @rbs () -> nil
         def disposition
           if !skipping_guard.nil?
             [:skip, skipping_guard.message]
@@ -57,12 +60,14 @@ module Selenium
           end
         end
 
+        # @rbs (Selenium::WebDriver::Support::Guards::Guard) -> bool
         def satisfied?(guard)
           @guard_conditions.all? { |condition| condition.satisfied?(guard) }
         end
 
         private
 
+        # @rbs () -> Array[untyped]
         def collect_example_guards
           guards = []
 
@@ -82,11 +87,13 @@ module Selenium
           guards
         end
 
+        # @rbs () -> nil
         def skipping_guard
           @guards.select(&:exclusive?).find { |guard| !satisfied?(guard) } ||
             @guards.select(&:exclude?).find { |guard| satisfied?(guard) }
         end
 
+        # @rbs () -> nil
         def pending_guard
           @guards.select(&:except?).find { |guard| satisfied?(guard) } ||
             @guards.select(&:only?).find { |guard| !satisfied?(guard) }

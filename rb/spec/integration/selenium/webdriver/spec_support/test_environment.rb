@@ -49,6 +49,7 @@ module Selenium
           puts "\n"
         end
 
+        # @rbs () -> Symbol
         def browser
           if driver == :remote
             ENV.fetch('WD_REMOTE_BROWSER', 'chrome').tr('-', '_').to_sym
@@ -57,10 +58,12 @@ module Selenium
           end
         end
 
+        # @rbs (*untyped, **untyped) -> bool
         def driver_instance(...)
           @driver_instance || create_driver!(...)
         end
 
+        # @rbs (?time: Integer, **Hash[untyped, untyped]) -> bool
         def reset_driver!(time: 0, **opts, &block)
           # do not reset if the test was marked skipped
           return if opts.delete(:example)&.metadata&.fetch(:skip, nil)
@@ -70,6 +73,7 @@ module Selenium
           driver_instance(**opts, &block)
         end
 
+        # @rbs () -> void
         def quit_driver
           @driver_instance&.quit
         rescue StandardError
@@ -78,6 +82,7 @@ module Selenium
           @driver_instance = nil
         end
 
+        # @rbs () -> Selenium::WebDriver::SpecSupport::RackServer
         def app_server
           @app_server ||= begin
             app_server = RackServer.new(root.join('common/src/web').to_s, random_port)
@@ -115,6 +120,7 @@ module Selenium
           File.expand_path(File.read(File.expand_path(ENV.fetch('WD_BAZEL_JAVA_LOCATION'))).chomp)
         end
 
+        # @rbs () -> bool
         def rbe?
           Dir.pwd.start_with?('/mnt/engflow')
         end
@@ -153,16 +159,19 @@ module Selenium
           @driver_instance = @app_server = @remote_server = nil
         end
 
+        # @rbs (String) -> String
         def url_for(filename)
           app_server.where_is filename
         end
 
+        # @rbs () -> Pathname
         def root
           # prefer #realpath over #expand_path to avoid problems with UNC
           # see https://bugs.ruby-lang.org/issues/13515
           @root ||= Pathname.new('../../../../../../../').realpath(__FILE__)
         end
 
+        # @rbs (?listener: nil, **Hash[untyped, untyped]) -> bool
         def create_driver!(listener: nil, **opts, &block)
           check_for_previous_error
 
@@ -190,6 +199,7 @@ module Selenium
 
         private
 
+        # @rbs (**Hash[untyped, untyped]) -> Selenium::WebDriver::Chrome::Options
         def build_options(**opts)
           options_method = :"#{browser}_options"
           if private_methods.include?(options_method)
@@ -215,6 +225,7 @@ module Selenium
         class DriverInstantiationError < StandardError
         end
 
+        # @rbs () -> void
         def check_for_previous_error
           return unless @create_driver_error && @create_driver_error_count >= MAX_ERRORS
 
@@ -230,6 +241,7 @@ module Selenium
           WebDriver::Driver.for(:remote, url: url, **opts)
         end
 
+        # @rbs (?service: nil, **Selenium::WebDriver::Chrome::Options?) -> Selenium::WebDriver::Chrome::Driver
         def chrome_driver(service: nil, **opts)
           service ||= WebDriver::Service.chrome
           service.args << '--disable-build-check' if ENV['DISABLE_BUILD_CHECK']
@@ -265,6 +277,7 @@ module Selenium
           WebDriver::Driver.for(:safari, service: service, **opts)
         end
 
+        # @rbs (?args: Array[untyped], **Hash[untyped, untyped]) -> Selenium::WebDriver::Chrome::Options
         def chrome_options(args: [], **opts)
           opts[:browser_version] = 'stable' if WebDriver::Platform.windows?
           opts[:web_socket_url] = true if ENV['WEBDRIVER_BIDI'] && !opts.key?(:web_socket_url)
@@ -303,6 +316,7 @@ module Selenium
           WebDriver::Options.safari(**opts)
         end
 
+        # @rbs () -> Integer
         def random_port
           addr = Socket.getaddrinfo(Platform.localhost, 0, Socket::AF_INET, Socket::SOCK_STREAM)
           addr = Socket.pack_sockaddr_in(0, addr[0][3])

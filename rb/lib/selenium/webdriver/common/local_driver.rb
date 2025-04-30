@@ -20,6 +20,7 @@
 module Selenium
   module WebDriver
     module LocalDriver
+      # @rbs (Selenium::WebDriver::Chrome::Options, Selenium::WebDriver::Chrome::Service, nil) -> Array[untyped]
       def initialize_local_driver(options, service, url)
         raise ArgumentError, "Can't initialize #{self.class} with :url" if url
 
@@ -30,6 +31,7 @@ module Selenium
         [caps, url]
       end
 
+      # @rbs (Selenium::WebDriver::Chrome::Options, Selenium::WebDriver::Chrome::Service) -> Hash[untyped, untyped]
       def process_options(options, service)
         default_options = Options.send(browser)
         options ||= default_options

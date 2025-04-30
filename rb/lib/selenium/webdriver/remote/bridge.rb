@@ -41,6 +41,7 @@ module Selenium
             define_method(name, &block)
           end
 
+          # @rbs () -> Selenium::WebDriver::Remote::Bridge::LocatorConverter
           def locator_converter
             @locator_converter ||= LocatorConverter.new
           end
@@ -57,6 +58,7 @@ module Selenium
         # @api private
         #
 
+        # @rbs (url: URI::HTTP, ?http_client: nil) -> void
         def initialize(url:, http_client: nil)
           uri = url.is_a?(URI) ? url : URI.parse(url)
           uri.path += '/' unless uri.path.end_with?('/')
@@ -72,6 +74,7 @@ module Selenium
         # Creates session.
         #
 
+        # @rbs (Hash[untyped, untyped]) -> Selenium::WebDriver::Remote::Bridge
         def create_session(capabilities)
           response = execute(:new_session, {}, prepare_capabilities_payload(capabilities))
 
@@ -100,10 +103,12 @@ module Selenium
         # Returns the current session ID.
         #
 
+        # @rbs () -> String
         def session_id
           @session_id || raise(Error::WebDriverError, 'no current session exists')
         end
 
+        # @rbs () -> Symbol
         def browser
           @browser ||= begin
             name = @capabilities.browser_name
@@ -115,6 +120,7 @@ module Selenium
           execute :status
         end
 
+        # @rbs (String) -> nil
         def get(url)
           execute :get, {}, {url: url}
         end
@@ -208,6 +214,7 @@ module Selenium
 
         QUIT_ERRORS = [IOError].freeze
 
+        # @rbs () -> nil
         def quit
           execute :delete_session
           http.close
@@ -300,6 +307,7 @@ module Selenium
         # javascript execution
         #
 
+        # @rbs (String, *nil) -> String
         def execute_script(script, *args)
           result = execute :execute_script, {}, {script: script, args: args}
           unwrap_script_result result
@@ -597,6 +605,7 @@ module Selenium
           raise(WebDriver::Error::WebDriverError, msg)
         end
 
+        # @rbs () -> Hash[untyped, untyped]
         def command_list
           COMMANDS
         end
@@ -609,6 +618,7 @@ module Selenium
         # @return [WebDriver::Remote::Response]
         #
 
+        # @rbs (Symbol, ?Hash[untyped, untyped], ?Hash[untyped, untyped]?) -> (Hash[untyped, untyped] | String)?
         def execute(command, opts = {}, command_hash = nil)
           verb, path = commands(command) || raise(ArgumentError, "unknown command: #{command.inspect}")
           path = path.dup
@@ -629,10 +639,12 @@ module Selenium
           @escaper ||= defined?(URI::RFC2396_PARSER) ? URI::RFC2396_PARSER : URI::DEFAULT_PARSER
         end
 
+        # @rbs (Symbol) -> Array[untyped]
         def commands(command)
           command_list[command] || Bridge.extra_commands[command]
         end
 
+        # @rbs (String) -> String
         def unwrap_script_result(arg)
           case arg
           when Array
@@ -658,6 +670,7 @@ module Selenium
           id[ShadowRoot::ROOT_KEY]
         end
 
+        # @rbs (Hash[untyped, untyped]) -> Hash[untyped, untyped]
         def prepare_capabilities_payload(capabilities)
           capabilities = {alwaysMatch: capabilities} if !capabilities['alwaysMatch'] && !capabilities['firstMatch']
           {capabilities: capabilities}

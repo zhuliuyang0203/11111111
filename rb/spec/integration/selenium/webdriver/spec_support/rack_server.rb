@@ -25,6 +25,7 @@ module Selenium
       class RackServer
         START_TIMEOUT = 30
 
+        # @rbs (String, Integer) -> void
         def initialize(path, port)
           @path = path
           @app  = TestApp.new(path)
@@ -33,6 +34,7 @@ module Selenium
           @port = port
         end
 
+        # @rbs () -> void
         def start
           if Platform.jruby? || Platform.windows? || Platform.truffleruby?
             start_threaded
@@ -49,6 +51,7 @@ module Selenium
           handler.run @app, Host: @host, Port: @port, AccessLog: [], Logger: WEBrick::Log.new(nil, 0)
         end
 
+        # @rbs (String) -> String
         def where_is(file)
           "http://#{@host}:#{@port}/#{file}"
         end
@@ -86,6 +89,7 @@ module Selenium
           false
         end
 
+        # @rbs () -> Integer
         def start_forked
           @pid = fork { run }
         end
@@ -99,6 +103,7 @@ module Selenium
         class TestApp
           BASIC_AUTH_CREDENTIALS = %w[test test].freeze
 
+          # @rbs (String) -> void
           def initialize(file_root)
             @static = Rack::File.new(file_root)
           end

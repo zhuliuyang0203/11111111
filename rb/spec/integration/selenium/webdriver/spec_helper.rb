@@ -19,6 +19,7 @@
 
 require 'rubygems'
 require 'time'
+require 'rbs-trace'
 require 'rspec'
 
 require 'selenium-webdriver'
@@ -30,6 +31,7 @@ include Selenium # rubocop:disable Style/MixinUsage
 GlobalTestEnv = WebDriver::SpecSupport::TestEnvironment.new
 
 class SeleniumTestListener
+  # @rbs (RSpec::Core::Notifications::ExampleNotification) -> nil
   def example_finished(notification)
     exception = notification.example.exception
     assertion_failed = exception &&
@@ -50,13 +52,18 @@ RSpec.configure do |c|
 
   c.include(WebDriver::SpecSupport::Helpers)
 
+  trace = RBS::Trace.new
+
   c.before(:suite) do
     GlobalTestEnv.remote_server.start if GlobalTestEnv.driver == :remote && ENV['WD_REMOTE_URL'].nil?
     GlobalTestEnv.print_env
+    trace.enable
   end
 
   c.after(:suite) do
     GlobalTestEnv.quit_driver
+    trace.disable
+    trace.save_comments
   end
 
   c.filter_run_when_matching :focus

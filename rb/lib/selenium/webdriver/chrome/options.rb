@@ -32,6 +32,7 @@ module Selenium
           browser_options['goog:loggingPrefs'] = @logging_prefs
         end
 
+        # @rbs () -> nil
         def binary_path
           Chrome.path
         end

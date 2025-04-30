@@ -75,6 +75,7 @@ module Selenium
           execute :delete_network_conditions
         end
 
+        # @rbs (Hash[untyped, untyped]) -> Hash[untyped, untyped]
         def send_command(command_params)
           execute :send_command, {}, command_params
         end

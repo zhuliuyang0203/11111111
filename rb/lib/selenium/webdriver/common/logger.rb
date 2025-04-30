@@ -115,6 +115,7 @@ module Selenium
       # @param [Symbol, Array<Symbol>] id
       # @yield see #deprecate
       #
+      # @rbs (String, ?id: Array[untyped] | Symbol) -> nil
       def debug(message, id: [], &block)
         discard_or_log(:debug, message, id, &block)
       end
@@ -191,6 +192,7 @@ module Selenium
         logger
       end
 
+      # @rbs (Symbol, String, Array[untyped] | Symbol) -> nil
       def discard_or_log(level, message, id)
         id = Array(id)
         return if @ignored.intersect?(id)

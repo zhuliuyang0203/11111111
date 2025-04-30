@@ -28,6 +28,7 @@ module Selenium
       class << self
         attr_reader :driver_path
 
+        # @rbs (**nil) -> Selenium::WebDriver::Chrome::Service
         def chrome(**opts)
           Chrome::Service.new(**opts)
         end
@@ -66,6 +67,7 @@ module Selenium
       # @api private
       #
 
+      # @rbs (?path: nil, ?port: nil, ?log: nil, ?args: nil) -> void
       def initialize(path: nil, port: nil, log: nil, args: nil)
         port ||= self.class::DEFAULT_PORT
         args ||= []
@@ -87,11 +89,13 @@ module Selenium
         raise Error::WebDriverError, "invalid port: #{@port}" if @port < 1
       end
 
+      # @rbs () -> Selenium::WebDriver::ServiceManager
       def launch
         @executable_path ||= env_path || find_driver_path
         ServiceManager.new(self).tap(&:start)
       end
 
+      # @rbs () -> bool
       def shutdown_supported
         self.class::SHUTDOWN_SUPPORTED
       end
@@ -101,6 +105,7 @@ module Selenium
         DriverFinder.new(default_options, self).driver_path
       end
 
+      # @rbs () -> nil
       def env_path
         ENV.fetch(self.class::DRIVER_PATH_ENV_KEY, nil)
       end

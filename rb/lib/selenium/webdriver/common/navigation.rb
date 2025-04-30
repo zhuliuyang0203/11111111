@@ -20,6 +20,7 @@
 module Selenium
   module WebDriver
     class Navigation
+      # @rbs (Selenium::WebDriver::Remote::Bridge) -> void
       def initialize(bridge)
         @bridge = bridge
       end
@@ -28,6 +29,7 @@ module Selenium
       # Navigate to the given URL
       #
 
+      # @rbs (String) -> void
       def to(url)
         @bridge.get url
       end

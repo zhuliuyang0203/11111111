@@ -41,6 +41,7 @@ module Selenium
         # @return [Driver]
         #
 
+        # @rbs (Symbol, ?Hash[untyped, untyped]) -> Selenium::WebDriver::Chrome::Driver
         def for(browser, opts = {})
           case browser
           when :chrome, :chrome_headless_shell
@@ -68,6 +69,7 @@ module Selenium
       # @api private
       #
 
+      # @rbs (?bridge: nil, ?listener: nil, **Hash[untyped, untyped] | URI::HTTP) -> void
       def initialize(bridge: nil, listener: nil, **opts)
         @devtools = nil
         bridge ||= create_bridge(**opts)
@@ -95,6 +97,7 @@ module Selenium
       # @see Navigation
       #
 
+      # @rbs () -> Selenium::WebDriver::Navigation
       def navigate
         @navigate ||= WebDriver::Navigation.new(bridge)
       end
@@ -177,6 +180,7 @@ module Selenium
       # Quit the browser
       #
 
+      # @rbs () -> nil
       def quit
         bridge.quit
       ensure
@@ -225,6 +229,7 @@ module Selenium
       #   The value returned from the script.
       #
 
+      # @rbs (String, *nil) -> String
       def execute_script(script, *args)
         bridge.execute_script(script, *args)
       end
@@ -319,6 +324,7 @@ module Selenium
 
       attr_reader :bridge
 
+      # @rbs (caps: Hash[untyped, untyped], url: URI::HTTP, ?http_client: nil) -> Selenium::WebDriver::Remote::Bridge
       def create_bridge(caps:, url:, http_client: nil)
         klass = caps['webSocketUrl'] ? Remote::BiDiBridge : Remote::Bridge
         klass.new(http_client: http_client, url: url).tap do |bridge|
@@ -326,6 +332,7 @@ module Selenium
         end
       end
 
+      # @rbs (Selenium::WebDriver::Chrome::Service) -> URI::HTTP
       def service_url(service)
         @service_manager = service.launch
         @service_manager.uri
@@ -335,6 +342,7 @@ module Selenium
         bridge.screenshot
       end
 
+      # @rbs (Symbol) -> Array[untyped]
       def add_extensions(browser)
         extensions = case browser
                      when :chrome, :chrome_headless_shell, :msedge, :microsoftedge
