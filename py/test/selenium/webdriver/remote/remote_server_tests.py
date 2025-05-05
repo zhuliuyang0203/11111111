@@ -15,5 +15,30 @@
 # specific language governing permissions and limitations
 # under the License.
 
+import os
 
-__version__ = "4.33.0.202505022255"
+import pytest
+
+from selenium.webdriver.remote.server import Server
+
+
+@pytest.fixture
+def standalone_server():
+    server = Server()
+    server_path = server.download_if_needed()
+    remove_file(server_path)
+    yield server
+    remove_file(server_path)
+
+
+def remove_file(path):
+    try:
+        os.remove(path)
+    except FileNotFoundError:
+        pass
+
+
+def test_download_latest_server(standalone_server):
+    server_path = standalone_server.download_if_needed()
+    assert os.path.exists(server_path)
+    assert os.path.getsize(server_path) > 0
