@@ -58,6 +58,21 @@ def test_should_still_fail_to_find_an_element_with_explicit_wait(driver, pages):
         WebDriverWait(driver, 0.01).until(EC.presence_of_element_located((By.ID, "box0")))
 
 
+def test_should_still_fail_to_find_an_element_with_explicit_wait_with_custom_timeout_messages(driver, pages):
+    pages.load("dynamic.html")
+    with pytest.raises(TimeoutException) as exception:
+        WebDriverWait(driver, 0.01).until(
+            EC.presence_of_element_located((By.ID, "box0")), message=lambda: "custom timeout message"
+        )
+    assert "custom timeout message" in str(exception.value)
+
+    with pytest.raises(TimeoutException) as exception:
+        WebDriverWait(driver, 0.01).until(
+            EC.presence_of_element_located((By.ID, "box0")), message="custom timeout message"
+        )
+    assert "custom timeout message" in str(exception.value)
+
+
 def test_should_explicitly_wait_until_at_least_one_element_is_found_when_searching_for_many(driver, pages):
     pages.load("dynamic.html")
     add = driver.find_element(By.ID, "adder")

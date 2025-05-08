@@ -16,6 +16,7 @@
 # under the License.
 
 import time
+from typing import Any
 from typing import Callable
 from typing import Generic
 from typing import Literal
@@ -92,7 +93,9 @@ class WebDriverWait(Generic[D]):
     def __repr__(self) -> str:
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self._driver.session_id}")>'
 
-    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = "") -> T:
+    def until(
+        self, method: Callable[[D], Union[Literal[False], T]], message: Union[str, Callable[[Any], str]] = ""
+    ) -> T:
         """Wait until the method returns a value that is not False.
 
         Calls the method provided with the driver as an argument until the
@@ -103,7 +106,7 @@ class WebDriverWait(Generic[D]):
         method: callable(WebDriver)
             - A callable object that takes a WebDriver instance as an argument.
 
-        message: str
+        message: Union[str, Callable[[Any], str]]
             - Optional message for :exc:`TimeoutException`
 
         Return:
@@ -143,9 +146,13 @@ class WebDriverWait(Generic[D]):
             if time.monotonic() > end_time:
                 break
             time.sleep(self._poll)
-        raise TimeoutException(message, screen, stacktrace)
 
-    def until_not(self, method: Callable[[D], T], message: str = "") -> Union[T, Literal[True]]:
+        final_msg = message() if callable(message) else message
+        raise TimeoutException(final_msg, screen, stacktrace)
+
+    def until_not(
+        self, method: Callable[[D], T], message: Union[str, Callable[[Any], str]] = ""
+    ) -> Union[T, Literal[True]]:
         """Wait until the method returns a value that is not False.
 
         Calls the method provided with the driver as an argument until the
@@ -156,7 +163,7 @@ class WebDriverWait(Generic[D]):
         method: callable(WebDriver)
             - A callable object that takes a WebDriver instance as an argument.
 
-        message: str
+        message: Union[str, Callable[[Any], str]]
             - Optional message for :exc:`TimeoutException`
 
         Return:
@@ -192,4 +199,5 @@ class WebDriverWait(Generic[D]):
             if time.monotonic() > end_time:
                 break
             time.sleep(self._poll)
-        raise TimeoutException(message)
+        final_msg = message() if callable(message) else message
+        raise TimeoutException(final_msg)
