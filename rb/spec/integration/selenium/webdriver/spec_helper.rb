@@ -45,7 +45,7 @@ end
 module TraceHelper
   # @rbs () -> RBS::Trace
   def self.trace
-    @trace ||= unless GlobalTestEnv.ci?
+    @trace ||= unless WebDriver::Platform.ci
                  require 'rbs-trace'
                  RBS::Trace.new
                end
