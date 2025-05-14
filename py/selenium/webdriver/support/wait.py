@@ -93,9 +93,7 @@ class WebDriverWait(Generic[D]):
     def __repr__(self) -> str:
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self._driver.session_id}")>'
 
-    def until(
-        self, method: Callable[[D], Union[Literal[False], T]], message: Union[str, Callable[[], str]] = ""
-    ) -> T:
+    def until(self, method: Callable[[D], Union[Literal[False], T]], message: Union[str, Callable[[], str]] = "") -> T:
         """Wait until the method returns a value that is not False.
 
         Calls the method provided with the driver as an argument until the
