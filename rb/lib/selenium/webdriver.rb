@@ -21,6 +21,7 @@ require 'tmpdir'
 require 'fileutils'
 require 'date'
 require 'json'
+require 'set'
 require 'uri'
 require 'net/http'
 
@@ -30,20 +31,20 @@ require 'selenium/webdriver/version'
 
 module Selenium
   module WebDriver
-    Point = Struct.new(:x, :y)
+    Point     = Struct.new(:x, :y)
     Dimension = Struct.new(:width, :height)
     Rectangle = Struct.new(:x, :y, :width, :height)
 
-    autoload :BiDi, 'selenium/webdriver/bidi'
-    autoload :Chromium, 'selenium/webdriver/chromium'
-    autoload :Chrome, 'selenium/webdriver/chrome'
-    autoload :DevTools, 'selenium/webdriver/devtools'
-    autoload :Edge, 'selenium/webdriver/edge'
-    autoload :Firefox, 'selenium/webdriver/firefox'
-    autoload :IE, 'selenium/webdriver/ie'
-    autoload :Remote, 'selenium/webdriver/remote'
-    autoload :Safari, 'selenium/webdriver/safari'
-    autoload :Support, 'selenium/webdriver/support'
+    autoload :BiDi,       'selenium/webdriver/bidi'
+    autoload :Chromium,   'selenium/webdriver/chromium'
+    autoload :Chrome,     'selenium/webdriver/chrome'
+    autoload :DevTools,   'selenium/webdriver/devtools'
+    autoload :Edge,       'selenium/webdriver/edge'
+    autoload :Firefox,    'selenium/webdriver/firefox'
+    autoload :IE,         'selenium/webdriver/ie'
+    autoload :Remote,     'selenium/webdriver/remote'
+    autoload :Safari,     'selenium/webdriver/safari'
+    autoload :Support,    'selenium/webdriver/support'
 
     # @api private
 
@@ -84,8 +85,8 @@ module Selenium
     # @see Selenium::WebDriver::Support::AbstractEventListener
     #
 
-    def self.for(*)
-      WebDriver::Driver.for(*)
+    def self.for(*args)
+      WebDriver::Driver.for(*args)
     end
 
     #
@@ -94,9 +95,9 @@ module Selenium
     # @return [Logger]
     #
 
-    def self.logger(**)
+    def self.logger(**opts)
       level = $DEBUG || ENV.key?('DEBUG') ? :debug : :info
-      @logger ||= WebDriver::Logger.new('Selenium', default_level: level, **)
+      @logger ||= WebDriver::Logger.new('Selenium', default_level: level, **opts)
     end
   end # WebDriver
 end # Selenium
