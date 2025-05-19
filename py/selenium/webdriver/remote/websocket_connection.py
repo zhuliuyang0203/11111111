@@ -64,8 +64,10 @@ class WebSocketConnection:
         self._wait_until(lambda: current_id in self._messages)
         response = self._messages.pop(current_id)
 
-        if "error" in response:
-            raise Exception(response["error"])
+        error = response["error"]
+        if "message" in response:
+            error_msg = f"{error}: {response['message']}"
+            raise Exception(error_msg)
         else:
             result = response["result"]
             return self._deserialize_result(result, command)
