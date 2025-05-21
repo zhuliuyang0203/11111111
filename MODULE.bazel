@@ -108,7 +108,7 @@ oci.pull(
 )
 oci.pull(
     name = "firefox_standalone",
-    digest = "sha256:b6d8279268b3183d0d33e667e82fec1824298902f77718764076de763673124f",
+    digest = "sha256:40c0aa58b61f51aadda3dc0f92f7b8fa02658bb1cf8a9293b8cd7e5c7913d506",
     image = "index.docker.io/selenium/standalone-firefox",
 )
 oci.pull(
