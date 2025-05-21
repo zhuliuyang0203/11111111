@@ -97,6 +97,7 @@ TEST_DEPS = [
     requirement("sortedcontainers"),
     requirement("sniffio"),
     requirement("zipp"),
+    "@rules_python//python/runfiles",
 ]
 
 copy_file(

@@ -19,6 +19,7 @@ import base64
 import os
 import pytest
 
+from python.runfiles import Runfiles
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -27,7 +28,9 @@ EXTENSION_ID = "webextensions-selenium-example-v3@example.com"
 EXTENSION_PATH = "webextensions-selenium-example-signed"
 EXTENSION_ARCHIVE_PATH = "webextensions-selenium-example.xpi"
 
-extensions = os.path.abspath("../../../../../../test/extensions/")
+# Use bazel Runfiles to locate the test extension directory
+r = Runfiles.Create()
+extensions = r.Rlocation("selenium/py/test/extensions")
 
 
 def install_extension(driver, **kwargs):
