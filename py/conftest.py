@@ -85,13 +85,6 @@ def pytest_addoption(parser):
     )
 
 
-def pytest_configure(config):
-    """Add custom markers for tests."""
-    config.addinivalue_line(
-        "markers", "webextension: mark test as requiring webextension support (for chromium based browsers)"
-    )
-
-
 def pytest_ignore_collect(collection_path, config):
     drivers_opt = config.getoption("drivers")
     _drivers = set(drivers).difference(drivers_opt or drivers)
