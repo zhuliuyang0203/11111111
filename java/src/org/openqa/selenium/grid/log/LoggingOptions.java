@@ -77,8 +77,14 @@ public class LoggingOptions {
       level = Level.parse(configLevel.toUpperCase(Locale.ROOT));
     } catch (IllegalArgumentException e) {
       // Logger is not configured yet
-      new ConfigException("Unable to determine log level from " + configLevel +
-       ". Using default " + DEFAULT_LOG_LEVEL).printStackTrace();
+      new ConfigException(
+              "Unable to determine log level from "
+                  + configLevel
+                  + ". Using default "
+                  + DEFAULT_LOG_LEVEL
+                  + ". Available log levels can be found at"
+                  + " https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html")
+          .printStackTrace();
     }
   }
 
