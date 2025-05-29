@@ -41,6 +41,7 @@ from selenium.common.exceptions import (
 )
 from selenium.webdriver.common.bidi.browser import Browser
 from selenium.webdriver.common.bidi.browsing_context import BrowsingContext
+from selenium.webdriver.common.bidi.emulation import Emulation
 from selenium.webdriver.common.bidi.network import Network
 from selenium.webdriver.common.bidi.script import Script
 from selenium.webdriver.common.bidi.session import Session
@@ -265,6 +266,7 @@ class WebDriver(BaseWebDriver):
         self._browsing_context = None
         self._storage = None
         self._webextension = None
+        self._emulation = None
 
     def __repr__(self):
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self.session_id}")>'
@@ -1360,6 +1362,28 @@ class WebDriver(BaseWebDriver):
             self._webextension = WebExtension(self._websocket_connection)
 
         return self._webextension
+
+    @property
+    def emulation(self):
+        """Returns an emulation module object for BiDi emulation commands.
+
+        Returns:
+        --------
+        Emulation: an object containing access to BiDi emulation commands.
+
+        Examples:
+        ---------
+        >>> from selenium.webdriver.common.bidi.emulation import GeolocationCoordinates
+        >>> coordinates = GeolocationCoordinates(37.7749, -122.4194)
+        >>> driver.emulation.set_geolocation_override(coordinates=coordinates, contexts=[context_id])
+        """
+        if not self._websocket_connection:
+            self._start_bidi()
+
+        if self._emulation is None:
+            self._emulation = Emulation(self._websocket_connection)
+
+        return self._emulation
 
     def _get_cdp_details(self):
         import json
