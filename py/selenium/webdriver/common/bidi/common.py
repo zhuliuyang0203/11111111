@@ -16,6 +16,7 @@
 # under the License.
 from typing import Generator, Optional
 
+
 def command_builder(method: str, params: Optional[dict] = None) -> Generator[dict, dict, dict]:
     """Build a command iterator to send to the BiDi protocol.
 
