@@ -14,7 +14,9 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-from typing import Generator, Optional
+
+from collections.abc import Generator
+from typing import Optional
 
 
 def command_builder(method: str, params: Optional[dict] = None) -> Generator[dict, dict, dict]:
