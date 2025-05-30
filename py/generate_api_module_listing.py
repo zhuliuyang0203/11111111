@@ -1,13 +1,28 @@
-#!/usr/bin/env python3
+# Licensed to the Software Freedom Conservancy (SFC) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The SFC licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
 #
-# This script recursively scans the `selenium` package directory to find all
-# modules, then generates the `py/docs/source/api.rst` file containing a
-# listing of all modules in separate sections. The `api.rst` file is later
-# used by `sphinx-autogen` to generate sphinx autodoc stub pages used in the
-# Python API documentation. See `py/tox.ini` for how it is invoked.
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
 
+# -----------------------------------------------------------------
+# This script recursively scans the `selenium` package directory
+# to find all modules, then generates the `py/docs/source/api.rst`
+# file containing a listing of all modules in separate sections.
+# The `api.rst` file is later used by `sphinx-autogen` to generate
+# sphinx autodoc stub pages used in the Python API documentation.
+# See `py/tox.ini` for how it is invoked.
 
-import importlib.util
 import os
 import site
 
@@ -33,11 +48,7 @@ if __name__ == "__main__":
     output_file = os.path.join("docs", "source", "api.rst")
     print(f"generating module list for sphinx autodoc in: {output_file}\n")
     modules = find_modules(package_name)
-    base_modules = [
-        mod
-        for mod in sorted(set(module.rsplit(".", 1)[0] for module in modules))
-        if mod != package_name
-    ]
+    base_modules = [mod for mod in sorted(set(module.rsplit(".", 1)[0] for module in modules)) if mod != package_name]
     print("found sections:")
     for base_module in base_modules:
         print(f"    {base_module}")
@@ -73,7 +84,7 @@ Selenium Documentation
                 if base_module in module:
                     f.write(f"   {module}\n")
         f.write(
-            f"""
+            """
 Indices and tables
 
 * :ref:`genindex`
