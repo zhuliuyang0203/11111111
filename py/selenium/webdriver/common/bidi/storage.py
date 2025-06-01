@@ -87,9 +87,9 @@ class Cookie:
         value = BytesValue(data.get("value", {}).get("type"), data.get("value", {}).get("value"))
 
         return cls(
-            name = str(data.get("name") or ""),
+            name=str(data.get("name") or ""),
             value=value,
-            domain = str(data.get("domain") or ""),
+            domain=str(data.get("domain") or ""),
             path=data.get("path"),
             size=data.get("size"),
             http_only=data.get("httpOnly"),
@@ -248,7 +248,7 @@ class PartialCookie:
         -------
             Dict: A dictionary representation of the PartialCookie.
         """
-        result: dict[str, Any]  = {
+        result: dict[str, Any] = {
             "name": self.name,
             "value": self.value.to_dict(),
             "domain": self.domain,
