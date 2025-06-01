@@ -15,8 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Optional, Union
-
+from typing import Optional, Union, Any
 from selenium.webdriver.common.bidi.common import command_builder
 
 
@@ -88,9 +87,9 @@ class Cookie:
         value = BytesValue(data.get("value", {}).get("type"), data.get("value", {}).get("value"))
 
         return cls(
-            name=data.get("name"),
+            name = str(data.get("name") or ""),
             value=value,
-            domain=data.get("domain"),
+            domain = str(data.get("domain") or ""),
             path=data.get("path"),
             size=data.get("size"),
             http_only=data.get("httpOnly"),
@@ -125,14 +124,14 @@ class CookieFilter:
         self.same_site = same_site
         self.expiry = expiry
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict[str, Any]:
         """Converts the CookieFilter to a dictionary.
 
         Returns:
         -------
             Dict: A dictionary representation of the CookieFilter.
         """
-        result = {}
+        result: dict[str, Any] = {}
         if self.name is not None:
             result["name"] = self.name
         if self.value is not None:
@@ -242,14 +241,14 @@ class PartialCookie:
         self.same_site = same_site
         self.expiry = expiry
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict[str, Any]:
         """Converts the PartialCookie to a dictionary.
 
         Returns:
         -------
             Dict: A dictionary representation of the PartialCookie.
         """
-        result = {
+        result: dict[str, Any]  = {
             "name": self.name,
             "value": self.value.to_dict(),
             "domain": self.domain,
