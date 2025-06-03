@@ -110,7 +110,7 @@ class BrowsingContextInfo:
         children = None
         raw_children = json.get("children")
         if raw_children is not None and isinstance(raw_children, list):
-            children = [BrowsingContextInfo.from_json(child) for child in raw_children]
+            children = [BrowsingContextInfo.from_json(child) for child in raw_children if isinstance(child, dict)]
 
         return cls(
             context=str(json.get("context", "")),
@@ -714,7 +714,8 @@ class BrowsingContext:
         event_obj = BrowsingContextEvent(event_name)
 
         self.conn.remove_callback(event_obj, callback_id)
-        self.subscriptions[event_name].remove(callback_id)
+        if event_name in self.subscriptions and callback_id in self.subscriptions[event_name]:
+            self.subscriptions[event_name].remove(callback_id)
         if len(self.subscriptions[event_name]) == 0:
             params = {"events": [event_name]}
             session = Session(self.conn)
