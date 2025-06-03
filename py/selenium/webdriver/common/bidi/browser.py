@@ -151,9 +151,9 @@ class ClientWindowInfo:
             if not isinstance(x, int):
                 raise ValueError(f"x must be an integer, got {type(x).__name__}")
 
-            y = data.get("y")
+            y = data["y"]
             if not isinstance(y, int):
-                raise ValueError("y must be an integer")
+                raise ValueError(f"y must be an integer, got {type(y).__name__}")
 
             active = data.get("active")
             if not isinstance(active, bool):
