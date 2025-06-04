@@ -21,7 +21,6 @@ from selenium.webdriver.common.window import WindowTypes
 
 
 def get_browser_geolocation(driver, user_context=None):
-
     origin = driver.execute_script("return window.location.origin;")
     driver.permissions.set_permission("geolocation", PermissionState.GRANTED, origin, user_context=user_context)
 
