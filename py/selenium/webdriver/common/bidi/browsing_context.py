@@ -15,6 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
+import warnings
 from typing import Any, Callable, Optional, Union
 
 from selenium.webdriver.common.bidi.common import command_builder
@@ -110,7 +111,12 @@ class BrowsingContextInfo:
         children = None
         raw_children = json.get("children")
         if raw_children is not None and isinstance(raw_children, list):
-            children = [BrowsingContextInfo.from_json(child) for child in raw_children if isinstance(child, dict)]
+            children = []
+            for child in raw_children:
+                if isinstance(child, dict):
+                    children.append(BrowsingContextInfo.from_json(child))
+                else:
+                    warnings.warn(f"Unexpected child type in browsing context: {type(child)}")
 
         return cls(
             context=str(json.get("context", "")),
@@ -187,12 +193,32 @@ class UserPromptOpenedParams:
         -------
             UserPromptOpenedParams: A new instance of UserPromptOpenedParams.
         """
+        context = json.get("context")
+        if context is None or not isinstance(context, str):
+            raise ValueError("context is required and must be a string")
+        
+        handler = json.get("handler")
+        if handler is None or not isinstance(handler, str):
+            raise ValueError("handler is required and must be a string")
+        
+        message = json.get("message")
+        if message is None or not isinstance(message, str):
+            raise ValueError("message is required and must be a string")
+        
+        type_value = json.get("type")
+        if type_value is None or not isinstance(type_value, str):
+            raise ValueError("type is required and must be a string")
+        
+        default_value = json.get("defaultValue")
+        if default_value is not None and not isinstance(default_value, str):
+            raise ValueError("defaultValue must be a string if provided")
+
         return cls(
-            context=str(json.get("context", "")),
-            handler=str(json.get("handler", "")),
-            message=str(json.get("message", "")),
-            type=str(json.get("type", "")),
-            default_value=str(json.get("defaultValue", "")),
+            context=context,
+            handler=handler,
+            message=message,
+            type=type_value,
+            default_value=default_value,
         )
 
 
@@ -714,13 +740,15 @@ class BrowsingContext:
         event_obj = BrowsingContextEvent(event_name)
 
         self.conn.remove_callback(event_obj, callback_id)
-        if event_name in self.subscriptions and callback_id in self.subscriptions[event_name]:
-            self.subscriptions[event_name].remove(callback_id)
-        if len(self.subscriptions[event_name]) == 0:
-            params = {"events": [event_name]}
-            session = Session(self.conn)
-            self.conn.execute(session.unsubscribe(**params))
-            del self.subscriptions[event_name]
+        if event_name in self.subscriptions:
+            callbacks = self.subscriptions[event_name]
+            if callback_id in callbacks:
+                callbacks.remove(callback_id)
+                if not callbacks:
+                    params = {"events": [event_name]}
+                    session = Session(self.conn)
+                    self.conn.execute(session.unsubscribe(**params))
+                    del self.subscriptions[event_name]
 
     def clear_event_handlers(self) -> None:
         """Clear all event handlers from the browsing context."""
