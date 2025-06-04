@@ -15,15 +15,15 @@
 # specific language governing permissions and limitations
 # under the License.
 
-import pytest
-
 from selenium.webdriver.common.bidi.emulation import Emulation, GeolocationCoordinates
+from selenium.webdriver.common.bidi.permissions import PermissionState
 from selenium.webdriver.common.window import WindowTypes
 
 
-def get_browser_geolocation(driver):
-    # TODO: use the permissions module to grant geolocation permission when its implemented
-    # currently it needs to be granted manually in the browser GUI window, so CI will fail
+def get_browser_geolocation(driver, user_context=None):
+
+    origin = driver.execute_script("return window.location.origin;")
+    driver.permissions.set_permission("geolocation", PermissionState.GRANTED, origin, user_context=user_context)
 
     return driver.execute_async_script("""
         const callback = arguments[arguments.length - 1];
@@ -84,7 +84,7 @@ def test_set_geolocation_override_with_coordinates_in_user_context(driver, pages
 
     driver.emulation.set_geolocation_override(coordinates=coords, user_contexts=[user_context])
 
-    result = get_browser_geolocation(driver)
+    result = get_browser_geolocation(driver, user_context=user_context)
 
     assert "error" not in result, f"Geolocation error: {result.get('error')}"
     assert abs(result["latitude"] - coords.latitude) < 0.0001, f"Latitude mismatch: {result['latitude']}"
@@ -171,7 +171,7 @@ def test_set_geolocation_override_with_multiple_user_contexts(driver, pages):
     # Test first user context
     driver.switch_to.window(context1_id)
     pages.load("blank.html")
-    result1 = get_browser_geolocation(driver)
+    result1 = get_browser_geolocation(driver, user_context=user_context1)
 
     assert "error" not in result1, f"Geolocation error in user_context1: {result1.get('error')}"
     assert abs(result1["latitude"] - coords.latitude) < 0.0001, (
@@ -185,7 +185,7 @@ def test_set_geolocation_override_with_multiple_user_contexts(driver, pages):
     # Test second user context
     driver.switch_to.window(context2_id)
     pages.load("blank.html")
-    result2 = get_browser_geolocation(driver)
+    result2 = get_browser_geolocation(driver, user_context=user_context2)
 
     assert "error" not in result2, f"Geolocation error in user_context2: {result2.get('error')}"
     assert abs(result2["latitude"] - coords.latitude) < 0.0001, (
@@ -202,8 +202,8 @@ def test_set_geolocation_override_with_multiple_user_contexts(driver, pages):
     driver.browser.remove_user_context(user_context2)
 
 
-# the error param returns "invalid argument: Invalid input in "coordinates" error, might be bug from the spec/browser
-# @pytest.mark.xfail_edge
+# the error param returns "invalid argument: Invalid input in "coordinates" error, Chrome 138 fixes this
+# @pytest.mark.xfail_firefox
 # def test_set_geolocation_override_with_error(driver):
 #     """Test setting geolocation override with error."""
 #     context_id = driver.current_window_handle
@@ -211,3 +211,5 @@ def test_set_geolocation_override_with_multiple_user_contexts(driver, pages):
 #     error = GeolocationPositionError()
 #
 #     driver.emulation.set_geolocation_override(error=error, contexts=[context_id])
+#
+#     # assert "error" after inspecting the get_browser_geolocation script's response
