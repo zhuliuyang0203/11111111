@@ -28,7 +28,7 @@ class KeyActions(Interaction):
         if source is None:
             source = KeyInput(KEY)
         self.input_source = source
-        super().__init__(KEY)
+        super().__init__(self.input_source)
 
     def key_down(self, letter: str) -> KeyActions:
         return self._key_action("create_key_down", letter)
