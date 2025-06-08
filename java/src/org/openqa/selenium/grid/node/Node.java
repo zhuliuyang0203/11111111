@@ -275,7 +275,7 @@ public abstract class Node implements HasReadyState, Routable {
   public abstract HealthCheck getHealthCheck();
 
   public List<SessionHistoryEntry> getSessionHistory() {
-    return new ArrayList<>();
+    return Collections.emptyList();
   }
 
   public Duration getSessionTimeout() {
