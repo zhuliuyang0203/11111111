@@ -40,13 +40,11 @@ get stuck, there are several ways to [Get Help](https://www.selenium.dev/support
 [![Releases downloads](https://img.shields.io/github/downloads/SeleniumHQ/selenium/total.svg)](https://github.com/SeleniumHQ/selenium/releases)
 
 ## Contributing
-
 Please read [CONTRIBUTING.md](https://github.com/SeleniumHQ/selenium/blob/trunk/CONTRIBUTING.md)
 before submitting your pull requests.
 
 
 ## Installing
-
 These are the requirements to create your own local dev environment to contribute to Selenium.
 
 ### All Platforms
