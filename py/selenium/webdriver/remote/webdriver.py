@@ -30,7 +30,10 @@ from abc import ABCMeta
 from base64 import b64decode, urlsafe_b64encode
 from contextlib import asynccontextmanager, contextmanager
 from importlib import import_module
-from typing import Any, Optional, Union
+from typing import Any, Optional, Union, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from selenium.webdriver.support.relative_locator import RelativeBy
 
 from selenium.common.exceptions import (
     InvalidArgumentException,
@@ -46,7 +49,7 @@ from selenium.webdriver.common.bidi.script import Script
 from selenium.webdriver.common.bidi.session import Session
 from selenium.webdriver.common.bidi.storage import Storage
 from selenium.webdriver.common.bidi.webextension import WebExtension
-from selenium.webdriver.common.by import By
+from selenium.webdriver.common.by import By, ByType
 from selenium.webdriver.common.options import ArgOptions, BaseOptions
 from selenium.webdriver.common.print_page_options import PrintOptions
 from selenium.webdriver.common.timeouts import Timeouts
@@ -55,8 +58,6 @@ from selenium.webdriver.common.virtual_authenticator import (
     VirtualAuthenticatorOptions,
     required_virtual_authenticator,
 )
-from selenium.webdriver.support.relative_locator import RelativeBy
-
 from ..common.fedcm.dialog import Dialog
 from .bidi_connection import BidiConnection
 from .client_config import ClientConfig
@@ -877,7 +878,7 @@ class WebDriver(BaseWebDriver):
         """
         _ = self.execute(Command.SET_TIMEOUTS, timeouts._to_json())["value"]
 
-    def find_element(self, by=By.ID, value: Optional[str] = None) -> WebElement:
+    def find_element(self, by: "Union[ByType, RelativeBy]" = By.ID, value: Optional[str] = None) -> WebElement:
         """Find an element given a By strategy and locator.
 
         Parameters:
@@ -913,7 +914,7 @@ class WebDriver(BaseWebDriver):
 
         return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
 
-    def find_elements(self, by=By.ID, value: Optional[str] = None) -> list[WebElement]:
+    def find_elements(self, by: "Union[ByType, RelativeBy]" = By.ID, value: Optional[str] = None) -> list[WebElement]:
         """Find elements given a By strategy and locator.
 
         Parameters:
