@@ -63,7 +63,6 @@ import java.util.Optional;
 import java.util.Queue;
 import java.util.Set;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
@@ -160,7 +159,6 @@ public class LocalNode extends Node implements Closeable {
   private final Optional<Path> statusFilePath;
   private final Optional<Path> sessionHistoryFilePath;
   private final Queue<SessionHistoryEntry> sessionHistory = new ConcurrentLinkedQueue<>();
-  private final Map<SessionId, Instant> sessionStartTimes = new ConcurrentHashMap<>();
 
   protected LocalNode(
       Tracer tracer,
@@ -308,6 +306,7 @@ public class LocalNode extends Node implements Closeable {
 
     bus.addListener(SessionStartedEvent.listener(this::recordSessionStart));
     bus.addListener(SessionClosedEvent.listener(this::recordSessionStop));
+    bus.addListener(NodeHeartBeatEvent.listener(this::cleanupSessionHistory));
 
     shutdown =
         () -> {
@@ -1138,33 +1137,58 @@ public class LocalNode extends Node implements Closeable {
       return;
     }
     Instant startTime = Instant.now();
-    sessionStartTimes.put(sessionId, startTime);
     sessionHistory.add(new SessionHistoryEntry(sessionId, startTime, null));
     writeSessionHistoryToFile();
   }
 
   private void recordSessionStop(SessionId sessionId) {
-    if (!isSessionOwner(sessionId)) {
+    Instant stopTime = Instant.now();
+    // Find and update the existing history entry
+    sessionHistory.stream()
+        .filter(entry -> entry.getSessionId().equals(sessionId))
+        .findFirst()
+        .ifPresent(
+            entry -> {
+              entry.setStopTime(stopTime);
+              writeSessionHistoryToFile();
+            });
+  }
+
+  private void cleanupSessionHistory(NodeStatus status) {
+    int maxHistorySize = 100;
+    if (!status.getNodeId().equals(getId()) || sessionHistory.size() < maxHistorySize) {
       return;
     }
-    Instant stopTime = Instant.now();
-    Instant startTime = sessionStartTimes.remove(sessionId);
-    if (startTime != null) {
-      // Find and update the existing history entry
-      sessionHistory.stream()
-          .filter(entry -> entry.getSessionId().equals(sessionId))
-          .findFirst()
-          .ifPresent(entry -> entry.setStopTime(stopTime));
-      writeSessionHistoryToFile();
-    }
+
+    // Keep only the last 100 completed sessions
+    List<SessionHistoryEntry> completedSessions =
+        sessionHistory.stream()
+            .filter(entry -> entry.getStopTime() != null)
+            .sorted(
+                (a, b) ->
+                    b.getStartTime().compareTo(a.getStartTime())) // Sort by start time descending
+            .limit(100)
+            .collect(Collectors.toList());
+
+    // Keep all ongoing sessions
+    List<SessionHistoryEntry> ongoingSessions =
+        sessionHistory.stream()
+            .filter(entry -> entry.getStopTime() == null)
+            .collect(Collectors.toList());
+
+    // Clear and rebuild the history queue
+    sessionHistory.clear();
+    sessionHistory.addAll(completedSessions);
+    sessionHistory.addAll(ongoingSessions);
+
+    // Write the cleaned history to file
+    writeSessionHistoryToFile();
   }
 
   private void writeSessionHistoryToFile() {
     if (sessionHistoryFilePath.isPresent()) {
       try {
         List<SessionHistoryEntry> sortedHistory = new ArrayList<>(sessionHistory);
-        sortedHistory.sort((a, b) -> a.getStartTime().compareTo(b.getStartTime()));
-
         String historyJson = JSON.toJson(sortedHistory);
         Files.write(
             sessionHistoryFilePath.get(),

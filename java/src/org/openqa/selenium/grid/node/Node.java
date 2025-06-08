@@ -29,6 +29,7 @@ import com.google.common.collect.ImmutableMap;
 import java.io.IOException;
 import java.net.URI;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.ServiceLoader;
@@ -271,9 +272,11 @@ public abstract class Node implements HasReadyState, Routable {
 
   public abstract NodeStatus getStatus();
 
-  public abstract List<SessionHistoryEntry> getSessionHistory();
-
   public abstract HealthCheck getHealthCheck();
+
+  public List<SessionHistoryEntry> getSessionHistory() {
+    return new ArrayList<>();
+  }
 
   public Duration getSessionTimeout() {
     return sessionTimeout;
