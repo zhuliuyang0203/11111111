@@ -15,7 +15,6 @@
 # specific language governing permissions and limitations
 # under the License.
 import pytest
-
 from selenium.webdriver.support.ui import WebDriverWait
 
 
@@ -38,3 +37,16 @@ def test_check_console_messages(driver, pages, recwarn):
     assert console_api_calls[0].args[0].value == "I love cheese"
     assert console_api_calls[1].type_ == "error"
     assert console_api_calls[1].args[0].value == "I love bread"
+
+
+@pytest.mark.xfail_safari
+@pytest.mark.xfail_firefox
+@pytest.mark.xfail_remote
+def test_check_start_twice(clean_driver, clean_options, clean_service):
+    driver1 = clean_driver(options=clean_options, service=clean_service)
+    devtools1, connection1 = driver1.start_devtools()
+    driver1.quit()
+
+    driver2 = clean_driver(options=clean_options, service=clean_service)
+    devtools2, connection2 = driver2.start_devtools()
+    driver2.quit()
