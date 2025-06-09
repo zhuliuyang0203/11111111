@@ -16,7 +16,7 @@
 # under the License.
 
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 
 from selenium.webdriver.common.bidi.common import command_builder
 
@@ -55,7 +55,7 @@ class RealmInfo:
     sandbox: Optional[str] = None
 
     @classmethod
-    def from_json(cls, json: dict) -> "RealmInfo":
+    def from_json(cls, json: Dict[str, Any]) -> "RealmInfo":
         """Creates a RealmInfo instance from a dictionary.
 
         Parameters:
@@ -66,10 +66,17 @@ class RealmInfo:
         -------
             RealmInfo: A new instance of RealmInfo.
         """
+        if "realm" not in json:
+            raise ValueError("Missing required field 'realm' in RealmInfo")
+        if "origin" not in json:
+            raise ValueError("Missing required field 'origin' in RealmInfo")
+        if "type" not in json:
+            raise ValueError("Missing required field 'type' in RealmInfo")
+
         return cls(
-            realm=json.get("realm"),
-            origin=json.get("origin"),
-            type=json.get("type"),
+            realm=json["realm"],
+            origin=json["origin"],
+            type=json["type"],
             context=json.get("context"),
             sandbox=json.get("sandbox"),
         )
@@ -83,7 +90,7 @@ class Source:
     context: Optional[str] = None
 
     @classmethod
-    def from_json(cls, json: dict) -> "Source":
+    def from_json(cls, json: Dict[str, Any]) -> "Source":
         """Creates a Source instance from a dictionary.
 
         Parameters:
@@ -94,8 +101,11 @@ class Source:
         -------
             Source: A new instance of Source.
         """
+        if "realm" not in json:
+            raise ValueError("Missing required field 'realm' in Source")
+
         return cls(
-            realm=json.get("realm"),
+            realm=json["realm"],
             context=json.get("context"),
         )
 
@@ -110,7 +120,7 @@ class EvaluateResult:
     exception_details: Optional[dict] = None
 
     @classmethod
-    def from_json(cls, json: dict) -> "EvaluateResult":
+    def from_json(cls, json: Dict[str, Any]) -> "EvaluateResult":
         """Creates an EvaluateResult instance from a dictionary.
 
         Parameters:
@@ -121,9 +131,14 @@ class EvaluateResult:
         -------
             EvaluateResult: A new instance of EvaluateResult.
         """
+        if "realm" not in json:
+            raise ValueError("Missing required field 'realm' in EvaluateResult")
+        if "type" not in json:
+            raise ValueError("Missing required field 'type' in EvaluateResult")
+
         return cls(
-            type=json.get("type"),
-            realm=json.get("realm"),
+            type=json["type"],
+            realm=json["realm"],
             result=json.get("result"),
             exception_details=json.get("exceptionDetails"),
         )
@@ -140,7 +155,7 @@ class ScriptMessage:
         self.source = source
 
     @classmethod
-    def from_json(cls, json: dict) -> "ScriptMessage":
+    def from_json(cls, json: Dict[str, Any]) -> "ScriptMessage":
         """Creates a ScriptMessage instance from a dictionary.
 
         Parameters:
@@ -151,10 +166,17 @@ class ScriptMessage:
         -------
             ScriptMessage: A new instance of ScriptMessage.
         """
+        if "channel" not in json:
+            raise ValueError("Missing required field 'channel' in ScriptMessage")
+        if "data" not in json:
+            raise ValueError("Missing required field 'data' in ScriptMessage")
+        if "source" not in json:
+            raise ValueError("Missing required field 'source' in ScriptMessage")
+
         return cls(
-            channel=json.get("channel"),
-            data=json.get("data"),
-            source=Source.from_json(json.get("source", {})),
+            channel=json["channel"],
+            data=json["data"],
+            source=Source.from_json(json["source"]),
         )
 
 
@@ -167,7 +189,7 @@ class RealmCreated:
         self.realm_info = realm_info
 
     @classmethod
-    def from_json(cls, json: dict) -> "RealmCreated":
+    def from_json(cls, json: Dict[str, Any]) -> "RealmCreated":
         """Creates a RealmCreated instance from a dictionary.
 
         Parameters:
@@ -190,7 +212,7 @@ class RealmDestroyed:
         self.realm = realm
 
     @classmethod
-    def from_json(cls, json: dict) -> "RealmDestroyed":
+    def from_json(cls, json: Dict[str, Any]) -> "RealmDestroyed":
         """Creates a RealmDestroyed instance from a dictionary.
 
         Parameters:
@@ -201,7 +223,10 @@ class RealmDestroyed:
         -------
             RealmDestroyed: A new instance of RealmDestroyed.
         """
-        return cls(realm=json.get("realm"))
+        if "realm" not in json:
+            raise ValueError("Missing required field 'realm' in RealmDestroyed")
+
+        return cls(realm=json["realm"])
 
 
 class Script:
@@ -236,7 +261,7 @@ class Script:
     def add_preload_script(
         self,
         function_declaration: str,
-        arguments: Optional[List[dict]] = None,
+        arguments: Optional[List[Dict[str, Any]]] = None,
         contexts: Optional[List[str]] = None,
         user_contexts: Optional[List[str]] = None,
         sandbox: Optional[str] = None,
@@ -262,7 +287,7 @@ class Script:
         if contexts is not None and user_contexts is not None:
             raise ValueError("Cannot specify both contexts and user_contexts")
 
-        params = {"functionDeclaration": function_declaration}
+        params: Dict[str, Any] = {"functionDeclaration": function_declaration}
 
         if arguments is not None:
             params["arguments"] = arguments
