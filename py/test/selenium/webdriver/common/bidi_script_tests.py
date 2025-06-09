@@ -334,7 +334,7 @@ def test_evaluate_with_serialization_options(driver, pages):
     """Test evaluating with serialization options."""
     pages.load("shadowRootPage.html")
 
-    serialization_options = {"maxDomDepth": 2, "maxObjectDepth": 2, "includeShadowTree": 'all'}
+    serialization_options = {"maxDomDepth": 2, "maxObjectDepth": 2, "includeShadowTree": "all"}
 
     result = driver.script.evaluate(
         "document.body",
@@ -345,7 +345,7 @@ def test_evaluate_with_serialization_options(driver, pages):
     root_node = result.result["value"]
 
     # maxDomDepth will contain a children property
-    assert 'children' in result.result['value']
+    assert "children" in result.result["value"]
     # the page will have atleast one shadow root
     assert has_shadow_root(root_node)
 
@@ -361,37 +361,8 @@ def test_evaluate_with_user_activation(driver, pages):
         user_activation=True,
     )
 
-    assert result.result is not None
-    # try to verify user_activation
-
-
-# def test_evaluate_clipboard_copy_and_read_with_user_activation(driver, pages):
-#     pages.load("blank.html")
-#
-#     # Step 1: Write some text and copy it
-#     driver.script.evaluate(
-#         """
-#         const el = document.createElement("textarea");
-#         el.value = "Copied from test!";
-#         document.body.appendChild(el);
-#         el.select();
-#         document.execCommand("copy");
-#         """,
-#         {"context": driver.current_window_handle},
-#         await_promise=True,
-#         user_activation=True
-#     )
-#
-#     # Step 2: Read from the clipboard
-#     result2 = driver.script.evaluate(
-#         "navigator.clipboard.readText()",
-#         {"context": driver.current_window_handle},
-#         await_promise=True,
-#         user_activation=True
-#     )
-#
-#     assert result2.result["type"] == "string"
-#     assert result2.result["value"] == "Copied from test!"
+    # the value should be True if user activation is active
+    assert result.result["value"] is True
 
 
 def test_call_function(driver, pages):
@@ -440,15 +411,15 @@ def test_call_function_with_user_activation(driver, pages):
         user_activation=True,
     )
 
-    # Note: The actual behavior depends on browser implementation
-    assert result.result is not None
+    # the value should be True if user activation is active
+    assert result.result["value"] is True
 
 
 def test_call_function_with_serialization_options(driver, pages):
     """Test calling a function with serialization options."""
     pages.load("shadowRootPage.html")
 
-    serialization_options = {"maxDomDepth": 2, "maxObjectDepth": 2, "includeShadowTree": 'all'}
+    serialization_options = {"maxDomDepth": 2, "maxObjectDepth": 2, "includeShadowTree": "all"}
 
     result = driver.script.call_function(
         "() => document.body",
@@ -460,7 +431,7 @@ def test_call_function_with_serialization_options(driver, pages):
     root_node = result.result["value"]
 
     # maxDomDepth will contain a children property
-    assert 'children' in result.result['value']
+    assert "children" in result.result["value"]
     # the page will have atleast one shadow root
     assert has_shadow_root(root_node)
 
@@ -500,7 +471,7 @@ def test_call_function_with_result_ownership(driver, pages):
         "function() { return { greet: 'Hi', number: 42 }; }",
         target={"context": driver.current_window_handle},
         await_promise=False,
-        result_ownership="root"
+        result_ownership="root",
     )
 
     # Verify that a handle is returned
@@ -513,7 +484,7 @@ def test_call_function_with_result_ownership(driver, pages):
         "function() { return this.number + 1; }",
         target={"context": driver.current_window_handle},
         await_promise=False,
-        this={"handle": handle}
+        this={"handle": handle},
     )
 
     assert result2.result["type"] == "number"
@@ -561,20 +532,32 @@ def test_disown_handles(driver, pages):
     """Test disowning handles."""
     pages.load("blank.html")
 
-    # First create some handles by evaluating an object
+    # Create an object with root ownership (this will return a handle)
     result = driver.script.evaluate(
-        "({ test: 'value' })",
-        {"context": driver.current_window_handle},
-        await_promise=False,
-        result_ownership=ResultOwnership.ROOT,
+        "({foo: 'bar'})", target={"context": driver.current_window_handle}, await_promise=False, result_ownership="root"
     )
 
-    # Extract handle from result (this would be implementation specific)
-    if "handle" in result.result:
-        handle = result.result["handle"]
+    handle = result.result["handle"]
+    assert handle is not None
 
-        # Disown the handle
-        driver.script.disown(handles=[handle], target={"context": driver.current_window_handle})
+    # Use the handle in a function call (this should succeed)
+    result_before = driver.script.call_function(
+        "function(obj) { return obj.foo; }",
+        await_promise=False,
+        target={"context": driver.current_window_handle},
+        arguments=[{"handle": handle}],
+    )
 
-        # The disown operation should complete without error
-        # Note: We can't easily test the actual garbage collection behavior, try something
+    assert result_before.result["value"] == "bar"
+
+    # Disown the handle
+    driver.script.disown(handles=[handle], target={"context": driver.current_window_handle})
+
+    # Try using the disowned handle (this should fail)
+    with pytest.raises(Exception):
+        driver.script.call_function(
+            "function(obj) { return obj.foo; }",
+            await_promise=False,
+            target={"context": driver.current_window_handle},
+            arguments=[{"handle": handle}],
+        )
