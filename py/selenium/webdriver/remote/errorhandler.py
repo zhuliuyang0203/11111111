@@ -161,23 +161,24 @@ class ErrorHandler:
         if isinstance(status, int):
             value_json = response.get("value", None)
             if value_json and isinstance(value_json, str):
-                import json
+                if not value_json.isdigit():
+                    import json
 
-                try:
-                    value = json.loads(value_json)
-                    if len(value) == 1:
-                        value = value["value"]
-                    status = value.get("error", None)
-                    if not status:
-                        status = value.get("status", ErrorCode.UNKNOWN_ERROR)
-                        message = value.get("value") or value.get("message")
-                        if not isinstance(message, str):
-                            value = message
-                            message = message.get("message")
-                    else:
-                        message = value.get("message", None)
-                except ValueError:
-                    pass
+                    try:
+                        value = json.loads(value_json)
+                        if len(value) == 1:
+                            value = value["value"]
+                        status = value.get("error", None)
+                        if not status:
+                            status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                            message = value.get("value") or value.get("message")
+                            if not isinstance(message, str):
+                                value = message
+                                message = message.get("message")
+                        else:
+                            message = value.get("message", None)
+                    except ValueError:
+                        pass
 
         exception_class: type[WebDriverException]
         e = ErrorCode()
