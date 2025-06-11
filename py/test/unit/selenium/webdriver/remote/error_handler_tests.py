@@ -298,4 +298,4 @@ def test_handle_non_json_error(handler):
     }
     with pytest.raises(exceptions.WebDriverException) as e:
         handler.check_response(response)
-        assert e.value.msg == "Proxy Authentication Required"
+    assert e.value.msg == "Proxy Authentication Required"
