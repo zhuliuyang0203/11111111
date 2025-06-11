@@ -48,7 +48,7 @@ class Service(service.Service):
         env: Optional[Mapping[str, str]] = None,
         **kwargs,
     ) -> None:
-        self._service_args = service_args or []
+        self._service_args = list(service_args or [])
         if log_path is not None:
             warnings.warn("log_path is deprecated, use log_output instead", DeprecationWarning, stacklevel=2)
             log_path = open(log_path, "wb")

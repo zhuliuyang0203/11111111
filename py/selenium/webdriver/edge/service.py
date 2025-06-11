@@ -44,7 +44,7 @@ class Service(service.ChromiumService):
         driver_path_env_key: Optional[str] = None,
         **kwargs,
     ) -> None:
-        self._service_args = service_args or []
+        self._service_args = list(service_args or [])
         driver_path_env_key = driver_path_env_key or "SE_EDGEDRIVER"
 
         super().__init__(

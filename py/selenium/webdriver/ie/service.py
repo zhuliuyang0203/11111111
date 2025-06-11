@@ -48,7 +48,7 @@ class Service(service.Service):
            Default is "stdout".
          - driver_path_env_key: (Optional) Environment variable to use to get the path to the driver executable.
         """
-        self._service_args = service_args or []
+        self._service_args = list(service_args or [])
         driver_path_env_key = driver_path_env_key or "SE_IEDRIVER"
 
         if host:
