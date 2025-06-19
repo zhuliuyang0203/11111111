@@ -130,7 +130,7 @@ public class Select implements ISelect, WrapsElement {
             By.xpath(".//option[normalize-space(.) = " + Quotes.escape(text) + "]"));
 
     for (WebElement option : options) {
-      if(!hasCssPropertyAndVisible(option)) {
+      if (!hasCssPropertyAndVisible(option)) {
         throw new NoSuchElementException("Invisible option with text: " + text);
       }
       setSelected(option, true);
