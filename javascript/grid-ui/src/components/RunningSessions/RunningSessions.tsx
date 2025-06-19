@@ -301,6 +301,9 @@ function RunningSessions (props) {
         } else {
           setRowOpen('')
         }
+      } else if (response.status === 403) {
+        setFeedbackMessage('Session deletion is blocked by configuration')
+        setFeedbackSeverity('error')
       } else {
         setFeedbackMessage('Failed to delete session')
         setFeedbackSeverity('error')
@@ -685,6 +688,9 @@ function RunningSessions (props) {
         <DialogContent>
           <Typography>
             Are you sure you want to delete this session? This action cannot be undone.
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 2, fontStyle: 'italic' }}>
+            Hint: Set config `--blocked-delete-session` when starting Router/Hub to block deletion of any session.
           </Typography>
         </DialogContent>
         <DialogActions>
