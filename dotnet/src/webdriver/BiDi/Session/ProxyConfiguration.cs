@@ -35,8 +35,6 @@ public record DirectProxyConfiguration : ProxyConfiguration;
 
 public record ManualProxyConfiguration : ProxyConfiguration
 {
-    public string? FtpProxy { get; set; }
-
     public string? HttpProxy { get; set; }
 
     public string? SslProxy { get; set; }
