@@ -17,6 +17,7 @@
 
 package org.openqa.selenium.ie;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Beta;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
@@ -27,7 +28,6 @@ import org.openqa.selenium.remote.RemoteWebDriverBuilder;
 import org.openqa.selenium.remote.http.ClientConfig;
 import org.openqa.selenium.remote.service.DriverCommandExecutor;
 import org.openqa.selenium.remote.service.DriverFinder;
-import org.jspecify.annotations.Nullable;
 
 public class InternetExplorerDriver extends RemoteWebDriver {
 
