@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 
 namespace OpenQA.Selenium.BiDi.WebExtension;
 
-public class Extension
+public sealed class Extension
 {
     private readonly BiDi _bidi;
 

@@ -22,10 +22,10 @@ using System.Text.Json.Serialization;
 
 namespace OpenQA.Selenium.BiDi.WebExtension;
 
-internal class InstallCommand(InstallCommandParameters @params)
+internal sealed class InstallCommand(InstallCommandParameters @params)
     : Command<InstallCommandParameters, InstallResult>(@params, "webExtension.install");
 
-internal record InstallCommandParameters(ExtensionData ExtensionData) : CommandParameters;
+internal sealed record InstallCommandParameters(ExtensionData ExtensionData) : CommandParameters;
 
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
 [JsonDerivedType(typeof(ExtensionArchivePath), "archivePath")]
@@ -33,12 +33,12 @@ internal record InstallCommandParameters(ExtensionData ExtensionData) : CommandP
 [JsonDerivedType(typeof(ExtensionPath), "path")]
 public abstract record ExtensionData;
 
-public record ExtensionArchivePath(string Path) : ExtensionData;
+public sealed record ExtensionArchivePath(string Path) : ExtensionData;
 
-public record ExtensionBase64Encoded(string Value) : ExtensionData;
+public sealed record ExtensionBase64Encoded(string Value) : ExtensionData;
 
-public record ExtensionPath(string Path) : ExtensionData;
+public sealed record ExtensionPath(string Path) : ExtensionData;
 
-public record InstallOptions : CommandOptions;
+public sealed record InstallOptions : CommandOptions;
 
-public record InstallResult(Extension Extension) : EmptyResult;
+public sealed record InstallResult(Extension Extension) : EmptyResult;
