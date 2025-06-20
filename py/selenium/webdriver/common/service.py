@@ -48,7 +48,7 @@ class Service(ABC):
     :param driver_path_env_key: (Optional) Environment variable to use to get the path to the driver executable.
     """
 
-    log_output: Union[Optional[IOBase], Optional[Union[int, IOBase]], Optional[SubprocessStdAlias]]
+    log_output: Union[None, IOBase, int, SubprocessStdAlias]
 
     def __init__(
         self,
