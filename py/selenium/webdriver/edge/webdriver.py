@@ -27,7 +27,6 @@ from .service import Service
 class WebDriver(ChromiumDriver):
     """Controls the MSEdgeDriver and allows you to drive the browser."""
 
-    options: Options
     service: Service
 
     def __init__(
