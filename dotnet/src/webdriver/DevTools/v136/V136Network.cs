@@ -192,7 +192,7 @@ public class V136Network : DevTools.Network
         var commandSettings = new FulfillRequestCommandSettings()
         {
             RequestId = requestData.RequestId,
-            ResponseCode = responseData.StatusCode.GetValueOrDefault(),
+            ResponseCode = responseData.StatusCode!.Value,
         };
 
         if (responseData.Headers.Count > 0 || responseData.CookieHeaders.Count > 0)
