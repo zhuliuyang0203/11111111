@@ -88,3 +88,13 @@ class Keys:
     META = "\ue03d"
     COMMAND = "\ue03d"
     ZENKAKU_HANKAKU = "\ue040"
+
+    # Extended macOS/ChromeDriver keys (based on observed Chrome usage)
+    RIGHT_SHIFT = "\ue050"
+    RIGHT_CONTROL = "\ue051"
+    RIGHT_ALT = "\ue052"
+    RIGHT_COMMAND = "\ue053"
+
+    # Symbolic macOS keys not yet standardized
+    OPTIONS = "\uE050" # TODO: verify Unicode value with WebDriver spec
+    FUNCTION = "\uE051" # TODO: symbolic only; confirm or remove in future
