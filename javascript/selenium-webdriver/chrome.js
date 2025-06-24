@@ -141,6 +141,14 @@ try {
  */
 const CHROME_DRIVER_EXE_ENV_VAR = 'SE_CHROMEDRIVER'
 
+// Try to load @bazel/runfiles for resolving paths in Bazel environments
+let runfiles = null
+try {
+  runfiles = require('@bazel/runfiles').runfiles
+} catch (e) {
+  // Ignore if @bazel/runfiles is not available
+}
+
 /** @type {remote.DriverService} */
 
 /**
@@ -160,7 +168,7 @@ class ServiceBuilder extends chromium.ServiceBuilder {
    */
   constructor(opt_exe) {
     let exePath = opt_exe || process.env[CHROME_DRIVER_EXE_ENV_VAR]
-    
+
     // If path is from env variable and appears to be a relative path, try to resolve it using runfiles
     if (!opt_exe && exePath && !path.isAbsolute(exePath) && runfiles) {
       try {
@@ -172,7 +180,7 @@ class ServiceBuilder extends chromium.ServiceBuilder {
         // If resolution fails, use the original path
       }
     }
-    
+
     super(exePath)
   }
 }

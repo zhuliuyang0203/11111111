@@ -506,7 +506,7 @@ class ServiceBuilder extends remote.DriverService.Builder {
    */
   constructor(opt_exe) {
     let exePath = opt_exe || process.env[GECKO_DRIVER_EXE_ENV_VAR]
-    
+
     // If path is from env variable and appears to be a relative path, try to resolve it using runfiles
     if (!opt_exe && exePath && !path.isAbsolute(exePath) && runfiles) {
       try {
@@ -518,7 +518,7 @@ class ServiceBuilder extends remote.DriverService.Builder {
         // If resolution fails, use the original path
       }
     }
-    
+
     super(exePath)
     this.setLoopback(true) // Required.
   }
