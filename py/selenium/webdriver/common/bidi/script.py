@@ -15,6 +15,8 @@
 # specific language governing permissions and limitations
 # under the License.
 
+import datetime
+import math
 from dataclasses import dataclass
 from typing import Any, Optional
 
@@ -333,13 +335,38 @@ class Script:
         Converts a Python value to BiDi LocalValue format.
         """
         if value is None:
-            return {"type": "undefined"}
+            return {"type": "null"}
         elif isinstance(value, bool):
             return {"type": "boolean", "value": value}
         elif isinstance(value, (int, float)):
+            if isinstance(value, float):
+                if math.isnan(value):
+                    return {"type": "number", "value": "NaN"}
+                elif math.isinf(value):
+                    if value > 0:
+                        return {"type": "number", "value": "Infinity"}
+                    else:
+                        return {"type": "number", "value": "-Infinity"}
+                elif value == 0.0 and math.copysign(1.0, value) < 0:
+                    return {"type": "number", "value": "-0"}
+
+            JS_MAX_SAFE_INTEGER = 9007199254740991
+            if isinstance(value, int) and (value > JS_MAX_SAFE_INTEGER or value < -JS_MAX_SAFE_INTEGER):
+                return {"type": "bigint", "value": str(value)}
+
             return {"type": "number", "value": value}
+
         elif isinstance(value, str):
             return {"type": "string", "value": value}
+        elif isinstance(value, datetime.datetime):
+            # Convert Python datetime to JavaScript Date (ISO 8601 format)
+            return {"type": "date", "value": value.isoformat() + "Z" if value.tzinfo is None else value.isoformat()}
+        elif isinstance(value, datetime.date):
+            # Convert Python date to JavaScript Date
+            dt = datetime.datetime.combine(value, datetime.time.min).replace(tzinfo=datetime.timezone.utc)
+            return {"type": "date", "value": dt.isoformat()}
+        elif isinstance(value, set):
+            return {"type": "set", "value": [self.__convert_to_local_value(item) for item in value]}
         elif isinstance(value, (list, tuple)):
             return {"type": "array", "value": [self.__convert_to_local_value(item) for item in value]}
         elif isinstance(value, dict):

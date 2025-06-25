@@ -563,7 +563,7 @@ def test_disown_handles(driver, pages):
         )
 
 
-# Tests for high-level SCRIPT API commands
+# Tests for high-level SCRIPT API commands - pin, unpin, and execute
 
 
 def test_pin_script(driver, pages):
@@ -626,6 +626,76 @@ def test_execute_script_with_number_argument(driver, pages):
     assert result["value"] == 1.4
 
 
+def test_execute_script_with_nan(driver, pages):
+    """Test executing script with NaN argument."""
+    pages.load("blank.html")
+
+    result = driver.script.execute(
+        """(arg) => {
+            if(!Number.isNaN(arg))
+                throw Error("Argument should be NaN, but was "+arg);
+            return arg;
+        }""",
+        float("nan"),
+    )
+
+    assert result["type"] == "number"
+    assert result["value"] == "NaN"
+
+
+def test_execute_script_with_inf(driver, pages):
+    """Test executing script with number argument."""
+    pages.load("blank.html")
+
+    result = driver.script.execute(
+        """(arg) => {
+            if(arg!==Infinity)
+                throw Error("Argument should be Infinity, but was "+arg);
+            return arg;
+        }""",
+        float("inf"),
+    )
+
+    assert result["type"] == "number"
+    assert result["value"] == "Infinity"
+
+
+def test_execute_script_with_minus_inf(driver, pages):
+    """Test executing script with number argument."""
+    pages.load("blank.html")
+
+    result = driver.script.execute(
+        """(arg) => {
+            if(arg!==-Infinity)
+                throw Error("Argument should be -Infinity, but was "+arg);
+            return arg;
+        }""",
+        float("-inf"),
+    )
+
+    assert result["type"] == "number"
+    assert result["value"] == "-Infinity"
+
+
+def test_execute_script_with_bigint_argument(driver, pages):
+    """Test executing script with BigInt argument."""
+    pages.load("blank.html")
+
+    # Use a large integer that exceeds JavaScript safe integer limit
+    large_int = 9007199254740992
+    result = driver.script.execute(
+        """(arg) => {
+            if(arg !== 9007199254740992n)
+                throw Error("Argument should be 9007199254740992n (BigInt), but was "+arg+" (type: "+typeof arg+")");
+            return arg;
+        }""",
+        large_int,
+    )
+
+    assert result["type"] == "bigint"
+    assert result["value"] == str(large_int)
+
+
 def test_execute_script_with_boolean_argument(driver, pages):
     """Test executing script with boolean argument."""
     pages.load("blank.html")
@@ -658,6 +728,29 @@ def test_execute_script_with_string_argument(driver, pages):
 
     assert result["type"] == "string"
     assert result["value"] == "hello world"
+
+
+def test_execute_script_with_date_argument(driver, pages):
+    """Test executing script with date argument."""
+    import datetime
+
+    pages.load("blank.html")
+
+    date = datetime.datetime(2023, 12, 25, 10, 30, 45)
+    result = driver.script.execute(
+        """(arg) => {
+            if(!(arg instanceof Date))
+                throw Error("Argument type should be Date, but was "+
+                    Object.prototype.toString.call(arg));
+            if(arg.getFullYear() !== 2023)
+                throw Error("Year should be 2023, but was "+arg.getFullYear());
+            return arg;
+        }""",
+        date,
+    )
+
+    assert result["type"] == "date"
+    assert "2023-12-25T10:30:45" in result["value"]
 
 
 def test_execute_script_with_array_argument(driver, pages):
