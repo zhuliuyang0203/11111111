@@ -98,4 +98,3 @@ class Keys:
     # Extended macOS keys
     LEFT_OPTION = LEFT_ALT
     RIGHT_OPTION = RIGHT_ALT
-    
