@@ -61,7 +61,7 @@ class Keys:
     NUMPAD0 = "\ue01a"  # number pad keys
     NUMPAD1 = "\ue01b"
     NUMPAD2 = "\ue01c"
-    NUMPAD3 = "x\ue01d"
+    NUMPAD3 = "\ue01d"
     NUMPAD4 = "\ue01e"
     NUMPAD5 = "\ue01f"
     NUMPAD6 = "\ue020"
@@ -98,6 +98,4 @@ class Keys:
     # Extended macOS keys
     LEFT_OPTION = LEFT_ALT
     RIGHT_OPTION = RIGHT_ALT
-    
-    
     
