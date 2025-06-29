@@ -1,4 +1,3 @@
-// <copyright file="StableChannelChromeDriver.cs" company="Selenium Committers">
 // Licensed to the Software Freedom Conservancy (SFC) under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -15,30 +14,16 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
-// </copyright>
 
-namespace OpenQA.Selenium.Chrome;
+package org.openqa.selenium.devtools.v138;
 
-public class StableChannelChromeDriver : ChromeDriver
-{
-    public StableChannelChromeDriver()
-        : base(DefaultOptions)
-    {
-    }
+import com.google.auto.service.AutoService;
+import org.openqa.selenium.devtools.CdpInfo;
 
-    // Required for dynamic setting with `EnvironmentManager.Instance.CreateDriverInstance(options)`
-    public StableChannelChromeDriver(ChromeOptions options)
-        : base(options)
-    {
-    }
+@AutoService(CdpInfo.class)
+public class v138CdpInfo extends CdpInfo {
 
-    public StableChannelChromeDriver(ChromeDriverService service, ChromeOptions options)
-        : base(service, options)
-    {
-    }
-
-    public static ChromeOptions DefaultOptions
-    {
-        get { return new ChromeOptions() { BrowserVersion = "138" }; }
-    }
+  public v138CdpInfo() {
+    super(138, v138Domains::new);
+  }
 }

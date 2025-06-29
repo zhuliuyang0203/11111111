@@ -15,15 +15,25 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package org.openqa.selenium.devtools.v135;
+use crate::common::get_selenium_manager;
 
-import com.google.auto.service.AutoService;
-import org.openqa.selenium.devtools.CdpInfo;
+use rstest::rstest;
 
-@AutoService(CdpInfo.class)
-public class v135CdpInfo extends CdpInfo {
+mod common;
 
-  public v135CdpInfo() {
-    super(135, v135Domains::new);
-  }
+#[test]
+fn electron_latest_test() {
+    let mut cmd = get_selenium_manager();
+    let cmd_assert = cmd.args(["--browser", "electron"]).assert();
+    cmd_assert.success();
+}
+
+#[rstest]
+#[case("36.2.1")]
+fn electron_version_test(#[case] driver_version: String) {
+    let mut cmd = get_selenium_manager();
+    let cmd_assert = cmd
+        .args(["--browser", "electron", "--driver-version", &driver_version])
+        .assert();
+    cmd_assert.success();
 }
