@@ -27,14 +27,14 @@ public class BiDi : IAsyncDisposable
 {
     private readonly Broker _broker;
 
-    private readonly Lazy<Session.SessionModule> _sessionModule;
-    private readonly Lazy<BrowsingContext.BrowsingContextModule> _browsingContextModule;
-    private readonly Lazy<Browser.BrowserModule> _browserModule;
-    private readonly Lazy<Network.NetworkModule> _networkModule;
-    private readonly Lazy<Input.InputModule> _inputModule;
-    private readonly Lazy<Script.ScriptModule> _scriptModule;
-    private readonly Lazy<Log.LogModule> _logModule;
-    private readonly Lazy<Storage.StorageModule> _storageModule;
+    private readonly Session.SessionModule _sessionModule;
+    private readonly BrowsingContext.BrowsingContextModule _browsingContextModule;
+    private readonly Browser.BrowserModule _browserModule;
+    private readonly Network.NetworkModule _networkModule;
+    private readonly Input.InputModule _inputModule;
+    private readonly Script.ScriptModule _scriptModule;
+    private readonly Log.LogModule _logModule;
+    private readonly Storage.StorageModule _storageModule;
 
     internal BiDi(string url)
     {
@@ -42,24 +42,24 @@ public class BiDi : IAsyncDisposable
 
         _broker = new Broker(this, uri);
 
-        _sessionModule = new Lazy<Session.SessionModule>(() => new Session.SessionModule(_broker));
-        _browsingContextModule = new Lazy<BrowsingContext.BrowsingContextModule>(() => new BrowsingContext.BrowsingContextModule(_broker));
-        _browserModule = new Lazy<Browser.BrowserModule>(() => new Browser.BrowserModule(_broker));
-        _networkModule = new Lazy<Network.NetworkModule>(() => new Network.NetworkModule(_broker));
-        _inputModule = new Lazy<Input.InputModule>(() => new Input.InputModule(_broker));
-        _scriptModule = new Lazy<Script.ScriptModule>(() => new Script.ScriptModule(_broker));
-        _logModule = new Lazy<Log.LogModule>(() => new Log.LogModule(_broker));
-        _storageModule = new Lazy<Storage.StorageModule>(() => new Storage.StorageModule(_broker));
+        _sessionModule = new Session.SessionModule(_broker);
+        _browsingContextModule = new BrowsingContext.BrowsingContextModule(_broker);
+        _browserModule = new Browser.BrowserModule(_broker);
+        _networkModule = new Network.NetworkModule(_broker);
+        _inputModule = new Input.InputModule(_broker);
+        _scriptModule = new Script.ScriptModule(_broker);
+        _logModule = new Log.LogModule(_broker);
+        _storageModule = new Storage.StorageModule(_broker);
     }
 
-    internal Session.SessionModule SessionModule => _sessionModule.Value;
-    public BrowsingContext.BrowsingContextModule BrowsingContext => _browsingContextModule.Value;
-    public Browser.BrowserModule Browser => _browserModule.Value;
-    public Network.NetworkModule Network => _networkModule.Value;
-    internal Input.InputModule InputModule => _inputModule.Value;
-    public Script.ScriptModule Script => _scriptModule.Value;
-    public Log.LogModule Log => _logModule.Value;
-    public Storage.StorageModule Storage => _storageModule.Value;
+    internal Session.SessionModule SessionModule => _sessionModule;
+    public BrowsingContext.BrowsingContextModule BrowsingContext => _browsingContextModule;
+    public Browser.BrowserModule Browser => _browserModule;
+    public Network.NetworkModule Network => _networkModule;
+    internal Input.InputModule InputModule => _inputModule;
+    public Script.ScriptModule Script => _scriptModule;
+    public Log.LogModule Log => _logModule;
+    public Storage.StorageModule Storage => _storageModule;
 
     public Task<Session.StatusResult> StatusAsync()
     {
