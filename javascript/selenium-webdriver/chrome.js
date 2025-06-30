@@ -139,7 +139,7 @@ const CHROME_DRIVER_EXE_ENV_VAR = 'SE_CHROMEDRIVER'
 let runfiles = null
 try {
   runfiles = require('@bazel/runfiles').runfiles
-} catch (e) {
+} catch {
   // Ignore if @bazel/runfiles is not available
 }
 
@@ -170,7 +170,7 @@ class ServiceBuilder extends chromium.ServiceBuilder {
         if (resolvedPath) {
           exePath = resolvedPath
         }
-      } catch (e) {
+      } catch {
         // If resolution fails, use the original path
       }
     }
