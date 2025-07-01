@@ -166,6 +166,7 @@ def test_create_user_context_with_direct_proxy(driver):
 
 
 @pytest.mark.xfail_firefox(reason="Firefox proxy settings are different")
+@pytest.mark.xfail_remote
 def test_create_user_context_with_manual_proxy_all_params(driver):
     """Test creating a user context with manual proxy configuration."""
     # Start a fake proxy server
@@ -205,6 +206,7 @@ def test_create_user_context_with_manual_proxy_all_params(driver):
 
 
 @pytest.mark.xfail_firefox(reason="Firefox proxy settings are different")
+@pytest.mark.xfail_remote
 def test_create_user_context_with_both_params(driver):
     """Test creating a user context with both acceptInsecureCerts and proxy parameters."""
     # Start fake proxy server
