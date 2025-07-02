@@ -19,7 +19,7 @@ import datetime
 import math
 from dataclasses import dataclass
 from functools import singledispatchmethod
-from typing import Any, Optional, Union
+from typing import Any, Optional, List, Tuple
 
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.bidi.common import command_builder
@@ -255,7 +255,11 @@ class _SupportedTypes:
         return {"type": "set", "value": [self.script.convert_to_local_value(item) for item in value]}
 
     @_type.register
-    def _(self, value: Union[list, tuple]):
+    def _(self, value: List):
+        return {"type": "array", "value": [self.script.convert_to_local_value(item) for item in value]}
+    
+    @_type.register
+    def _(self, value: Tuple):
         return {"type": "array", "value": [self.script.convert_to_local_value(item) for item in value]}
 
     @_type.register
