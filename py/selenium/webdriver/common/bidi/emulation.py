@@ -15,7 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Optional, Union
 
 from selenium.webdriver.common.bidi.common import command_builder
 
@@ -72,8 +72,8 @@ class GeolocationCoordinates:
         self.heading = heading
         self.speed = speed
 
-    def to_dict(self) -> Dict[str, Union[float, None]]:
-        result: Dict[str, Union[float, None]] = {
+    def to_dict(self) -> dict[str, Union[float, None]]:
+        result: dict[str, Union[float, None]] = {
             "latitude": self.latitude,
             "longitude": self.longitude,
             "accuracy": self.accuracy,
@@ -104,7 +104,7 @@ class GeolocationPositionError:
             raise ValueError(f'type must be "{self.TYPE_POSITION_UNAVAILABLE}"')
         self.type = type
 
-    def to_dict(self) -> Dict[str, str]:
+    def to_dict(self) -> dict[str, str]:
         return {"type": self.type}
 
 
@@ -120,8 +120,8 @@ class Emulation:
         self,
         coordinates: Optional[GeolocationCoordinates] = None,
         error: Optional[GeolocationPositionError] = None,
-        contexts: Optional[List[str]] = None,
-        user_contexts: Optional[List[str]] = None,
+        contexts: Optional[list[str]] = None,
+        user_contexts: Optional[list[str]] = None,
     ) -> None:
         """Set geolocation override for the given contexts or user contexts.
 
@@ -147,7 +147,7 @@ class Emulation:
         if contexts is None and user_contexts is None:
             raise ValueError("Must specify either contexts or userContexts")
 
-        params: Dict[str, Any] = {}
+        params: dict[str, Any] = {}
 
         if coordinates is not None:
             params["coordinates"] = coordinates.to_dict()
