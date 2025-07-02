@@ -29,6 +29,7 @@ import java.time.Duration;
 import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -39,8 +40,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.environment.InProcessTestEnvironment;
 import org.openqa.selenium.environment.webserver.AppServer;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.testing.Ignore;
 
+@Disabled("https://issues.chromium.org/u/0/issues/425801332")
 class FederatedCredentialManagementTest {
 
   private HasFederatedCredentialManagement fedcmDriver;
@@ -88,7 +89,6 @@ class FederatedCredentialManagementTest {
   }
 
   @Test
-  @Ignore(value = CHROME, reason = "https://issues.chromium.org/u/0/issues/425801332")
   void testDismissDialog() {
     fedcmDriver.setDelayEnabled(false);
     assertNull(fedcmDriver.getFederatedCredentialManagementDialog());
@@ -112,7 +112,6 @@ class FederatedCredentialManagementTest {
   }
 
   @Test
-  @Ignore(value = CHROME, reason = "https://issues.chromium.org/u/0/issues/425801332")
   void testSelectAccount() {
     assertNull(fedcmDriver.getFederatedCredentialManagementDialog());
 
@@ -133,7 +132,6 @@ class FederatedCredentialManagementTest {
   }
 
   @Test
-  @Ignore(value = CHROME, reason = "https://issues.chromium.org/u/0/issues/425801332")
   void testGetAccounts() {
     assertNull(fedcmDriver.getFederatedCredentialManagementDialog());
 
