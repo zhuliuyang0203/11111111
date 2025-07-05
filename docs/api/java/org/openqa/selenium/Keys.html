@@ -102,12 +102,25 @@ loadScripts(document, 'script');</script>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a>&gt;
 implements <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a></span></div>
 <div class="block">Representations of pressable keys that aren't text. These are stored in the Unicode PUA (Private
- Use Area) code points, 0xE000-0xF8FF.</div>
+ Use Area) code points, 0xE000–0xF8FF. These values are used internally by WebDriver to simulate
+ keyboard input where standard Unicode characters are insufficient, such as modifier and control
+ keys.
+
+ <p>The codes follow conventions partially established by the W3C WebDriver specification and the
+ Selenium project. Some values (e.g., RIGHT_SHIFT, RIGHT_COMMAND) are used in ChromeDriver but are
+ not currently part of the W3C spec. Others (e.g., OPTION, FN) are symbolic and reserved for
+ possible future mapping.
+
+ <p>For consistency across platforms and drivers, values should be verified before assuming native
+ support.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
 <ul class="tag-list-long">
-<li><a href="http://www.google.com.au/search?&amp;q=unicode+pua&amp;btnK=Search">http://www.google.com.au/search?&amp;q=unicode+pua&amp;btnK=Search</a></li>
+<li><a href="https://www.w3.org/TR/webdriver/#keyboard-actions">W3C WebDriver Keyboard
+     Actions</a></li>
+<li><a href="http://www.google.com.au/search?&amp;q=unicode+pua&amp;btnK=Search">Unicode PUA
+     Overview</a></li>
 </ul>
 </dd>
 </dl>
@@ -193,45 +206,49 @@ implements <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="#F9" class="member-name-link">F9</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#HELP" class="member-name-link">HELP</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#FN" class="member-name-link">FN</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#HOME" class="member-name-link">HOME</a></code></div>
+<div class="col-first even-row-color"><code><a href="#HELP" class="member-name-link">HELP</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#INSERT" class="member-name-link">INSERT</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#HOME" class="member-name-link">HOME</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#LEFT" class="member-name-link">LEFT</a></code></div>
+<div class="col-first even-row-color"><code><a href="#INSERT" class="member-name-link">INSERT</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#LEFT_ALT" class="member-name-link">LEFT_ALT</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#LEFT" class="member-name-link">LEFT</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#LEFT_CONTROL" class="member-name-link">LEFT_CONTROL</a></code></div>
+<div class="col-first even-row-color"><code><a href="#LEFT_ALT" class="member-name-link">LEFT_ALT</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#LEFT_SHIFT" class="member-name-link">LEFT_SHIFT</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#LEFT_CONTROL" class="member-name-link">LEFT_CONTROL</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#META" class="member-name-link">META</a></code></div>
+<div class="col-first even-row-color"><code><a href="#LEFT_SHIFT" class="member-name-link">LEFT_SHIFT</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#MULTIPLY" class="member-name-link">MULTIPLY</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#META" class="member-name-link">META</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NULL" class="member-name-link">NULL</a></code></div>
+<div class="col-first even-row-color"><code><a href="#MULTIPLY" class="member-name-link">MULTIPLY</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#NUMPAD0" class="member-name-link">NUMPAD0</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NULL" class="member-name-link">NULL</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NUMPAD1" class="member-name-link">NUMPAD1</a></code></div>
+<div class="col-first even-row-color"><code><a href="#NUMPAD0" class="member-name-link">NUMPAD0</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#NUMPAD2" class="member-name-link">NUMPAD2</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NUMPAD1" class="member-name-link">NUMPAD1</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NUMPAD3" class="member-name-link">NUMPAD3</a></code></div>
+<div class="col-first even-row-color"><code><a href="#NUMPAD2" class="member-name-link">NUMPAD2</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#NUMPAD4" class="member-name-link">NUMPAD4</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NUMPAD3" class="member-name-link">NUMPAD3</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NUMPAD5" class="member-name-link">NUMPAD5</a></code></div>
+<div class="col-first even-row-color"><code><a href="#NUMPAD4" class="member-name-link">NUMPAD4</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#NUMPAD6" class="member-name-link">NUMPAD6</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NUMPAD5" class="member-name-link">NUMPAD5</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NUMPAD7" class="member-name-link">NUMPAD7</a></code></div>
+<div class="col-first even-row-color"><code><a href="#NUMPAD6" class="member-name-link">NUMPAD6</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#NUMPAD8" class="member-name-link">NUMPAD8</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NUMPAD7" class="member-name-link">NUMPAD7</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#NUMPAD9" class="member-name-link">NUMPAD9</a></code></div>
+<div class="col-first even-row-color"><code><a href="#NUMPAD8" class="member-name-link">NUMPAD8</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#NUMPAD9" class="member-name-link">NUMPAD9</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="#OPTION" class="member-name-link">OPTION</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code><a href="#PAGE_DOWN" class="member-name-link">PAGE_DOWN</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
@@ -242,6 +259,14 @@ implements <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base
 <div class="col-first even-row-color"><code><a href="#RETURN" class="member-name-link">RETURN</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code><a href="#RIGHT" class="member-name-link">RIGHT</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="#RIGHT_ALT" class="member-name-link">RIGHT_ALT</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#RIGHT_COMMAND" class="member-name-link">RIGHT_COMMAND</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="#RIGHT_CONTROL" class="member-name-link">RIGHT_CONTROL</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#RIGHT_SHIFT" class="member-name-link">RIGHT_SHIFT</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="#SEMICOLON" class="member-name-link">SEMICOLON</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
@@ -283,14 +308,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#chord(java.lang.Iterable)" class="member-name-link">chord</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a>&gt;&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Overload of <a href="#chord(java.lang.CharSequence...)"><code>chord(CharSequence...)</code></a> that accepts an iterable.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCodePoint()" class="member-name-link">getCodePoint</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getKeyFromUnicode(char)" class="member-name-link">getKeyFromUnicode</a><wbr>(char&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Get the special key representation, <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a>, of the supplied character if there is one.</div>
+<div class="block">Retrieves the <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a> enum constant corresponding to the given Unicode character.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#length()" class="member-name-link">length</a>()</code></div>
@@ -715,6 +742,42 @@ the order they are declared.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="RIGHT_SHIFT">
+<h3>RIGHT_SHIFT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">RIGHT_SHIFT</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="RIGHT_CONTROL">
+<h3>RIGHT_CONTROL</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">RIGHT_CONTROL</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="RIGHT_ALT">
+<h3>RIGHT_ALT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">RIGHT_ALT</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="RIGHT_COMMAND">
+<h3>RIGHT_COMMAND</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">RIGHT_COMMAND</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="OPTION">
+<h3>OPTION</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">OPTION</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="FN">
+<h3>FN</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">FN</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="ZENKAKU_HANKAKU">
 <h3>ZENKAKU_HANKAKU</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">ZENKAKU_HANKAKU</span></div>
@@ -813,11 +876,9 @@ not permitted.)</div>
 <h3>chord</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">chord</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a>...&nbsp;value)</span></div>
 <div class="block">Simulate pressing many keys at once in a "chord". Takes a sequence of Keys.XXXX or strings;
- appends each of the values to a string, and adds the chord termination key (Keys.NULL) and
- returns the resultant string.
+ appends each to a string, adds the chord termination key (Keys.NULL), and returns it.
 
- <p>Note: When the low-level webdriver key handlers see Keys.NULL, active modifier keys
- (CTRL/ALT/SHIFT/etc) release via a keyup event.</div>
+ <p>Note: Keys.NULL signals release of modifier keys like CTRL/ALT/SHIFT via keyup events.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>value</code> - characters to send</dd>
@@ -830,17 +891,12 @@ not permitted.)</div>
 <section class="detail" id="chord(java.lang.Iterable)">
 <h3>chord</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">chord</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a>&gt;&nbsp;value)</span></div>
+<div class="block">Overload of <a href="#chord(java.lang.CharSequence...)"><code>chord(CharSequence...)</code></a> that accepts an iterable.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>value</code> - characters to send</dd>
 <dt>Returns:</dt>
 <dd>String representation of the char sequence</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="tag-list">
-<li><a href="#chord(java.lang.CharSequence...)"><code>chord(CharSequence...)</code></a></li>
-</ul>
-</dd>
 </dl>
 </section>
 </li>
@@ -848,13 +904,12 @@ not permitted.)</div>
 <section class="detail" id="getKeyFromUnicode(char)">
 <h3>getKeyFromUnicode</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">getKeyFromUnicode</span><wbr><span class="parameters">(char&nbsp;key)</span></div>
-<div class="block">Get the special key representation, <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a>, of the supplied character if there is one. If
- there is no special key tied to this character, null will be returned.</div>
+<div class="block">Retrieves the <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a> enum constant corresponding to the given Unicode character.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - unicode character code</dd>
 <dt>Returns:</dt>
-<dd>special key linked to the character code, or null if character is not a special key</dd>
+<dd>special key linked to the character code, or null if not found</dd>
 </dl>
 </section>
 </li>
