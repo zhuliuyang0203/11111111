@@ -322,10 +322,10 @@ public class ChromeDriverService extends DriverService {
 
     @Override
     protected ChromeDriverService createDriverService(
-        @Nullable File exe, 
-        int port, 
-        @Nullable Duration timeout, 
-        @Nullable List<String> args, 
+        @Nullable File exe,
+        int port,
+        @Nullable Duration timeout,
+        @Nullable List<String> args,
         @Nullable Map<String, String> environment) {
       try {
         return new ChromeDriverService(exe, port, timeout, args, environment);
