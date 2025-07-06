@@ -84,7 +84,7 @@ class FedCmDialogImpl implements FederatedCredentialManagementDialog {
 
   @Override
   public void clickButton(String button, int index) {
-    executeMethod.execute(DriverCommand.CLICK_DIALOG,
-        Map.of("dialogButton", button, "index", index));
+    executeMethod.execute(
+        DriverCommand.CLICK_DIALOG, Map.of("dialogButton", button, "index", index));
   }
 }

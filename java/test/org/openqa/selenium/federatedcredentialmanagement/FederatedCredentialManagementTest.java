@@ -198,9 +198,7 @@ class FederatedCredentialManagementTest {
     int windowCount = localDriver.getWindowHandles().size();
     dialog.clickButton(dialog.BUTTON_PRIVACY_POLICY, 1);
     WebDriverWait wait = new WebDriverWait(localDriver, Duration.ofSeconds(5));
-    wait.until(
-        driver ->
-            driver.getWindowHandles().size() > windowCount);
+    wait.until(driver -> driver.getWindowHandles().size() > windowCount);
 
     dialog.selectAccount(0);
 
