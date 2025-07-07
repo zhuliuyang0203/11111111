@@ -1,5 +1,5 @@
 {
-  "checksum": "700957338620186034baa0485d9372b468995666cc716930398a5807747851a0",
+  "checksum": "e38f1883407e104c6b6119ac83bc7837b73f704f41f2d484b790329d4c1f29d1",
   "crates": {
     "addr2line 0.21.0": {
       "name": "addr2line",
@@ -2469,14 +2469,14 @@
       ],
       "license_file": "LICENSE.txt"
     },
-    "clap 4.5.37": {
+    "clap 4.5.40": {
       "name": "clap",
-      "version": "4.5.37",
+      "version": "4.5.40",
       "package_url": "https://github.com/clap-rs/clap",
       "repository": {
         "Http": {
-          "url": "https://static.crates.io/crates/clap/4.5.37/download",
-          "sha256": "eccb054f56cbd38340b380d4a8e69ef1f02f1af43db2f0cc817a4774d80ae071"
+          "url": "https://static.crates.io/crates/clap/4.5.40/download",
+          "sha256": "40b6887a1d8685cebccf115538db5c0efe625ccac9696ad45c409d96566e910f"
         }
       },
       "targets": [
@@ -2515,7 +2515,7 @@
         "deps": {
           "common": [
             {
-              "id": "clap_builder 4.5.37",
+              "id": "clap_builder 4.5.40",
               "target": "clap_builder"
             }
           ],
@@ -2525,13 +2525,13 @@
         "proc_macro_deps": {
           "common": [
             {
-              "id": "clap_derive 4.5.32",
+              "id": "clap_derive 4.5.40",
               "target": "clap_derive"
             }
           ],
           "selects": {}
         },
-        "version": "4.5.37"
+        "version": "4.5.40"
       },
       "license": "MIT OR Apache-2.0",
       "license_ids": [
@@ -2540,14 +2540,14 @@
       ],
       "license_file": "LICENSE-APACHE"
     },
-    "clap_builder 4.5.37": {
+    "clap_builder 4.5.40": {
       "name": "clap_builder",
-      "version": "4.5.37",
+      "version": "4.5.40",
       "package_url": "https://github.com/clap-rs/clap",
       "repository": {
         "Http": {
-          "url": "https://static.crates.io/crates/clap_builder/4.5.37/download",
-          "sha256": "efd9466fac8543255d3b1fcad4762c5e116ffe808c8a3043d4263cd4fd4862a2"
+          "url": "https://static.crates.io/crates/clap_builder/4.5.40/download",
+          "sha256": "e0c66c08ce9f0c698cbce5c0279d0bb6ac936d8674174fe48f736533b964f59e"
         }
       },
       "targets": [
@@ -2603,7 +2603,7 @@
           "selects": {}
         },
         "edition": "2021",
-        "version": "4.5.37"
+        "version": "4.5.40"
       },
       "license": "MIT OR Apache-2.0",
       "license_ids": [
@@ -2612,14 +2612,14 @@
       ],
       "license_file": "LICENSE-APACHE"
     },
-    "clap_derive 4.5.32": {
+    "clap_derive 4.5.40": {
       "name": "clap_derive",
-      "version": "4.5.32",
+      "version": "4.5.40",
       "package_url": "https://github.com/clap-rs/clap",
       "repository": {
         "Http": {
-          "url": "https://static.crates.io/crates/clap_derive/4.5.32/download",
-          "sha256": "09176aae279615badda0765c0c0b3f6ed53f4709118af73cf4655d85d1530cd7"
+          "url": "https://static.crates.io/crates/clap_derive/4.5.40/download",
+          "sha256": "d2c7947ae4cc3d851207c1adb5b5e260ff0cca11446b1d6d1423788e442257ce"
         }
       },
       "targets": [
@@ -2669,7 +2669,7 @@
           "selects": {}
         },
         "edition": "2021",
-        "version": "4.5.32"
+        "version": "4.5.40"
       },
       "license": "MIT OR Apache-2.0",
       "license_ids": [
@@ -14045,7 +14045,7 @@
               "target": "bzip2"
             },
             {
-              "id": "clap 4.5.37",
+              "id": "clap 4.5.40",
               "target": "clap"
             },
             {
@@ -23443,7 +23443,7 @@
     "anyhow 1.0.98",
     "apple-flat-package 0.20.0",
     "bzip2 0.5.2",
-    "clap 4.5.37",
+    "clap 4.5.40",
     "debpkg 0.6.0",
     "directories 6.0.0",
     "env_logger 0.11.8",
