@@ -17,12 +17,10 @@
 
 package org.openqa.selenium;
 
-import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.jspecify.annotations.NullMarked;
@@ -61,10 +59,8 @@ public class PersistentCapabilities implements Capabilities {
 
   @Override
   public Map<String, Object> asMap() {
-    Map<String, Object> toReturn = new TreeMap<>();
-    toReturn.putAll(caps.asMap());
-    toReturn.putAll(overrides.asMap());
-    return Collections.unmodifiableMap(toReturn);
+    return getCapabilityNames().stream()
+        .collect(Collectors.toUnmodifiableMap(Function.identity(), this::getCapability));
   }
 
   @Override
@@ -87,19 +83,7 @@ public class PersistentCapabilities implements Capabilities {
   public Set<String> getCapabilityNames() {
     return Stream.concat(
             caps.getCapabilityNames().stream(), overrides.getCapabilityNames().stream())
-        .collect(toUnmodifiableSet());
-  }
-
-  // Needed, since we're dependent on Java 8 as a minimum version
-  private <T, K, U> Collector<T, ?, Map<K, U>> toUnmodifiableMap(
-      Function<? super T, ? extends K> keyMapper, Function<? super T, ? extends U> valueMapper) {
-    return Collectors.collectingAndThen(
-        Collectors.toMap(keyMapper, valueMapper), Collections::unmodifiableMap);
-  }
-
-  // Needed, since we're dependent on Java 8 as a minimum version
-  private <T> Collector<T, ?, Set<T>> toUnmodifiableSet() {
-    return Collectors.collectingAndThen(Collectors.toSet(), Collections::unmodifiableSet);
+        .collect(Collectors.toUnmodifiableSet());
   }
 
   @Override
