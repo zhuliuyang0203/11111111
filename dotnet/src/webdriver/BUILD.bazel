@@ -169,13 +169,13 @@ copy_file(
 
 copy_file(
     name = "props",
-    src = "//dotnet/src/webdriver/assets:nuget/Selenium.WebDriver.targets",
+    src = "//dotnet/src/webdriver/assets:nuget/build/Selenium.WebDriver.targets",
     out = "Selenium.WebDriver.targets",
 )
 
 copy_file(
     name = "transitive-props",
-    src = "//dotnet/src/webdriver/assets:nuget/Selenium.WebDriver.targets",
+    src = "//dotnet/src/webdriver/assets:nuget/build/Selenium.WebDriver.targets",
     out = "transitive.Selenium.WebDriver.targets",
 )
 
