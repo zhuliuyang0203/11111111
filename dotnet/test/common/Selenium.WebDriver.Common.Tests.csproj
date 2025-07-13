@@ -33,11 +33,4 @@
     <Exec Command="bazel build //java/test/org/openqa/selenium/environment:appserver" WorkingDirectory="../../.." />
   </Target>
 
-  <!-- It is automatically imported when Selenium.WebDriver consumed via nuget package -->
-  <PropertyGroup>
-    <Selenium_Manager_BinariesRootPath>..\..\..\bazel-bin\dotnet\src\webdriver\manager</Selenium_Manager_BinariesRootPath>
-  </PropertyGroup>
-
-  <Import Project="..\..\src\webdriver\assets\nuget\build\Selenium.WebDriver.targets" />
-
 </Project>
