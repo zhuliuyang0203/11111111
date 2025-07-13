@@ -77,6 +77,11 @@ public static class SeleniumManager
             }
 #endif
 
+            if (platform is null)
+            {
+                throw new PlatformNotSupportedException($"Selenium Manager doesn't support your runtime platform: {RuntimeInformation.OSDescription}");
+            }
+
             var currentDirectory = AppContext.BaseDirectory;
 
             binaryFullPath = platform switch
