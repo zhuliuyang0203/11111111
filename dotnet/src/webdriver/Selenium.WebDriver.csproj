@@ -43,6 +43,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <BaseSeleniumManagerPath>$(MSBuildThisFileDirectory)..\..\..\bazel-bin\dotnet\src\webdriver\manager</BaseSeleniumManagerPath>
+  </PropertyGroup>
+
   <!--TODO when AOT is ready https://github.com/SeleniumHQ/selenium/issues/14480-->
   <!--<PropertyGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">
     <IsAotCompatible>true</IsAotCompatible>
@@ -56,31 +60,25 @@
     <PackageReference Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <BaseImagePath>..\..\..\bazel-bin\dotnet\src\webdriver\images</BaseImagePath>
-  </PropertyGroup>
-
   <ItemGroup>
-    <None Include="$(BaseImagePath)\selenium_logo_small.png" Pack="true" PackagePath="logo.png" Visible="false" />
-
-    <None Include="$(BaseSeleniumManagerPath)\linux\selenium-manager" Pack="true" PackagePath="runtimes\linux\native" Visible="false" />
-    <None Include="$(BaseSeleniumManagerPath)\macos\selenium-manager" Pack="true" PackagePath="runtimes\osx\native" Visible="false" />
-    <None Include="$(BaseSeleniumManagerPath)\windows\selenium-manager.exe" Pack="true" PackagePath="runtimes\win\native" Visible="false" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="assets\nuget\build\Selenium.WebDriver.targets" Pack="true" PackagePath="build\" />
-    <None Update="assets\nuget\buildTransitive\Selenium.WebDriver.targets" Pack="true" PackagePath="buildTransitive\" />
-    <None Update="assets\nuget\buildMultiTargeting\Selenium.WebDriver.targets" Pack="true" PackagePath="buildMultiTargeting\" />
+    <None Include="assets\nuget\build\Selenium.WebDriver.targets" Pack="true" PackagePath="build\" />
+    <None Include="assets\nuget\buildTransitive\Selenium.WebDriver.targets" Pack="true" PackagePath="buildTransitive\" />
+    <None Include="assets\nuget\buildMultiTargeting\Selenium.WebDriver.targets" Pack="true" PackagePath="buildMultiTargeting\" />
   </ItemGroup>
 
   <Target Name="GenerateSeleniumManagerBinaries" BeforeTargets="BeforeBuild">
     <Exec Command="bazel build //dotnet/src/webdriver:manager-linux //dotnet/src/webdriver:manager-windows //dotnet/src/webdriver:manager-macos" WorkingDirectory="../../.." />
-
-    <PropertyGroup>
-      <BaseSeleniumManagerPath>..\..\..\bazel-bin\dotnet\src\webdriver\manager</BaseSeleniumManagerPath>
-    </PropertyGroup>
   </Target>
+
+  <ItemGroup>
+    <None Include="$(BaseSeleniumManagerPath)\linux\selenium-manager" Pack="true" PackagePath="runtimes\linux\native" Visible="false" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(BaseSeleniumManagerPath)\macos\selenium-manager" Pack="true" PackagePath="runtimes\osx\native" Visible="false" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(BaseSeleniumManagerPath)\windows\selenium-manager.exe" Pack="true" PackagePath="runtimes\win\native" Visible="false" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\common\images\selenium_logo_small.png" Pack="true" PackagePath="logo.png" Visible="false" />
+  </ItemGroup>
 
   <Target Name="GenerateAtoms" BeforeTargets="BeforeBuild">
     <Exec Command="bazel build //javascript/webdriver/atoms:get-attribute.js //javascript/atoms/fragments:is-displayed.js //javascript/atoms/fragments:find-elements.js" WorkingDirectory="../../.." />
